@@ -111,39 +111,10 @@ a {
 }
 
 .projects-container {
-	margin: 50px 20px;
+	margin: 50px 50px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-.project-tile {
-	display: grid;
-	grid-template-rows: 80% 20%;
-	width: 450px;
-	height: 350px;
-	margin: 30px 15px;
-	background-color: var(--dark-blue);
-}
-.project-tile:hover {
-	box-shadow: 0px 0px 80px hsla(231, 100%, 71%, 0.25); /*var(--light-blue) + opacity*/
-}
-.project-image {
-	grid-row: 1;
-	width: 100%;
-	height: 100%;
-}
-.project-text {
-	grid-row: 2;
-	font-size: 2.5em;
-	margin: auto;
-}
-
-@media (max-width: 600px) {
-	.project-tile {
-		width: 95%;
-		height: auto;
-		margin: 30px 0;
-	}
 }
 
 .btn-view-all {
@@ -162,7 +133,6 @@ a {
 }
 
 #contact {
-	height: 50vh;
 	width: 100%;
 	background-color: var(--dark-blue);
 	padding-top: var(--nav-height);
@@ -203,7 +173,7 @@ a {
 
 .page-footer {
 	background-color: var(--dark-blue);
-	padding: 50px 30px;
+	padding: 30px 30px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -212,4 +182,104 @@ a {
 }
 #copyr-link {
 	font-size: inherit;
+}
+
+
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.wrap {
+  margin: 2rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(100rem);
+          transform: perspective(100rem);
+  cursor: pointer;
+}
+.container {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+  width: 30rem;
+  height: 36rem;
+  border-radius: 1.6rem;
+  padding: 4rem;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  -webkit-transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+          transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+  background-position: var(--bX) var(--bY);
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+  transition: -webkit-transform .6s 1s;
+  transition: transform .6s 1s;
+  transition: transform .6s 1s, -webkit-transform .6s 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container::before,
+.container::after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  z-index: 2;
+  opacity: .3;
+  transition: .3s;
+}
+.container::before {
+  top: 2rem;
+  right: 2rem;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+.container::after {
+  bottom: 2rem;
+  left: 2rem;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+.container--active {
+  transition: none;
+}
+
+.container p {
+	margin-top: 30px;
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+.wrap:hover .container::before,
+.wrap:hover .container::after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+}
+
+.img1{
+	background-image: linear-gradient(hsla(0, 0%, 100%, .2), hsla(0, 0%, 100%, .2)), url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg");
+}
+
+.img2{
+   background-image: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .2)), url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png");
+   background-size: 40rem 37rem !important;
+}
+
+.img3{
+   background-image: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .2)), url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png");
+}
+
+.img4{
+   background-image: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .2)), url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg");
+}
+
+.img5{
+   background-image: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .2)), url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png");
+}
+
+.img6{
+	background-image: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .2)), url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png");
 }
