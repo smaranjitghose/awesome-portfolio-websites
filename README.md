@@ -21,11 +21,22 @@ An open source project for creating end-end templates for portfolio websites for
   
   - [ ] Landing Page/Home Page
   - [ ] Splash Screen
-  - [ ] Navigation Bar
+  - [ ] Navigation Bar ( Try to have a microanimation when we hover over one tab then a lamp enlights it)
   - [ ] Footer
-  - [ ] Projects Page
-  - [ ] Expereince Page
+  - [ ] Projects Page ( Cards + Appropiate Microanimation at top( like a furnace showing work in project)
+    - [ ] Image or Gif appropiate to the project
+    - [ ] Name of the Project
+    - [ ] GitHub button (Microanimations)
+    - [ ] Small Emoji or Button (To redirect to blog or the hosted project itself
+  - [ ] Experience Page ( Try to have cards depicting a picture or graphics related to the workplace + Role Name + Role Time + Bullet points about the work done + A micro-animation for an icon redirecting to any letter if available)
+    - [ ] Internships/Jobs
+    - [ ] Mentorship
+    - [ ] Freelance/Volunteering
   - [ ] Education Page
+    - [ ] College Name, Duration, Courses,Activites
+    - [ ] Certifications 
+  - [ ] Publications (Try to have it in interactive Bibtex format)
+  - [ ] Other Work/Achievements 
   - [ ] Blog Page (This is to be done using fastpages separately and is optional)
   - [ ] Contact/Get in Touch Page
  
@@ -87,15 +98,6 @@ Purpose of the Documentation is ensure anyone without any knowledge of web devel
 <p align="center"><img width=30% src="assets/sci.jpg"></p>
 
 Student Code-in is a global program that helps students grow with “OPEN SOURCE”. It is a 2 months long Open-Source initiative which provides you the best platform to improve your skills and abilities by contributing to vast variety of OPEN SOURCE Projects. In this,all the registered participants would get an exquisite opportunity to interact with the mentors and the Organizing Team. 
-
-<a href = "http://www.pclubsummerofcode.in/"><h3 align= "center"><b> PClub Summer of Code </b></h3></a> 
-
-<p align="center"><img width=30% src="assets/psoc.png"></p>
-
-PClub Summer of Code is the 2 month long Open Source program during summers conducted by Programming Club, UIET, with an aim to help beginners get started with Open Source Development while encouraging diversity. Throughout the program, participants contribute to different projects under guidance of experienced mentors. Mentors get to make their ideas alive and Mentees get to learn tech.
-
-PSoC is targeted at audience who want to dwell in OpenSource Development as well as who are already into FOSS development. This program will help students for other opensource programs like Gsoc, Outreachy, etc.
-
 
 <h2 align= "center"><b> Project Maintainers</b></h2>
 
