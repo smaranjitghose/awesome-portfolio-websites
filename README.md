@@ -27,7 +27,7 @@ An open source project for creating end-end templates for portfolio websites for
     - [ ] Image or Gif appropiate to the project
     - [ ] Name of the Project
     - [ ] GitHub button (Microanimations)
-    - [ ] Small Emoji or Button (To redirect to blog or the hosted project itself
+    - [ ] Small Emoji or Button (To redirect to blog or the hosted project itself)
   - [ ] Experience Page ( Try to have cards depicting a picture or graphics related to the workplace + Role Name + Role Time + Bullet points about the work done + A micro-animation for an icon redirecting to any letter if available)
     - [ ] Internships/Jobs
     - [ ] Mentorship
