@@ -7,12 +7,26 @@ html {
 body {
   background-color: #ecf0f3;
 }
-
+.navbar a {
+  color: black;
+  font-weight: 600;
+}
+.navbar {
+  box-shadow: 0 3px 22px -6px #000000;
+  border: #707070;
+}
+.navbar-nav {
+  right: 0px;
+  position: absolute;
+}
+.nav-item {
+  padding: 10px;
+}
 .main {
   justify-content: center;
   padding-left: 10rem;
   padding-right: 10rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .heading {
   font-size: 55px;
@@ -28,7 +42,7 @@ body {
 }
 .card {
   margin-top: 4rem;
-  height: 360px;
+  height: 370px;
   width: 250px;
   background: #ecf0f3;
   box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.3);
@@ -38,7 +52,7 @@ body {
 
 .card img {
   width: 250px;
-  height: 160px;
+  height: 180px;
 }
 
 .card-title {
@@ -48,7 +62,7 @@ body {
 }
 
 .card-description {
-  font-size: 14px;
+  font-size: 12px;
   color: black;
   text-align: justify;
 }
@@ -60,7 +74,7 @@ body {
 
 .card button {
   font-size: 9px;
-  padding: 7px;
+  padding: 3px;
   margin-left: 10px;
   background-color: black;
   color: white;
@@ -68,20 +82,27 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+  width: 100px;
+}
+
+.card button svg {
+  width: 20px;
+  margin-left:4px;
+  margin-top: 4px;
 }
 
 .end-btn {
-	position:absolute;                  
-	bottom:10px;                          
-	right:10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
-.end-btn button{
-	color: white;
-	background-color: #6B6B96;
-	border-radius: 20px;
-	padding: 10px;
-	border: none;
-	cursor: pointer;
-	outline: none;
+.end-btn button {
+  color: white;
+  background-color: #000;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
