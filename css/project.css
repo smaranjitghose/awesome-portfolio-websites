@@ -42,7 +42,7 @@ body {
 }
 .card {
   margin-top: 4rem;
-  height: 370px;
+  height: 380px;
   width: 250px;
   background: #ecf0f3;
   box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.3);
@@ -67,28 +67,13 @@ body {
   text-align: justify;
 }
 
+.card-description p{
+  margin-bottom: 0.5rem !important;
+}
+
 .card-title,
 .card-description {
   padding: 0 10px;
-}
-
-.card button {
-  font-size: 9px;
-  padding: 3px;
-  margin-left: 10px;
-  background-color: black;
-  color: white;
-  border-radius: 15px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  width: 100px;
-}
-
-.card button svg {
-  width: 20px;
-  margin-left:4px;
-  margin-top: 4px;
 }
 
 .end-btn {
@@ -105,4 +90,58 @@ body {
   border: none;
   cursor: pointer;
   outline: none;
+}
+
+.social-icons{
+  padding-left: 10px;
+  list-style: none;
+  margin-top: 2px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1em;
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 0.80em;
+  left: 0.81em;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: block;
+  background: black;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #000;
+  background-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
 }
