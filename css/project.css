@@ -6,27 +6,144 @@ html {
 }
 body {
   background-color: #ecf0f3;
+  margin:0;
+  padding: 0;   
 }
-.navbar a {
+
+/*NAVBAR*/ 
+
+
+.header {
+  background-color: #ecf0f3;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
   color: black;
-  font-weight: 600;
+  font-weight: 500;
+  text-decoration: none;
 }
-.navbar {
-  box-shadow: 0 3px 22px -6px #000000;
-  border: #707070;
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
 }
-.navbar-nav {
-  right: 0px;
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  text-align: center;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  float: right;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
   position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
 }
-.nav-item {
-  padding: 10px;
+
+.header .menu-icon .navicon:before {
+  top: 5px;
 }
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/*Main section*/ 
+
+
 .main {
   justify-content: center;
   padding-left: 10rem;
   padding-right: 10rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  position: absolute;
 }
 .heading {
   font-size: 55px;
@@ -36,6 +153,10 @@ body {
   font-size: 17px;
   margin-top: 20px;
 }
+
+/*Card*/ 
+
+
 .card img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -76,6 +197,9 @@ body {
   padding: 0 10px;
 }
 
+/*End button*/
+
+
 .end-btn {
   position: absolute;
   bottom: 10px;
@@ -91,6 +215,8 @@ body {
   cursor: pointer;
   outline: none;
 }
+
+/*Social media icons*/
 
 .social-icons{
   padding-left: 10px;
