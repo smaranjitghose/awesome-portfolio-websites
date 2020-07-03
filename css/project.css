@@ -98,7 +98,7 @@ body {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 400px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -118,7 +118,7 @@ body {
   top: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 970px) {
   .header li {
     float: left;
   }
