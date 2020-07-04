@@ -12,7 +12,6 @@ body {
 
 /*NAVBAR*/ 
 
-
 .header {
   background-color: #ecf0f3;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -139,19 +138,31 @@ body {
 
 
 .main {
-  justify-content: center;
+  width:100%;
   padding-left: 10rem;
   padding-right: 10rem;
   margin-top: 5rem;
   position: absolute;
 }
+.column{
+  padding: 70px;
+}
+.section{
+  padding: 20px;
+}
 .heading {
   font-size: 55px;
 }
-
 .sub-heading {
   font-size: 17px;
   margin-top: 20px;
+}
+@media (max-width: 550px){
+  .main{
+    width: 140%;
+    padding-left: 3rem;
+    padding-right: 0rem;
+  }
 }
 
 /*Card*/ 
@@ -162,7 +173,6 @@ body {
   border-top-right-radius: 10px;
 }
 .card {
-  margin-top: 4rem;
   height: 380px;
   width: 250px;
   background: #ecf0f3;
