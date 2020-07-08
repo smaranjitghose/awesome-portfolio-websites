@@ -9,22 +9,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/project.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>  
 
 <body>
-  <header class="header">
-    <a href="" class="logo">logo</a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./experience.html">Experience</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="./projects.html">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Education</a></li>
-      </ul>
-  </header>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+    <a href="#" class="navbar-brand">Portfolio</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="navbar-item"><a class="nav-link" href="#">About</a></li>
+          <li class="navbar-item"><a class="nav-link" href="./experience.html">Experience</a></li>
+          <li class="navbar-item"><a class="nav-link" href="./projects.html">Projects</a></li>
+          <li class="navbar-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="navbar-item"><a class="nav-link" href="./education.html">Education</a></li>
+        </ul>
+    </div>
+</nav>
 </body>
 </html>

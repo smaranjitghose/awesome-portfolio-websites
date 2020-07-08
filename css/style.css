@@ -1,0 +1,47 @@
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body {
+  background-color: #fff;
+  margin:0;
+  padding: 0; 
+}
+
+/*NAVBAR*/
+
+.navbar{
+  background-color: #fff;
+  box-shadow: 0px 3px 22px rgba(0,0,0,.1);
+  width:100%;
+  padding: 5px;
+}
+
+.navbar-item a , .navbar-brand{
+  color: #000 !important;
+  font-weight: 600;
+}
+
+.navbar-brand{
+  margin-left: 1rem;
+}
+.navbar-brand:hover{
+  color:black !important;
+}
+
+.navbar-item{
+  padding: 14px;
+}
+
+.navbar-item:hover{
+  background-color: #f4f4f4 !important;
+  opacity: 0.8;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+
+.navbar-toggler{
+  border: none !important;
+}
+
