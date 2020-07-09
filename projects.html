@@ -11,25 +11,42 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> 
   <link rel="stylesheet" type="text/css" href="./css/project.css" />
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <script src="scripts/main.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-light navbar-expand-lg fixed-top">
-    <a href="#" class="navbar-brand">Portfolio</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="navbar-item"><a class="nav-link" href="./index.html">Home</a></li>
-          <li class="navbar-item"><a class="nav-link" href="#">About</a></li>
-          <li class="navbar-item"><a class="nav-link" href="./experience.html">Experience</a></li>
-          <li class="navbar-item"><a class="nav-link" href="./projects.html">Projects</a></li>
-          <li class="navbar-item"><a class="nav-link" href="#">Contact</a></li>
-          <li class="navbar-item"><a class="nav-link" href="./education.html">Education</a></li>
-        </ul>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+        <i class="material-icons">menu</i>
+      </a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="./experience.html">Experience</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="./education.html">Education</a></li>
+      </ul>
     </div>
   </nav>
+
+  <ul class="sidenav" id="mobile-nav">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="./experience.html">Experience</a></li>
+    <li><a href="./projects.html">Projects</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="./education.html">Education</a></li>
+  </ul>
+
   <div class="main">
     <div class="section">
       <div class="heading">Projects</div>
