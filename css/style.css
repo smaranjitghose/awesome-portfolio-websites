@@ -19,12 +19,16 @@ nav{
   background-color: #fff;
   box-shadow: 0px 3px 22px rgba(0,0,0,.1);
   width:100%;
-  padding: 0px 10px;
+  padding: 0px 20px;
   position: fixed;
 }
 
 .right, .sidenav{
-  font-weight: 600;
+  font-weight: 620;
+}
+
+a:hover{
+  text-decoration: none;
 }
 
 .right a:hover, .sidenav a:hover{
