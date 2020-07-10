@@ -1,0 +1,43 @@
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body {
+  background-color: #fff;
+  margin:0;
+  padding: 0; 
+}
+
+/*NAVBAR*/
+nav ul a , nav .brand-logo{
+  color: black;
+}
+
+nav{
+  background-color: #fff;
+  box-shadow: 0px 3px 22px rgba(0,0,0,.1);
+  width:100%;
+  padding: 0px 20px;
+  position: fixed;
+}
+
+.right, .sidenav{
+  font-weight: 620;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.right a:hover, .sidenav a:hover{
+  background-color: #f4f4f4 !important;
+  color: black;
+  opacity: 0.8;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+
+.material-icons{
+  color: black;
+}
