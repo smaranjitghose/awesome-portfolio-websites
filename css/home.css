@@ -1,0 +1,113 @@
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 4rem;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  left: 0;
+}
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 2em 3em;
+  line-height: 4.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 0px 2px #131415;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.text a {
+  color: white;
+  font-size: 2.5rem;
+}
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 0.15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  width: 15rem;
+  letter-spacing: 0.15em;
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  40% {
+    border-color: white;
+  }
+}
+
+.button {
+  border-radius: 4px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Slide */
+.slide {
+  background-color: #0E8FFF;
+  border-radius: 4px;
+  transform: perspective(1px) translateZ(0);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #065eaa ;
+  border-radius: 4px;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.slide:hover::before {
+  transform: scaleX(1);
+}
