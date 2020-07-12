@@ -23,55 +23,47 @@
 
 .text {
   position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
+  right: 55%;
+  top: 30%;
   color: #fff;
-  text-align: center;
   padding: 2em 3em;
-  line-height: 4.5rem;
-  background: rgba(0, 0, 0, 0.4);
-  text-shadow: 0px 0px 2px #131415;
-  font-family: "Open Sans", sans-serif;
+  line-height: 3.5rem;
 }
 
 h1 {
-  font-size: 2.25em;
+  font-size: 3em;
   font-weight: 700;
   letter-spacing: -1px;
 }
 
 .text a {
   color: white;
-  font-size: 2.5rem;
-}
-.typewriter h1 {
-  overflow: hidden;
-  border-right: 0.15em solid white;
-  white-space: nowrap;
-  margin: 0 auto;
-  width: 15rem;
-  letter-spacing: 0.15em;
-  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+  font-size: 3rem;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 50%;
-  }
+.type-container{
+  position: relative;
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
 }
 
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  40% {
-    border-color: white;
-  }
+#line{
+  position: relative;
+}
+
+.cursor{
+  height: 2rem;
+  width: 2px;
+  margin-left:2px;
+  background: rgba(255,255,255,.75);
+  margin-top: 10px;
+  animation: blinkTextCursor 800ms infinite;
+}
+
+@keyframes blinkTextCursor{
+  from{opacity: 1;}
+  to{opacity: 0;}
 }
 
 .button {
@@ -110,4 +102,26 @@ h1 {
 
 .slide:hover::before {
   transform: scaleX(1);
+}
+
+ul.social-icons {
+  margin-top: 10px;
+}
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+}
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-behance{
+  color: #F100E1;
+  margin-right: 10px;
+}
+
+.fa-kaggle{
+  color:#00BCE0;
+  margin-right: 10px;
 }
