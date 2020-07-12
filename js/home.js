@@ -1,5 +1,5 @@
 var line = document.getElementById("line")
-var txts = ['I am a Web Developer.', 'I am into Open source.', 'I am into mentoring.'];
+var txts = ['Machine Learning','Open Source','Mentoring','Software Development','Mentoring'];
 var speed = 100
 
 async function typewriter(txt) {
