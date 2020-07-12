@@ -20,9 +20,9 @@ async function writeLoop(){
   
   for(let i = 0; i < txts.length; i++){
     await typewriter(txts[i])
-    await delay(500)
+    await delay(1000)
     await reverseTypewriter(txts[i])
-    await delay(500)
+    await delay(1000)
   }
   
   writeLoop()
