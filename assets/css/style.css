@@ -10,6 +10,10 @@ body {
 	text-decoration: none;
 }
 
+.nav-wrapper a{
+	font-weight: bold;
+}
+
 #particles-js {
 	position: absolute;
 	height: 100%;
