@@ -6,6 +6,10 @@ body {
 	background-color: #ffffff;
 }
 
+.nav-wrapper a:hover , .sidenav a:hover {
+	text-decoration: none;
+}
+
 #particles-js {
 	position: absolute;
 	height: 100%;
@@ -30,7 +34,7 @@ p {
 	color: black;
 	display: inline-block;
 	text-align: center;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1;
 	font-family: 'Poppins', sans-serif;
 	margin: 20px 0;

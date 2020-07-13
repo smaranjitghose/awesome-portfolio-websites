@@ -21,10 +21,14 @@
   margin-top: 20px;
 }
 @media (max-width: 550px){
-  .main{
-    width: 140%;
+  .main {
+    width:100%;
     padding-left: 3rem;
     padding-right: 0rem;
+  }
+  .column{
+    padding: 0px !important;
+    margin-bottom: 20px;
   }
 }
 
@@ -36,7 +40,7 @@
   border-top-right-radius: 10px;
 }
 .card {
-  height: 380px;
+  height: 410px;
   width: 250px;
   background: #fff;
   box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.3);
@@ -51,12 +55,12 @@
 
 .card-title {
   font-weight: bold;
-  font-size: 19px;
+  font-size: 19px !important;
   margin: 5px 0 0 0;
 }
 
-.card-description {
-  font-size: 12px;
+.card-description p {
+  font-size: 15px !important;
   color: black;
   text-align: justify;
 }
