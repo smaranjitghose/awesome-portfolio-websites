@@ -1,7 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
     <title>Experience</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,35 +23,241 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> 
     <script src="js/main.js"></script>
-  </head>  
-
-<body>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-          <i class="material-icons">menu</i>
-        </a>
-
-        <ul class="right hide-on-med-and-down">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./experience.html">Experience</a></li>
-          <li><a href="./projects.html">Projects</a></li>
-          <li><a href="./education.html">Education</a></li>
-        </ul>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="./index.html" class="brand-logo">Logo</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+            <i class="material-icons">menu</i>
+          </a>
+  
+          <ul class="right hide-on-med-and-down" style="padding: 0;">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./experience.html">Experience</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./education.html">Education</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./experience.html">Experience</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="./education.html">Education</a></li>
+    </ul>
+  
+<div class="main">
+    <div class="section">
+      <div class="heading">Experience</div>
+      <div class="sub-heading">
+        “The only source of knowledge is experience.”
       </div>
-    </nav>
-  </div>
+    </div>
 
-  <ul class="sidenav" id="mobile-nav">
-    <li><a href="./index.html">Home</a></li>
-    <li><a href="./experience.html">Experience</a></li>
-    <li><a href="./projects.html">Projects</a></li>
-    <li><a href="./education.html">Education</a></li>
+    <h3>Jobs / Internships</h3>
+    <h6>
+      These are an amazing oppurtunity to boost up your tech stack.
+    </h6>
+
+    <!-- Card -->
+
+    <ul>
+    
+      <li class="card">
+        <img src="assets\experience-page\Workplace.png" class="featured-image">
+        
+          <article class="card-body">
+              <header>
+                  <a>
+                      <div class="title">
+                          <h3>Job / Internship Title</h3>
+                      </div>
+                      <p class="meta" style="margin: 0;">
+                        <span class="pre-heading">Organization Name</span>
+
+                        <span class="author">Job Duration</span>
+                      </p>
+
+                      <ol style="list-style: disc; padding: 3%;">
+                        <li>Imp. points about your work</li>
+                        <li>Imp. points about your work</li>
+                      </ol>
+
+                      <button class="magnifyBorder">External Link</button>
+
+                  </a>
+              </header>
+              
+          </article>
+      </li>
+          
+      </ul>
+
+      <!-- Card -->
+    
+    <ul>
+    
+      <li class="card">
+        <img src="assets\experience-page\Workplace.png" class="featured-image">
+        
+          <article class="card-body">
+              <header>
+                  <a>
+                      <div class="title">
+                          <h3>Job / Internship Title</h3>
+                      </div>
+                      <p class="meta" style="margin: 0;">
+
+                        <span class="pre-heading">Organization Name</span>
+                      
+                        <span class="author">Job Duration</span>
+                        
+                      </p>
+
+                      <ol style="padding: 3%; list-style: disc;">
+                        <li>Imp. points about your work</li>
+                        <li>Imp. points about your work</li>
+                      </ol>
+
+                      <button class="magnifyBorder">External Link</button>
+
+                  </a>
+              </header>
+              
+          </article>
+      </li>
+          
+      </ul>
+
+      <h3>Volunteerships</h3>
+      <h6>
+        I have been contributing various organizations thourugh the skills I learnt.
+      </h6>
+
+      <!-- Card -->
+
+    <ul>
+    
+      <li class="card">
+        <img src="assets\experience-page\Workplace.png" class="featured-image">
+        
+          <article class="card-body">
+              <header>
+                  <a>
+                      <div class="title">
+                        <a href="#"><h3 >Organization Name</h3></a>
+                      </div>
+
+                      <span class="pre-heading"></span>
+
+                      <p class="meta" style="margin: 0;">
+                          <span class="author">Volunteership Duration</span>
+                      </p>
+
+                      <ol style="padding: 3%; list-style: disc;">
+                        <li>Imp. points about your work</li>
+                        <li>Imp. points about your work</li>
+                      </ol>
+
+                      <button class="magnifyBorder">External Link</button>
+
+                  </a>
+              </header>
+              
+          </article>
+      </li>
+          
+      </ul>
+
+      <!-- Card -->
+
+    <ul>
+    
+      <li class="card">
+        <img src="assets\experience-page\Workplace.png" class="featured-image">
+
+          <article class="card-body">
+              <header>
+                <a>
+                  <div class="title">
+                    <a href="#"><h3 >Organization Name</h3></a>
+                  </div>
+
+                  <span class="pre-heading"></span>
+
+                  <p class="meta" style="margin: 0;">
+                      <span class="author">Volunteership Duration</span>
+                  </p>
+
+                  <ol style="padding: 3%; list-style: disc;">
+                    <li>Imp. points about your work</li>
+                    <li>Imp. points about your work</li>
+                  </ol>
+
+                  <button class="magnifyBorder">External Link</button>
+
+              </a>
+              </header>
+              
+          </article>
+      </li>
+          
+      </ul>
+
+      <h3>Mentorships</h3>
+      <h6>
+        One of the best way to learn is through teaching others.
+      </h6>
+
+      <!-- Card -->
+
+    <ul>
+    
+      <li class="card">
+          <img src="assets\experience-page\Workplace.png" class="featured-image">
+              
+          <article class="card-body">
+              <header>
+                  <a>
+                      <div class="title">
+                          <h3>Organization Name</h3>
+                      </div>
+
+                      <span class="pre-heading"></span>
+
+                      <p class="meta" style="margin: 0;">
+                          <span class="author">Mentorship Duration</span>
+                      </p>
+
+                      <ol style="padding: 3%; list-style: disc;">
+                        <li>Imp. points about your work</li>
+                        <li>Imp. points about your work</li>
+                      </ol>
+
+                      <button class="magnifyBorder">External Link</button>
+
+                  </a>
+              </header>
+              
+          </article>
+      </li>
+          
+      </ul>
+
+
+</div>
+
+    <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/experience.css" />
+
+</body>
+  
   </ul>
 
 </body>
