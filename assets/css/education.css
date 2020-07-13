@@ -73,7 +73,6 @@
   transform: rotateX(180deg);
   z-index: 0;
 }
-
 .main-timeline .timeline:nth-child(even) {
   margin: 0 0 0 5px;
   padding: 0 0 0 40px;
