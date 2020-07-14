@@ -19,7 +19,7 @@
   font-size: 17px;
   margin-top: 20px;
 }
-@media (max-width: 550px){
+@media (max-width: 530px){
   .main {
     width:100%;
     padding-left: 3rem;
@@ -29,7 +29,12 @@
     padding: 0px !important;
     margin-bottom: 20px;
   }
+
+  .end-btn{
+    margin-top: 20px;
+  }
 }
+
 
 /*Card*/ 
 

@@ -16,30 +16,6 @@ body {
 	font-weight: bold;
 }
 
-/* Particle effect*/ 
-
-#particles-js {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-}
-.section {
-	justify-content: center;
-	align-items: center;
-}
-
-.text span{
-	font-weight: bold;
-}
-
-.text {
-	font-size: 40px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	position: absolute;
-}
-
 .brand-logo img{
 	width: 220px;
 }
@@ -56,47 +32,3 @@ p {
 
 	font-weight: 300;
 }
-
-.animated-text span {
-	display: none;
-	line-height: 1;
-}
-.animated-text span.active {
-	display: inline-block;
-}
-.animated-text:after {
-	content: 'i';
-	display: inline-block;
-	width: 2px;
-	text-indent: -100px;
-	overflow: hidden;
-	background: #aaa;
-	animation: blink 0.3s infinite alternate;
-}
-@keyframes blink {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-/*Social icons*/
-
-ul.social-icons {
-	margin-top: 10px;
-  }
-  .social-icons li {
-	vertical-align: top;
-	display: inline;
-  }
-  .social-icons a {
-	text-decoration: none;
-  }
-  
-  .fab{
-	margin-right: 10px;
-	color: #000000;
-	transform: scale(0.9,0.9);
-  }
