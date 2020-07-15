@@ -19,19 +19,26 @@
   font-size: 17px;
   margin-top: 20px;
 }
-@media (max-width: 530px){
+
+@media (max-width: 560px){
   .main {
     width:100%;
     padding-left: 3rem;
     padding-right: 0rem;
   }
   .column{
-    padding: 0px !important;
+    padding: 40px !important;
     margin-bottom: 20px;
   }
 
   .end-btn{
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 368px){
+  .column{
+    padding: 0px !important;
   }
 }
 
