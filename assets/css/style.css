@@ -6,6 +6,18 @@ body {
 	background-color: #ffffff;
 }
 
+/* NAVBAR*/
+
+.nav-wrapper a:hover , .sidenav a:hover {
+	text-decoration: none;
+}
+
+.nav-wrapper a{
+	font-weight: bold;
+}
+
+/* Particle effect*/ 
+
 #particles-js {
 	position: absolute;
 	height: 100%;
@@ -15,14 +27,21 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-.text {
-	font-size: 40px;
+
+.text span{
+	font-weight: bold;
 }
 
-.img {
-	display: inline-block;
-	height: 100px;
-	z-index: 100;
+.text {
+	font-size: 40px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.brand-logo img{
+	width: 220px;
 }
 
 h1,
@@ -30,7 +49,7 @@ p {
 	color: black;
 	display: inline-block;
 	text-align: center;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1;
 	font-family: 'Poppins', sans-serif;
 	margin: 20px 0;
@@ -62,3 +81,22 @@ p {
 		opacity: 1;
 	}
 }
+
+/*Social icons*/
+
+ul.social-icons {
+	margin-top: 10px;
+  }
+  .social-icons li {
+	vertical-align: top;
+	display: inline;
+  }
+  .social-icons a {
+	text-decoration: none;
+  }
+  
+  .fab{
+	margin-right: 10px;
+	color: #000000;
+	transform: scale(0.9,0.9);
+  }
