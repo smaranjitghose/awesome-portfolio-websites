@@ -16,8 +16,12 @@ body {
 	font-weight: bold;
 }
 
+.sidenav-trigger{
+	margin-left: 0px !important;
+}
+
 .brand-logo img{
-	width: 220px;
+	width: 200px;
 }
 
 h1,
