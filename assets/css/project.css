@@ -42,6 +42,14 @@
   }
 }
 
+=======
+}
+
+@media (max-width: 368px){
+  .column{
+    padding: 0px !important;
+  }
+}
 
 /*Card*/ 
 
