@@ -1,3 +1,7 @@
+html,
+body {
+  background-color: #ecf0f3;
+}
 /* -----Timeline----- */
 .main-timeline {
   position: relative;
