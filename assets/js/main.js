@@ -30,7 +30,7 @@ const showCards = () => {
     ({ title, cardImage, instructor }) =>
       (output += `        
         <div class="col-md-4 ">
-            <div class="card mb-2 shadow" >
+            <div class="card mb-2" >
                <div class="content">
                   <div class="content-overlay"></div>
                     <img src=${cardImage} class="card-img-top content-image" height=140 >     

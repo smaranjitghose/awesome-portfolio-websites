@@ -223,3 +223,8 @@
 .fadeIn-top {
   top: 20%;
 }
+
+.card {
+  background-color: #ecf0f3c4;
+  box-shadow: 0px 5px 17px #9fa5a3, 0px -5px 17px #fff;
+}
