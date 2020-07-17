@@ -186,16 +186,3 @@ a.chip:hover, a.chip:visited, a.chip:active {
 a.chip.large:visited, a.chip.large:hover, a.chip.large:active {
   color: black;
 }
-
-.magnifyBorder {
-  padding: 3%;
-  border-radius: 61px;
-  box-shadow: inset 0 0 0 2px #474E51;
-  transition: 300ms box-shadow cubic-bezier(0.4, 0, 0.6, 1), 300ms background-color cubic-bezier(0.4, 0, 0.6, 1), 300ms color cubic-bezier(0.4, 0, 0.6, 1);;
-  color: #474E51;
-}
-
-.magnifyBorder:hover {
-  box-shadow: inset 0 0 0 4px #5778F3;
-  color: #5778F3;
-}
