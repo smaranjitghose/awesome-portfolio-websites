@@ -33,7 +33,7 @@ const showCards = () => {
             <div class="card mb-2" >
                <div class="content">
                   <div class="content-overlay"></div>
-                    <img src=${cardImage} class="card-img-top content-image" height=140 >     
+                    <img src=${cardImage} class="card-img-top content-image" height=180>     
                   <div class="content-details fadeIn-top">
                     <h4>Certificate</h4>
                   </div>
