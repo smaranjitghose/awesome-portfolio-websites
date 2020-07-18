@@ -1,11 +1,13 @@
 /*Card*/ 
 
+.container{
+  width: 100%;
+}
 .card img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 .card {
-
   background: #fff;
   box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -36,25 +38,6 @@
 .card-title,
 .card-description {
   padding: 0 10px;
-}
-
-/*End button*/
-
-
-.end-btn {
-  position: absolute;
-  right: 10px;
-  padding-bottom: 10px;
-}
-
-.end-btn button {
-  color: white;
-  background-color: #000;
-  border-radius: 20px;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  outline: none;
 }
 
 /*Social media icons*/
