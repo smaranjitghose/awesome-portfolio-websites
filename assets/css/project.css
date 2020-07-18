@@ -20,7 +20,7 @@
 }
 
 .card-title {
-  font-weight: bold;
+  font-weight: bold !important;
   font-size: 30px !important;
   margin: 5px 0 0 0;
 }
@@ -33,6 +33,7 @@
 
 .card-description p{
   margin-bottom: 0.5rem !important;
+  opacity: 0.8;
 }
 
 .card-title,
@@ -100,3 +101,16 @@
 .social-icons i :before {
  transform: rotate(45deg);
 }
+
+/* Resopnsive*/
+@media only screen and (max-width: 767px) {
+.project-box{
+   margin-top: 16rem;
+}
+}
+
+@media only screen and (max-width: 450px) {
+  .project-box{
+     margin-top: 10rem;
+  }
+  }
