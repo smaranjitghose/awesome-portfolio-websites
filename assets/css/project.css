@@ -1,116 +1,136 @@
-/*Card*/ 
+/*Card*/
 
-.container{
-  width: 100%;
-}
-.card img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.card {
-  background: #fff;
-  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  border: #707070;
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
 }
 
-.card img {
-  width: 100%;
-  padding:10px
+.col-md-4 {
+  padding: 40px;
 }
 
-.card-title {
-  font-weight: bold !important;
-  font-size: 30px !important;
-  margin: 5px 0 0 0;
-}
-
-.card-description p {
-  font-size: 20px !important;
-  color: black;
-  text-align: justify;
-}
-
-.card-description p{
-  margin-bottom: 0.5rem !important;
-  opacity: 0.8;
-}
-
-.card-title,
-.card-description {
-  padding: 0 10px;
-}
-
-/*Social media icons*/
-
-.social-icons{
-  padding-left: 15px !important;
-  list-style: none;
-  margin-top: 2px;
-}
-
-.social-icons li {
-  display: inline-block;
-  margin: 0.2em;
+.skill-card {
   position: relative;
-  font-size: 1em;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  width: 20em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
 }
 
-.social-icons i {
-  color: black;
+.skill-card .skill-card__header {
+  position: relative;
+  background-color: #eb6c3f;
+  height: 200px;
+  margin: -20px -20px 20px -20px;
+  transition: height 0.5s;
+  overflow: hidden;
+}
+
+.skill-card .skill-card__header .skill-card__icon {
   position: absolute;
-  top: 0.40em;
-  left: 0.45em;
-  width: 10px;
-  height: 10px;
-  transition: all 265ms ease-out;
-}
-
-.social-icons a {
-  display: inline-block;
-  width: 41px;
-  height: 41px;
-  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
   display: block;
-  box-shadow: 0 5px 15px -1px rgba(0,0,0,0.1);
-  opacity: 0.89;
+  width: 200px;
+  height: 180px;
+  transition: transform 0.5s;
 }
 
-.social-icons .fa {
-  font-size: 25px;
+.skill-card .skill-card__body {
+  height: 50px;
+  transition: height 0.5s;
+  overflow: hidden;
 }
 
-.social-icons i :before {
-  top: 90%;
-  left: -110%;
-}
-.social-icons .fa {
-  transform: scale(0.8);
+.skill-card .skill-card__body .skill-card__title {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 0px;
 }
 
-.social-icons a:hover{
-  background-color: black;
+.skill-card .skill-card__body .skill-card__duration {
+  color: #9e9e9e;
+  font-style: italic;
 }
 
-.social-icons :focus .fa,
-.social-icons :hover .fa {
-  color: #fff;
-  transform: scale(0.85);
+.skill-card .skill-card__body .skill-card__knowledge {
+  margin-top: 10px;
+  color: #424242;
 }
 
-.social-icons i :before {
- transform: rotate(45deg);
+.skill-card .skill-card__body .skill-card__knowledge li {
+  margin-top: 5px;
+  transition-duration: 0;
+  transition-delay: 0.5s;
+  transform: translateX(-100%);
+}
+
+.skill-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skill-card:hover .skill-card__header {
+  height: 40px;
+}
+
+.skill-card:hover .skill-card__header .skill-card__icon {
+  transform: translateX(-50%) translateY(-50%) scale(3);
+}
+
+.skill-card:hover .skill-card__body {
+  height: 170px;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li {
+  transform: translateX(0);
+  transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
+  transition-duration: 0.5s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(1) {
+  transition-delay: 0.25s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(2) {
+  transition-delay: 0.5s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(3) {
+  transition-delay: 0.75s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(4) {
+  transition-delay: 1s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(5) {
+  transition-delay: 1.25s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(6) {
+  transition-delay: 1.5s;
 }
 
 /* Resopnsive*/
 @media only screen and (max-width: 767px) {
-.project-box{
-   margin-top: 16rem;
-}
+  .project-box {
+    margin-top: 18rem;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-  .project-box{
-     margin-top: 10rem;
+  .project-box {
+    margin-top: 10rem;
   }
+}
+
+@media only screen and (max-width: 915px) and (min-width: 767px) {
+  .skill-card {
+    width: 16em;
   }
+}
