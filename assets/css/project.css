@@ -23,7 +23,7 @@ html {
 
 .skill-card .skill-card__header {
   position: relative;
-  background-color: #eb6c3f;
+  background-color: #eee;
   height: 200px;
   margin: -20px -20px 20px -20px;
   transition: height 0.5s;
