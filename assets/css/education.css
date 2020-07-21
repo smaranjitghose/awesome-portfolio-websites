@@ -56,6 +56,7 @@
   background-color: #ecf0f3;
   border: 1px solid #e6e7e8;
   margin: 0 auto;
+  height:200px;
   border-radius: 20px;
   display: block;
   overflow: hidden;
@@ -170,6 +171,7 @@
 .content {
   position: relative;
   width: 100%;
+  padding: 10px;
   margin: auto;
   overflow: hidden;
 }
@@ -225,6 +227,18 @@
 }
 
 .card {
-  background-color: #ecf0f3c4;
+  background-color: #eee;
   box-shadow: 0px 5px 17px #9fa5a3, 0px -5px 17px #fff;
+}
+.card-body {
+  background-color: #fff;
+  padding:5px;
+}
+
+.container-padding{
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 10px;
+  padding-bottom: 10px;;
+  
 }
