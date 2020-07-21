@@ -5,19 +5,19 @@ const moocs = document.querySelector(".moocs");
 const moocscards = [
   {
     title: "Data Science",
-    cardImage: "assets/images/education-page/mooc.png",
+    cardImage: "assets/images/education-page/data-science.svg",
     instructor: "- Alex Aklson",
     moocLink: "#!",
   },
   {
     title: "Cryptography",
-    cardImage: "assets/images/education-page/mooc.png",
+    cardImage: "assets/images/education-page/problem-solving.svg",
     instructor: "- Saurabh Mukhopadhyay",
     moocLink: "#!",
   },
   {
     title: "Machine Learning",
-    cardImage: "assets/images/education-page/mooc.png",
+    cardImage: "assets/images/education-page/robotics.svg",
     instructor: "- Andrew Ng",
     moocLink: "#!",
   },
