@@ -53,10 +53,9 @@
 
 .main-timeline .timeline-content {
   box-shadow: 5px 5px 17px #9fa5a3, -5px -5px 17px #fff;
-  background-color: #ecf0f3;
-  border: 1px solid #e6e7e8;
+  background-color: #eee;
+  border: 1px solid #eee;
   margin: 0 auto;
-  height:200px;
   border-radius: 20px;
   display: block;
   overflow: hidden;
@@ -69,7 +68,7 @@
 .main-timeline .timeline-content::before,
 .main-timeline .timeline-content::after {
   content: "";
-  background-color: #ecf0f3;
+  background-color: #eee;
   width: 0;
   position: absolute;
   right: -1px;
@@ -78,7 +77,7 @@
 }
 
 .main-timeline .timeline-content::after {
-  background-color: #ecf0f3;
+  background-color: #eee;
   transform: rotateX(180deg);
   z-index: 0;
 }
@@ -111,13 +110,13 @@
   transform: rotateY(-180deg) rotateX(180deg);
 }
 .main-timeline .timeline:nth-child(4n + 2) .timeline-content {
-  background-color: #ecf0f3;
+  background-color: #eee;
 }
 .main-timeline .timeline:nth-child(4n + 3) .timeline-content {
-  background-color: #ecf0f3;
+  background-color: #eee;
 }
 .main-timeline .timeline:nth-child(4n + 4) .timeline-content {
-  background-color: #ecf0f3;
+  background-color: #eee;
 }
 @media only screen and (max-width: 990px) {
   .main-timeline .timeline .timeline-content::before,
@@ -192,15 +191,15 @@
 }
 
 .content:hover .content-overlay {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .content-details {
   position: absolute;
   text-align: center;
   width: 100%;
-  top: 50%;
   left: 50%;
+  top: 50%;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -211,34 +210,30 @@
 }
 
 .content:hover .content-details {
-  top: 50%;
   left: 50%;
+  top: 50%;
   opacity: 1;
+  transition: 0.3s ease-in;
 }
-
-.content-details h4 {
-  color: rgba(237, 249, 254);
-  font-weight: 200;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-}
-.fadeIn-top {
-  top: 20%;
+.fadeIn-bottom {
+  top: 80%;
 }
 
 .card {
-  background-color: #eee;
-  box-shadow: 0px 5px 17px #9fa5a3, 0px -5px 17px #fff;
+  border-radius: 5px;
+  background: #eee;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 .card-body {
   background-color: #fff;
   padding:5px;
-}
-
-.container-padding{
-  padding-left: 10rem;
-  padding-right: 10rem;
-  padding-top: 10px;
-  padding-bottom: 10px;;
-  
 }
