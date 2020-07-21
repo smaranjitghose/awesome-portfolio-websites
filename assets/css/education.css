@@ -190,15 +190,15 @@
 }
 
 .content:hover .content-overlay {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .content-details {
   position: absolute;
   text-align: center;
   width: 100%;
-  top: 50%;
   left: 50%;
+  top: 50%;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -209,9 +209,10 @@
 }
 
 .content:hover .content-details {
-  top: 50%;
   left: 50%;
+  top: 50%;
   opacity: 1;
+  transition: 0.3s ease-in;
 }
 .fadeIn-bottom {
   top: 80%;
