@@ -106,11 +106,11 @@
 }
 
 .social-icon.kaggle:after {
-	background-color: #ECB22E;
+	background-color: #41aff3;
 }
 
-.social-icon.behance:after {
-	background-color: #1769ff;
+.social-icon.dribbble:after {
+	background-color: #ea4c89;
 }
 
 .social-icon.medium:after {

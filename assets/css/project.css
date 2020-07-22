@@ -42,7 +42,7 @@ html {
 }
 
 .skill-card .skill-card__body {
-  height: 50px;
+  height: 24px;
   transition: height 0.5s;
   overflow: hidden;
 }
@@ -79,7 +79,7 @@ html {
 }
 
 .skill-card:hover .skill-card__body {
-  height: 220px;
+  height: 210px;
 }
 
 .skill-card:hover .skill-card__body .skill-card__knowledge li {
@@ -96,15 +96,7 @@ html {
   transition-delay: 0.5s;
 }
 
-.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(3) {
-  transition-delay: 0.75s;
-}
-
-.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(4) {
-  transition-delay: 1s;
-}
-
-.skill-card__body .skill-card__knowledge li:nth-child(5), .skill-card__body .skill-card__knowledge li:nth-child(6) {
+.skill-card__body .skill-card__knowledge li:nth-child(3), .skill-card__body .skill-card__knowledge li:nth-child(4) {
   float: right;
   transition-delay: 0s ;
 }
