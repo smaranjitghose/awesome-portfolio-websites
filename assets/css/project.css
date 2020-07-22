@@ -127,3 +127,10 @@ html {
     width: 16em;
   }
 }
+
+/*social icons*/
+
+.social-icon svg:hover{
+  fill:#000;
+  opacity: 0.78;
+}
