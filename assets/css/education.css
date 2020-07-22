@@ -53,8 +53,8 @@
 
 .main-timeline .timeline-content {
   box-shadow: 5px 5px 17px #9fa5a3, -5px -5px 17px #fff;
-  background-color: #eee;
-  border: 1px solid #eee;
+  background-color: #ecf0f3;
+  border: 1px solid #ecf0f3;
   margin: 0 auto;
   border-radius: 20px;
   display: block;
@@ -68,7 +68,7 @@
 .main-timeline .timeline-content::before,
 .main-timeline .timeline-content::after {
   content: "";
-  background-color: #eee;
+  background-color: #ecf0f3;
   width: 0;
   position: absolute;
   right: -1px;
@@ -77,7 +77,7 @@
 }
 
 .main-timeline .timeline-content::after {
-  background-color: #eee;
+  background-color: #ecf0f3;
   transform: rotateX(180deg);
   z-index: 0;
 }
@@ -110,13 +110,13 @@
   transform: rotateY(-180deg) rotateX(180deg);
 }
 .main-timeline .timeline:nth-child(4n + 2) .timeline-content {
-  background-color: #eee;
+  background-color: #ecf0f3;
 }
 .main-timeline .timeline:nth-child(4n + 3) .timeline-content {
-  background-color: #eee;
+  background-color: #ecf0f3;
 }
 .main-timeline .timeline:nth-child(4n + 4) .timeline-content {
-  background-color: #eee;
+  background-color: #ecf0f3;
 }
 @media only screen and (max-width: 990px) {
   .main-timeline .timeline .timeline-content::before,
@@ -221,7 +221,7 @@
 
 .card {
   border-radius: 5px;
-  background: #eee;
+  background: #ecf0f3;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     0.3s box-shadow,
