@@ -6,10 +6,6 @@ html {
   color: #000;
 }
 
-.col-md-4 {
-  padding: 40px;
-}
-
 .skill-card {
   position: relative;
   transform: translateY(-50%) translateX(-50%);
