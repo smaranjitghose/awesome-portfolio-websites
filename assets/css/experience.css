@@ -14,7 +14,6 @@ html {
   width:100%;
   padding-left: 10rem;
   padding-right: 10rem;
-  position: absolute;
 }
 .column{
   padding: 70px;
@@ -121,14 +120,14 @@ h3 {
   text-transform: uppercase;
 }
 
-ul {
+.main ul {
   display: block;
   margin: 0 auto;
   max-width: 1160px;
   padding: 30px;
 }
 
-a {
+.main a {
   text-decoration: none;
 }
 

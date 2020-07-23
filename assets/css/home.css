@@ -1,7 +1,7 @@
 /* Particle effect*/ 
 
 #particles-js {
-	position: absolute;
+	position: relative;
 	height: 100%;
 	width: 100%;
 }
@@ -131,3 +131,10 @@
 .social-icon:hover:after {
 	transform: translate(0) scale(1.2);
 }
+
+/* Responsive */
+@media only screen and (max-width: 450px) {
+	.text {
+	  margin-top: 5rem;
+	}
+  }
