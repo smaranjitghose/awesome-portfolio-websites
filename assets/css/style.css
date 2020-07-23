@@ -40,12 +40,12 @@ p {
 /*Footer*/
 
 .webintern-footer {
-	background: #0d2034;
+	background: #252566;
   }
   
   .webintern-footer-inner {
-	padding-top: 80px;
-	padding-bottom: 50px;
+	padding-top: 30px;
+	padding-bottom: 10px;
   }
   
   .webintern-footer-logo {
@@ -65,15 +65,10 @@ p {
 	line-height: 26px;
 	margin-bottom: 0;
   }
-  
-  .webintern-footer .webintern-footer-inner .simple-text a {
-	font-family: "Open Sans", sans-serif;
-	font-weight: 700;
-	color: #f2c21a;
-	font-size: 15px;
-  }
   .footer-2 {
-	padding-left: 55px;
+	float:right;
+	margin-right:0px;;
+  
   }
   .webintern_footer_title {
 	margin-top: 0px;
@@ -89,111 +84,19 @@ p {
   .webintern_footer_title:after {
 	content: "";
 	display: block;
-	width: 50px;
+	width: 8rem;
 	height: 2px;
-	background: #f2c21a;
+	background: #26A69A;
 	margin-top: 15px;
   }
-  .webintern-footer-list {
-	padding: 0;
-  }
-  .webintern-footer-list li {
-	margin-bottom: 17px;
-	list-style: none;
-  }
-  .webintern-footer-list a {
-	position: relative;
-	font-size: 15px;
-	line-height: 18px;
-	color: #fff;
-	padding-left: 0;
-	letter-spacing: 0.2px;
-	font-family: "Open Sans", sans-serif;
-  }
-  .footer-3 {
-	padding-left: 65px;
-  }
-  .webintern-footer-inner .simple-text.last {
-	color: #d5d5d5;
-	font-size: 17px;
-	font-style: italic;
-	font-family: "Open Sans", sans-serif;
-	font-weight: 400;
-  }
-  .tt-subscribe {
-	position: relative;
-  }
-  .tt-subscribe input:not([type="submit"]) {
-	width: 92%;
-	height: 46px;
-	background: #fff;
-	font-size: 15px;
-	color: #838486;
-	padding-left: 20px;
-	border: 2px solid #fff;
-  }
-  .tt-subscribe-submit {
-	background: #001b57;
-  }
-  
-  .tt-subscribe-submit {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 54px;
-	height: 50px;
-	font-size: 18px;
-	line-height: 46px;
-	color: #2a2a2a;
-	text-align: center;
-	background: #001b57;
-	-moz-border-radius-topright: 3px;
-	border-top-right-radius: 3px;
-	-moz-border-radius-bottomright: 3px;
-	border-bottom-right-radius: 3px;
-  }
-  
-  .tt-subscribe-submit i.fa-envelope:before {
-	content: "\f0e0";
-	position: relative;
-	z-index: 1;
-	color: #fff;
-  }
-  .tt-subscribe-submit input {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #3f588a;
-	border: 0;
-  }
-  ul.tt-socail {
-	padding: 0;
-	margin-top: 30px;
-  }
-  .tt-socail li {
-	display: inline-block;
-	margin-right: 10px;
-  }
-  .tt-socail a {
-	display: block;
-	width: 36px;
-	height: 36px;
-	font-size: 17px;
-	line-height: 34px;
-	color: #fff;
-	text-align: center;
-	border: 1px solid #fff;
-	-moz-border-radius: 100%;
-	border-radius: 100%;
-  }
-  .webintern_footer_title small {
-	font-family: "Work Sans", sans-serif;
-	color: #fff;
-	font-weight: 700;
-	font-size: 18px;
-	text-transform: uppercase;
+
+  .contact-form #exampleInputEmail1{
+	 background-color: #fff;
+	 padding:.375rem .75rem;
+	 height: 2rem;
+	 width: 93%;
+	 font-size: 15px;
+	 border-radius: 2px;
   }
   .tt-copy {
 	font-size: 15px;
@@ -201,7 +104,4 @@ p {
 	color: #fff;
 	padding: 10px 0;
 	font-family: "Open Sans", sans-serif;
-  }
-  .tt-copy-right {
-	text-align: right;
   }
