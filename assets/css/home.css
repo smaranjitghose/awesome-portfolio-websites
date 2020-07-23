@@ -132,6 +132,9 @@
 	transform: translate(0) scale(1.2);
 }
 
+a:hover{
+	color: transparent;
+}
 /* Responsive */
 @media only screen and (max-width: 450px) {
 	.text {
