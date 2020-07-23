@@ -21,8 +21,8 @@ An open source project for creating end-end templates for portfolio websites for
   
   - [V] Landing Page/Home Page
   - [ ] Splash Screen
-  - [V] Navigation Bar ( Try to have a microanimation when we hover over one tab then a lamp enlights it)
-  - [ ] Footer
+  - [] Navigation Bar ( Try to have a microanimation when we hover over one tab then a lamp enlights it)
+  - [X] Footer
   - [ ] Projects Page ( Cards + Appropiate Microanimation at top( like a furnace showing work in project)
     - [ ] Image or Gif appropiate to the project
     - [X] Name of the Project
