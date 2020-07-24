@@ -12,8 +12,8 @@ html {
 
 .main {
   width:100%;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 .column{
   padding: 70px;
@@ -32,8 +32,8 @@ html {
 @media (max-width: 550px){
   .main{
     width: 100%;
-    padding-left: 3rem;
-    padding-right: 0rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
   }
 }
 
@@ -95,7 +95,7 @@ html {
 }
 
 
-h3 {
+h4 , h3 {
   font-size: 32px;
   line-height: 1.2;
   font-weight: bold;
