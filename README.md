@@ -19,9 +19,9 @@ An open source project for creating end-end templates for portfolio websites for
   
   Sections: (By default dark mode or theme)
   
-  - [V] Landing Page/Home Page
+  - [X] Landing Page/Home Page
   - [ ] Splash Screen
-  - [] Navigation Bar ( Try to have a microanimation when we hover over one tab then a lamp enlights it)
+  - [X] Navigation Bar ( Try to have a microanimation when we hover over one tab then a lamp enlights it)
   - [X] Footer
   - [ ] Projects Page ( Cards + Appropiate Microanimation at top( like a furnace showing work in project)
     - [ ] Image or Gif appropiate to the project
@@ -56,6 +56,7 @@ An open source project for creating end-end templates for portfolio websites for
 Skills:
 - Flask/NodeJS
 - Firebase 
+
 
 
 - [ ] Routing of pages
