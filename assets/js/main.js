@@ -29,6 +29,7 @@ let header = $(`
 <li><a href="#">Research</a></li>
 <li><a href="education.html">Education</a></li>
 </ul>`)
+
 let footer = $(`
 <footer class="webintern-footer">
 <div class="webintern-footer-inner">
@@ -39,7 +40,7 @@ let footer = $(`
         <a class="webintern-footer-logo" href="#">
           <center><img src="assets/images/John-Doe1.png"style="width: 200px;"/></center>
         </a>
-        <div class="simple-text dark padding-sm">
+        <div class="simple-text text-center dark padding-sm">
           <p>
             "Develop a passion for learning. If you do, you will never cease to grow."
           </p>

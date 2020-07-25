@@ -136,7 +136,7 @@ html {
 .page-content {
   display: grid;
   grid-gap: 5rem;
-  padding: 1rem;
+  padding: 2rem;
   max-width: 1124px;
   margin: 0 auto;
 }
