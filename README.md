@@ -91,13 +91,11 @@ Purpose of the Documentation is ensure anyone without any knowledge of web devel
 - GitHub Actions 
 - Setup Search Option
 
-<h2 align= "center"><b> Programs: </b></h2>
-
-<a href = "https://scodein.tech/"><h3 align= "center"><b> Student Code IN </b></h3></a> 
-
-<p align="center"><img width=30% src="assets/images/sci.jpg"></p>
-
-Student Code-in is a global program that helps students grow with “OPEN SOURCE”. It is a 2 months long Open-Source initiative which provides you the best platform to improve your skills and abilities by contributing to vast variety of OPEN SOURCE Projects. In this,all the registered participants would get an exquisite opportunity to interact with the mentors and the Organizing Team. 
+<h2 align="center"><b>Open Source Programs we have been a part of:</b></h2>
+<p align="center">
+<img width=20% src="assets/images/hakin_codes.png">&ensp;&ensp;&ensp;
+<img width=20% src="assets/images/sci.jpg">
+</p>
 
 <h2 align= "center"><b> Project Maintainers</b></h2>
 
