@@ -26,7 +26,6 @@ body {
 
 h1,
 p {
-	color: black;
 	display: inline-block;
 	text-align: center;
 	font-size: 18px;
@@ -36,3 +35,72 @@ p {
 
 	font-weight: 300;
 }
+
+/*Footer*/
+
+.webintern-footer {
+	background: #252566;
+  }
+  
+  .webintern-footer-inner {
+	padding-top: 30px;
+	padding-bottom: 10px;
+  }
+  
+  .webintern-footer-logo {
+	display: inline-block;
+  }
+  
+  .webintern-footer .webintern-footer-inner .simple-text p {
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 15px;
+  }
+  .simple-text p {
+	font-size: 15px;
+	color: #42435d;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	line-height: 26px;
+	margin-bottom: 0;
+  }
+  .footer-2 {
+	float:right;
+	margin-right:0px;;
+  
+  }
+  .webintern_footer_title {
+	margin-top: 0px;
+	margin-bottom: 25px;
+  }
+  .webintern_footer_title small {
+	font-family: "Work Sans", sans-serif;
+	color: #fff;
+	font-weight: 700;
+	font-size: 15px;
+	text-transform: uppercase;
+  }
+  .webintern_footer_title:after {
+	content: "";
+	display: block;
+	width: 8rem;
+	height: 2px;
+	background: #26A69A;
+	margin-top: 15px;
+  }
+
+  .contact-form #exampleInputEmail1{
+	 background-color: #fff;
+	 padding:.375rem .75rem;
+	 height: 2rem;
+	 width: 93%;
+	 font-size: 15px;
+	 border-radius: 2px;
+  }
+  .tt-copy {
+	font-size: 15px;
+	line-height: 20px;
+	color: #fff;
+	padding: 10px 0;
+	font-family: "Open Sans", sans-serif;
+  }

@@ -19,26 +19,26 @@ An open source project for creating end-end templates for portfolio websites for
   
   Sections: (By default dark mode or theme)
   
-  - [ ] Landing Page/Home Page
+  - [X] Landing Page/Home Page
   - [ ] Splash Screen
-  - [ ] Navigation Bar ( Try to have a microanimation when we hover over one tab then a lamp enlights it)
-  - [ ] Footer
+  - [X] Navigation Bar ( Try to have a microanimation when we hover over one tab then a lamp enlights it)
+  - [X] Footer
   - [ ] Projects Page ( Cards + Appropiate Microanimation at top( like a furnace showing work in project)
     - [ ] Image or Gif appropiate to the project
-    - [ ] Name of the Project
-    - [ ] GitHub button (Microanimations)
-    - [ ] Small Emoji or Button (To redirect to blog or the hosted project itself)
+    - [X] Name of the Project
+    - [X] GitHub button (Microanimations)
+    - [X] Small Emoji or Button (To redirect to blog or the hosted project itself)
   - [ ] Experience Page ( Try to have cards depicting a picture or graphics related to the workplace + Role Name + Role Time + Bullet points about the work done + A micro-animation for an icon redirecting to any letter if available)
     - [ ] Internships/Jobs
     - [ ] Mentorship
     - [ ] Freelance/Volunteering
   - [ ] Education Page
-    - [ ] College Name, Duration, Courses,Activites
-    - [ ] Certifications 
+    - [X] College Name, Duration, Courses,Activites
+    - [X] Certifications 
   - [ ] Publications (Try to have it in interactive Bibtex format)
   - [ ] Other Work/Achievements 
   - [ ] Blog Page (This is to be done using fastpages separately and is optional)
-  - [ ] Contact/Get in Touch Page
+  - [ ] Contact/Get in the footer
  
   
 2) Enhancements:
@@ -56,6 +56,7 @@ An open source project for creating end-end templates for portfolio websites for
 Skills:
 - Flask/NodeJS
 - Firebase 
+
 
 
 - [ ] Routing of pages
