@@ -1,96 +1,122 @@
-/*Card*/
-
-body,
-html {
-  font-family: "Open Sans", sans-serif;
-  color: #000;
+a:hover {
+  text-decoration: none;
+}
+.skill-card{
+	border: none;
+}
+.page-content {
+  display: grid;
+  column-gap: 3rem;
+  row-gap: 5rem;
+  padding: 1rem;
+  max-width: 1124px;
+  margin: 0 auto;
+}
+.card .menu-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.card .menu-content::before,
+.card .menu-content::after {
+  content: "";
+  display: table;
+}
+.card .menu-content::after {
+  clear: both;
+}
+.card .menu-content li {
+  display: inline-block;
 }
 
-.skill-card {
+.card .wrapper {
+  background-color: #fff;
+  min-height: 540px;
   position: relative;
-  transform: translateY(-50%) translateX(-50%);
-  padding: 20px;
-  top: 50%;
-  left: 50%;
-  width: 20em;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  cursor: pointer;
-}
-
-.skill-card .skill-card__header {
-  position: relative;
-  background-color: #eee;
-  height: 200px;
-  margin: -20px -20px 20px -20px;
-  transition: height 0.5s;
   overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
 }
-
-.skill-card .skill-card__header .skill-card__icon {
+.card .wrapper:hover .data {
+  transform: translateY(0);
+}
+.card .data {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  display: block;
-  width: 200px;
-  height: 180px;
-  transition: transform 0.5s;
+  bottom: 0;
+  width: 100%;
+  transition: transform 0.3s;
 }
-
-.skill-card .skill-card__body {
-  height: 24px;
-  transition: height 0.5s;
-  overflow: hidden;
+.card .data .content {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
 }
-
-.skill-card .skill-card__body .skill-card__title {
-  font-size: 1.4em;
-  font-weight: 600;
-  margin: 0px;
-}
-
-.skill-card .skill-card__body .skill-card__duration {
-  color: #9e9e9e;
-  font-style: italic;
-}
-
-.skill-card .skill-card__body .skill-card__knowledge {
+.card .title {
   margin-top: 10px;
-  color: #424242;
+  font-size: 25px;
+}
+.card .text {
+  height: 60px;
+  font-size: 18px;
+  margin: 0;
+}
+.card input[type="checkbox"] {
+  display: none;
+}
+.card input[type="checkbox"]:checked + .menu-content {
+  transform: translateY(-60px);
+}
+.skill-card .wrapper {
+  background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg)
+    center / cover no-repeat;
+}
+.skill-card .wrapper:hover .menu-content span {
+  transform: translate(-50%, -10px);
+  opacity: 1;
 }
 
-.skill-card .skill-card__body .skill-card__knowledge li {
-  margin-top: 5px;
-  transition-duration: 0;
-  transition-delay: 0.5s;
-  transform: translateX(-100%);
+.skill-card .header {
+  color: #fff;
+  padding: 1em;
 }
-
-.skill-card:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+.skill-card .header::before,
+.skill-card .header::after {
+  content: "";
+  display: table;
 }
-
-.skill-card:hover .skill-card__header {
-  height: 0px;
+.skill-card .header::after {
+  clear: both;
 }
-
-.skill-card:hover .skill-card__body {
-  height: 190px;
+.skill-card .header .date {
+  float: left;
+  font-size: 12px;
 }
-
-.skill-card:hover .skill-card__body .skill-card__knowledge li {
-  transform: translateX(0);
-  transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
-  transition-duration: 0.5s;
-}
-
-.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(1) {
-  transition-delay: 0.25s;
-}
-
-.skill-card__body .skill-card__knowledge li:nth-child(2), .skill-card__body .skill-card__knowledge li:nth-child(3) {
+.skill-card .menu-content {
   float: right;
-  transition-delay: 0s ;
+}
+.skill-card .menu-content li {
+  margin: 0 2px;
+  position: relative;
+}
+.skill-card .menu-content span {
+  transition: all 0.3s;
+  opacity: 0;
+}
+.skill-card .data {
+  color: #fff;
+  transform: translateY(calc(60px + 4em));
+  padding: 5px;
+}
+.skill-card .title a {
+  color: #fff;
+}
+
+/*social icons*/
+
+.social-icon svg {
+  margin-top: 10px;
+}
+.social-icon svg:hover {
+  fill: #fff;
 }
 
 /* Resopnsive*/
@@ -106,15 +132,19 @@ html {
   }
 }
 
-@media only screen and (max-width: 915px) and (min-width: 767px) {
-  .skill-card {
-    width: 16em;
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/*social icons*/
-
-.social-icon svg:hover{
-  fill:#000;
-  opacity: 0.78;
-}
+@media (max-width: 377px) {
+	.skill-card .data {
+		transform: translateY(calc(90px + 4em));
+	  }
+  }

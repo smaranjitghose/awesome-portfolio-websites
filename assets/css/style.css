@@ -27,13 +27,11 @@ body {
 h1,
 p {
 	display: inline-block;
-	text-align: center;
-	font-size: 18px;
 	line-height: 1;
 	font-family: 'Poppins', sans-serif;
 	margin: 20px 0;
-
 	font-weight: 300;
+	font-size: 18px;
 }
 
 /*Footer*/
