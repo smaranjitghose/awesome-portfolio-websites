@@ -65,10 +65,7 @@ a:hover {
 .card input[type="checkbox"]:checked + .menu-content {
   transform: translateY(-60px);
 }
-.skill-card .wrapper {
-  background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg)
-    center / cover no-repeat;
-}
+
 .skill-card .wrapper:hover .menu-content span {
   transform: translate(-50%, -10px);
   opacity: 1;
