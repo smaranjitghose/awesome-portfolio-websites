@@ -3,28 +3,28 @@
 const projectcards = document.querySelector(".projectcards");
 const projects = [
   {
-    title: "Stranger Things: The sound of the Upside Down",
-    cardImage: "https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg",
+    title: "Deep Holi",
+    cardImage: "/assets/images/project-page/deepholi.jpg",
     description:
-      "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
-    Previewlink: "#!",
-    Githublink: "#!",
+      "Its a deep learning application which is used to simulate holi affect for your any single or group pictures!",
+    Previewlink: "https://github.com/smaranjitghose/DeepHoli",
+    Githublink: "https://github.com/smaranjitghose/DeepHoli",
   },
   {
-    title: "Stranger Things: The sound of the Upside Down",
-    cardImage: "https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg",
+    title: "Auto Vaidya",
+    cardImage: "/assets/images/project-page/autovaidya.jpg",
     description:
-      "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
-    Previewlink: "#!",
-    Githublink: "#!",
+      "A web app for employing the power of deep learning in various clinical scenarios like implant detection etc.",
+    Previewlink: "https://github.com/smaranjitghose/auto_vaidya",
+    Githublink: "https://github.com/smaranjitghose/auto_vaidya",
   },
   {
-    title: "Stranger Things: The sound of the Upside Down",
-    cardImage: "https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg",
+    title: "Doc2pen",
+    cardImage: "/assets/images/project-page/doc2pen.jpg",
     description:
-      "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
-    Previewlink: "#!",
-    Githublink: "#!",
+      "Doc2pen is the solution to upload any document or write it yourself and get an handwritten assignment out instantly!",
+    Previewlink: "https://github.com/smaranjitghose/doc2pen",
+    Githublink: "#https://github.com/smaranjitghose/doc2pen",
   },
 ];
 
