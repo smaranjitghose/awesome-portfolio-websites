@@ -1,5 +1,4 @@
 AOS.init();
-eva.replace();
 // MOOCs Cards
 const moocs = document.querySelector(".moocs");
 const moocscards = [
