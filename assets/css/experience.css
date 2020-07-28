@@ -223,45 +223,6 @@ html {
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
-.page-content .card:nth-child(1):before {
-  background-image: url("/assets/images/experience-page/1.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
-  background-position: center;
-}
-.page-content .card:nth-child(2):before {
-  background-image: url("/assets/images/experience-page/2.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
-  background-position: center;
-}
-.page-content .card:nth-child(3):before {
-  background-image: url("/assets/images/experience-page/3.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.page-content .card:nth-child(4):before {
-  background-image: url("/assets/images/experience-page/4.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.page-content .card:nth-child(5):before {
-  background-image: url("/assets/images/experience-page/5.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.page-content .card:nth-child(6):before {
-  background-image: url("/assets/images/experience-page/6.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
-  background-position: center;
-}
 .content {
   position: relative;
   display: flex;
