@@ -16,7 +16,7 @@ let header = $(`
         <li><a class="black-text" href="index.html">Home</a></li>
         <li><a class="black-text" href="experience.html">Experience</a></li>
         <li><a class="black-text" href="projects.html">Projects</a></li>
-        <li><a class="black-text" href="#">Research</a></li>
+        <li><a class="black-text" href="research.html">Research</a></li>
         <li><a class="black-text" href="education.html">Education</a></li>
     </ul>
 </div>
@@ -26,7 +26,7 @@ let header = $(`
 <li><a href="index.html">Home</a></li>
 <li><a href="experience.html">Experience</a></li>
 <li><a href="projects.html">Projects</a></li>
-<li><a href="#">Research</a></li>
+<li><a href="research.html">Research</a></li>
 <li><a href="education.html">Education</a></li>
 </ul>`)
 
