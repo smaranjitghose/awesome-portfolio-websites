@@ -23,14 +23,14 @@ An open source project for creating end-end templates for portfolio websites for
   - [ ] Splash Screen
   - [X] Navigation Bar ( Try to have a microanimation when we hover over one tab then a lamp enlights it)
   - [X] Footer
-  - [ ] Projects Page ( Cards + Appropiate Microanimation at top( like a furnace showing work in project)
-    - [ ] Image or Gif appropiate to the project
+  - [X] Projects Page ( Cards + Appropiate Microanimation at top( like a furnace showing work in project)
+    - [X] Image or Gif appropiate to the project
     - [X] Name of the Project
     - [X] GitHub button (Microanimations)
     - [X] Small Emoji or Button (To redirect to blog or the hosted project itself)
   - [ ] Experience Page ( Try to have cards depicting a picture or graphics related to the workplace + Role Name + Role Time + Bullet points about the work done + A micro-animation for an icon redirecting to any letter if available)
-    - [ ] Internships/Jobs
-    - [ ] Mentorship
+    - [X] Internships/Jobs
+    - [X] Mentorship
     - [ ] Freelance/Volunteering
   - [ ] Education Page
     - [X] College Name, Duration, Courses,Activites
@@ -38,7 +38,7 @@ An open source project for creating end-end templates for portfolio websites for
   - [ ] Publications (Try to have it in interactive Bibtex format)
   - [ ] Other Work/Achievements 
   - [ ] Blog Page (This is to be done using fastpages separately and is optional)
-  - [ ] Contact/Get in the footer
+  - [X] Contact/Get in the footer
  
   
 2) Enhancements:
@@ -56,8 +56,6 @@ An open source project for creating end-end templates for portfolio websites for
 Skills:
 - Flask/NodeJS
 - Firebase 
-
-
 
 - [ ] Routing of pages
 - [ ] Autoresponder
