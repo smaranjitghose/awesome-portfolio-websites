@@ -82,3 +82,11 @@ let footer = $(`
 let bodyElement = $(`body`);
 bodyElement.prepend(header);
 bodyElement.append(footer);
+
+
+//  Google Analytics 
+
+window.dataLayer = window.dataLayer || []; // Fetch all the data elements from the data layer for the entire window or something particular (By default left blank)
+function gtag(){dataLayer.push(arguments);}  // Check for all the elements and send it back
+gtag('js', new Date()); // Written in JS, Date of checking
+gtag('config', 'UA-167979537-2'); // Unique ID of our property
