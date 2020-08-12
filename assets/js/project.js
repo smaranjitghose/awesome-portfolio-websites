@@ -26,6 +26,14 @@ const projects = [
     Previewlink: "https://github.com/smaranjitghose/doc2pen",
     Githublink: "#https://github.com/smaranjitghose/doc2pen",
   },
+   {
+    title: "AutoPromPicker",
+    cardImage: "/assets/images/project-page/AutoPromPicker.jpg",
+    description:
+      "AutoPromPicker is the solution of fairytale scenerio. Here, we can pair all of our mates in a manner they never break up.",
+    Previewlink: "https://github.com/smaranjitghose/AutoPromPicker",
+    Githublink: "https://github.com/smaranjitghose/AutoPromPicker",
+  },
 ];
 
 const showCards = () => {
