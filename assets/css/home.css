@@ -1,4 +1,4 @@
-/* Particle effect*/ 
+/* Particle effect*/
 
 #particles-js {
 	position: relative;
@@ -50,7 +50,7 @@
 /*Social icons*/
 
 :root {
-	--link-size: 64px; 
+	--link-size: 64px;
 	--trans-props: all 0.3s ease;
 }
 
@@ -64,7 +64,7 @@
 .social-icon {
 	display: flex;
 	position: relative;
-	overflow: hidden; 
+	overflow: hidden;
 	width: var(--link-size);
 	height: var(--link-size);
 	margin: 8px;
@@ -76,10 +76,10 @@
 }
 
 .social-icon i {
-	margin: auto; 
+	margin: auto;
 	font-size: 24px;
 	color: #000;
-	z-index: 1; 
+	z-index: 1;
 	transition: var(--trans-props);
 }
 
