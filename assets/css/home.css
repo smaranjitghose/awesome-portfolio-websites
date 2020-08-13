@@ -1,64 +1,65 @@
 /* Particle effect*/
 
 #particles-js {
-	position: relative;
-	height: 100%;
-	width: 100%;
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
 .section {
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.text span{
-	font-weight: bold;
+.text span {
+  font-weight: bold;
 }
 
 .text {
-	font-size: 40px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 .animated-text span {
-	display: none;
-	line-height: 1;
+  display: none;
+  line-height: 1;
 }
 .animated-text span.active {
-	display: inline-block;
+  display: inline-block;
 }
 .animated-text:after {
-	content: 'i';
-	display: inline-block;
-	width: 2px;
-	text-indent: -100px;
-	overflow: hidden;
-	background: #aaa;
-	animation: blink 0.3s infinite alternate;
+  content: "i";
+  display: inline-block;
+  width: 2px;
+  text-indent: -100px;
+  overflow: hidden;
+  background: #aaa;
+  animation: blink 0.3s infinite alternate;
 }
 @keyframes blink {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*Social icons*/
 
 :root {
-	--link-size: 64px;
-	--trans-props: all 0.3s ease;
+  --link-size: 64px;
+  --trans-props: all 0.3s ease;
 }
 
 .social-icons {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-flow: row wrap;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .social-icon {
@@ -81,63 +82,82 @@
 	color: #000;
 	z-index: 1;
 	transition: var(--trans-props);
+=======
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  margin: 8px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+  text-decoration: none;
+  transition: var(--trans-props);
+}
+
+.social-icon i {
+  margin: auto;
+  font-size: 24px;
+  color: #000;
+  z-index: 1;
+  transition: var(--trans-props);
 }
 
 .social-icon:after {
-	content: "";
-	width: var(--link-size);
-	height: var(--link-size);
-	position: absolute;
-	transform: translate(0, var(--link-size));
-	border-radius: 50%;
-	transition: var(--trans-props);
+  content: "";
+  width: var(--link-size);
+  height: var(--link-size);
+  position: absolute;
+  transform: translate(0, var(--link-size));
+  border-radius: 50%;
+  transition: var(--trans-props);
 }
 
 .social-icon.twitter:after {
-	background-color: #1da1f2;
+  background-color: #1da1f2;
 }
 
 .social-icon.github:after {
-	background-color: #24292e;
+  background-color: #24292e;
 }
 
 .social-icon.linkedin:after {
-	background-color: #0e76a8;
+  background-color: #0e76a8;
 }
 
 .social-icon.kaggle:after {
-	background-color: #41aff3;
+  background-color: #41aff3;
 }
 
 .social-icon.dribbble:after {
-	background-color: #ea4c89;
+  background-color: #ea4c89;
 }
 
 .social-icon.medium:after {
-	background-color: #00ab6c;
+  background-color: #00ab6c;
 }
 
 /*** Social Icon Animations ***/
 
 .social-icon:hover {
-	transform: translateY(-4px);
-	box-shadow: 0px 4px 12px rgba(0,0,0,0.16);
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
 }
 
 .social-icon:hover i {
-	color: #fff;
+  color: #fff;
 }
 
 .social-icon:hover:after {
-	transform: translate(0) scale(1.2);
+  transform: translate(0) scale(1.2);
 }
 
-a:hover{
-	color: transparent;
+a:hover {
+  color: transparent;
 }
 /* Responsive */
 @media only screen and (max-width: 450px) {
-	.text {
-	  margin-top: 5rem;
-	}
+  .text {
+    margin-top: 5rem;
   }
