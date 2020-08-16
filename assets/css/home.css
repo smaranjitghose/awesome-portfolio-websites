@@ -30,10 +30,10 @@
   display: inline-block;
 }
 .animated-text:after {
-  content: "i";
+  content: ".";
   display: inline-block;
   width: 10px;
-  text-indent: -100px;
+  text-indent: 0;
   /* overflow: hidden; */
   background: #000;
   animation: blink 0.3s infinite alternate;
