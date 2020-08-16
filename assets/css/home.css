@@ -32,10 +32,10 @@
 .animated-text:after {
   content: "i";
   display: inline-block;
-  width: 2px;
+  width: 10px;
   text-indent: -100px;
-  overflow: hidden;
-  background: #aaa;
+  /* overflow: hidden; */
+  background: #000;
   animation: blink 0.3s infinite alternate;
 }
 @keyframes blink {
