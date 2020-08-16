@@ -1,0 +1,5 @@
+use res.sendFile('/fileName.html'); instead of res.render()
+
+for sending file , we used res.sendFile(fullPath) and if you are using other than HTML language then you should have to use res.render().
+
+res.render() for template like ejs, pug etc.
