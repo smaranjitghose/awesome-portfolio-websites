@@ -1,7 +1,7 @@
 //common side navbar call
 
-$(document).ready(function () {
-  $(".sidenav").sidenav();
+$(document).ready(function() {
+    $(".sidenav").sidenav();
 });
 
 //Footer and Navbar
@@ -18,6 +18,8 @@ let header = $(`
         <li><a class="white-text" href="projects.html">Projects</a></li>
         <li><a class="white-text" href="research.html">Research</a></li>
         <li><a class="white-text" href="education.html">Education</a></li>
+        <li><a class="white-text" href="blog.html">Blog</a></li>
+        <button onclick="myFunction()" class="btn">Toggle</button>
     </ul>
 </div>
 </nav>
@@ -28,6 +30,8 @@ let header = $(`
 <li><a href="projects.html">Projects</a></li>
 <li><a href="research.html">Research</a></li>
 <li><a href="education.html">Education</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><button onclick="myFunction()" class="btn">Toggle</button></li>
 </ul>`);
 
 let footer = $(`
@@ -87,7 +91,12 @@ bodyElement.append(footer);
 
 window.dataLayer = window.dataLayer || []; // Fetch all the data elements from the data layer for the entire window or something particular (By default left blank)
 function gtag() {
-  dataLayer.push(arguments);
+    dataLayer.push(arguments);
 } // Check for all the elements and send it back
 gtag("js", new Date()); // Written in JS, Date of checking
 gtag("config", "UA-167979537-2"); // Unique ID of our property
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
