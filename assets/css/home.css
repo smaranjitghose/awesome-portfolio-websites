@@ -32,12 +32,12 @@
   display: inline-block;
 }
 .animated-text:after {
-  content: "i";
+  content: ".";
   display: inline-block;
-  width: 2px;
-  text-indent: -100px;
-  overflow: hidden;
-  background: #aaa;
+  width: 10px;
+  text-indent: 0;
+  /* overflow: hidden; */
+  background: #000;
   animation: blink 0.3s infinite alternate;
 }
 @keyframes blink {
