@@ -15,7 +15,7 @@ We want to make contributing to this project as easy and transparent as possible
 **2.**  Clone the forked repository.
 
 ```
-git clone --depth 1 https://github.com/<your_user_name>/wesome-portfolio-websites.git
+git clone --depth 1 https://github.com/<your_user_name>/awesome-portfolio-websites.git
 ```
 
    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5N0HJ9db7jSvcL4dsDscZQBzqQqqKVs0BnO1OVz26glLWKJRY&usqp=CAU" width="300">
@@ -23,13 +23,13 @@ git clone --depth 1 https://github.com/<your_user_name>/wesome-portfolio-website
 **3.** Navigate to the project directory.
 
 ```
-cd girlscript_chennai_website
+cd awesome_portfolio_websites
 ```
 
 **4.** Add a reference to the original repository.
 
 ```
-git remote add upstream https://github.com/smaranjitghose/wesome-portfolio-websites.git
+git remote add upstream https://github.com/smaranjitghose/awesome-portfolio-websites.git
 ```
 
 **5.** See changes using
