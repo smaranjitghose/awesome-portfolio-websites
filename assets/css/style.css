@@ -55,6 +55,15 @@ p {
   margin-top: 20px;
   margin-bottom: 15px;
 }
+
+@media(min-width: 60rem)
+{
+  .webintern-footer .webintern-footer-inner .simple-text p {
+    margin-left: -220px;
+    margin-right: -220px;
+  }
+}
+
 .simple-text p {
   font-size: 15px;
   color: #42435d;
@@ -63,6 +72,14 @@ p {
   line-height: 26px;
   margin-bottom: 0;
 }
+
+@media(min-width: 60rem)
+{
+  .simple-text p{
+    font-size: 26px;
+  }
+}
+
 .footer-2 {
   float: right;
   margin-right: 0px;

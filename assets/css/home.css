@@ -54,6 +54,8 @@
 :root {
   --link-size: 64px;
   --trans-props: all 0.3s ease;
+  --link-size-footer-b: 40px;
+  --link-size-footer-s: 30px;
 }
 
 .social-icons {
@@ -141,5 +143,51 @@ a:hover {
 @media only screen and (max-width: 450px) {
   .text {
     margin-top: 5rem;
+  }
+}
+
+/*social icons footer*/
+
+.social-icons-footer {
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.social-icon-footer {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size-footer-s);
+  height: var(--link-size-footer-s);
+  margin: 3px;
+  background-color: #26a69a;
+  border-radius: 50%;
+  text-decoration: none;
+  float: left;
+}
+
+.social-icon-footer i {
+  margin: auto;
+  font-size: 20px;
+  color: #fff;
+}
+
+.social-icon-footer:hover i {
+  color: #000000;
+}
+
+@media(min-width: 60rem)
+{
+  .social-icons-footer{
+    margin-left: -56px;
+    margin-right: -60px;
+  }
+
+  .social-icon-footer{
+    width: var(--link-size-footer-b);
+    height: var(--link-size-footer-b);
   }
 }
