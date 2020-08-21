@@ -37,7 +37,15 @@ p {
 /*Footer*/
 
 .webintern-footer {
-	background: #252566;
+	background: #040b14;
+  }
+
+  .webintern-footer .webintern-footer-social-links{
+	font-size: 20px;
+	align-items: center;
+	justify-content: center;
+	margin-left: -40px;
+	margin-right: -40px;
   }
   
   .webintern-footer-inner {
@@ -50,15 +58,14 @@ p {
   }
   
   .webintern-footer .webintern-footer-inner .simple-text p {
-	color: #fff;
+	color: #26A69A;
 	margin-top: 20px;
 	margin-bottom: 15px;
   }
   .simple-text p {
-	font-size: 15px;
-	color: #42435d;
+	font-size: 20px;
 	font-family: "Open Sans", sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 26px;
 	margin-bottom: 0;
   }
@@ -72,10 +79,10 @@ p {
 	margin-bottom: 25px;
   }
   .webintern_footer_title small {
-	font-family: "Work Sans", sans-serif;
+	font-family: "work Sans", sans-serif;
 	color: #fff;
-	font-weight: 700;
-	font-size: 15px;
+	font-weight: 500;
+	font-size: 20px;
 	text-transform: uppercase;
   }
   .webintern_footer_title:after {
@@ -86,7 +93,6 @@ p {
 	background: #26A69A;
 	margin-top: 15px;
   }
-
   .contact-form #exampleInputEmail1{
 	 background-color: #fff;
 	 padding:.375rem .75rem;

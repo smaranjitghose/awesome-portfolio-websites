@@ -52,6 +52,8 @@
 :root {
 	--link-size: 64px; 
 	--trans-props: all 0.3s ease;
+	--link-size-footer-b: 40px;
+	--link-size-footer-s: 30px;
 }
 
 .social-icons {
@@ -141,3 +143,112 @@ a:hover{
 	  margin-top: 5rem;
 	}
   }
+
+
+
+
+
+
+/*issue improvement*/
+/* added for the footer*/
+/*social icons footer*/
+.social-icon-footer {
+	font-size: 20px;
+	align-items: center;
+	justify-content: center;
+	margin-left: -40px;
+	margin-right: -40px;
+  }
+  
+  .social-icon-footer {
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	width: var(--link-size-footer-s);
+	height: var(--link-size-footer-s);
+	margin: 3px;
+	background-color: #040b14;
+	border-radius: 50%;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.18);
+	text-decoration: none;
+	float: left;
+	transition: var(--trans-props);
+  }
+  
+  .social-icon-footer i {
+	margin: auto;
+	font-size: 20px;
+	color: #fff;
+	z-index: 1;
+	transition: var(--trans-props);
+  }
+  .social-icon-footer:after {
+	content: "";
+	width: var(--link-size);
+	height: var(--link-size);
+	position: absolute;
+	transform: translate(0, var(--link-size));
+	border-radius: 50%;
+	transition: var(--trans-props);
+}
+
+.social-icon-footer:after {
+	background-color: #1da1f2;
+}
+
+.social-icon-footer.github:after {
+	background-color: #24292e;
+}
+
+.social-icon-footer.linkedin:after {
+	background-color: #0e76a8;
+}
+
+.social-icon-footer.twitter:after {
+	background-color: #41aff3;
+}
+
+.social-icon-footer.dribbble:after {
+	background-color: #ea4c89;
+}
+
+.social-icon-footer.medium:after {
+	background-color: #00ab6c;
+}
+
+/*** Social Icon Animations ***/
+.social-icon-footer:hover {
+	transform: translateY(-4px);
+	box-shadow: 0px 4px 12px rgba(0,0,0,0.16);
+}
+
+.social-icon-footer:hover i {
+	color: #fff;
+}
+
+.social-icon-footer:hover:after {
+	transform: translate(0) scale(1.2);
+}
+
+a:hover{
+	color: transparent;
+}
+/* Responsive */
+@media only screen and (max-width: 450px) {
+	.text {
+	  margin-top: 5rem;
+	}
+  }
+  @media(min-width: 60rem)
+  {
+	.social-icons-footer{
+	  margin-left: -56px;
+	  margin-right: -60px;
+	}
+  
+	.social-icon-footer{
+	  width: var(--link-size-footer-b);
+	  height: var(--link-size-footer-b);
+	}
+  } 
+  /* issue improvement added footer end*/
