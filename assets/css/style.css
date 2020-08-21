@@ -2,42 +2,43 @@ body {
 	height: 100vh;
 	margin: 0;
 	color: #191919;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	background-color: #ffffff;
-}
-
-/* NAVBAR*/
-
-.nav-wrapper a:hover , .sidenav a:hover {
+  }
+  
+  /* NAVBAR*/
+  
+  .nav-wrapper a:hover,
+  .sidenav a:hover {
 	text-decoration: none;
-}
-
-.nav-wrapper a{
+  }
+  
+  .nav-wrapper a {
 	font-weight: bold;
-}
-
-.sidenav-trigger{
+  }
+  
+  .sidenav-trigger {
 	margin-left: 0px !important;
-}
-
-.brand-logo img{
+  }
+  
+  .brand-logo img {
 	width: 200px;
-}
-
-h1,
-p {
+  }
+  
+  h1,
+  p {
 	display: inline-block;
 	line-height: 1;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	margin: 20px 0;
 	font-weight: 300;
 	font-size: 18px;
-}
-
-/*Footer*/
-
-.webintern-footer {
-	background: #252566;
+  }
+  
+  /*Footer*/
+  
+  .webintern-footer {
+	background: #000000;
   }
   
   .webintern-footer-inner {
@@ -54,6 +55,15 @@ p {
 	margin-top: 20px;
 	margin-bottom: 15px;
   }
+  
+  @media(min-width: 60rem)
+  {
+	.webintern-footer .webintern-footer-inner .simple-text p {
+	  margin-left: -220px;
+	  margin-right: -220px;
+	}
+  }
+  
   .simple-text p {
 	font-size: 15px;
 	color: #42435d;
@@ -62,10 +72,17 @@ p {
 	line-height: 26px;
 	margin-bottom: 0;
   }
-  .footer-2 {
-	float:right;
-	margin-right:0px;;
   
+  @media(min-width: 60rem)
+  {
+	.simple-text p{
+	  font-size: 26px;
+	}
+  }
+  
+  .footer-2 {
+	float: right;
+	margin-right: 0px;
   }
   .webintern_footer_title {
 	margin-top: 0px;
@@ -74,26 +91,19 @@ p {
   .webintern_footer_title small {
 	font-family: "Work Sans", sans-serif;
 	color: #fff;
-	font-weight: 500;
+	font-weight: 700;
 	font-size: 15px;
 	text-transform: uppercase;
-	font-size: 20px;
-	letter-spacing: 1px;
   }
   .webintern_footer_title:after {
 	content: "";
 	display: block;
-	width: 10rem;
+	width: 8rem;
 	height: 2px;
-	background: #26A69A;
-	margin-top: 10px;
-	transition: all 1s ease;
+	background: #26a69a;
+	margin-top: 15px;
   }
-
-  .webintern_footer_title:hover::after{
-	  width: 22.5rem;
-  }
-
+  
   .contact-form #exampleInputEmail1{
 	 background-color: #fff;
 	 padding:.375rem .75rem;
