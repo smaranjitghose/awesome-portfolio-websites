@@ -152,8 +152,9 @@ a:hover {
   font-size: 20px;
   align-items: center;
   justify-content: center;
-  margin-left: -40px;
-  margin-right: -40px;
+  flex-flow: row wrap;
+  width: 220px;
+  display: block;
 }
 
 .social-icon-footer {
@@ -179,15 +180,31 @@ a:hover {
   color: #000000;
 }
 
+/*Responsive*/
+
 @media(min-width: 60rem)
 {
   .social-icons-footer{
-    margin-left: -56px;
-    margin-right: -60px;
+    width: 280px;
   }
 
   .social-icon-footer{
     width: var(--link-size-footer-b);
     height: var(--link-size-footer-b);
   }
+}
+
+/*Animations*/
+
+.social-icon-footer:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px rgb(100, 248, 233);
+}
+
+.social-icon:hover:after {
+  transform: translate(0) scale(1.2);
+}
+
+a:hover {
+  color: transparent;
 }

@@ -54,14 +54,8 @@ p {
   color: #fff;
   margin-top: 20px;
   margin-bottom: 15px;
-}
-
-@media(min-width: 60rem)
-{
-  .webintern-footer .webintern-footer-inner .simple-text p {
-    margin-left: -220px;
-    margin-right: -220px;
-  }
+  display: block;
+  width: 220px;
 }
 
 .simple-text p {
@@ -71,13 +65,6 @@ p {
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 0;
-}
-
-@media(min-width: 60rem)
-{
-  .simple-text p{
-    font-size: 26px;
-  }
 }
 
 .footer-2 {
@@ -118,4 +105,18 @@ p {
   color: #fff;
   padding: 10px 0;
   font-family: "Open Sans", sans-serif;
+}
+
+/*Responsive*/
+
+@media(min-width: 60rem)
+{
+  .simple-text p{
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .webintern-footer .webintern-footer-inner .simple-text p{
+    width: 280px;
+  }
 }
