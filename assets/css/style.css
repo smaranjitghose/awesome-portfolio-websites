@@ -56,14 +56,6 @@ body {
 	margin-bottom: 15px;
   }
   
-  @media(min-width: 60rem)
-  {
-	.webintern-footer .webintern-footer-inner .simple-text p {
-	  margin-left: -220px;
-	  margin-right: -220px;
-	}
-  }
-  
   .simple-text p {
 	font-size: 15px;
 	color: #42435d;
