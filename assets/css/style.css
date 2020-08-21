@@ -1,54 +1,125 @@
 body {
-  height: 100vh;
-  margin: 0;
-  color: #191919;
-  font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
-}
+	height: 100vh;
+	margin: 0;
+	color: #191919;
+	font-family: "Poppins", sans-serif;
+	background-color: #ffffff;
+  }
+  
+  /* NAVBAR*/
+  
+  .nav-wrapper a:hover,
+  .sidenav a:hover {
+	text-decoration: none;
+  }
+  
+  .nav-wrapper a {
+	font-weight: bold;
+  }
+  
+  .sidenav-trigger {
+	margin-left: 0px !important;
+  }
+  
+  .brand-logo img {
+	width: 200px;
+  }
+  
+  h1,
+  p {
+	display: inline-block;
+	line-height: 1;
+	font-family: "Poppins", sans-serif;
+	margin: 20px 0;
+	font-weight: 300;
+	font-size: 18px;
+  }
+  
+  /*Footer*/
+  
+  .webintern-footer {
+	background: #000000;
+  }
+  
+  .webintern-footer-inner {
+	padding-top: 30px;
+	padding-bottom: 10px;
+  }
+  
+  .webintern-footer-logo {
+	display: inline-block;
+  }
+  
+  .webintern-footer .webintern-footer-inner .simple-text p {
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 15px;
+  }
+  
+  @media(min-width: 60rem)
+  {
+	.webintern-footer .webintern-footer-inner .simple-text p {
+	  margin-left: -220px;
+	  margin-right: -220px;
+	}
+  }
+  
+  .simple-text p {
+	font-size: 15px;
+	color: #42435d;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	line-height: 26px;
+	margin-bottom: 0;
+  }
+  
+  @media(min-width: 60rem)
+  {
+	.simple-text p{
+	  font-size: 26px;
+	}
+  }
+  
+  .footer-2 {
+	float: right;
+	margin-right: 0px;
+  }
+  .webintern_footer_title {
+	margin-top: 0px;
+	margin-bottom: 25px;
+  }
+  .webintern_footer_title small {
+	font-family: "Work Sans", sans-serif;
+	color: #fff;
+	font-weight: 700;
+	font-size: 15px;
+	text-transform: uppercase;
+  }
+  .webintern_footer_title:after {
+	content: "";
+	display: block;
+	width: 8rem;
+	height: 2px;
+	background: #26a69a;
+	margin-top: 15px;
+  }
+  
+  .contact-form #exampleInputEmail1{
+	 background-color: #fff;
+	 padding:.375rem .75rem;
+	 height: 2rem;
+	 width: 93%;
+	 font-size: 15px;
+	 border-radius: 2px;
+  }
 
-/* NAVBAR*/
-
-.nav-wrapper a:hover,
-.sidenav a:hover {
-  text-decoration: none;
-}
-
-.nav-wrapper a {
-  font-weight: bold;
-}
-
-.sidenav-trigger {
-  margin-left: 0px !important;
-}
-
-.brand-logo img {
-  width: 200px;
-}
-
-h1,
-p {
-  display: inline-block;
-  line-height: 1;
-  font-family: "Poppins", sans-serif;
-  margin: 20px 0;
-  font-weight: 300;
-  font-size: 18px;
-}
-
-/*Footer*/
-
-.webintern-footer {
-  background: #000000;
-}
-
-.webintern-footer-inner {
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-.webintern-footer-logo {
-  display: inline-block;
-}
+  .form-control:focus{
+    box-shadow: none;
+    border-bottom: 2px solid #26A69A ;
+  }
+  .form-group{
+	  padding-left : 0px;
+  }
 
 .webintern-footer .webintern-footer-inner .simple-text p {
   color: #fff;
@@ -120,3 +191,53 @@ p {
     width: 280px;
   }
 }
+
+  .send-btn{
+	  padding-top: 8px 5px 8px 5px;
+	  font-size: 15px;
+	  transition-property: font-size,;
+	  transition: all .5s ease;
+	  outline: none;
+
+  }
+	.send-btn:hover{
+		background-color: #0dfde5;
+		font-size: 18px;
+	}
+
+	.btn:focus,.btn:active {
+		outline: none !important;
+		box-shadow: none;
+		background-color: #26A69A;
+		color: #fff;
+	 }
+	
+	.form-group:focus{
+		border: 3px solid black;
+	}
+
+.tt-copy {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 20px;
+	color: #fff;
+	padding: 10px 0;
+	font-family: "Open Sans", sans-serif;
+	letter-spacing: 2px;
+  }
+
+  .text-animation{
+	  animation: text 3s 1;
+  }
+
+  @keyframes text{
+	  0%{
+		  	letter-spacing: 0px;
+	  }
+	  50%{
+		  letter-spacing: 20px;
+	  }
+	  100%{
+		  letter-spacing: 2px;
+	  }
+  }
