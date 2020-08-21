@@ -7,17 +7,17 @@ $(document).ready(function () {
 //Footer and Navbar
 
 let header = $(`
-<nav class="white">
+<nav class="black">
 <div class="nav-wrapper container">
-    <a href="#!" class="brand-logo"><img src="assets/images/John-Doe.png"></a>
-    <a href="#" data-target="mobile-demo" class="black-text sidenav-trigger"><i
+    <a href="#!" class="brand-logo"><img src="assets/images/John-Doe1.png"></a>
+    <a href="#" data-target="mobile-demo" class="white-text sidenav-trigger"><i
             class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-        <li><a class="black-text" href="index.html">Home</a></li>
-        <li><a class="black-text" href="experience.html">Experience</a></li>
-        <li><a class="black-text" href="projects.html">Projects</a></li>
-        <li><a class="black-text" href="research.html">Research</a></li>
-        <li><a class="black-text" href="education.html">Education</a></li>
+        <li><a class="white-text" href="index.html">Home</a></li>
+        <li><a class="white-text" href="experience.html">Experience</a></li>
+        <li><a class="white-text" href="projects.html">Projects</a></li>
+        <li><a class="white-text" href="research.html">Research</a></li>
+        <li><a class="white-text" href="education.html">Education</a></li>
     </ul>
 </div>
 </nav>
@@ -28,7 +28,7 @@ let header = $(`
 <li><a href="projects.html">Projects</a></li>
 <li><a href="research.html">Research</a></li>
 <li><a href="education.html">Education</a></li>
-</ul>`)
+</ul>`);
 
 let footer = $(`
 <footer class="webintern-footer">
@@ -45,6 +45,35 @@ let footer = $(`
             "Develop a passion for learning. If you do, you will never cease to grow."
           </p>
         </div>
+
+        <div class="social-icons-footer">
+
+        <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a class="social-icon-footer dribbble" href="" target="_blank" rel="author">
+            <i class="fab fa-dribbble"></i>
+        </a>
+
+        <a class="social-icon-footer linkedin" href="" target="_blank" rel="author">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a class="social-icon-footer medium" href="" target="_blank" rel="author">
+            <i class="fab fa-medium-m"></i>
+        </a>
+
+        <a class="social-icon-footer kaggle" href="" target="_blank" rel="author">
+            <i class="fab fa-kaggle"></i>
+        </a>
+
+        <a class="social-icon-footer github" href="" target="_blank" rel="author">
+            <i class="fab fa-github"></i>
+        </a>
+
+    </div>
+
         <div class="empty-space xs-25 sm-25"></div>
       </div>
     </div>
@@ -80,18 +109,8 @@ let footer = $(`
     <center class="text-animation">Made with <i class="fa fa-heart" style="color: red;"></i></center>
   </div>
 </div>
-</footer>`);  
+</footer>`);
 let bodyElement = $(`body`);
 bodyElement.prepend(header);
 bodyElement.append(footer);
-
-
-//  Google Analytics
-
-window.dataLayer = window.dataLayer || []; // Fetch all the data elements from the data layer for the entire window or something particular (By default left blank)
-function gtag() {
-  dataLayer.push(arguments);
-} // Check for all the elements and send it back
-gtag("js", new Date()); // Written in JS, Date of checking
-gtag("config", "UA-167979537-2"); // Unique ID of our property
 
