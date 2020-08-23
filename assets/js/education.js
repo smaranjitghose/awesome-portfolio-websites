@@ -4,18 +4,18 @@ const moocs = document.querySelector(".moocs");
 const moocscards = [
   {
     title: "Data Science",
-    cardImage: "assets/images/education-page/coursera-logo-square.jpg",
-    moocLink: "#!",
+    cardImage: "assets/images/education-page/coursera.png",
+    moocLink: "https://www.coursera.org/browse/data-science",
   },
   {
     title: "Cryptography",
-    cardImage: "assets/images/education-page/download.png",
-    moocLink: "#!",
+    cardImage: "assets/images/education-page/udemy.png",
+    moocLink: "https://www.udemy.com/course/cryptography-for-beginners/",
   },
   {
     title: "Machine Learning",
-    cardImage: "assets/images/education-page/coursera-logo-square.jpg",
-    moocLink: "#!",
+    cardImage: "assets/images/education-page/coursera.png",
+    moocLink: "https://www.coursera.org/learn/machine-learning",
   },
 ];
 
