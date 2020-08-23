@@ -1,0 +1,71 @@
+/* For dark mode just replace the class name with your div element's class name in the code snippet given below
+  Use this code snippet to edit:
+
+  [data-theme="dark"] .class-name {
+  background-color: #333;
+}
+
+
+*/
+
+[data-theme="dark"] {
+  background-color:#202020 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .nav-link, [data-theme="dark"] .navbar-brand{
+  color: white !important;
+}
+
+
+[data-theme="dark"] .bg-light {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #000000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
+
+[data-theme="dark"] .jumbotron {
+  background-color: #111;
+}
+
+[data-theme="dark"] .card-header{
+  background-color: #111;
+}
+[data-theme="dark"] .card-footer {
+  background-color: #111;
+}
+[data-theme="dark"] .card-body{
+  background-color: #414141;
+}
+
+[data-theme="dark"] .link-text{
+  color: white;
+}
+
+[data-theme="dark"] .nav-item:hover{
+    background-color: #525252;
+}
+[data-theme="dark"] .experience{
+  color: white;
+}
+[data-theme="dark"] .work-experience{
+  color: white;
+}
+[data-theme="dark"] .title{
+  color: white;
+}
+[data-theme="dark"] .preheading{
+  color: #D3D3D3;
+}
+[data-theme="dark"] .author{
+  color: #F5F5F5;
+}
+[data-theme="dark"] .list-group-item{
+  color:#000000;
+}
