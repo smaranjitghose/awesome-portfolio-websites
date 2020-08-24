@@ -1,3 +1,6 @@
+
+
+
 body {
 	height: 100vh;
 	margin: 0;
@@ -6,6 +9,37 @@ body {
 	background-color: #ffffff;
   }
   
+
+  /* Top button */
+
+  /* smooth scrolling to top */
+html{
+	scroll-behavior: smooth;  
+}
+
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+	padding: 13px 15px 15px 15px;
+	border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+	background-color:#26A69A;
+  }
+
+
+
   /* NAVBAR*/
   
   .nav-wrapper a:hover,
@@ -111,6 +145,7 @@ body {
 	 width: 93%;
 	 font-size: 15px;
 	 border-radius: 2px;
+	 margin-bottom: 0px;
   }
 
   .form-control:focus{
@@ -127,7 +162,6 @@ body {
 	  transition-property: font-size,;
 	  transition: all .5s ease;
 	  outline: none;
-
   }
 	.send-btn:hover{
 		background-color: #0dfde5;
