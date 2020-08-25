@@ -288,3 +288,57 @@ html {
 .page-content .card:focus-within .content > *:not(.title) {
   transition-duration: 0s;
 }
+
+
+
+
+/* Card Design for research */
+
+
+
+.experience-card .row {
+  padding-left: 50px;
+  display: inline-block;
+  justify-content: center;
+  align-content: center;
+}
+
+.card{
+  height: 650px;
+  width: 350px;
+  /* background-color: black; */
+  color: black;
+  margin: 0px;
+}
+.card .card-title{
+  padding-left: 10px;
+  margin:0px;
+  font-size: 28px;
+  font-weight: bolder;
+}
+.card .meta{
+  padding-top: 15px;
+  padding-left: 10px;
+  margin: 0px;
+  font-size: 20px;
+  font-weight: medium;
+}
+
+.card-text{
+  padding-left: 10px;
+}
+
+.card .view .img-fluid{
+  height: 250px;
+  width: 100%;
+  padding : 30px 30px 0px 30px;
+  transition:.2s  ease;
+  text-align: center;
+}
+
+.card .img-fluid:hover{
+  padding: 0px;
+  width: 100%;
+}
+
+
