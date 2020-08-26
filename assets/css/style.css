@@ -1,9 +1,21 @@
+/*Declaration of CSS variables for light/dark theme*/
+
+html[data-theme='light']{
+  --bg: #ffffff;
+  --text: #191919;
+}
+
+html[data-theme='dark']{
+  --bg: #191919;
+  --text: #ffffff;
+}
+
 body {
 	height: 100vh;
 	margin: 0;
-	color: #191919;
+	color:  var(--text);
 	font-family: "Poppins", sans-serif;
-	background-color: #ffffff;
+	background-color: var(--bg);
   }
   
   /* NAVBAR*/
@@ -33,6 +45,37 @@ body {
 	margin: 20px 0;
 	font-weight: 300;
 	font-size: 18px;
+  }
+
+  /*Toggle for light/dark mode for side nav bar*/
+
+  .side-toggle{
+    margin-left: 1.5em;
+  }
+
+  .side-toggle label{
+    width: 30px;
+    height: 20px;
+    border-radius: 30px;
+  }
+
+  .side-toggle label:after{
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+  }
+
+  .side-toggle input:checked + label {
+    background: rgb(63, 25, 170);
+  }
+
+  .side-toggle input:checked + label:after {
+    left: calc(100% - 8px);
+    transform: translateX(-100%);
+  }
+
+  .side-toggle label:active:after {
+    width: 130px;
   }
   
   /*Footer*/
