@@ -1,11 +1,13 @@
 /* Particle effect*/
 
+#home,
 #particles-js {
   position: relative;
   height: 100vh;
   width: 100%;
 }
 .section {
+  background-color: rgb(63, 25, 170);
   justify-content: center;
   align-items: center;
 }
@@ -30,12 +32,12 @@
   display: inline-block;
 }
 .animated-text:after {
-  content: "i";
+  content: ".";
   display: inline-block;
-  width: 2px;
-  text-indent: -100px;
-  overflow: hidden;
-  background: #aaa;
+  width: 10px;
+  text-indent: 0;
+  /* overflow: hidden; */
+  background: #000;
   animation: blink 0.3s infinite alternate;
 }
 @keyframes blink {
@@ -52,6 +54,8 @@
 :root {
   --link-size: 64px;
   --trans-props: all 0.3s ease;
+  --link-size-footer-b: 40px;
+  --link-size-footer-s: 30px;
 }
 
 .social-icons {
@@ -63,17 +67,17 @@
 }
 
 .social-icon {
-	display: flex;
-	position: relative;
-	overflow: hidden;
-	width: var(--link-size);
-	height: var(--link-size);
-	margin: 8px;
-	background-color: white;
-	border-radius: 50%;
-	box-shadow: 0px 1px 3px rgba(0,0,0,0.18);
-	text-decoration: none;
-	transition: var(--trans-props);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  margin: 8px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+  text-decoration: none;
+  transition: var(--trans-props);
 }
 .social-icon i {
   margin: auto;
@@ -140,3 +144,50 @@ a:hover {
   .text {
     margin-top: 5rem;
   }
+}
+
+/*social icons footer*/
+
+.social-icons-footer {
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.social-icon-footer {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size-footer-s);
+  height: var(--link-size-footer-s);
+  margin: 3px;
+  background-color: #26a69a;
+  border-radius: 50%;
+  text-decoration: none;
+  float: left;
+}
+
+.social-icon-footer i {
+  margin: auto;
+  font-size: 20px;
+  color: #fff;
+}
+
+.social-icon-footer:hover i {
+  color: #000000;
+}
+
+@media(min-width: 60rem)
+{
+  .social-icons-footer{
+    margin-left: -56px;
+    margin-right: -60px;
+  }
+
+  .social-icon-footer{
+    width: var(--link-size-footer-b);
+    height: var(--link-size-footer-b);
+  }
+}
