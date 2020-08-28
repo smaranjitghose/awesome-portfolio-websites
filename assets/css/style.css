@@ -1,12 +1,21 @@
+/*Declaration of CSS variables for light/dark theme*/
 
+html[data-theme='light']{
+  --bg: #ffffff;
+  --text: #191919;
+}
 
+html[data-theme='dark']{
+  --bg: #191919;
+  --text: #ffffff;
+}
 
 body {
 	height: 100vh;
 	margin: 0;
-	color: #191919;
+	color:  var(--text);
 	font-family: "Poppins", sans-serif;
-	background-color: #ffffff;
+	background-color: var(--bg);
   }
   
 
@@ -68,6 +77,37 @@ html{
 	font-weight: 300;
 	font-size: 18px;
   }
+
+  /*Toggle for light/dark mode for side nav bar*/
+
+  .side-toggle{
+    margin-left: 1.5em;
+  }
+
+  .side-toggle label{
+    width: 30px;
+    height: 20px;
+    border-radius: 30px;
+  }
+
+  .side-toggle label:after{
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+  }
+
+  .side-toggle input:checked + label {
+    background: rgb(63, 25, 170);
+  }
+
+  .side-toggle input:checked + label:after {
+    left: calc(100% - 8px);
+    transform: translateX(-100%);
+  }
+
+  .side-toggle label:active:after {
+    width: 130px;
+  }
   
   /*Footer*/
   
@@ -88,14 +128,6 @@ html{
 	color: #fff;
 	margin-top: 20px;
 	margin-bottom: 15px;
-  }
-  
-  @media(min-width: 60rem)
-  {
-	.webintern-footer .webintern-footer-inner .simple-text p {
-	  margin-left: -220px;
-	  margin-right: -220px;
-	}
   }
   
   .simple-text p {
@@ -156,6 +188,77 @@ html{
 	  padding-left : 0px;
   }
 
+.webintern-footer .webintern-footer-inner .simple-text p {
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: block;
+  width: 220px;
+}
+
+.simple-text p {
+  font-size: 15px;
+  color: #42435d;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.footer-2 {
+  float: right;
+  margin-right: 0px;
+}
+.webintern_footer_title {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+.webintern_footer_title small {
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.webintern_footer_title:after {
+  content: "";
+  display: block;
+  width: 8rem;
+  height: 2px;
+  background: #26a69a;
+  margin-top: 15px;
+}
+
+.contact-form #exampleInputEmail1 {
+  background-color: #fff;
+  padding: 0.375rem 0.75rem;
+  height: 2rem;
+  width: 93%;
+  font-size: 15px;
+  border-radius: 2px;
+}
+.tt-copy {
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  padding: 10px 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*Responsive*/
+
+@media(min-width: 60rem)
+{
+  .simple-text p{
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .webintern-footer .webintern-footer-inner .simple-text p{
+    width: 280px;
+  }
+}
+
   .send-btn{
 	  padding-top: 8px 5px 8px 5px;
 	  font-size: 15px;
@@ -204,3 +307,4 @@ html{
 		  letter-spacing: 2px;
 	  }
   }
+  

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <title>John Doe | Home</title>
@@ -48,7 +48,6 @@
         <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
       </svg>
     </button>
-
 
     <!--Parallax effect-->
     <div class="parallax-container" id="home">
@@ -147,6 +146,30 @@
     <script type="text/javascript" src="assets/js/materialize.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
     <script src="assets/js/particle.js"></script>
-</body>
 
+    <!--JavaScript for toggle at Home Page-->
+    <script>
+        var checkbox = document.querySelector('input[name=theme]');
+
+        checkbox.addEventListener('change',function(){
+            //If the checkbox is checked, change to dark theme.
+            if(this.checked){
+                trans()
+                document.documentElement.setAttribute('data-theme', 'dark')         
+            }
+            //If the checkbox is not checked, apply light theme.
+            else{
+                trans()
+                document.documentElement.setAttribute('data-theme', 'light')
+            }
+        })
+        //Function for transition effect of toggle.
+        let trans = () =>{
+            document.documentElement.classList.add('transition');
+            window.setTimeout( () => {
+                document.documentElement.classList.remove('transition');
+            },1000)  
+        }
+    </script>
+</body>
 </html>

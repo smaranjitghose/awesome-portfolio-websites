@@ -39,8 +39,13 @@ let header = $(`
         <li><a class="white-text" href="projects.html">Projects</a></li>
         <li><a class="white-text" href="research.html">Research</a></li>
         <li><a class="white-text" href="education.html">Education</a></li>
+        <!--Toggle for light/dark mode-->
+          <li class="toggle-container">
+            <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
+          </li>
     </ul>
 </div>
+
 </nav>
 <!--Side Nav Bar -->
 <ul class="sidenav" id="mobile-demo">
@@ -49,6 +54,10 @@ let header = $(`
 <li><a href="projects.html">Projects</a></li>
 <li><a href="research.html">Research</a></li>
 <li><a href="education.html">Education</a></li>
+<!--Toggle for light/dark mode-->
+<li class="toggle-container side-toggle">
+  <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
+</li>
 </ul>`);
 
 let footer = $(`
@@ -67,33 +76,27 @@ let footer = $(`
           </p>
         </div>
 
-        <div class="social-icons-footer">
-
-        <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
-            <i class="fab fa-twitter"></i>
-        </a>
-
-        <a class="social-icon-footer dribbble" href="" target="_blank" rel="author">
-            <i class="fab fa-dribbble"></i>
-        </a>
-
-        <a class="social-icon-footer linkedin" href="" target="_blank" rel="author">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-
-        <a class="social-icon-footer medium" href="" target="_blank" rel="author">
-            <i class="fab fa-medium-m"></i>
-        </a>
-
-        <a class="social-icon-footer kaggle" href="" target="_blank" rel="author">
-            <i class="fab fa-kaggle"></i>
-        </a>
-
-        <a class="social-icon-footer github" href="" target="_blank" rel="author">
-            <i class="fab fa-github"></i>
-        </a>
-
-    </div>
+<!-- Social media icons for footer -->
+<div class="social-icons-footer">
+  <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
+    <i class="fab fa-twitter"></i>
+      </a>
+  <a class="social-icon-footer dribbble" href="" target="_blank" rel="author">
+    <i class="fab fa-dribbble"></i>
+      </a>
+  <a class="social-icon-footer linkedin" href="" target="_blank" rel="author">
+    <i class="fab fa-linkedin-in"></i>
+      </a>
+  <a class="social-icon-footer medium" href="" target="_blank" rel="author">
+    <i class="fab fa-medium-m"></i>
+      </a>
+  <a class="social-icon-footer kaggle" href="" target="_blank" rel="author">
+    <i class="fab fa-kaggle"></i>
+      </a>
+  <a class="social-icon-footer github" href="" target="_blank" rel="author">
+    <i class="fab fa-github"></i>
+      </a>
+</div>
 
         <div class="empty-space xs-25 sm-25"></div>
       </div>
