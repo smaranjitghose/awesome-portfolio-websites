@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact Us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+</head>
+
+<body>
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="assets/images/img-01.png" alt="IMG">
+				<a href="#" target="_blank">
+					<img src="assets/images/logos/linkedin.png" width="40" />
+				</a>
+				<a href="#" target="_blank">
+					<img src="assets/images/logos/github-logo.png" width="40" />
+				</a>
+				<a href="#" target="_blank">
+					<img src="assets/images/logos/facebook.png" width="40" />
+				</a>
+				<a href="#" target="_blank">
+					<img src="assets/images/logos/mail.png" width="40" />
+				</a>
+				<a href="#" target="_blank">
+					<img src="assets/images/logos/twitter.png" width="40" />
+				</a>
+				<a href="#" target="_blank">
+					<img src="assets/images/logos/instagram.png" width="40" />
+				</a>
+			</div>
+
+			<form class="contact1-form validate-form">
+				<span class="contact1-form-title">
+					Get in touch
+				</span>
+
+				<div class="wrap-input1 validate-input" data-validate="Name is required">
+					<input class="input1" type="text" name="name" placeholder="Name">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate="Phone is required">
+					<input class="input1" type="text" name="phone" placeholder="Phone Number">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+					<input class="input1" type="text" name="email" placeholder="Email">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate="Subject is required">
+					<input class="input1" type="text" name="subject" placeholder="Subject">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate="Message is required">
+					<textarea class="input1" name="message" placeholder="Message"></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+	<script>
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+	<script src="assets/js/contact.js"></script>
+
+</body>
+
+</html>
