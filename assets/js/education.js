@@ -4,7 +4,7 @@ const moocs = document.querySelector(".moocs");
 const moocscards = [
   {
     title: "Data Science",
-    cardImage: "assets/images/education-page/coursera.png",
+    cardImage: "assets/images/education-page/coursera1.png",
     moocLink: "https://www.coursera.org/browse/data-science",
   },
   {
@@ -14,7 +14,7 @@ const moocscards = [
   },
   {
     title: "Machine Learning",
-    cardImage: "assets/images/education-page/coursera.png",
+    cardImage: "assets/images/education-page/coursera1.png",
     moocLink: "https://www.coursera.org/learn/machine-learning",
   },
   {
@@ -44,12 +44,12 @@ const moocscards = [
   },
   {
     title: "Intro to React Native",
-    cardImage: "assets/images/education-page/Edx.png",
-    moocLink: "https://www.edx.org/learn/react-native",
+    cardImage: "assets/images/education-page/coursera1.png",
+    moocLink: "https://www.coursera.org/lecture/react-native/introduction-to-react-native-Eax0D",
   },
   {
     title: "NodeJS, Express and MongoDB",
-    cardImage: "assets/images/education-page/coursera.png",
+    cardImage: "assets/images/education-page/coursera1.png",
     moocLink: "https://www.coursera.org/learn/server-side-nodejs",
   },
   {
@@ -69,11 +69,11 @@ const showCards = () => {
   moocscards.forEach(
     ({ title, cardImage,moocLink }) =>
       (output += `        
-        <div class="col-md-3" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">
-            <div class="card mb-3 mx-auto" style="width: 25em;" >
+        <div class="col-6 col-md-3 col-sm-4 " data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600" >
+            <div class="card mb-3 mx-auto">
                <div class="content">
                   <div class="content-overlay"></div>
-                    <img src=${cardImage} class="card-img-top content-image" height=180>     
+                    <img src=${cardImage} class="card-img-top content-image" height="auto">     
                   <div class="content-details fadeIn-bottom">
                     <a href="${moocLink}" target="_blank"><i class="fa fa-info-circle fa-2x" aria-hidden="true" style="color: white;"></i></a>                                   
                   </div>
