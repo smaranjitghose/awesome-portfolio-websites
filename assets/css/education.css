@@ -227,6 +227,8 @@
     0.3s box-shadow,
     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
   cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card:hover {
@@ -238,6 +240,45 @@
   padding:5px;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 160px;
+          height:150px;
+    }
+  }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .card {
+    width:180px;
+          height:160px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card  {
+    width:180px;
+          height:160px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card  {
+    width:230px;
+          height:190px;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .card  {
+    width:280px;
+           height:200px;
+  }
+}
 /*social icons footer*/
 
 .social-icons-footer {
@@ -304,3 +345,4 @@
 a:hover {
   color: transparent;
 }
+
