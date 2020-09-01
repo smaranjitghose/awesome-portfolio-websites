@@ -1,0 +1,295 @@
+.researchMainWrapper {
+    margin: 50px 0 200px;
+    position: relative;
+}
+
+.researchProfileWrapper {
+    position: relative;
+    order: 1;
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+.researchProfilePic {
+    float: left;
+    width: 128px;
+    height: 128px;
+    text-align: center;
+}
+
+.researchProfilePicWrapper {
+    display: block;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    line-height: 0;
+    width: 128px;
+    height: 128px;
+}
+
+.researchProfilePicWrapper img {
+    width: 128px;
+    height: 128px;
+
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.researchProfileAbout {
+    margin: 0 16px 0 160px;
+}
+
+#researchProfileName {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 3px 0 12px 0;
+    word-wrap: break-word;
+    font-weight: 700;
+}
+
+#researchProfileCollege {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 1px 0;
+    font-weight: 600;
+}
+
+.researchAreaLinks {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 1px 0;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.rAreaLinkItem {
+    margin-right: 16px;
+    white-space: nowrap;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: top;
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    border-width: 0;
+    empty-cells: show;
+}
+
+#researchDetailsTable {
+    width: 100%;
+    table-layout: fixed;
+}
+
+#rDetailsHead {
+    z-index: 700;
+    background-color: #f5f5f5;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.researchTitle {
+    font-weight: bold;
+    padding: 16px 16px 0 16px;
+    text-align: left;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.researchTitle span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+.researchTitle span a {
+    padding: 8px 0;
+}
+
+.researchCited {
+    font-weight: bold;
+    text-align: right;
+    padding: 16px 8px 0 8px;
+    width: 64px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.researchYear {
+    font-weight: bold;
+    padding: 16px 16px 0 16px;
+    text-align: right;
+    width: 88px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.researchTitleName {
+    font-weight: bold;
+    padding: 16px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.researchTitleName a {
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+.researchCitedNumber {
+    font-weight: normal;
+    vertical-align: top;
+    text-align: right;
+    padding: 16px 8px 0 8px;
+}
+
+.researchCitedNumber span,
+.researchY span {
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.researchY {
+    font-weight: normal;
+    padding: 16px 16px 0 16px;
+    vertical-align: top;
+    text-align: right;
+}
+
+.resYearDisplay {
+    display: none;
+}
+
+@media only screen and (max-width: 711px) {
+    .researchProfilePic {
+        float: none;
+        width: 100%;
+        margin: 0 0 8px 0;
+    }
+
+    .researchProfilePicWrapper {
+        margin: 0 auto;
+    }
+
+    .researchProfileAbout {
+        margin: 0 16px;
+        text-align: center;
+    }
+
+    #researchProfileName {
+        font-size: 20px;
+        padding: 0 0 2px 0;
+    }
+
+    .researchAreaLinks {
+        font-size: 13px;
+    }
+
+    .researchYear {
+        display: none;
+    }
+
+    .researchY {
+        display: none;
+    }
+
+    .resYearDisplay {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 441px) {
+    .researchTitleName a {
+        font-size: 14px;
+    }
+
+    .researchTitleName div {
+        font-size: 12px;
+    }
+}
+
+ /*social icons footer*/
+
+ .social-icons-footer {
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 220px;
+    display: block;
+  }
+  
+  .social-icon-footer {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: var(--link-size-footer-s);
+    height: var(--link-size-footer-s);
+    margin: 3px;
+    background-color: #26a69a;
+    border-radius: 50%;
+    text-decoration: none;
+    float: left;
+  }
+  
+  .social-icon-footer i {
+    margin: auto;
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  .social-icon-footer:hover i {
+    color: #000000;
+  }
+  
+  /*Responsive*/
+  
+  @media(min-width: 60rem)
+  {
+    .social-icons-footer{
+      width: 280px;
+    }
+  
+    .social-icon-footer{
+      width: var(--link-size-footer-b);
+      height: var(--link-size-footer-b);
+    }
+  
+    .social-icon-footer i{
+      font-size: 20px;
+    }
+  }
+  
+  /*Animations*/
+  
+  .social-icon-footer:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 12px rgb(100, 248, 233);
+  }
+  
+  .social-icon:hover:after {
+    transform: translate(0) scale(1.2);
+  }
+  
+  a:hover {
+    color: transparent;
+  }

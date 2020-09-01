@@ -2,16 +2,18 @@
 name: Bug report
 about: Create a report to help us improve
 title: ''
-labels: 'bug'
+labels: 'bug','CH-20'
 assignees: ''
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+# Description the bug: 
+<!--
+A clear and concise description of what the bug.
+Bullet points are prefered
+-->
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+# Screenshots:
+<!--
+Screenshots of the proposed changes compared with the current version of the project
+-->
 

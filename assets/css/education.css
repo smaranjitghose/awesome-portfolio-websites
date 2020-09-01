@@ -242,31 +242,107 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .card {width: 160px;
-          height:150px;}
+  .card {
+    width: 160px;
+          height:150px;
+    }
   }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .card {width:180px;
-          height:160px;}
+  .card {
+    width:180px;
+          height:160px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .card  {width:180px;
-          height:160px;}
+  .card  {
+    width:180px;
+          height:160px;
+  }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .card  {width:230px;
-          height:190px;}
+  .card  {
+    width:230px;
+          height:190px;
+  }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .card  {width:280px;
-           height:200px;}
+  .card  {
+    width:280px;
+           height:200px;
+  }
+}
+/*social icons footer*/
+
+.social-icons-footer {
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 220px;
+  display: block;
+}
+
+.social-icon-footer {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size-footer-s);
+  height: var(--link-size-footer-s);
+  margin: 3px;
+  background-color: #26a69a;
+  border-radius: 50%;
+  text-decoration: none;
+  float: left;
+}
+
+.social-icon-footer i {
+  margin: auto;
+  font-size: 15px;
+  color: #fff;
+}
+
+.social-icon-footer:hover i {
+  color: #000000;
+}
+
+/*Responsive*/
+
+@media(min-width: 60rem)
+{
+  .social-icons-footer{
+    width: 280px;
+  }
+
+  .social-icon-footer{
+    width: var(--link-size-footer-b);
+    height: var(--link-size-footer-b);
+  }
+
+  .social-icon-footer i{
+    font-size: 20px;
+  }
+}
+
+/*Animations*/
+
+.social-icon-footer:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px rgb(100, 248, 233);
+}
+
+.social-icon:hover:after {
+  transform: translate(0) scale(1.2);
+}
+
+a:hover {
+  color: transparent;
 }
 

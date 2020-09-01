@@ -43,8 +43,18 @@
 
   <!--Dynamic Nav Bar-->
 
-  <div class="container" style="width: 100%;">
-    <section style=" height: 70vh;">
+
+  <!-- button for the top -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"> 
+    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+  </svg>
+</button>
+
+
+
+  <div class="container" style="width: 100%; min-height: 80%;">
+    <section  style=" height: 100vh;">
       <div class="px-3 pt-5">
         <div class="row text-dark">
           <div
@@ -58,14 +68,132 @@
               scrambled it to make a type specimen book.
             </p>
           </div>
+
           <div class="col-md-6" style="margin-top: 10px;">
-            <img class="img-fluid d-block img-fluid d-block  animate__animated animate__zoomIn animate__delay-1s"" src="
+            <img class="img-fluid d-block img-fluid d-block animate__animated animate__zoomIn animate__delay-1s" src="
               ./assets/images/research-page/research.svg">
           </div>
         </div>
       </div>
     </section>
+  </div>
 
+
+  <div class="researchMainWrapper">
+    <div class="container">
+      <div class="researchProfileWrapper">
+        <div class="researhProfile">
+          <div class="researchProfilePic">
+            <div class="researchProfilePicWrapper">
+              <img src="./assets/images/dp.svg" alt="">
+            </div>
+          </div>
+          <div class="researchProfileAbout">
+            <div id="researchProfileName">John Doe</div>
+            <div id="researchProfileCollege">Indian Institute of Technology Madras</div>
+            <div class="researchAreaLinks">
+              <a href="#0" class="rAreaLinkItem">machine learning</a>
+              <a href="#0" class="rAreaLinkItem">computer vision</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="researchDetails">
+        <table id="researchDetailsTable">
+          <thead>
+            <tr id="rDetailsHead">
+              <th class="researchTitle" scope="col">
+                <span>
+                  <div>
+                    Title
+                  </div>
+                </span>
+              </th>
+              <th class="researchCited" scope="col" dir="rtl">
+                <span>
+                  <div>Cited by</div>
+                </span>
+              </th>
+              <th class="researchYear" scope="col">
+                <span>
+                  <div>
+                    Year
+                  </div>
+                </span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="researchTitleName">
+                <a href="#0">CORONA-19 NET: Transfer Learning
+                  Approach for Automatic Classification of
+                  Coronavirus Infections in Chest Radiographs
+                </a>
+                <div>S Sharma, S Ghose, S Datta, C Malathy, M Gayathri, M Prabhakaran</div>
+                <div>International Conference on Image Processing and Capsule Networks,
+                  526-534 <span class="resYearDisplay">, 2020</span>
+                </div>
+              </td>
+              <td class="researchCitedNumber">
+                <span>
+                  1000
+                </span>
+              </td>
+              <td class="researchY">
+                <span>
+                  2020
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td class="researchTitleName">
+                <a href="#0">CORONA-19 NET: Transfer Learning
+                  Approach for Automatic Classification of
+                  Coronavirus Infections in Chest Radiographs
+                </a>
+                <div>S Sharma, S Ghose, S Datta, C Malathy, M Gayathri, M Prabhakaran</div>
+                <div>International Conference on Image Processing and Capsule Networks,
+                  526-534 <span class="resYearDisplay">, 2020</span>
+                </div>
+              </td>
+              <td class="researchCitedNumber">
+                <span>
+                  16000
+                </span>
+              </td>
+              <td class="researchY">
+                <span>
+                  2010
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td class="researchTitleName">
+                <a href="#0">CORONA-19 NET: Transfer Learning
+                  Approach for Automatic Classification of
+                  Coronavirus Infections in Chest Radiographs
+                </a>
+                <div>S Sharma, S Ghose, S Datta, C Malathy, M Gayathri, M Prabhakaran</div>
+                <div>International Conference on Image Processing and Capsule Networks,
+                  526-534 <span class="resYearDisplay">, 2020</span>
+                </div>
+              </td>
+              <td class="researchCitedNumber">
+                <span>
+                  900
+                </span>
+              </td>
+              <td class="researchY">
+                <span>
+                  2009
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 
   <!-- Dynamic footer section -->
