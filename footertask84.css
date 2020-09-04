@@ -1,0 +1,192 @@
+/* STYLING BODY OF WEB PAGE */
+body{
+    font-family: 'Raleway', sans-serif;
+  }
+  /* STYLING  QUOTE LIKE FONT-SIZE,COLOR */
+
+  q{
+    color:#888582;
+      font-size:30px;
+  }
+  
+  .centre{
+    display: block;
+    margin-left: 50;
+    margin-right: auto;
+    width: 50%;
+  }
+  /* STYLING SEARCH DIV */
+
+  .search-text{
+     padding-bottom:60px;
+  }
+  /* SETTING THE SEARCH TEXT DIV INPUT-SEARCH BOX LIKE ITS HEIGHT */
+
+      
+  .search-text .input-search{
+      height:45px;
+      width:40%;
+      padding-left:20px;
+      color:#333;
+  } 
+   /* SETTING THE SEARCH TEXT DIV BUTTON-SEARCH BOX LIKE ITS HEIGHT */
+
+  
+  .search-text .btn-search{
+      background: #545454;
+      font-family:Roboto;
+      border:none;
+      color:#FFF;
+      height: 45px;
+      width: 80px;
+  }
+  
+  .search-text h4{
+      color:#888582;
+      font-weight: 700;
+  }
+   /* SEETING SECOND FOOTER */
+
+  
+  footer{
+      background-color:#222222;
+      padding: 60px 0px;
+  }
+   /* STYLING UNORDERED LIST OF FOOTER */
+ 
+  
+  footer ul{
+      list-style:none;
+      margin:0 auto;
+      display:inline-block;
+      padding-top:50px;
+  }
+  /* STYLING LIST ITEMS OF UNORDERED LIST OF FOOTER */
+  /*GIVING FLOAT EFFECT*/
+  footer ul li{
+      float:left;
+  }
+  /*PADDING*/
+  
+  footer ul li a{
+      color:#b1aca1;
+      padding:20px;
+  }
+  /*DECORATING THE TEXT OF LIST ITEMS*/
+  
+  footer ul li a:hover{
+      color:#7dabdb;
+      text-decoration:none;
+  }
+  
+  .footer-top{
+      padding-bottom:50px;
+  }
+  
+  .footer-top .fa{
+      font-size:18px;
+      color: #FFF;
+      padding-right:10px;
+  }
+  
+  .footer-top a{
+      color:#FFF;
+      background:#333333; 
+      padding: 10px;
+  }
+  
+  .footer-top .col-lg-2:hover .fa , .footer-top .col-lg-2:hover a{
+      color:#7dabdb;
+      text-decoration:none;
+  }
+  
+  .copyright{
+      background-color:#f0f0f0;
+  }
+  
+  .copyright p{
+      font-size:12px;
+      padding:15px 0 10px 0;
+  }
+  
+  #top{
+      color: #fff;
+      background: #7dabdb;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 40px;
+      height: 40px;
+      width: 40px;
+      right: 30px;
+      position: fixed;
+      border-radius: 3px;
+      text-align: center;
+      bottom: 350px;
+  }
+  
+  
+  /*  Footer 2 */
+  
+  .footer-top2 a{
+      display: block;
+      color: #FFF;
+      background: #333333;
+       border-radius: 72px;
+      height: 100px;
+      width: 100px;
+      padding: 43px 0px;
+  }
+  
+  
+  .footer-top2{
+      padding-bottom:50px;
+  }
+  
+  .footer-top2 .fa{
+      font-size:18px;
+      color: #FFF;
+      padding-right:10px;
+  }
+  
+  .footer-top a{
+      color:#FFF;
+      background:#333333; 
+      padding: 10px;
+  }
+  
+  .footer-top2 .col-lg-2:hover a{
+      color:#FFF;
+      text-decoration:none;
+      background:#7dabdb;
+      transition: all 2s ease-in-out;
+  }
+  
+  /*  Footer 2 End */
+  
+  
+  /*  Footer 3 */
+  
+  .footer-top3 .fa{
+      background: #333333;
+      color:#FFF;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      font-size:14px;
+      margin-right:5px;
+  } 
+  
+  .footer-top3 .fa:hover{
+      color:#FFF;
+      background:#7dabdb;
+      transition: all 2s ease-in-out;
+  } 
+  
+  .footer-top3 a{
+      color:#FFF;
+      text-decoration:none;
+  }
+  
+  /*  Footer 3 End */
+  
