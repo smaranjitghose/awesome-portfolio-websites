@@ -1,3 +1,21 @@
+/*Declaration of CSS variables for light/dark theme*/
+
+html[data-theme='light']{
+  --bg-icon: white;
+  --col-icon: #000;
+}
+
+html[data-theme='dark']{
+  --bg-icon: #191919;
+  --col-icon: white;
+  --twitter: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1da1f2, 0 0 20px #1da1f2, 0 0 25px #1da1f2, 0 0 30px #1da1f2, 0 0 35px #1da1f2;
+  --github: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #434547, 0 0 20px #434547, 0 0 25px #434547, 0 0 30px #434547, 0 0 35px #434547;
+  --linkedin: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0e76a8, 0 0 20px #0e76a8, 0 0 25px #0e76a8, 0 0 30px #0e76a8, 0 0 35px #0e76a8;
+  --kaggle: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #41aff3, 0 0 20px #41aff3, 0 0 25px #41aff3, 0 0 30px #41aff3, 0 0 35px #41aff3;
+  --dribble: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ea4c89, 0 0 20px #ea4c89, 0 0 25px #ea4c89, 0 0 30px #ea4c89, 0 0 35px #ea4c89;
+  --medium: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ab6c, 0 0 20px #00ab6c, 0 0 25px #00ab6c, 0 0 30px #00ab6c, 0 0 35px #00ab6c;
+}
+
 /* Particle effect*/
 
 #home,
@@ -73,7 +91,7 @@
   width: var(--link-size);
   height: var(--link-size);
   margin: 8px;
-  background-color: white;
+  background-color: var(--bg-icon);
   border-radius: 50%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
   text-decoration: none;
@@ -82,7 +100,7 @@
 .social-icon i {
   margin: auto;
   font-size: 24px;
-  color: #000;
+  color: var(--col-icon);
   z-index: 1;
   transition: var(--trans-props);
 }
@@ -99,26 +117,32 @@
 
 .social-icon.twitter:after {
   background-color: #1da1f2;
+  box-shadow: var(--twitter);
 }
 
 .social-icon.github:after {
   background-color: #24292e;
+  box-shadow: var(--github);
 }
 
 .social-icon.linkedin:after {
   background-color: #0e76a8;
+  box-shadow: var(--linkedin);
 }
 
 .social-icon.kaggle:after {
   background-color: #41aff3;
+  box-shadow: var(--kaggle);
 }
 
 .social-icon.dribbble:after {
   background-color: #ea4c89;
+  box-shadow: var(--kaggle);
 }
 
 .social-icon.medium:after {
   background-color: #00ab6c;
+  box-shadow: var(--medium);
 }
 
 /*** Social Icon Animations ***/
@@ -152,8 +176,9 @@ a:hover {
   font-size: 20px;
   align-items: center;
   justify-content: center;
-  margin-left: -40px;
-  margin-right: -40px;
+  flex-flow: row wrap;
+  width: 220px;
+  display: block;
 }
 
 .social-icon-footer {
@@ -171,7 +196,7 @@ a:hover {
 
 .social-icon-footer i {
   margin: auto;
-  font-size: 20px;
+  font-size: 15px;
   color: #fff;
 }
 
@@ -179,15 +204,91 @@ a:hover {
   color: #000000;
 }
 
+/*Responsive*/
+
 @media(min-width: 60rem)
 {
   .social-icons-footer{
-    margin-left: -56px;
-    margin-right: -60px;
+    width: 280px;
   }
 
   .social-icon-footer{
     width: var(--link-size-footer-b);
     height: var(--link-size-footer-b);
   }
+
+  .social-icon-footer i{
+    font-size: 20px;
+  }
+}
+
+/*Animations*/
+
+.social-icon-footer:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px rgb(100, 248, 233);
+}
+
+.social-icon:hover:after {
+  transform: translate(0) scale(1.2);
+}
+
+a:hover {
+  color: transparent;
+}
+
+/*Toggle for light/dark mode*/
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 30px;
+	background: grey;
+	display: block;
+	border-radius: 20px;
+  position: relative;
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+}
+
+label:after {
+	content: ' ';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 50px;
+	transition: 1s;
+}
+
+input:checked + label {
+	background: rgb(63, 25, 170);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 130px;
+}
+
+/*Transition for Toggle*/
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after{
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }
