@@ -1,10 +1,66 @@
-.researchMainWrapper {
-    margin: 50px 0 200px;
-    position: relative;
+/*Import font from googleapis.com*/
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+/*Declaring CSS variables for Light mode*/
+
+html[data-theme = 'light']
+{
+    --bg-head : #f5f5f5;
+    --bg-col: #fff;
+    --p-up: black;
+    --bg-cite-y: #f5f5f5;
+    --cite-bg: #fff;
+    --cite-head: rgb(221, 217, 217);
+    --cite-col-txt: #333;
+    --cite-close: #333;
+    --cite-hover: black;
 }
 
+/*Declaring CSS variables for Dark Mode*/
+
+html[data-theme = 'dark']{
+    --bg-col: black;
+    --text-gra: ;
+    --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+    --txt-fill: transparent;
+    --p-up: #fff;
+    --bg-head: rgba(0, 0, 0, 0.877);
+    --bg-head-img: rgba(0, 0, 0, 0.877);
+    --bg-cite-y: rgba(0, 0, 0, 0.877);
+    --black-two: rgba(0, 0, 0, 0.877);
+    --cite-head: rgb(59, 55, 55);
+    --cite-bg: black;
+    --cite-col-txt: #fff;
+    --cite-close: rgba(0, 0, 0, 0.192);
+    --cite-hover: #fff;
+}
+
+/*For Changing background color of body according to theme*/
+body{
+    background: var(--bg-col) !important;
+}
+
+.head-upper{
+    background: var(--bg-txt-img);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--txt-fill);
+}
+
+.p-upper{
+    color: var(--p-up);
+}
+
+/*Research page*/
+
+.researchMainWrapper {
+    margin: 50px 0 200px;
+    position: relative;                 
+    color: var(--p-up);
+} 
+
 .researchProfileWrapper {
-    position: relative;
+    position: relative;                  
     order: 1;
     padding: 32px 0;
     overflow: hidden;
@@ -22,8 +78,8 @@
     background-color: #e5e5e5;
     border-radius: 50%;
     overflow: hidden;
-    position: relative;
-    z-index: 1;
+    position: relative;                        
+    z-index: 1;                               
     line-height: 0;
     width: 128px;
     height: 128px;
@@ -33,7 +89,7 @@
     width: 128px;
     height: 128px;
 
-    position: absolute;
+    position: absolute;                 
     margin: auto;
     left: 0;
     top: 0;
@@ -78,7 +134,7 @@
     display: inline-block;
 }
 
-table {
+#researchDetailsTable {
     border-collapse: collapse;
     border-width: 0;
     empty-cells: show;
@@ -90,7 +146,7 @@ table {
 }
 
 #rDetailsHead {
-    z-index: 700;
+    z-index: 700;                             
     background-color: #f5f5f5;
     height: 42px;
     box-sizing: border-box;
@@ -105,6 +161,8 @@ table {
     vertical-align: middle;
     padding-top: 0;
     padding-bottom: 0;
+    background-color: var(--bg-head);
+    background-image: var(--bg-head-img);
 }
 
 .researchTitle span {
@@ -128,6 +186,7 @@ table {
     vertical-align: middle;
     padding-top: 0;
     padding-bottom: 0;
+    background-color: var(--bg-cite-y);
 }
 
 .researchYear {
@@ -141,16 +200,16 @@ table {
     vertical-align: middle;
     padding-top: 0;
     padding-bottom: 0;
+    background-color: var(--bg-cite-y);
 }
 
 .researchTitleName {
-    font-weight: bold;
     padding: 16px;
     vertical-align: top;
     text-align: left;
 }
 
-.researchTitleName a {
+.paperTitle {
     padding: 8px 0;
     font-size: 16px;
 }
@@ -179,6 +238,7 @@ table {
     display: none;
 }
 
+/*Profile pic responsiveness*/
 @media only screen and (max-width: 711px) {
     .researchProfilePic {
         float: none;
@@ -217,6 +277,8 @@ table {
     }
 }
 
+/*Responsive*/
+
 @media only screen and (max-width: 441px) {
     .researchTitleName a {
         font-size: 14px;
@@ -226,3 +288,239 @@ table {
         font-size: 12px;
     }
 }
+
+.paperTitle{
+    font-weight: bold;
+}
+
+/*Cite link*/
+
+.empty{
+    margin-top: -2.5rem;
+}
+
+.cite{
+    font-size: 5em;
+    font-family: 'Londrina Outline', cursive;
+}
+
+/*Popup for cite*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 900;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    margin: 20px auto;
+    background: var(--cite-bg);
+    width: 50%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h5 {
+    margin-top: 0;
+    text-align: center;
+    color: var(--cite-col-txt);
+    background-color: var(--cite-head) !important;
+    padding: 8px;
+    position: sticky;
+    font-size: 1em;
+}
+ 
+.popup .close {
+    position: absolute;
+    left: 30px;
+    top: 5px;
+    transition: all 200ms;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--cite-close);
+}
+
+.popup .close:hover {
+    color: var(--cite-hover);
+}
+
+.popup .content {
+    max-height: 70%;
+    overflow: auto;
+    font-size: 0.8em;
+}
+
+/*Responsive*/
+
+@media(min-width: 60rem)
+{
+    .cite{
+        font-size: 3rem;
+    }
+}
+
+@media(min-width: 60rem)
+{
+    .popup h5{
+        padding: 15px;
+        font-size: 1.6em;
+    }
+}
+
+@media(min-width: 60rem)
+{
+    .popup .close{
+        top: 20px;
+    }
+}
+
+@media(min-width: 60rem)
+{
+    .popup .content{
+        font-size: 1em;
+    }
+}
+  
+@media screen and (max-width: 700px){
+    .popup{
+      width: 100%;
+    }
+}
+
+/*Table for research works*/
+
+.left-cell{
+    font-size: 0.8em;
+    text-align: right;
+    color: grey;
+    vertical-align: top;
+}
+
+.right-cell{
+    font-size: 0.8em;
+    color: var(--p-up);
+}
+
+.lastRow{
+    text-align: right;
+}
+
+/*BibTeX link*/
+
+.bibtex{
+    left: 2rem;
+}
+
+.bibtex:hover{
+    text-decoration: none;
+}
+
+/*TOGGLE FOR LIGHT AND DARK MODE*/
+
+.toggle-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .side-toggle{
+      height: 2em;
+      width: 5em;
+  }
+  
+  .toggle-slot {
+    position: relative;
+    height: 3.5em;
+    width: 8em;
+    border: 5px solid #e4e7ec;
+    border-radius: 10em;
+    background-color: white;
+    box-shadow: 0px 10px 25px #e4e7ec;
+    transition: background-color 250ms;
+    margin-top: 1em;
+    margin-left: 1.5em;
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot{
+    background-color: #374151;
+  }
+
+  .toggle-button {
+    transform: translate(11.75em, 1.75em);
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-color: #ffeccf;
+    box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+    transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+    margin-top: -1.5em;
+    margin-left: -7em;
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+    background-color: #485367;
+    box-shadow: inset 0px 0px 0px 0.75em white;
+    transform: translate(7.5em, 1.75em);
+  }
+  
+  .sun-icon {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    color: #ffbb52;
+    margin-top: -1.2em;
+    margin-left: -2em;
+  }
+  
+  .sun-icon-wrapper {
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    opacity: 1;
+    transform: translate(2em, 2em) rotate(15deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper{
+    opacity: 0;
+    transform: translate(3em, 2em) rotate(0deg);
+  }
+  
+  .moon-icon {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    color: white;
+    margin-top: -3.5em;
+    margin-left: -6.5em;
+  }
+  
+  .moon-icon-wrapper {
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    opacity: 0;
+    transform: translate(11em, 2em) rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+  }
+  
+  .toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper{
+    opacity: 1;
+    transform: translate(12em, 2em) rotate(-15deg);
+  }

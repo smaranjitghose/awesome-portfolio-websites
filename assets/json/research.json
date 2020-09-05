@@ -1,0 +1,43 @@
+{
+    "researchPapers" :
+    [
+        {
+            "title" : "CORONA-19 NET: Transfer Learning Approach for Automatic Classification of Coronavirus Infections in Chest Radiographs",
+            "authors" : "S Sharma, S Ghose, S Datta, C Malathy, M Gayathri, M Prabhakaran",
+            "conferences" : "International Conference on Image Processing and Capsule Networks, 526-534",
+            "year" : ", 2020",
+            "citedNumber" : 1000,
+            "researchYr" : 2020
+        },
+
+        {
+            "title" : "CORONA-19 NET: Transfer Learning Approach for Automatic Classification of Coronavirus Infections in Chest Radiographs",
+            "authors" : "S Sharma, S Ghose, S Datta, C Malathy, M Gayathri, M Prabhakaran",
+            "conferences" : "International Conference on Image Processing and Capsule Networks, 526-534",
+            "year" : ", 2020",
+            "citedNumber" : 16000,
+            "researchYr" : 2010
+        },
+
+        {
+            "title" : "CORONA-19 NET: Transfer Learning Approach for Automatic Classification of Coronavirus Infections in Chest Radiographs",
+            "authors" : "S Sharma, S Ghose, S Datta, C Malathy, M Gayathri, M Prabhakaran",
+            "conferences" : "International Conference on Image Processing and Capsule Networks, 526-534",
+            "year" : ", 2020",
+            "citedNumber" : 900,
+            "researchYr" : 2009
+        }
+    ],
+
+    "cite" :
+    [
+        {
+            "mla" : "Sharma, Sukkrit, et al.\"CORONA-19 NET: Transfer Learning Approach for Automatic Classification of Coronavirus Infections in Chest Radiographs.\"International Conference on Image Processing and Capsule Networks. Springer, Cham, 2020.",
+            "apa" : "Sharma, S., Ghose, S., Datta, S., Malathy, C., Gayathri, M., & Prabhakaran, M. (2020, May). CORONA-19 NET: Transfer Learning Approach for Automatic Classification of Coronavirus Infections in Chest Radiographs. In International Conference on Image Processing and Capsule Networks (pp. 526-534). Springer, Cham.",
+            "chicago" : "Sharma, Sukkrit, Smaranjit Ghose, Suhrid Datta, C. Malathy, M. Gayathri, and M. Prabhakaran. \"CORONA-19 NET: Transfer Learning Approach for Automatic Classification of Coronavirus Infections in Chest Radiographs.\" In International Conference on Image Processing and Capsule Networks, pp. 526-534. Springer, Cham, 2020.",
+            "harvard" : "Sharma, S., Ghose, S., Datta, S., Malathy, C., Gayathri, M. and Prabhakaran, M., 2020, May. CORONA-19 NET: Transfer Learning Approach for Automatic Classification of Coronavirus Infections in Chest Radiographs. In International Conference on Image Processing and Capsule Networks (pp. 526-534). Springer, Cham.",
+            "vancouver" : "Sharma S, Ghose S, Datta S, Malathy C, Gayathri M, Prabhakaran M. CORONA-19 NET: Transfer Learning Approach for Automatic Classification of Coronavirus Infections in Chest Radiographs. InInternational Conference on Image Processing and Capsule Networks 2020 May 6 (pp. 526-534). Springer, Cham."
+        }
+    ]
+
+}

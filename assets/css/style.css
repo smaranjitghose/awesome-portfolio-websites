@@ -1,4 +1,17 @@
+/*CSS variable declaration*/
+html[data-theme = 'light']
+{
+	--bg-mybtn: red;
+	--bg-nav: #000000;
+	--bg-nav-img: #000000;
+}
 
+html[data-theme = 'dark']
+{
+	--bg-mybtn: rgb(230, 109, 129);
+	--bg-nav: #6617cb;
+	--bg-nav-img: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+}
 
 
 body {
@@ -17,6 +30,7 @@ html{
 	scroll-behavior: smooth;  
 }
 
+/*Top button dark/light mode*/
 
 #myBtn {
 	display: none;
@@ -27,7 +41,7 @@ html{
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: red;
+	background-color: var(--bg-mybtn);
 	color: white;
 	cursor: pointer;
 	padding: 13px 15px 15px 15px;
@@ -68,11 +82,19 @@ html{
 	font-weight: 300;
 	font-size: 18px;
   }
+
+  /*Navbar dark mode*/
+ 
+  .black{
+	background-color: var(--bg-nav);
+	background-image: var(--bg-nav-img);
+  }
   
   /*Footer*/
-  
-  .webintern-footer {
-	background: #000000;
+
+  .webintern-footer{
+	background-color: var(--bg-nav);
+	background-image: var(--bg-nav-img);
   }
   
   .webintern-footer-inner {
