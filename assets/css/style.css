@@ -10,7 +10,7 @@ html[data-theme = 'dark']
 {
 	--bg-mybtn: rgb(230, 109, 129);
 	--bg-nav: #6617cb;
-	--bg-nav-img: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+	--bg-nav-img: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);}
 
 /*Declaration of CSS variables for light/dark theme for home page*/
 
@@ -97,7 +97,8 @@ html{
  
   .black{
 	background-color: var(--bg-nav);
-	background-image: var(--bg-nav-img);
+  background-image: var(--bg-nav-img);
+  }
     
   /*Toggle for light/dark mode for side nav bar (home page)*/
 

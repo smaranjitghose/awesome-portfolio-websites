@@ -523,6 +523,7 @@ body{
   .toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper{
     opacity: 1;
     transform: translate(12em, 2em) rotate(-15deg);
+  }
 
  /*social icons footer*/
 
