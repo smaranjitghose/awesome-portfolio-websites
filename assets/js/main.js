@@ -38,7 +38,7 @@ let header = $(`
         <li><a class="white-text" href="research.html">Research</a></li>
         <li><a class="white-text" href="education.html">Education</a></li>
 
-        <!--TOGGLE FOR LIGHT/DARK MODE FOR RESERACH PAGE-->
+        <!--TOGGLE FOR LIGHT/DARK MODE-->
         <li>
         <label for="switch" class="theme-switch">
         <input class="toggle-checkbox" type="checkbox" id="switch" name="theme" />
@@ -53,11 +53,6 @@ let header = $(`
           </div>
           </label>
         </li>
-
-        <!--Toggle for light/dark mode (home page)-->
-          <li class="toggle-container">
-            <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
-          </li>
     </ul>
 </div>
 </nav>
@@ -70,7 +65,7 @@ let header = $(`
 <li><a href="research.html">Research</a></li>
 <li><a href="education.html">Education</a></li>
 
-<!--TOGGLE FOR LIGHT/DARK MODE FOR RESERACH PAGE-->
+<!--TOGGLE FOR LIGHT/DARK MODE-->
         <li>
         <label for="switch" class="theme-switch">
         <input class="toggle-checkbox" type="checkbox" id="switch" name="theme" />
@@ -85,11 +80,6 @@ let header = $(`
           </div>
           </label>
         </li>
-
-<!--Toggle for light/dark mode-->
-<li class="toggle-container">
-  <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
-</li>
 </ul>`);
 
 let footer = $(`
@@ -174,26 +164,27 @@ let bodyElement = $(`body`);
 bodyElement.prepend(header);
 bodyElement.append(footer);
 
-
+/*JavaScript for toggle for light/dark mode*/ 
 
 var checkbox = document.querySelector('input[name=theme]');
+if(checkbox)
+ {
+ checkbox.addEventListener('change', function(){
+   if(this.checked)
+   {
+     trans()
+     document.documentElement.setAttribute('data-theme', 'dark')
+   }
+   else
+   {
+     trans()
+     document.documentElement.setAttribute('data-theme', 'light')
+   }
+ });
 
-checkbox.addEventListener('change',function(){
-    //If the checkbox is checked, change to dark theme.
-    if(this.checked){
-        trans()
-        document.documentElement.setAttribute('data-theme', 'dark')         
-    }
-    //If the checkbox is not checked, apply light theme.
-    else{
-        trans()
-        document.documentElement.setAttribute('data-theme', 'light')
-    }
-})
-//Function for transition effect of toggle.
-let trans = () =>{
-    document.documentElement.classList.add('transition');
-    window.setTimeout( () => {
-        document.documentElement.classList.remove('transition');
-    },1000)  
-}
+ let trans = () => {
+   document.documentElement.classList.add('transition');
+   window.setTimeout(() => {
+     document.documentElement.classList.remove('transition')
+   }, 1000)
+ }}

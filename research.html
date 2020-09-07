@@ -51,8 +51,7 @@
           var tblrow = "<tr>" + "<td class="+'researchTitleName'+">" + "<a href="+'#0'+" class="+'paperTitle'+">" + f.title + "</a>" + 
                       "<div>" + f.authors + "</div>" + "<div>" + f.conferences + "<span class="+'resYearDisplay'+">" + f.year + "</span>"
                       + "</div>" + "<div class="+'empty'+">" + "<a href="+'#popup1'+" class="+'cite'+">" + ",," + "</a>" + "</div>" +
-                      "</td>" + "<td class="+'researchCitedNumber'+">" + "<span>" + f.citedNumber + "</span>" + "</td>" + 
-                      "<td class="+'researchY'+">" + "<span>" + f.researchYr + "</span>" + "</td>" + "</tr>"  
+                      "</td>" + "<td class="+'researchY'+">" + "<span>" + f.researchYr + "</span>" + "</td>" + "</tr>"  
           $(tblrow).appendTo("#researchDetailsTable tbody")
         });
 
@@ -62,7 +61,7 @@
                     "<tr>" + "<td class="+'left-cell'+">" + "Chicago" + "</td>" + "<td class="+'right-cell'+">" + j.chicago + "</td>" + "</tr>" +
                     "<tr>" + "<td class="+'left-cell'+">" + "Harvard" + "</td>" + "<td class="+'right-cell'+">" + j.harvard + "</td>" + "</tr>" +
                     "<tr>" + "<td class="+'left-cell'+">" + "Vancouver" + "</td>" + "<td class="+'right-cell'+">" + j.vancouver + "</td>" + "</tr>" +
-                    "<tr class="+'lastRow'+">" + "<td>" + "</td>" + "<td>" + "<a href="+'assets/BibTex/cite.bib'+" class="+'bibtex'+">" + "BibTeX" + "</a>" + "</td>" + "</tr>"
+                    "<tr class="+'lastRow'+">" + "<td>" + "</td>" + "<td>" + "<a href="+'assets/BibTeX/cite.bib'+" class="+'bibtex'+">" + "BibTeX" + "</a>" + "</td>" + "</tr>"
           $(cite).appendTo("#citing tbody")
         });
       });
@@ -74,7 +73,6 @@
 
   <!--Dynamic Nav Bar-->
 
-
   <!-- button for the top -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"> 
     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -82,10 +80,8 @@
   </svg>
 </button>
 
-
-
   <div class="container research-upper" style="width: 100%; min-height: 80%;">
-    <section  style=" height: 100vh;">
+    <section class="txt-bottom">
       <div class="px-3 pt-5">
         <div class="row text-dark">
           <div
@@ -112,23 +108,6 @@
 
   <div class="researchMainWrapper">
     <div class="container">
-      <div class="researchProfileWrapper">
-        <div class="researhProfile">
-          <div class="researchProfilePic">
-            <div class="researchProfilePicWrapper">
-              <img src="./assets/images/dp.svg" alt="">
-            </div>
-          </div>
-          <div class="researchProfileAbout">
-            <div id="researchProfileName">John Doe</div>
-            <div id="researchProfileCollege">Indian Institute of Technology Madras</div>
-            <div class="researchAreaLinks">
-              <a href="#0" class="rAreaLinkItem">machine learning</a>
-              <a href="#0" class="rAreaLinkItem">computer vision</a>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="researchDetails">
         <table id="researchDetailsTable">
           <thead>
@@ -138,11 +117,6 @@
                   <div>
                     Title
                   </div>
-                </span>
-              </th>
-              <th class="researchCited" scope="col" dir="rtl">
-                <span>
-                  <div>Cited by</div>
                 </span>
               </th>
               <th class="researchYear" scope="col">
@@ -155,7 +129,7 @@
             </tr>
           </thead>
           <tbody>
-
+            <!--Fetch data from json file in the head section-->
           </tbody>
         </table>
       </div>
@@ -171,7 +145,7 @@
       <div class="content">
         <table id="citing">
           <tbody>
-          
+          <!--Fetch data from json file in the head section-->
         </tbody>
         </table>
       </div>
@@ -190,34 +164,5 @@
   <script type="text/javascript" src="assets/js/materialize.min.js"></script>
   <script src="assets/js/main.js"></script>
 
-  <!--JavaScript for toggle button-->
-  <script>
-    var checkbox = document.querySelector('input[name=theme]');
-   if(checkbox)
-    {
-    console.log("success");
-    checkbox.addEventListener('change', function(){
-      if(this.checked)
-      {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'dark')
-      }
-      else
-      {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'light')
-      }
-    });
-
-    let trans = () => {
-      document.documentElement.classList.add('transition');
-      window.setTimeout(() => {
-        document.documentElement.classList.remove('transition')
-      }, 1000)
-    }}
-    else{
-      console.log("failed");
-    }
-  </script>
 </body>
 </html>
