@@ -1,11 +1,18 @@
-/*Declaration of CSS variables for light/dark theme*/
-
-html[data-theme="light"] {
+/*CSS variable declaration for light/dark mode*/
+html[data-theme = 'light']
+{
+	--bg-mybtn: red;
+	--bg-nav: #000000;
+  --bg-nav-img: #000000;
   --bg: #ffffff;
   --text: #191919;
 }
 
-html[data-theme="dark"] {
+html[data-theme = 'dark']
+{
+	--bg-mybtn: rgb(230, 109, 129);
+	--bg-nav: #6617cb;
+  --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
   --bg: #191919;
   --text: #ffffff;
 }
@@ -25,21 +32,27 @@ html {
   scroll-behavior: smooth;
 }
 
+/*Top button dark/light mode*/
+
 #myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 13px 15px 15px 15px;
-  border-radius: 50%;
-}
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: var(--bg-mybtn);
+	color: white;
+	cursor: pointer;
+	padding: 13px 15px 15px 15px;
+	border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+	background-color:#26A69A;
+  }
 
 #myBtn:hover {
   background-color: #26a69a;
@@ -51,6 +64,13 @@ html {
 .sidenav a:hover {
   text-decoration: none;
 }
+
+  /*Navbar dark mode(research page)*/
+ 
+  .black{
+	background-color: var(--bg-nav);
+  background-image: var(--bg-nav-img);
+  }
 
 .nav-wrapper a {
   font-weight: bold;
@@ -74,46 +94,103 @@ p {
   font-size: 18px;
 }
 
-/*Toggle for light/dark mode*/
+/*toggle for light/dark mode*/
 
-input[type="checkbox"] {
+.toggle-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
   height: 0;
   width: 0;
-  visibility: hidden;
 }
 
-label {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 50px;
-  height: 30px;
-  background: grey;
-  display: block;
-  border-radius: 20px;
+.side-toggle{
+    height: 2em;
+    width: 5em;
+}
+
+.toggle-slot {
   position: relative;
-  margin-top: 1.5em;
+  height: 3.5em;
+  width: 8em;
+  border: 5px solid #e4e7ec;
+  border-radius: 10em;
+  background-color: white;
+  box-shadow: 0px 10px 25px #e4e7ec;
+  transition: background-color 250ms;
+  margin-top: 1em;
   margin-left: 1.5em;
 }
 
-label:after {
-  content: " ";
+.toggle-checkbox:checked ~ .toggle-slot{
+  background-color: #374151;
+}
+
+.toggle-button {
+  transform: translate(11.75em, 1.75em);
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border-radius: 50px;
-  transition: 1s;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  background-color: #ffeccf;
+  box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+  margin-top: -1.5em;
+  margin-left: -7em;
 }
 
-input:checked + label {
-  background: rgb(63, 25, 170);
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+  background-color: #485367;
+  box-shadow: inset 0px 0px 0px 0.75em white;
+  transform: translate(7.5em, 1.75em);
 }
 
-input:checked + label:after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
+.sun-icon {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  color: #ffbb52;
+  margin-top: -1.2em;
+  margin-left: -2em;
+}
+
+.sun-icon-wrapper {
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  opacity: 1;
+  transform: translate(2em, 2em) rotate(15deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper{
+  opacity: 0;
+  transform: translate(3em, 2em) rotate(0deg);
+}
+
+.moon-icon {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  color: white;
+  margin-top: -3.5em;
+  margin-left: -6.5em;
+}
+
+.moon-icon-wrapper {
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  opacity: 0;
+  transform: translate(11em, 2em) rotate(0deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper{
+  opacity: 1;
+  transform: translate(12em, 2em) rotate(-15deg);
 }
 
 /*Transition for Toggle*/
@@ -129,7 +206,8 @@ html.transition *:after {
 /*Footer*/
 
 .webintern-footer {
-  background: #000000;
+  background-color: var(--bg-nav);
+  background-image: var(--bg-nav-img);
 }
 
 .webintern-footer-inner {
@@ -353,6 +431,10 @@ html.transition *:after {
   border-radius: 50%;
   text-decoration: none;
   float: left;
+}
+
+.social-icon-footer:hover{
+  background-color: #0dfde5;
 }
 
 .social-icon-footer i {
