@@ -63,16 +63,15 @@ let footer = $(`
 <div class="webintern-footer-inner">
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 col-md-10 pt-5" >
-      <div class="col-sm-6 col-md-5"> 
+      <div class="col-lg-7 col-md-6 pt-5" >
+      <div class="col-sm-6 col-md-7"> 
         <a class="webintern-footer-logo" href="#">
-          <center><img src="assets/images/John-Doe1.png"style="width: 200px;"/></center>
+          <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
         </a>
         <div class="simple-text text-center dark padding-sm">
           <p >
             "Develop a passion for learning. If you do, you will never cease to grow."
           </p>
-        </div>
 
 <!-- Social media icons for footer -->
 
@@ -97,8 +96,10 @@ let footer = $(`
       </a>
 </div>
 
+
         <div class="empty-space xs-25 sm-25"></div>
       </div>
+    </div>
     </div>
 
       <div class="col-sm-6 col-md-5 pt-5 footer-2">
@@ -140,26 +141,24 @@ let bodyElement = $(`body`);
 bodyElement.prepend(header);
 bodyElement.append(footer);
 
+var checkbox = document.querySelector("input[name=theme]");
 
-
-var checkbox = document.querySelector('input[name=theme]');
-
-checkbox.addEventListener('change',function(){
-    //If the checkbox is checked, change to dark theme.
-    if(this.checked){
-        trans()
-        document.documentElement.setAttribute('data-theme', 'dark')         
-    }
-    //If the checkbox is not checked, apply light theme.
-    else{
-        trans()
-        document.documentElement.setAttribute('data-theme', 'light')
-    }
-})
+checkbox.addEventListener("change", function () {
+  //If the checkbox is checked, change to dark theme.
+  if (this.checked) {
+    trans();
+    document.documentElement.setAttribute("data-theme", "dark");
+  }
+  //If the checkbox is not checked, apply light theme.
+  else {
+    trans();
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+});
 //Function for transition effect of toggle.
-let trans = () =>{
-    document.documentElement.classList.add('transition');
-    window.setTimeout( () => {
-        document.documentElement.classList.remove('transition');
-    },1000)  
-}
+let trans = () => {
+  document.documentElement.classList.add("transition");
+  window.setTimeout(() => {
+    document.documentElement.classList.remove("transition");
+  }, 1000);
+};
