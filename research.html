@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="light">
 <head>
   <title>John Doe | Research</title>
   <meta charset="UTF-8">
@@ -35,14 +34,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
   <!--Import animation.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <link rel="stylesheet" type="text/css" href="assets/css/research.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <!--For Dark/Light mode Toggle-->
+  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+  <!--Fetch data from JSON-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+  <script>
+    $(function(){
+      var reserach = [];
+
+      $.getJSON('assets/json/research.json',function(data){
+
+        $.each(data.researchPapers, function(i,f){
+          var tblrow = "<tr>" + "<td class="+'researchTitleName'+">" + "<a href="+'#0'+" class="+'paperTitle'+">" + f.title + "</a>" + 
+                      "<div>" + f.authors + "</div>" + "<div>" + f.conferences + "<span class="+'resYearDisplay'+">" + f.year + "</span>"
+                      + "</div>" + "<div class="+'empty'+">" + "<a href="+'#popup1'+" class="+'cite'+">" + ",," + "</a>" + "</div>" +
+                      "</td>" + "<td class="+'researchY'+">" + "<span>" + f.researchYr + "</span>" + "</td>" + "</tr>"  
+          $(tblrow).appendTo("#researchDetailsTable tbody")
+        });
+
+        $.each(data.cite, function(i,j){
+          var cite = "<tr>" + "<td class="+'left-cell'+">" + "MLA" + "</td>" + "<td class="+'right-cell'+">" + j.mla + "</td>" + "</tr>" +
+                    "<tr>" + "<td class="+'left-cell'+">" + "APA" + "</td>" + "<td class="+'right-cell'+">" + j.apa + "</td>" + "</tr>" +
+                    "<tr>" + "<td class="+'left-cell'+">" + "Chicago" + "</td>" + "<td class="+'right-cell'+">" + j.chicago + "</td>" + "</tr>" +
+                    "<tr>" + "<td class="+'left-cell'+">" + "Harvard" + "</td>" + "<td class="+'right-cell'+">" + j.harvard + "</td>" + "</tr>" +
+                    "<tr>" + "<td class="+'left-cell'+">" + "Vancouver" + "</td>" + "<td class="+'right-cell'+">" + j.vancouver + "</td>" + "</tr>" +
+                    "<tr class="+'lastRow'+">" + "<td>" + "</td>" + "<td>" + "<a href="+'assets/BibTeX/cite.bib'+" class="+'bibtex'+">" + "BibTeX" + "</a>" + "</td>" + "</tr>"
+          $(cite).appendTo("#citing tbody")
+        });
+      });
+    });
+  </script>
 </head>
 
 <body>
 
   <!--Dynamic Nav Bar-->
-
 
   <!-- button for the top -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"> 
@@ -51,16 +80,14 @@
   </svg>
 </button>
 
-
-
-  <div class="container" style="width: 100%; min-height: 80%;">
-    <section  style=" height: 100vh;">
+  <div class="container research-upper" style="width: 100%; min-height: 80%;">
+    <section class="txt-bottom">
       <div class="px-3 pt-5">
         <div class="row text-dark">
           <div
             class="col-md-6 d-flex mt-5 flex-column text-center justify-content-center animate__animated animate__zoomIn animate__delay-1s">
-            <h2 style="font-size: 4em;font-weight: bolder;" class="mb-0">Research</h2>
-            <p class="font-weight-bolder text-muted"
+            <h2 style="font-size: 4em;font-weight: bolder;" class="mb-0 head-upper">Research</h2>
+            <p class="p-upper font-weight-bolder text-muted"
               class="mb-0 mt-3 text-center animate__animated animate__zoomIn animate__delay-2s"
               style="font-size: 1.1em; letter-spacing: 2px; line-height: normal;">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -71,7 +98,7 @@
 
           <div class="col-md-6" style="margin-top: 10px;">
             <img class="img-fluid d-block img-fluid d-block animate__animated animate__zoomIn animate__delay-1s" src="
-              ./assets/images/research-page/research.svg">
+              ./assets/images/research-page/research1.png">
           </div>
         </div>
       </div>
@@ -81,23 +108,6 @@
 
   <div class="researchMainWrapper">
     <div class="container">
-      <div class="researchProfileWrapper">
-        <div class="researhProfile">
-          <div class="researchProfilePic">
-            <div class="researchProfilePicWrapper">
-              <img src="./assets/images/dp.svg" alt="">
-            </div>
-          </div>
-          <div class="researchProfileAbout">
-            <div id="researchProfileName">John Doe</div>
-            <div id="researchProfileCollege">Indian Institute of Technology Madras</div>
-            <div class="researchAreaLinks">
-              <a href="#0" class="rAreaLinkItem">machine learning</a>
-              <a href="#0" class="rAreaLinkItem">computer vision</a>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="researchDetails">
         <table id="researchDetailsTable">
           <thead>
@@ -107,11 +117,6 @@
                   <div>
                     Title
                   </div>
-                </span>
-              </th>
-              <th class="researchCited" scope="col" dir="rtl">
-                <span>
-                  <div>Cited by</div>
                 </span>
               </th>
               <th class="researchYear" scope="col">
@@ -124,73 +129,24 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="researchTitleName">
-                <a href="#0">CORONA-19 NET: Transfer Learning
-                  Approach for Automatic Classification of
-                  Coronavirus Infections in Chest Radiographs
-                </a>
-                <div>S Sharma, S Ghose, S Datta, C Malathy, M Gayathri, M Prabhakaran</div>
-                <div>International Conference on Image Processing and Capsule Networks,
-                  526-534 <span class="resYearDisplay">, 2020</span>
-                </div>
-              </td>
-              <td class="researchCitedNumber">
-                <span>
-                  1000
-                </span>
-              </td>
-              <td class="researchY">
-                <span>
-                  2020
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="researchTitleName">
-                <a href="#0">CORONA-19 NET: Transfer Learning
-                  Approach for Automatic Classification of
-                  Coronavirus Infections in Chest Radiographs
-                </a>
-                <div>S Sharma, S Ghose, S Datta, C Malathy, M Gayathri, M Prabhakaran</div>
-                <div>International Conference on Image Processing and Capsule Networks,
-                  526-534 <span class="resYearDisplay">, 2020</span>
-                </div>
-              </td>
-              <td class="researchCitedNumber">
-                <span>
-                  16000
-                </span>
-              </td>
-              <td class="researchY">
-                <span>
-                  2010
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="researchTitleName">
-                <a href="#0">CORONA-19 NET: Transfer Learning
-                  Approach for Automatic Classification of
-                  Coronavirus Infections in Chest Radiographs
-                </a>
-                <div>S Sharma, S Ghose, S Datta, C Malathy, M Gayathri, M Prabhakaran</div>
-                <div>International Conference on Image Processing and Capsule Networks,
-                  526-534 <span class="resYearDisplay">, 2020</span>
-                </div>
-              </td>
-              <td class="researchCitedNumber">
-                <span>
-                  900
-                </span>
-              </td>
-              <td class="researchY">
-                <span>
-                  2009
-                </span>
-              </td>
-            </tr>
+            <!--Fetch data from json file in the head section-->
           </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Popup for Cite-->
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <h5>Cite</h5>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <table id="citing">
+          <tbody>
+          <!--Fetch data from json file in the head section-->
+        </tbody>
         </table>
       </div>
     </div>
@@ -209,5 +165,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

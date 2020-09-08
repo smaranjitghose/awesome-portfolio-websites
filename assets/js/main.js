@@ -4,12 +4,12 @@ $(document).ready(function () {
   $(".sidenav").sidenav();
 });
 
-
-
 //Get the top button
 var mybutton = document.getElementById("myBtn");
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -22,8 +22,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-
 
 //Footer and Navbar
 
@@ -39,14 +37,26 @@ let header = $(`
         <li><a class="white-text" href="projects.html">Projects</a></li>
         <li><a class="white-text" href="research.html">Research</a></li>
         <li><a class="white-text" href="education.html">Education</a></li>
-        <!--Toggle for light/dark mode-->
-          <li class="toggle-container">
-            <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
-          </li>
+
+        <!--TOGGLE FOR LIGHT/DARK MODE-->
+        <li>
+        <label for="switch" class="theme-switch">
+        <input class="toggle-checkbox" type="checkbox" id="switch" name="theme" />
+          <div class='toggle-slot'>
+          <div class='sun-icon-wrapper'>
+          <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
+          </div>
+          <div class='toggle-button'></div>
+          <div class='moon-icon-wrapper'>
+          <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
+          </div>
+          </div>
+          </label>
+        </li>
     </ul>
 </div>
-
 </nav>
+
 <!--Side Nav Bar -->
 <ul class="sidenav" id="mobile-demo">
 <li><a href="index.html">Home</a></li>
@@ -54,10 +64,22 @@ let header = $(`
 <li><a href="projects.html">Projects</a></li>
 <li><a href="research.html">Research</a></li>
 <li><a href="education.html">Education</a></li>
-<!--Toggle for light/dark mode-->
-<li class="toggle-container side-toggle">
-  <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
-</li>
+
+<!--TOGGLE FOR LIGHT/DARK MODE-->
+        <li>
+        <label for="switch" class="theme-switch">
+        <input class="toggle-checkbox" type="checkbox" id="switch" name="theme" />
+          <div class='toggle-slot side-toggle'>
+          <div class='sun-icon-wrapper'>
+          <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
+          </div>
+          <div class='toggle-button'></div>
+          <div class='moon-icon-wrapper'>
+          <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
+          </div>
+          </div>
+          </label>
+        </li>
 </ul>`);
 
 let footer = $(`
@@ -77,6 +99,7 @@ let footer = $(`
         </div>
 
 <!-- Social media icons for footer -->
+
 <div class="social-icons-footer">
   <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
     <i class="fab fa-twitter"></i>
@@ -141,3 +164,27 @@ let bodyElement = $(`body`);
 bodyElement.prepend(header);
 bodyElement.append(footer);
 
+/*JavaScript for toggle for light/dark mode*/ 
+
+var checkbox = document.querySelector('input[name=theme]');
+if(checkbox)
+ {
+ checkbox.addEventListener('change', function(){
+   if(this.checked)
+   {
+     trans()
+     document.documentElement.setAttribute('data-theme', 'dark')
+   }
+   else
+   {
+     trans()
+     document.documentElement.setAttribute('data-theme', 'light')
+   }
+ });
+
+ let trans = () => {
+   document.documentElement.classList.add('transition');
+   window.setTimeout(() => {
+     document.documentElement.classList.remove('transition')
+   }, 1000)
+ }}

@@ -27,6 +27,8 @@
     <meta name="apple-mobile-web-app-title" content="John Doe | Home" />
     <meta name="summary"
         content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
+    <!--For Dark/Light mode Toggle-->
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
@@ -147,29 +149,5 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
     <script src="assets/js/particle.js"></script>
 
-    <!--JavaScript for toggle at Home Page-->
-    <script>
-        var checkbox = document.querySelector('input[name=theme]');
-
-        checkbox.addEventListener('change',function(){
-            //If the checkbox is checked, change to dark theme.
-            if(this.checked){
-                trans()
-                document.documentElement.setAttribute('data-theme', 'dark')         
-            }
-            //If the checkbox is not checked, apply light theme.
-            else{
-                trans()
-                document.documentElement.setAttribute('data-theme', 'light')
-            }
-        })
-        //Function for transition effect of toggle.
-        let trans = () =>{
-            document.documentElement.classList.add('transition');
-            window.setTimeout( () => {
-                document.documentElement.classList.remove('transition');
-            },1000)  
-        }
-    </script>
 </body>
 </html>
