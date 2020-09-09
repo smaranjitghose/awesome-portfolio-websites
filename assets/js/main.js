@@ -87,16 +87,15 @@ let footer = $(`
 <div class="webintern-footer-inner">
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 col-md-10 pt-5" >
-      <div class="col-sm-6 col-md-5"> 
+      <div class="col-lg-7 col-md-6 pt-5" >
+      <div class="col-sm-6 col-md-7"> 
         <a class="webintern-footer-logo" href="#">
-          <center><img src="assets/images/John-Doe1.png"style="width: 200px;"/></center>
+          <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
         </a>
         <div class="simple-text text-center dark padding-sm">
           <p >
             "Develop a passion for learning. If you do, you will never cease to grow."
           </p>
-        </div>
 
 <!-- Social media icons for footer -->
 
@@ -121,8 +120,10 @@ let footer = $(`
       </a>
 </div>
 
+
         <div class="empty-space xs-25 sm-25"></div>
       </div>
+    </div>
     </div>
 
       <div class="col-sm-6 col-md-5 pt-5 footer-2">

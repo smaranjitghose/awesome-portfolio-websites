@@ -35,27 +35,19 @@ html {
 /*Top button dark/light mode*/
 
 #myBtn {
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
-	z-index: 99;
-	font-size: 18px;
-	border: none;
-	outline: none;
-	background-color: var(--bg-mybtn);
-	color: white;
-	cursor: pointer;
-	padding: 13px 15px 15px 15px;
-	border-radius: 50%;
-  }
-  
-  #myBtn:hover {
-	background-color:#26A69A;
-  }
-
-#myBtn:hover {
-  background-color: #26a69a;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#26a69a; 
+  color: white;
+  cursor: pointer;
+  padding: 13px 15px 15px 15px;
+  border-radius: 50%;
 }
 
 /* NAVBAR*/
@@ -343,12 +335,12 @@ html.transition *:after {
 
 @media (min-width: 60rem) {
   .simple-text p {
-    font-size: 26px;
+    font-size: 20px;
     text-align: center;
   }
 
   .webintern-footer .webintern-footer-inner .simple-text p {
-    width: 280px;
+    width: 250px;
   }
 }
 
@@ -377,7 +369,6 @@ html.transition *:after {
 }
 
 .tt-copy {
-  font-size: 20px;
   font-weight: 500;
   line-height: 20px;
   color: #fff;
@@ -468,13 +459,8 @@ html.transition *:after {
 
 .social-icon-footer:hover {
   transform: translateY(-4px);
-  box-shadow: 0px 4px 12px rgb(100, 248, 233);
 }
 
 .social-icon:hover:after {
   transform: translate(0) scale(1.2);
-}
-
-a:hover {
-  color: transparent;
 }

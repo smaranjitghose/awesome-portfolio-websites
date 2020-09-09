@@ -1,12 +1,12 @@
 /*Declaration of CSS variables for light/dark theme*/
 
-html[data-theme='light']{
+html[data-theme="light"] {
   --bg-icon: white;
   --col-icon: #000;
   --shadow-col: rgba(0, 0, 0, 0.18);
 }
 
-html[data-theme='dark']{
+html[data-theme="dark"] {
   --bg-icon: #191919;
   --col-icon: white;
   --twitter: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1da1f2, 0 0 20px #1da1f2, 0 0 25px #1da1f2, 0 0 30px #1da1f2, 0 0 35px #1da1f2;
