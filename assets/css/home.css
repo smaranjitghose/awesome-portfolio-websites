@@ -3,23 +3,19 @@
 html[data-theme="light"] {
   --bg-icon: white;
   --col-icon: #000;
+  --shadow-col: rgba(0, 0, 0, 0.18);
 }
 
 html[data-theme="dark"] {
   --bg-icon: #191919;
   --col-icon: white;
-  --twitter: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1da1f2, 0 0 20px #1da1f2,
-    0 0 25px #1da1f2, 0 0 30px #1da1f2, 0 0 35px #1da1f2;
-  --github: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #434547, 0 0 20px #434547,
-    0 0 25px #434547, 0 0 30px #434547, 0 0 35px #434547;
-  --linkedin: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0e76a8, 0 0 20px #0e76a8,
-    0 0 25px #0e76a8, 0 0 30px #0e76a8, 0 0 35px #0e76a8;
-  --kaggle: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #41aff3, 0 0 20px #41aff3,
-    0 0 25px #41aff3, 0 0 30px #41aff3, 0 0 35px #41aff3;
-  --dribble: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ea4c89, 0 0 20px #ea4c89,
-    0 0 25px #ea4c89, 0 0 30px #ea4c89, 0 0 35px #ea4c89;
-  --medium: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ab6c, 0 0 20px #00ab6c,
-    0 0 25px #00ab6c, 0 0 30px #00ab6c, 0 0 35px #00ab6c;
+  --twitter: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1da1f2, 0 0 20px #1da1f2, 0 0 25px #1da1f2, 0 0 30px #1da1f2, 0 0 35px #1da1f2;
+  --github: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #434547, 0 0 20px #434547, 0 0 25px #434547, 0 0 30px #434547, 0 0 35px #434547;
+  --linkedin: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0e76a8, 0 0 20px #0e76a8, 0 0 25px #0e76a8, 0 0 30px #0e76a8, 0 0 35px #0e76a8;
+  --kaggle: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #41aff3, 0 0 20px #41aff3, 0 0 25px #41aff3, 0 0 30px #41aff3, 0 0 35px #41aff3;
+  --dribble: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ea4c89, 0 0 20px #ea4c89, 0 0 25px #ea4c89, 0 0 30px #ea4c89, 0 0 35px #ea4c89;
+  --medium: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ab6c, 0 0 20px #00ab6c, 0 0 25px #00ab6c, 0 0 30px #00ab6c, 0 0 35px #00ab6c;
+  --shadow-col: #15f4ee;
 }
 
 /* Particle effect*/
@@ -99,7 +95,7 @@ html[data-theme="dark"] {
   margin: 8px;
   background-color: var(--bg-icon);
   border-radius: 50%;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+  box-shadow: 2px 5px 5px var(--shadow-col);
   text-decoration: none;
   transition: var(--trans-props);
 }
