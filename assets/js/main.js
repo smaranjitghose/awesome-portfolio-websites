@@ -38,6 +38,7 @@ let header = $(`
         <li><a class="white-text" href="research.html">Research</a></li>
         <li><a class="white-text" href="education.html">Education</a></li>
         <li><a class="white-text" href="index.html">Blog</a></li>
+        <li><a class="white-text" href="#">My Resume</a></li>
         <!--TOGGLE FOR LIGHT/DARK MODE-->
         <li>
         <label for="switch" class="theme-switch">
