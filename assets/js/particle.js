@@ -3,7 +3,7 @@
 particlesJS('particles-js', {
 	particles: {
 		number: {
-			value: 200,
+			value: 140,
 			density: {
 				enable: true,
 				value_area: 800
@@ -15,24 +15,37 @@ particlesJS('particles-js', {
 		shape: {
 			type: 'circle',
 			stroke: {
-				width: 1,
+				width: 0,
 				color: '#fff'
+			},
+			polygon: {
+				nb_sides: 5
+			},
+			image: {
+				src: 'https://cdn.freebiesupply.com/logos/large/2x/slack-logo-icon.png',
+				width: 100,
+				height: 100
 			}
 		},
+		
 		opacity: {
 			value: 1,
-			random: true,
+			random: false,
 			anim: {
 				enable: false,
-				speed: 1
+				speed: 1,
+				opacity_min: 0.1,
+				sync: false
 			}
 		},
 		size: {
-			value: 5,
+			value: 8,
 			random: true,
 			anim: {
 				enable: false,
-				speed: 30
+				speed: 10,
+				size_min: 10,
+				sync: false
 			}
 		},
 		line_linked: {
@@ -47,7 +60,14 @@ particlesJS('particles-js', {
 			speed: 5,
 			direction: 'none',
 			random: false,
-			straight: false
+			straight: false,
+			out_mode: 'out',
+			bounce: false,
+			attract: {
+				enable: false,
+				rotateX: 600,
+				rotateY: 1200
+			}
 		}
 	},
 	interactivity: {
@@ -60,8 +80,7 @@ particlesJS('particles-js', {
 			onclick: {
 				enable: true,
 				mode: 'push'
-			},
-			resize: true
+			}
 		},
 		modes: {
 			'repulse' : {
@@ -72,7 +91,8 @@ particlesJS('particles-js', {
 				particles_nb: 4
 			}
 		}
-	}
+	},
+	retina_detect: true
 });
 const allElements = document.querySelectorAll('.animated-text');
 
