@@ -34,10 +34,10 @@ html {
 
 /*Top button dark/light mode*/
 
-#myBtn {
+#myBtn {                                                 
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 40px;
   right: 30px;
   z-index: 99;
   font-size: 18px;
@@ -201,10 +201,19 @@ html.transition *:after {
   background-color: var(--bg-nav);
   background-image: var(--bg-nav-img);
 }
+.row{
+  
+  clear: both;
+  margin: 0 auto;
+  padding:0 auto;
+  bottom: 0px;
+  clear: both !important;
+      
+}
 
 .webintern-footer-inner {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .webintern-footer-logo {
@@ -213,22 +222,22 @@ html.transition *:after {
 
 .webintern-footer .webintern-footer-inner .simple-text p {
   color: #fff;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .simple-text p {
   font-size: 15px;
   color: #42435d;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  line-height: 26px;
+  font-weight: 300;
+  line-height: 20px;
   margin-bottom: 0;
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 40rem) {
   .simple-text p {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 
@@ -238,22 +247,22 @@ html.transition *:after {
 }
 .webintern_footer_title {
   margin-top: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
 .webintern_footer_title small {
   font-family: "Work Sans", sans-serif;
   color: #fff;
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 10px;
   text-transform: uppercase;
 }
 .webintern_footer_title:after {
   content: "";
   display: block;
-  width: 8rem;
+  width: 6rem;
   height: 2px;
   background: #26a69a;
-  margin-top: 15px;
+  margin-top: 4px;
 }
 
 .contact-form #exampleInputEmail1 {
@@ -268,7 +277,7 @@ html.transition *:after {
 
 .form-control:focus {
   box-shadow: none;
-  border-bottom: 2px solid #26a69a;
+  border-bottom: 1px solid #26a69a;
 }
 .form-group {
   padding-left: 0px;
@@ -276,10 +285,10 @@ html.transition *:after {
 
 .webintern-footer .webintern-footer-inner .simple-text p {
   color: #fff;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: block;
-  width: 220px;
+  width: 100px;
 }
 
 .simple-text p {
@@ -297,22 +306,22 @@ html.transition *:after {
 }
 .webintern_footer_title {
   margin-top: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .webintern_footer_title small {
   font-family: "Work Sans", sans-serif;
   color: #fff;
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 100;
+  font-size: 13px;
   text-transform: uppercase;
 }
 .webintern_footer_title:after {
   content: "";
   display: block;
-  width: 8rem;
+  width: 7rem;
   height: 2px;
   background: #26a69a;
-  margin-top: 15px;
+  margin-top: 2px;
 }
 
 .contact-form #exampleInputEmail1 {
@@ -323,37 +332,37 @@ html.transition *:after {
   font-size: 15px;
   border-radius: 2px;
 }
-.tt-copy {
-  font-size: 15px;
-  line-height: 20px;
+/*.tt-copy {
+  font-size: 0px;
+  line-height: 0px;
   color: #fff;
-  padding: 10px 0;
+  padding: 0px 0;
   font-family: "Open Sans", sans-serif;
-}
+}*/
 
 /*Responsive*/
 
-@media (min-width: 60rem) {
+@media (min-width: 40rem) {
   .simple-text p {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
   }
 
   .webintern-footer .webintern-footer-inner .simple-text p {
-    width: 250px;
+    width: 220px;
   }
 }
 
 .send-btn {
-  padding-top: 8px 5px 8px 5px;
-  font-size: 15px;
+  padding-top: 5px 3px 5px 3px;
+  font-size: 10px;
   transition-property: font-size;
   transition: all 0.5s ease;
   outline: none;
 }
 .send-btn:hover {
   background-color: #0dfde5;
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .btn:focus,
@@ -365,17 +374,17 @@ html.transition *:after {
 }
 
 .form-group:focus {
-  border: 3px solid black;
+  border: 2px solid black;
 }
 
-.tt-copy {
-  font-weight: 500;
-  line-height: 20px;
+/*.tt-copy {
+  font-weight: 0;
+  line-height: 0px;
   color: #fff;
-  padding: 10px 0;
+  padding: 0px 0;
   font-family: "Open Sans", sans-serif;
-  letter-spacing: 2px;
-}
+  letter-spacing: 0px;
+}*/
 
 .text-animation {
   animation: text 3s 1;
@@ -407,7 +416,7 @@ html.transition *:after {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  width: 220px;
+  width: 120px;
   display: block;
 }
 
