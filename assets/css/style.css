@@ -53,6 +53,10 @@ html {
 
 /* NAVBAR*/
 
+.nav-wrapper{
+  margin: 0 20px 0 20px;
+}
+
 .nav-wrapper a:hover,
 .sidenav a:hover {
   text-decoration: none;

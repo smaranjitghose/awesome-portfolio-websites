@@ -12,6 +12,17 @@ html[data-theme="dark"] {
 
 /*Main section*/
 
+.main-heading{
+  font-size: 3em;
+  font-weight: bolder; 
+  color: var(--text);
+}
+.sub-heading{
+  font-size: 1.1em; 
+  letter-spacing: 2px; 
+  line-height: normal; 
+  color: var(--text-color);
+}
 .main {
   width: 100%;
   padding-left: 4rem;
@@ -97,6 +108,10 @@ html[data-theme="dark"] {
   }
 }
 
+.margin-head{
+  margin-top: 0rem !important;
+}
+
 .heading1 {
   font-size: 32px;
   line-height: 1.2;
@@ -107,13 +122,9 @@ html[data-theme="dark"] {
   color:var(--text);
 }
 
-.heading2{
-  color:var(--text-color);
-}
-
 .card-body .pre-heading {
   color: #444;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
   color:var(--text-color);
@@ -126,6 +137,8 @@ html[data-theme="dark"] {
 
 .card-body .author {
   font-size: 15px;
+  float: right !important;
+  margin-right: 40px;;
   color:var(--text-color);
 }
 
@@ -236,6 +249,11 @@ html[data-theme="dark"] {
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
+
+.card-body p{
+  margin: 0px;
+  font-size: 15px;
+}
 .content {
   position: relative;
   display: flex;
@@ -252,7 +270,7 @@ html[data-theme="dark"] {
   margin-top: 1rem;
 }
 .title {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bold;
   line-height: 1.2;
 }
