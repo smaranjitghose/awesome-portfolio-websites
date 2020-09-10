@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-html {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  height: 100%;
+
+html[data-theme="light"] {
+ --text-color: #6C757D;
+ --bg1-color: #fff;
+}
+
+html[data-theme="dark"] {
+ --text-color: #fff;
+ --bg1-color: #272727;
 }
 
 /*Main section*/
@@ -42,11 +46,14 @@ html {
   display: flex;
   flex-direction: column;
   max-height: 80%;
+  border:none;
 }
 .card1 .card-body {
   display: flex;
   flex-flow: row wrap;
   padding: 30px;
+  color: var(--text);
+  background-color: var(--bg1-color);
 }
 .card1 header {
   flex: 100%;
@@ -79,7 +86,7 @@ html {
     border-bottom-left-radius: 5px;
     border-top-right-radius: 0;
     max-width: 310px;
-    max-height: 277px;
+    max-height: 279px;
     width: 100%;
     border: 0;
   }
@@ -96,6 +103,12 @@ html {
   font-weight: bold;
   color: #222;
   margin: 0.5em 0;
+  margin-top: 6rem;
+  color:var(--text);
+}
+
+.heading2{
+  color:var(--text-color);
 }
 
 .card-body .pre-heading {
@@ -103,6 +116,7 @@ html {
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  color:var(--text-color);
 }
 
 .card-body .meta {
@@ -112,6 +126,7 @@ html {
 
 .card-body .author {
   font-size: 15px;
+  color:var(--text-color);
 }
 
 .card-body h3{
@@ -164,9 +179,7 @@ html {
   text-align: center;
   color: whitesmoke;
   background-color: whitesmoke;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
-    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
-    0 16px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border: none;
 }
 @media (min-width: 600px) {
@@ -287,4 +300,11 @@ html {
 .page-content .card:focus-within .content,
 .page-content .card:focus-within .content > *:not(.title) {
   transition-duration: 0s;
+}
+
+/*Mentorship card*/
+
+.card2{
+  background-color: var(--bg1-color);
+  color: var(--text);
 }
