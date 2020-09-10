@@ -15,7 +15,7 @@ body {
   margin: 0;
   color: var(--text);
   font-family: "Poppins", sans-serif;
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
 }
 
 /* Top button */
@@ -72,8 +72,8 @@ p {
   margin: 20px 0;
   font-weight: 300;
   font-size: 18px;
+  padding: 10px;
 }
-
 /*Toggle for light/dark mode*/
 
 input[type="checkbox"] {
@@ -129,11 +129,11 @@ html.transition *:after {
 /*Footer*/
 
 .webintern-footer {
-  background: #000000;
+  /* background: #000000; */
 }
 
 .webintern-footer-inner {
-  padding-top: 30px;
+  padding-top: 70px;
   padding-bottom: 10px;
 }
 

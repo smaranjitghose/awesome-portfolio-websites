@@ -60,11 +60,12 @@ let header = $(`
 
 let footer = $(`
 <footer class="webintern-footer">
+<div class="panel" data-color="black">
 <div class="webintern-footer-inner">
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-10 pt-5" >
-      <div class="col-sm-6 col-md-5"> 
+      <div class="col-sm-6 col-md-5">
         <a class="webintern-footer-logo" href="#">
           <center><img src="assets/images/John-Doe1.png"style="width: 200px;"/></center>
         </a>
@@ -102,13 +103,13 @@ let footer = $(`
     </div>
 
       <div class="col-sm-6 col-md-5 pt-5 footer-2">
-     
+
         <!-- footer_title -->
         <h4 class="webintern_footer_title h5">
           <small>Get In Touch</small>
         </h4>
         <!-- TT-SUBSCRIBE -->
-      
+
       <div class="contact-form">
           <form>
               <fieldset class="form-group">
@@ -135,6 +136,7 @@ let footer = $(`
     <center class="text-animation">Made with <i class="fa fa-heart" style="color: red;"></i></center>
   </div>
 </div>
+</div>
 </footer>`);
 let bodyElement = $(`body`);
 bodyElement.prepend(header);
@@ -148,7 +150,7 @@ checkbox.addEventListener('change',function(){
     //If the checkbox is checked, change to dark theme.
     if(this.checked){
         trans()
-        document.documentElement.setAttribute('data-theme', 'dark')         
+        document.documentElement.setAttribute('data-theme', 'dark')
     }
     //If the checkbox is not checked, apply light theme.
     else{
@@ -161,5 +163,5 @@ let trans = () =>{
     document.documentElement.classList.add('transition');
     window.setTimeout( () => {
         document.documentElement.classList.remove('transition');
-    },1000)  
+    },3000)
 }

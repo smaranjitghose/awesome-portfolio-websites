@@ -25,7 +25,9 @@ html[data-theme='dark']{
   width: 100%;
 }
 .section {
-  background-color: rgb(63, 25, 170);
+  /* background-color: rgb(63, 25, 170); */
+  padding-top: 150px;
+  padding-bottom: 100px;
   justify-content: center;
   align-items: center;
 }
@@ -169,4 +171,22 @@ a:hover {
   .text {
     margin-top: 5rem;
   }
+}
+
+/*For the color change effect on page*/
+body{
+  transition: background-color 1s ease;
+  background-color: var(--bg);
+}
+
+color-top{
+  background-color: var(--bg);
+}
+
+.color-purple{
+  background-color: rgb(63, 25, 170);
+}
+
+.color-black{
+  background-color: #000000;
 }
