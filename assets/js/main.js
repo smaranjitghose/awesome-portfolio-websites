@@ -91,7 +91,7 @@ let footer = $(`
 <div class="webintern-footer-inner">
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 col-md-6 pt-5" >
+      <div class="col-lg-7 col-md-6 pt-3" >
       <div class="col-sm-6 col-md-7"> 
         <a class="webintern-footer-logo" href="#">
           <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
@@ -130,7 +130,7 @@ let footer = $(`
     </div>
     </div>
 
-      <div class="col-sm-6 col-md-5 pt-5 footer-2">
+      <div class="col-sm-6 col-md-5 pt-3 footer-2">
      
         <!-- footer_title -->
         <h4 class="webintern_footer_title h5">
@@ -161,7 +161,7 @@ let footer = $(`
 </div>
 <div class="tt-copy">
   <div class="container col-sm-6">
-    <center class="text-animation">Made with <i class="fa fa-heart" style="color: red;"></i></center>
+   <!-- <center class="text-animation">Made with <i class="fa fa-heart" style="color: red;"></i></center>-->
   </div>
 </div>
 </footer>`);
