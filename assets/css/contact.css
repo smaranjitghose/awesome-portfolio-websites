@@ -33,24 +33,29 @@ h2  span{
   font-style:italic;
   font-weight:bold;
 }
-.social-icons{
-  white-space:nowrap;
+/* Dark Light Theme*/
+[data-theme="light"] {
+  --backgound: #f6f6f6;
+  --backgound-overlay: rgba(255, 255, 255, 0.4);
+  --font-colour: black;
+  color:black;
 }
-h1{
-  font-style:italic;
-  font-weight:bold;
-  top:50%;
+
+[data-theme="dark"] {
+  --backgound: #202020;
+  --backgound-overlay: rgba(32, 32, 32, 0.8);
+  --font-colour:white;
+  color:white;
 }
-.container h1{
-  padding-top: 60px;
+/*Aligning form to right*/
+.right{
+  right:0;
 }
 .s {
   float:right;
-
 }
 /*contact details*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-
 /* RESET RULES AFTER SUBMIT
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
@@ -85,11 +90,9 @@ button,
 label {
   cursor: pointer;
 }
-
 select {
   appearance: none;
 }
-
 textarea {
   resize: none;
 }
@@ -98,13 +101,10 @@ ul {
 }
 body {
   font: 18px/1.5 "Open Sans", sans-serif;
-  background: var(--bodyColor);
-  color: var(--white);
   margin: 1.5rem 0;
 }
-
 .container {
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -113,15 +113,13 @@ h1{
 }
 /* FORM ELEMENTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.my-form h1 {
-  margin-bottom: 1.5rem;
-}
 .my-form li,
 .my-form .grid > *:not(:last-child) {
   margin-bottom: 1.5rem;
 }
-
-.my-form select,
+.my-form button{
+  background-color: #292a2b;
+}
 .my-form input,
 .my-form textarea,
 .my-form button {
@@ -129,17 +127,16 @@ h1{
   line-height: 1.5;
   padding: 15px 10px;
   border: 1px solid var(--borderFormEls);
-  color: var(--white);
-  background: var(--bgFormEls);
+  color:grey;
   transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
     transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
 }
 .my-form textarea {
-  height: 150px;
+  height: 100px;
+  box-shadow:5px 10px;
 }
-
 .my-form ::placeholder {
-  color: inherit;
+  color: grey;
   /*Fix opacity issue on Firefox*/
   opacity: 1;
 }
@@ -147,8 +144,8 @@ h1{
 .my-form input:focus,
 .my-form textarea:focus,
 .my-form button:enabled:hover,
-.my-form button:focus,
-.my-form input[type="checkbox"]:focus + label {
+.my-form button:focus
+ {
   background: var(--bgFormElsFocus);
 }
 
@@ -157,22 +154,7 @@ h1{
 .my-form textarea:focus {
   transform: scale(1.02);
 }
-.my-form *:required,
-.my-form select {
-  background-repeat: no-repeat;
-  background-position: center right 12px;
-  background-size: 15px 15px;
-}
-.my-form *:required {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);  
-}
-.my-form select {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
-}
-.my-form *:disabled {
-  cursor: default;
-  filter: blur(2px);
-}
+
 /* FORM BUTTONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .my-form .required-msg {
@@ -237,7 +219,6 @@ h1{
   display: block;  
   box-sizing: border-box;
 }
-
 #UserCaptchaCode { 
   padding: 15px 10px; 
   outline: none; 
@@ -280,14 +261,4 @@ h1{
   color: red; 
   font-size: 12px; 
   display: none; 
-}
-.success {
-  color: green;
-  font-size: 18px;
-  margin-bottom: 15px;
-  display: none;
-}
-/*Aligning form to right*/
-.right{
-  right:0;
 }
