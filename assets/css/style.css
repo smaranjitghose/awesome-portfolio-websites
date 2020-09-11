@@ -281,6 +281,7 @@ html.transition *:after {
 }
 .form-group {
   padding-left: 0px;
+  padding-right: 0px;
 }
 
 .webintern-footer .webintern-footer-inner .simple-text p {
