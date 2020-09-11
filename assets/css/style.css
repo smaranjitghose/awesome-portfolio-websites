@@ -81,9 +81,9 @@ p {
   display: inline-block;
   line-height: 1;
   font-family: "Poppins", sans-serif;
-  margin: 3.5vh 0;
+  margin: 20px 0;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 18px;
 }
 
 /*toggle for light/dark mode*/
