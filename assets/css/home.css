@@ -57,7 +57,7 @@ html[data-theme="dark"] {
   width: 10px;
   text-indent: 0;
   /* overflow: hidden; */
-  background:var(--col-icon);
+  background: #000;
   animation: blink 0.3s infinite alternate;
 }
 @keyframes blink {
@@ -167,7 +167,7 @@ a:hover {
 }
 
 /* Responsive */
-@media only screen and (max-width: 996px) {
+@media only screen and (max-width: 450px) {
   .text {
     margin-top: 5rem;
   }
