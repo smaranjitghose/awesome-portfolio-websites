@@ -20,6 +20,7 @@ html[data-theme = 'dark']
 body {
   height: 100vh;
   margin: 0;
+  overflow-x: hidden;
   color: var(--text);
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
@@ -30,6 +31,19 @@ body {
 /* smooth scrolling to top */
 html {
   scroll-behavior: smooth;
+}
+
+/*starting part of every page*/
+
+.main-heading{
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+.pre-heading{
+  font-size: 1.1em; 
+  letter-spacing: 2px; 
+  line-height: normal;
 }
 
 /*Top button dark/light mode*/
@@ -55,6 +69,11 @@ html {
 .nav-wrapper a:hover,
 .sidenav a:hover {
   text-decoration: none;
+}
+
+.nav-wrapper{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
   /*Navbar dark mode(research page)*/
@@ -108,7 +127,6 @@ p {
   border: 5px solid #e4e7ec;
   border-radius: 10em;
   background-color: white;
-  box-shadow: 0px 10px 25px #e4e7ec;
   transition: background-color 250ms;
   margin-top: 1em;
   margin-left: 1.5em;
@@ -200,6 +218,7 @@ html.transition *:after {
 .webintern-footer {
   background-color: var(--bg-nav);
   background-image: var(--bg-nav-img);
+  padding: 20px;
 }
 .row{
   
