@@ -39,12 +39,14 @@
     <link rel="stylesheet" href="assets/css/contact.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 </head>
-<body>  
+<body> 
+
+
   <!--SPLITTING SCREEN INTO LEFT AND RIGHT-->
     <div class="split left">
         <div class="centered">
-            <h2>Hi 👋,I'm <span>John Doe</span></h2>
-            <img src="assets/images/dp.svg" alt="John Doe" class="rounded-circle" height="200" width="200"><br>
+            <h2>Lets's <span>CONNECT</span></h2>
+            <img src="assets\images\CONTACT.png" class="rounded-circle" height="200" width="200"><br>
             <h1><span>Connect me on..</span></h1>
             <div class="social-icons">
 
@@ -73,6 +75,9 @@
                 </a>
 
             </div>
+            <div>
+              <input type="checkbox" id="darkMood" onchange="changeTheme()"><label for="darkMood"></label>
+          </div>
          
         </div>
       </div>
@@ -81,7 +86,7 @@
       <div class="split right">
         <form class="my-form">
             <div class="container">
-              <h1>Get in touch!</h1>
+              <h2> &nbsp &nbsp&nbsp<strong>Get in touch!</strong></h2>
               <ul>
                
                 <li>
@@ -104,8 +109,16 @@
                       <div id="CaptchaImageCode" class="CaptchaTxtField">
                         <canvas id="CapCode" class="capcode" width="200" height="40"></canvas>
                     </div>
+                 <br>
                
-                    <input type="button" class="btnSubmit" onclick="CheckCaptcha();" value="Submit">
+                    <button class="btn-grid" onclick="CheckCaptcha()" type="submit" >
+                      <span class="back">          
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
+                      </span>
+                      <span class="front">SUBMIT</span>
+                    </button>
+          
+                  
                 
                </li>
               </ul>
