@@ -57,7 +57,7 @@ html[data-theme="dark"] {
   width: 10px;
   text-indent: 0;
   /* overflow: hidden; */
-  background: #000;
+  background:var(--col-icon);
   animation: blink 0.3s infinite alternate;
 }
 @keyframes blink {
