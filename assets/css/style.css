@@ -6,6 +6,7 @@ html[data-theme = 'light']
   --bg-nav-img: #000000;
   --bg: #ffffff;
   --text: #191919;
+  --text-color: #6C757D;
 }
 
 html[data-theme = 'dark']
@@ -15,6 +16,7 @@ html[data-theme = 'dark']
   --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
   --bg: #191919;
   --text: #ffffff;
+  --text-color: #fff;
 }
 
 body {
@@ -38,12 +40,14 @@ html {
 .main-heading{
   font-size: 4em;
   font-weight: bolder;
+  color: var(--text);
 }
 
 .pre-heading{
   font-size: 1.1em; 
   letter-spacing: 2px; 
   line-height: normal;
+  color: var(--text-color);
 }
 
 /*Top button dark/light mode*/
@@ -395,15 +399,6 @@ html.transition *:after {
 .form-group:focus {
   border: 2px solid black;
 }
-
-/*.tt-copy {
-  font-weight: 0;
-  line-height: 0px;
-  color: #fff;
-  padding: 0px 0;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0px;
-}*/
 
 .text-animation {
   animation: text 3s 1;
