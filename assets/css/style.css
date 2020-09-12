@@ -416,7 +416,6 @@ html.transition *:after {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  /* width: 120px; */
   display: block;
 }
 
