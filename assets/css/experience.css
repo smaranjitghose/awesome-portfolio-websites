@@ -53,6 +53,7 @@ html {
 }
 .card1 .meta {
   margin-bottom: 22px;
+  margin:0;
 }
 
 .card1 .featured-image {
@@ -96,6 +97,11 @@ html {
   font-weight: bold;
   color: #222;
   margin: 0.5em 0;
+  margin-top:6rem;
+}
+
+.exp-head{
+  margin-top: 0rem !important;
 }
 
 .card-body .pre-heading {
