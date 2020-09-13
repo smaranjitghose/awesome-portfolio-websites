@@ -27,7 +27,7 @@ function topFunction() {
 
 let header = $(`
 <nav class="black">
-<div class="nav-wrapper container">
+<div class="nav-wrapper">
     <a href="#!" class="brand-logo"><img src="assets/images/John-Doe1.png"></a>
     <a href="#" data-target="mobile-demo" class="white-text sidenav-trigger"><i
             class="material-icons">menu</i></a>
@@ -37,7 +37,8 @@ let header = $(`
         <li><a class="white-text" href="projects.html">Projects</a></li>
         <li><a class="white-text" href="research.html">Research</a></li>
         <li><a class="white-text" href="education.html">Education</a></li>
-
+        <li><a class="white-text" href="index.html">Blog</a></li>
+        <li><a class="white-text" href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
         <!--TOGGLE FOR LIGHT/DARK MODE-->
         <li>
         <label for="switch" class="theme-switch">
@@ -64,6 +65,9 @@ let header = $(`
 <li><a href="projects.html">Projects</a></li>
 <li><a href="research.html">Research</a></li>
 <li><a href="education.html">Education</a></li>
+<li><a href="index.html">Blog</a></li>
+<li><a href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
+
 
 <!--TOGGLE FOR LIGHT/DARK MODE-->
         <li>
@@ -87,16 +91,15 @@ let footer = $(`
 <div class="webintern-footer-inner">
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 col-md-10 pt-5" >
-      <div class="col-sm-6 col-md-5"> 
+      <div class="col-lg-7 col-md-6 pt-3" >
+      <div class="col-sm-6 col-md-7"> 
         <a class="webintern-footer-logo" href="#">
-          <center><img src="assets/images/John-Doe1.png"style="width: 200px;"/></center>
+          <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
         </a>
         <div class="simple-text text-center dark padding-sm">
           <p >
             "Develop a passion for learning. If you do, you will never cease to grow."
           </p>
-        </div>
 
 <!-- Social media icons for footer -->
 
@@ -121,11 +124,13 @@ let footer = $(`
       </a>
 </div>
 
+
         <div class="empty-space xs-25 sm-25"></div>
       </div>
     </div>
+    </div>
 
-      <div class="col-sm-6 col-md-5 pt-5 footer-2">
+      <div class="col-sm-6 col-md-5 pt-3 footer-2">
      
         <!-- footer_title -->
         <h4 class="webintern_footer_title h5">
@@ -156,7 +161,7 @@ let footer = $(`
 </div>
 <div class="tt-copy">
   <div class="container col-sm-6">
-    <center class="text-animation">Made with <i class="fa fa-heart" style="color: red;"></i></center>
+   <!-- <center class="text-animation">Made with <i class="fa fa-heart" style="color: red;"></i></center>-->
   </div>
 </div>
 </footer>`);
