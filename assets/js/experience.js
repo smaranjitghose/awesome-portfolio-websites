@@ -1,3 +1,62 @@
+//  Work experience cards
+
+
+const experiencecards = document.querySelector(".experience-cards");
+const exp = [
+  {
+    title: "Reasearch and Development Intern",
+    cardImage: "assets/images/experience-page/UCL.JPG",
+    place: "UCL",
+    time: "(May2020-present)",
+    desp: "<li>Automatic detection of Orthopedic Implants using Deep Learning.</li> <li>Collection of radiographs, data cleaning and database management.</li> <li>Image Quality Analysis for Bio-Medical Images.</li> <li>Serving Models using TensorFlow JS.</li> <li>Experimenting with Few Shot Learning, Adversarial Training and Class Activation Maps.</li>",
+  },
+  {
+    title: "Robotics and Embedded system Intern",
+    cardImage: "assets/images/experience-page/lema-labs.png",
+    place: "LEMA LABS",
+    time: "(Jun-Jul,2019)",
+    desp: "<li>Design low cost prototyping boards for teaching robotics to underprivileged children.</li> <li>Worked on integration of Face Recognition based models with Raspberry Pi and Intel Movidius.</li> <li>Image Quality Analysis for Bio-Medical Images.Experimented with various algorithms for Lane Detection as well as Shortest Paths for Autonomous Vehicles.</li>",
+  },
+  {
+    title: "Research Intern",
+    cardImage: "assets/images/experience-page/ISI.png",
+    place: "ISI, Kolkata",
+    time: "(Dec 19-Jan 20)",
+    desp:"<li>Worked on for Image Encryption and Image Forgery Detection.</li>",
+  },
+];
+
+const showCards2 = () => {
+  let output = "";
+  exp.forEach(
+    ({ title, cardImage, place, time, desp }) =>
+      (output += `        
+      <ul>
+      <li class="card card1">
+        <img src="${cardImage}" class="featured-image"/>
+        <article class="card-body">
+          <header>
+            <div class="title">
+              <h3>${title}</h3>
+            </div>
+            <p class="meta">
+              <span class="pre-heading">${place}</span><br>
+              <span class="author">${time}</span>
+            </p>
+            <ol>
+              ${desp}
+            </ol>
+          </header>
+        </article>
+      </li>
+    </ul>
+      `)
+  );
+  experiencecards.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", showCards2);
+
+
 // Volunteership Cards
 
 const volunteership = document.querySelector(".volunteership");
@@ -57,60 +116,50 @@ const showCards = () => {
 document.addEventListener("DOMContentLoaded", showCards);
 
 
-//  Work experience cards
+// Mentorship Card
 
 
-const experiencecards = document.querySelector(".experience-cards");
-const exp = [
+const mentorshipcards = document.querySelector(".mentorship-cards");
+const mentor = [
   {
-    title: "Reasearch and Development Intern",
-    cardImage: "assets/images/experience-page/UCL.JPG",
-    place: "UCL",
-    time: "(May2020-present)",
-    desp: "<li>Automatic detection of Orthopedic Implants using Deep Learning.</li> <li>Collection of radiographs, data cleaning and database management.</li> <li>Image Quality Analysis for Bio-Medical Images.</li> <li>Serving Models using TensorFlow JS.</li> <li>Experimenting with Few Shot Learning, Adversarial Training and Class Activation Maps.</li>",
+    title: "HakinCode",
+    image: "assets/images/experience-page/hakin.png",
+    time: "06/2020 - 08/2020",
+    desp1: "Mentored for a project named Awesome Portfolio Project. It helps to instantly create portfolio.",
+    desp2: "Guided students in providing insights about SEO, various animations library etc.",
+    desp3: "For my accomplishments and credentials you may check here",
   },
   {
-    title: "Robotics and Embedded system Intern",
-    cardImage: "assets/images/experience-page/lema-labs.png",
-    place: "LEMA LABS",
-    time: "(Jun-Jul,2019)",
-    desp: "<li>Design low cost prototyping boards for teaching robotics to underprivileged children.</li> <li>Worked on integration of Face Recognition based models with Raspberry Pi and Intel Movidius.</li> <li>Image Quality Analysis for Bio-Medical Images.Experimented with various algorithms for Lane Detection as well as Shortest Paths for Autonomous Vehicles.</li>",
-  },
-  {
-    title: "Research Intern",
-    cardImage: "assets/images/experience-page/ISI.png",
-    place: "ISI, Kolkata",
-    time: "(Dec 19-Jan 20)",
-    desp:"<li>Worked on for Image Encryption and Image Forgery Detection.</li>",
+    title: "Google Summer of Code",
+    image: "assets/images/experience-page/gsoc.png",
+    time: "03/2020 - 08/2020",
+    desp1: "Mentored for a project named ScanCode for the organization named AboutCode.",
+    desp2: "Guided students in providing insights about various technologies such as tensorflow.",
+    desp3: "For my accomplishments and credentials you may check here",
   },
 ];
 
-const showCards2 = () => {
+const showCards3 = () => {
   let output = "";
-  exp.forEach(
-    ({ title, cardImage, place, time, desp }) =>
+  mentor.forEach(
+    ({ title, image, time, desp1, desp2, desp3 }) =>
       (output += `        
-      <ul>
-      <li class="card card1">
-        <img src="${cardImage}" class="featured-image"/>
-        <article class="card-body">
-          <header>
-            <div class="title">
-              <h3>${title}</h3>
-            </div>
-            <p class="meta">
-              <span class="pre-heading">${place}</span><br>
-              <span class="author">${time}</span>
-            </p>
-            <ol>
-              ${desp}
-            </ol>
-          </header>
-        </article>
-      </li>
-    </ul>
+      <div class="col-sm-6">
+      <div class="card card2">
+        <img src="${image}" class="card-img-top" alt="..."  width="64" height="300">
+        <div class="card-body">
+          <h5 class="card-title">${title}</h5>
+          <p>${time}</p>
+        </div>
+        <ul class="list-group list-group-flush p-0 right-aligned">
+          <li class="list-group-item card2">${desp1}</li>
+          <li class="list-group-item card2">${desp2}</li>
+          <li class="list-group-item card2">${desp3}<a href=""><i class="fa fa-angle-right fa-lg ml-2"></i></a></li>
+        </ul>
+      </div>
+      </div>
       `)
   );
-  experiencecards.innerHTML = output;
+  mentorshipcards.innerHTML = output;
 };
-document.addEventListener("DOMContentLoaded", showCards2);
+document.addEventListener("DOMContentLoaded", showCards3);
