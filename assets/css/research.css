@@ -1,4 +1,4 @@
-/*Import font from googleapis.com*/
+/*Import font*/
 
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
@@ -7,7 +7,7 @@
 html[data-theme = 'light']
 {
     --bg-head : #f5f5f5;
-    --bg-col: #fff;
+    --bg-col: #fafafa;
     --p-up: black;
     --bg-cite-y: #f5f5f5;
     --cite-bg: #fff;
@@ -16,6 +16,16 @@ html[data-theme = 'light']
     --cite-close: #333;
     --cite-hover: black;
     --hover-link: rgb(28, 28, 161);
+    --black: #1d1f20;
+    --blue: #83e4e2;
+    --green: #a2ed56;
+    --yellow: #fddc32;
+    --white: #fafafa;
+    --shadow-col1: rgba(0,0,0,0.05);
+    --shadow-col2: rgba(75,0,0,0.05);
+    --cite-div-img: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
+    --cite-div: #83e4e2;
+    --ppr-col: purple;
 }
 
 /*Declaring CSS variables for Dark Mode*/
@@ -36,11 +46,22 @@ html[data-theme = 'dark']{
     --cite-close: rgba(0, 0, 0, 0.192);
     --cite-hover: #fff;
     --hover-link: rgb(2, 187, 187);
+    --shadow-col1:rgb(46, 37, 37);
+    --shadow-col2:rgba(21, 22, 22, 0.459);
+    --cite-div-img: linear-gradient(135deg, rgb(241, 241, 89) 0%, #ff8489 100%);
+    --cite-div: #d5adc8;
+    --ppr-col: rgb(231, 85, 109);
 }
 
 /*For Changing background color of body according to theme*/
 body{
     background: var(--bg-col) !important;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
 }
 
 .head-upper{
@@ -62,14 +83,19 @@ body{
 } 
 
 #researchDetailsTable {
-    border-collapse: collapse;
+    border-collapse: separate;
     border-width: 0;
     empty-cells: show;
+    border-spacing: 3em;
+    position: relative;
 }
 
 #researchDetailsTable {
     width: 100%;
-    table-layout: fixed;
+}
+
+#researchDetailsTable tr{
+    box-shadow: 0.25rem 0.25rem 0.6rem var(--shadow-col1), 0 0.5rem 1.125rem var(--shadow-col2);
 }
 
 #rDetailsHead {
@@ -150,6 +176,12 @@ body{
 .researchY span {
     display: inline-block;
     margin-top: 3px;
+    color: grey;
+}
+
+.rConferences{
+    font-style: italic;
+    font-size: 0.88em;
 }
 
 .researchY {
@@ -157,10 +189,12 @@ body{
     padding: 16px 16px 0 16px;
     vertical-align: top;
     text-align: right;
+    color: grey;
 }
 
 .resYearDisplay {
     display: none;
+    color: grey;
 }
 
 /*Profile pic responsiveness*/
@@ -193,23 +227,81 @@ body{
 
 .paperTitle{
     font-weight: bold;
+    color: var(--ppr-col);
 }
 
-/*Cite link*/
-
-.empty{
-    margin-top: -0.8rem;
+/*IMAGES SECTION OF LIST*/
+.rImg{
+    margin-left: -2.5em;
 }
 
-.cite{
-    font-size: 4em;
-    font-family: 'Londrina Outline', cursive;
-    font-weight: bold;
+.imgRes{
+    width: 14em;
+    height: 14em;
 }
 
-.cite:hover{
+.imgResponsive{
+    display: none;
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 711px) {
+    .imgResponsive{
+        display: block;
+    }
+
+    .rImg{
+        display: none;
+    }
+
+    .imgCol{
+        display: none;
+    }
+}
+
+@media(min-width: 60rem)
+{
+.rImg{
+    width: 15em;
+    height: 15em;
+}
+}
+
+/*Button for Citing*/
+
+.button{
+    /*font-size: 1.5rem;*/
     text-decoration: none;
-    color: var(--hover-link);
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5em 1.5em;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+button-small{
+    font-size: 0.5rem;
+    font-weight: 700;
+}
+
+.button-accent{
+    color: var(--ppr-col);
+    border-color: var(--ppr-col);
+}
+
+.button-accent:hover,
+.button-accent:focus{
+    background: var(--ppr-col);
+    color: #fff;
+    text-decoration: none;
+}
+
+@media(min-width: 60rem){
+   .button{
+       font-size: 1.2rem;
+   }
 }
 
 /*Popup for cite*/
@@ -268,17 +360,21 @@ body{
 .popup .content {
     max-height: 70%;
     overflow: auto;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 /*Responsive*/
 
 @media(min-width: 60rem)
 {
-    .cite{
-        font-size: 3rem;
-        font-weight: normal;
+    .cite-div{
+        margin-top: -2em;
     }
+
+    /* .cite{
+        font-size: 4rem;
+        font-weight: normal; 
+    } */
 
     .popup h5{
         padding: 15px;
@@ -291,10 +387,6 @@ body{
 
     .popup .content{
         font-size: 1em;
-    }
-
-    .empty{
-        margin-top: -2.5rem;
     }
 }
   
@@ -317,22 +409,6 @@ body{
     font-size: 0.8em;
     color: var(--p-up);
 }
-
-.lastRow{
-    text-align: right;
-}
-
-/*BibTeX link*/
-
-.bibtex{
-    left: 2rem;
-}
-
-.bibtex:hover{
-    text-decoration: none;
-    color: var(--hover-link);
-}
-
 
  /*social icons footer*/
 
