@@ -30,6 +30,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
@@ -40,14 +41,16 @@
    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 </head>
 <body> 
-
+  
 
   <!--SPLITTING SCREEN INTO LEFT AND RIGHT-->
-    <div id="col-1">
-        <div class="centered">
+   <div class="row no-gutters">
+     <div class="col-md-6 no-gutters">
+       <div class="leftside ">
+        
             <h2>Lets's <span>CONNECT</span></h2>
-            <img src="assets\images\CONTACT.png" class="rounded-circle" height="200" width="200"><br>
-            <h1><span>Connect me on..</span></h1>
+ <img  src="assets\images\CONTACT.png" class="rounded-circle center-block d-block mx-auto" height="250" width="250"><br>
+ <h1 class="d-flex justify-content-center"><i>Connect me on ....</i></h1>
             <div class="social-icons">
 
                 <a class="social-icon twitter" href="" target="_blank" rel="author">
@@ -73,17 +76,19 @@
                 <a class="social-icon github" href="" target="_blank" rel="author">
                     <i class="fab fa-github"></i>
                 </a>
-
-            </div>
-            <div>
-              <input type="checkbox" id="darkMood" onchange="changeTheme()"><label for="darkMood"></label>
-          </div>
-         
-        </div>
-      </div>
+                </div>
+                <div>
+                  <input type="checkbox" id="darkMood" onchange="changeTheme()"><label for="darkMood"></label>
+              </div>
+            
+           </div>
+         </div>
+       
+    
       
       <!--CONTACT PAGE IN RIGHT SIDE-->
-      <div id="col-2">
+      <div class="col-md-6 no-glutters">
+        <div class="rightside">
         <form class="my-form">
             <div class="container">
               <h2> &nbsp &nbsp&nbsp<strong>Get in touch!</strong></h2>
@@ -124,7 +129,7 @@
               </ul>
             </div>
           </form>         
-    </div>    
+    </div>  </div>  </div>
 <script src=assets/js/contactjs.js></script> 
 </body>
 </html>

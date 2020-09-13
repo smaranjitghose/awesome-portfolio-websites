@@ -1,39 +1,24 @@
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 10px;
+/*Dividing Screen into left and Right */
+.leftside,.rightside{
+  height:100%;
+  width:100%;
 }
-
-/* Control the left side */
-.left {
-  left: 0;
-
+@media screen and (min-width:768px)
+{
+  .leftside,.rightside{
+    height:100 vh;
+  }
 }
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-/* Style the image inside the centered container, if needed */
-.centered img {
-  width: 200px;
-  height:200px;
-  border-radius: 50%;
-}
+/*centering the heading */
 h2{
   white-space: nowrap;
+  text-align:center;
 }
 h2  span{
   font-style:italic;
   font-weight:bold;
 }
-/* Dark Light Theme*/
+/* DARK LIGHT THEME*/
 [data-theme="light"] {
   --backgound: #f6f6f6;
   --backgound-overlay: rgba(255, 255, 255, 0.4);
@@ -47,14 +32,8 @@ h2  span{
   --font-colour:white;
   color:white;
 }
-/*Aligning form to right*/
-.right{
-  right:0;
-}
-.s {
-  float:right;
-}
-/*contact details*/
+/*CONTACT DETAILS
+----------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 /* RESET RULES AFTER SUBMIT
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -73,11 +52,9 @@ h2  span{
   box-sizing: border-box;
   outline: none;
 }
-
 a {
   color: inherit;
 }
-
 input,
 select,
 textarea,
@@ -102,11 +79,6 @@ ul {
 body {
   font: 18px/1.5 "Open Sans", sans-serif;
   margin: 1.5rem 0;
-}
-.container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
 }
 h1{
   top:30%;
@@ -154,6 +126,7 @@ h1{
 .my-form textarea:focus {
   transform: scale(1.02);
 }
+/*imagr*/
 
 /* FORM BUTTONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
