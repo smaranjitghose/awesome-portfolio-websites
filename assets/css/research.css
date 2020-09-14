@@ -15,16 +15,9 @@ html[data-theme = 'light']
     --cite-col-txt: #333;
     --cite-close: #333;
     --cite-hover: black;
-    --hover-link: rgb(28, 28, 161);
-    --black: #1d1f20;
-    --blue: #83e4e2;
-    --green: #a2ed56;
-    --yellow: #fddc32;
-    --white: #fafafa;
+    --hover-link: rgb(189, 3, 189);
     --shadow-col1: rgba(0,0,0,0.05);
     --shadow-col2: rgba(75,0,0,0.05);
-    --cite-div-img: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
-    --cite-div: #83e4e2;
     --ppr-col: purple;
 }
 
@@ -45,11 +38,9 @@ html[data-theme = 'dark']{
     --cite-col-txt: #fff;
     --cite-close: rgba(0, 0, 0, 0.192);
     --cite-hover: #fff;
-    --hover-link: rgb(2, 187, 187);
+    --hover-link: rgb(236, 103, 125);
     --shadow-col1:rgb(46, 37, 37);
     --shadow-col2:rgba(21, 22, 22, 0.459);
-    --cite-div-img: linear-gradient(135deg, rgb(241, 241, 89) 0%, #ff8489 100%);
-    --cite-div: #d5adc8;
     --ppr-col: rgb(231, 85, 109);
 }
 
@@ -186,29 +177,29 @@ body{
 
 .researchY {
     font-weight: normal;
-    padding: 16px 16px 0 16px;
     vertical-align: top;
-    text-align: right;
+    text-align: left;
     color: grey;
+    margin-top: 1em;
 }
 
-.resYearDisplay {
+.researchCite{
+    text-align: right;
+    vertical-align: top;
+}
+
+.resCite{
     display: none;
-    color: grey;
 }
 
 /*Profile pic responsiveness*/
 @media only screen and (max-width: 711px) {
-    
-    .researchYear {
+
+    .researchCite{
         display: none;
     }
 
-    .researchY {
-        display: none;
-    }
-
-    .resYearDisplay {
+    .resCite{
         display: block;
     }
 }
@@ -261,21 +252,20 @@ body{
 
 @media(min-width: 60rem)
 {
-.rImg{
-    width: 15em;
-    height: 15em;
-}
+    .rImg{
+        width: 15em;
+        height: 15em;
+    }
 }
 
 /*Button for Citing*/
 
 .button{
-    /*font-size: 1.5rem;*/
     text-decoration: none;
     text-transform: uppercase;
     border-width: 2px;
     border-style: solid;
-    padding: 0.5em 1.5em;
+    padding: 0.3em 1.3em;
     display: inline-block;
     cursor: pointer;
     margin-top: 1em;
@@ -301,6 +291,7 @@ button-small{
 @media(min-width: 60rem){
    .button{
        font-size: 1.2rem;
+       margin-top: 0em;
    }
 }
 
@@ -370,11 +361,6 @@ button-small{
     .cite-div{
         margin-top: -2em;
     }
-
-    /* .cite{
-        font-size: 4rem;
-        font-weight: normal; 
-    } */
 
     .popup h5{
         padding: 15px;
