@@ -125,24 +125,22 @@ const mentor = [
     title: "HakinCode",
     image: "assets/images/experience-page/hakin.png",
     time: "06/2020 - 08/2020",
-    desp1: "Mentored for a project named Awesome Portfolio Project. It helps to instantly create portfolio.",
-    desp2: "Guided students in providing insights about SEO, various animations library etc.",
-    desp3: "For my accomplishments and credentials you may check here",
+    desp1: "It is an open source community where students and mentors can apply.",
+    desp2: "Ample amount of technologies and projects are there and we are given opportunity to work on them according to our interest and knowledge.",
   },
   {
     title: "Google Summer of Code",
     image: "assets/images/experience-page/gsoc.png",
     time: "03/2020 - 08/2020",
-    desp1: "Mentored for a project named ScanCode for the organization named AboutCode.",
-    desp2: "Guided students in providing insights about various technologies such as tensorflow.",
-    desp3: "For my accomplishments and credentials you may check here",
+    desp1: "Google Summer of Code is a global program focused on introducing students to open source software development. ",
+    desp2: "It is a great platform to explore new areas, maybe discover a new career path!",
   },
 ];
 
 const showCards3 = () => {
   let output = "";
   mentor.forEach(
-    ({ title, image, time, desp1, desp2, desp3 }) =>
+    ({ title, image, time, desp1, desp2 }) =>
       (output += `        
       <div class="col-sm-6">
       <div class="card card2">
@@ -154,7 +152,6 @@ const showCards3 = () => {
         <ul class="list-group list-group-flush p-0 right-aligned">
           <li class="list-group-item card2">${desp1}</li>
           <li class="list-group-item card2">${desp2}</li>
-          <li class="list-group-item card2">${desp3}<a href=""><i class="fa fa-angle-right fa-lg ml-2"></i></a></li>
         </ul>
       </div>
       </div>
