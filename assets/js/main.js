@@ -100,8 +100,10 @@ let footer = $(`
           <p >
             "Develop a passion for learning. If you do, you will never cease to grow."
           </p>
-
-<!-- Social media icons for footer -->
+        <div class="empty-space xs-25 sm-25"></div>
+      </div>
+    </div>
+    <!-- Social media icons for footer -->
 
 <div class="social-icons-footer">
   <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
@@ -123,11 +125,6 @@ let footer = $(`
     <i class="fab fa-github"></i>
       </a>
 </div>
-
-
-        <div class="empty-space xs-25 sm-25"></div>
-      </div>
-    </div>
     </div>
 
       <div class="col-sm-6 col-md-5 pt-3 footer-2">
@@ -140,16 +137,16 @@ let footer = $(`
       
       <div class="contact-form">
           <form>
-              <fieldset class="form-group">
+              <fieldset class="form-group text-center">
                   <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
               </fieldset>
-              <fieldset class="form-group">
+              <fieldset class="form-group text-center">
                   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
               </fieldset>
-              <fieldset class="form-group">
+              <fieldset class="form-group text-center">
                   <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
               </fieldset>
-              <fieldset class="form-group text-xs-right">
+              <fieldset class="form-group text-xs-right text-center">
                   <button type="button" class="send-btn btn btn-lg">Send</button>
               </fieldset>
           </form>

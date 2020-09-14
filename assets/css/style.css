@@ -304,6 +304,7 @@ html.transition *:after {
 }
 .form-group {
   padding-left: 0px;
+  padding-right: 0px;
 }
 
 .webintern-footer .webintern-footer-inner .simple-text p {
@@ -311,7 +312,6 @@ html.transition *:after {
   margin-top: 10px;
   margin-bottom: 10px;
   display: block;
-  width: 100px;
 }
 
 .simple-text p {
@@ -430,7 +430,6 @@ html.transition *:after {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  width: 120px;
   display: block;
 }
 
@@ -466,6 +465,7 @@ html.transition *:after {
 @media (min-width: 60rem) {
   .social-icons-footer {
     width: 280px;
+    text-align: center;
   }
 
   .social-icon-footer {
