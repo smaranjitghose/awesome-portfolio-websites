@@ -1,25 +1,28 @@
 /*CSS variable declaration for light/dark mode*/
 html[data-theme = 'light']
-{
-	--bg-mybtn: red;
-	--bg-nav: #000000;
-  --bg-nav-img: #000000;
-  --bg: #ffffff;
-  --text: #191919;
+{  --background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+   --bg-mybtn: red;
+   --bg-nav: #000000;
+   --bg-nav-img: #000000;
+   --bg: #ffffff;
+   --text: #191919;
+   --btn-color: #000000;
 }
 
 html[data-theme = 'dark']
-{
+{  --background: linear-gradient(45deg,red 20% ,#00E0E0 70%,orange 20% , yellow 20%);
 	--bg-mybtn: rgb(230, 109, 129);
 	--bg-nav: #6617cb;
   --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
   --bg: #191919;
   --text: #ffffff;
+  --btn-color: #6617cb;
 }
 
 body {
   height: 100vh;
   margin: 0;
+  overflow-x: hidden;
   color: var(--text);
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
@@ -37,26 +40,79 @@ html {
 #myBtn {
 	display: none;
 	position: fixed;
-	bottom: 20px;
+	bottom: 40px;
 	right: 30px;
 	z-index: 99;
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: var(--bg-mybtn);
 	color: white;
 	cursor: pointer;
 	padding: 13px 15px 15px 15px;
 	border-radius: 50%;
   }
   
-  #myBtn:hover {
-	background-color:#26A69A;
-  }
-
-#myBtn:hover {
-  background-color: #26a69a;
+  .glow-on-hover {
+    width: 70px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #26a69a;
+    background: #26a69a;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
 }
+
+.glow-on-hover:before {
+    content: '';
+    background: var(--background);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    background: var(--btn-color);
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
 
 /* NAVBAR*/
 
