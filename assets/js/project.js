@@ -4,7 +4,7 @@ const projectcards = document.querySelector(".projectcards");
 const projects = [
   {
     title: "Deep Holi",
-    cardImage: "/assets/images/project-page/deepholi.jpg",
+    cardImage: "assets/images/project-page/deepholi.jpg",
     description:
       "Its a deep learning application which is used to simulate holi affect for your any single or group pictures!",
     Previewlink: "https://github.com/smaranjitghose/DeepHoli",
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: "Auto Vaidya",
-    cardImage: "/assets/images/project-page/autovaidya.jpg",
+    cardImage: "assets/images/project-page/autovaidya.jpg",
     description:
       "A web app for employing the power of deep learning in various clinical scenarios like implant detection etc.",
     Previewlink: "https://github.com/smaranjitghose/auto_vaidya",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: "Doc2pen",
-    cardImage: "/assets/images/project-page/doc2pen.jpg",
+    cardImage: "assets/images/project-page/doc2pen.jpg",
     description:
       "Doc2pen is the solution to upload any document or write it yourself and get an handwritten assignment out instantly!",
     Previewlink: "https://github.com/smaranjitghose/doc2pen",
@@ -32,8 +32,8 @@ const showCards = () => {
   let output = "";
   projects.forEach(
     ({ title, cardImage, description, Previewlink, Githublink }) =>
-      (output += `        
-    <div class="skill-card card">
+      (output += `       
+    <div class="column skill-card card">
       <div class="wrapper" style="background: url(${cardImage}) center / cover no-repeat;">
         <div class="header">
         </div>
