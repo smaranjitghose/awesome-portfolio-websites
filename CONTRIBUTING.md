@@ -1,7 +1,7 @@
 <h1 align="center"><b> How to Contribute? </b></h3> 
 
 
-We value all the people who are interested in contributing to Girlscript website boilerplate. This is required to create a unified development environment.These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+We value all the people who are interested in contributing to awesome-portfolio-websites. This is required to create a unified development environment.These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 We want to make contributing to this project as easy and transparent as possible, whether it's:
 * Reporting a bug
