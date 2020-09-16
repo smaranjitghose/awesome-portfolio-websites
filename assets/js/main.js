@@ -39,11 +39,10 @@ let header = $(`
         <li><a class="white-text" href="projects.html">Projects</a></li>
         <li><a class="white-text" href="research.html">Research</a></li>
         <li><a class="white-text" href="education.html">Education</a></li>
-<<<<<<< refs/remotes/origin/Page
+
         <li><a class="white-text" href="contactpage.html">Contact</a></li>
-=======
-  <li><a class="white-text" href="contactpage.html">Contact</a></li>
->>>>>>> local
+
+
         <!--Toggle for light/dark mode-->
           <li class="toggle-container">
             <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
