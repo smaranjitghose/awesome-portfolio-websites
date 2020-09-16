@@ -119,38 +119,32 @@ html[data-theme="dark"] {
 
 .social-icon.twitter:after {
   background-color: #1da1f2;
-   box-shadow: 0 0 15px var(--twitter);
-  filter:blur(17px);
+  box-shadow: var(--twitter);
 }
 
 .social-icon.github:after {
   background-color: #24292e;
-  box-shadow:  0 0 15px var(--github);
-  filter:blur(17px);}
+  box-shadow: var(--github);
+}
 
 .social-icon.linkedin:after {
   background-color: #0e76a8;
-   box-shadow:0 0 15px var(--linkedin);
-  filter:blur(17px);
-
+  box-shadow: var(--linkedin);
 }
 
 .social-icon.kaggle:after {
   background-color: #41aff3;
-  box-shadow:0 0 15px var(--kaggle);
-  filter:blur(17px);
+  box-shadow: var(--kaggle);
 }
 
 .social-icon.dribbble:after {
   background-color: #ea4c89;
-  box-shadow:0 0 15px var(--kaggle);
-  filter:blur(17px);
+  box-shadow: var(--kaggle);
 }
 
 .social-icon.medium:after {
   background-color: #00ab6c;
-   box-shadow:0 0 15px  var(--medium);
-  filter:blur(17px);
+  box-shadow: var(--medium);
 }
 
 /*** Social Icon Animations ***/
