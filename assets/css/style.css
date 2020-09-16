@@ -8,7 +8,7 @@ html[data-theme = 'light']
    --bg: #ffffff;
    --text: #191919;
    --btn-color: #000000;
-
+}
 html[data-theme = 'dark']
 {  --background: linear-gradient(45deg,red 20% ,#00E0E0 70%,orange 20% , yellow 20%);
 	--bg-mybtn: rgb(230, 109, 129);
