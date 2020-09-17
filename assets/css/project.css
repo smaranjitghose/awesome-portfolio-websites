@@ -24,6 +24,7 @@ body{
   background: var(--bg-txt-img);
   -webkit-background-clip: text;
   -webkit-text-fill-color: var(--txt-fill);
+  padding-bottom: 0.1em;
 }
 
 .img-header{
@@ -39,44 +40,13 @@ a:hover {
 	border: none;
 }
 
-.title{
-  font-weight: bold;
-}
-
-.row{
-  display: flex;
-  row-gap: 3rem;
-}
-
-.column{
-  float: left;
-  margin-bottom: 3rem;
-}
-
-.card{
-  width: 100%;
-}
-
 .page-content {
   padding: 1rem;
+  display: grid;
+  column-gap: 3rem;
+  row-gap: 5rem;
   max-width: 1124px;
-}
-
-@media(min-width: 60rem)
-{
-  .row{
-    margin-top: 0em;
-  }
-
-  .card{
-    width: 35%;
-    column-gap: 3rem;
-    
-  }
-
-  .column{
-    margin-left: 7.5rem;
-  }
+  margin: 0 auto;
 }
 
 .card .menu-content {
@@ -101,7 +71,7 @@ a:hover {
 
 .card .wrapper {
   background-color: #fff;
-  min-height: 540px;
+  min-height: 22rem;
   position: relative;
   overflow: hidden;
   box-shadow: 0 19px 38px var(--shadow1), 0 15px 12px var(--shadow2);
@@ -116,17 +86,36 @@ a:hover {
   bottom: 0;
   width: 100%;
   transition: transform 0.3s;
+  background: rgba(0,0,0,0.55);
 }
 
 .card .data .content {
   padding: 1em;
   position: relative;
   z-index: 1;
+  margin-bottom: 4em;
+}
+
+@media(min-width: 60rem)
+{
+  .card .data .content{
+    margin-bottom: 0;
+  }
 }
 
 .card .title {
-  margin-top: 10px;
-  font-size: 25px;
+  margin-top: 0em;
+  font-size: 1.5em;
+  font-weight: bold; 
+  padding: 0.2em;
+}
+
+@media(min-width: 60rem)
+{
+  .card .title {
+    margin-top: 0.5em;
+    font-size: 2em;
+  }
 }
 
 .card .text {
