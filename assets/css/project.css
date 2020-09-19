@@ -123,6 +123,13 @@ a:hover {
   padding: 0.2em;
 }
 
+@media(min-width: 562px) and (max-width: 599px)
+{
+  .card .title {
+    font-size: 3em;
+  }
+}
+
 @media(min-width: 60rem)
 {
   .card .title {
