@@ -26,7 +26,7 @@ function topFunction() {
 //Footer and Navbar
 
 let header = $(`
-<nav class="black" onclick="openNav()">
+<nav class="black">
 <div class="nav-wrapper">
     <a href="#!" class="brand-logo"><img src="assets/images/John-Doe1.png"></a>
     <a href="#" data-target="mobile-demo" class="white-text sidenav-trigger"><i
@@ -40,9 +40,8 @@ let header = $(`
         <li><a class="white-text" href="index.html">Blog</a></li>
         <li><a class="white-text" href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
         <!--TOGGLE FOR LIGHT/DARK MODE-->
-        
-        <li id="themeChangeButtonBigScreen">
-        <label for="switch" class="theme-switch" id="themeChangeButton">
+        <li>
+        <label for="switch" class="theme-switch">
         <input class="toggle-checkbox" type="checkbox" id="switch" name="theme" />
           <div class='toggle-slot'>
           <div class='sun-icon-wrapper'>
@@ -60,7 +59,7 @@ let header = $(`
 </nav>
 
 <!--Side Nav Bar -->
-<ul class="sidenav" id="mobile-demo" onclick="closeNav()">
+<ul class="sidenav" id="mobile-demo">
 <li><a href="index.html">Home</a></li>
 <li><a href="experience.html">Experience</a></li>
 <li><a href="projects.html">Projects</a></li>
@@ -71,8 +70,20 @@ let header = $(`
 
 
 <!--TOGGLE FOR LIGHT/DARK MODE-->
-      <div id="themeChangeButtonSmallScreen">
-		  </div>
+        <li>
+        <label for="switch" class="theme-switch">
+        <input class="toggle-checkbox" type="checkbox" id="switch" name="theme" />
+          <div class='toggle-slot side-toggle'>
+          <div class='sun-icon-wrapper'>
+          <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
+          </div>
+          <div class='toggle-button'></div>
+          <div class='moon-icon-wrapper'>
+          <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
+          </div>
+          </div>
+          </label>
+        </li>
 </ul>`);
 
 let footer = $(`
@@ -155,46 +166,27 @@ let bodyElement = $(`body`);
 bodyElement.prepend(header);
 bodyElement.append(footer);
 
-/*JavaScript for toggle for light/dark mode*/
+/*JavaScript for toggle for light/dark mode*/ 
 
-var checkbox = document.querySelector("input[name=theme]");
-if (checkbox) {
-  checkbox.addEventListener("change", function () {
-    if (this.checked) {
-      trans();
-      document.documentElement.setAttribute("data-theme", "dark");
-    } else {
-      trans();
-      document.documentElement.setAttribute("data-theme", "light");
-    }
-  });
+var checkbox = document.querySelector('input[name=theme]');
+if(checkbox)
+ {
+ checkbox.addEventListener('change', function(){
+   if(this.checked)
+   {
+     trans()
+     document.documentElement.setAttribute('data-theme', 'dark')
+   }
+   else
+   {
+     trans()
+     document.documentElement.setAttribute('data-theme', 'light')
+   }
+ });
 
-  let trans = () => {
-    document.documentElement.classList.add("transition");
-    window.setTimeout(() => {
-      document.documentElement.classList.remove("transition");
-    }, 1000);
-  };
-}
-
-//Single Declartion of changed theme button
-
-function openNav() {
-  document.getElementById("mobile-demo").style.display = "block";
-  let toggleThemeButton = document.getElementById("themeChangeButton");
-  toggleThemeButton.remove();
-  let positionOfToggleButtonForSmallScreen = document.getElementById(
-    "themeChangeButtonSmallScreen"
-  );
-  positionOfToggleButtonForSmallScreen.appendChild(toggleThemeButton);
-}
-
-function closeNav() {
-  document.getElementById("mobile-demo").style.display = "none";
-  let toggleThemeButton = document.getElementById("themeChangeButton");
-  toggleThemeButton.remove();
-  let positionOfToggleButtonForBigScreen = document.getElementById(
-    "themeChangeButtonBigScreen"
-  );
-  positionOfToggleButtonForBigScreen.appendChild(toggleThemeButton);
-}
+ let trans = () => {
+   document.documentElement.classList.add('transition');
+   window.setTimeout(() => {
+     document.documentElement.classList.remove('transition')
+   }, 1000)
+ }}
