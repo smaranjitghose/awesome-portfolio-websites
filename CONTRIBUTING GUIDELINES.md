@@ -14,7 +14,7 @@ If you wish to contribute to this project, please raise an issue and wait for th
 
 <h2 align="center"><b>How to make a Pull Request? :point_down:</b></h2>
 
-<img src="https://camo.githubusercontent.com/2c885464740a6c05b127ecb7c3ebb9e5cc67ba1c/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4a717a616442746f6e4a56723075384c55672f67697068792e676966" width=500>
+<p align="center"><img src="https://camo.githubusercontent.com/2c885464740a6c05b127ecb7c3ebb9e5cc67ba1c/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4a717a616442746f6e4a56723075384c55672f67697068792e676966" width=500></p>
 
 **1.**  Fork [this](https://github.com/smaranjitghose/awesome-portfolio-websites) repository.
 
