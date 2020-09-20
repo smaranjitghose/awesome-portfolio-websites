@@ -1,25 +1,29 @@
-<h1 align="center"><b> GUIDELINES FOR CONTRIBUTION</b></h1> 
+<h1 align="center"><b>Guidelines for Contribution</b></h1> 
 
-<img src="https://github.com/smaranjitghose/smaranjitghose/blob/master/assets/images/Contribute.png" width=600>
+<img src="https://github.com/smaranjitghose/blob/master/assets/images/Contribute.png" width=600>
 
 We want to make contributing to this project as easy and as transparent as possible, whether it's:<br>
--> Reporting a bug :bug:<br>
--> Submitting a fix :mag_right:<br>
--> Proposing new features :bulb:<br>
+
+- Reporting a bug :bug:
+
+- Submitting a fix :mag_right:
+
+- Proposing new features :bulb:
+
 If you wish to contribute to this project, please raise an issue and wait for the project maintainers to approve it or give feedback
 
 <h2 align="center"><b>How to make a Pull Request? :point_down:</b></h2>
 
 <img src="https://camo.githubusercontent.com/2c885464740a6c05b127ecb7c3ebb9e5cc67ba1c/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4a717a616442746f6e4a56723075384c55672f67697068792e676966" width=500>
 
-**1.**  Fork [this](https://github.com/smaranjitghose/awesome-portfolio-websites.git) repository.
+**1.**  Fork [this](https://github.com/smaranjitghose/awesome-portfolio-websites) repository.
 
 **2.**  Clone your forked copy of the project.
 
 ```
 git clone --depth 1 https://github.com/<your_user_name>/awesome-portfolio-websites.git
 ```
-   <img src="https://github.com/smaranjitghose/smaranjitghose/blob/master/assets/images/CloneRepo.png" width="300">
+<img src="https://github.com/smaranjitghose/blob/master/assets/images/CloneRepo.png" width="300">
 
 **3.** Navigate to the project directory :file_folder: .
 
@@ -60,6 +64,7 @@ git checkout -b <your_branch_name>
 ```
 git add . 
 ```
+
 **10.** Commit your changes .
 
 ```
@@ -73,18 +78,19 @@ git push -u origin <your_branch_name>
 ```
 
 **12.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
-<img src="https://github.com/smaranjitghose/smaranjitghose/blob/master/assets/images/ComparePR.png" width=600>
+
+<img src="https://github.com/smaranjitghose/blob/master/assets/images/ComparePR.png" width=600>
 
 **13.** Then add an appropriate title and description to your pull request that explains your changes and efforts done.
 
 
 **14.** Click on `Create Pull Request`.
 
-<img src="https://github.com/smaranjitghose/smaranjitghose/blob/master/assets/images/CreatePR.png" width=600>
+<img src="https://github.com/smaranjitghose/blob/master/assets/images/CreatePR.png" width=600>
 
 
 **15** Voila :exclamation: You have made a PR to the awesome-developer-portfolio project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days
 
-<p align="center"><img width=35% src="https://media3.giphy.com/media/5mCQOcUfywmyI/giphy.gif?cid=ecf05e476jq6yt9wrjvtvpz41vbcxjgfa4vkgjnzgwc5dn5k&rid=giphy.gif"></p>
+<p align="center"><img src="https://media.giphy.com/media/5mCQOcUfywmyI/giphy.gif" width=35%></p>
 
 
