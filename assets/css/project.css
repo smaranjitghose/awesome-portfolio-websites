@@ -96,6 +96,20 @@ a:hover {
   margin-bottom: 4em;
 }
 
+@media(min-width: 378px)
+{
+  .card .data .content{
+    margin-bottom: 1em;
+  }
+}
+
+@media(min-width: 400px)
+{
+  .card .data .content{
+    margin-bottom: 2em;
+  }
+}
+
 @media(min-width: 60rem)
 {
   .card .data .content{
@@ -105,9 +119,15 @@ a:hover {
 
 .card .title {
   margin-top: 0em;
-  font-size: 1.5em;
-  font-weight: bold; 
+  font-size: 2em;
   padding: 0.2em;
+}
+
+@media(min-width: 562px) and (max-width: 599px)
+{
+  .card .title {
+    font-size: 3em;
+  }
 }
 
 @media(min-width: 60rem)
