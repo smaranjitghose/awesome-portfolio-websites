@@ -5,6 +5,8 @@ html[data-theme="light"] {
   --text-color: #6C757D;
   --shadow-col1: rgba(0,0,0,0.05);
   --shadow-col2: rgba(75,0,0,0.05);
+  --meta-col: #444;
+  --head-col: black;
  }
  
  html[data-theme="dark"] {
@@ -14,6 +16,8 @@ html[data-theme="light"] {
   --txt-fill: transparent;
   --shadow-col1:rgb(46, 37, 37);
   --shadow-col2:rgba(21, 22, 22, 0.459);
+  --meta-col: rgb(155, 149, 149);
+  --head-col: #fff;
  }
 /*Main section*/
 
@@ -21,6 +25,13 @@ html[data-theme="light"] {
   background: var(--bg-txt-img);
   -webkit-background-clip: text;
   -webkit-text-fill-color: var(--txt-fill);
+}
+
+@media(min-width: 740px) and (max-width: 750px)
+{
+  section{
+    margin-bottom: 5rem;
+  }
 }
 
 .main {
@@ -58,6 +69,10 @@ html[data-theme="light"] {
   flex-direction: column;
   max-height: 80%;
   border:none;
+}
+
+.card1:hover{
+  transform: scale(1.05);
 }
 
 .card1 .card-body {
@@ -134,27 +149,26 @@ ul ol{
 }
 
 .card-body .pre-heading {
-  color: #444;
+  color: var(--meta-col);
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
-  color:var(--text-color);
 }
 
 .card-body .meta {
-  color: #555;
+  color: var(--meta-col);
   font-size: 16px;
 }
 
 .card-body .author {
   font-size: 12px;
-  color:var(--text-color);
 }
 
 .card-body h3{
   font-size: 2rem;
   margin-top: 5px;
   margin-bottom: 5px;
+  color: var(--head-col);
 }
 
 .main ul {
