@@ -30,19 +30,49 @@ a:hover {
 	border: none;
 }
 
+.row{
+  display: flex;
+  row-gap: 3em;
+}
+
+.card{
+  width: 100%;
+}
+
+.column{
+  float: left;
+  margin-bottom: 3rem;
+}
+
 .page-content {
   padding: 1rem;
-  display: grid;
-  column-gap: 3rem;
-  row-gap: 5rem;
   max-width: 1124px;
-  margin: 0 auto;
+}
+
+@media(min-width: 60rem)
+{
+  .row{
+    margin-top: 0em;
+  }
+
+  .card{
+    width: 39%;
+    column-gap: 3rem;
+
+  }
+
+  .column{
+    margin-left: 6.8rem;
+  }
 }
 
 .card .menu-content {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: absolute;
+  float: left;
+  vertical-align: bottom;
 }
 
 .card .menu-content::before,
@@ -61,7 +91,7 @@ a:hover {
 
 .card .wrapper {
   background-color: #fff;
-  min-height: 22rem;
+  min-height: 26rem;
   position: relative;
   overflow: hidden;
   box-shadow: 0 19px 38px var(--shadow1), 0 15px 12px var(--shadow2);
@@ -77,6 +107,13 @@ a:hover {
   width: 100%;
   transition: transform 0.3s;
   background: rgba(0,0,0,0.55);
+}
+
+@media(min-width: 60rem)
+{
+  .card .data{
+    height: 50%;
+  }
 }
 
 .card .data .content {
@@ -107,31 +144,91 @@ a:hover {
   }
 }
 
-.card .title {
-  margin-top: 0em;
-  font-size: 2em;
-  padding: 0.2em;
+.card .title-div{
+  width: 100%;
+  height: 25%;
+  margin: 0;
 }
 
-@media(min-width: 562px) and (max-width: 599px)
+@media(min-width: 60rem)
 {
-  .card .title {
-    font-size: 3em;
+  .card .title-div{
+    padding-bottom: 1.8em;
+  }
+}
+
+.card .title {
+  margin-top: 0em;
+  font-size: 0.65em;
+}
+
+@media(min-width: 311px)
+{
+  .card .title{
+    font-size: 0.8em;
+  }
+}
+
+@media(min-width: 365px){
+  .card .title{
+    font-size: 1em;
+  }
+}
+
+@media(min-width: 425px){
+  .card .title{
+    font-size: 1.3em;
+  }
+}
+
+@media(min-width: 554px){
+  .card .title{
+    font-size: 1.5em;
   }
 }
 
 @media(min-width: 60rem)
 {
   .card .title {
-    margin-top: 0.5em;
-    font-size: 2em;
+    font-size: 1.55em;
   }
 }
 
 .card .text {
   height: 60px;
-  font-size: 18px;
+  font-size: 0.5em;
   margin: 0;
+}
+
+@media(min-width: 311px){
+  .card .text{
+    font-size: 0.7;
+  }
+}
+
+@media(min-width: 365px){
+  .card .text{
+    font-size: 0.85em;
+  }
+}
+
+@media(min-width: 425px){
+  .card .text{
+    font-size: 1em;
+  }
+}
+
+@media(min-width: 554px)
+{
+  .card .text{
+    font-size: 1.2em;
+  }
+}
+
+@media(min-width: 60rem){
+  .card .text{
+    font-size: 18px;
+  }
 }
 
 .card input[type="checkbox"] {
