@@ -378,6 +378,40 @@ ul ol{
 
 /*Mentorship card*/
 
+.row{
+  display: flex;
+  row-gap: 3em;
+}
+
+.column{
+  float: left;
+  margin-bottom: 3rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.mentorshipCard{
+  margin-bottom: -5em;
+}
+
+@media(min-width: 60rem)
+{
+  .row{
+    margin-top: 0em;
+  }
+
+  .mentorshipCard{
+    width: 44%;
+    column-gap: 3rem;
+    margin-top: -3em;
+    margin-bottom: 1em;
+  }
+
+  .column{
+    margin-left: 3rem;
+  }
+}
+
 .card2{
   background-color: var(--bg1-color);
   color: var(--text);
@@ -386,10 +420,6 @@ ul ol{
 
 .card2 .fa{
   color: var(--text-color);
-}
-
-.mentorshipCard{
-  padding-bottom: 3rem;
 }
 
 @media(min-width: 60rem)

@@ -4,25 +4,25 @@
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Reasearch and Development Intern",
-    cardImage: "assets/images/experience-page/UCL.jpg",
-    place: "UCL",
+    title: "Software Development Intern",
+    cardImage: "assets/images/experience-page/flipkart.jpg",
+    place: "Flipkart",
     time: "(May, 2020 - present)",
-    desp: "<li>Automatic detection of Orthopedic Implants using Deep Learning.</li> <li>Collection of radiographs, data cleaning and database management.</li> <li>Image Quality Analysis for Bio-Medical Images.</li> <li>Serving Models using TensorFlow JS.</li> <li>Experimenting with Few Shot Learning, Adversarial Training and Class Activation Maps.</li>",
+    desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
   },
   {
-    title: "Robotics and Embedded system Intern",
-    cardImage: "assets/images/experience-page/lema-labs.png",
-    place: "LEMA LABS",
-    time: "(Jun - Jul, 2019)",
-    desp: "<li>Design low cost prototyping boards for teaching robotics to underprivileged children.</li> <li>Worked on integration of Face Recognition based models with Raspberry Pi and Intel Movidius.</li> <li>Image Quality Analysis for Bio-Medical Images.Experimented with various algorithms for Lane Detection as well as Shortest Paths for Autonomous Vehicles.</li>",
+    title: "Student Developer",
+    cardImage: "assets/images/experience-page/gsoc.png",
+    place: "Google Summer Of Code",
+    time: "(Mar - Aug, 2019)",
+    desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
   },
   {
     title: "Research Intern",
-    cardImage: "assets/images/experience-page/ISI.png",
-    place: "ISI, Kolkata",
+    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
+    place: "IIT, Bombay",
     time: "(Dec, 19 - Jan, 20)",
-    desp:"<li>Worked on for Image Encryption and Image Forgery Detection.</li>",
+    desp:"<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
   },
 ];
 
@@ -140,7 +140,7 @@ const showCards3 = () => {
   mentor.forEach(
     ({ title, image, time, desp}) =>
       (output += `        
-      <div class=" col-sm-6 mentorshipCard">   
+      <div class="column mentorshipCard"> 
       <div class="card card2">
         <img src="${image}" class="card-img-top" alt="..."  width="64" height="300">
         <div class="information">

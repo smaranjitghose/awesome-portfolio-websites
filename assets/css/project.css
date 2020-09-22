@@ -80,6 +80,9 @@ a:hover {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: absolute;
+  float: left;
+  vertical-align: bottom;
 }
 
 .card .menu-content::before,
@@ -114,6 +117,13 @@ a:hover {
   width: 100%;
   transition: transform 0.3s;
   background: rgba(0,0,0,0.55);
+}
+
+@media(min-width: 60rem)
+{
+  .card .data{
+    height: 50%;
+  }
 }
 
 .card .data .content {
