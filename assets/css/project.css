@@ -8,8 +8,6 @@ html[data-theme = 'light']
 html[data-theme = 'dark']
 {
   --bg-col: black;
-  --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
-  --txt-fill: transparent;
   --shadow1: rgba(128, 122, 122, 0.233);
   --shadow2: rgba(231, 216, 216, 0.007);
 }
@@ -17,14 +15,6 @@ html[data-theme = 'dark']
 /*For Changing background color of body according to theme*/
 body{
   background: var(--bg-col) !important;
-}
-
-/*main heading of project page*/
-.head-upper{
-  background: var(--bg-txt-img);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: var(--txt-fill);
-  padding-bottom: 0.1em;
 }
 
 .img-header{

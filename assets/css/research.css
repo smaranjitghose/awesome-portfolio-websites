@@ -55,12 +55,6 @@ body{
     box-sizing: border-box;
 }
 
-.head-upper{
-    background: var(--bg-txt-img);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: var(--txt-fill);
-}
-
 .p-upper{
     color: var(--p-up);
 }
