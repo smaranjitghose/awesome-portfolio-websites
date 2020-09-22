@@ -40,11 +40,7 @@ let header = $(`
         <li><a class="white-text" href="research.html">Research</a></li>
         <li><a class="white-text" href="education.html">Education</a></li>
 
-    
-       
-
         <li><a class="white-text" href="contactpage.html">Contact</a></li>
-
 
 
         <!--Toggle for light/dark mode-->
