@@ -8,6 +8,7 @@ html[data-theme="light"] {
  html[data-theme="dark"] {
   --bg1-color: #272727;
   --text-color: #fff;
+  --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
  }
 /*Main section*/
 
@@ -25,6 +26,7 @@ html[data-theme="light"] {
 }
 .heading {
   font-size: 55px;
+  color: var(--bg-txt-img);
 }
 .sub-heading {
   font-size: 17px;
