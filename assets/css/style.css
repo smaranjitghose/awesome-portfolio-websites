@@ -17,6 +17,8 @@ html[data-theme = 'dark']
   --bg: #191919;
   --text: #ffffff;
   --text-color: #fff;
+  --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+  --txt-fill: transparent;
 }
 
 body {
@@ -39,8 +41,11 @@ html {
 
 .main-heading{
   font-size: 4em;
-  font-weight: bolder;
-  color: var(--text);
+  font-weight: bolder;  
+  background: var(--bg-txt-img);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--txt-fill);
+  padding-bottom: 0.1em;
 }
 
 .pre-heading{

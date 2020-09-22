@@ -18,6 +18,8 @@ html[data-theme="light"] {
   --shadow-col2:rgba(21, 22, 22, 0.459);
   --meta-col: rgb(155, 149, 149);
   --head-col: #fff;
+
+
  }
 /*Main section*/
 
@@ -48,6 +50,7 @@ html[data-theme="light"] {
 }
 .heading {
   font-size: 55px;
+  color: var(--bg-txt-img);
 }
 .sub-heading {
   font-size: 17px;
