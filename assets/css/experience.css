@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-html {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  height: 100%;
-}
 
+html[data-theme="light"] {
+  --bg1-color: #fff;
+  --text-color: #6C757D;
+ }
+ 
+ html[data-theme="dark"] {
+  --bg1-color: #272727;
+  --text-color: #fff;
+ }
 /*Main section*/
 
 .main {
@@ -42,17 +45,26 @@ html {
   display: flex;
   flex-direction: column;
   max-height: 80%;
+  border:none;
 }
 .card1 .card-body {
   display: flex;
   flex-flow: row wrap;
-  padding: 30px;
+  padding: 18px;
+  color: var(--text);
+  background-color: var(--bg1-color);
 }
 .card1 header {
   flex: 100%;
 }
 .card1 .meta {
   margin-bottom: 22px;
+  margin:0;
+}
+
+ul ol{
+  list-style: disc; 
+  padding: 3%;
 }
 
 .card1 .featured-image {
@@ -79,7 +91,7 @@ html {
     border-bottom-left-radius: 5px;
     border-top-right-radius: 0;
     max-width: 310px;
-    max-height: 277px;
+    max-height: 279px;
     width: 100%;
     border: 0;
   }
@@ -96,13 +108,20 @@ html {
   font-weight: bold;
   color: #222;
   margin: 0.5em 0;
+  margin-top:6rem;
+  color:var(--text);
+}
+
+.exp-head{
+  margin-top: 0rem !important;
 }
 
 .card-body .pre-heading {
   color: #444;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
+  color:var(--text-color);
 }
 
 .card-body .meta {
@@ -111,12 +130,14 @@ html {
 }
 
 .card-body .author {
-  font-size: 15px;
+  font-size: 12px;
+  color:var(--text-color);
 }
 
 .card-body h3{
+  font-size: 2rem;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .main ul {
@@ -164,9 +185,7 @@ html {
   text-align: center;
   color: whitesmoke;
   background-color: whitesmoke;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
-    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
-    0 16px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border: none;
 }
 @media (min-width: 600px) {
@@ -177,7 +196,7 @@ html {
 
 @media (max-width: 390px) {
   .main ul {
-    padding: 0px;
+    padding: 15px;
   }
 }
 .page-content .card:before {
@@ -223,6 +242,12 @@ html {
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
+
+.card-body p{
+  margin: 0px;
+  font-size: 14px;
+}
+
 .content {
   position: relative;
   display: flex;
@@ -238,11 +263,18 @@ html {
 .content > * + * {
   margin-top: 1rem;
 }
-.title {
+.card-body .title {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.content .title {
   font-size: 1.3rem;
   font-weight: bold;
   line-height: 1.2;
 }
+
 .copy {
   font-size: 1.125rem;
   font-style: italic;
@@ -289,69 +321,13 @@ html {
   transition-duration: 0s;
 }
 
-/*social icons footer*/
+/*Mentorship card*/
 
-.social-icons-footer {
-  font-size: 20px;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row wrap;
-  width: 220px;
-  display: block;
+.card2{
+  background-color: var(--bg1-color);
+  color: var(--text);
 }
 
-.social-icon-footer {
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  width: var(--link-size-footer-s);
-  height: var(--link-size-footer-s);
-  margin: 3px;
-  background-color: #26a69a;
-  border-radius: 50%;
-  text-decoration: none;
-  float: left;
-}
-
-.social-icon-footer i {
-  margin: auto;
-  font-size: 15px;
-  color: #fff;
-}
-
-.social-icon-footer:hover i {
-  color: #000000;
-}
-
-/*Responsive*/
-
-@media(min-width: 60rem)
-{
-  .social-icons-footer{
-    width: 280px;
-  }
-
-  .social-icon-footer{
-    width: var(--link-size-footer-b);
-    height: var(--link-size-footer-b);
-  }
-
-  .social-icon-footer i{
-    font-size: 20px;
-  }
-}
-
-/*Animations*/
-
-.social-icon-footer:hover {
-  transform: translateY(-4px);
-  box-shadow: 0px 4px 12px rgb(100, 248, 233);
-}
-
-.social-icon:hover:after {
-  transform: translate(0) scale(1.2);
-}
-
-a:hover {
-  color: transparent;
+.card2 .fa{
+  color: var(--text-color);
 }
