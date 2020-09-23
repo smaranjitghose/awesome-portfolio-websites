@@ -2,7 +2,7 @@ html[data-theme = 'light']
 {
   --bg1-color: #ecf0f3;
   --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  --border:1px solid #ecf0f3;;
+  --border:1px solid #ecf0f3;
 }
 
 html[data-theme = 'dark']
@@ -12,6 +12,11 @@ html[data-theme = 'dark']
   --border:none;
 }
 
+@media (min-width: 600px) and (max-width: 750px){
+  .formal-edu{
+    margin-top: 7rem;
+  }
+}
 
 /* -----Timeline----- */
 .main-timeline {
@@ -175,12 +180,138 @@ html[data-theme = 'dark']
   }
 }
 /* Card Hover Effcet */
+
+.mooc-title{
+  color: black;
+}
+
+@media(min-width: 280px) and (max-width: 304px){
+  .column{
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+  }
+
+  .mooc-title{
+    font-size: 0.8em !important;
+  }
+}
+
+@media(min-width: 304px) and (max-width: 350px){
+  .column{
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+
+  .mooc-title{
+    font-size: 0.8em !important;
+  }
+}
+
+@media(min-width: 350px) and (max-width: 366px){
+  .column{
+    margin-left: 3rem;
+    margin-right: 1rem;
+  }
+
+  .mooc-title{
+    font-size: 0.8em !important;
+  }
+}
+
+@media(min-width: 366px) and (max-width: 435px){
+  .column{
+    margin-left: 4rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 437px) and (max-width: 460px){
+  .column{
+    margin-left: 4rem;
+    margin-right: 2rem;
+  }
+}
+
+@media(min-width: 460px) and (max-width: 500px){
+  .column{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .mooc-title{
+    font-size: 1.1em !important; 
+  }
+}
+
+@media (min-width: 500px) and (max-width: 660px){
+  .column{
+    margin-left: 4rem;
+    margin-right: 5rem;
+  }
+
+  .mooc-title{
+    font-size: 1.3em !important; 
+  }
+}   
+
+@media(min-width: 631px) and (max-width: 737px){
+  .column{
+    margin-left: 7rem;
+    margin-right: 6rem;
+  }
+
+  .mooc-title{
+    font-size: 1.3em !important; 
+  }
+}
+
+@media (min-width: 737px) and (max-width: 750px){
+  .column{
+    margin-left: 9rem;
+    margin-right: 6rem;
+  }
+
+  .mooc-title{
+    font-size: 1.3em !important; 
+  }
+}
+
+@media(max-width: 750px){
+  .row{
+    display: flex;
+    row-gap: -3em;
+  }
+
+  .column{
+    float: left;
+    margin-bottom: 3rem;
+    column-gap: 3rem;
+    align-content: center;
+    text-align: center;
+  }
+}
+
+@media(min-width: 60rem){
+  .row{
+    row-gap: 3em;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  .column{
+    margin-bottom: 3rem;
+  }
+}
+
 .content {
   position: relative;
   width: 100%;
   padding: 10px;
   margin: auto;
   overflow: hidden;
+  height: 75%;
 }
 
 .content .content-overlay {
@@ -245,22 +376,37 @@ html[data-theme = 'dark']
 }
 .card-body {
   background-color: #fff;
-  padding:5px;
+  padding:1px;
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
+@media only screen and (min-width: 280px) and (max-width: 366px) {
+  .card{
+    width: 180px;
+    height: 160px;
+  }
+}
+
+@media only screen and (min-width: 366px) and (max-width: 456px){
+  .card{
+    width: 230px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 456px) and (max-width: 600px) {
   .card {
-    width: 160px;
-          height:150px;
+      width: 350px;
+      height: 260px;
     }
   }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .card {
-    width:180px;
-          height:160px;
+    width: 390px;
+    height: 260px;
   }
 }
 
