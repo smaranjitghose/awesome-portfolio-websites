@@ -121,6 +121,12 @@ ul ol{
     font-size: calc(100% + 1vw);
   }
 
+  @media only screen and (min-width: 1280px) {
+    .card1 h3 {
+      font-size: 32px;
+    }
+  }
+
   .card1 .featured-image {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -131,24 +137,27 @@ ul ol{
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  .card1 h3 {
-    font-size: 32px;
-  }
-}
-
 .heading1 {
   font-size: 32px;
   line-height: 1.2;
   font-weight: bold;
   color: #222;
   margin: 0.5em 0;
-  margin-top:6rem;
+  margin-top: 5rem;
   color:var(--text);
 }
 
-.exp-head{
-  margin-top: 0rem !important;
+@media(min-width: 675px){
+  .heading1{
+    margin-top: 5em;
+  }
+}
+
+@media(min-width: 60rem)
+{
+  .exp-head{
+    margin-top: 0rem !important;
+  } 
 }
 
 .card-body .pre-heading {
@@ -408,6 +417,7 @@ ul ol{
     column-gap: 3rem;
     margin-top: -3em;
     margin-bottom: 1em;
+    padding: 2em;
   }
 
   .column{
@@ -423,25 +433,4 @@ ul ol{
 
 .card2 .fa{
   color: var(--text-color);
-}
-
-@media(min-width: 60rem)
-{
-  .mentorshipCard{
-    overflow: hidden;
-    transition: 0.3s;
-  }
-
-  .more-information{
-    display: none;
-  }
-
-  .mentorshipCard:hover .information{ 
-    transform: translateY(0);
-    transition: 0.3s;
-  }
-
-  .mentorshipCard:hover .more-information{
-    display: flex;
-  }
 }

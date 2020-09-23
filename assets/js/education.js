@@ -41,7 +41,7 @@ const moocscards = [
   },
   {
     title: "Intro to React",
-    cardImage: "assets/images/education-page/Edx.png",
+    cardImage: "assets/images/education-page/EdX.png",
     moocLink: "https://www.edx.org/learn/reactjs",
   },
   {
@@ -71,7 +71,7 @@ const showCards = () => {
   moocscards.forEach(
     ({ title, cardImage,moocLink }) =>
       (output += `        
-        <div class="col-6 col-md-3 col-sm-4 " data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600" >
+        <div class="col-6 col-md-3 col-sm-4 column" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600" >  
             <div class="card mb-3 mx-auto">
                <div class="content">
                   <div class="content-overlay"></div>
@@ -80,8 +80,8 @@ const showCards = () => {
                     <a href="${moocLink}" target="_blank"><i class="fa fa-info-circle fa-2x" aria-hidden="true" style="color: white;"></i></a>                                   
                   </div>
                 </div>
-                <div class="card-body p-1">
-                    <h6 class="mt-0 py-2 text-center font-weight-bold" style="font-size:12px;">${title}</h6>
+                <div class="card-body">
+                    <h6 class="mt-0 py-2 text-center font-weight-bold mooc-title" style="font-size:12px;">${title}</h6>
                 </div>
             </div>
         </div>        
