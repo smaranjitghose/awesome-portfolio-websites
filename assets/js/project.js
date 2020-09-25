@@ -3,28 +3,100 @@
 const projectcards = document.querySelector(".projectcards");
 const projects = [
   {
-    title: "Deep Holi",
-    cardImage: "/assets/images/project-page/deepholi.jpg",
+    title: "Quiz App",
+    cardImage: "assets/images/project-page/quiz.jpg",
     description:
-      "Its a deep learning application which is used to simulate holi affect for your any single or group pictures!",
-    Previewlink: "https://github.com/smaranjitghose/DeepHoli",
-    Githublink: "https://github.com/smaranjitghose/DeepHoli",
+      "A quiz app built using basic react.",
+    Previewlink: "",
+    Githublink: "",
   },
   {
-    title: "Auto Vaidya",
-    cardImage: "/assets/images/project-page/autovaidya.jpg",
+    title: "Chess Engine",
+    cardImage: "assets/images/project-page/chess.jpg",
     description:
-      "A web app for employing the power of deep learning in various clinical scenarios like implant detection etc.",
-    Previewlink: "https://github.com/smaranjitghose/auto_vaidya",
-    Githublink: "https://github.com/smaranjitghose/auto_vaidya",
+      "A chess engine for a popular game dev engine.",
+    Previewlink: "",
+    Githublink: "",
   },
   {
-    title: "Doc2pen",
-    cardImage: "/assets/images/project-page/doc2pen.jpg",
+    title: "Flappy Bird",
+    cardImage: "assets/images/project-page/flappybird.png",
     description:
-      "Doc2pen is the solution to upload any document or write it yourself and get an handwritten assignment out instantly!",
-    Previewlink: "https://github.com/smaranjitghose/doc2pen",
-    Githublink: "#https://github.com/smaranjitghose/doc2pen",
+      "Flappy bird game built using React.js",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
+    title: "Exercise Tracker",
+    cardImage: "assets/images/project-page/exercise.jpg",
+    description:
+      "Exercise tracker built using basic redux.",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
+    title: "Recipe Ingredient Parser",
+    cardImage: "assets/images/project-page/recipe.jpg",
+    description:
+      "Recipe Ingredient Parser built using JavaScript.",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
+    title: "Poker Game",
+    cardImage: "assets/images/project-page/poker.jpg",
+    description:
+      "Poker game built using typescript.",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
+    title: "Tic Tac Toe Game",
+    cardImage: "assets/images/project-page/tic-tac-toe.png",
+    description:
+      "Tested a React Tic Tac Toe Game using Jest and React Testing Library.",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
+    title: "Personal Book Library",
+    cardImage: "assets/images/project-page/book.png",
+    description:
+      "Personal book library app built using JavaScript.",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
+    title: "Minesweeper Game",
+    cardImage: "assets/images/project-page/minesweeper.jpg",
+    description:
+      "Minesweeper Game built using python Object Oriented Programming.",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
+    title: "Battery Life Calculator",
+    cardImage: "assets/images/project-page/battery.png",
+    description:
+      "Built battery life calculator using Python.",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
+    title: "Movie Recommendation System",
+    cardImage: "assets/images/project-page/movie-recommendation.jpeg",
+    description:
+      "Movie Recommendation System built using Tensorflow.",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
+    title: "Music Recommendation Engine",
+    cardImage: "assets/images/project-page/music.jpg",
+    description:
+      "Music Recommendation Engine built using Python.",
+    Previewlink: "",
+    Githublink: "",
   },
 ];
 
@@ -32,14 +104,16 @@ const showCards = () => {
   let output = "";
   projects.forEach(
     ({ title, cardImage, description, Previewlink, Githublink }) =>
-      (output += `        
-    <div class="skill-card card">
+      (output += `       
+    <div class="column skill-card card">
       <div class="wrapper" style="background: url(${cardImage}) center / cover no-repeat;">
         <div class="header">
         </div>
         <div class="data">
           <div class="content">
+          <div class="title-div">
             <h1 class="title"><a href="#">${title}</a></h1>
+            </div>
             <p class="text">${description}</p>
             <ul class="menu-content">
               <li><a href="${Previewlink}" class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 30 28" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></a></li>

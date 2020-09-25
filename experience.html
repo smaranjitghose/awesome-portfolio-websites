@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <title>John Doe | Experience</title>
@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!--For Dark/Light mode Toggle-->
+  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet" />
@@ -38,6 +40,7 @@
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <link rel="stylesheet" type="text/css" href="assets/css/experience.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <link rel="icon" href="assets/images/favicon.png" type="image/png"> <!--Favicon-->
 </head>
 
 <body>
@@ -61,95 +64,27 @@
       <div class="container-fluid px-3 pt-5">
         <div class="row text-dark">
           <div class="col-md-6"> <img class="img-fluid d-block  animate__animated animate__fadeInUp animate__delay-1s"
-              src="./assets/images//experience-page/experience.svg" draggable="true"> </div>
+              src="./assets/images/experience-page/experience.svg" draggable="true"> </div>
           <div
             class="px-md-5 p-3 col-md-6 d-flex flex-column align-items-center justify-content-center animate__animated animate__fadeInUp animate__delay-1s">
-            <h2 style="font-size: 3em;font-weight: bolder;" class="mb-0">Experience</h2>
-            <p class="font-weight-bolder text-muted text-center animate__animated animate__fadeInUp animate__delay-2s"
-              style="font-size: 1.1em; letter-spacing: 2px; line-height: normal;">
-              I have worked with some well established companies mostly as a developer. I love organising events and
-              that is why I am also involved with many opensource communities as a representative.
+            <h2 class="main-heading mb-0">Experience</h2>
+            <p class="pre-heading font-weight-bolder text-center animate__animated animate__fadeInUp animate__delay-2s">
+              When we strive to become better than we are, everything around us becomes better too- Paulo Coelho
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <h4 class="text-center heading1">Work Experience</h4>
-    <h6 class="text-muted text-center py-2 heading2">These are an amazing oppurtunity to boost up your tech stack.</h6>
+    <h4 class="text-center exp-head heading1">Work Experience</h4>
 
-    <!-- Card -->
+    <!-- work experience Card -->
+    
+    <main class="experience-cards">
+    <!-- Dynamic experience Card -->
+    </main>
 
-    <ul>
-      <li class="card card1">
-        <img src="assets\images\experience-page\UCL.JPG" class="featured-image" />
-        <article class="card-body">
-          <header>
-            <div class="title">
-              <h3>Reasearch and Development Intern</h3>
-            </div>
-            <p class="meta" style="margin: 0;">
-              <span class="pre-heading">UCL</span>
-              <span class="author">. May2020-present</span>
-            </p>
-            <ol style="list-style: disc; padding: 3%;">
-              <li> Automatic detection of Orthopedic Implants using Deep Learning.</li>
-              <li> Collection of radiographs, data cleaning and database management</li>
-              <li>Image Quality Analysis for Bio-Medical Images</li>
-              <li>Serving Models using TensorFlow JS</li>
-              <li>Experimenting with Few Shot Learning, Adversarial Training and Class Activation Maps</li>
-            </ol>
-          </header>
-        </article>
-      </li>
-    </ul>
-
-    <ul>
-      <li class="card card1">
-        <article class="card-body">
-          <header>
-            <div class="title">
-              <h3>Robotics and Embedded system Intern</h3>
-            </div>
-            <p class="meta" style="margin: 0;">
-              <span class="pre-heading">LEMA LABS</span>
-              <span class="author">. Jun-Jul,2019</span>
-            </p>
-            <ol style="list-style: disc; padding: 3%;">
-              <li>Design low cost prototyping boards for teaching robotics to underprivileged children.</li>
-              <li>Worked on integration of Face Recognition based models with Raspberry Pi and Intel Movidius.</li>
-              <li>Experimented with various algorithms for Lane Detection as well as Shortest Paths for Autonomous
-                Vehicles</li>
-            </ol>
-          </header>
-        </article>
-        <img src="assets\images\experience-page\lema-labs.png" class="featured-image" />
-      </li>
-    </ul>
-
-    <ul>
-      <li class="card card1">
-        <img src="assets\images\experience-page\ISI.png" class="featured-image" />
-        <article class="card-body">
-          <header>
-            <div class="title">
-              <h3>Research Intern</h3>
-            </div>
-            <p class="meta" style="margin: 0;">
-              <span class="pre-heading">ISI, Kolkata</span>
-              <span class="author">. Dec 19-Jan 20</span>
-            </p>
-            <ol style="list-style: disc; padding: 3%;">
-              <li>Worked on for Image Encryption and Image Forgery Detection.</li>
-            </ol>
-          </header>
-        </article>
-      </li>
-    </ul>
-
-    <h4 class="text-center heading1" style="margin-top:6rem">Volunteership</h4>
-    <h6 class="text-muted text-center py-2 heading2">I have been contributing various organizations thourugh the skills
-      I learnt.</h6>
+    <h4 class="text-center heading1">Volunteership</h4>>
 
     <!-- Volunteership Card -->
 
@@ -157,44 +92,16 @@
       <!-- Dynamic volunteership Card -->
     </main>
 
-    <h4 class="text-center heading1" style="margin-top:6rem">Mentorship</h4>
-    <h6 class="text-muted text-center py-2 heading2">I have been mentoring various projects for various organizations thourugh the skills
-      I learnt.</h6>
+    <h4 class="text-center heading1">Mentorship</h4>
 
     <!-- Mentorship Card -->
 
     <main class="container mt-5 animate__animated animate__fadeInUp animate__delay-1s">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <img src="assets/images/experience-page/gsoc.png" class="card-img-top" alt="..."  width="64" height="300">
-            <div class="card-body">
-              <h5 class="card-title">Google Summer of Code</h5>
-              <p>03/2020 - 08/2020</p>
-            </div>
-            <ul class="list-group list-group-flush p-0 right-aligned">
-              <li class="list-group-item">Mentored for a project named ScanCode for the organization named AboutCode.</li>
-              <li class="list-group-item">Guided students in providing insights about various technologies such as tensorflow.</li>
-              <li class="list-group-item">For my accomplishments and credentials you may check here <a href=""><i class="fa fa-angle-right text-dark fa-lg ml-2"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <img src="assets/images/experience-page/hakin.png" class="card-img-top" alt="..." width="64" height="300">
-            <div class="card-body">
-              <h5 class="card-title">HakinCode</h5>
-              <p>06/2020 - 08/2020</p>
-            </div>
-            <ul class="list-group list-group-flush p-0 right-aligned">
-              <li class="list-group-item">Mentored for a project named Awesome Portfolio Project. It helps to instantly create portfolio.</li>
-              <li class="list-group-item">Guided students in providing insights about SEO, various animations library etc.</li>
-              <li class="list-group-item">For my accomplishments and credentials you may check here <a href=""><i class="fa fa-angle-right text-dark fa-lg ml-2"></i></a></li>
-            </ul>
-          </div>
-        </div>
+      <div class="row mentorship-cards">
+        <!-- Dynamic mentorship Card -->
       </div>
-    </main>
+   </main>
+  </div>
 
     <!-- Dynamic footer section -->
 
@@ -204,8 +111,8 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167979537-2"></script>
     <!-- Fetching our Google Tag Manager -->
 
-    <link rel="stylesheet" href="assets\css\style.css" />
-    <link rel="stylesheet" href="assets\css\experience.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/experience.css" />
     <script src="assets/js/main.js"></script>
     <script src="assets/js/experience.js"></script>
 </body>

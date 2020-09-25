@@ -1,0 +1,132 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=12cm,marginparwidth=8.4cm,marginparsep=1cm,top=0.2cm,bottom=1.5cm}
+\ifxetexorluatex
+  \setmainfont{Gotham}
+  
+\else
+  \usepackage[utf8]{inputenc} 
+  \usepackage[T1]{fontenc}
+  \usepackage[defaultfam]{montserrat}
+\fi
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+ 
+\begin{document}
+    \name{\textalignright{Anush Bhatia}}
+\
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  
+%   \phone{000-00-0000}
+%  \mailaddress{Address, Street, 00000 County}
+  
+%  \homepage{marissamayr.tumblr.com/}
+%  \twitter{@marissamayer}
+ \homepage{tinyurl.com/anushwebsite}\\\smallskip
+ \email{anushbhatia1234@@gmail.com}\\\smallskip
+    \github{anushbhatia}\\\smallskip
+    \linkedin{/in/anushbhatia}\\\smallskip
+   \quiklab{bit.ly/abqwik}
+    
+ 
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Education}
+
+\cvevent{B.TECH CSE \hspace{4em} \tiny{2017-2021}}{\small{SRM Institute of Science and Technology}}{ 2017 -2021}{chennai}  \\\smallskip
+{learn Data Structures,Operating}\\\smallskip{ Systems,Data Management Systems,etc.}
+
+
+\\\bigskip
+
+
+
+
+\cvevent{High School  \hspace{4.3em} \tiny{2015-2017} } {\small{Delhi public School Vadodra}}\\\medskip
+{Learnt basics of web development also created the after-movie for farewell.}
+
+
+%\divider
+
+\cvsection{Mentoring}
+\smallskip
+
+\textbf{Project Mentor} \hspace{5.5em} {\tiny FEB2020-JUN2020}\\\medskip
+\textlf{GSSOC}\\\smallskip
+{Mentoring the projects Girlscript}\\\smallskip
+{Chennai Website and Girlscript}\\\smallskip
+{Boiler Plate App}\\\bigskip
+
+\textbf{Project Administrator} \hspace{2.5em} {\tiny MAR2020-JUN2020}\\\medskip
+{RGSOC}\\\smallskip
+{Mentoring the projects Techquellia}\\\smallskip
+{Website and App}\\\bigskip
+
+\textbf{Project Admin} \hspace{6em} {\tiny JUN2020-AUG2020}\\\medskip
+{Student Code-in}\\\smallskip
+{Mentoring the projects Girlscript}\\\smallskip
+{Chennai Website and Girlscript}\\\smallskip
+{Boiler Plate App}\\\bigskip
+
+
+
+\cvsection{ Skills}
+\smallskip
+\begin{itemize}
+\item \textbf{UI/UX}:AdobeXD,Figma,PremierPro,\\\smallskip
+photoshop,Illustrator,After Effects
+\smallskip
+\item \textbf{Cloud Computing}:AWS, GCP
+\item\textbf{Development}:C,C++,Git,Java
+\item\textbf{Web Development}:HTML,CSS,JS,REACT.JS,\\\smallskip
+PHP,Firebase,SQL
+
+
+\end{itemize}
+
+\cvsection{Certificate}
+\smallskip
+\textbf{\small{The Fundamentals of Digital Marketing}}\\\smallskip
+\textlf{By Google}\\\smallskip
+\textbf{\small{GSP Fundamentals:Core Infrastructure}}\\\smallskip
+\textlf{By Google}\\\smallskip
+\textbf{\small{Web Development Basics}}\\\smallskip
+\textlf{By Fusion Era}
+
+
+
+
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+
+
+\end{document}

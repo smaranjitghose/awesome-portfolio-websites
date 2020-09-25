@@ -1,18 +1,30 @@
-/*Declaration of CSS variables for light/dark theme*/
-
-html[data-theme="light"] {
+/*CSS variable declaration for light/dark mode*/
+html[data-theme = 'light']
+{
+	--bg-mybtn: red;
+	--bg-nav: #000000;
+  --bg-nav-img: #000000;
   --bg: #ffffff;
   --text: #191919;
+  --text-color: #6C757D;
 }
 
-html[data-theme="dark"] {
+html[data-theme = 'dark']
+{
+	--bg-mybtn: rgb(230, 109, 129);
+	--bg-nav: #6617cb;
+  --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
   --bg: #191919;
   --text: #ffffff;
+  --text-color: #fff;
+  --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+  --txt-fill: transparent;
 }
 
 body {
   height: 100vh;
   margin: 0;
+  overflow-x: hidden;
   color: var(--text);
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
@@ -25,24 +37,40 @@ html {
   scroll-behavior: smooth;
 }
 
-#myBtn {
+/*starting part of every page*/
+
+.main-heading{
+  font-size: 4em;
+  font-weight: bolder;  
+  background: var(--bg-txt-img);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--txt-fill);
+  padding-bottom: 0.1em;
+}
+
+.pre-heading{
+  font-size: 1.1em; 
+  letter-spacing: 2px; 
+  line-height: normal;
+  color: var(--text-color);
+}
+
+/*Top button dark/light mode*/
+
+#myBtn {                                                 
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 40px;
   right: 30px;
   z-index: 99;
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color:#26a69a; 
   color: white;
   cursor: pointer;
   padding: 13px 15px 15px 15px;
   border-radius: 50%;
-}
-
-#myBtn:hover {
-  background-color: #26a69a;
 }
 
 /* NAVBAR*/
@@ -51,6 +79,18 @@ html {
 .sidenav a:hover {
   text-decoration: none;
 }
+
+.nav-wrapper{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+  /*Navbar dark mode(research page)*/
+ 
+  .black{
+	background-color: var(--bg-nav);
+  background-image: var(--bg-nav-img);
+  }
 
 .nav-wrapper a {
   font-weight: bold;
@@ -74,46 +114,102 @@ p {
   font-size: 18px;
 }
 
-/*Toggle for light/dark mode*/
+/*toggle for light/dark mode*/
 
-input[type="checkbox"] {
+.toggle-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
   height: 0;
   width: 0;
-  visibility: hidden;
 }
 
-label {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 50px;
-  height: 30px;
-  background: grey;
-  display: block;
-  border-radius: 20px;
+.side-toggle{
+    height: 2em;
+    width: 5em;
+}
+
+.toggle-slot {
   position: relative;
-  margin-top: 1.5em;
+  height: 3.5em;
+  width: 8em;
+  border: 5px solid #e4e7ec;
+  border-radius: 10em;
+  background-color: white;
+  transition: background-color 250ms;
+  margin-top: 1em;
   margin-left: 1.5em;
 }
 
-label:after {
-  content: " ";
+.toggle-checkbox:checked ~ .toggle-slot{
+  background-color: #374151;
+}
+
+.toggle-button {
+  transform: translate(11.75em, 1.75em);
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border-radius: 50px;
-  transition: 1s;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  background-color: #ffeccf;
+  box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+  margin-top: -1.5em;
+  margin-left: -7em;
 }
 
-input:checked + label {
-  background: rgb(63, 25, 170);
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+  background-color: #485367;
+  box-shadow: inset 0px 0px 0px 0.75em white;
+  transform: translate(7.5em, 1.75em);
 }
 
-input:checked + label:after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
+.sun-icon {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  color: #ffbb52;
+  margin-top: -1.2em;
+  margin-left: -2em;
+}
+
+.sun-icon-wrapper {
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  opacity: 1;
+  transform: translate(2em, 2em) rotate(15deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper{
+  opacity: 0;
+  transform: translate(3em, 2em) rotate(0deg);
+}
+
+.moon-icon {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  color: white;
+  margin-top: -3.5em;
+  margin-left: -6.5em;
+}
+
+.moon-icon-wrapper {
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  opacity: 0;
+  transform: translate(11em, 2em) rotate(0deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper{
+  opacity: 1;
+  transform: translate(12em, 2em) rotate(-15deg);
 }
 
 /*Transition for Toggle*/
@@ -129,12 +225,23 @@ html.transition *:after {
 /*Footer*/
 
 .webintern-footer {
-  background: #000000;
+  background-color: var(--bg-nav);
+  background-image: var(--bg-nav-img);
+  padding: 20px;
+}
+.row{
+  
+  clear: both;
+  margin: 0 auto;
+  padding:0 auto;
+  bottom: 0px;
+  clear: both !important;
+      
 }
 
 .webintern-footer-inner {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .webintern-footer-logo {
@@ -143,22 +250,22 @@ html.transition *:after {
 
 .webintern-footer .webintern-footer-inner .simple-text p {
   color: #fff;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .simple-text p {
   font-size: 15px;
   color: #42435d;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  line-height: 26px;
+  font-weight: 300;
+  line-height: 20px;
   margin-bottom: 0;
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 40rem) {
   .simple-text p {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 
@@ -168,22 +275,22 @@ html.transition *:after {
 }
 .webintern_footer_title {
   margin-top: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
 .webintern_footer_title small {
   font-family: "Work Sans", sans-serif;
   color: #fff;
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 10px;
   text-transform: uppercase;
 }
 .webintern_footer_title:after {
   content: "";
   display: block;
-  width: 8rem;
+  width: 6rem;
   height: 2px;
   background: #26a69a;
-  margin-top: 15px;
+  margin-top: 4px;
 }
 
 .contact-form #exampleInputEmail1 {
@@ -198,18 +305,18 @@ html.transition *:after {
 
 .form-control:focus {
   box-shadow: none;
-  border-bottom: 2px solid #26a69a;
+  border-bottom: 1px solid #26a69a;
 }
 .form-group {
   padding-left: 0px;
+  padding-right: 0px;
 }
 
 .webintern-footer .webintern-footer-inner .simple-text p {
   color: #fff;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: block;
-  width: 220px;
 }
 
 .simple-text p {
@@ -227,22 +334,22 @@ html.transition *:after {
 }
 .webintern_footer_title {
   margin-top: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .webintern_footer_title small {
   font-family: "Work Sans", sans-serif;
   color: #fff;
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 100;
+  font-size: 13px;
   text-transform: uppercase;
 }
 .webintern_footer_title:after {
   content: "";
   display: block;
-  width: 8rem;
+  width: 7rem;
   height: 2px;
   background: #26a69a;
-  margin-top: 15px;
+  margin-top: 2px;
 }
 
 .contact-form #exampleInputEmail1 {
@@ -253,37 +360,37 @@ html.transition *:after {
   font-size: 15px;
   border-radius: 2px;
 }
-.tt-copy {
-  font-size: 15px;
-  line-height: 20px;
+/*.tt-copy {
+  font-size: 0px;
+  line-height: 0px;
   color: #fff;
-  padding: 10px 0;
+  padding: 0px 0;
   font-family: "Open Sans", sans-serif;
-}
+}*/
 
 /*Responsive*/
 
-@media (min-width: 60rem) {
+@media (min-width: 40rem) {
   .simple-text p {
-    font-size: 26px;
+    font-size: 15px;
     text-align: center;
   }
 
   .webintern-footer .webintern-footer-inner .simple-text p {
-    width: 280px;
+    width: 220px;
   }
 }
 
 .send-btn {
-  padding-top: 8px 5px 8px 5px;
-  font-size: 15px;
+  padding-top: 5px 3px 5px 3px;
+  font-size: 10px;
   transition-property: font-size;
   transition: all 0.5s ease;
   outline: none;
 }
 .send-btn:hover {
   background-color: #0dfde5;
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .btn:focus,
@@ -295,17 +402,7 @@ html.transition *:after {
 }
 
 .form-group:focus {
-  border: 3px solid black;
-}
-
-.tt-copy {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 20px;
-  color: #fff;
-  padding: 10px 0;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 2px;
+  border: 2px solid black;
 }
 
 .text-animation {
@@ -338,7 +435,6 @@ html.transition *:after {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  width: 220px;
   display: block;
 }
 
@@ -353,6 +449,10 @@ html.transition *:after {
   border-radius: 50%;
   text-decoration: none;
   float: left;
+}
+
+.social-icon-footer:hover{
+  background-color: #0dfde5;
 }
 
 .social-icon-footer i {
@@ -370,6 +470,7 @@ html.transition *:after {
 @media (min-width: 60rem) {
   .social-icons-footer {
     width: 280px;
+    text-align: center;
   }
 
   .social-icon-footer {
@@ -386,13 +487,8 @@ html.transition *:after {
 
 .social-icon-footer:hover {
   transform: translateY(-4px);
-  box-shadow: 0px 4px 12px rgb(100, 248, 233);
 }
 
 .social-icon:hover:after {
   transform: translate(0) scale(1.2);
-}
-
-a:hover {
-  color: transparent;
 }
