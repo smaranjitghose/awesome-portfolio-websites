@@ -1,100 +1,20 @@
 <h1 align= "center"><b>Awesome Portfolio Websites</b></h1>
-An open source project for creating end-end templates for portfolio websites for everyone to use. We are a clan of geeks who wants to provide you with that dope website that flaunts your hardwork and projects over the years to your mates and employers! With a deep desire to have that satiating UI, those engaging animations,the great SEO and the optimized code, we do it all. Hop in and give your contributions if you wish to be a part of this initiative.
+An open-source project for creating end-to-end templates for portfolio websites for everyone to use. We are a group of Open Source enthusiasts who want to provide you with that awesome portfolios that flaunts your hard work and projects over the years to your employers! Do you want to have satiating UI, engaging animations, great SEO, and optimized code? Worry not, as we have got it all covered. Hop in and give your contributions if you wish to be a part of this initiative!
 
-<h2 align= "center"><b> How to Get Started ?</b></h2>
-<p align="center"><img width=50% src="https://media.giphy.com/media/l0IyjiXOXTX6Yemsg/giphy.gif"></p>
+<h2>Features:</h2>
 
-  
-  This project is expected to be done in the following phases:
-  
-  1) Front-end Developement:
-  
-  Skills:
-  - HTML5
-  - CSS3
-  - JavaScript
-  - Materialize/Bootstrap
-  
-  **React/Next.Js can be used for development in another branch**
-  
-  Sections: (By default dark mode or theme)
-  
-  - [X] Landing Page/Home Page
-  - [ ] Splash Screen
-  - [X] Navigation Bar ( Try to have a microanimation when we hover over one tab then a lamp enlights it)
-  - [X] Footer
-  - [X] Projects Page ( Cards + Appropiate Microanimation at top( like a furnace showing work in project)
-    - [X] Image or Gif appropiate to the project
-    - [X] Name of the Project
-    - [X] GitHub button (Microanimations)
-    - [X] Small Emoji or Button (To redirect to blog or the hosted project itself)
-  - [ ] Experience Page ( Try to have cards depicting a picture or graphics related to the workplace + Role Name + Role Time + Bullet points about the work done + A micro-animation for an icon redirecting to any letter if available)
-    - [X] Internships/Jobs
-    - [X] Mentorship
-    - [ ] Freelance/Volunteering
-  - [ ] Education Page
-    - [X] College Name, Duration, Courses,Activites
-    - [X] Certifications 
-  - [ ] Publications (Try to have it in interactive Bibtex format)
-  - [ ] Other Work/Achievements 
-  - [ ] Blog Page (This is to be done using fastpages separately and is optional)
-  - [X] Contact/Get in the footer
- 
-  
-2) Enhancements:
-
-- [ ] Improvement of UI/UX
-- [ ] Search Engine Optimization
-- [ ] Optimize Assets
-- [ ] Faster Loading of Page
-- [ ] Dynamic Loading of content using JSON Injection
-- [ ] robot.txt
-- [ ] Google Analytics Integration
-
-3) Back-end development:
-
-Skills:
-- Flask/NodeJS
-- Firebase 
-
-- [ ] Routing of pages
-- [ ] Autoresponder
-- [ ] Newsletter
-- [ ] Payement Option for Donation
-
-4) Project Documentation
-
-**MkDocs or Docusaurus is prefered**
-
-All work related to this is to be initially done at gh-pages branch
-
-Purpose of the Documentation is ensure anyone without any knowledge of web development can make use of this project template, modify the content and host it successfully
-
-- [ ] Landing Page
-- [ ] Side Nav Bar
-- [ ] How to Get Started ( Include Hosting Details)
-- [ ] How to modify essential contents for the following:
-   - [ ] Home Page
-   - [ ] Projects Page
-   - [ ] Experience Page
-   - [ ] Education Page
-- [ ] Project Maintiance Page
-- [ ] Open Source License and Code of Conduct
-
-**Miscellaneous**:
-
-- Wikis ( Regarding Certain aspects of design and development used for the web pages)
-- ReadMe ( Make it more appealing with better content,pics,assets,gifs,badges)
-- Issue Templates
-- Pull Request Templates
-- GitHub Actions 
-- Setup Search Option
+<h2>Made with ❤ for open source</h2>
 
 <h2 align="center"><b>Open Source Programs we have been a part of:</b></h2>
-<p align="center">
-<img width=20% src="assets/images/hakin_codes.png">&ensp;&ensp;&ensp;
-<img width=20% src="assets/images/sci.jpg">
-</p>
+
+<a href="https://scodein.tech/"><img width=20% src="assets/images/sci.jpg"></a>
+<p>Student Code-in is a 8 weeks long open source project. In this, all the registered participants would get an exquisite opportunity to interact with the mentors, the Organizing Team and contribute to Open Source projects.</p>
+</br>
+<a href="https://hakincodes.tech/CH20.html"><img width=20% src="assets/images/hakin_codes.png"></a>
+<p>Contributor's Hack is an Open-Source Program organized by HakinCodes that unites students, developers, engineers, and innovators from different places and culture to be a part of one and a half months of learning and contributing to Open-Source Projects for building their skills and learning how to collaborate and work together in a dev community.</p>
+</br>
+<a href="https://hacktoberfest.digitalocean.com/"><img width=20% src="assets/images/Hacktoberfest_20.jpg"></a>
+<p>Hacktoberfest encourages participation in the open source community, which grows bigger every year. Hacktoberfest is open to everyone in our global community. Whether you’re new to development, a student, long-time contributor, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community. All backgrounds and skills levels are encouraged to complete the challenge.</p>
 
 <h2 align= "center"><b> Project Maintainers</b></h2>
 
@@ -107,6 +27,9 @@ Purpose of the Documentation is ensure anyone without any knowledge of web devel
 <h4 align="center"><b>Smaranjit Ghose</b></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 <a href="https://github.com/anushbhatia"><b>Anush Bhatia</b></h4></a>
 
+<p style="text-align: center;"><a href="https://www.linkedin.com/in/smaranjitghose/"><img src="https://img.shields.io/badge/-Smaranjit_Ghose-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/smaranjitghose/"></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<a href="https://www.linkedin.com/in/anushbhatia/"><img src="https://img.shields.io/badge/-Anush_Bhatia-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/anushbhatia/"></a></p>
+
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/0)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/0)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/1)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/1)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/2)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/2)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/3)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/3)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/4)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/4)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/5)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/5)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/6)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/6)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/7)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/7)
 
 
@@ -115,5 +38,5 @@ Purpose of the Documentation is ensure anyone without any knowledge of web devel
 
 <a href="./License.md"><h2 align= "center"><b> License</b></h2></a> 
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
-
+CC0 (Creative Commons Zero) v1.0 Universal License waives copyright interest in a work we've created and dedicates it to the world-wide public domain.
 
