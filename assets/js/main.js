@@ -11,7 +11,7 @@ window.onscroll = function () {
   scrollFunction();
 };
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -92,7 +92,7 @@ let footer = $(`
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-6 pt-3" >
-      <div class="col-sm-6 col-md-7"> 
+      <div class="col-sm-6 col-md-7">
         <a class="webintern-footer-logo" href="#">
           <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
         </a>
@@ -128,13 +128,13 @@ let footer = $(`
     </div>
 
       <div class="col-sm-6 col-md-5 pt-3 footer-2">
-     
+
         <!-- footer_title -->
         <h4 class="webintern_footer_title h5">
           <small>Get In Touch</small>
         </h4>
         <!-- TT-SUBSCRIBE -->
-      
+
       <div class="contact-form">
           <form>
               <fieldset class="form-group text-center">
@@ -166,7 +166,7 @@ let bodyElement = $(`body`);
 bodyElement.prepend(header);
 bodyElement.append(footer);
 
-/*JavaScript for toggle for light/dark mode*/ 
+/*JavaScript for toggle for light/dark mode*/
 
 var checkbox = document.querySelector('input[name=theme]');
 if(checkbox)
