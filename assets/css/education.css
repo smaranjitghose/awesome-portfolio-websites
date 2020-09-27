@@ -1,0 +1,436 @@
+html[data-theme = 'light']
+{
+  --bg1-color: #ecf0f3;
+  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  --border:1px solid #ecf0f3;
+}
+
+html[data-theme = 'dark']
+{
+  --bg1-color: #272727;
+  --shadow: 0 4px 8px 0 rgba(104, 102, 102, 0.2);
+  --border:none;
+}
+
+@media (min-width: 600px) and (max-width: 750px){
+  .formal-edu{
+    margin-top: 7rem;
+  }
+}
+
+/* -----Timeline----- */
+.main-timeline {
+  position: relative;
+  color: var(--text-color)
+}
+
+.main-timeline::before {
+  content: "";
+  background-color: #707070;
+  opacity: 0.3;
+  height: 100%;
+  width: 2px;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.main-timeline::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main-timeline .timeline {
+  width: 50%;
+  padding: 0 40px 0 0;
+  margin: 0 5px 0 0;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+
+.main-timeline .timeline::before,
+.main-timeline .timeline::after {
+  content: "";
+  background-color: #707070;
+  opacity: 0.2;
+  height: 2px;
+  width: 100px;
+  transform: translateY(-50%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.main-timeline .timeline::after {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: none;
+  right: -8px;
+}
+
+.main-timeline .timeline-content {
+  box-shadow: var(--shadow);
+  background-color: var(--bg1-color);
+  border: var(--border);
+  margin: 0 auto;
+  border-radius: 20px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+}
+
+.main-timeline .timeline-content:hover {
+  text-decoration: none;
+}
+.main-timeline .timeline-content::before,
+.main-timeline .timeline-content::after {
+  content: "";
+  background-color: #ecf0f3;
+  width: 0;
+  position: absolute;
+  right: -1px;
+  top: 0;
+  z-index: 1;
+}
+
+.main-timeline .timeline-content::after {
+  transform: rotateX(180deg);
+  z-index: 0;
+}
+
+.main-timeline .timeline:nth-child(even) {
+  margin: 0 0 0 5px;
+  padding: 0 0 0 40px;
+  float: right;
+}
+
+.main-timeline .timeline:nth-child(even)::before {
+  right: auto;
+  left: 0;
+}
+
+.main-timeline .timeline:nth-child(even)::after {
+  right: auto;
+  left: -8px;
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-content::before {
+  right: auto;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-content::after {
+  right: auto;
+  left: 0;
+  transform: rotateY(-180deg) rotateX(180deg);
+}
+
+@media only screen and (max-width: 990px) {
+  .main-timeline .timeline .timeline-content::before,
+  .main-timeline .timeline .timeline-content::after {
+    width: auto;
+  }
+  .main-timeline .timeline:nth-child(even) .timeline-icon {
+    left: 12px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-timeline::before {
+    transform: translateX(0);
+    left: 0;
+  }
+  .main-timeline .timeline {
+    width: 100%;
+    padding: 0 0 0 20px;
+    margin: 0 0 20px;
+  }
+  .main-timeline .timeline:nth-child(even) {
+    padding: 0 0 0 20px;
+    margin: 0 0 20px;
+  }
+  .main-timeline .timeline::before {
+    right: auto;
+    left: 0;
+  }
+  .main-timeline .timeline::after {
+    right: auto;
+    left: -8px;
+  }
+  .main-timeline .timeline .timeline-content {
+    padding: 15px 15px 0px 0px;
+    border-radius: 20px;
+  }
+  .main-timeline .timeline .timeline-content::before {
+    width: 85px;
+    right: auto;
+    left: 0;
+    transform: rotateY(180deg);
+  }
+  .main-timeline .timeline .timeline-content::after {
+    width: 85px;
+    right: auto;
+    left: 0;
+    transform: rotateY(180deg) rotateX(-180deg);
+  }
+}
+/* Card Hover Effcet */
+
+.mooc-title{
+  color: black;
+}
+
+@media(min-width: 280px) and (max-width: 304px){
+  .column{
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+  }
+
+  .mooc-title{
+    font-size: 0.8em !important;
+  }
+}
+
+@media(min-width: 304px) and (max-width: 350px){
+  .column{
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+
+  .mooc-title{
+    font-size: 0.8em !important;
+  }
+}
+
+@media(min-width: 350px) and (max-width: 366px){
+  .column{
+    margin-left: 3rem;
+    margin-right: 1rem;
+  }
+
+  .mooc-title{
+    font-size: 0.8em !important;
+  }
+}
+
+@media(min-width: 366px) and (max-width: 435px){
+  .column{
+    margin-left: 4rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 437px) and (max-width: 460px){
+  .column{
+    margin-left: 4rem;
+    margin-right: 2rem;
+  }
+}
+
+@media(min-width: 460px) and (max-width: 500px){
+  .column{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .mooc-title{
+    font-size: 1.1em !important; 
+  }
+}
+
+@media (min-width: 500px) and (max-width: 660px){
+  .column{
+    margin-left: 4rem;
+    margin-right: 5rem;
+  }
+
+  .mooc-title{
+    font-size: 1.3em !important; 
+  }
+}   
+
+@media(min-width: 631px) and (max-width: 737px){
+  .column{
+    margin-left: 7rem;
+    margin-right: 6rem;
+  }
+
+  .mooc-title{
+    font-size: 1.3em !important; 
+  }
+}
+
+@media (min-width: 737px) and (max-width: 750px){
+  .column{
+    margin-left: 9rem;
+    margin-right: 6rem;
+  }
+
+  .mooc-title{
+    font-size: 1.3em !important; 
+  }
+}
+
+@media(max-width: 750px){
+  .row{
+    display: flex;
+    row-gap: -3em;
+  }
+
+  .column{
+    float: left;
+    margin-bottom: 3rem;
+    column-gap: 3rem;
+    align-content: center;
+    text-align: center;
+  }
+}
+
+@media(min-width: 60rem){
+  .row{
+    row-gap: 3em;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  .column{
+    margin-bottom: 3rem;
+  }
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  overflow: hidden;
+  height: 75%;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 0.8;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+.fadeIn-bottom {
+  top: 80%;
+}
+
+.card {
+  border-radius: 5px;
+  background: #ecf0f3;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+.card-body {
+  background-color: #fff;
+  padding:1px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (min-width: 280px) and (max-width: 366px) {
+  .card{
+    width: 180px;
+    height: 160px;
+  }
+}
+
+@media only screen and (min-width: 366px) and (max-width: 456px){
+  .card{
+    width: 230px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 456px) and (max-width: 600px) {
+  .card {
+      width: 350px;
+      height: 260px;
+    }
+  }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .card {
+    width: 390px;
+    height: 260px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card  {
+    width:180px;
+          height:160px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card  {
+    width:230px;
+          height:190px;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .card  {
+    width:280px;
+           height:200px;
+  }
+}
+
