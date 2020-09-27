@@ -1,0 +1,6 @@
+site_name: My Docs
+nav:
+    - Home: index.md
+    - Getting Started: gs.md
+    - Team: team.md
+theme: material
