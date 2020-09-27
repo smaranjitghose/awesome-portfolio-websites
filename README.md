@@ -10,7 +10,7 @@ An open source project for creating end-end templates for portfolio websites for
 # The geeks😎 behind this!
   
  
-<h3 align= "center">Project Maintainers</h3>
+<h3 align= "center">Project Maintainers</h2>
 
 <p align="center">
 <img width=20% src="https://avatars2.githubusercontent.com/u/46641503?v=4">&ensp;&ensp;&ensp;
@@ -21,16 +21,18 @@ An open source project for creating end-end templates for portfolio websites for
 <h4 align="center"><b>Smaranjit Ghose</b></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 <a href="https://github.com/anushbhatia"><b>Anush Bhatia</b></h4></a>
 
-
-<h3 align= "center">Contributors</h3>
-
-[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/0)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/0)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/1)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/1)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/2)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/2)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/3)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/3)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/4)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/4)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/5)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/5)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/6)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/6)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/7)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/7)
-
+<h3 align = "center">Contributors</3>
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=smaranjitghose/awesome-portfolio-websites" />
+</a>
 
 <a href="./Code_of_conduct.md"><h2 align= "center"><b> Code of Conduct</b></h2></a> 
 <p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
 
-<a href="./License.md"><h2 align= "center"><b> License</b></h2></a> 
+<a href="./LICENSE"><h2 align= "center"><b> License</b></h2></a> 
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
+
+### __Made with 💖 for open source__
+
 
 
