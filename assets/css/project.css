@@ -1,0 +1,328 @@
+html[data-theme = 'light']
+{
+  --bg-col: #fafafa;
+  --shadow1: rgba(0, 0, 0, 0.3);
+  --shadow2: rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme = 'dark']
+{
+  --bg-col: black;
+  --shadow1: rgba(128, 122, 122, 0.233);
+  --shadow2: rgba(231, 216, 216, 0.007);
+}
+
+/*For Changing background color of body according to theme*/
+body{
+  background: var(--bg-col) !important;
+}
+
+.img-header{
+  width: 90%;
+  height: 90%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.skill-card{
+	border: none;
+}
+
+.row{
+  display: flex;
+  row-gap: 3em;
+}
+
+.card{
+  width: 100%;
+}
+
+.column{
+  float: left;
+  margin-bottom: 3rem;
+}
+
+.page-content {
+  padding: 1rem;
+  max-width: 1124px;
+}
+
+@media(min-width: 60rem)
+{
+  .row{
+    margin-top: 0em;
+  }
+
+  .card{
+    width: 39%;
+    column-gap: 3rem;
+
+  }
+
+  .column{
+    margin-left: 6.8rem;
+  }
+}
+
+.card .menu-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  float: left;
+  vertical-align: bottom;
+}
+
+.card .menu-content::before,
+.card .menu-content::after {
+  content: "";
+  display: table;
+}
+
+.card .menu-content::after {
+  clear: both;
+}
+
+.card .menu-content li {
+  display: inline-block;
+}
+
+.card .wrapper {
+  background-color: #fff;
+  min-height: 26rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px var(--shadow1), 0 15px 12px var(--shadow2);
+}
+
+.card .wrapper:hover .data {
+  transform: translateY(0);
+}
+
+.card .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: transform 0.3s;
+  background: rgba(0,0,0,0.55);
+}
+
+@media(min-width: 60rem)
+{
+  .card .data{
+    height: 50%;
+  }
+}
+
+.card .data .content {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 4em;
+}
+
+@media(min-width: 378px)
+{
+  .card .data .content{
+    margin-bottom: 1em;
+  }
+}
+
+@media(min-width: 400px)
+{
+  .card .data .content{
+    margin-bottom: 2em;
+  }
+}
+
+@media(min-width: 60rem)
+{
+  .card .data .content{
+    margin-bottom: 0;
+  }
+}
+
+.card .title-div{
+  width: 100%;
+  height: 25%;
+  margin: 0;
+}
+
+@media(min-width: 60rem)
+{
+  .card .title-div{
+    padding-bottom: 1.8em;
+  }
+}
+
+.card .title {
+  margin-top: 0em;
+  font-size: 0.65em;
+}
+
+@media(min-width: 311px)
+{
+  .card .title{
+    font-size: 0.8em;
+  }
+}
+
+@media(min-width: 365px){
+  .card .title{
+    font-size: 1em;
+  }
+}
+
+@media(min-width: 425px){
+  .card .title{
+    font-size: 1.3em;
+  }
+}
+
+@media(min-width: 554px){
+  .card .title{
+    font-size: 1.5em;
+  }
+}
+
+@media(min-width: 60rem)
+{
+  .card .title {
+    font-size: 1.55em;
+  }
+}
+
+.card .text {
+  height: 60px;
+  font-size: 0.5em;
+  margin: 0;
+}
+
+@media(min-width: 311px){
+  .card .text{
+    font-size: 0.7;
+  }
+}
+
+@media(min-width: 365px){
+  .card .text{
+    font-size: 0.85em;
+  }
+}
+
+@media(min-width: 425px){
+  .card .text{
+    font-size: 1em;
+  }
+}
+
+@media(min-width: 554px)
+{
+  .card .text{
+    font-size: 1.2em;
+  }
+}
+
+@media(min-width: 60rem){
+  .card .text{
+    font-size: 18px;
+  }
+}
+
+.card input[type="checkbox"] {
+  display: none;
+}
+
+.card input[type="checkbox"]:checked + .menu-content {
+  transform: translateY(-60px);
+}
+
+.skill-card .wrapper:hover .menu-content span {
+  transform: translate(-50%, -10px);
+  opacity: 1;
+}
+
+.skill-card .header {
+  color: #fff;
+  padding: 1em;
+}
+
+.skill-card .header::before,
+.skill-card .header::after {
+  content: "";
+  display: table;
+}
+
+.skill-card .header::after {
+  clear: both;
+}
+
+.skill-card .header .date {
+  float: left;
+  font-size: 12px;
+}
+
+.skill-card .menu-content {
+  float: right;
+}
+
+.skill-card .menu-content li {
+  margin: 0 2px;
+  position: relative;
+}
+
+.skill-card .menu-content span {
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.skill-card .data {
+  color: #fff;
+  transform: translateY(calc(60px + 4em));
+  padding: 5px;
+}
+
+.skill-card .title a {
+  color: #fff;
+}
+
+/*social icons*/
+
+.social-icon svg {
+  margin-top: 10px;
+}
+.social-icon svg:hover {
+  fill: #fff;
+}
+
+/* Resopnsive*/
+@media only screen and (max-width: 767px) {
+  .project-box {
+    margin-top: 18rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .project-box {
+    margin-top: 18rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 377px) {
+	.skill-card .data {
+		transform: translateY(calc(90px + 4em));
+	  }
+  }

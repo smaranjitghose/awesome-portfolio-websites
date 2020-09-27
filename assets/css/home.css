@@ -1,0 +1,174 @@
+/*Declaration of CSS variables for light/dark theme*/
+
+html[data-theme="light"] {
+  --bg-icon: white;
+  --col-icon: #000;
+  --shadow-col: rgba(0, 0, 0, 0.18);
+}
+
+html[data-theme="dark"] {
+  --bg-icon: #191919;
+  --col-icon: white;
+  --twitter: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1da1f2, 0 0 20px #1da1f2, 0 0 25px #1da1f2, 0 0 30px #1da1f2, 0 0 35px #1da1f2;
+  --github: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #434547, 0 0 20px #434547, 0 0 25px #434547, 0 0 30px #434547, 0 0 35px #434547;
+  --linkedin: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0e76a8, 0 0 20px #0e76a8, 0 0 25px #0e76a8, 0 0 30px #0e76a8, 0 0 35px #0e76a8;
+  --kaggle: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #41aff3, 0 0 20px #41aff3, 0 0 25px #41aff3, 0 0 30px #41aff3, 0 0 35px #41aff3;
+  --dribble: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ea4c89, 0 0 20px #ea4c89, 0 0 25px #ea4c89, 0 0 30px #ea4c89, 0 0 35px #ea4c89;
+  --medium: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ab6c, 0 0 20px #00ab6c, 0 0 25px #00ab6c, 0 0 30px #00ab6c, 0 0 35px #00ab6c;
+  --shadow-col: #15f4ee;
+}
+
+/* Particle effect*/
+
+#home,
+#particles-js {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.section {
+  background-color: rgb(63, 25, 170);
+  justify-content: center;
+  align-items: center;
+}
+
+.text span {
+  font-weight: bold;
+}
+
+.text {
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.animated-text span {
+  display: none;
+  line-height: 1;
+}
+.animated-text span.active {
+  display: inline-block;
+}
+.animated-text:after {
+  content: ".";
+  display: inline-block;
+  width: 10px;
+  text-indent: 0;
+  /* overflow: hidden; */
+  background:var(--col-icon);
+  animation: blink 0.3s infinite alternate;
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Social icons*/
+
+:root {
+  --link-size: 64px;
+  --trans-props: all 0.3s ease;
+  --link-size-footer-b: 40px;
+  --link-size-footer-s: 30px;
+}
+
+.social-icons {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.social-icon {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  margin: 8px;
+  background-color: var(--bg-icon);
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px var(--shadow-col);
+  text-decoration: none;
+  transition: var(--trans-props);
+}
+.social-icon i {
+  margin: auto;
+  font-size: 24px;
+  color: var(--col-icon);
+  z-index: 1;
+  transition: var(--trans-props);
+}
+
+.social-icon:after {
+  content: "";
+  width: var(--link-size);
+  height: var(--link-size);
+  position: absolute;
+  transform: translate(0, var(--link-size));
+  border-radius: 50%;
+  transition: var(--trans-props);
+}
+
+.social-icon.twitter:after {
+  background-color: #1da1f2;
+  box-shadow: var(--twitter);
+}
+
+.social-icon.github:after {
+  background-color: #24292e;
+  box-shadow: var(--github);
+}
+
+.social-icon.linkedin:after {
+  background-color: #0e76a8;
+  box-shadow: var(--linkedin);
+}
+
+.social-icon.kaggle:after {
+  background-color: #41aff3;
+  box-shadow: var(--kaggle);
+}
+
+.social-icon.dribbble:after {
+  background-color: #ea4c89;
+  box-shadow: var(--kaggle);
+}
+
+.social-icon.medium:after {
+  background-color: #00ab6c;
+  box-shadow: var(--medium);
+}
+
+/*** Social Icon Animations ***/
+
+.social-icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+.social-icon:hover i {
+  color: #fff;
+}
+
+.social-icon:hover:after {
+  transform: translate(0) scale(1.2);
+}
+
+a:hover {
+  color: transparent;
+}
+
+/* Responsive */
+@media only screen and (max-width: 450px) {
+  .text {
+    margin-top: 5rem;
+  }
+}
