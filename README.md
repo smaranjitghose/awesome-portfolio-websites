@@ -7,10 +7,10 @@ An open source project for creating end-end templates for portfolio websites for
 # How to use this?
 
 
-# The geeks😎 behinds this!
+# The geeks😎 behind this!
   
  
-<h2 align= "center"><b> Project Maintainers</b></h2>
+<h3 align= "center">Project Maintainers</h3>
 
 <p align="center">
 <img width=20% src="https://avatars2.githubusercontent.com/u/46641503?v=4">&ensp;&ensp;&ensp;
@@ -20,6 +20,9 @@ An open source project for creating end-end templates for portfolio websites for
 <a href="https://github.com/smaranjitghose">
 <h4 align="center"><b>Smaranjit Ghose</b></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 <a href="https://github.com/anushbhatia"><b>Anush Bhatia</b></h4></a>
+
+
+<h3 align= "center">Contributors</h3>
 
 [![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/0)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/0)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/1)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/1)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/2)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/2)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/3)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/3)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/4)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/4)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/5)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/5)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/6)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/6)[![](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/images/7)](https://sourcerer.io/fame/smaranjitghose/smaranjitghose/awesome-portfolio-websites/links/7)
 
