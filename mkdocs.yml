@@ -1,6 +1,27 @@
 site_name: Awesome Developer Portfolio
+repo_url: https://github.com/smaranjitghose/awesome-portfolio-websites
+
 nav:
     - Home: index.md
     - Getting Started: gs.md
     - Team: team.md
-theme: material
+
+theme: 
+    name: 'material'
+    logo: 'images/icons/champion.svg'
+    favicon: 'images/icons/champion.svg'
+    palette:
+        scheme: slate
+        primary: deep purple
+    font:
+        text: Poppins
+    features:
+        - navigation.expand
+        - searcn.highlight
+
+plugins:
+  - search
+
+google_analytics:
+  - UA-XXXXXXXX-X
+  - auto
