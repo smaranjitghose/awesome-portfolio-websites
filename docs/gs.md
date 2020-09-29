@@ -41,12 +41,16 @@
     1. Open _index.html_
     2. Inside `<div class="social-icons">` fill up the link to your social media accounts inside `href`
 
+---
+
 ### Navbar
 
 - To change the logo :
     1. Add your logo image inside assets -> images folder
     2. Open _main.js_
     3. Under **Footer and Navbar** heading, inside `<a href="#!" class="brand-logo">`, change the path inside `<img src="">` to your image path
+
+---
 
 ### Footer
 
@@ -59,6 +63,8 @@
 - To add your social media links :
     1. Open _main.js_
     2. Inside `<div class="social-icons-footer">` fill up the link to your social media accounts inside `href`
+
+---
 
 ### Experience Page
 
@@ -98,6 +104,8 @@
         3. Change the current **time** to your duration of work inside `time`
         4. Change the current **description** to your work description inside `desp`
 
+---
+
 ### Projects Page
 
 ![Projects](images/project.png)
@@ -112,6 +120,8 @@
         3. Change the current **description** to your project description inside `description`
         4. Add the **preview link** inside `Previewlink`
         5. Add the **github link** inside `Githublink`
+
+---
 
 ### Research Page
 
@@ -129,6 +139,8 @@
         5. Change the current **image path** to your image path inside `image`
         6. Change the current **vancouver** to yours inside `vancouver`
         7. Change the current **bibtex** to yours inside `bibtex`
+
+---
 
 ### Education Page
 
@@ -229,3 +241,35 @@
 ![netlify7](images/netlify-pg7.png)
 
 - Netlify will automatically generate a link for your deploy. If you wish to change the link name, click on **Change Site Name** button and change the link name.
+
+---
+
+### GitHub Pages
+
+- As we have already created a repository and pushed the changes, all we need to do now is **rename the repository** to `your_username.github.io`
+
+- To rename, open your repository, and go to settings and click on **rename** button
+
+![github-pages](images/github-pages.png)
+
+- And your website will be hosted on GitHub!!
+
+---
+
+### AWS Amplify
+
+![aws1](images/aws.png)
+
+- Sign in to your AWS account or sign up if you don't have one already
+
+![aws2](images/aws2.png)
+
+- Select GitHub option to **connect to your GitHub Repository** and click **Continue**
+
+![aws3](images/aws3.png)
+
+- Add the **repository branch**
+
+![aws4](images/aws4.png)
+
+- **Configure the build settings** and click on **Save and Deploy**
