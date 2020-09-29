@@ -229,3 +229,13 @@
 ![netlify7](images/netlify-pg7.png)
 
 - Netlify will automatically generate a link for your deploy. If you wish to change the link name, click on **Change Site Name** button and change the link name.
+
+### GitHub Pages
+
+- As we have already created a repository and pushed the changes, all we need to do now is **rename the repository** to `your_username.github.io`
+
+- To rename, open your repository, and go to settings and click on **rename** button
+
+![github-pages](images/github-pages.png)
+
+- And your website will be hosted on GitHub!!
