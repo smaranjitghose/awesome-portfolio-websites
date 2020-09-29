@@ -349,6 +349,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#custom-domain-name-for-github-pages" class="md-nav__link">
+    Custom domain name for GitHub Pages
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -511,6 +518,13 @@
           <li class="md-nav__item">
   <a href="#aws-amplify" class="md-nav__link">
     AWS Amplify
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-domain-name-for-github-pages" class="md-nav__link">
+    Custom domain name for GitHub Pages
   </a>
   
 </li>
@@ -878,6 +892,21 @@
 <p><img alt="aws4" src="../images/aws4.png" /></p>
 <ul>
 <li><strong>Configure the build settings</strong> and click on <strong>Save and Deploy</strong></li>
+</ul>
+<hr />
+<h3 id="custom-domain-name-for-github-pages">Custom domain name for GitHub Pages</h3>
+<ul>
+<li>
+<p>For setting up custom domain name with ANAME/CNAME files with github pages, follow the following steps :</p>
+<p><img alt="cname1" src="../images/cname1.png" /></p>
+<ul>
+<li>Open the repository, go to settings under <strong>GitHub Pages</strong> heading, go to <strong>Custom Domain</strong> column, set your custom domain for the project <em>(this will create a CNAME file in the same repository. Don't delete it)</em></li>
+</ul>
+<p><img alt="cname2" src="../images/cname2.png" /></p>
+<ul>
+<li>Set <code>A</code> and <code>CNAME</code> records for the selected domain. For <code>A</code> record, set <code>185.199.108.153</code>, <code>185.199.109.153</code>, <code>185.199.110.153</code> and <code>185.199.111.153</code>. To redirect <code>www</code> subdomain to the original domain, add a <code>CNAME</code> record with your <strong>GitHub pages profile URL with a .(dot) in the end</strong>, for example, <code>‘YOUR-GITHUB-USERNAME.github.io.’</code>.</li>
+</ul>
+</li>
 </ul>
                 
               
