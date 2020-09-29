@@ -273,3 +273,17 @@
 ![aws4](images/aws4.png)
 
 - **Configure the build settings** and click on **Save and Deploy**
+
+--- 
+
+### Custom domain name for GitHub Pages
+
+- For setting up custom domain name with ANAME/CNAME files with github pages, follow the following steps :
+
+    ![cname1](images/cname1.png)
+
+    - Open the repository, go to settings under **GitHub Pages** heading, go to **Custom Domain** column, set your custom domain for the project _(this will create a CNAME file in the same repository. Don't delete it)_
+
+    ![cname2](images/cname2.png)
+
+    - Set `A` and `CNAME` records for the selected domain. For `A` record, set `185.199.108.153`, `185.199.109.153`, `185.199.110.153` and `185.199.111.153`. To redirect `www` subdomain to the original domain, add a `CNAME` record with your **GitHub pages profile URL with a .(dot) in the end**, for example, `‘YOUR-GITHUB-USERNAME.github.io.’`.
