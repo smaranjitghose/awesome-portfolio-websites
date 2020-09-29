@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Awesome Developer Portfolio
 nav:
     - Home: index.md
     - Getting Started: gs.md

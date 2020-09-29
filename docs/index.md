@@ -1,17 +1,3 @@
-# Welcome to MkDocs
+# Welcome to Awesome Developer Portfolio
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+An open source project for creating end-end templates for portfolio websites for everyone to use. We are a clan of geeks who wants to provide you with that dope website that flaunts your hardwork and projects over the years to your mates and employers! With a deep desire to have that satiating UI, those engaging animations,the great SEO and the optimized code, we do it all. Hop in and give your contributions if you wish to be a part of this initiative.
