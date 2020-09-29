@@ -14,7 +14,7 @@ An open source project for creating end-end templates for portfolio websites for
 
 ## How to use this?
 
-[Link to Documentation](http://docs_portfolio.smaranjitghose.codes/)
+[Link to Documentation](https://smaranjitghose.github.io/awesome-portfolio-websites//)
 
 
 ## The geeks🤓 behind this initiative!
