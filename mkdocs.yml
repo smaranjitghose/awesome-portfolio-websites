@@ -5,6 +5,7 @@ nav:
     - Home: index.md
     - Getting Started: gs.md
     - Team: team.md
+    - How to Contribute?: Contribution.md
 
 theme: 
     name: 'material'
