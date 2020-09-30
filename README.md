@@ -4,12 +4,47 @@ An open source project for creating end-end templates for portfolio websites for
 
 ### Snapshots:
 
+<h2 align="center"> Home Page </h2>
+<p align="center">
+<img src="assets/images/readme/home.png" style="width: 60%">
+</p>
 
-### Programs we have been a part of:
+<h2 align="center"> Experience Page </h2> 
 
+<p align="center">
+<img src="assets/images/readme/experience.png" style="width: 60%; height: 5%">
+</p>
 
+<h2 align="center"> Project Page </h2>
+
+<p align="center">
+<img src="assets/images/readme/project.png" style="width: 60%; height: 5%">
+</p>
+
+<h2 align="center"> Research Page </h2>
+
+<p align="center">
+<img src="assets/images/readme/research.png" style="width: 60%; height: 5%">
+</p>
+
+<h2 align="center"> Education Page </h2>
+
+<p align="center">
+<img src="assets/images/readme/education.png" style="width: 60%; height: 5%">
+</p>
+
+<h2 align="center"> Programs we have been a part of: </h2>
+
+<p align="center">
+<img src="assets/images/hakin_codes.png" style="width: 20%; height: 20%; margin-right: 2em">
+<img src="assets/images/sci.jpg" style="width: 20%; height: 20%">
+</p>
 
 ### Made with 💖 for open source__
+
+
+## **_In open source, we feel strongly that to really do something well, you have to get a lot of people involved._**
+<p align="right"> <i> -Linus Torvalds </i> </p>
 
 
 ## How to use this?
