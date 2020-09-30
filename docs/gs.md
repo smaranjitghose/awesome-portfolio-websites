@@ -45,6 +45,8 @@
 
 ### Navbar
 
+![Navbar](images/Navbar.PNG)
+
 - To change the logo :
     1. Add your logo image inside assets -> images folder
     2. Open _main.js_
