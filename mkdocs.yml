@@ -25,3 +25,6 @@ plugins:
 google_analytics:
   - UA-XXXXXXXX-X
   - auto
+
+markdown_extensions:
+  - attr_list
