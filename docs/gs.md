@@ -1,4 +1,4 @@
-# Getting Started...
+<h1 align="center"><b>Getting Started...</b></h1> 
 
 ## Forking the repository
 
@@ -44,6 +44,8 @@
 ---
 
 ### Navbar
+
+![Navbar](images/Navbar.png)
 
 - To change the logo :
     1. Add your logo image inside assets -> images folder
