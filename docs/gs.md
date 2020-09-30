@@ -1,4 +1,4 @@
-# Getting Started...
+<h1 align="center"><b>Getting Started...</b></h1> 
 
 ## Forking the repository
 
