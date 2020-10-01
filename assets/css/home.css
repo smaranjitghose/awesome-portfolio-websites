@@ -15,6 +15,7 @@ html[data-theme="dark"] {
   --kaggle: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #41aff3, 0 0 20px #41aff3, 0 0 25px #41aff3, 0 0 30px #41aff3, 0 0 35px #41aff3;
   --dribble: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ea4c89, 0 0 20px #ea4c89, 0 0 25px #ea4c89, 0 0 30px #ea4c89, 0 0 35px #ea4c89;
   --medium: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ab6c, 0 0 20px #00ab6c, 0 0 25px #00ab6c, 0 0 30px #00ab6c, 0 0 35px #00ab6c;
+  --gmail: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #D44638, 0 0 20px #D44638, 0 0 25px #D44638, 0 0 30px #D44638, 0 0 35px #D44638;
   --shadow-col: #15f4ee;
 }
 
@@ -146,6 +147,12 @@ html[data-theme="dark"] {
   background-color: #00ab6c;
   box-shadow: var(--medium);
 }
+
+.social-icon.gmail:after {
+  background-color: #D44638;
+  box-shadow: var(--gmail);
+}
+
 
 /*** Social Icon Animations ***/
 
