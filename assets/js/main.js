@@ -39,10 +39,7 @@ let header = $(`
         <li><a class="white-text" href="education.html">Education</a></li>
 
  <li><a class="white-text" href="contact.html">Contact</a></li>
-        <!--Toggle for light/dark mode-->
-          <li class="toggle-container">
-            <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
-          </li>
+      
 
         <li><a class="white-text" href="index.html">Blog</a></li>
         <li><a class="white-text" href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
@@ -75,10 +72,7 @@ let header = $(`
 <li><a href="education.html">Education</a></li>
 
  <li><a href="contact.html">Contact</a></li>
-<!--Toggle for light/dark mode-->
-<li class="toggle-container side-toggle">
-  <input type="checkbox" id="switch" name="theme" /><label for="switch"></label>
-</li>
+
 
 <li><a href="index.html">Blog</a></li>
 <li><a href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
