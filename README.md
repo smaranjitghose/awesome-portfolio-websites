@@ -1,8 +1,10 @@
 <h1 align= "center"><b>Awesome Portfolio Websites</b></h1>
+<p align="center"><img src="assets/images/readme/logo.png" style="width: 60%"></p>
 
-An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world.
+An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world.The awesome portfolio allows you to create a website that contains alll the details about you,your projects,experiences etc., in an effective and attractive manner.
+<p align="center"><img src="https://media0.giphy.com/media/11sBLVxNs7v6WA/giphy.gif?cid=ecf05e47dnrzhd6ipz9v6ao9rwe01zmf1htn8nz7913m5e48&rid=giphy.gif"></p>
 
-### Snapshots:
+## Snapshots:
 
 <h2 align="center"> Home Page </h2>
 <p align="center">
@@ -71,10 +73,10 @@ An open source project aimed at providing free and beautiful templates to everyo
   <img src="https://contributors-img.web.app/image?repo=smaranjitghose/awesome-portfolio-websites" />
 </a>
 
-<a href="./Code_of_conduct.md"><h2 align= "center"><b> Code of Conduct</b></h2></a> 
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/Code_of_conduct.md"><h2 align= "center"><b> Code of Conduct</b></h2></a> 
 <p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
 
-<a href="./LICENSE"><h2 align= "center"><b> License</b></h2></a> 
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/LICENSE"><h2 align= "center"><b> License</b></h2></a> 
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
 
 
