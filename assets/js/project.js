@@ -98,6 +98,14 @@ const projects = [
     Previewlink: "",
     Githublink: "",
   },
+  {
+    title: "Speech Recognition System",
+    cardImage: "assets/images/project-page/speechTotext.jpg",
+    description:
+      "Speech Recognition System built using JavaScript.",
+    Previewlink: "",
+    Githublink: "",
+  },
 ];
 
 const showCards = () => {
