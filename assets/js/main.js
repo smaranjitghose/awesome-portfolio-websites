@@ -124,6 +124,9 @@ let footer = $(`
   <a class="social-icon-footer github" href="" target="_blank" rel="author">
     <i class="fab fa-github"></i>
       </a>
+  <a class="social-icon-footer gmail" href="" target="_blank" rel="author">
+    <i class="fas fa-envelope"></i>
+      </a>
 </div>
     </div>
 
