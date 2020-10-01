@@ -3,7 +3,7 @@
 particlesJS('particles-js', {
 	particles: {
 		number: {
-			value: 80,
+			value: 140,
 			density: {
 				enable: true,
 				value_area: 800
@@ -13,7 +13,7 @@ particlesJS('particles-js', {
 			value: [ '#2EB67D', '#ECB22E', '#E01E5B', '#36C5F0' ]
 		},
 		shape: {
-			type: [ 'circle' ],
+			type: 'circle',
 			stroke: {
 				width: 0,
 				color: '#fff'
@@ -27,6 +27,7 @@ particlesJS('particles-js', {
 				height: 100
 			}
 		},
+		
 		opacity: {
 			value: 1,
 			random: false,
@@ -70,41 +71,24 @@ particlesJS('particles-js', {
 		}
 	},
 	interactivity: {
-		detect_on: 'canvas',
+		detect_on: 'window',
 		events: {
 			onhover: {
 				enable: true,
-				mode: 'grab'
+				mode: 'repulse'
 			},
 			onclick: {
 				enable: true,
 				mode: 'push'
-			},
-			resize: true
+			}
 		},
 		modes: {
-			grab: {
-				distance: 140,
-				line_linked: {
-					opacity: 1
-				}
-			},
-			bubble: {
-				distance: 400,
-				size: 40,
-				duration: 2,
-				opacity: 8,
-				speed: 3
-			},
-			repulse: {
-				distance: 200,
+			'repulse' : {
+				distance: 70,
 				duration: 0.4
 			},
-			push: {
+			'push' : {
 				particles_nb: 4
-			},
-			remove: {
-				particles_nb: 2
 			}
 		}
 	},
