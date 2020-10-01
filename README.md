@@ -1,6 +1,6 @@
 <h1 align= "center"><b>Awesome Portfolio Websites</b></h1>
-An open source project for creating end-end templates for portfolio websites for everyone to use. We are a clan of geeks who wants to provide you with that dope website that flaunts your hardwork and projects over the years to your mates and employers! With a deep desire to have that satiating UI, those engaging animations,the great SEO and the optimized code, we do it all. Hop in and give your contributions if you wish to be a part of this initiative. Better user interface and also easier to use make sure to check out our website you may also help us to improve our code as well as user interface.
 
+An open source project for creating end-end templates for portfolio websites for everyone to use. We are a clan of geeks who wants to provide you with that dope website that flaunts your hardwork and projects over the years to your mates and employers! With a deep desire to have that satiating UI, those engaging animations,the great SEO and the optimized code, we do it all. Hop in and give your contributions if you wish to be a part of this initiative. Better user interface and also easier to use make sure to check out our website you may also help us to improve our code as well as user interface.
 
 ### Snapshots:
 
@@ -36,8 +36,8 @@ An open source project for creating end-end templates for portfolio websites for
 <h2 align="center"> Programs we have been a part of: </h2>
 
 <p align="center">
-<img src="assets/images/hakin_codes.png" style="width: 20%; height: 20%; margin-right: 2em">
-<img src="assets/images/sci.jpg" style="width: 20%; height: 20%">
+<img src="assets/images/hakin_codes.png" width= "40%" height= "40%" margin-right= "2em" /> 
+<img src="assets/images/sci.jpg" width= "40%" height= "40%" />
 </p>
 
 ### Made with 💖 for open source__
