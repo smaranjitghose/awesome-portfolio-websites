@@ -1,11 +1,4 @@
-//FUNCTION TO TOGGLE DARK/LIGHT THEME
-function changeTheme() {
-    if (document.getElementById('darkMood').checked === true) {
-        document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-        document.documentElement.setAttribute('data-theme', 'light')
-    }
-  }
+
   //ADDING CAPTHA FUNCTION
   var cd;
   
