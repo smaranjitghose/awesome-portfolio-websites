@@ -1,0 +1,4 @@
+Hacktoberfest:
+  - ./*
+  - assets/*
+  - assets/**/*
