@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <title>John Doe | Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="free portfolio template,portfolio template, portfolio website template, open source, open sourcing, contributing to open source" />
+    <meta name="description"
+        content="This project serves free and beautiful portfolio template for everyone. Anyone can showcase their work including moocs, education, projects, experience,etc. to the world." />
+    <!-- Robot.txt -->
+    <meta name="robots" content="index,follow" />
+    <meta name="Googlebot" content="index,follow" />
+    <meta name="AdsBot-Google" content="index,follow" />
+
+    <meta property="og:site_name" content="https://portfolio.smaranjitghose.codes/">
+    <meta property="og:title" content="John Doe | Contact">
+    <meta property="og:description"
+        content="This project serves free and beautiful portfolio template for everyone. Anyone can showcase their work including moocs, education, projects, experience,etc. to the world.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portfolio.smaranjitghose.codes/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://portfolio.smaranjitghose.codes/">
+
+    <meta name="application-name" content="John Doe | Contact" />
+    <meta name="apple-mobile-web-app-title" content="John Doe | Contact" />
+    <meta name="summary"
+        content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+</head>
+<body> 
+  
+
+  <!--SPLITTING SCREEN INTO LEFT AND RIGHT-->
+   <div class="row no-gutters">
+     <div class="col-md-6 no-gutters">
+       <div class="leftside ">
+        
+            <h2>Lets's <span>CONNECT</span></h2>
+ <img  src="assets\images\CONTACT.png" class="rounded-circle center-block d-block mx-auto" height="250" width="250"><br>
+ <h1 class="d-flex justify-content-center"><i>Connect me on ....</i></h1>
+            <div class="social-icons">
+
+                <a class="social-icon twitter" href="" target="_blank" rel="author">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a class="social-icon dribbble" href="" target="_blank" rel="author">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+
+                <a class="social-icon linkedin" href="" target="_blank" rel="author">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a class="social-icon medium" href="" target="_blank" rel="author">
+                    <i class="fab fa-medium-m"></i>
+                </a>
+
+                <a class="social-icon kaggle" href="" target="_blank" rel="author">
+                    <i class="fab fa-kaggle"></i>
+                </a>
+
+                <a class="social-icon github" href="" target="_blank" rel="author">
+                    <i class="fab fa-github"></i>
+                </a>
+                </div>
+                <div>
+                  <input type="checkbox" id="darkMood" onchange="changeTheme()"><label for="darkMood"></label>
+              </div>
+            
+           </div>
+         </div>
+       
+    
+      
+      <!--CONTACT PAGE IN RIGHT SIDE-->
+      <div class="col-md-6 no-glutters">
+        <div class="rightside">
+        <form class="my-form">
+            <div class="container">
+              <h2> &nbsp &nbsp&nbsp<strong>Get in touch!</strong></h2>
+              <ul>
+               
+                <li>
+                  <div class="grid grid-2">
+                    <input type="text" placeholder="Name**" required>  
+                    <input type="text" placeholder="LastName**" required>
+                  </div>
+                </li>
+                <li>
+                  <div class="grid grid-2">
+                    <input type="email" placeholder="Email**" required>  
+                    <input type="tel" placeholder="Phone*">
+                  </div>
+                </li>    
+                <li>
+                  <textarea placeholder="Message"></textarea>
+                    <input type="text" id="UserCaptchaCode" class="CaptchaTxtField" placeholder='Enter Captcha - Case Sensitive'>
+                    <span id="WrongCaptchaError" class="error"></span>
+                    
+                      <div id="CaptchaImageCode" class="CaptchaTxtField">
+                        <canvas id="CapCode" class="capcode" width="200" height="40"></canvas>
+                    </div>
+                 <br>
+               
+                    <button class="btn-grid" onclick="CheckCaptcha()" type="submit" >
+                      <span class="back">          
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
+                      </span>
+                      <span class="front">SUBMIT</span>
+                    </button>
+          
+                  
+                
+               </li>
+              </ul>
+            </div>
+          </form>         
+    </div>  </div>  </div>
+<script src=assets/js/contactjs.js></script> 
+</body>
+</html>
+               
+            
+      
