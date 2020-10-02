@@ -1,5 +1,6 @@
 <h1 align= "center"><b>Awesome Portfolio Websites</b></h1>
 
+Build an Amazing portfolio website:
 An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world.
 
 ### Snapshots:
