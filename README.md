@@ -1,6 +1,14 @@
 <h1 align= "center"><b>Awesome Portfolio Websites</b></h1>
 
-An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world.
+Are you a budding developer, looking to create an awesome self-brand? Just posting good articles on Dev.to, Medium or LinkedIn won't work! Surprise❗❗. So, what else do you need?🤔.
+
+Here is the answer: An awesome web portfolio of yours! You might be skilled in a hell lot of technologies💻, but not having a good portfolio might set you behind in the race. So what should I do❓❓ Here we come to your rescue.
+
+Awesome Portfolio Websites is an open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world. Since the project is open-sourced, we have had many minds working on it, to improve this template, and provide you the best we can. 
+
+Are we missing any of your favourite features, which you think you can add in it❓ We invite you to contribute to this project, and make it better. To start contributing, please do refer to [this file](https://github.com/smaranjitghose/awesome-portfolio-websites/blob/master/CONTRIBUTING.md)
+
+Check out some snapshots of our work below!
 
 ### Snapshots:
 
