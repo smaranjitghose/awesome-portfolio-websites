@@ -63,7 +63,7 @@ This is an open source project aimed at providing a free, full fledged template 
 
 ## How to use this?
 
-[Check out our awesom Documentation](https://smaranjitghose.github.io/awesome-portfolio-websites/)
+[Check out our awesome Documentation](https://smaranjitghose.github.io/awesome-portfolio-websites/)
 
 ## Contribution Guidelines
 
