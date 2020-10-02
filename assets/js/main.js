@@ -124,6 +124,8 @@ let footer = $(`
   <a class="social-icon-footer github" href="" target="_blank" rel="author">
     <i class="fab fa-github"></i>
       </a>
+  <br>
+<p style="color:white;><a href=" ">contact@johndoe.com</a></p>
 </div>
     </div>
 
