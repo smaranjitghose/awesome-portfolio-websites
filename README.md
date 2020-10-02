@@ -24,31 +24,40 @@ This is an open source project aimed at providing a free, full fledged template 
 
 ### Home Page:
 <p align="center">
-<img src="assets/images/readme/home.png" width =30%>
+<img src="assets/images/readme/home1.png" width =30% style="height: 15em">
 </p>
 
 ### Experience Page:
 
 <p align="center">
-<img src="assets/images/readme/experience.png" width =30%>
+<img src="assets/images/readme/experience1.jpeg" width =24% style="height: 15em">
+<img src="assets/images/readme/experience2.jpeg" width =24% style="height: 15em">
+<img src="assets/images/readme/experience3.jpeg" width =24% style="height: 15em">
+<img src="assets/images/readme/experience4.jpeg" width =24% style="height: 15em">
 </p>
 
 ### Project Page:
 
 <p align="center">
-<img src="assets/images/readme/project.png" width =30%>
+<img src="assets/images/readme/project1.jpeg" width =30% style="height: 15em">
+<img src="assets/images/readme/project2.jpeg" width =30% style="height: 15em">
+<img src="assets/images/readme/project3.jpeg" width =30% style="height: 15em">
 </p>
 
 ### Research Page:
 
 <p align="center">
-<img src="assets/images/readme/research.png" width =30%>
+<img src="assets/images/readme/research1.jpeg" width =30% style="height: 15em">
+<img src="assets/images/readme/research2.jpeg" width =30% style="height: 15em">
+<img src="assets/images/readme/research3.jpeg" width =30% style="height: 15em">
 </p>
 
 ### Education Page:
 
 <p align="center">
-<img src="assets/images/readme/education.png" width =30%>
+<img src="assets/images/readme/education1.jpeg" width =30% style="height: 15em">
+<img src="assets/images/readme/education2.jpeg" width =30% style="height: 15em">
+<img src="assets/images/readme/education3.jpeg" width =30% style="height: 15em">
 </p>
 
 
