@@ -1,0 +1,15 @@
+.container{
+	margin-top: 8%;
+}
+
+.inner{
+	overflow: hidden;
+}
+
+.inner img{
+	translation: all 1.5s ease;
+}
+
+.inner:hover img{
+	transform: scale(1.5);
+}
