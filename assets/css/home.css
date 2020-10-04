@@ -19,7 +19,16 @@ html[data-theme="dark"] {
 }
 
 /* Particle effect*/
-
+.nameani:hover{
+    color:yellow;
+    font-size: 50px;
+    font-weight: 800;
+}
+.nameani2:hover{
+  color:rgb(30, 206, 191);
+  font-size: 30px;
+  font-weight: large;
+}
 #home,
 #particles-js {
   position: relative;
@@ -43,7 +52,9 @@ html[data-theme="dark"] {
   transform: translate(-50%, -50%);
   position: absolute;
 }
-
+.identities{
+  font-size:22px;
+}
 .animated-text span {
   display: none;
   line-height: 1;
