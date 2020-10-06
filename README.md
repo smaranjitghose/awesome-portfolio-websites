@@ -1,4 +1,4 @@
-<h1 align= "center"><b>Awesome Portfolio Websites</b></h1>
+<h1 align= "center"><b>Awesome Portfolio Websites</b></h1> 
 
 Are you a researcher, a developer or perhaps an explorer of technology who is looking forward to create an awesome personal brand?
 <p align="center"><img src="https://media.giphy.com/media/dkGhBWE3SyzXW/giphy.gif" width = 40%></p>
@@ -24,25 +24,19 @@ This is an open source project aimed at providing a free, full fledged template 
 ## A sneek peek into what we have here🙈 :
 
 ### Home Page:
-<p align="center"><img src="assets/Readme_Assets/Home_Page.gif"></p>
+<p align="center"><img src="./assets/Readme_Assets/Home_Page.gif"></p>
 
 ### Experience Page:
-
-<p align="center">
-<img src="assets/images/readme/experience1.jpeg" width =24% style="height: 15em">
-<img src="assets/images/readme/experience2.jpeg" width =24% style="height: 15em">
-<img src="assets/images/readme/experience3.jpeg" width =24% style="height: 15em">
-<img src="assets/images/readme/experience4.jpeg" width =24% style="height: 15em">
-</p>
+<p align="center"><img src="./assets/Readme_Assets/Experience_Page.gif"></p>
 
 ### Project Page:
-<p align="center"><img src="assets/Readme_Assets/Project_Page.gif"></p>
+<p align="center"><img src="./assets/Readme_Assets/Project_Page.gif"></p>
 
 ### Research Page:
-<p align="center"><img src="assets/Readme_Assets/Research_Page.gif"></p>
+<p align="center"><img src="./assets/Readme_Assets/Research_Page.gif"></p>
 
 ### Education Page:
-<p align="center"><img src="assets/Readme_Assets/Education_Page.gif"></p>
+<p align="center"><img src="./assets/Readme_Assets/Education_Page.gif"></p>
 
 ## How to use this?
 
