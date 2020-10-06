@@ -42,13 +42,7 @@ This is an open source project aimed at providing a free, full fledged template 
 <p align="center"><img src="assets/Readme_Assets/Research_Page.gif"></p>
 
 ### Education Page:
-
-<p align="center">
-<img src="assets/images/readme/education1.jpeg" width =30% style="height: 15em">
-<img src="assets/images/readme/education2.jpeg" width =30% style="height: 15em">
-<img src="assets/images/readme/education3.jpeg" width =30% style="height: 15em">
-</p>
-
+<p align="center"><img src="assets/Readme_Assets/Education_Page.gif"></p>
 
 ## How to use this?
 
