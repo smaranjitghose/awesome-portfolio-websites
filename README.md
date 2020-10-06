@@ -41,7 +41,6 @@ This is an open source project aimed at providing a free, full fledged template 
 <p align="center">
 <img src="assets/images/readme/project1.jpeg" width =30% style="height: 15em">
 <img src="assets/images/readme/project2.jpeg" width =30% style="height: 15em">
-<img src="assets/images/readme/project3.jpeg" width =30% style="height: 15em">
 </p>
 
 ### Research Page:
