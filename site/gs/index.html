@@ -1,0 +1,992 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../images/icons/champion.svg">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.0">
+    
+    
+      
+        <title>Getting Started - Awesome Developer Portfolio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d877a71.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.17bd0b03.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#7e56c2">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700%7C&display=fallback">
+        <style>body,input{font-family:"Poppins",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#getting-started" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Awesome Developer Portfolio" class="md-header-nav__button md-logo" aria-label="Awesome Developer Portfolio">
+      
+  <img src="../images/icons/champion.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Awesome Developer Portfolio
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Getting Started
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Awesome Developer Portfolio" class="md-nav__button md-logo" aria-label="Awesome Developer Portfolio">
+      
+  <img src="../images/icons/champion.svg" alt="logo">
+
+    </a>
+    Awesome Developer Portfolio
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Getting Started
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Getting Started" class="md-nav__link md-nav__link--active">
+      Getting Started
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forking-the-repository" class="md-nav__link">
+    Forking the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloning-the-repository" class="md-nav__link">
+    Cloning the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-details" class="md-nav__link">
+    Changing the details
+  </a>
+  
+    <nav class="md-nav" aria-label="Changing the details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#home-page" class="md-nav__link">
+    Home Page
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navbar" class="md-nav__link">
+    Navbar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#footer" class="md-nav__link">
+    Footer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experience-page" class="md-nav__link">
+    Experience Page
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projects-page" class="md-nav__link">
+    Projects Page
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#research-page" class="md-nav__link">
+    Research Page
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#education-page" class="md-nav__link">
+    Education Page
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seo-and-miscellaneous" class="md-nav__link">
+    SEO and Miscellaneous
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-steps" class="md-nav__link">
+    Final Steps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hosting" class="md-nav__link">
+    Hosting
+  </a>
+  
+    <nav class="md-nav" aria-label="Hosting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#netlify" class="md-nav__link">
+    Netlify
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-pages" class="md-nav__link">
+    GitHub Pages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-amplify" class="md-nav__link">
+    AWS Amplify
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-domain-name-for-github-pages" class="md-nav__link">
+    Custom domain name for GitHub Pages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../team/" title="Team" class="md-nav__link">
+      Team
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#forking-the-repository" class="md-nav__link">
+    Forking the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloning-the-repository" class="md-nav__link">
+    Cloning the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-details" class="md-nav__link">
+    Changing the details
+  </a>
+  
+    <nav class="md-nav" aria-label="Changing the details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#home-page" class="md-nav__link">
+    Home Page
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navbar" class="md-nav__link">
+    Navbar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#footer" class="md-nav__link">
+    Footer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experience-page" class="md-nav__link">
+    Experience Page
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projects-page" class="md-nav__link">
+    Projects Page
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#research-page" class="md-nav__link">
+    Research Page
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#education-page" class="md-nav__link">
+    Education Page
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seo-and-miscellaneous" class="md-nav__link">
+    SEO and Miscellaneous
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-steps" class="md-nav__link">
+    Final Steps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hosting" class="md-nav__link">
+    Hosting
+  </a>
+  
+    <nav class="md-nav" aria-label="Hosting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#netlify" class="md-nav__link">
+    Netlify
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-pages" class="md-nav__link">
+    GitHub Pages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-amplify" class="md-nav__link">
+    AWS Amplify
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-domain-name-for-github-pages" class="md-nav__link">
+    Custom domain name for GitHub Pages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/smaranjitghose/awesome-portfolio-websites/edit/master/docs/gs.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="getting-started">Getting Started...</h1>
+<h2 id="forking-the-repository">Forking the repository</h2>
+<p><img alt="git-fork" src="../images/git-fork.png" /></p>
+<ul>
+<li>
+<p>Visit the <a href="https://github.com/smaranjitghose/awesome-portfolio-websites.git">repository</a></p>
+</li>
+<li>
+<p>Fork the repository by clicking on the <strong>Fork</strong> button</p>
+</li>
+</ul>
+<h2 id="cloning-the-repository">Cloning the repository</h2>
+<ul>
+<li>Visit the <a href="https://github.com/smaranjitghose/awesome-portfolio-websites.git">repository</a></li>
+<li>Copy the link the of the repository by clicking on the clone button </li>
+</ul>
+<p><img alt="git clone" src="../images/git-clone.png" /></p>
+<ul>
+<li>Open terminal </li>
+<li>Type <code>git clone https://github.com/smaranjitghose/awesome-portfolio-websites.git</code></li>
+</ul>
+<h2 id="changing-the-details">Changing the details</h2>
+<h3 id="home-page">Home Page</h3>
+<p><img alt="Home" src="../images/home.png" /></p>
+<ul>
+<li>
+<p>To add your image on the home page :</p>
+<ol>
+<li>Add your image to assets -&gt; images folder</li>
+<li>Open <em>index.html</em></li>
+<li>Change the <code>&lt;img src=""&gt;</code> to your image path</li>
+</ol>
+</li>
+<li>
+<p>To change the name on home page :</p>
+<ol>
+<li>Open <em>index.html</em></li>
+<li>Change the name from <strong>John Doe</strong> to <strong>Your Name</strong></li>
+</ol>
+</li>
+<li>
+<p>To change the interests displayed :</p>
+<ol>
+<li>Open <em>index.html</em></li>
+<li>Inside <code>h1</code> tag, change the <code>data-words</code> with your interests</li>
+</ol>
+</li>
+<li>
+<p>To add your social media links :</p>
+<ol>
+<li>Open <em>index.html</em></li>
+<li>Inside <code>&lt;div class="social-icons"&gt;</code> fill up the link to your social media accounts inside <code>href</code></li>
+</ol>
+</li>
+</ul>
+<hr />
+<h3 id="navbar">Navbar</h3>
+<ul>
+<li>To change the logo :<ol>
+<li>Add your logo image inside assets -&gt; images folder</li>
+<li>Open <em>main.js</em></li>
+<li>Under <strong>Footer and Navbar</strong> heading, inside <code>&lt;a href="#!" class="brand-logo"&gt;</code>, change the path inside <code>&lt;img src=""&gt;</code> to your image path</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h3 id="footer">Footer</h3>
+<p><img alt="Footer" src="../images/footer.png" /></p>
+<ul>
+<li>
+<p>To change the logo :</p>
+<ol>
+<li>Open <em>main.js</em></li>
+<li>Go to <code>let footer</code>, inside <code>&lt;a class="webintern-footer-logo" href="#"&gt;</code>, change the path inside<code>&lt;img src=""&gt;</code> to your image path</li>
+</ol>
+</li>
+<li>
+<p>To add your social media links :</p>
+<ol>
+<li>Open <em>main.js</em></li>
+<li>Inside <code>&lt;div class="social-icons-footer"&gt;</code> fill up the link to your social media accounts inside <code>href</code></li>
+</ol>
+</li>
+</ul>
+<hr />
+<h3 id="experience-page">Experience Page</h3>
+<p><img alt="Experience" src="../images/work-exp.png" /></p>
+<ul>
+<li>
+<p>To change the <strong>work experience</strong> details :</p>
+<ol>
+<li>Add your work experience images to assets -&gt; images -&gt; experience-page folder</li>
+<li>Open <em>experience.js</em></li>
+<li>Under <strong>Work Experience Cards</strong> heading, <ol>
+<li>Change the current <strong>title</strong> to your position inside <code>title</code></li>
+<li>Change the current <strong>image path</strong> to your image path inside <code>cardImage</code></li>
+<li>Change the current <strong>place</strong> to your industry/company name inside <code>place</code></li>
+<li>Change the current <strong>time</strong> to your duration of work inside <code>time</code></li>
+<li>Change the current <strong>description</strong> to your job description inside <code>desp</code> </li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<p><img alt="Volunteership" src="../images/volunteer.png" /></p>
+<ul>
+<li>
+<p>To change the <strong>volunteership</strong> details :</p>
+<ol>
+<li>Add your volunteership work images to assets -&gt; images -&gt; experience-page folder</li>
+<li>Open <em>experience.js</em></li>
+<li>Under <strong>Volunteership Cards</strong> heading,<ol>
+<li>Change the current <strong>title</strong> to your organisation name inside <code>title</code></li>
+<li>Change the current <strong>image path</strong> to your image path inside <code>cardImage</code></li>
+<li>Change the current <strong>description</strong> to your job description inside <code>description</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<p><img alt="Mentorship" src="../images/mentorship.png" /></p>
+<ul>
+<li>
+<p>To change the <strong>mentorship</strong> details :</p>
+<ol>
+<li>Add your mentorship work images to assets -&gt; images -&gt; experience-page folder</li>
+<li>Open <em>experience.js</em></li>
+<li>Under <strong>Mentorship Card</strong> heading,<ol>
+<li>Change the current <strong>title</strong> to your organisation name inside <code>title</code></li>
+<li>Change the current <strong>image path</strong> to your image path inside <code>image</code></li>
+<li>Change the current <strong>time</strong> to your duration of work inside <code>time</code></li>
+<li>Change the current <strong>description</strong> to your work description inside <code>desp</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h3 id="projects-page">Projects Page</h3>
+<p><img alt="Projects" src="../images/project.png" /></p>
+<ul>
+<li>
+<p>To change the <strong>projects</strong> details :</p>
+<ol>
+<li>Add your projects images to assets -&gt; images -&gt; project-page folder</li>
+<li>Open <em>project.js</em></li>
+<li>Under <strong>Project Cards</strong> heading,<ol>
+<li>Change the current <strong>title</strong> to your project name inside <code>title</code></li>
+<li>Change the current <strong>image path</strong> to your project image path inside <code>cardImage</code></li>
+<li>Change the current <strong>description</strong> to your project description inside <code>description</code></li>
+<li>Add the <strong>preview link</strong> inside <code>Previewlink</code></li>
+<li>Add the <strong>github link</strong> inside <code>Githublink</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h3 id="research-page">Research Page</h3>
+<p><img alt="Research" src="../images/research.png" /></p>
+<ul>
+<li>
+<p>To change the <strong>research</strong> details :</p>
+<ol>
+<li>Add your research work images to assets -&gt; images -&gt; research-page folder</li>
+<li>Open <em>research.js</em></li>
+<li>Under <strong>Research Details Table</strong> heading,<ol>
+<li>Change the current <strong>title</strong> to your research paper title inside <code>title</code></li>
+<li>Change the current <strong>authors</strong> to your research paper authors inside <code>authors</code></li>
+<li>Change the current <strong>conferences</strong> to your research conferences inside <code>authors</code></li>
+<li>Change the current <strong>research year</strong> to your research year inside <code>researchYr</code></li>
+<li>Change the current <strong>image path</strong> to your image path inside <code>image</code></li>
+<li>Change the current <strong>vancouver</strong> to yours inside <code>vancouver</code></li>
+<li>Change the current <strong>bibtex</strong> to yours inside <code>bibtex</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h3 id="education-page">Education Page</h3>
+<p><img alt="Education" src="../images/edu.png" /></p>
+<ul>
+<li>
+<p>To change the <strong>formal education</strong> details :</p>
+<ol>
+<li>Add your institute images to assets -&gt; images -&gt; education-page folder</li>
+<li>Open <em>education.js</em></li>
+<li>Under <strong>Timeline Section</strong> heading,<ol>
+<li>Change the current <strong>title</strong> to your institute name inside <code>heading</code></li>
+<li>Change the current <strong>image path</strong> to your image path inside <code>image</code></li>
+<li>Change the current <strong>sub heading</strong> to yours inside <code>subheading</code></li>
+<li>Change the current <strong>description</strong> to yours inside <code>description</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<p><img alt="mooc" src="../images/mooc.png" /></p>
+<ul>
+<li>
+<p>To change the <strong>mooc section</strong> details :</p>
+<ol>
+<li>Add your MOOCs images to assets -&gt; images -&gt; education-page folder</li>
+<li>Open <em>education.js</em></li>
+<li>Under <strong>MOOCs Cards</strong> heading,<ol>
+<li>Change the current <strong>title</strong> to your course name inside <code>title</code></li>
+<li>Change the current <strong>image path</strong> to your course image path inside <code>cardImage</code></li>
+<li>Change the current <strong>MOOC link</strong> to yours inside <code>moocLink</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<p><img alt="badges" src="../images/badges.png" /></p>
+<ul>
+<li>
+<p>To change the <strong>badges section</strong> details :</p>
+<ol>
+<li>Add your badges' images to assets -&gt; images -&gt; education-page folder</li>
+<li>Open <em>education.js</em></li>
+<li>Under <strong>Badges</strong> heading,<ol>
+<li>Change the current <strong>badge title</strong> to yours inside <code>title</code></li>
+<li>Change the current <strong>image path</strong> to your badge image path inside <code>image</code></li>
+<li>Change the current <strong>description</strong> to yours inside <code>description</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="seo-and-miscellaneous">SEO and Miscellaneous</h2>
+<ul>
+<li>
+<p>Search for <code>site_name</code> and update it to the link to your portfolio</p>
+</li>
+<li>
+<p>Search for <code>title</code> and update it from <code>John Doe | Home</code> to <code>Your Name | Home</code></p>
+</li>
+<li>
+<p>Search for <code>description</code> and update by writing something about yourself</p>
+</li>
+<li>
+<p>Search for <code>url</code> and update it to the link to your portfolio</p>
+</li>
+<li>
+<p>Search for <code>site</code> and again update it to the link to your portfolio</p>
+</li>
+<li>
+<p>Search for <code>application-name</code> and update it from <code>John Doe | Home</code> to <code>Your Name | Home</code></p>
+</li>
+<li>
+<p>Search for <code>apple-mobile-web-app-title</code> and update it from <code>John Doe | Home</code> to <code>Your Name | Home</code></p>
+</li>
+<li>
+<p>Search for <code>summary</code> and update it by writing somthing about yourself</p>
+</li>
+</ul>
+<h2 id="final-steps">Final Steps</h2>
+<ul>
+<li>
+<p>After making all the changes, now it's time to push these changes to your local repository. For this, steps to be followed are :</p>
+<ul>
+<li>
+<p>Save the changes you have made till now</p>
+</li>
+<li>
+<p>Open terminal in the file you made the changes</p>
+</li>
+<li>
+<p>Type <code>git add .</code></p>
+</li>
+<li>
+<p>Then type <code>git commit -m "Your commit message"</code></p>
+</li>
+<li>
+<p>Then finally, <code>git push origin master</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="hosting">Hosting</h2>
+<h3 id="netlify">Netlify</h3>
+<p><img alt="netlify1" src="../images/netlify.png" /></p>
+<ul>
+<li>Sign in to your netlify account or sign up if you don't have an account</li>
+</ul>
+<p><img alt="netlify2" src="../images/netlify-pg2.png" /></p>
+<ul>
+<li>Click on <strong>New Site From Git</strong> button</li>
+</ul>
+<p><img alt="netlify3" src="../images/netlify-pg3.png" /></p>
+<ul>
+<li>Select <strong>Github</strong> option button</li>
+</ul>
+<p><img alt="netlify4" src="../images/netlify-pg4.png" /></p>
+<ul>
+<li>Authorize Netlify </li>
+</ul>
+<p><img alt="netlify5" src="../images/netlify-pg5.png" /></p>
+<ul>
+<li>Select the repository</li>
+</ul>
+<p><img alt="netlify6" src="../images/netlify-pg6.png" /></p>
+<ul>
+<li>Configure your settings and click on <strong>Deploy Site</strong> button</li>
+</ul>
+<p><img alt="netlify7" src="../images/netlify-pg7.png" /></p>
+<ul>
+<li>Netlify will automatically generate a link for your deploy. If you wish to change the link name, click on <strong>Change Site Name</strong> button and change the link name.</li>
+</ul>
+<hr />
+<h3 id="github-pages">GitHub Pages</h3>
+<ul>
+<li>
+<p>As we have already created a repository and pushed the changes, all we need to do now is <strong>rename the repository</strong> to <code>your_username.github.io</code></p>
+</li>
+<li>
+<p>To rename, open your repository, and go to settings and click on <strong>rename</strong> button</p>
+</li>
+</ul>
+<p><img alt="github-pages" src="../images/github-pages.png" /></p>
+<ul>
+<li>And your website will be hosted on GitHub!!</li>
+</ul>
+<hr />
+<h3 id="aws-amplify">AWS Amplify</h3>
+<p><img alt="aws1" src="../images/aws.png" /></p>
+<ul>
+<li>Sign in to your AWS account or sign up if you don't have one already</li>
+</ul>
+<p><img alt="aws2" src="../images/aws2.png" /></p>
+<ul>
+<li>Select GitHub option to <strong>connect to your GitHub Repository</strong> and click <strong>Continue</strong></li>
+</ul>
+<p><img alt="aws3" src="../images/aws3.png" /></p>
+<ul>
+<li>Add the <strong>repository branch</strong></li>
+</ul>
+<p><img alt="aws4" src="../images/aws4.png" /></p>
+<ul>
+<li><strong>Configure the build settings</strong> and click on <strong>Save and Deploy</strong></li>
+</ul>
+<hr />
+<h3 id="custom-domain-name-for-github-pages">Custom domain name for GitHub Pages</h3>
+<ul>
+<li>
+<p>For setting up custom domain name with ANAME/CNAME files with github pages, follow the following steps :</p>
+<p><img alt="cname1" src="../images/cname1.png" /></p>
+<ul>
+<li>Open the repository, go to settings under <strong>GitHub Pages</strong> heading, go to <strong>Custom Domain</strong> column, set your custom domain for the project <em>(this will create a CNAME file in the same repository. Don't delete it)</em></li>
+</ul>
+<p><img alt="cname2" src="../images/cname2.png" /></p>
+<ul>
+<li>Set <code>A</code> and <code>CNAME</code> records for the selected domain. For <code>A</code> record, set <code>185.199.108.153</code>, <code>185.199.109.153</code>, <code>185.199.110.153</code> and <code>185.199.111.153</code>. To redirect <code>www</code> subdomain to the original domain, add a <code>CNAME</code> record with your <strong>GitHub pages profile URL with a .(dot) in the end</strong>, for example, <code>‘YOUR-GITHUB-USERNAME.github.io.’</code>.</li>
+</ul>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." title="Home" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../team/" title="Team" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Team
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.c6483021.min.js"></script>
+      <script src="../assets/javascripts/bundle.e2f7d7a4.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.expand', 'searcn.highlight'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.cbc634e2.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

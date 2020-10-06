@@ -24,7 +24,7 @@ This is an open source project aimed at providing a free, full fledged template 
 
 ### Home Page:
 <p align="center">
-<img src="assets/images/readme/home1.png" width =30% style="height: 15em">
+<img src="assets/Readme_Assets/home_page.gif" width = 50% height = 50% >
 </p>
 
 ### Experience Page:
