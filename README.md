@@ -44,7 +44,7 @@ This is an open source project aimed at providing a free, full fledged template 
 
 ## Contribution Guidelines
 
-Are we missing any of your favourite features, which you think you can add in it❓ We invite you to contribute to this project, and make it better. To start contributing, please do refer to [this file](https://github.com/smaranjitghose/awesome-portfolio-websites/blob/master/CONTRIBUTING.md)
+Are we missing any of your favourite features, which you think you can add in it❓ We invite you to contribute to this project, and make it better. To start contributing, please do refer to [this file](./CONTRIBUTING.md)
 
 ## The geeks🤓 behind this initiative!:
 
@@ -67,8 +67,8 @@ Are we missing any of your favourite features, which you think you can add in it
 ## Open Source Programs we have been a part of: 
 
 <p align="center">
-<img src="assets/images/hakin_codes.png" width= "20%"/> 
-<img src="assets/images/sci.jpg" width= "20%" />
+<img src="./assets/Readme_Assets/hakin_codes.png" width= "20%"/> 
+<img src="./assets/Readme_Assets/sci.jpg" width= "20%" />
 </p>
 
 ## Code of Conduct
