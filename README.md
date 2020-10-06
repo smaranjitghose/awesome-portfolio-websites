@@ -12,7 +12,8 @@ So, what else do you need?🤔.
 Here is the answer: An awesome personal website of yours that serves a portfolio of your work! 
 <p align="center"><img src="https://media.giphy.com/media/9JrkkDoJuU0FbdbUZU/giphy.gif" width = 40%></p>
 
-If you do not have a platform that shows your entire work then you might not be doing justice in potraying your hard work or dope skills. But you must be wondering that making a portfolio website might take time, require some web development knowledge and still you might get something really cool. 
+If you do not have a platform that shows your entire work then you might not be doing justice in potraying your hard work or dope skills. But you must be wondering that making a portfolio website might take time, require some web development knowledge and still you might get something really 
+cool. 
 <p align="center"><img src="https://media.giphy.com/media/521JLj0YGzz6AEWsZ5/giphy.gif" width = 40%></p>
 
 Well! Take a chill pill. Don't be intimidated by those thoughts. __Awesome Portfolio Wesbite__ is here for the rescue!
@@ -23,7 +24,7 @@ This is an open source project aimed at providing a free, full fledged template 
 ## A sneek peek into what we have here🙈 :
 
 ### Home Page:
-<p align="center"><img src="assets/Readme_Assets/home_page.gif"></p>
+<p align="center"><img src="assets/Readme_Assets/Home_Page.gif"></p>
 
 ### Experience Page:
 
@@ -43,11 +44,7 @@ This is an open source project aimed at providing a free, full fledged template 
 
 ### Research Page:
 
-<p align="center">
-<img src="assets/images/readme/research1.jpeg" width =30% style="height: 15em">
-<img src="assets/images/readme/research2.jpeg" width =30% style="height: 15em">
-<img src="assets/images/readme/research3.jpeg" width =30% style="height: 15em">
-</p>
+<p align="center"><img src="assets/Readme_Assets/Research_Page.gif"></p>
 
 ### Education Page:
 
