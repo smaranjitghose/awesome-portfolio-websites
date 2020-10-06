@@ -36,14 +36,9 @@ This is an open source project aimed at providing a free, full fledged template 
 </p>
 
 ### Project Page:
-
-<p align="center">
-<img src="assets/images/readme/project1.jpeg" width =30% style="height: 15em">
-<img src="assets/images/readme/project2.jpeg" width =30% style="height: 15em">
-</p>
+<p align="center"><img src="assets/Readme_Assets/Project_Page.gif"></p>
 
 ### Research Page:
-
 <p align="center"><img src="assets/Readme_Assets/Research_Page.gif"></p>
 
 ### Education Page:
