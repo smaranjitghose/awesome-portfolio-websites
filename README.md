@@ -23,9 +23,7 @@ This is an open source project aimed at providing a free, full fledged template 
 ## A sneek peek into what we have here🙈 :
 
 ### Home Page:
-<p align="center">
-<img src="assets/Readme_Assets/home_page.gif" width = 50% height = 50% >
-</p>
+<p align="center"><img src="assets/Readme_Assets/home_page.gif"></p>
 
 ### Experience Page:
 
