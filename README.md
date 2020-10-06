@@ -38,15 +38,15 @@ This is an open source project aimed at providing a free, full fledged template 
 ### Education Page:
 <p align="center"><img src="./assets/Readme_Assets/Education_Page.gif"></p>
 
-## How to use this?
+## How to use this?🛠
 
 [Check out our awesome Documentation](https://smaranjitghose.github.io/awesome-portfolio-websites/)
 
-## Contribution Guidelines
+## Contribution Guidelines🏗
 
 Are we missing any of your favourite features, which you think you can add in it❓ We invite you to contribute to this project, and make it better. To start contributing, please do refer to [this file](./CONTRIBUTING.md)
 
-## The geeks🤓 behind this initiative!:
+## The geeks🤓 behind this initiative:
 
 #### Our hard working Project Maintainers👨‍🏫:
 
