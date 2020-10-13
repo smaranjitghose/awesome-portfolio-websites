@@ -21,6 +21,12 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Awesome Portf
 
 This is an open source project aimed at providing a free, full fledged template that anyone can use as a template to build and put out their website within an hour!. We take special care of the UI, SEO and all the cool stuff. This is possible to the hard work of our contributors and project maintainers. You just focus on putting your important info and expandinf your digital presence!
 
+
+So why are you waiting for?!
+
+Make amazing Portfolio and stand diffrent among all others...
+<p align="center"><img src=" https://giphy.com/gifs/hero0fwar-karmawhore-rhyming-g9582DNuQppxC" = 40%></p>
+
 ## A sneek peek into what we have here🙈 :
 
 ### Home Page:
