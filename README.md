@@ -44,7 +44,7 @@ This is an open source project aimed at providing a free, full fledged template 
 
 ## Contribution Guidelines🏗
 
-Are we missing any of your favourite features, which you think you can add in it❓ We invite you to contribute to this project, and make it better. To start contributing, please do refer to [this file](./CONTRIBUTING.md)
+Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better. To start contributing, please do refer to [this file](./CONTRIBUTING.md)
 
 ## The geeks🤓 behind this initiative:
 
