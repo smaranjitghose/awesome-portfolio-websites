@@ -9,8 +9,8 @@ nav:
 
 theme: 
     name: 'material'
-    logo: 'images/icons/champion.svg'
-    favicon: 'images/icons/champion.svg'
+    logo: 'images/icons/logo.png'
+    favicon: 'images/icons/logo.png'
     palette:
         scheme: slate
         primary: deep purple
