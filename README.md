@@ -47,8 +47,6 @@ This is an open source project aimed at providing a free, full fledged template 
 Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better. 
 To start contributing, follow the below guidelines: 
 
-<p align="center"><img src="https://camo.githubusercontent.com/2c885464740a6c05b127ecb7c3ebb9e5cc67ba1c/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4a717a616442746f6e4a56723075384c55672f67697068792e676966" width=500></p>
-
 **1.**  Fork [this](https://github.com/smaranjitghose/awesome-portfolio-websites) repository.
 
 **2.**  Clone your forked copy of the project.
