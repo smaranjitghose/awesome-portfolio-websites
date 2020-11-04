@@ -1,5 +1,50 @@
 /*Declaration of CSS variables for light/dark theme*/
 
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f75;
+    font-size: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: open;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.splash::after, .splash::before{
+    content: "";
+    position: absolute;
+    background-color: #f89;
+    height: 100vh;
+    width: 100vw;
+    z-index: 99;
+    animation-name: open;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+.splash::after{
+    left: 30vw;
+    animation-delay: 200ms;
+}
+.splash::before{
+    left: 0;
+    animation-delay: 2s;
+}
+@keyframes open{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(100%, 0);
+    }
+}
+
 html[data-theme="light"] {
   --bg-icon: white;
   --col-icon: #000;
