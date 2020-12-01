@@ -19,7 +19,7 @@ cool.
 Well! Take a chill pill. Don't be intimidated by those thoughts. __Awesome Portfolio Wesbite__ is here for the rescue!
 <p align="center"><img src="https://media.giphy.com/media/T08JhumnpKAI8/giphy.gif" width = 40%></p>
 
-This is an open source project aimed at providing a free, full fledged template that anyone can use as a template to build and put out their website within an hour!. We take special care of the UI, SEO and all the cool stuff. This is possible to the hard work of our contributors and project maintainers. You just focus on putting your important info and expandinf your digital presence!
+This is an open source project aimed at providing a free, full fledged template that anyone can use as a template to build and put out their website within an hour!. We take special care of the UI, SEO and all the cool stuff. This is possible to the hard work of our contributors and project maintainers. You just focus on putting your important info and expanding your digital presence!
 
 ## A sneek peek into what we have here🙈 :
 
