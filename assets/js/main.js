@@ -11,7 +11,10 @@ window.onscroll = function () {
   scrollFunction();
 };
 function scrollFunction() {
-  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+  if (
+    document.body.scrollTop > 350 ||
+    document.documentElement.scrollTop > 350
+  ) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -170,25 +173,30 @@ bodyElement.append(footer);
 
 /*JavaScript for toggle for light/dark mode*/
 
-var checkbox = document.querySelector('input[name=theme]');
-if(checkbox)
- {
- checkbox.addEventListener('change', function(){
-   if(this.checked)
-   {
-     trans()
-     document.documentElement.setAttribute('data-theme', 'dark')
-   }
-   else
-   {
-     trans()
-     document.documentElement.setAttribute('data-theme', 'light')
-   }
- });
+var checkbox = document.querySelector("input[name=theme]");
+if (checkbox) {
+  let a = localStorage.getItem("theme");
+  document.documentElement.setAttribute("data-theme", a);
 
- let trans = () => {
-   document.documentElement.classList.add('transition');
-   window.setTimeout(() => {
-     document.documentElement.classList.remove('transition')
-   }, 1000)
- }}
+  if (localStorage.getItem("theme") === "dark") {
+    checkbox.checked = true;
+  }
+  checkbox.addEventListener("change", function () {
+    if (this.checked) {
+      trans();
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      trans();
+      document.documentElement.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
+    }
+  });
+
+  let trans = () => {
+    document.documentElement.classList.add("transition");
+    window.setTimeout(() => {
+      document.documentElement.classList.remove("transition");
+    }, 1000);
+  };
+}
