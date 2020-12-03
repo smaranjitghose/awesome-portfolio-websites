@@ -140,10 +140,10 @@ let footer = $(`
       <div class="contact-form">
           <form>
               <fieldset class="form-group text-center">
-                  <input type="text" class="form-control" id="inputName" placeholder="Enter Name" required>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name" required>
               </fieldset>
               <fieldset class="form-group text-center">
-                  <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" required>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
               </fieldset>
               <fieldset class="form-group text-center">
                   <textarea class="form-control" id="exampleMessage" placeholder="Message" required></textarea>
