@@ -1,18 +1,16 @@
 /*CSS variable declaration for light/dark mode*/
-html[data-theme = 'light']
-{
-	--bg-mybtn: red;
-	--bg-nav: #000000;
+html[data-theme="light"] {
+  --bg-mybtn: red;
+  --bg-nav: #000000;
   --bg-nav-img: #000000;
   --bg: #ffffff;
   --text: #191919;
-  --text-color: #6C757D;
+  --text-color: #6c757d;
 }
 
-html[data-theme = 'dark']
-{
-	--bg-mybtn: rgb(230, 109, 129);
-	--bg-nav: #6617cb;
+html[data-theme="dark"] {
+  --bg-mybtn: rgb(230, 109, 129);
+  --bg-nav: #6617cb;
   --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
   --bg: #191919;
   --text: #ffffff;
@@ -39,7 +37,7 @@ html {
 
 /*starting part of every page*/
 
-.main-heading{
+.main-heading {
   font-size: 4em;
   font-weight: bolder;
   background: var(--bg-txt-img);
@@ -48,7 +46,7 @@ html {
   padding-bottom: 0.1em;
 }
 
-.pre-heading{
+.pre-heading {
   font-size: 1.1em;
   letter-spacing: 2px;
   line-height: normal;
@@ -57,17 +55,17 @@ html {
 
 /*SCROLL TO TOP BUTTON dark/light mode*/
 #myBtn {
-	display: none;
-	position: fixed;
-	bottom: 40px;
-	right: 30px;
-	z-index: 99;
-  background-color:#26a69a;
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 99;
+  background-color: #26a69a;
   height: 50px;
   width: 50px;
   cursor: pointer;
   overflow: hidden;
-	opacity: 0.7;
+  opacity: 0.7;
 }
 
 .left-arm {
@@ -120,16 +118,16 @@ html {
 
 /*slide animations on hover state*/
 #myBtn:hover {
-	opacity: 1;
+  opacity: 1;
 }
-#myBtn:hover  .left-arm:after {
+#myBtn:hover .left-arm:after {
   transform: rotate(-13deg);
 }
-#myBtn:hover  .right-arm:after {
+#myBtn:hover .right-arm:after {
   transform: rotate(13deg);
 }
-#myBtn:hover  .arrow-slide {
-  transition: all .4s ease-in-out;
+#myBtn:hover .arrow-slide {
+  transition: all 0.4s ease-in-out;
   transform: translateY(200%);
 }
 
@@ -140,17 +138,17 @@ html {
   text-decoration: none;
 }
 
-.nav-wrapper{
+.nav-wrapper {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-  /*Navbar dark mode(research page)*/
+/*Navbar dark mode(research page)*/
 
-  .black{
-	background-color: var(--bg-nav);
+.black {
+  background-color: var(--bg-nav);
   background-image: var(--bg-nav-img);
-  }
+}
 
 .nav-wrapper a {
   font-weight: bold;
@@ -184,9 +182,9 @@ p {
   width: 0;
 }
 
-.side-toggle{
-    height: 2em;
-    width: 5em;
+.side-toggle {
+  height: 2em;
+  width: 5em;
 }
 
 .toggle-slot {
@@ -201,7 +199,7 @@ p {
   margin-left: 1.5em;
 }
 
-.toggle-checkbox:checked ~ .toggle-slot{
+.toggle-checkbox:checked ~ .toggle-slot {
   background-color: #374151;
 }
 
@@ -213,7 +211,8 @@ p {
   border-radius: 50%;
   background-color: #ffeccf;
   box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
-  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+  transition: background-color 250ms, border-color 250ms,
+    transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
   margin-top: -1.5em;
   margin-left: -7em;
 }
@@ -240,10 +239,10 @@ p {
   opacity: 1;
   transform: translate(2em, 2em) rotate(15deg);
   transform-origin: 50% 50%;
-  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+  transition: opacity 150ms, transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
 }
 
-.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper{
+.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
   opacity: 0;
   transform: translate(3em, 2em) rotate(0deg);
 }
@@ -264,10 +263,10 @@ p {
   opacity: 0;
   transform: translate(11em, 2em) rotate(0deg);
   transform-origin: 50% 50%;
-  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+  transition: opacity 150ms, transform 500ms cubic-bezier(0.26, 2.5, 0.46, 0.71);
 }
 
-.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper{
+.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
   opacity: 1;
   transform: translate(12em, 2em) rotate(-15deg);
 }
@@ -289,14 +288,12 @@ html.transition *:after {
   background-image: var(--bg-nav-img);
   padding: 20px;
 }
-.row{
-
+.row {
   clear: both;
   margin: 0 auto;
-  padding:0 auto;
+  padding: 0 auto;
   bottom: 0px;
   clear: both !important;
-
 }
 
 .webintern-footer-inner {
@@ -505,15 +502,15 @@ html.transition *:after {
   width: var(--link-size-footer-s);
   height: var(--link-size-footer-s);
   margin: 3px;
-  background-color: #26a69a;
+  background-color: #fff;
   border-radius: 50%;
   text-decoration: none;
   float: left;
   transition: background-color 0.3s, var(--trans-props);
 }
 
-.social-icon-footer:hover{
-  background-color: #0dfde5;
+.social-icon-footer:hover {
+  background-color: grey;
   transform: translateY(-4px);
 }
 

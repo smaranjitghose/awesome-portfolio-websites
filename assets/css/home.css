@@ -8,11 +8,10 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
   --bg-icon: rgba(255, 255, 255, 0.9);
-  --shadow-col: rgba(255, 255, 255, 0.2);
-  --col-icon-twitter:  #1da1f2;
+  --col-icon-twitter: #1da1f2;
   --col-icon-dribbble: #ea4c89;
-  --col-icon-linkedin:   #0e76a8;
-  --col-icon-medium:   #00ab6c;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-medium: #00ab6c;
   --col-icon-kaggle: #41aff3;
   --col-icon-github: #24292e;
 }
@@ -56,7 +55,7 @@ html[data-theme="dark"] {
   width: 10px;
   text-indent: 0;
   /* overflow: hidden; */
-  background:var(--col-icon);
+  background: var(--col-icon);
   animation: blink 0.3s infinite alternate;
 }
 @keyframes blink {
