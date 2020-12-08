@@ -66,6 +66,52 @@ const moocscards = [
   },
 ];
 
+const experience = [
+  {
+    img:"assets/images/education-page/c1.png"
+  },
+  {
+    img:"assets/images/education-page/c2.jpg"
+  },
+  {
+    img:"assets/images/education-page/c3.png"
+  },
+  {
+    img:"assets/images/education-page/c4.png"
+  },
+  {
+    img:"assets/images/education-page/c5.jpg"
+  },
+];
+
+let currentItem = 0;
+
+const img=document.getElementById('image');
+
+const prevBtn = document.querySelector('#prevBtn');
+    const nextBtn = document.querySelector('#nextBtn');
+
+window.addEventListener('DOMContentLoaded',function(){
+  showExperience();
+})
+
+function showExperience(){
+  setInterval(function(){ 
+    if(currentItem<experience.length){
+    const item=experience[currentItem];
+    img.src=item.img;
+    currentItem++;
+    }
+    else{
+      currentItem=0;
+      const item=experience[currentItem];
+      img.src=item.img;
+      currentItem++;
+    }
+  },
+    3000);
+}
+
 const showCards = () => {
   let output = "";
   moocscards.forEach(
