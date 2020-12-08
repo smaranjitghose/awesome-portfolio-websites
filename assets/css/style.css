@@ -517,7 +517,7 @@ html.transition *:after {
 .social-icon-footer i {
   margin: auto;
   font-size: 15px;
-  color: #fff;
+  color: #000;
 }
 
 .social-icon-footer:hover i {
