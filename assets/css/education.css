@@ -371,7 +371,7 @@ html[data-theme = 'dark']
 }
 
 .carousel-container{
-  width: 85%;
+  width: 50%;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -380,7 +380,7 @@ html[data-theme = 'dark']
 .carousel-slide{
   display: flex;
   width: 100%;
-  height: 700px;
+  height: 350px;
 }
 
 .card:hover {
