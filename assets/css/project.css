@@ -41,12 +41,13 @@ a:hover {
 
 .column{
   float: left;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .page-content {
   padding: 1rem;
   max-width: 1124px;
+  margin: 1rem auto;
 }
 
 @media(min-width: 60rem)
@@ -56,13 +57,13 @@ a:hover {
   }
 
   .card{
-    width: 39%;
+    width: 30%;
     column-gap: 3rem;
 
   }
 
   .column{
-    margin-left: 6.8rem;
+    margin-left: 1.5rem;
   }
 }
 

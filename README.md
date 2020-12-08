@@ -21,6 +21,8 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Awesome Portf
 
 This is an open source project aimed at providing a free, full fledged template that anyone can use as a template to build and put out their website within an hour!. We take special care of the UI, SEO and all the cool stuff. This is possible to the hard work of our contributors and project maintainers. You just focus on putting your important info and expanding your digital presence!
 
+[Slack Link](https://join.slack.com/t/nwoc-workspace/shared_invite/zt-ju5z8s6r-u04wP4SJ69kXEy2fz~AuZg)
+
 ## A sneek peek into what we have here🙈 :
 
 ### Home Page:
@@ -148,6 +150,7 @@ git push -u upstream <your_branch_name>
 <p align="center">
 <img src="./assets/Readme_Assets/hakin_codes.png" width= "20%"/> 
 <img src="./assets/Readme_Assets/sci.jpg" width= "20%" />
+<img src="./assets/Readme_Assets/nwoc.JPG" width= "21%" />
 </p>
 
 ## Code of Conduct
