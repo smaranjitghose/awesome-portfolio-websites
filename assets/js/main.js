@@ -95,7 +95,7 @@ let footer = $(`
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-6 pt-3" >
-      <div class="col-sm-6 col-md-7">
+      <div class="col-sm-12 col-md-10">
         <a class="webintern-footer-logo" href="#">
           <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
         </a>
@@ -128,7 +128,7 @@ let footer = $(`
     <i class="fab fa-github"></i>
       </a>
   <br>
-<p style="color:white;><a href=" ">contact@johndoe.com</a></p>
+<p style="color:white;><a href=" " class="col-sm-12 col-md-12s">contact@johndoe.com</a></p>
 </div>
     </div>
 
