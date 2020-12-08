@@ -1,9 +1,14 @@
 /*Declaration of CSS variables for light/dark theme*/
 
 html[data-theme="light"] {
-  --bg-icon: white;
-  --col-icon: #000;
-  --shadow-col: rgba(0, 0, 0, 0.18);
+  --bg-icon: #fff;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-medium: #00ab6c;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github: #24292e;
+  --shadow-col: rgba(0, 0, 0, 0.3);
 }
 
 html[data-theme="dark"] {
