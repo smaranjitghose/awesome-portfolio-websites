@@ -128,7 +128,7 @@ let footer = $(`
     <i class="fab fa-github"></i>
       </a>
   <br>
-<p style="color:white;><a href=" " class="col-sm-12 col-md-12s">contact@johndoe.com</a></p>
+<p style="color:white;><a href=" " class="col-sm-12">contact@johndoe.com</a></p>
 </div>
     </div>
 
