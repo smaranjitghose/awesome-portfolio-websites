@@ -370,6 +370,19 @@ html[data-theme = 'dark']
   flex-wrap: wrap;
 }
 
+.carousel-container{
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide{
+  display: flex;
+  width: 100%;
+  height: 350px;
+}
+
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
@@ -386,6 +399,12 @@ html[data-theme = 'dark']
     width: 180px;
     height: 160px;
   }
+  .carousel-container{
+    width: 80%;
+  }
+  .carousel-slide{
+    height: 300px;
+  }
 }
 
 @media only screen and (min-width: 366px) and (max-width: 456px){
@@ -393,12 +412,24 @@ html[data-theme = 'dark']
     width: 230px;
     height: 200px;
   }
+  .carousel-container{
+    width: 80%;
+  }
+  .carousel-slide{
+    height: 300px;
+  }
 }
 
 @media only screen and (min-width: 456px) and (max-width: 600px) {
   .card {
       width: 350px;
       height: 260px;
+    }
+    .carousel-container{
+      width: 80%;
+    }
+    .carousel-slide{
+      height: 300px;
     }
   }
 
@@ -408,6 +439,7 @@ html[data-theme = 'dark']
     width: 390px;
     height: 260px;
   }
+ 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
