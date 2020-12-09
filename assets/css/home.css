@@ -1,21 +1,24 @@
 /*Declaration of CSS variables for light/dark theme*/
 
 html[data-theme="light"] {
-  --bg-icon: white;
-  --col-icon: #000;
-  --shadow-col: rgba(0, 0, 0, 0.18);
+  --bg-icon: #fff;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-medium: #00ab6c;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github: #24292e;
+  --shadow-col: rgba(0, 0, 0, 0.3);
 }
 
 html[data-theme="dark"] {
-  --bg-icon: #191919;
-  --col-icon: white;
-  --twitter: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1da1f2, 0 0 20px #1da1f2, 0 0 25px #1da1f2, 0 0 30px #1da1f2, 0 0 35px #1da1f2;
-  --github: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #434547, 0 0 20px #434547, 0 0 25px #434547, 0 0 30px #434547, 0 0 35px #434547;
-  --linkedin: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0e76a8, 0 0 20px #0e76a8, 0 0 25px #0e76a8, 0 0 30px #0e76a8, 0 0 35px #0e76a8;
-  --kaggle: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #41aff3, 0 0 20px #41aff3, 0 0 25px #41aff3, 0 0 30px #41aff3, 0 0 35px #41aff3;
-  --dribble: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ea4c89, 0 0 20px #ea4c89, 0 0 25px #ea4c89, 0 0 30px #ea4c89, 0 0 35px #ea4c89;
-  --medium: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ab6c, 0 0 20px #00ab6c, 0 0 25px #00ab6c, 0 0 30px #00ab6c, 0 0 35px #00ab6c;
-  --shadow-col: #15f4ee;
+  --bg-icon: rgba(255, 255, 255, 0.9);
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-medium: #00ab6c;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github: #24292e;
 }
 
 /* Particle effect*/
@@ -57,7 +60,7 @@ html[data-theme="dark"] {
   width: 10px;
   text-indent: 0;
   /* overflow: hidden; */
-  background:var(--col-icon);
+  background: var(--col-icon);
   animation: blink 0.3s infinite alternate;
 }
 @keyframes blink {
@@ -99,10 +102,46 @@ html[data-theme="dark"] {
   text-decoration: none;
   transition: var(--trans-props);
 }
-.social-icon i {
+.twitter i {
   margin: auto;
   font-size: 24px;
-  color: var(--col-icon);
+  color: var(--col-icon-twitter);
+  z-index: 1;
+  transition: var(--trans-props);
+}
+
+.dribbble i {
+  margin: auto;
+  font-size: 24px;
+  color: var(--col-icon-dribbble);
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.linkedin i {
+  margin: auto;
+  font-size: 24px;
+  color: var(--col-icon-linkedin);
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.medium i {
+  margin: auto;
+  font-size: 24px;
+  color: var(--col-icon-medium);
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.kaggle i {
+  margin: auto;
+  font-size: 24px;
+  color: var(--col-icon-kaggle);
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.github i {
+  margin: auto;
+  font-size: 24px;
+  color: var(--col-icon-github);
   z-index: 1;
   transition: var(--trans-props);
 }
@@ -172,3 +211,5 @@ a:hover {
     margin-top: 5rem;
   }
 }
+
+
