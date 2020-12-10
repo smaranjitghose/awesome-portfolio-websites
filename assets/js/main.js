@@ -96,7 +96,7 @@ let footer = $(`
     <div class="row">
       <div class="col-lg-7 col-md-6 pt-3" >
       <div class="col-sm-12 col-md-10">
-        <a class="webintern-footer-logo" href="#">
+        <a class="webintern-footer-logo col-12" href="#">
           <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
         </a>
         <div class="simple-text text-center dark padding-sm">
