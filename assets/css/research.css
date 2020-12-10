@@ -175,6 +175,7 @@ body{
     text-align: left;
     color: grey;
     margin-top: 1em;
+    margin-bottom: 12%;
 }
 
 .researchCite{
@@ -185,6 +186,7 @@ body{
 .resCite{
     display: none;
 }
+
 
 /*Profile pic responsiveness*/
 @media only screen and (max-width: 711px) {
@@ -281,6 +283,8 @@ button-small{
     color: #fff;
     text-decoration: none;
 }
+
+
 
 @media(min-width: 60rem){
    .button{
