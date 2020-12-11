@@ -175,7 +175,7 @@ body{
     text-align: left;
     color: grey;
     margin-top: 1em;
-    margin-bottom: 12%;
+    margin-bottom: 14%;
 }
 
 .researchCite{
@@ -284,11 +284,18 @@ button-small{
     text-decoration: none;
 }
 
+.button-card{
+    font-size: smaller;
+}
+
+.button-cite{
+    margin-left: 3%;
+}
 
 
 @media(min-width: 60rem){
    .button{
-       font-size: 1.2rem;
+       font-size: 0.9rem;
        margin-top: 0em;
    }
 }
