@@ -272,6 +272,10 @@ button-small{
     font-weight: 700;
 }
 
+.button-cite{
+    margin-left: 3%;
+}
+
 .button-accent{
     color: var(--ppr-col);
     border-color: var(--ppr-col);
@@ -284,13 +288,7 @@ button-small{
     text-decoration: none;
 }
 
-.button-card{
-    font-size: smaller;
-}
 
-.button-cite{
-    margin-left: 3%;
-}
 
 
 @media(min-width: 60rem){
