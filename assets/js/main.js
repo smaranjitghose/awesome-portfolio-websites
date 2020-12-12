@@ -29,7 +29,7 @@ function topFunction() {
 //Footer and Navbar
 
 let header = $(`
-<nav class="black">
+<nav class="fixed-top black">
 <div class="nav-wrapper">
     <a href="#!" class="brand-logo"><img src="assets/images/John-Doe1.png"></a>
     <a href="#" data-target="mobile-demo" class="white-text sidenav-trigger"><i
