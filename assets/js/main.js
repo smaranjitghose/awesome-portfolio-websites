@@ -29,7 +29,7 @@ function topFunction() {
 //Footer and Navbar
 
 let header = $(`
-<nav class="black">
+<nav class="fixed-top black">
 <div class="nav-wrapper">
     <a href="#!" class="brand-logo"><img src="assets/images/John-Doe1.png"></a>
     <a href="#" data-target="mobile-demo" class="white-text sidenav-trigger"><i
@@ -95,8 +95,8 @@ let footer = $(`
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-6 pt-3" >
-      <div class="col-sm-6 col-md-7">
-        <a class="webintern-footer-logo" href="#">
+      <div class="col-sm-12 col-md-10">
+        <a class="webintern-footer-logo col-12" href="#">
           <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
         </a>
         <div class="simple-text text-center dark padding-sm">
@@ -128,7 +128,7 @@ let footer = $(`
     <i class="fab fa-github"></i>
       </a>
   <br>
-<p style="color:white;><a href=" ">contact@johndoe.com</a></p>
+<p style="color:white;><a href=" " class="col-sm-12">contact@johndoe.com</a></p>
 </div>
     </div>
 
