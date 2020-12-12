@@ -281,14 +281,16 @@ button-small{
     border-color: var(--ppr-col);
 }
 
+.button-abstract{
+    margin-left: 60%;
+}
+
 .button-accent:hover,
 .button-accent:focus{
     background: var(--ppr-col);
     color: #fff;
     text-decoration: none;
 }
-
-
 
 
 @media(min-width: 60rem){
