@@ -175,6 +175,7 @@ body{
     text-align: left;
     color: grey;
     margin-top: 1em;
+    margin-bottom: 14%;
 }
 
 .researchCite{
@@ -185,6 +186,7 @@ body{
 .resCite{
     display: none;
 }
+
 
 /*Profile pic responsiveness*/
 @media only screen and (max-width: 711px) {
@@ -270,9 +272,17 @@ button-small{
     font-weight: 700;
 }
 
+.button-cite{
+    margin-left: 3%;
+}
+
 .button-accent{
     color: var(--ppr-col);
     border-color: var(--ppr-col);
+}
+
+.button-abstract{
+    margin-left: 60%;
 }
 
 .button-accent:hover,
@@ -282,9 +292,10 @@ button-small{
     text-decoration: none;
 }
 
+
 @media(min-width: 60rem){
    .button{
-       font-size: 1.2rem;
+       font-size: 0.9rem;
        margin-top: 0em;
    }
 }

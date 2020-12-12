@@ -139,14 +139,12 @@ const fillData = () => {
             </div>
             
             <!--CITE BUTTON-->
-            <span class = "resCite">
-            <a href="${citebox}" class="button button-accent button-small">CITE</a>
-            </span>
-            </td>
+            <div>
+            
+            <a href="#" class="button button-accent button-small text-right button-abstract">ABSTRACT</a>
+            <a href="${citebox}" class="button button-accent button-small button-cite">CITE</a>
 
-            <td class="researchCite">
-            <!--CITE BUTTON-->
-            <a href="${citebox}" class="button button-accent button-small">CITE</a>
+            </div>
             </td>
             </tr>
 
