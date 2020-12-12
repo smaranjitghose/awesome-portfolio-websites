@@ -29,6 +29,7 @@ html[data-theme="dark"] {
   height: 100vh;
   width: 100%;
 }
+
 .section {
   background-color: rgb(63, 25, 170);
   justify-content: center;
@@ -51,9 +52,11 @@ html[data-theme="dark"] {
   display: none;
   line-height: 1;
 }
+
 .animated-text span.active {
   display: inline-block;
 }
+
 .animated-text:after {
   content: ".";
   display: inline-block;
@@ -63,10 +66,12 @@ html[data-theme="dark"] {
   background: var(--col-icon);
   animation: blink 0.3s infinite alternate;
 }
+
 @keyframes blink {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -102,7 +107,8 @@ html[data-theme="dark"] {
   text-decoration: none;
   transition: var(--trans-props);
 }
-.twitter i {
+
+.social-icon i {
   margin: auto;
   font-size: 24px;
   color: var(--col-icon-twitter);
