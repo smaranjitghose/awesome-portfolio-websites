@@ -281,6 +281,28 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
+/* About Section */
+.card{
+  background-color: var(--bg);
+  color: var(--text-color);
+  transform: scale(.97);
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+}
+
+.card i{
+  color: var(--bg);
+}
+
+.card-img{
+  background-color: var(--bg-nav);
+}
+
+.card:hover{
+  box-shadow: 0 10px 22px 4px;
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
 /*Footer*/
 
 .webintern-footer {
@@ -288,6 +310,7 @@ html.transition *:after {
   background-image: var(--bg-nav-img);
   padding: 20px;
 }
+
 .row {
   clear: both;
   margin: 0 auto;
