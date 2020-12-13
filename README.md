@@ -145,7 +145,7 @@ git push -u upstream <your_branch_name>
   <img src="https://contributors-img.web.app/image?repo=smaranjitghose/awesome-portfolio-websites" />
 </a>
 
-## Open Source Programs we have been a part of: 
+## Open Source Programs we have been a associated with: 
 
 <p align="center">
 <img src="./assets/Readme_Assets/hakin_codes.png" width= "20%"/> 
