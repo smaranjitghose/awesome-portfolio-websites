@@ -287,11 +287,11 @@ html.transition *:after {
   color: var(--text-color);
   transform: scale(.97);
   cursor: pointer;
-  transition: transform .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .card i{
-  color: var(--bg);
+  color: white;
 }
 
 .card-img{
@@ -299,8 +299,8 @@ html.transition *:after {
 }
 
 .card:hover{
-  box-shadow: 0 10px 22px 4px;
-  transform: translateY(-5px) scale(1.005) translateZ(0);
+  transform: scale(1.005);
+  box-shadow: 0 10px 18px 2px #000;
 }
 
 /*Footer*/
