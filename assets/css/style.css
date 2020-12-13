@@ -281,6 +281,28 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
+/* About Section */
+.card{
+  background-color: var(--bg);
+  color: var(--text-color);
+  transform: scale(.97);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.card i{
+  color: white;
+}
+
+.card-img{
+  background-color: var(--bg-nav);
+}
+
+.card:hover{
+  transform: scale(1.005);
+  box-shadow: 0 10px 18px 2px #000;
+}
+
 /*Footer*/
 
 .webintern-footer {
@@ -288,6 +310,7 @@ html.transition *:after {
   background-image: var(--bg-nav-img);
   padding: 20px;
 }
+
 .row {
   clear: both;
   margin: 0 auto;
