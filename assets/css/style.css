@@ -41,6 +41,7 @@ html {
   font-size: 4em;
   font-weight: bolder;
   background: var(--bg-txt-img);
+  background-clip:text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: var(--txt-fill);
   padding-bottom: 0.1em;
@@ -271,6 +272,17 @@ p {
   transform: translate(12em, 2em) rotate(-15deg);
 }
 
+/* Education Section  */
+
+.s2 h4{
+  font-weight: 300;
+}
+
+.s2 h4,p{
+  color:black;
+}
+
+
 /*Transition for Toggle*/
 
 html.transition,
@@ -282,7 +294,7 @@ html.transition *:after {
 }
 
 /* About Section */
-.card{
+#mooc .card{
   background-color: var(--bg);
   color: var(--text-color);
   transform: scale(.97);
@@ -290,15 +302,15 @@ html.transition *:after {
   transition: all .3s ease-in-out;
 }
 
-.card i{
+#mooc .card i{
   color: white;
 }
 
-.card-img{
+#mooc .card-img{
   background-color: var(--bg-nav);
 }
 
-.card:hover{
+#mooc .card:hover{
   transform: scale(1.005);
   box-shadow: 0 10px 18px 2px #000;
 }
@@ -313,7 +325,7 @@ html.transition *:after {
 
 .row {
   clear: both;
-  margin: 0 auto;
+  margin: 0 auto ;
   padding: 0 auto;
   bottom: 0px;
   clear: both !important;
