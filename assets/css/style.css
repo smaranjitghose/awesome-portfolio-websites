@@ -373,7 +373,7 @@ html.transition *:after {
   margin-top: 4px;
 }
 
-.contact-form #exampleInputEmail1 {
+.contact-form #inputEmail, #inputName {
   background-color: #fff;
   padding: 0.375rem 0.75rem;
   height: 2rem;
@@ -432,7 +432,7 @@ html.transition *:after {
   margin-top: 2px;
 }
 
-.contact-form #exampleInputEmail1 {
+.contact-form #inputEmail, #inputName {
   background-color: #fff;
   padding: 0.375rem 0.75rem;
   height: 2rem;
@@ -515,7 +515,7 @@ html.transition *:after {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  display: block;
+  display: flex;
 }
 
 .social-icon-footer {

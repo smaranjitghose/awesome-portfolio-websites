@@ -95,7 +95,7 @@ let footer = $(`
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-6 pt-3" >
-      <div class="col-sm-12 col-md-10">
+      <div class="col-sm-12 col-md-10 ml-lg-4">
         <a class="webintern-footer-logo col-12" href="#">
           <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
         </a>
@@ -108,7 +108,7 @@ let footer = $(`
     </div>
     <!-- Social media icons for footer -->
 
-<div class="social-icons-footer">
+<div class="social-icons-footer mx-lg-auto">
   <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
     <i class="fab fa-twitter"></i>
       </a>
@@ -127,12 +127,15 @@ let footer = $(`
   <a class="social-icon-footer github" href="" target="_blank" rel="author">
     <i class="fab fa-github"></i>
       </a>
-  <br>
-<p style="color:white;><a href=" " class="col-sm-12">contact@johndoe.com</a></p>
-</div>
-    </div>
+  </div>
 
-      <div class="col-sm-6 col-md-5 pt-3 footer-2">
+  <div class="col-12 text-center">
+  <p><a href=" " class="col-sm-12 text-white">contact@johndoe.com</a></p>
+  </div>
+
+  </div>
+
+      <div class="col-sm-6 col-md-5 pt-3 footer-2 mx-auto">
 
         <!-- footer_title -->
         <h4 class="webintern_footer_title h5">
@@ -143,13 +146,13 @@ let footer = $(`
       <div class="contact-form">
           <form>
               <fieldset class="form-group text-center">
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name" required>
+                  <input type="text" class="form-control" id="inputName" placeholder="Enter Name" required>
               </fieldset>
               <fieldset class="form-group text-center">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" required>
               </fieldset>
               <fieldset class="form-group text-center">
-                  <textarea class="form-control" id="exampleMessage" placeholder="Message" required></textarea>
+                  <textarea class="form-control" id="Message" placeholder="Message" required></textarea>
               </fieldset>
               <fieldset class="form-group text-xs-right text-center">
                   <button type="button" class="send-btn btn btn-lg">Send</button>
@@ -161,11 +164,13 @@ let footer = $(`
     </div>
   </div>
 </div>
-<div class="tt-copy">
+
+<!-- <div class="tt-copy">
   <div class="container col-sm-6">
-   <!-- <center class="text-animation">Made with <i class="fa fa-heart" style="color: red;"></i></center>-->
+   <center class="text-animation">Made with <i class="fa fa-heart" style="color: red;"></i></center>
   </div>
-</div>
+</div> -->
+
 </footer>`);
 let bodyElement = $(`body`);
 bodyElement.prepend(header);
