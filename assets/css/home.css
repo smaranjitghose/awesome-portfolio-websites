@@ -12,13 +12,14 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-  --bg-icon: rgba(255, 255, 255, 0.9);
-  --col-icon-twitter: #1da1f2;
-  --col-icon-dribbble: #ea4c89;
-  --col-icon-linkedin: #0e76a8;
-  --col-icon-medium: #00ab6c;
-  --col-icon-kaggle: #41aff3;
-  --col-icon-github: #24292e;
+  --bg-icon:#000;
+  --col-icon-twitter:#1da1f2;
+  --col-icon-dribbble:#ea4c89;
+  --col-icon-linkedin:#0e76a8;
+  --col-icon-medium:#00ab6c;
+  --col-icon-kaggle:#41aff3;
+  --col-icon-github:#fff;
+  --shadow-col:#1de9b6;
 }
 
 /* Particle effect*/
@@ -170,6 +171,9 @@ html[data-theme="dark"] {
 .social-icon.github:after {
   background-color: #24292e;
   box-shadow: var(--github);
+}
+.social-icon.github:hover {
+  background-color:#fff!important;
 }
 
 .social-icon.linkedin:after {
