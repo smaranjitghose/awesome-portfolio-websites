@@ -83,20 +83,20 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Movie Recommendation System",
+    title: "Movie Recommendation",
     cardImage: "assets/images/project-page/movie-recommendation.jpeg",
     description:
       "Movie Recommendation System built using Tensorflow.",
-    Previewlink: "",
-    Githublink: "",
+      Previewlink: "",
+      Githublink: "",
   },
   {
-    title: "Music Recommendation Engine",
+    title: "Music Recommendation",
     cardImage: "assets/images/project-page/music.jpg",
     description:
       "Music Recommendation Engine built using Python.",
-    Previewlink: "",
-    Githublink: "",
+      Previewlink: "",
+      Githublink: "",
   },
 ];
 
