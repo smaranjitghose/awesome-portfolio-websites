@@ -65,7 +65,6 @@ let header = $(`
 <!--Side Nav Bar -->
 <ul class="sidenav" id="mobile-demo">
 <li><a href="index.html">Home</a></li>
-<li><a href="index.html">Home</a></li>
 <li><a href="experience.html">Experience</a></li>
 <li><a href="projects.html">Projects</a></li>
 <li><a href="research.html">Research</a></li>
@@ -129,6 +128,21 @@ let footer = $(`
   <a class="social-icon-footer github" href="" target="_blank" rel="author">
     <i class="fab fa-github"></i>
       </a>
+  <a class="social-icon-footer instagram" href="" target="_blank" rel="author">
+      <i class="fab fa-instagram" ></i>
+  </a>
+  <a class="social-icon-footer google-scholar" href="" target="_blank" rel="author">
+    <i class="fab" > 
+      <object class="" type="image/svg+xml" data="./assets/images/google-scholar.svg"></object>
+    </i>
+  </a>
+  <a class="social-icon-footer codeforces" href="" target="_blank" rel="author">
+      <i class="fab"><span class="iconify" data-icon="simple-icons:codeforces" data-inline="false"></span></i>
+  </a>
+
+  <a class="social-icon-footer leetcode" href="" target="_blank" rel="author">
+    <i class="fab"><span class="iconify" data-icon="simple-icons:leetcode" data-inline="false"></span></i>
+  </a>
   <br>
 <p style="color:white;><a href=" " class="col-sm-12">contact@johndoe.com</a></p>
 </div>
