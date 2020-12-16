@@ -32,7 +32,7 @@ let header = $(`
 <nav class="fixed-top black">
 <div class="nav-wrapper">
     <a href="#!" class="brand-logo"><img src="assets/images/John-Doe1.png"></a>
-    <a href="#" data-target="mobile-demo" class="white-text  sidenav-trigger"><i
+    <a href="#" data-target="mobile-demo" class="white-text sidenav-trigger "><i
             class="material-icons">menu</i></a>
   
     <ul class="right hide-on-med-and-down">
@@ -63,8 +63,8 @@ let header = $(`
 </nav>
 
 <!--Side Nav Bar -->
-<ul class="sidenav" id="mobile-demo">
-<li><a href="index.html">Home</a></li>
+<ul class="sidenav" id="mobile-demo" style="padding-top: 80px;" >
+<li><a href="index.html" >Home</a></li>
 <li><a href="experience.html">Experience</a></li>
 <li><a href="projects.html">Projects</a></li>
 <li><a href="research.html">Research</a></li>
@@ -88,7 +88,9 @@ let header = $(`
           </div>
           </label>
         </li>
-</ul>`);
+        <a class="sidenav-close btn-floating btn-large waves-effect waves-light red pulse" style="justify-content: center"><i class="material-icons large">clear</i></a>
+</ul>`
+);
 
 let footer = $(`
 <footer class="webintern-footer">
