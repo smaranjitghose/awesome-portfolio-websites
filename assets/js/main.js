@@ -62,7 +62,7 @@ let header = $(`
 </nav>
 
 <!--Side Nav Bar -->
-<ul class="sidenav" id="mobile-demo">
+<ul class="sidenav" id="mobile-demo" style="padding-top= 80px;">
 <li><a href="index.html">Home</a></li>
 <li><a href="experience.html">Experience</a></li>
 <li><a href="projects.html">Projects</a></li>
