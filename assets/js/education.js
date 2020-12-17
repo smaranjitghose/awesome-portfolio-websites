@@ -68,55 +68,51 @@ const moocscards = [
 
 const experience = [
   {
-    img:"assets/images/education-page/c1.png"
+    img: "assets/images/education-page/c1.png"
   },
   {
-    img:"assets/images/education-page/c2.jpg"
+    img: "assets/images/education-page/c2.jpg"
   },
   {
-    img:"assets/images/education-page/c3.png"
+    img: "assets/images/education-page/c3.png"
   },
   {
-    img:"assets/images/education-page/c4.png"
+    img: "assets/images/education-page/c4.png"
   },
   {
-    img:"assets/images/education-page/c5.jpg"
+    img: "assets/images/education-page/c5.jpg"
   },
 ];
 
 let currentItem = 0;
 
-const img=document.getElementById('image');
+const img = document.getElementById('image');
 
 const prevBtn = document.querySelector('#prevBtn');
-    const nextBtn = document.querySelector('#nextBtn');
+const nextBtn = document.querySelector('#nextBtn');
 
-window.addEventListener('DOMContentLoaded',function(){
+window.addEventListener('DOMContentLoaded', function () {
   showExperience();
 })
 
-function showExperience(){
-  setInterval(function(){ 
-    if(currentItem<experience.length){
-    const item=experience[currentItem];
-    img.src=item.img;
-    currentItem++;
+function showExperience() {
+  setInterval(function () {
+    if (currentItem === experience.length) {
+      currentItem = 0;
     }
-    else{
-      currentItem=0;
-      const item=experience[currentItem];
-      img.src=item.img;
+      const item = experience[currentItem];
+      img.src = item.img;
       currentItem++;
-    }
-  },
+
+    },
     3000);
 }
 
 const showCards = () => {
   let output = "";
   moocscards.forEach(
-    ({ title, cardImage,moocLink }) =>
-      (output += `        
+    ({ title, cardImage, moocLink }) =>
+    (output += `        
         <div class="col-6 col-md-3 col-sm-4 column" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600" >  
             <div class="card mb-3 mx-auto">
                <div class="content">
@@ -162,8 +158,8 @@ const badgesection = [
 const showCards1 = () => {
   let output = "";
   badgesection.forEach(
-    ({ title, image, description}) =>
-      (output += `       
+    ({ title, image, description }) =>
+    (output += `       
       <div class="col-lg-4 col-md-6 p-2" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600"> 
         <img class="img-fluid d-block mb-3 mx-auto hvr-grow" src="${image}" alt="Card image cap" width="200">
           <div class="text-center font-weight-bolder" style="font-size: 1.3em;">${title}</div>
@@ -182,28 +178,28 @@ const timelinesection = [
   {
     heading: "Massachusetts Institute of Technology",
     image: "./assets/images/education-page/timeline-1.svg",
-    subheading:"Bachelors of Science, Computer Science & Engineering, (2020-2024)",
+    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
     description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
   },
 
   {
     heading: "Massachusetts Institute of Technology",
     image: "./assets/images/education-page/timeline-1.svg",
-    subheading:"Bachelors of Science, Computer Science & Engineering, (2020-2024)",
+    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
     description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
   },
 
   {
     heading: "Massachusetts Institute of Technology",
     image: "./assets/images/education-page/timeline-1.svg",
-    subheading:"Bachelors of Science, Computer Science & Engineering, (2020-2024)",
+    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
     description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
   },
 
   {
     heading: "Massachusetts Institute of Technology",
     image: "./assets/images/education-page/timeline-1.svg",
-    subheading:"Bachelors of Science, Computer Science & Engineering, (2020-2024)",
+    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
     description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
   },
 ];
@@ -211,8 +207,8 @@ const timelinesection = [
 const showCards2 = () => {
   let output = "";
   timelinesection.forEach(
-    ({ heading, image, subheading, description}) =>
-      (output += `       
+    ({ heading, image, subheading, description }) =>
+    (output += `       
       <div class="timeline" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">
       <div class="timeline-content">
         <h6 class="center-align font-weight-bolder pt-1">${heading}</h6>
