@@ -92,4 +92,4 @@ SOFTWARE.
 
 ## Open Source Programs we have been a associated with:
 
-![hakin-codes](images/home-page/hakin_codes.png){: style="height:20rem;width:15rem;margin-right:2em"}      ![student-code-in](images/home-page/sci.jpg){: style="height:20rem;width:15rem"}         ![nwoc](images/home-page/nwoc.JPG){: style="height:20rem;width:15rem;margin-right:2em"}
+![hakin-codes](images/home-page/hakin_codes.png){: style="height:11rem;width:11rem;"}      ![student-code-in](images/home-page/sci.jpg){: style="height:11rem;width:11rem;"}     ![nwoc](images/home-page/nwoc.JPG){: style="height:11rem;width:11rem;"}
