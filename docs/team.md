@@ -1,6 +1,6 @@
 # Team {: style="text-align: center"}
 
-![team](images/team-page/team.svg)
+![team](images/team.svg)
 
 ## **_Coming together is a BEGINNING,_** {: style="text-align: center"}
 ## **_Staying together is PROGRESS_** {: style="text-align: center"}
