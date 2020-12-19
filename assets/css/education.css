@@ -145,15 +145,12 @@ html[data-theme = 'dark']
 }
 
 /* Certificate Carousel  */
-.carousel-slide{
-  display: flex;
-  width: 100%;
-  height: 350px;
-}
+
 .carousel-container{
-  width: 50%;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
+}
+
+.carousel-container #image{
+  height: 40vh;
+  width: 50vh;
 }
