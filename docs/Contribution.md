@@ -1,4 +1,4 @@
-<h1 align="center"><b>Guidelines for Contribution</b></h1> 
+<h1 align="center"><b>Guidelines for Contribution 🏗</b></h1> 
 
 We want to make contributing to this project as easy and as transparent as possible, whether it's:<br>
 
@@ -86,6 +86,7 @@ git push -u origin <your_branch_name>
 ![PullRequest](images/Contribution/PR.png)
 
 
-**15** Voila ❗ You have made a PR to the awesome-developer-portfolio project 💥. Sit back patiently and relax while the project maintainers review your PR. 
+**15** Voila :exclamation: You have made a PR to the awesome-developer-portfolio project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days
 
-<p align="center"><img src="https://media4.giphy.com/media/ftMKOEsgL2ALMks8by/giphy.gif" width=40%></p>
+<p align="center"><img src="https://media.giphy.com/media/5mCQOcUfywmyI/giphy.gif" width=40%></p>
+

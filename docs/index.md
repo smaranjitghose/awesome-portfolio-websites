@@ -2,25 +2,20 @@
 
 An **open source project for creating end-end templates for portfolio websites** for everyone to use. We are a clan of geeks who wants to provide you with that _dope website that flaunts your hardwork and projects_ over the years to your mates and employers! With a deep desire to have that **satiating UI**, those **engaging animations**,the **great SEO** and the **optimized code**, we do it all. Hop in and give your contributions if you wish to be a part of this initiative.
 
-## Home Page 
+### Home Page:
+<p align="center"><img src="./images/home-page/Home_Page.gif"></p>
 
-![home-page](images/home-page/home.png)
+### Experience Page:
+<p align="center"><img src="./images/home-page/Experience_Page.gif"></p>
 
-## Experience Page 
+### Project Page:
+<p align="center"><img src="./images/home-page/Project_Page.gif"></p>
 
-![experience-page](images/home-page/experience.png)
+### Research Page:
+<p align="center"><img src="./images/home-page/Research_Page.gif"></p>
 
-## Project Page 
-
-![project-page](images/home-page/project.png)
-
-## Research Page
-
-![research-page](images/home-page/research.png)
-
-## Education Page
-
-![education-page](images/home-page/education.png)
+### Education Page:
+<p align="center"><img src="./images/home-page/Education_Page.gif"></p>
 
 ---
 
@@ -95,6 +90,6 @@ SOFTWARE.
 
 ---
 
-## Programs we have been a part of 
+## Open Source Programs we have been a associated with:{: align="center"}
 
-![hakin-codes](images/home-page/hakin_codes.png){: style="height:20rem;width:15rem;margin-right:2em"}      ![student-code-in](images/home-page/sci.jpg){: style="height:20rem;width:15rem"}
+![hakin-codes](images/home-page/hakin_codes.png){: style="height:11rem;width:11rem;"}      ![student-code-in](images/home-page/sci.jpg){: style="height:11rem;width:11rem;"}     ![nwoc](images/home-page/nwoc.JPG){: style="height:11rem;width:11rem;"}
