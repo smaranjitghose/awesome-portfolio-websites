@@ -1,4 +1,4 @@
-# Related Issuse or bug
+# Related Issues or bug
   - Info about Issue or bug
 
 Fixes: #[issue number that will be closed through this PR]

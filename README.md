@@ -148,9 +148,9 @@ git push -u upstream <your_branch_name>
 ## Open Source Programs we have been a associated with: 
 
 <p align="center">
-<img src="./assets/Readme_Assets/hakin_codes.png" width= "20%"/> 
-<img src="./assets/Readme_Assets/sci.jpg" width= "20%" />
-<img src="./assets/Readme_Assets/nwoc.JPG" width= "21%" />
+<a href="https://hakincodes.tech/"><img src="./assets/Readme_Assets/hakin_codes.png" width= "20%"/></a>
+<a href="https://scodein.tech/"><img src="./assets/Readme_Assets/sci.jpg" width= "20%" /></a>
+<a href="https://njackwinterofcode.github.io/"><img src="./assets/Readme_Assets/nwoc.JPG" width= "21%" /></a>
 </p>
 
 ## Code of Conduct
