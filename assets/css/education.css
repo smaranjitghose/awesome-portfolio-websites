@@ -144,11 +144,14 @@ html[data-theme = 'dark']
 }
 
 /* Certificate Carousel  */
-.carousel-container{
-  padding-bottom: 2vh;
+#myCarousel{
+  text-align: center;
+  margin-bottom: 6vh;
+  height:42vh;
+  width: 52vh;
 }
 
-.carousel-container #image{
-  height: 40vh;
-  width: 50vh;
+#myCarousel img{
+  height: 42vh;
+  width: 52vh;
 }

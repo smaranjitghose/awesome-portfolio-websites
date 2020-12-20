@@ -28,6 +28,7 @@
   <meta name="summary"
     content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--For Dark/Light mode Toggle-->
   <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
@@ -62,7 +63,7 @@
   <section style="height: 90vh;">
     <div class="container-fluid px-3 pt-5">
       <div class="row text-dark mx-auto">
-        <div class="col-md-6"> <img class="img-fluid d-block  animate__animated animate__zoomIn animate__delay-1s"
+        <div class="col-md-6"> <img class="img-fluid d-block  animate__animated animate__zoomIn animate__delay-1s mt-5"
             src="./assets/images/education-page/header-male.svg" draggable="true"> </div>
         <div class="px-md-5 p-3 col-md-6 d-flex flex-column align-items-center justify-content-center animate__animated animate__zoomIn animate__delay-1s">
           <h2 class="main-heading mb-0">Education</h2>
@@ -73,6 +74,7 @@
       </div>
     </div>
   </section>
+</div>
 
 
   <!-- Education Section  -->
@@ -159,23 +161,55 @@
     </div>
   </div>
 
-</div>
-
 <!-- Certificate Carousel -->
-<div class="py-2 text-center">
-  <div class="mx-auto container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <h4 class="text-center p-2" data-aos="fade-up" data-aos-delay="300">Awards and Prizes</h4>
+<div class="container-fluid">
+  <div class="col-12">
+    <h4 class="text-center p-2" data-aos="fade-up" data-aos-delay="300">Awards and Prizes</h4>
+  </div>
+  <div id="myCarousel" class="carousel slide mx-auto" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="assets/images/education-page/c1.png">
       </div>
-    </div>
-    <div class="carousel-container">
-      
-      <div class="carousel-slide" data-aos="fade-up" data-aos-delay="300">
-        <img id="image" src="assets/images/education-page/c1.png">
+
+      <div class="item">
+        <img src="assets/images/education-page/c2.jpg">
       </div>
     
+      <div class="item">
+        <img src="assets/images/education-page/c3.png">
+      </div>
+
+      <div class="item">
+        <img src="assets/images/education-page/c4.png">
+      </div>
+
+      <div class="item">
+        <img src="assets/images/education-page/c5.jpg">
+      </div>
+  
     </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </div>
 
@@ -186,6 +220,8 @@
   <!-- Fetching our Google Tag Manager -->
 
   <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
