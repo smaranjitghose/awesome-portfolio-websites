@@ -51,17 +51,16 @@ html[data-theme = 'dark']
 }
 .s2 .card img
 {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
 }
 .s2 .card, .s2 img
 {
     border-radius: 3rem;
 }
 
-.s2 button{
-  margin-bottom: 1rem;
-  background-color: #7d39b5;
+.s2 h4,h6,p{
+  color:black;
 }
 
 /* Card Hover Effect */
@@ -145,7 +144,6 @@ html[data-theme = 'dark']
 }
 
 /* Certificate Carousel  */
-
 .carousel-container{
   padding-bottom: 2vh;
 }
