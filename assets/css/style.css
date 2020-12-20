@@ -522,6 +522,10 @@ html.transition *:after {
   --link-size-footer-s: 30px;
 }
 
+.foot-name {
+  margin: 0 auto;
+}
+
 .social-icons-footer {
   font-size: 20px;
   align-items: center;
