@@ -146,7 +146,7 @@ const showCards3 = () => {
         <div class="information">
         <div class="card-body">
           <h5 class="card-title">${title}</h5>
-          <p class=""sub-title">${time}</p>
+          <p class="sub-title">${time}</p>
         </div>
         <div class="more-information">
         <ul class="list-group list-group-flush p-0 right-aligned">

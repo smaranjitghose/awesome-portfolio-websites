@@ -303,7 +303,9 @@ ul ol{
   margin: 0px;
   font-size: 14px;
 }
-
+.sub-title {
+  color: var(--meta-col);
+}
 .content {
   position: relative;
   display: flex;
