@@ -95,7 +95,7 @@ let footer = $(`
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-6 pt-3" >
-      <div class="col-sm-12 col-md-10" style="margin: auto;">
+      <div class="col-sm-12 col-md-10">
         <a class="webintern-footer-logo col-12" href="#">
           <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
         </a>
@@ -108,7 +108,7 @@ let footer = $(`
     </div>
     <!-- Social media icons for footer -->
 
-<div class="social-icons-footer" style="margin: 0 auto;">
+<div class="social-icons-footer">
   <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
     <i class="fab fa-twitter"></i>
       </a>
