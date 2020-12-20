@@ -282,8 +282,15 @@ html.transition *:after {
 }
 
 /* About Section */
-#about .card, #mooc .card{
+#about .card{
   background-color: var(--bg);
+  color: var(--text-color);
+  transform: scale(.97);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+#mooc .card{
   color: var(--text-color);
   transform: scale(.97);
   cursor: pointer;
