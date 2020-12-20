@@ -95,7 +95,7 @@ let footer = $(`
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-6 pt-3" >
-      <div class="col-sm-12 col-md-10">
+      <div class="col-sm-12 col-md-10" style="margin: auto;">
         <a class="webintern-footer-logo col-12" href="#">
           <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
         </a>
@@ -108,7 +108,7 @@ let footer = $(`
     </div>
     <!-- Social media icons for footer -->
 
-<div class="social-icons-footer">
+<div class="social-icons-footer" style="margin: 0 auto;">
   <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
     <i class="fab fa-twitter"></i>
       </a>
@@ -127,25 +127,22 @@ let footer = $(`
   <a class="social-icon-footer github" href="" target="_blank" rel="author">
     <i class="fab fa-github"></i>
       </a>
-      <a class="social-icon instagram" href="" target="_blank" rel="author">
+      <a class="social-icon-footer instagram" href="" target="_blank" rel="author">
       <i class="fab fa-instagram" ></i>
    </a>
-   <!-- <img src="./assets/images/google-scholar.svg" alt=""> -->
-   <a class="social-icon google-scholar google-svg" href="" target="_blank" rel="author">
+   <a class="social-icon-footer google-scholar google-svg" href="" target="_blank" rel="author">
       <i class="fab" > 
        <object type="image/svg+xml" data="./assets/images/Google_Scholar_logo (1).svg"></object>
    </i>
    </a>
-
-   <a class="social-icon codeforces" href="" target="_blank" rel="author">
+   <a class="social-icon-footer codeforces" href="" target="_blank" rel="author">
        <i class="fab"><span class="iconify" data-icon="simple-icons:codeforces" data-inline="false"></span></i>
    </a>
-
-   <a class="social-icon leetcode" href="" target="_blank" rel="author">
+   <a class="social-icon-footer leetcode" href="" target="_blank" rel="author">
      <i class="fab"><span class="iconify" data-icon="simple-icons:leetcode" data-inline="false"></span></i>
    </a>
   <br>
-<p style="color:white;><a href=" " class="col-sm-12">contact@johndoe.com</a></p>
+<p ><a href=" " class="col-sm-12 center text-white">contact@johndoe.com</a></p>
 </div>
     </div>
 
