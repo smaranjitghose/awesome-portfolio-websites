@@ -201,6 +201,7 @@ html[data-theme="dark"] {
 
 .social-icon:hover i {
   color: #fff;
+  filter: brightness(10);
 }
 
 .social-icon:hover:after {

@@ -540,11 +540,11 @@ html.transition *:after {
 .social-icon-footer i {
   margin: auto;
   font-size: 15px;
-  color: #000;
 }
 
 .social-icon-footer:hover i {
   color: #000000;
+  filter: brightness(0);
 }
 
 /*Responsive*/

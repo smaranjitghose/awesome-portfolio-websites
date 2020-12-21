@@ -126,28 +126,28 @@ let footer = $(`
       </a>
   <a class="social-icon-footer github" href="" target="_blank" rel="author">
     <i class="fab fa-github"></i>
-  <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
-    <i class="fab fa-twitter"></i>
       </a>
-  <a class="social-icon-footer dribbble" href="" target="_blank" rel="author">
-    <i class="fab fa-dribbble"></i>
-      </a>
-  <a class="social-icon-footer linkedin" href="" target="_blank" rel="author">
-    <i class="fab fa-linkedin-in"></i>
-      </a>
-  <a class="social-icon-footer medium" href="" target="_blank" rel="author">
-    <i class="fab fa-medium-m"></i>
-      </a>
-  <a class="social-icon-footer kaggle" href="" target="_blank" rel="author">
-    <i class="fab fa-kaggle"></i>
-      </a>
-  <a class="social-icon-footer github" href="" target="_blank" rel="author">
-    <i class="fab fa-github"></i>
-      </a>
+    <a class="social-icon-footer instagram" href="" target="_blank" rel="author">
+      <i class="fab fa-instagram" ></i>
+    </a>
+
+    <a class="social-icon-footer google-scholar google-svg" href="" target="_blank" rel="author">
+      <i class="fab" > 
+        <object type="image/svg+xml" data="./assets/images/Google_Scholar_logo (1).svg"></object>
+    </i>
+    </a>
+
+    <a class="social-icon-footer codeforces" href="" target="_blank" rel="author">
+        <i class="fab"><span class="iconify" data-icon="simple-icons:codeforces" data-inline="false"></span></i>
+    </a>
+
+    <a class="social-icon-footer leetcode" href="" target="_blank" rel="author">
+      <i class="fab"><span class="iconify" data-icon="simple-icons:leetcode" data-inline="false"></span></i>
+    </a>
   </div>
 
-  <div class="col-12 text-center">
-  <p><a href=" " class="col-sm-12 text-white">contact@johndoe.com</a></p>
+  <div class="col-12 text-center" style="display:inline-block;">
+  <p><a href=" " class="col-sm-12 text-white"><i class="fa fa-envelope" aria-hidden="true" style="margin-right:10px;"></i>contact@johndoe.com</a></p>
   </div>
 
   </div>
