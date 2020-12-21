@@ -8,6 +8,10 @@ html[data-theme="light"] {
   --col-icon-medium: #00ab6c;
   --col-icon-kaggle: #41aff3;
   --col-icon-github: #24292e;
+  --col-icon-instagram: rgb(221, 42, 123);
+  --col-icon-google-scholar:  rgb(160, 195, 255);
+  --col-icon-leetcode: rgb(17, 17, 17);
+  --col-icon-codeforces: rgb(31, 138, 203);
   --shadow-col: rgba(0, 0, 0, 0.3);
 }
 
@@ -19,6 +23,10 @@ html[data-theme="dark"] {
   --col-icon-medium: #00ab6c;
   --col-icon-kaggle: #41aff3;
   --col-icon-github: #24292e;
+  --col-icon-instagram: rgb(221, 42, 123);
+  --col-icon-google-scholar:  rgb(160, 195, 255);
+  --col-icon-leetcode: rgb(17, 17, 17);
+  --col-icon-codeforces: rgb(31, 138, 203);
 }
 
 /* Particle effect*/
@@ -151,6 +159,35 @@ html[data-theme="dark"] {
   z-index: 1;
   transition: var(--trans-props);
 }
+.instagram i {
+  margin: auto;
+  font-size: 24px;
+  color: var(--col-icon-instagram);
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.google-scholar i {
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  color: var(--col-icon-google-scholar);
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.leetcode i {
+  margin: auto;
+  font-size: 24px;
+  color: var(--col-icon-leetcode);
+  z-index: 1;
+  transition: var(--trans-props); 
+}
+.codeforces i {
+  margin: auto;
+  font-size: 24px;
+  color: var(--col-icon-codeforces);
+  z-index: 1;
+  transition: var(--trans-props); 
+}
 
 .social-icon:after {
   content: "";
@@ -190,6 +227,28 @@ html[data-theme="dark"] {
 .social-icon.medium:after {
   background-color: #00ab6c;
   box-shadow: var(--medium);
+}
+
+
+.social-icon.instagram:after {
+  background-color: rgb(221, 42, 123);
+  box-shadow: var(--instagram);
+}
+
+.social-icon.google-scholar:after {
+  background-color:  rgb(160, 195, 255);
+  box-shadow: var(--google-scholar);
+}
+
+.social-icon.leetcode:after {
+  background-color: #1e2225;
+  box-shadow: var(--leetcode);
+  
+}
+
+.social-icon.codeforces:after {
+  background-color: rgb(118, 167, 250);
+  box-shadow: var(--leetcode); 
 }
 
 /*** Social Icon Animations ***/

@@ -510,12 +510,18 @@ html.transition *:after {
   --link-size-footer-s: 30px;
 }
 
+.foot-logo{
+  margin: 0 auto;
+}
+
 .social-icons-footer {
   font-size: 20px;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  display: block;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .social-icon-footer {
@@ -524,7 +530,7 @@ html.transition *:after {
   overflow: hidden;
   width: var(--link-size-footer-s);
   height: var(--link-size-footer-s);
-  margin: 3px;
+  margin: 4px;
   background-color: #fff;
   border-radius: 50%;
   text-decoration: none;
