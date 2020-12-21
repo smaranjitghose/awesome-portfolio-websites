@@ -133,7 +133,7 @@ let footer = $(`
 
     <a class="social-icon-footer google-scholar google-svg" href="" target="_blank" rel="author">
       <i class="fab" > 
-        <object type="image/svg+xml" data="./assets/images/Google_Scholar_logo (1).svg"></object>
+        <object type="image/svg+xml" data="./assets/images/Google_Scholar_logo.svg"></object>
     </i>
     </a>
 
