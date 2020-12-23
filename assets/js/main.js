@@ -127,6 +127,20 @@ let footer = $(`
   <a class="social-icon-footer github" href="" target="_blank" rel="author">
     <i class="fab fa-github"></i>
       </a>
+    <a class="social-icon-footer instagram" href="" target="_blank" rel="author">
+      <i class="fab fa-instagram" ></i>
+    </a>
+    <a class="social-icon-footer google-scholar google-svg" href="" target="_blank" rel="author">
+      <i class="fab" > 
+        <object type="image/svg+xml" data="./assets/icons/google_scholar.svg"></object>
+      </i>
+    </a>
+    <a class="social-icon-footer codeforces" href="" target="_blank" rel="author">
+      <i class="fab"><span class="iconify" data-icon="simple-icons:codeforces" data-inline="false"></span></i>
+    </a>
+    <a class="social-icon-footer leetcode" href="" target="_blank" rel="author">
+      <i class="fab"><span class="iconify" data-icon="simple-icons:leetcode" data-inline="false"></span></i>
+    </a>
   </div>
 
   <div class="col-12 text-center">
