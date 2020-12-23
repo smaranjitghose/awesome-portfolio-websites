@@ -86,7 +86,7 @@ const projects = [
     title: "Movie Recommendation System",
     cardImage: "assets/images/project-page/movie-recommendation.jpeg",
     description:
-      "Movie Recommendation System built using Tensorflow.",
+      "Built using Tensorflow.",
     Previewlink: "",
     Githublink: "",
   },
@@ -94,7 +94,7 @@ const projects = [
     title: "Music Recommendation Engine",
     cardImage: "assets/images/project-page/music.jpg",
     description:
-      "Music Recommendation Engine built using Python.",
+      "Built using Python.",
     Previewlink: "",
     Githublink: "",
   },

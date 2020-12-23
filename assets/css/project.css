@@ -47,7 +47,7 @@ a:hover {
 .page-content {
   padding: 1rem;
   max-width: 1124px;
-  margin: 1rem auto;
+  /* margin: 1rem auto; */
 }
 
 @media(min-width: 60rem)
@@ -57,7 +57,7 @@ a:hover {
   }
 
   .card{
-    width: 30%;
+    width: 22%;
     column-gap: 3rem;
 
   }
@@ -92,7 +92,7 @@ a:hover {
 
 .card .wrapper {
   background-color: #fff;
-  min-height: 26rem;
+  min-height: 24rem;
   position: relative;
   overflow: hidden;
   box-shadow: 0 19px 38px var(--shadow1), 0 15px 12px var(--shadow2);
@@ -113,7 +113,7 @@ a:hover {
 @media(min-width: 60rem)
 {
   .card .data{
-    height: 50%;
+    height: 66%;
   }
 }
 
@@ -154,7 +154,7 @@ a:hover {
 @media(min-width: 60rem)
 {
   .card .title-div{
-    padding-bottom: 1.8em;
+    padding-bottom: 2.3rem;
   }
 }
 
@@ -318,7 +318,7 @@ a:hover {
 }
 @media (min-width: 800px) {
   .page-content {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -327,3 +327,11 @@ a:hover {
 		transform: translateY(calc(90px + 4em));
 	  }
   }
+
+  @media (min-width: 960px) {
+    .skill-card .data {
+      color: #fff;
+      transform: translateY(calc(80px + 4em));
+      padding: 5px;
+    }
+}
