@@ -131,8 +131,8 @@ let footer = $(`
       <i class="fab fa-instagram" ></i>
     </a>
     <a class="social-icon-footer google-scholar google-svg" href="" target="_blank" rel="author">
-      <i class="fab" > 
-        <object type="image/svg+xml" data="./assets/icons/google_scholar.svg"></object>
+      <i> 
+        <object type="image/svg+xml" data="./assets/images/google_scholar.svg"></object>
       </i>
     </a>
     <a class="social-icon-footer codeforces" href="" target="_blank" rel="author">
@@ -143,8 +143,8 @@ let footer = $(`
     </a>
   </div>
 
-  <div class="col-12 text-center">
-  <p><a href=" " class="col-sm-12 text-white">contact@johndoe.com</a></p>
+  <div class="col-12 text-center" style="display: inline-block;">
+  <p><a href=" " class="col-sm-12 text-white"><i class="fa fa-envelope" aria-hidden="true" style="margin-right: 5px"></i>contact@johndoe.com</a></p>
   </div>
 
   </div>

@@ -168,7 +168,8 @@ html[data-theme="dark"] {
 }
 .google-scholar i {
   margin: auto;
-  font-size: 24px;
+  height: 24px;
+  width: 24px;
   color: var(--col-icon-google-scholar);
   z-index: 1;
   transition: var(--trans-props);
@@ -258,7 +259,7 @@ html[data-theme="dark"] {
 
 .social-icon:hover i {
   color: #fff;
-
+  filter: brightness(10);
 }
 
 .social-icon:hover:after {
