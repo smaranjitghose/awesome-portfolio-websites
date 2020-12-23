@@ -552,6 +552,7 @@ html.transition *:after {
 
 .social-icon-footer:hover i {
   color: #000000;
+  filter: brightness(0);
 }
 
 /*Responsive*/
