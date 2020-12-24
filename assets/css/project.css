@@ -292,7 +292,7 @@ a:hover {
 /*social icons*/
 
 .social-icon svg {
-  margin-top: 10px;
+  margin-top: 4px;
 }
 .social-icon svg:hover {
   fill: #fff;
