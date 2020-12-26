@@ -44,17 +44,17 @@ let header = $(`
         <li><a class="white-text" href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
         <!--TOGGLE FOR LIGHT/DARK MODE-->
         <li>
-        <label for="switch" class="theme-switch">
-        <input class="toggle-checkbox" type="checkbox" id="switch" name="theme" />
-          <div class='toggle-slot'>
-          <div class='sun-icon-wrapper'>
-          <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
-          </div>
-          <div class='toggle-button'></div>
-          <div class='moon-icon-wrapper'>
-          <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
-          </div>
-          </div>
+          <label for="switch-1" class="theme-switch">
+            <input class="toggle-checkbox" type="checkbox" id="switch-1" name="theme" />
+            <div class='toggle-slot'>
+              <div class='sun-icon-wrapper'>
+                <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
+              </div>
+              <div class='toggle-button'></div>
+              <div class='moon-icon-wrapper'>
+                <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
+              </div>
+            </div>
           </label>
         </li>
     </ul>
@@ -74,9 +74,9 @@ let header = $(`
 
 <!--TOGGLE FOR LIGHT/DARK MODE-->
         <li>
-        <label for="switch" class="theme-switch">
-        <input class="toggle-checkbox" type="checkbox" id="switch" name="theme" />
-          <div class='toggle-slot side-toggle'>
+        <label for="switch-2" class="theme-switch">
+        <input class="toggle-checkbox" type="checkbox" id="switch-2" name="theme" />
+          <div class='toggle-slot'>
           <div class='sun-icon-wrapper'>
           <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
           </div>
@@ -178,7 +178,13 @@ bodyElement.append(footer);
 
 /*JavaScript for toggle for light/dark mode*/
 
-var checkbox = document.querySelector("input[name=theme]");
+
+
+if(window.innerWidth <= 992)
+  var checkbox = document.querySelector("#switch-2");
+else
+  var checkbox = document.querySelector("#switch-1");
+  console.log(checkbox)
 if (checkbox) {
   let a = localStorage.getItem("theme");
   document.documentElement.setAttribute("data-theme", a);
