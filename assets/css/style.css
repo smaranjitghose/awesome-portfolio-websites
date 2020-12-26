@@ -197,11 +197,13 @@ p {
   transition: background-color 250ms;
   margin-top: 1em;
   margin-left: 1.5em;
+  cursor: pointer;
 }
 
 .toggle-checkbox:checked ~ .toggle-slot {
   background-color: #374151;
 }
+
 
 .toggle-button {
   transform: translate(11.75em, 1.75em);
@@ -242,6 +244,7 @@ p {
   transition: opacity 150ms, transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
 }
 
+
 .toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
   opacity: 0;
   transform: translate(3em, 2em) rotate(0deg);
@@ -262,7 +265,7 @@ p {
   width: 3em;
   opacity: 0;
   transform: translate(11em, 2em) rotate(0deg);
-  transform-origin: 50% 50%;
+  transform-origin: 30% 50%;
   transition: opacity 150ms, transform 500ms cubic-bezier(0.26, 2.5, 0.46, 0.71);
 }
 
@@ -270,6 +273,7 @@ p {
   opacity: 1;
   transform: translate(12em, 2em) rotate(-15deg);
 }
+
 
 /*Transition for Toggle*/
 
