@@ -57,11 +57,15 @@ a:hover {
   }
 
   .card{
-    width: 22%;
+    width: 43%;
     column-gap: 3rem;
-
+    margin: 0 2rem;
+    transition: width 0.8s;
   }
 
+  .card:hover{
+    width:45%;
+  }
   .column{
     margin-left: 1.5rem;
   }
@@ -232,12 +236,21 @@ a:hover {
   }
 }
 
+.tagbutton{
+  background-color: lawngreen;
+  border-radius: 10px;
+  border:none;
+}
 .card input[type="checkbox"] {
   display: none;
 }
 
 .card input[type="checkbox"]:checked + .menu-content {
   transform: translateY(-60px);
+}
+
+input[type="text"]{
+  color:rgb(235, 148, 35);
 }
 
 .skill-card .wrapper:hover .menu-content span {
@@ -316,18 +329,24 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (min-width: 800px) {
   .page-content {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 800px) {
+	.skill-card .data {
+		transform: translateY(calc(0px));
+	  }
+  }
 
 @media (max-width: 377px) {
 	.skill-card .data {
 		transform: translateY(calc(90px + 4em));
 	  }
   }
-
   @media (min-width: 960px) {
     .skill-card .data {
       color: #fff;
