@@ -137,12 +137,12 @@ const fillData = () => {
             <div> ${authors} </div> <div class="rConferences"> ${conferences} 
             <div class="researchY">${researchYr}</div>
             </div>
-            
+        
             <!--CITE BUTTON-->
-            <div>
+            <div class="d-flex justify-content-end">
             
-            <a href="#" class="button button-accent button-small text-right button-abstract">ABSTRACT</a>
-            <a href="${citebox}" class="button button-accent button-small button-cite">CITE</a>
+            <a href="#" class="button button-accent">ABSTRACT</a>
+            <a href="${citebox}" class="button button-accent ml-2">CITE</a>
 
             </div>
             </td>
