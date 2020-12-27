@@ -79,6 +79,66 @@ html[data-theme="dark"] {
 
 /*Social icons*/
 
+.social {
+  margin-top: 100px;
+  width: 100%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px dashed #000000;
+  background-clip: content-box;
+  margin: 15px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 30px;
+}
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: #000000;
+  margin-left: -5px;
+  transform: translateX(10px) rotate(360deg);
+}
+
+.social .link.googlescholar {
+  background-color: #00ACEE;
+  color: #000000;
+}
+
+.social .link.instagram {
+  background-color: #8a3ab9;
+  color: #000000;
+}
+
+.social .link.codeforces {
+  background-color: #5DADE2;
+  color: #000000;
+}
+
+.social .link.leetcode {
+  background-color: #FF7F50 ;
+  color: #000000;
+}
+
+/*
 :root {
   --link-size: 64px;
   --trans-props: all 0.3s ease;
@@ -193,7 +253,7 @@ html[data-theme="dark"] {
 }
 
 /*** Social Icon Animations ***/
-
+/*
 .social-icon:hover {
   transform: translateY(-4px);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
@@ -210,7 +270,7 @@ html[data-theme="dark"] {
 a:hover {
   color: transparent;
 }
-
+*/
 /* Responsive */
 @media only screen and (max-width: 450px) {
   .text {
