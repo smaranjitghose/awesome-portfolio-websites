@@ -197,7 +197,7 @@ if (checkbox) {
       localStorage.setItem("theme", "light");
     } else { 
       /*
-      if there is click on toggler and if theme is light (initially it will be light) then the should convert to dark
+      if there is click on toggler and if theme is light (initially it will be light) then the theme should convert to dark
       */
       trans();
       document.documentElement.setAttribute("data-theme", "dark");
