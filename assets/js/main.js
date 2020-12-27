@@ -108,7 +108,7 @@ let footer = $(`
     </div>
     <!-- Social media icons for footer -->
 
-<div class="social-icons-footer mx-lg-auto">
+<div class="social-icons-footer mx-lg-auto" style="display:flex">
   <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
     <i class="fab fa-twitter"></i>
       </a>
