@@ -186,15 +186,16 @@ if (checkbox) {
   if (localStorage.getItem("theme") === "dark") {
     checkbox.checked = true;
   }
-  checkbox.addEventListener("change", function () {
-    if (this.checked) {
-      trans();
-      document.documentElement.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
-    } else {
+  let toggler = document.querySelector('.toggle-button');
+  toggler.addEventListener("click", () => {
+    if (checkbox.checked) {
       trans();
       document.documentElement.setAttribute("data-theme", "light");
       localStorage.setItem("theme", "light");
+    } else {
+      trans();
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
     }
   });
 
