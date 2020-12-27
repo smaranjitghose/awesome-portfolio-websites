@@ -152,7 +152,7 @@ let footer = $(`
                   <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" required>
               </fieldset>
               <fieldset class="form-group text-center">
-                  <textarea class="form-control" id="Message" placeholder="Message" required></textarea>
+                  <textarea class="form-control" id="message" placeholder="Message" required></textarea>
               </fieldset>
               <fieldset class="form-group text-xs-right text-center">
                   <button type="button" class="send-btn btn btn-lg">Send</button>
