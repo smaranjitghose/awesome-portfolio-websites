@@ -217,6 +217,12 @@ p {
     transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
   margin-top: -1.5em;
   margin-left: -7em;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.theme-switch {
+  pointer-events: none;
 }
 
 .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
