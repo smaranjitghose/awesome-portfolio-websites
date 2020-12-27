@@ -558,6 +558,11 @@ html.transition *:after {
   color: #000000;
 }
 
+textarea#message {
+  min-height: 65px;
+  max-height: 250px;
+}
+
 /*Responsive*/
 
 @media (min-width: 60rem) {
