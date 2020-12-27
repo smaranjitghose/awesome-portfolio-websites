@@ -181,18 +181,24 @@ bodyElement.append(footer);
 var checkbox = document.querySelector("input[name=theme]");
 if (checkbox) {
   let a = localStorage.getItem("theme");
-  document.documentElement.setAttribute("data-theme", a);
+  document.documentElement.setAttribute("data-theme", a); // setting the initial theme to light
 
   if (localStorage.getItem("theme") === "dark") {
     checkbox.checked = true;
   }
+
   let toggler = document.querySelector('.toggle-button');
+  // listening for click on toggler
   toggler.addEventListener("click", () => {
     if (checkbox.checked) {
+      // if theme is dark then on the toggler click we have to make it light
       trans();
       document.documentElement.setAttribute("data-theme", "light");
       localStorage.setItem("theme", "light");
-    } else {
+    } else { 
+      /*
+      if there is click on toggler and if theme is light (initially it will be light) then the should convert to dark
+      */
       trans();
       document.documentElement.setAttribute("data-theme", "dark");
       localStorage.setItem("theme", "dark");
