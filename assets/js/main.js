@@ -131,8 +131,8 @@ let footer = $(`
       </a>
   </div>
 
-  <div class="col-12 text-center">
-  <p><a href="#" class="col-sm-12 footer-email"><i class="fas fa-envelope-open"></i></a></p>
+  <div class="col-12 text-center footer-email-btn">
+  <p><a href="#" class="col-sm-12 social-icon-footer footer-email"><i class="fas fa-envelope-open"></i></a></p>
   </div>
 
   </div>
