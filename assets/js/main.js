@@ -152,7 +152,7 @@ let footer = $(`
                   <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" required>
               </fieldset>
               <fieldset class="form-group text-center">
-                  <textarea class="form-control" id="Message" placeholder="Message" required></textarea>
+                  <textarea class="form-control" id="message" placeholder="Message" required></textarea>
               </fieldset>
               <fieldset class="form-group text-xs-right text-center">
                   <button type="button" class="send-btn btn btn-lg">Send</button>
@@ -187,20 +187,27 @@ else
   console.log(checkbox)
 if (checkbox) {
   let a = localStorage.getItem("theme");
-  document.documentElement.setAttribute("data-theme", a);
+  document.documentElement.setAttribute("data-theme", a); // setting the initial theme to light
 
   if (localStorage.getItem("theme") === "dark") {
     checkbox.checked = true;
   }
-  checkbox.addEventListener("change", function () {
-    if (this.checked) {
-      trans();
-      document.documentElement.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
-    } else {
+
+  let toggler = document.querySelector('.toggle-button');
+  // listening for click on toggler
+  toggler.addEventListener("click", () => {
+    if (checkbox.checked) {
+      // if theme is dark then on the toggler click we have to make it light
       trans();
       document.documentElement.setAttribute("data-theme", "light");
       localStorage.setItem("theme", "light");
+    } else { 
+      /*
+      if there is click on toggler and if theme is light (initially it will be light) then the theme should convert to dark
+      */
+      trans();
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
     }
   });
 
