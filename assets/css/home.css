@@ -211,6 +211,28 @@ a:hover {
   color: transparent;
 }
 
+/* Footer icon container */
+
+.social-icons-footer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.social-icons-footer a:hover {
+  text-decoration: none;
+}
+
+a.footer-email {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.footer-email i {
+  color: #fff;
+  text-decoration: none;
+}
+
 /* Responsive */
 @media only screen and (max-width: 450px) {
   .text {

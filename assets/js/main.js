@@ -94,10 +94,10 @@ let footer = $(`
 <div class="webintern-footer-inner">
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 col-md-6 pt-3" >
-      <div class="col-sm-12 col-md-10 ml-lg-4">
+      <div class="pt-3">
+      <div class="pt-3 pb-3">
         <a class="webintern-footer-logo col-12 d-none d-md-inline-block" href="#">
-          <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
+          <center><img src="assets/images/John-Doe1.png"style="width: 220px;" class="ml-4"/></center>
         </a>
         <div class="simple-text text-center dark padding-sm">
           <p >
@@ -108,7 +108,7 @@ let footer = $(`
     </div>
     <!-- Social media icons for footer -->
 
-<div class="social-icons-footer mx-lg-auto">
+<div class="social-icons-footer">
   <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
     <i class="fab fa-twitter"></i>
       </a>
@@ -130,7 +130,7 @@ let footer = $(`
   </div>
 
   <div class="col-12 text-center">
-  <p><a href=" " class="col-sm-12 text-white">contact@johndoe.com</a></p>
+  <p><a href="#" class="col-sm-12 footer-email"><i class="fas fa-envelope-open"></i> contact@johndoe.com</a></p>
   </div>
 
   </div>
