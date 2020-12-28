@@ -139,7 +139,7 @@ const fillData = () => {
             </div>
             
             <!--CITE BUTTON-->
-            <div style="display:flex;margin-right:50%;">
+            <div class="d-flex justify-content-end" style="margin-right:5%;">
             
             <a href="#" class="button button-accent button-small text-right button-abstract">ABSTRACT</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="${citebox}" class="button button-accent button-small button-cite">CITE</a>
