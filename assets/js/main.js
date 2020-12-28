@@ -130,7 +130,7 @@ let footer = $(`
   </div>
 
   <div class="col-12 text-center">
-  <p><a href="#" class="col-sm-12 footer-email"><i class="fas fa-envelope-open"></i> contact@johndoe.com</a></p>
+  <p><a href="#" class="col-sm-12 footer-email"><i class="fas fa-envelope-open"></i></a></p>
   </div>
 
   </div>
