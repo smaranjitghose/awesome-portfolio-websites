@@ -19,6 +19,7 @@ html[data-theme="dark"] {
   --col-icon-medium: #00ab6c;
   --col-icon-kaggle: #41aff3;
   --col-icon-github: #24292e;
+  --col-white: #fff;
 }
 
 /* Particle effect*/
@@ -167,10 +168,10 @@ html[data-theme="dark"] {
   box-shadow: var(--twitter);
 }
 
-.social-icon.github:after {
+/* .social-icon.github:after {
   background-color: #24292e;
   box-shadow: var(--github);
-}
+} */
 
 .social-icon.linkedin:after {
   background-color: #0e76a8;
@@ -211,36 +212,155 @@ a:hover {
   color: transparent;
 }
 
-/* Footer icon container */
+/* Footer container */
 
-.social-icons-footer {
+.webintern-footer {
   display: flex;
-  width: 90%;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
   margin: auto;
 }
 
-.social-icons-footer a:hover {
-  text-decoration: none;
+.footer-left .footer-img {
+  width: 80%;
+  margin: 8px auto;
 }
 
-div.footer-email-btn {
+.footer-left img {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.footer-left .footer-text {
   width: 90%;
+  margin: 8px auto;
 }
 
-a.footer-email {
-  position: absolute;
+.footer-left .footer-text p {
+  font-size: 1rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: block;
 }
 
-a.footer-email i {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5rem;
-  position: relative;
+.footer-left .footer-icons {
+  display: flex;
+  width: 70%;
+  margin: 1rem auto;
+  justify-content: space-around;
+}
+
+.footer-left .footer-icons a {
+  border: 1px solid #fff;
+  background-color: rgb(212, 208, 208);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.footer-left .footer-icons a.instagram {
+  color: var(--col-icon-dribbble);
+}
+
+.footer-left .footer-icons a.git {
   color: #000;
-  right: 5.7px;
-  bottom: 1px;
 }
 
+.footer-left .footer-icons a:hover {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.footer-left .footer-icons a.twitter:hover {
+  color: var(--col-icon-twitter);
+}
+
+.footer-left .footer-icons a.instagram:hover {
+  color: var(--col-icon-dribbble);
+}
+
+.footer-left .footer-icons a.github:hover {
+  color: var(--col-white);
+}
+
+.footer-left .footer-icons a i {
+  padding: 8px;
+  font-size: 1.5rem;
+}
+
+.footer-left .footer-email {
+  width: 70%;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.footer-left .email-icon {
+  color: #fff;
+  padding: 12px;
+}
+
+.footer-left .email-icon i {
+  padding: 10px;
+  font-size: 2rem;
+}
+
+/* Contact Form */
+.footer-right {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.footer-right h6 {
+  text-transform: uppercase;
+  text-decoration: underline var(--col-icon-twitter);
+  margin-left: 8px;
+}
+
+::placeholder {
+  color: #000;
+  font-size: 1rem;
+}
+
+.footer-right .name, .footer-right .email, .footer-right .msg {
+  padding: 8px;
+}
+
+.footer-right .name input, .footer-right .email input, .footer-right .msg textarea {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 1px 8px;
+  background-color: #fff;
+  display: block;
+  width: 80%;
+}
+
+.footer-right .msg textarea {
+  width: 83%;
+  padding: 10px;
+  height: 8vh;
+}
+
+.footer-right form button {
+  width: 80%;
+  margin: 8px;
+  padding: 8px;
+  border: none;
+  background-color: var(--col-icon-medium);
+  color: #fff;
+  border-radius: 5px;
+}
 /* Responsive */
 @media only screen and (max-width: 450px) {
   .text {
@@ -250,6 +370,51 @@ a.footer-email i {
   a.footer-email i {
     font-size: 1.2rem;
     right: 8px;
+  }
+
+  .webintern-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-left, .footer-right {
+    width: 100%;
+  }
+
+  .footer-left .footer-icons  {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 3px;
+  }
+
+  .footer-left .footer-icons a  {
+    padding: 2px;
+  }
+
+  .footer-left .footer-text {
+    width: 100%;
+    margin: 8px auto;
+  }
+
+  .footer-left .footer-text p {
+    width: 100%;
+  }
+
+  .footer-left .email-icon i {
+    padding: 10px;
+    font-size: 1.8rem;
+  }
+
+  .footer-right .name input, .footer-right .email input  {
+    width: 98%;
+  }
+
+  .footer-right .msg textarea {
+    width: 104%;
+  }
+
+  .footer-right form button {
+    width: 98%;
+    margin: 8px;
   }
   
 }

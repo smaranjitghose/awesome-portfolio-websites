@@ -93,78 +93,56 @@ let header = $(`
 
 let footer = $(`
 <footer class="webintern-footer">
-<div class="webintern-footer-inner">
-  <div class="container">
-    <div class="row">
-      <div class="pt-3">
-      <div class="pt-3 pb-3">
-        <a class="webintern-footer-logo col-12 d-none d-md-inline-block" href="#">
-          <center><img src="assets/images/John-Doe1.png"style="width: 220px;" class="ml-4"/></center>
-        </a>
-        <div class="simple-text text-center dark padding-sm">
-          <p >
-            "Develop a passion for learning. If you do, you will never cease to grow."
-          </p>
-        <div class="empty-space xs-25 sm-25"></div>
-      </div>
+<div class="footer-left">
+  <div class="footer-img">
+    <img src="assets/images/John-Doe1.png" alt="User img" style="width:220px;">
+  </div>
+  <div class="footer-text">
+    <p style="color:#fff">"Develop a passion for learning. If you do, you will never cease to grow."</p>
+  </div>
+  <div class="footer-icons">
+    <a href="#" class="twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="#" class="instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" class="linkedin">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="#" class="git">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="#" class="medium">
+      <i class="fab fa-medium"></i>
+    </a>
+    <a href="#" class="dribbble">
+      <i class="fab fa-dribbble"></i>
+    </a>
+    <a href="#" class="kaggle">
+      <i class="fab fa-kaggle" id="kaggle-icon"></i>
+    </a>
+  </div>
+  <div class="footer-email">
+    <a href="#" class="email-icon">
+      <i class="fas fa-envelope-open"></i>
+    </a>
+  </div>
+</div>
+<div class="footer-right">
+  <h6 style="color:#fff;">Get in Touch</h6>
+  <form>
+    <div class="name">
+      <input type="text" name="name" placeholder="Enter Name" required>
     </div>
-    <!-- Social media icons for footer -->
-
-<div class="social-icons-footer">
-  <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
-    <i class="fab fa-twitter"></i>
-      </a>
-  <a class="social-icon-footer dribbble" href="" target="_blank" rel="author">
-    <i class="fab fa-dribbble"></i>
-      </a>
-  <a class="social-icon-footer linkedin" href="" target="_blank" rel="author">
-    <i class="fab fa-linkedin-in"></i>
-      </a>
-  <a class="social-icon-footer medium" href="" target="_blank" rel="author">
-    <i class="fab fa-medium-m"></i>
-      </a>
-  <a class="social-icon-footer kaggle" href="" target="_blank" rel="author">
-    <i class="fab fa-kaggle"></i>
-      </a>
-  <a class="social-icon-footer github" href="" target="_blank" rel="author">
-    <i class="fab fa-github"></i>
-      </a>
-  </div>
-
-  <div class="col-12 text-center footer-email-btn">
-  <p><a href="#" class="col-sm-12 social-icon-footer footer-email"><i class="fas fa-envelope-open"></i></a></p>
-  </div>
-
-  </div>
-
-      <div class="col-sm-6 col-md-5 pt-3 footer-2 mx-auto">
-
-        <!-- footer_title -->
-        <h4 class="webintern_footer_title h5">
-          <small>Get In Touch</small>
-        </h4>
-        <!-- TT-SUBSCRIBE -->
-
-      <div class="contact-form">
-          <form>
-              <fieldset class="form-group text-center">
-                  <input type="text" class="form-control" id="inputName" placeholder="Enter Name" required>
-              </fieldset>
-              <fieldset class="form-group text-center">
-                  <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" required>
-              </fieldset>
-              <fieldset class="form-group text-center">
-                  <textarea class="form-control" id="message" placeholder="Message" required></textarea>
-              </fieldset>
-              <fieldset class="form-group text-xs-right text-center">
-                  <button type="button" class="send-btn btn btn-lg">Send</button>
-              </fieldset>
-          </form>
-      </div>
-        <div class="empty-space marg-lg-b30"></div>
-      </div>
+    <div class="email">
+      <input type="email" name="email" placeholder="Enter Email" required>
     </div>
-  </div>
+    <div class="msg">
+      <textarea type="text" name="msg" placeholder="Message" required></textarea>
+    </div>
+    <button type="submit">Send</button>
+  </form>
 </div>
 
 <!-- <div class="tt-copy">
