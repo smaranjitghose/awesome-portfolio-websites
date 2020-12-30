@@ -61,11 +61,23 @@ body{
 
 /*Research page*/
 
-.researchMainWrapper {
+.txt-bottom{
+    height: 80vh;
+}
+
+.researchMainWrapper { 
     margin: 50px 0 200px;
     position: relative;                 
     color: var(--p-up);
 } 
+
+.researchMainWrapper tr{
+    transition: all 1s ease;
+}
+
+.researchMainWrapper tr:hover{
+    transform: scale(1.1);
+}
 
 #researchDetailsTable {
     border-collapse: separate;
