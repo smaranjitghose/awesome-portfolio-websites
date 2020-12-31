@@ -168,10 +168,10 @@ html[data-theme="dark"] {
   box-shadow: var(--twitter);
 }
 
-/* .social-icon.github:after {
+.social-icon.github:after {
   background-color: #24292e;
   box-shadow: var(--github);
-} */
+}
 
 .social-icon.linkedin:after {
   background-color: #0e76a8;
