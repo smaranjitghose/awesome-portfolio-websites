@@ -3,6 +3,7 @@ html[data-theme = 'light']
   --bg-col: #fafafa;
   --shadow1: rgba(0, 0, 0, 0.3);
   --shadow2: rgba(0, 0, 0, 0.2);
+  --project-info: rgb(46, 46, 46);
 }
 
 html[data-theme = 'dark']
@@ -10,6 +11,7 @@ html[data-theme = 'dark']
   --bg-col: black;
   --shadow1: rgba(128, 122, 122, 0.233);
   --shadow2: rgba(231, 216, 216, 0.007);
+  --project-info: #88365e;
 }
 
 /*For Changing background color of body according to theme*/
@@ -63,9 +65,6 @@ a:hover {
     transition: width 0.8s;
   }
 
-  .card:hover{
-    width:45%;
-  }
   .column{
     margin-left: 1.5rem;
   }
@@ -96,6 +95,8 @@ a:hover {
 
 .card .wrapper {
   background-color: #fff;
+  border: 0;
+  border-radius: 10px;
   min-height: 24rem;
   position: relative;
   overflow: hidden;
@@ -238,8 +239,9 @@ a:hover {
 
 .tagbutton{
   background-color: lawngreen;
-  border-radius: 10px;
+  border-radius: 4px;
   border:none;
+  padding: 5px 10px;
 }
 .card input[type="checkbox"] {
   display: none;
@@ -256,6 +258,11 @@ input[type="text"]{
 .skill-card .wrapper:hover .menu-content span {
   transform: translate(-50%, -10px);
   opacity: 1;
+}
+
+.skill-card {
+  border: 0;
+  border-radius: 10px;
 }
 
 .skill-card .header {
@@ -294,6 +301,7 @@ input[type="text"]{
 
 .skill-card .data {
   color: #fff;
+  background-color: var(--project-info);
   transform: translateY(calc(60px + 4em));
   padding: 5px;
 }
