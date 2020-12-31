@@ -185,8 +185,7 @@ if (checkbox) {
     if (checkbox.checked) {
       // if theme is dark then on the toggler click we have to make it light
       trans();
-      // changing the color
-      toggleDarkColor();
+
 
       document.documentElement.setAttribute("data-theme", "light");
       localStorage.setItem("theme", "light");
@@ -195,8 +194,7 @@ if (checkbox) {
       if there is click on toggler and if theme is light (initially it will be light) then the theme should convert to dark
       */
       trans();
-      // changing the color
-      toggleLightColor();
+
 
       document.documentElement.setAttribute("data-theme", "dark");
       localStorage.setItem("theme", "dark");
@@ -210,46 +208,4 @@ if (checkbox) {
     }, 1000);
   };
 
-  // function for changing color when dark theme is on.
-  let toggleDarkColor = () => {
-    footerText.style.color = '#fff';
-    emailIcon.style.color = '#fff';
-
-    footerIcons.forEach(icon => {
-        icon.style.backgroundColor = '#fff';
-        icon.style.border = '1px solid #fff';
-
-        // hover effect
-        icon.addEventListener('mouseover',  () => {
-          icon.style.backgroundColor = '#4d4d4d';
-          icon.style.border = '1px solid #4d4d4d';
-        });
-
-        icon.addEventListener('mouseleave',  () => {
-          icon.style.backgroundColor = '#fff';
-          icon.style.border = '1px solid #fff';
-        });
-    });
-  }
-
-  // function for changing color when the light theme is on.
-  let toggleLightColor = () => {
-    footerText.style.color = '#cccccc';
-    emailIcon.style.color = '#cccccc';
-
-    footerIcons.forEach(icon => {
-        icon.style.backgroundColor = '#cccccc';
-        icon.style.border = '1px solid #cccccc';
-        // hover effect
-        icon.addEventListener('mouseover',  () => {
-          icon.style.backgroundColor = '#000';
-          icon.style.border = '1px solid #000';
-        });
-
-        icon.addEventListener('mouseleave',  () => {
-          icon.style.backgroundColor = '#cccccc';
-          icon.style.border = '1px solid #cccccc';
-        });
-    });
-  } 
 }
