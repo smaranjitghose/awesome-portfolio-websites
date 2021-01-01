@@ -61,23 +61,11 @@ body{
 
 /*Research page*/
 
-.txt-bottom{
-    height: 80vh;
-}
-
-.researchMainWrapper { 
+.researchMainWrapper {
     margin: 50px 0 200px;
     position: relative;                 
     color: var(--p-up);
 } 
-
-.researchMainWrapper tr{
-    transition: all 1s ease;
-}
-
-.researchMainWrapper tr:hover{
-    transform: scale(1.1);
-}
 
 #researchDetailsTable {
     border-collapse: separate;
@@ -232,8 +220,6 @@ body{
 /*IMAGES SECTION OF LIST*/
 .rImg{
     margin-left: -2.5em;
-    width: 15em;
-    height: 15em;
 }
 
 .imgRes{
@@ -260,6 +246,14 @@ body{
     }
 }
 
+@media(min-width: 60rem)
+{
+    .rImg{
+        width: 15em;
+        height: 15em;
+    }
+}
+
 /*Button for Citing*/
 
 .button{
@@ -273,9 +267,22 @@ body{
     margin-top: 1em;
 }
 
+button-small{
+    font-size: 0.5rem;
+    font-weight: 700;
+}
+
+.button-cite{
+    margin-left: 3%;
+}
+
 .button-accent{
     color: var(--ppr-col);
     border-color: var(--ppr-col);
+}
+
+.button-abstract{
+    margin-left: 60%;
 }
 
 .button-accent:hover,
@@ -330,12 +337,11 @@ body{
     font-size: 1em;
 }
  
-
 /*Close button for popup*/
 
 .popup .close {
     position: absolute;
-    right: 30px;
+    left: 30px;
     top: 5px;
     transition: all 200ms;
     font-size: 30px;

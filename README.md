@@ -151,7 +151,6 @@ git push -u origin <your_branch_name>
 <a href="https://hakincodes.tech/"><img src="./assets/Readme_Assets/hakin_codes.png" width= "20%"/></a>
 <a href="https://scodein.tech/"><img src="./assets/Readme_Assets/sci.jpg" width= "20%" /></a>
 <a href="https://njackwinterofcode.github.io/"><img src="./assets/Readme_Assets/nwoc.JPG" width= "21%" /></a>
-<a href="https://devscript.tech/woc/"><img src="./assets/Readme_Assets/dwoc.png" width="20%"></a>
 </p>
 
 ## Code of Conduct

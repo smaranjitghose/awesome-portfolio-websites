@@ -40,7 +40,6 @@ let header = $(`
         <li><a class="white-text" href="projects.html">Projects</a></li>
         <li><a class="white-text" href="research.html">Research</a></li>
         <li><a class="white-text" href="education.html">Education</a></li>
-        <li><a class="white-text" href="skill.html">Skills</a></li>
         <li><a class="white-text" href="index.html">Blog</a></li>
         <li><a class="white-text" href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
         <!--TOGGLE FOR LIGHT/DARK MODE-->
@@ -51,7 +50,7 @@ let header = $(`
               <div class='sun-icon-wrapper'>
                 <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
               </div>
-              <div class='toggle-button-1 toggle-button'></div>
+              <div class='toggle-button'></div>
               <div class='moon-icon-wrapper'>
                 <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
               </div>
@@ -69,7 +68,6 @@ let header = $(`
 <li><a href="projects.html">Projects</a></li>
 <li><a href="research.html">Research</a></li>
 <li><a href="education.html">Education</a></li>
-<li><a href="skill.html">Skills</a></li>
 <li><a href="index.html">Blog</a></li>
 <li><a href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
 
@@ -82,7 +80,7 @@ let header = $(`
           <div class='sun-icon-wrapper'>
           <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
           </div>
-          <div class='toggle-button-2 toggle-button'></div>
+          <div class='toggle-button'></div>
           <div class='moon-icon-wrapper'>
           <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
           </div>
@@ -93,56 +91,78 @@ let header = $(`
 
 let footer = $(`
 <footer class="webintern-footer">
-<div class="footer-left">
-  <div class="footer-img">
-    <img src="assets/images/John-Doe1.png" alt="User img" style="width:220px;">
-  </div>
-  <div class="footer-text">
-    <p style="color:#cccccc">"Develop a passion for learning. If you do, you will never cease to grow."</p>
-  </div>
-  <div class="footer-icons">
-    <a href="#" class="twitter sub-footer-icon">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="#" class="instagram sub-footer-icon">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="#" class="linkedin sub-footer-icon">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="#" class="git sub-footer-icon">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="#" class="medium sub-footer-icon">
-      <i class="fab fa-medium"></i>
-    </a>
-    <a href="#" class="dribbble sub-footer-icon">
-      <i class="fab fa-dribbble"></i>
-    </a>
-    <a href="#" class="kaggle sub-footer-icon">
-      <i class="fab fa-kaggle" id="kaggle-icon"></i>
-    </a>
-  </div>
-  <div class="footer-email">
-    <a href="#" class="email-icon" style="color:#cccccc;">
-      <i class="fas fa-envelope-open"></i>
-    </a>
-  </div>
-</div>
-<div class="footer-right">
-  <h6 style="color:#fff;">Get in Touch</h6>
-  <form>
-    <div class="name">
-      <input type="text" name="name" placeholder="Enter Name" required>
+<div class="webintern-footer-inner">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-6 pt-3" >
+      <div class="col-sm-12 col-md-10 ml-lg-4">
+        <a class="webintern-footer-logo col-12 d-none d-md-inline-block" href="#">
+          <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
+        </a>
+        <div class="simple-text text-center dark padding-sm">
+          <p >
+            "Develop a passion for learning. If you do, you will never cease to grow."
+          </p>
+        <div class="empty-space xs-25 sm-25"></div>
+      </div>
     </div>
-    <div class="email">
-      <input type="email" name="email" placeholder="Enter Email" required>
+    <!-- Social media icons for footer -->
+
+<div class="social-icons-footer mx-lg-auto">
+  <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
+    <i class="fab fa-twitter"></i>
+      </a>
+  <a class="social-icon-footer dribbble" href="" target="_blank" rel="author">
+    <i class="fab fa-dribbble"></i>
+      </a>
+  <a class="social-icon-footer linkedin" href="" target="_blank" rel="author">
+    <i class="fab fa-linkedin-in"></i>
+      </a>
+  <a class="social-icon-footer medium" href="" target="_blank" rel="author">
+    <i class="fab fa-medium-m"></i>
+      </a>
+  <a class="social-icon-footer kaggle" href="" target="_blank" rel="author">
+    <i class="fab fa-kaggle"></i>
+      </a>
+  <a class="social-icon-footer github" href="" target="_blank" rel="author">
+    <i class="fab fa-github"></i>
+      </a>
+  </div>
+
+  <div class="col-12 text-center">
+  <p><a href=" " class="col-sm-12 text-white">contact@johndoe.com</a></p>
+  </div>
+
+  </div>
+
+      <div class="col-sm-6 col-md-5 pt-3 footer-2 mx-auto">
+
+        <!-- footer_title -->
+        <h4 class="webintern_footer_title h5">
+          <small>Get In Touch</small>
+        </h4>
+        <!-- TT-SUBSCRIBE -->
+
+      <div class="contact-form">
+          <form>
+              <fieldset class="form-group text-center">
+                  <input type="text" class="form-control" id="inputName" placeholder="Enter Name" required>
+              </fieldset>
+              <fieldset class="form-group text-center">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" required>
+              </fieldset>
+              <fieldset class="form-group text-center">
+                  <textarea class="form-control" id="Message" placeholder="Message" required></textarea>
+              </fieldset>
+              <fieldset class="form-group text-xs-right text-center">
+                  <button type="button" class="send-btn btn btn-lg">Send</button>
+              </fieldset>
+          </form>
+      </div>
+        <div class="empty-space marg-lg-b30"></div>
+      </div>
     </div>
-    <div class="msg">
-      <textarea type="text" name="msg" placeholder="Message" required></textarea>
-    </div>
-    <button type="submit">Send</button>
-  </form>
+  </div>
 </div>
 
 <!-- <div class="tt-copy">
@@ -158,48 +178,29 @@ bodyElement.append(footer);
 
 /*JavaScript for toggle for light/dark mode*/
 
-// selecting toggler dynamically as their are two separate code sections for the toggler to support both mobile screen and desktop screens
-if(window.innerWidth <= 992) {
-  var checkbox = document.querySelector("#switch-2");
-  var toggler = document.querySelector('.toggle-button-2');
-} else {
-  var checkbox = document.querySelector("#switch-1");
-  var toggler = document.querySelector('.toggle-button-1');
-}
 
+
+if(window.innerWidth <= 992)
+  var checkbox = document.querySelector("#switch-2");
+else
+  var checkbox = document.querySelector("#switch-1");
+  console.log(checkbox)
 if (checkbox) {
   let a = localStorage.getItem("theme");
-  document.documentElement.setAttribute("data-theme", a); // setting the initial theme to light
+  document.documentElement.setAttribute("data-theme", a);
 
   if (localStorage.getItem("theme") === "dark") {
     checkbox.checked = true;
   }
-
-  // selecting the footer text & footer icons
-  const footerText = document.querySelector('.footer-text p');
-  const footerIcons = document.querySelectorAll('.sub-footer-icon');
-  const emailIcon = document.querySelector('.email-icon');
-
-  // listening for click on toggler
-  toggler.addEventListener("click", () => {
-    if (checkbox.checked) {
-      // if theme is dark then on the toggler click we have to make it light
+  checkbox.addEventListener("change", function () {
+    if (this.checked) {
       trans();
-      // changing the color
-      toggleDarkColor();
-
-      document.documentElement.setAttribute("data-theme", "light");
-      localStorage.setItem("theme", "light");
-    } else { 
-      /*
-      if there is click on toggler and if theme is light (initially it will be light) then the theme should convert to dark
-      */
-      trans();
-      // changing the color
-      toggleLightColor();
-
       document.documentElement.setAttribute("data-theme", "dark");
       localStorage.setItem("theme", "dark");
+    } else {
+      trans();
+      document.documentElement.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
     }
   });
 
@@ -209,47 +210,4 @@ if (checkbox) {
       document.documentElement.classList.remove("transition");
     }, 1000);
   };
-
-  // function for changing color when dark theme is on.
-  let toggleDarkColor = () => {
-    footerText.style.color = '#fff';
-    emailIcon.style.color = '#fff';
-
-    footerIcons.forEach(icon => {
-        icon.style.backgroundColor = '#fff';
-        icon.style.border = '1px solid #fff';
-
-        // hover effect
-        icon.addEventListener('mouseover',  () => {
-          icon.style.backgroundColor = '#4d4d4d';
-          icon.style.border = '1px solid #4d4d4d';
-        });
-
-        icon.addEventListener('mouseleave',  () => {
-          icon.style.backgroundColor = '#fff';
-          icon.style.border = '1px solid #fff';
-        });
-    });
-  }
-
-  // function for changing color when the light theme is on.
-  let toggleLightColor = () => {
-    footerText.style.color = '#cccccc';
-    emailIcon.style.color = '#cccccc';
-
-    footerIcons.forEach(icon => {
-        icon.style.backgroundColor = '#cccccc';
-        icon.style.border = '1px solid #cccccc';
-        // hover effect
-        icon.addEventListener('mouseover',  () => {
-          icon.style.backgroundColor = '#000';
-          icon.style.border = '1px solid #000';
-        });
-
-        icon.addEventListener('mouseleave',  () => {
-          icon.style.backgroundColor = '#cccccc';
-          icon.style.border = '1px solid #cccccc';
-        });
-    });
-  } 
 }

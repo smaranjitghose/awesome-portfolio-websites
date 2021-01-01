@@ -135,7 +135,17 @@ html {
 
 .nav-wrapper a:hover,
 .sidenav a:hover {
-  text-decoration: none;
+  text-decoration-line: none;
+  color:red;
+  font-size: 1.15em;
+  font-style: bold;
+  font-weight: 5000;
+}
+
+.selected{
+  color:red;
+  font-size: 1.15em;
+  font-style: bold;
 }
 
 .nav-wrapper {
@@ -217,12 +227,6 @@ p {
     transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
   margin-top: -1.5em;
   margin-left: -7em;
-  cursor: pointer;
-  pointer-events: all;
-}
-
-.theme-switch {
-  pointer-events: none;
 }
 
 .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
@@ -564,11 +568,6 @@ html.transition *:after {
   color: #000000;
 }
 
-textarea#message {
-  min-height: 65px;
-  max-height: 250px;
-}
-
 /*Responsive*/
 
 @media (min-width: 60rem) {
@@ -594,31 +593,10 @@ textarea#message {
 }
 
 /*Animations*/
-
 .social-icon-footer:hover {
   transform: translateY(-4px);
 }
 
 .social-icon:hover:after {
   transform: translate(0) scale(1.2);
-}
-
-/* wave-hand animation */
-
-.wave {
-  animation-name: wave-animation;  
-  animation-duration: 2.5s;      
-  animation-iteration-count: infinite;  
-  transform-origin: 70% 70%;     
-  display: inline-block;
-}
-@keyframes wave-animation {
-  0% { transform: rotate( 0.0deg) }
- 10% { transform: rotate(14.0deg) }  
- 20% { transform: rotate(-8.0deg) }
- 30% { transform: rotate(14.0deg) }
- 40% { transform: rotate(-4.0deg) }
- 50% { transform: rotate(10.0deg) }
- 60% { transform: rotate( 0.0deg) }  
-100% { transform: rotate( 0.0deg) }
 }
