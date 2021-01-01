@@ -29,6 +29,8 @@ html[data-theme = 'dark']
 .s2
 {
     overflow-x: hidden;
+    margin:0;
+    padding:0;
 }
 
 .s2 .head{
@@ -56,7 +58,7 @@ html[data-theme = 'dark']
 }
 .s2 .card, .s2 img
 {
-    border-radius: 3rem;
+    border-radius: 4.5rem;
 }
 
 .s2 h4,h6,p{
@@ -91,10 +93,12 @@ html[data-theme = 'dark']
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+  border-radius: 25px;
 }
 
 .content:hover .content-overlay {
   opacity: 0.8;
+  border-radius:25px 25px 0px 0px;
 }
 
 .content-details {
@@ -110,6 +114,7 @@ html[data-theme = 'dark']
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+  border-radius: 0px 0px 25px 25px;
 }
 
 .content:hover .content-details {
@@ -117,30 +122,41 @@ html[data-theme = 'dark']
   top: 50%;
   opacity: 1;
   transition: 0.3s ease-in;
+  border-radius: 25px;
 }
 .fadeIn-bottom {
   top: 80%;
 }
 
 #mooc .card {
-  border-radius: 5px;
   background: #ecf0f3;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     0.3s box-shadow,
     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
+  background:#ffffff;
+  box-shadow:-3px -3px 5px #ffffff70, 3px 3px 15px #00000070;
+  border-radius: 25px;
+  border:none;
 }
 
 #mooc .card:hover {
+  background-color: #ffffffff;
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  background:#ffffff;
+  box-shadow: inset -3px -3px 5px #ffffff70, inset 3px 3px 15px #00000070;
+  border-radius: 25px 25px;
+  border:none;
 }
 #mooc .card-body {
-  background-color: #fff;
+  background-color: #ffffffff;
   padding:1px;
+  background:#ffffff;
+  box-shadow: inset -3px -3px 5px #ffffff70, inset 3px 3px 15px #00000070;
+  border-radius: 0px 0px 25px 25px;
+  border:none;
 }
 
 /* Certificate Carousel  */
@@ -154,4 +170,10 @@ html[data-theme = 'dark']
 #myCarousel img{
   height: 42vh;
   width: 52vh;
+}
+.neu
+{
+  background-color: #ffffff;
+  box-shadow: -5px -5px 8px 1px #ffffff80, 5px 5px 24px 1px #00000080;
+  border: none;
 }
