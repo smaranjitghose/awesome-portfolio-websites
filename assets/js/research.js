@@ -147,7 +147,6 @@ const fillData = () => {
             </div>
             </td>
             </tr>
-
             `)
         );
     researchTable.innerHTML = output;

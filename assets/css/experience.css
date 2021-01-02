@@ -404,6 +404,12 @@ ul ol{
 
 .mentorshipCard{
   margin-bottom: -5em;
+  transition: all 1s ease;
+}
+
+.mentorshipCard:hover
+{
+	transform: scale(1.08);
 }
 
 @media(min-width: 60rem)
