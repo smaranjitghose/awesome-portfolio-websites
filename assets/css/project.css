@@ -11,7 +11,7 @@ html[data-theme = 'dark']
   --bg-col: black;
   --shadow1: rgba(128, 122, 122, 0.233);
   --shadow2: rgba(231, 216, 216, 0.007);
-  --project-info: #88365e;
+  --project-info: rgba(0,0,0,0.55);
 }
 
 /*For Changing background color of body according to theme*/
