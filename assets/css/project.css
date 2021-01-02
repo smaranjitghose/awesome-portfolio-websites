@@ -71,12 +71,9 @@ a:hover {
 }
 
 .card .menu-content {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
   position: absolute;
-  float: left;
-  vertical-align: bottom;
+  right: 0;
 }
 
 .card .menu-content::before,
@@ -313,13 +310,19 @@ input[type="text"]{
 /*social icons*/
 
 .social-icon svg {
-  margin-top: 4px;
+  margin-top: 50px;
 }
 .social-icon svg:hover {
   fill: #fff;
 }
 
 /* Resopnsive*/
+@media only screen and (max-width: 768px) {
+  .social-icon svg {
+    margin-top: 0px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .project-box {
     margin-top: 18rem;
@@ -353,7 +356,11 @@ input[type="text"]{
 @media (max-width: 377px) {
 	.skill-card .data {
 		transform: translateY(calc(90px + 4em));
-	  }
+    }
+    
+    .social-icon svg {
+      margin-top: 20px;
+    }
   }
   @media (min-width: 960px) {
     .skill-card .data {
