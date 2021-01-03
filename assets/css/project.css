@@ -354,3 +354,24 @@ input[type="text"]{
       padding: 5px;
     }
 }
+.main{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.left {
+  position: relative;
+}
+
+.right {
+  position: relative;
+}
+
+
+@media screen and (max-width:480px){
+  .main {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+}
