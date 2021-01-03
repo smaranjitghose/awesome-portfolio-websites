@@ -7,7 +7,7 @@
 html[data-theme = 'light']
 {
     --bg-head : #f5f5f5;
-    --bg-col: #fafafa;
+    --bg-col: #E6E7EE;
     --p-up: black;
     --bg-cite-y: #f5f5f5;
     --cite-bg: #fff;
@@ -75,10 +75,6 @@ body{
     transition: all 1s ease;
 }
 
-.researchMainWrapper tr:hover{
-    transform: scale(1.1);
-}
-
 #researchDetailsTable {
     border-collapse: separate;
     border-width: 0;
@@ -92,7 +88,9 @@ body{
 }
 
 #researchDetailsTable tr{
-    box-shadow: 0.25rem 0.25rem 0.6rem var(--shadow-col1), 0 0.5rem 1.125rem var(--shadow-col2);
+    border-radius: 11px;
+box-shadow:  9px 9px 8px #cacaca,
+             -9px -9px 8px #f6f6f6;
 }
 
 #rDetailsHead {
@@ -276,13 +274,19 @@ body{
 .button-accent{
     color: var(--ppr-col);
     border-color: var(--ppr-col);
+    border: 0.2px solid var(--ppr-col);
+    border-radius: 4px;
+    box-shadow:  5px 5px 10px #b3b3b3,
+                 -5px -5px 10px #ffffff;
 }
 
 .button-accent:hover,
 .button-accent:focus{
-    background: var(--ppr-col);
-    color: #fff;
+    /* background: var(--ppr-col); */
+    color: var(--ppr-col);
     text-decoration: none;
+    box-shadow: inset 5px 5px 5px #bababa,
+            inset -5px -5px 5px #ffffff;
 }
 
 
