@@ -2,9 +2,9 @@
 
 html[data-theme = 'light']
 {
-  --bg1-color: #ecf0f3;
+  --bg1-color: #E7E5EE;
   --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  --border:1px solid #ecf0f3;
+  --border:1px solid #E7E5EE;
 }
 
 html[data-theme = 'dark']
@@ -12,6 +12,7 @@ html[data-theme = 'dark']
   --bg1-color: #272727;
   --shadow: 0 4px 8px 0 rgba(104, 102, 102, 0.2);
   --border:none;
+  --box-shadow:none;
 }
 
 /* -----Education Section CSS----- */
@@ -56,11 +57,15 @@ html[data-theme = 'dark']
     height: 90%;
     width: 90%;
 }
-.s2 .card, .s2 img
+.s2 .card
 {
     border-radius: 4.5rem;
 }
-
+.s2 img
+{
+  padding-top: 2rem;
+  border-radius: 50%;
+}
 .s2 h4,h6,p{
   color:black;
 }
@@ -93,12 +98,11 @@ html[data-theme = 'dark']
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
-  border-radius: 25px;
 }
 
 .content:hover .content-overlay {
   opacity: 0.8;
-  border-radius:25px 25px 0px 0px;
+  border-radius: 12px;
 }
 
 .content-details {
@@ -114,7 +118,6 @@ html[data-theme = 'dark']
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-  border-radius: 0px 0px 25px 25px;
 }
 
 .content:hover .content-details {
@@ -122,41 +125,32 @@ html[data-theme = 'dark']
   top: 50%;
   opacity: 1;
   transition: 0.3s ease-in;
-  border-radius: 25px;
 }
 .fadeIn-bottom {
   top: 80%;
 }
 
 #mooc .card {
-  background: #ecf0f3;
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     0.3s box-shadow,
     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
-  background:#ffffff;
-  box-shadow:-3px -3px 5px #ffffff70, 3px 3px 15px #00000070;
-  border-radius: 25px;
-  border:none;
+  border-radius: 12px;
+background: linear-gradient(145deg, #cfd0d6, #f6f7ff);
+box-shadow: 10px 10px 20px #e0e2e5, -10px -10px 20px #ffffffff;
 }
 
 #mooc .card:hover {
   background-color: #ffffffff;
   transform: scale(1.05);
   background:#ffffff;
-  box-shadow: inset -3px -3px 5px #ffffff70, inset 3px 3px 15px #00000070;
-  border-radius: 25px 25px;
-  border:none;
 }
 #mooc .card-body {
-  background-color: #ffffffff;
   padding:1px;
-  background:#ffffff;
-  box-shadow: inset -3px -3px 5px #ffffff70, inset 3px 3px 15px #00000070;
-  border-radius: 0px 0px 25px 25px;
-  border:none;
+  border-radius: 12px;
+  box-shadow: 10px 10px 20px #e0e2e5, -10px -10px 20px #ffffffff;
 }
 
 /* Certificate Carousel  */
@@ -165,15 +159,21 @@ html[data-theme = 'dark']
   margin-bottom: 6vh;
   height:42vh;
   width: 52vh;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #cfd0d6, #f6f7ff);
+  box-shadow: 10px 10px 20px #e0e2e5, -10px -10px 20px #ffffffff;
 }
 
 #myCarousel img{
   height: 42vh;
   width: 52vh;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #cfd0d6, #f6f7ff);
+  box-shadow: 10px 10px 20px #e0e2e5, -10px -10px 20px #ffffffff;
 }
 .neu
 {
-  background-color: #ffffff;
-  box-shadow: -5px -5px 8px 1px #ffffff80, 5px 5px 24px 1px #00000080;
-  border: none;
+  border-radius: 40px;
+  background: #E6E7EE;
+  box-shadow:  22px 22px 42px #bfc0c6, -22px -22px 42px #ffffff;
 }

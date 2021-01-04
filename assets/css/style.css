@@ -3,7 +3,7 @@ html[data-theme="light"] {
   --bg-mybtn: red;
   --bg-nav: #000000;
   --bg-nav-img: #000000;
-  --bg: #ffffff;
+  --bg: #E6E7EE;
   --text: #191919;
   --text-color: #6c757d;
 }
@@ -17,6 +17,7 @@ html[data-theme="dark"] {
   --text-color: #fff;
   --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
   --txt-fill: transparent;
+  --box-shadow:none;
 }
 
 body {

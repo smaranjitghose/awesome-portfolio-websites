@@ -20,6 +20,7 @@ html[data-theme="dark"] {
   --col-icon-kaggle: #41aff3;
   --col-icon-github: #24292e;
   --col-white: #fff;
+  --box-shadow:none;
 }
 
 /* Particle effect*/
