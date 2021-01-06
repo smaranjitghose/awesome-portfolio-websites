@@ -2,36 +2,33 @@
 
 html[data-theme="light"] {
   --bg1-color: #fff;
-  --text-color: #6C757D;
-  --shadow-col1: rgba(0,0,0,0.05);
-  --shadow-col2: rgba(75,0,0,0.05);
+  --text-color: #6c757d;
+  --shadow-col1: rgba(0, 0, 0, 0.05);
+  --shadow-col2: rgba(75, 0, 0, 0.05);
   --meta-col: #444;
   --head-col: black;
- }
- 
- html[data-theme="dark"] {
+}
+
+html[data-theme="dark"] {
   --bg1-color: #272727;
   --text-color: #fff;
   --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
   --txt-fill: transparent;
-  --shadow-col1:rgb(46, 37, 37);
-  --shadow-col2:rgba(21, 22, 22, 0.459);
+  --shadow-col1: rgb(46, 37, 37);
+  --shadow-col2: rgba(21, 22, 22, 0.459);
   --meta-col: rgb(155, 149, 149);
   --head-col: #fff;
-
-
- }
+}
 /*Main section*/
 
-.head-upper{
+.head-upper {
   background: var(--bg-txt-img);
   -webkit-background-clip: text;
   -webkit-text-fill-color: var(--txt-fill);
 }
 
-@media(min-width: 740px) and (max-width: 750px)
-{
-  section{
+@media (min-width: 740px) and (max-width: 750px) {
+  section {
     margin-bottom: 5rem;
   }
 }
@@ -65,16 +62,18 @@ html[data-theme="light"] {
 }
 
 .card1 {
-  box-shadow: 0.45rem 0.45rem 0.8rem var(--shadow-col1), 0 0.5rem 1.125rem var(--shadow-col2);
+  box-shadow: 0.45rem 0.45rem 0.8rem var(--shadow-col1),
+    0 0.5rem 1.125rem var(--shadow-col2);
   background: #fff;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   max-height: 80%;
-  border:none;
+  border: none;
+  transition: all 1s ease;
 }
 
-.card1:hover{
+.card1:hover {
   transform: scale(1.05);
 }
 
@@ -92,11 +91,11 @@ html[data-theme="light"] {
 
 .card1 .meta {
   margin-bottom: 22px;
-  margin:0;
+  margin: 0;
 }
 
-ul ol{
-  list-style: disc; 
+ul ol {
+  list-style: disc;
   padding: 3%;
 }
 
@@ -144,20 +143,19 @@ ul ol{
   color: #222;
   margin: 0.5em 0;
   margin-top: 5rem;
-  color:var(--text);
+  color: var(--text);
 }
 
-@media(min-width: 675px){
-  .heading1{
+@media (min-width: 675px) {
+  .heading1 {
     margin-top: 5em;
   }
 }
 
-@media(min-width: 60rem)
-{
-  .exp-head{
+@media (min-width: 60rem) {
+  .exp-head {
     margin-top: 0rem !important;
-  } 
+  }
 }
 
 .card-body .pre-heading {
@@ -176,7 +174,7 @@ ul ol{
   font-size: 12px;
 }
 
-.card-body h3{
+.card-body h3 {
   font-size: 2rem;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -201,8 +199,9 @@ ul ol{
   --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.volunteerCard{
-  box-shadow: 0.45rem 0.45rem 0.8rem var(--shadow-col1), 0 0.5rem 1.125rem var(--shadow-col2);
+.volunteerCard {
+  box-shadow: 0.45rem 0.45rem 0.8rem var(--shadow-col1),
+    0 0.5rem 1.125rem var(--shadow-col2);
 }
 
 .page-content {
@@ -276,7 +275,7 @@ ul ol{
   transition: transform calc(var(--d) * 2) var(--e);
 }
 
-.page-content .card:hover:after{
+.page-content .card:hover:after {
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,
@@ -299,7 +298,7 @@ ul ol{
   transition: ease-out;
 }
 
-.card-body p{
+.card-body p {
   margin: 0px;
   font-size: 14px;
 }
@@ -317,13 +316,13 @@ ul ol{
   z-index: 1;
 }
 
-.content:hover{
+.content:hover {
   background: transparent;
 }
 
- .content > * + * {
+.content > * + * {
   margin-top: 1rem;
-} 
+}
 
 .volunteerTitle {
   font-size: 1.5rem;
@@ -390,53 +389,58 @@ ul ol{
 
 /*Mentorship card*/
 
-.row{
+.row {
   display: flex;
   row-gap: 3em;
 }
 
-.column{
+.column {
   float: left;
   margin-bottom: 3rem;
   padding-left: 0;
   padding-right: 0;
 }
 
-.mentorshipCard{
+.mentorship-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6em !important;
+  row-gap: 8em !important;
+}
+
+.mentorshipCard {
   margin-bottom: -5em;
   transition: all 1s ease;
 }
 
-.mentorshipCard:hover
-{
-	transform: scale(1.08);
+.mentorshipCard:hover {
+  transform: scale(1.08);
 }
 
-@media(min-width: 60rem)
-{
-  .row{
+@media (min-width: 60rem) {
+  .row {
     margin-top: 0em;
   }
 
-  .mentorshipCard{
+  .mentorshipCard {
     width: 44%;
     column-gap: 3rem;
     margin-top: -3em;
     margin-bottom: 1em;
-    padding: 2em;
   }
 
-  .column{
+  .column {
     margin-left: 3rem;
   }
 }
 
-.card2{
+.card2 {
   background-color: var(--bg1-color);
   color: var(--text);
-  box-shadow: 0.45rem 0.45rem 0.8rem var(--shadow-col1), 0 0.5rem 1.125rem var(--shadow-col2);
+  box-shadow: 0.45rem 0.45rem 0.8rem var(--shadow-col1),
+    0 0.5rem 1.125rem var(--shadow-col2);
 }
 
-.card2 .fa{
+.card2 .fa {
   color: var(--text-color);
 }
