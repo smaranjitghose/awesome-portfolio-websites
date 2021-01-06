@@ -2,6 +2,7 @@
 
 html[data-theme="light"] {
   --bg-icon: #fff;
+   --bg1-color: #fff;
   --col-icon-twitter: #1da1f2;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
@@ -12,6 +13,7 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
+  --bg1-color: #272727;
   --bg-icon: rgba(255, 255, 255, 0.9);
   --col-icon-twitter: #1da1f2;
   --col-icon-dribbble: #ea4c89;
@@ -420,3 +422,25 @@ a:hover {
 }
 
 
+.card {
+   margin: 0 auto; /* Added */
+   float: none; /* Added */
+   border: none;
+}
+
+.heading{
+  margin-bottom:85px;
+
+}
+
+.mod-card-body{
+  color: var(--text);
+  background-color: var(--bg1-color);
+  margin: 0px;
+}
+
+
+ .resume{
+   width: 80%;
+   overflow: hidden;
+ }
