@@ -63,21 +63,15 @@ a:hover {
     transition: width 0.8s;
   }
 
-  .card:hover{
-    width:45%;
-  }
   .column{
     margin-left: 1.5rem;
   }
 }
 
 .card .menu-content {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
   position: absolute;
-  float: left;
-  vertical-align: bottom;
+  right: 0;
 }
 
 .card .menu-content::before,
@@ -96,6 +90,8 @@ a:hover {
 
 .card .wrapper {
   background-color: #fff;
+  border: 0;
+  border-radius: 10px;
   min-height: 24rem;
   position: relative;
   overflow: hidden;
@@ -238,8 +234,9 @@ a:hover {
 
 .tagbutton{
   background-color: lawngreen;
-  border-radius: 10px;
+  border-radius: 4px;
   border:none;
+  padding: 5px 10px;
 }
 .card input[type="checkbox"] {
   display: none;
@@ -256,6 +253,11 @@ input[type="text"]{
 .skill-card .wrapper:hover .menu-content span {
   transform: translate(-50%, -10px);
   opacity: 1;
+}
+
+.skill-card {
+  border: 0;
+  border-radius: 10px;
 }
 
 .skill-card .header {
@@ -294,6 +296,7 @@ input[type="text"]{
 
 .skill-card .data {
   color: #fff;
+  background-color: rgba(0,0,0,0.55);
   transform: translateY(calc(60px + 4em));
   padding: 5px;
 }
@@ -305,13 +308,19 @@ input[type="text"]{
 /*social icons*/
 
 .social-icon svg {
-  margin-top: 4px;
+  margin-top: 50px;
 }
 .social-icon svg:hover {
   fill: #fff;
 }
 
 /* Resopnsive*/
+@media only screen and (max-width: 768px) {
+  .social-icon svg {
+    margin-top: 0px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .project-box {
     margin-top: 18rem;
@@ -345,7 +354,11 @@ input[type="text"]{
 @media (max-width: 377px) {
 	.skill-card .data {
 		transform: translateY(calc(90px + 4em));
-	  }
+    }
+    
+    .social-icon svg {
+      margin-top: 20px;
+    }
   }
   @media (min-width: 960px) {
     .skill-card .data {
