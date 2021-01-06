@@ -7,7 +7,7 @@
 html[data-theme = 'light']
 {
     --bg-head : #f5f5f5;
-    --bg-col: #E6E7EE;
+    --bg-col: #E0E0E0;
     --p-up: black;
     --bg-cite-y: #f5f5f5;
     --cite-bg: #fff;
@@ -90,7 +90,7 @@ body{
 #researchDetailsTable tr{
     border-radius: 11px;
     box-shadow:  9px 9px 8px var(--shadow-col1),
-             -9px -9px 8px var(--shadow-col2);
+             -5px -5px 8px var(--shadow-col2);
 }
 
 #rDetailsHead {
@@ -277,7 +277,7 @@ body{
     border: 0.2px solid var(--ppr-col);
     border-radius: 4px;
     box-shadow:  5px 5px 10px var(--shadow-col1),
-                 -5px -5px 10px var(--shadow-col2);
+                 -4px -4px 10px var(--shadow-col2);
 }
 
 .button-accent:hover,
