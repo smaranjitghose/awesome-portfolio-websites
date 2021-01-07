@@ -356,12 +356,6 @@ input[type="text"]{
   }
 }
 
-@media (max-width: 800px) {
-	.skill-card .data {
-		transform: translateY(calc(0px));
-	  }
-  }
-
 @media (max-width: 377px) {
 	.skill-card .data {
 		transform: translateY(calc(90px + 4em));
