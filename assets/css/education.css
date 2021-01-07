@@ -137,9 +137,9 @@ html[data-theme = 'dark']
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 12px;
-background: linear-gradient(145deg, #cfd0d6, #f6f7ff);
-box-shadow: 10px 10px 20px #e0e2e5, -10px -10px 20px #ffffffff;
+  background: #ecf0f3;
+box-shadow:  13px 12px 20px #cbced1,
+ -9px -9px 8px #ffffff;
 }
 
 #mooc .card:hover {
@@ -149,8 +149,10 @@ box-shadow: 10px 10px 20px #e0e2e5, -10px -10px 20px #ffffffff;
 }
 #mooc .card-body {
   padding:1px;
-  border-radius: 12px;
-  box-shadow: 10px 10px 20px #e0e2e5, -10px -10px 20px #ffffffff;
+  border-radius: 9px;
+  background: #ecf0f3;
+  box-shadow:  13px 12px 20px #cbced1,
+   -9px -9px 8px #ffffff;
 }
 
 /* Certificate Carousel  */
@@ -173,7 +175,8 @@ box-shadow: 10px 10px 20px #e0e2e5, -10px -10px 20px #ffffffff;
 }
 .neu
 {
-  border-radius: 40px;
-  background: #E6E7EE;
-  box-shadow:  22px 22px 42px #bfc0c6, -22px -22px 42px #ffffff;
+  border-radius: 9px;
+  background: #ecf0f3;
+  box-shadow:  13px 12px 20px #cbced1,
+   -9px -9px 8px #ffffff;
 }
