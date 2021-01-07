@@ -171,7 +171,7 @@ if(window.innerWidth <= 992) {
 
 if (checkbox) {
   let a = localStorage.getItem("theme");
-  document.documentElement.setAttribute("data-theme", a); // setting the initial theme to light
+  document.documentElement.setAttribute("data-theme", a ? a : "light"); // setting the initial theme to light
 
   if (localStorage.getItem("theme") === "dark") {
     checkbox.checked = true;
