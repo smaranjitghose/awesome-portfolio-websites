@@ -167,6 +167,10 @@ body{
     font-size: 16px;
 }
 
+.paperAuthors{
+    font-weight: 500; /* medium */
+}
+
 .researchCitedNumber span,
 .researchY span {
     display: inline-block;
@@ -177,6 +181,7 @@ body{
 .rConferences{
     font-style: italic;
     font-size: 0.88em;
+    font-weight: 400; /* regular */
 }
 
 .researchY {
@@ -223,7 +228,7 @@ body{
 }
 
 .paperTitle{
-    font-weight: bold;
+    font-weight: 600;  /*semi-bold*/
     color: var(--ppr-col);
 }
 
