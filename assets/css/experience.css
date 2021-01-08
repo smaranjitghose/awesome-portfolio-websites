@@ -406,6 +406,7 @@ ul ol {
   justify-content: space-between;
   margin-top: 6em !important;
   row-gap: 8em !important;
+  margin-bottom: 2em;
 }
 
 .mentorshipCard {
