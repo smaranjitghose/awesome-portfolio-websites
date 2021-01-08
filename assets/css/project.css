@@ -44,12 +44,6 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.page-content {
-  padding: 1rem;
-  max-width: 1124px;
-  /* margin: 1rem auto; */
-}
-
 @media(min-width: 60rem)
 {
   .row{
@@ -234,6 +228,7 @@ a:hover {
 
 .tagbutton{
   background-color: lawngreen;
+  margin-top: 5px;
   border-radius: 4px;
   border:none;
   padding: 5px 10px;
@@ -256,6 +251,7 @@ input[type="text"]{
 }
 
 .skill-card {
+  width: 450px;
   border: 0;
   border-radius: 10px;
 }
@@ -314,6 +310,27 @@ input[type="text"]{
   fill: #fff;
 }
 
+#myInput {
+  width: 50%;
+  margin-bottom: 3%;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.page-content {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin: 1rem auto; */
+}
+
 /* Resopnsive*/
 @media only screen and (max-width: 768px) {
   .social-icon svg {
@@ -333,23 +350,11 @@ input[type="text"]{
   }
 }
 
-@media (min-width: 600px) {
-  .page-content {
-    grid-template-columns: repeat(2, 1fr);
+@media only screen and (max-width: 702px) {
+  #myInput {
+    width: 90%;
   }
 }
-
-@media (min-width: 800px) {
-  .page-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 800px) {
-	.skill-card .data {
-		transform: translateY(calc(0px));
-	  }
-  }
 
 @media (max-width: 377px) {
 	.skill-card .data {
