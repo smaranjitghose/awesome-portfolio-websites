@@ -1,9 +1,9 @@
 /*CSS variable declaration for light/dark mode*/
 html[data-theme="light"] {
   --bg-mybtn: red;
-  --bg-nav: #000000;
-  --bg-nav-img: #000000;
-  --bg: #ffffff;
+  --bg-nav:linear-gradient(to bottom,#c9c6c6 ,#242222 );
+  --bg-nav-img: linear-gradient(to bottom,#c9c6c6 ,#949191 );
+  --bg: linear-gradient(to bottom,#c9c6c6 ,#242222 );;
   --text: #191919;
   --text-color: #6c757d;
 }
