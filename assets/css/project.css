@@ -3,6 +3,10 @@ html[data-theme = 'light']
   --bg-col: #fafafa;
   --shadow1: rgba(0, 0, 0, 0.3);
   --shadow2: rgba(0, 0, 0, 0.2);
+
+  --neu-light: white;
+  --neu-dark: #c3c3c3;
+  --neu-color: #c3c3c3;
 }
 
 html[data-theme = 'dark']
@@ -10,6 +14,10 @@ html[data-theme = 'dark']
   --bg-col: black;
   --shadow1: rgba(128, 122, 122, 0.233);
   --shadow2: rgba(231, 216, 216, 0.007);
+
+  --neu-light: lightgrey;
+  --neu-dark: grey;
+  --neu-color: white;
 }
 
 /*For Changing background color of body according to theme*/
@@ -42,6 +50,32 @@ a:hover {
 .column{
   float: left;
   margin-bottom: 2rem;
+}
+
+.NeuInput-outer {
+  display: flex;
+  border-radius: 1rem;
+  background-color: var(--nue-light);
+  padding: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: .3rem .3rem .6rem var(--neu-dark), -.2rem -.2rem .5rem var(--neu-light); 
+}
+
+.NeuInput-outer #search {
+  position: absolute;
+  display: flex;
+  fill: var(--neu-dark);
+  margin: 1.7rem;
+}
+
+#myInput {
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  border: none;
+  margin-bottom: 0;
+  box-shadow: inset .2rem .2rem .5rem var(--neu-dark), inset -.2rem -.2rem .5rem var(--neu-light);
+  color: var(--neu-color);
 }
 
 @media(min-width: 60rem)
@@ -310,9 +344,9 @@ input[type="text"]{
   fill: #fff;
 }
 
-#myInput {
+.NeuInput-outer {
   width: 50%;
-  margin-bottom: 3%;
+  /* margin-bottom: 3%; */
 }
 
 .project-box {
@@ -351,7 +385,7 @@ input[type="text"]{
 }
 
 @media only screen and (max-width: 702px) {
-  #myInput {
+  .NeuInput-outer {
     width: 90%;
   }
 }
