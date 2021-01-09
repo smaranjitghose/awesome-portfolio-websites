@@ -55,25 +55,29 @@ a:hover {
 }
 
 .NeuInput-outer {
+  width: 500px;
   display: flex;
   border-radius: 1rem;
   background-color: var(--nue-light);
-  padding: 0.7rem;
+  padding: 0.5rem;
   margin-bottom: 3rem;
   box-shadow: .3rem .3rem .6rem var(--neu-dark), -.2rem -.2rem .5rem var(--neu-light); 
+  margin-left: auto;
+  margin-right: 3rem;
 }
 
 .NeuInput-outer #search {
   position: absolute;
   display: flex;
   fill: var(--neu-icon);
-  margin: 1.7rem;
+  margin: 1.25rem;
 }
 
 #myInput {
-  padding: 1rem 4rem;
+  padding: 0.5rem;
+  padding-left: 4rem;
   border-radius: 1rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   border: none;
   margin-bottom: 0;
   box-shadow: inset .2rem .2rem .5rem var(--neu-dark), inset -.2rem -.2rem .5rem var(--neu-light);
@@ -346,11 +350,6 @@ input[type="text"]{
   fill: #fff;
 }
 
-.NeuInput-outer {
-  width: 50%;
-  /* margin-bottom: 3%; */
-}
-
 .project-box {
   display: flex;
   flex-direction: column;
@@ -388,7 +387,8 @@ input[type="text"]{
 
 @media only screen and (max-width: 702px) {
   .NeuInput-outer {
-    width: 90%;
+    width: 300px;
+    margin: 0.3rem;
   }
 }
 
