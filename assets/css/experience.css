@@ -426,8 +426,7 @@ ul ol {
   .mentorshipCard {
     width: 44%;
     column-gap: 3rem;
-    margin-top: -3em;
-    margin-bottom: 1em;
+    margin: -3em auto 1em;
   }
 
   .column {

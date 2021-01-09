@@ -134,6 +134,34 @@ const mentor = [
     desp:
       "<li>Google Summer of Code is a global program focused on introducing students to open source software development.</li><hr /><li>It is a great platform to explore new areas, maybe discover a new career path!</li>",
   },
+  {
+    title: "HakinCode",
+    image: "assets/images/experience-page/hakin.png",
+    time: "06/2020 - 08/2020",
+    desp:
+      "<li>It is an open source community where students and mentors can apply.</li><hr /><li>Ample amount of technologies and projects are there and we are given opportunity to work on them according to our interest and knowledge.</li>",
+  },
+  {
+    title: "Google Summer of Code",
+    image: "assets/images/experience-page/gsoc.png",
+    time: "03/2020 - 08/2020",
+    desp:
+      "<li>Google Summer of Code is a global program focused on introducing students to open source software development.</li><hr /><li>It is a great platform to explore new areas, maybe discover a new career path!</li>",
+  },
+  {
+    title: "HakinCode",
+    image: "assets/images/experience-page/hakin.png",
+    time: "06/2020 - 08/2020",
+    desp:
+      "<li>It is an open source community where students and mentors can apply.</li><hr /><li>Ample amount of technologies and projects are there and we are given opportunity to work on them according to our interest and knowledge.</li>",
+  },
+  {
+    title: "Google Summer of Code",
+    image: "assets/images/experience-page/gsoc.png",
+    time: "03/2020 - 08/2020",
+    desp:
+      "<li>Google Summer of Code is a global program focused on introducing students to open source software development.</li><hr /><li>It is a great platform to explore new areas, maybe discover a new career path!</li>",
+  },
 ];
 
 const showCards3 = () => {
