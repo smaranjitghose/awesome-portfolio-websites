@@ -7,8 +7,6 @@ html[data-theme="light"] {
   --shadow-col2:#ffffff;
   --meta-col: #444;
   --head-col: black;
-  --head-shadow1-col: #babdc2;
-  --head-shadow2-col: #fff;
  }
  
  html[data-theme="dark"] {
@@ -20,8 +18,6 @@ html[data-theme="light"] {
   --shadow-col2:#1d1d1d;
   --meta-col: rgb(155, 149, 149);
   --head-col: #fff;
-  --head-shadow1-col: #080808;
-  --head-shadow2-col: #282828;
  }
 /*Main section*/
 
@@ -42,9 +38,6 @@ html[data-theme="light"] {
   width: 100%;
   padding-left: 4rem;
   padding-right: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .column {
   padding: 70px;
@@ -141,16 +134,12 @@ ul ol{
 }
 
 .heading1 {
-  width: 35%;
   font-size: 32px;
-  line-height: 2.2;
+  line-height: 1.2;
   font-weight: bold;
   color: #222;
   margin: 0.5em 0;
   margin-top: 5rem;
-  border-radius: 6px;
-  box-shadow: inset 5px 5px 4px var(--head-shadow1-col),
-              inset -5px -5px 4px var(--head-shadow2-col);
   color:var(--text);
 }
 
