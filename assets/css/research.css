@@ -66,7 +66,7 @@ body{
 }
 
 .researchMainWrapper { 
-    margin: 220px 0 200px;
+    margin: 50px 0 200px;
     position: relative;                 
     color: var(--p-up);
 } 
@@ -227,6 +227,19 @@ body{
     color: var(--ppr-col);
 }
 
+@media only screen and (max-width: 767px) {
+
+    .researchMainWrapper{
+        margin-top: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .researchMainWrapper{
+        margin-top: 250px;
+    }
+}
 /*IMAGES SECTION OF LIST*/
 .rImg{
     margin-left: -2.5em;
@@ -298,6 +311,7 @@ body{
        margin-top: 0em;
    }
 }
+
 
 /*Popup for cite*/
 

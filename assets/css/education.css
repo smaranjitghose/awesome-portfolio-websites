@@ -16,9 +16,6 @@ html[data-theme = 'dark']
 
 /* -----Education Section CSS----- */
 
-.edSection{
-  margin-top: 200px;
-}
 
 .sect
 {
@@ -65,6 +62,21 @@ html[data-theme = 'dark']
 
 .s2 h4,h6,p{
   color:black;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .edSection{
+        margin-top: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .edSection{
+        margin-top: 250px;
+    }
 }
 
 /* Card Hover Effect */
