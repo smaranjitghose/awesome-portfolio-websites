@@ -55,7 +55,7 @@ a:hover {
 }
 
 .NeuInput-outer {
-  width: 500px;
+  width: 330px;
   display: flex;
   border-radius: 1rem;
   background-color: var(--nue-light);
