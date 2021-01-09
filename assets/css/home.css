@@ -5,7 +5,7 @@ html[data-theme="light"] {
   --col-bd-radius:rgb(2, 2, 2);
   --col-box-shadow:#000000 2px 2px 4px, 
   #4D4D4D -2px -2px 4px;
- --col-box-shadow-hover:inset #000000 2px 2px 4px, 
+ --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
  inset #4D4D4D -2px -2px 4px;
   --col-bd-icon:transparent;
   --bg-icon: #fff;
@@ -14,7 +14,7 @@ html[data-theme="light"] {
   --col-icon-linkedin: #0e76a8;
   --col-icon-medium: #00ab6c;
   --col-icon-kaggle: #41aff3;
-  --col-icon-github: #39393a;
+  --col-icon-github:#24292e;  
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail:rgb(209, 82, 82);
   --col-icon-google-scholar:#3cba54;
@@ -36,7 +36,7 @@ html[data-theme="dark"] {
   --col-icon-linkedin: #0e76a8;
   --col-icon-medium: #00ab6c;
   --col-icon-kaggle: #41aff3;
-  --col-icon-github:  #434444;
+  --col-icon-github:  #24292e;
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail:rgb(209, 82, 82);
   --col-icon-google-scholar:#3cba54;
@@ -117,7 +117,7 @@ html[data-theme="dark"] {
   flex-flow: row wrap;
 }
 
-.social-icon {
+.socialicon {
   display: flex;
   position: relative;
   overflow: hidden;
@@ -133,7 +133,7 @@ html[data-theme="dark"] {
   overflow: hidden;
   width: var(--link-size);
   height: var(--link-size);
-  background-color: aliceblue;
+  background-color: #fff;
   margin: 8px;
   border-radius: 50%;
   box-shadow: 2px 5px 5px var(--shadow-col);
@@ -176,18 +176,6 @@ html[data-theme="dark"] {
   z-index: 1;
   transition: var(--trans-props);
 }
-.sub-footer-icon{
-  height: 55.75px !important;
-  width: 55px !important;
-}
-#kaggle-icon{
-  padding-left: 21px;
-}
-svg{
-  height: 35.3px;
-  width: 56px; 
-  padding-top: 14px;
-}
 .socialicon.twitter{
   color: var(--col-icon-twitter);
 }
@@ -219,48 +207,43 @@ svg{
   transform: translate(0, var(--link-size));
   border-radius: 50%;
   transition: var(--trans-props);
+  
 }
 
 .socialicon.twitter:after {
   background-color: #1da1f2;
   color: white;
   box-shadow: var(--twitter);
-  border-bottom: none;
 }
 
 .socialicon.github:after {
   background-color: #1f2122;
   color: white;
   box-shadow: var(--github);
-  border-bottom: none;
 } 
 
 .socialicon.linkedin:after {
   background-color: #0e76a8;
   color: white;
   box-shadow: var(--linkedin);
-  border-bottom: none;
 }
 
 .socialicon.kaggle:after {
   background-color: #41aff3;
   color: white;
   box-shadow: var(--kaggle);
-  border-bottom: none;
 }
 
 .socialicon.dribbble:after {
   background-color: #ea4c89;
   color: white;
   box-shadow: var(--kaggle);
-  border-bottom: none;
 }
 
 .socialicon.medium:after {
   background-color: #00ab6c;
   color: white;
   box-shadow: var(--medium);
-  border-bottom: none;
 }
 .social-icons a:hover{
   color:white ;
@@ -271,273 +254,11 @@ svg{
   transform: translateY(-4px);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
 }
-
 .socialicon:hover:after {
   transform: translate(0) scale(1.2);
 }
-.footer-icons a{
-  color:var(--col-icon);
-}
-.footer-icons .email-icon a{
-  color:var(--col-icon);  
-  box-shadow:  var(--col-box-shadow);
-}
-.footer-icons a:hover{
-
-  box-shadow:var(--col-box-shadow-hover);
-}
-/* Footer container */
-
-.webintern-footer {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-}
-.vl {
-  border-left: 1px solid var(--col-icon);
-  height: 300px;
-  margin-left: -6%;
-  opacity: 38%;
-} 
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  width: 59%;
-  margin: auto;
-  margin-left: -4%;
-}
-
-.footer-left .footer-text {
-  width: 90%;
-  margin: 8px auto;
-}
-
-.footer-left .footer-text p {
-  font-size: 1rem;
-  width: 80%;
-  margin: auto;
-  color: var(--col-icon);
-  text-align: center;
-  margin-bottom: 3%;
-  display: block;
-}
-
-.footer-left .footer-icons {
-  display: flex;
-  width: 70%;
-  margin: 1rem auto;
-  justify-content: space-around;
-}
-.footer-icons a{
-  box-shadow:  var(--col-box-shadow);
-  border-radius: 50%;
-}
-.footer-icons a:hover{
-  box-shadow: inset 5px 5px 10px rgba(22, 21, 21, 0.7), inset -5px -5px 10px rgba(255,255,255,0.1);
-  border-radius: 50%;
-}
-#mail{
-  padding: 5px;
-}
-.footer-left .footer-icons a.twitter:hover {
-  color: var(--col-icon-twitter);
-  border-radius: 50%;
-}
-.footer-left .footer-icons a.medium:hover {
-  color: var(--col-icon-medium);
-  border-radius: 50%;
-}
-.footer-left .footer-icons a.linkedin:hover {
-  color: var(--col-icon-linkedin);
-  border-radius: 50%;
-}
-.footer-left .footer-icons a.instagram:hover {
-  color:var(--col-icon-instagram);
-  border-radius: 50%;
-}
-.footer-left .footer-icons a.git:hover {
-  color: var(--col-icon-github) !important;
-  border-radius: 50%;
-}
- .footer-icons a.email-icon:hover {
-    color:var(--col-icon-mail) !important;
-  border-radius: 50%;
-  }
-  .footer-icons a.google-scholar:hover {
-    color: var(--col-icon-google-scholar) !important;
-  border-radius: 50%;
-  }
-  .footer-icons a.kaggle:hover {
-    color: var(--col-icon-kaggle) !important;
-  border-radius: 50%;
-  }
-  .footer-icons a.codeforces:hover {
-    color:var( --col-icon-codeforces) !important;
-  border-radius: 50%;
-  }
-  .footer-icons a.dribbble:hover {
-    color:  var(--col-icon-dribbble) !important;
-  border-radius: 50%;
-  }
-  .footer-icons a.leetcode:hover {
-    color:  var( --col-icon-leetcode) !important;
-  border-radius: 50%;
-  }
-.footer-left .footer-icons a i {
-  padding: 17px;
-  font-size: 1.4rem;
-}
-.footer-left .footer-email {
-  width: 70%;
-  margin: auto;
-  display: block;
-  text-align: center;
-}
-.footer-left .email-icon {
-  padding: 12px;
-}
-.footer-left .email-icon i {
-  padding: 10px;
-  font-size: 2rem;
-}
-/* Contact Form */
-.footer-right {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  margin: auto;
-  margin-right: -6%;
-  color:var(--col-icon);
-  margin-left: 3%;
-}
-.footer-right h6 {
-  text-transform: uppercase;
-  margin-left: 0px;
-  font-size: 1.5rem;
-  width: 77%;
-  color: var(--col-icon);
-  text-align: center;
-  padding: 0.5%;
-}
-#inputs{
-  border-radius: 20px;
-  outline: none;
-  border: none;
-  box-shadow: inset 5px 5px 10px rgba(22, 21, 21, 0.7), inset -5px -5px 10px rgba(255,255,255,0.1);
-  background:transparent;
-  color:var(--col-icon) !important;
-}
-
-.submit{
-  background-color: rgb(27, 129, 86) !important;
-  color:aliceblue !important;
-  font-weight: bold;
-  border-radius:50%;
-  width: 30%;
-  box-shadow: 2px 2px 4px rgb(27, 129, 86)  ,-2px -2px 4px rgba(59, 141, 109, 0.1); 
-}
-.submit:hover{
-  box-shadow: inset 2px 2px 4px  rgb(15, 65, 44) , inset -2px -2px 4px  rgba(114, 175, 152, 0.1);
-  color:aliceblue !important;
-}
-::placeholder {
-  color: var(--col-icon);
-  font-size: 1rem;
-}
-
-.footer-right .name, .footer-right .email, .footer-right .msg {
-  padding: 8px;
-}
-
-.footer-right .name input, .footer-right .email input, .footer-right .msg textarea {
-  padding: 1px 8px;
-  color: var(--col-icon);
-  display: block;
-  border: none;
-  width: 80%;
-}
-
-.footer-right .msg textarea {
-  width: 83%;
-  padding: 10px;
-  height: 8vh;
-}
-
-.footer-right form button {
-  width: 80%;
-  margin: 8px;
-  padding: 8px;
-  border: none;
-  background-color: var(--col-icon-medium);
-  color:var(--col-icon);
-  border-radius: 5px;
-}
-/* Responsive */
 @media only screen and (max-width: 450px) {
   .text {
     margin-top: 5rem;
   }
-
-  a.footer-email i {
-    font-size: 1.2rem;
-    right: 8px;
-  }
-
-  .webintern-footer {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer-left, .footer-right {
-    width: 100%;
-  }
-  .vl{
-    height: 0px;
-  }
-  #mail{
-    padding: 14px;
-  }
-  .footer-right h6{
-    margin-left: 35px;
-  }
-  .footer-left .footer-icons  {
-    width: 100%;
-    flex-wrap: wrap;
-    padding: 3px;
-  }
-
-  .footer-left .footer-icons a  {
-    padding: 2px;
-  }
-
-  .footer-left .footer-text {
-    width: 100%;
-    margin: 8px auto;
-  }
-
-  .footer-left .footer-text p {
-    width: 100%;
-  }
-  .footer-right{
-    margin: 0%;
-  }
-  .footer-left .email-icon i {
-    padding: 10px;
-    font-size: 1.8rem;
-  }
-
-  .footer-right .name input, .footer-right .email input  {
-    width: 98%;
-  }
-
-  .footer-right .msg textarea {
-    width: 104%;
-  }
-
-  .footer-right form button {
-    width: 98%;
-    margin: 8px;
-  }
-  
 }
-
-

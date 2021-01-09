@@ -112,10 +112,8 @@ let footer = $(`
         </a>
         <a href="#" class="kaggle sub-footer-icon" >
         <i class="fab fa-kaggle" id="kaggle-icon" ></i>
-        </a>
-       
-       <!--
-        <a href="#" class="google-scholar sub-footer-icon">
+        </a> 
+        <!-- <a href="#" class="google-scholar sub-footer-icon">
         <i class="ai ai-google-scholar-square ai-3x" ></i>
         </a>
          <a href="#" class="leetcode sub-footer-icon">
@@ -132,11 +130,9 @@ let footer = $(`
           </a>  -->
         </div>
     </div>
-    
-        <div class="vl"></div>
     <div class="footer-right">
       <h6 class="display-7">Get in Touch</h6>
-      <form>
+      <form style="width:80%; margin-left:7%;">
         <div class="name">
           <input type="text" name="name" placeholder="Name" id="inputs" required>
         </div>
