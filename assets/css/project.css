@@ -7,6 +7,7 @@ html[data-theme = 'light']
   --neu-light: white;
   --neu-dark: #c3c3c3;
   --neu-color: #c3c3c3;
+  --neu-icon: #c3c3c3;
 }
 
 html[data-theme = 'dark']
@@ -15,9 +16,10 @@ html[data-theme = 'dark']
   --shadow1: rgba(128, 122, 122, 0.233);
   --shadow2: rgba(231, 216, 216, 0.007);
 
-  --neu-light: lightgrey;
-  --neu-dark: grey;
+  --neu-light: #191919;
+  --neu-dark: #1d1d1d;
   --neu-color: white;
+  --neu-icon: whitesmoke;
 }
 
 /*For Changing background color of body according to theme*/
@@ -56,7 +58,7 @@ a:hover {
   display: flex;
   border-radius: 1rem;
   background-color: var(--nue-light);
-  padding: 1rem;
+  padding: 0.7rem;
   margin-bottom: 3rem;
   box-shadow: .3rem .3rem .6rem var(--neu-dark), -.2rem -.2rem .5rem var(--neu-light); 
 }
@@ -64,14 +66,14 @@ a:hover {
 .NeuInput-outer #search {
   position: absolute;
   display: flex;
-  fill: var(--neu-dark);
+  fill: var(--neu-icon);
   margin: 1.7rem;
 }
 
 #myInput {
   padding: 1rem 4rem;
   border-radius: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   border: none;
   margin-bottom: 0;
   box-shadow: inset .2rem .2rem .5rem var(--neu-dark), inset -.2rem -.2rem .5rem var(--neu-light);
