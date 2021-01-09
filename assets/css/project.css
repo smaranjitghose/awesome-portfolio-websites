@@ -12,12 +12,12 @@ html[data-theme = 'light']
 
 html[data-theme = 'dark']
 {
-  --bg-col: black;
+  --bg-col: #272727;
   --shadow1: rgba(128, 122, 122, 0.233);
   --shadow2: rgba(231, 216, 216, 0.007);
 
-  --neu-light: #191919;
-  --neu-dark: #1d1d1d;
+  --neu-light: #282828;
+  --neu-dark: #080808;
   --neu-color: white;
   --neu-icon: whitesmoke;
 }
