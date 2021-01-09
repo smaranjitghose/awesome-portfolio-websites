@@ -426,6 +426,7 @@ a:hover {
    margin: 0 auto; /* Added */
    float: none; /* Added */
    border: none;
+   height: 100%;
 }
 
 .heading{
