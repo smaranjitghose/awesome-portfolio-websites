@@ -16,6 +16,10 @@ html[data-theme = 'dark']
 
 /* -----Education Section CSS----- */
 
+.edSection{
+  margin-top: 200px;
+}
+
 .sect
 {
     height: 140vh;
