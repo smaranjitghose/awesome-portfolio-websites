@@ -70,7 +70,7 @@ html[data-theme="light"] {
   max-height: 80%;
   border:none;
   border-radius: 13px;
-  box-shadow: -3px -3px 4px var(--shadow-col2), 4px 4px 5px var(--shadow-col1);
+  box-shadow: -3px -3px 7px var(--shadow-col2), 4px 4px 5px var(--shadow-col1);
 }
 
 .card1 .card-body {
