@@ -121,13 +121,13 @@ const fillData = () => {
         ({image, title, authors, conferences, researchYr, citebox, absbox}) =>
         (output +=`
             <tr> 
-            <td class="imgCol"><img src="${image}" class="rImg"></td>
-            <td class = "researchTitleName">
-            <div><span class="imgResponsive"><img src="${image}" class="imgRes"></span></div>
-            <a href="#0" class="paperTitle"> ${title} </a> 
-            <div> ${authors} </div> <div class="rConferences"> ${conferences} 
-            <div class="researchY">${researchYr}</div>
-            </div>
+                <td class="imgCol"><img src="${image}" class="rImg"></td>
+                <td class = "researchTitleName">
+                <div><span class="imgResponsive"><img src="${image}" class="imgRes"></span></div>
+                    <a href="#0" class="paperTitle"> ${title} </a> 
+                <div> ${authors} </div> <div class="rConferences"> ${conferences} 
+                <div class="researchY">${researchYr}</div>
+                </div>
         
             <!--CITE BUTTON-->
             <div class="d-flex justify-content-end" style="margin-right:5%;">
@@ -194,6 +194,7 @@ const fillData = () => {
 
     //filling the wraper
     absPopWrap.innerHTML = output
-      
+
 };
 document.addEventListener("DOMContentLoaded", fillData);
+
