@@ -321,10 +321,13 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    transition: opacity 500ms;
+    transition: opacity 400ms ease-in;
     visibility: hidden;
     opacity: 0;
     z-index: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay:target {
@@ -335,11 +338,19 @@ body{
 .popup {
     margin: 20px auto;
     background: var(--cite-bg);
-    width: 50%;
+    width: 60%;
     position: relative;
-    transition: all 5s ease-in-out;
+    animation: moveUp 2s 0s ease alternate;
 }
-  
+
+@keyframes moveUp{
+    0%{
+        transform: translateY(15em);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
 .popup h5 {
     margin-top: 0;
     text-align: center;
@@ -397,7 +408,7 @@ body{
   
 @media screen and (max-width: 700px){
     .popup{
-      width: 100%;
+      width: 80%;
     }
 }
 
