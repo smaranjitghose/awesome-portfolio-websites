@@ -1,11 +1,17 @@
 /*CSS variable declaration for light/dark mode*/
 html[data-theme="light"] {
   --bg-mybtn: red;
-  --bg-nav: #000000;
-  --bg-nav-img: #000000;
+  --bg-nav: #1b1b1b;
+  --bg-nav-img: #1b1b1b;
   --bg: #ffffff;
   --text: #191919;
   --text-color: #6c757d;
+  --neu-background-img: linear-gradient(145deg, #1d1d1d, #181818);
+  --first-neu-shadow: #0b0b0b;
+  --last-neu-shadow: #2b2b2b;
+  --neu-background: #1b1b1b;
+  --first-inset-shadow: #0b0b0b;
+  --last-inset-shadow: #2b2b2b;
 }
 
 html[data-theme="dark"] {
@@ -17,6 +23,12 @@ html[data-theme="dark"] {
   --text-color: #fff;
   --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
   --txt-fill: transparent;
+  --neu-background-img: transparent;
+  --first-neu-shadow: #501081;
+  --last-neu-shadow: #553480;
+  --neu-background: transparent;
+  --first-inset-shadow: #4c1377;
+  --last-inset-shadow: transparent;
 }
 
 body {
@@ -41,6 +53,7 @@ html {
   font-size: 4em;
   font-weight: bolder;
   background: var(--bg-txt-img);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: var(--txt-fill);
   padding-bottom: 0.1em;
@@ -67,13 +80,29 @@ html {
 
 /*Navbar dark mode(research page)*/
 
-.black {
+.blackGray {
   background-color: var(--bg-nav);
   background-image: var(--bg-nav-img);
 }
 
 .nav-wrapper a {
   font-weight: bold;
+}
+
+.nav-items-container li.nav-list {
+  margin-left: 10px;
+  border-radius: 5px;
+  line-height: 44px;
+  margin-top: 10px;
+  background: var(--neu-background-img);
+  box-shadow:  5px 5px 10px var(--first-neu-shadow),
+              -2px -2px 10px var(--last-neu-shadow);
+}
+
+.nav-items-container li.nav-list:hover {
+  background: var(--neu-background);
+  box-shadow: inset 5px 5px 10px var(--first-inset-shadow),
+              inset -5px -5px 10px var(--last-inset-shadow);
 }
 
 .sidenav-trigger {
