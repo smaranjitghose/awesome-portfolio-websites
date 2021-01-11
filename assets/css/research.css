@@ -4,9 +4,8 @@
 
 /*Declaring CSS variables for Light mode*/
 
-html[data-theme = 'light']
-{
-    --bg-head : #ffffff;
+html[data-theme='light'] {
+    --bg-head: #ffffff;
     --bg-col: #dde1e7;
     --p-up: black;
     --bg-cite-y: #f5f5f5;
@@ -21,9 +20,10 @@ html[data-theme = 'light']
     --ppr-col: black;
 }
 
+
 /*Declaring CSS variables for Dark Mode*/
 
-html[data-theme = 'dark']{
+html[data-theme='dark'] {
     --bg-col: black;
     --text-gra: ;
     --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
@@ -39,39 +39,42 @@ html[data-theme = 'dark']{
     --cite-close: rgba(0, 0, 0, 0.192);
     --cite-hover: #fff;
     --hover-link: rgb(236, 103, 125);
-    --shadow-col1:rgb(29, 28, 28);
-    --shadow-col2:rgba(34, 34, 34, 0.459);
+    --shadow-col1: rgb(29, 28, 28);
+    --shadow-col2: rgba(34, 34, 34, 0.459);
     --ppr-col: rgb(231, 85, 109);
 }
 
+
 /*For Changing background color of body according to theme*/
-body{
+
+body {
     background: var(--bg-col) !important;
 }
 
 *,
 *:before,
-*:after{
+*:after {
     box-sizing: border-box;
 }
 
-.p-upper{
+.p-upper {
     color: var(--p-up);
 }
+
 
 /*Research page*/
 
-.txt-bottom{
+.txt-bottom {
     height: 80vh;
 }
 
-.researchMainWrapper { 
+.researchMainWrapper {
     margin: 50px 0 200px;
-    position: relative;                 
+    position: relative;
     color: var(--p-up);
-} 
+}
 
-.researchMainWrapper tr{
+.researchMainWrapper tr {
     transition: all 1s ease;
 }
 
@@ -87,14 +90,13 @@ body{
     width: 100%;
 }
 
-#researchDetailsTable tr{
+#researchDetailsTable tr {
     border-radius: 13px;
-    box-shadow: -3px -3px 7px #ffffff73,
-    2px 2px 5px rgba(94, 104, 121, 0.288);
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 
 #rDetailsHead {
-    z-index: 700;                             
+    z-index: 700;
     background-color: #f5f5f5;
     height: 42px;
     box-sizing: border-box;
@@ -152,12 +154,13 @@ body{
 }
 
 .researchTitleName {
-    padding: 16px;
-    vertical-align: top;
+    position: bottom;
+    vertical-align: bottom;
+    padding: 20px;
     text-align: left;
 }
 
-.paperTitle:hover{
+.paperTitle:hover {
     text-decoration: none;
     color: var(--hover-link);
 }
@@ -174,7 +177,7 @@ body{
     color: grey;
 }
 
-.rConferences{
+.rConferences {
     font-style: italic;
     font-size: 0.88em;
 }
@@ -188,27 +191,27 @@ body{
     margin-bottom: 14%;
 }
 
-.researchCite{
+.researchCite {
     text-align: right;
     vertical-align: top;
 }
 
-.resCite{
+.resCite {
     display: none;
 }
 
 
 /*Profile pic responsiveness*/
-@media only screen and (max-width: 711px) {
 
-    .researchCite{
+@media only screen and (max-width: 711px) {
+    .researchCite {
         display: none;
     }
-
-    .resCite{
+    .resCite {
         display: block;
     }
 }
+
 
 /*Responsive*/
 
@@ -216,53 +219,52 @@ body{
     .researchTitleName a {
         font-size: 14px;
     }
-
     .researchTitleName div {
         font-size: 12px;
     }
 }
 
-.paperTitle{
+.paperTitle {
     font-weight: bold;
     color: var(--ppr-col);
 }
 
+
 /*IMAGES SECTION OF LIST*/
-.rImg{
+
+.rImg {
     margin-left: -2.5em;
     width: 17em;
     height: 17em;
     border-radius: 10px;
-
 }
 
-.imgRes{
+.imgRes {
     width: 14em;
     height: 14em;
 }
 
-.imgResponsive{
+.imgResponsive {
     display: none;
     margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 711px) {
-    .imgResponsive{
+    .imgResponsive {
         display: block;
     }
-
-    .rImg{
+    .rImg {
         display: none;
     }
-
-    .imgCol{
+    .imgCol {
         display: none;
     }
 }
 
+
 /*Button for Citing*/
 
-.button{
+.button {
     text-decoration: none;
     text-transform: uppercase;
     /* border-width: 2px;
@@ -273,31 +275,29 @@ body{
     margin-top: 1em;
 }
 
-.button-accent{
-    color: var(--ppr-col); 
+.button-accent {
+    color: var(--ppr-col);
     /* border-color: var(--ppr-col);
     border: 0.2px solid var(--ppr-col);  */
     border-radius: 4px;
-    box-shadow: -3px -3px 9px #ffffff73,
-    2px 2px 9px rgba(94, 104, 121, 0.288);
+    box-shadow: -3px -3px 9px #ffffff73, 2px 2px 9px rgba(94, 104, 121, 0.288);
 }
 
 .button-accent:hover,
-.button-accent:focus{
+.button-accent:focus {
     /* background: var(--ppr-col); */
     text-decoration: none;
     color: purple;
-    box-shadow:inset -3px -3px 9px #ffffff73,
-    inset 2px 2px 9px rgba(94, 104, 121, 0.288);
+    box-shadow: inset -3px -3px 9px #ffffff73, inset 2px 2px 9px rgba(94, 104, 121, 0.288);
 }
 
-
-@media(min-width: 60rem){
-   .button{
-       font-size: 0.9rem;
-       margin-top: 0em;
-   }
+@media(min-width: 60rem) {
+    .button {
+        font-size: 0.9rem;
+        margin-top: 0em;
+    }
 }
+
 
 /*Popup for cite*/
 
@@ -317,7 +317,7 @@ body{
     visibility: visible;
     opacity: 1;
 }
-  
+
 .popup {
     margin: 20px auto;
     background: var(--cite-bg);
@@ -325,7 +325,7 @@ body{
     position: relative;
     transition: all 5s ease-in-out;
 }
-  
+
 .popup h5 {
     margin-top: 0;
     text-align: center;
@@ -335,7 +335,7 @@ body{
     position: sticky;
     font-size: 1em;
 }
- 
+
 
 /*Close button for popup*/
 
@@ -359,60 +359,59 @@ body{
     font-size: 1em;
 }
 
+
 /*Responsive*/
 
-@media(min-width: 60rem)
-{
-    .cite-div{
+@media(min-width: 60rem) {
+    .cite-div {
         margin-top: -2em;
     }
-
-    .popup h5{
+    .popup h5 {
         padding: 15px;
         font-size: 1.6em;
     }
-
-    .popup .close{
+    .popup .close {
         top: 20px;
     }
-
-    .popup .content{
+    .popup .content {
         font-size: 1em;
     }
 }
-  
-@media screen and (max-width: 700px){
-    .popup{
-      width: 100%;
+
+@media screen and (max-width: 700px) {
+    .popup {
+        width: 100%;
     }
 }
 
+
 /*Table for research works*/
 
-.left-cell{
+.left-cell {
     font-size: 0.8em;
     text-align: right;
     color: grey;
     vertical-align: top;
 }
 
-.right-cell{
+.right-cell {
     font-size: 0.8em;
     color: var(--p-up);
 }
 
- /*social icons footer*/
 
- .social-icons-footer {
+/*social icons footer*/
+
+.social-icons-footer {
     font-size: 20px;
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
     width: 220px;
     display: block;
-  }
-  
-  .social-icon-footer {
+}
+
+.social-icon-footer {
     display: flex;
     position: relative;
     overflow: hidden;
@@ -423,48 +422,46 @@ body{
     border-radius: 50%;
     text-decoration: none;
     float: left;
-  }
-  
-  .social-icon-footer i {
+}
+
+.social-icon-footer i {
     margin: auto;
     font-size: 15px;
     color: #fff;
-  }
-  
-  .social-icon-footer:hover i {
+}
+
+.social-icon-footer:hover i {
     color: #000000;
-  }
-  
-  /*Responsive*/
-  
-  @media(min-width: 60rem)
-  {
-    .social-icons-footer{
-      width: 280px;
+}
+
+
+/*Responsive*/
+
+@media(min-width: 60rem) {
+    .social-icons-footer {
+        width: 280px;
     }
-  
-    .social-icon-footer{
-      width: var(--link-size-footer-b);
-      height: var(--link-size-footer-b);
+    .social-icon-footer {
+        width: var(--link-size-footer-b);
+        height: var(--link-size-footer-b);
     }
-  
-    .social-icon-footer i{
-      font-size: 20px;
+    .social-icon-footer i {
+        font-size: 20px;
     }
-  }
-  
-  /*Animations*/
-  
-  .social-icon-footer:hover {
+}
+
+
+/*Animations*/
+
+.social-icon-footer:hover {
     transform: translateY(-4px);
     box-shadow: 0px 4px 12px rgb(100, 248, 233);
-  }
-  
-  .social-icon:hover:after {
+}
+
+.social-icon:hover:after {
     transform: translate(0) scale(1.2);
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: transparent;
-  }
-  
+}
