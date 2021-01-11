@@ -129,22 +129,20 @@ const fillData = () => {
         ({ image, title, authors, conferences, researchYr, citebox }) =>
         (output += `
             <tr> 
-            <td class="imgCol"><img src="${image}" class="rImg"></td>
-            <td class = "researchTitleName" style="right:1px;">
-            <div><span class="imgResponsive"><img src="${image}" class="imgRes"></span></div>
-            <a href="#0" class="paperTitle"> ${title} </a> 
-            <div> ${authors} </div> <div class="rConferences"> ${conferences} 
-            <div class="researchY">${researchYr}</div>
-            </div>
-        
-                <!--CITE BUTTON-->
-                <div class="d-flex justify-content-end" style="margin-right:-20px;">
-                
-                <a href="#" class="button button-accent button-small text-right button-abstract" style="margin-right:-5px;" >ABSTRACT</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="${citebox}" class="button button-accent button-small button-cite" style="margin-right:-20px;" >CITE</a
-
-                </div>
-            </td>
+                <td class="imgCol"><img src="${image}" class="rImg"></td>
+                <td class = "researchTitleName" style="right:1px; padding:5px; top-padding:5px; bottom:padding:5px; margin:5px;border:5px;">
+                    <div><span class="imgResponsive"><img src="${image}" class="imgRes"></span></div>
+                    <a href="#0" class="paperTitle"> ${title} </a> 
+                    <div> ${authors} </div> <div class="rConferences"> ${conferences} 
+                    <div class="researchY">${researchYr}</div>
+                    </div>
+                    <!--CITE BUTTON-->
+                        <div class="d-flex justify-content-end " style="margin-right:-20px; margin-bottom:5px">
+                        
+                        <a href="#" class="button button-accent button-small text-right button-abstract " style="margin-right:-5px;" >ABSTRACT</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="${citebox}" class="button button-accent button-small button-cite " style="margin-right:-20px;" >CITE</a
+                    </div>
+                </td>
             </tr>
             `)
     );
