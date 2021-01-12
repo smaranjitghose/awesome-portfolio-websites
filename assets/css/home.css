@@ -212,42 +212,34 @@ html[data-theme="dark"] {
 
 .socialicon.twitter:after {
   background-color: #1da1f2;
-  color: white;
   box-shadow: var(--twitter);
 }
 
 .socialicon.github:after {
   background-color: #1f2122;
-  color: white;
   box-shadow: var(--github);
 } 
 
 .socialicon.linkedin:after {
   background-color: #0e76a8;
-  color: white;
   box-shadow: var(--linkedin);
 }
 
 .socialicon.kaggle:after {
   background-color: #41aff3;
-  color: white;
   box-shadow: var(--kaggle);
 }
 
 .socialicon.dribbble:after {
   background-color: #ea4c89;
-  color: white;
   box-shadow: var(--kaggle);
 }
 
 .socialicon.medium:after {
   background-color: #00ab6c;
-  color: white;
   box-shadow: var(--medium);
 }
-.social-icons a:hover{
-  color:white ;
-}
+
 /*** Social Icon Animations ***/
 
 .socialicon:hover {
@@ -257,6 +249,13 @@ html[data-theme="dark"] {
 .socialicon:hover:after {
   transform: translate(0) scale(1.2);
 }
+.socialicon:hover i {
+  color: #fff;
+}
+a:hover {
+  color: transparent;
+}
+
 @media only screen and (max-width: 450px) {
   .text {
     margin-top: 5rem;
