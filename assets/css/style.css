@@ -60,11 +60,13 @@ html {
   text-decoration: none;
 }
 
+.sidenav{
+   z-index: 1031;
+}
 .nav-wrapper {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 /*Navbar dark mode(research page)*/
 
 .black {

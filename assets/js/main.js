@@ -66,6 +66,7 @@ let header = $(`
 
 <!--Side Nav Bar -->
 <ul class="sidenav" id="mobile-demo">
+<li><a class="sidenav-close" href="#!"><i class="material-icons">close</i></a></li>
 <li><a href="index.html">Home</a></li>
 <li><a href="experience.html">Experience</a></li>
 <li><a href="projects.html">Projects</a></li>
@@ -73,8 +74,6 @@ let header = $(`
 <li><a href="education.html">Education</a></li>
 <li><a href="skill.html">Skills</a></li>
 <li><a href="index.html">Blog</a></li>
-
-
 
 <!--TOGGLE FOR LIGHT/DARK MODE-->
         <li>
