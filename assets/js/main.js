@@ -75,8 +75,6 @@ let header = $(`
 <li><a href="skill.html">Skills</a></li>
 <li><a href="index.html">Blog</a></li>
 
-
-
 <!--TOGGLE FOR LIGHT/DARK MODE-->
         <li>
         <label for="switch-2" class="theme-switch">
