@@ -5,60 +5,48 @@ const projects = [
   {
     title: "Quiz App",
     cardImage: "assets/images/project-page/quiz.jpg",
-    description:
-      "A quiz app built using basic react.",
-    tag:
-      "React.js",
+    description: "A quiz app built using basic react.",
+    tag: "React.js",
     Previewlink: "",
     Githublink: "",
   },
   {
     title: "Chess Engine",
     cardImage: "assets/images/project-page/chess.jpg",
-    description:
-      "A chess engine for a popular game dev engine.",
-    tag:
-      "Game dev",
+    description: "A chess engine for a popular game dev engine.",
+    tag: "Game dev",
     Previewlink: "",
     Githublink: "",
   },
   {
     title: "Flappy Bird",
     cardImage: "assets/images/project-page/flappybird.png",
-    description:
-      "Flappy bird game built using React.js",
-    tag:
-      "React.js",
+    description: "Flappy bird game built using React.js",
+    tag: "React.js",
     Previewlink: "",
     Githublink: "",
   },
   {
     title: "Exercise Tracker",
     cardImage: "assets/images/project-page/exercise.jpg",
-    description:
-      "Exercise tracker built using basic redux.",
-    tag:
-      "Redux",
+    description: "Exercise tracker built using basic redux.",
+    tag: "Redux",
     Previewlink: "",
     Githublink: "",
   },
   {
     title: "Recipe Ingredient Parser",
     cardImage: "assets/images/project-page/recipe.jpg",
-    description:
-      "Recipe Ingredient Parser built using JavaScript.",
-    tag:
-      "JavaScript",
+    description: "Recipe Ingredient Parser built using JavaScript.",
+    tag: "JavaScript",
     Previewlink: "",
     Githublink: "",
   },
   {
     title: "Poker Game",
     cardImage: "assets/images/project-page/poker.jpg",
-    description:
-      "Poker game built using typescript.",
-    tag:
-      "typeScript",
+    description: "Poker game built using typescript.",
+    tag: "typeScript",
     Previewlink: "",
     Githublink: "",
   },
@@ -67,18 +55,15 @@ const projects = [
     cardImage: "assets/images/project-page/tic-tac-toe.png",
     description:
       "Tested a React Tic Tac Toe Game using Jest and React Testing Library.",
-    tag:
-      "React.js",
+    tag: "React.js",
     Previewlink: "",
     Githublink: "",
   },
   {
     title: "Personal Book Library",
     cardImage: "assets/images/project-page/book.png",
-    description:
-      "Personal book library app built using JavaScript.",
-    tag:
-      "JavaScript",
+    description: "Personal book library app built using JavaScript.",
+    tag: "JavaScript",
     Previewlink: "",
     Githublink: "",
   },
@@ -87,38 +72,31 @@ const projects = [
     cardImage: "assets/images/project-page/minesweeper.jpg",
     description:
       "Minesweeper Game built using python Object Oriented Programming.",
-    tag:
-      "Python",
+    tag: "Python",
     Previewlink: "",
     Githublink: "",
   },
   {
     title: "Battery Life Calculator",
     cardImage: "assets/images/project-page/battery.png",
-    description:
-      "Built battery life calculator using Python.",
-    tag:
-      "Python",
+    description: "Built battery life calculator using Python.",
+    tag: "Python",
     Previewlink: "",
     Githublink: "",
   },
   {
     title: "Movie Recommendation System",
     cardImage: "assets/images/project-page/movie-recommendation.jpeg",
-    description:
-      "Built using Tensorflow.",
-    tag:
-      "Tensorflow",
+    description: "Built using Tensorflow.",
+    tag: "Tensorflow",
     Previewlink: "",
     Githublink: "",
   },
   {
     title: "Music Recommendation Engine",
     cardImage: "assets/images/project-page/music.jpg",
-    description:
-      "Built using Python.",
-    tag:
-      "Python",
+    description: "Built using Python.",
+    tag: "Python",
     Previewlink: "",
     Githublink: "",
   },
@@ -152,18 +130,21 @@ const showCards = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards);
 
-
 function myFunction() {
   // Declare variables
-  var input, button, i, skillcard, card;
-  input = document.getElementById('myInput').value;
+  var input, button, i, skillcard, card, title;
+  input = document.getElementById("myInput").value;
   input = input.toUpperCase();
-  skillcard = document.getElementsByClassName('skill-card')
-  card = document.getElementsByClassName('card')
-  button = document.getElementsByClassName('tagbutton');
+  skillcard = document.getElementsByClassName("skill-card");
+  card = document.getElementsByClassName("card");
+  button = document.getElementsByClassName("tagbutton");
+  title = document.getElementsByClassName("title");
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < button.length; i++) {
-    if (button[i].innerHTML.toUpperCase().includes(input)) {
+    if (
+      button[i].innerHTML.toUpperCase().includes(input) ||
+      title[i].innerHTML.toUpperCase().includes(input)
+    ) {
       skillcard[i].style.display = "";
       card[i].style.display = "";
     } else {
