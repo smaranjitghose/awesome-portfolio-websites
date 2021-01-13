@@ -1,7 +1,6 @@
 /*Import font*/
 
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 /*Declaring CSS variables for Light mode*/
 
 html[data-theme = 'light']
@@ -167,6 +166,11 @@ body{
     font-size: 16px;
 }
 
+.paperAuthors{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* medium */
+}
+
 .researchCitedNumber span,
 .researchY span {
     display: inline-block;
@@ -175,8 +179,10 @@ body{
 }
 
 .rConferences{
+    font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-size: 0.88em;
+    font-weight: 400; /* regular */
 }
 
 .researchY {
@@ -223,7 +229,8 @@ body{
 }
 
 .paperTitle{
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;  /*semi-bold*/
     color: var(--ppr-col);
 }
 
@@ -280,6 +287,10 @@ body{
     border-radius: 4px;
     box-shadow: -3px -3px 9px #ffffff73,
     2px 2px 9px rgba(94, 104, 121, 0.288);
+}
+
+.button-abstract, .button-cite{
+    font-weight:bold;
 }
 
 .button-accent:hover,

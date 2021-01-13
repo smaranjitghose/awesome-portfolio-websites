@@ -134,7 +134,7 @@ const fillData = () => {
             <td class = "researchTitleName">
             <div><span class="imgResponsive"><img src="${image}" class="imgRes"></span></div>
             <a href="#0" class="paperTitle"> ${title} </a> 
-            <div> ${authors} </div> <div class="rConferences"> ${conferences} 
+            <div class="paperAuthors"> ${authors} </div> <div class="rConferences"> ${conferences} 
             <div class="researchY">${researchYr}</div>
             </div>
         
