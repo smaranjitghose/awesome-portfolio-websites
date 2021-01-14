@@ -1,20 +1,20 @@
-name: Awesome MkDocs
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+name: Publish docs via GitHub Pages
 on:
   push:
-    branches: documentation
-  pull_request:
-    branches: documentation
+    branches:
+      - documentation
 
 jobs:
   build:
-    name: Build and Deploy Documentation
+    name: Deploy docs
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Master
-        uses: actions/checkout@v2
+      - name: Checkout main
+        uses: actions/checkout@v1
 
-      - name: Build and Deploy Documentation using MkDocs
-        uses: Tangerine-Community/tangy-mkdocs-build-action@v1
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CUSTOM_DOMAIN: optional
