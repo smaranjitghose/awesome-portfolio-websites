@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 html[data-theme="light"] {
-  --bg1-color: #fff;
+  --bg1-color: #DDE1E7;
   --text-color: #6C757D;
-  --shadow-col1: rgba(0,0,0,0.05);
-  --shadow-col2: rgba(75,0,0,0.05);
+  --shadow-col1: #babdc2;
+  --shadow-col2:#ffffff;
   --meta-col: #444;
   --head-col: black;
  }
@@ -14,12 +14,10 @@ html[data-theme="light"] {
   --text-color: #fff;
   --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
   --txt-fill: transparent;
-  --shadow-col1:rgb(46, 37, 37);
-  --shadow-col2:rgba(21, 22, 22, 0.459);
+  --shadow-col1: #191919;
+  --shadow-col2:#1d1d1d;
   --meta-col: rgb(155, 149, 149);
   --head-col: #fff;
-
-
  }
 /*Main section*/
 
@@ -65,17 +63,14 @@ html[data-theme="light"] {
 }
 
 .card1 {
-  box-shadow: 0.45rem 0.45rem 0.8rem var(--shadow-col1), 0 0.5rem 1.125rem var(--shadow-col2);
   background: #fff;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   max-height: 80%;
   border:none;
-}
-
-.card1:hover{
-  transform: scale(1.05);
+  border-radius: 13px;
+  box-shadow: -3px -3px 7px var(--shadow-col2), 4px 4px 5px var(--shadow-col1);
 }
 
 .card1 .card-body {
@@ -84,6 +79,7 @@ html[data-theme="light"] {
   padding: 18px;
   color: var(--text);
   background-color: var(--bg1-color);
+  border-radius: 0 13px 13px 0;
 }
 
 .card1 header {
@@ -128,8 +124,8 @@ ul ol{
   }
 
   .card1 .featured-image {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
     border-top-right-radius: 0;
     max-width: 310px;
     max-height: 279px;
@@ -202,7 +198,9 @@ ul ol{
 }
 
 .volunteerCard{
-  box-shadow: 0.45rem 0.45rem 0.8rem var(--shadow-col1), 0 0.5rem 1.125rem var(--shadow-col2);
+  border-radius: 10px;
+  box-shadow:  4px 4px 7px var(--shadow-col1),
+              -2px -2px 4px var(--shadow-col2);
 }
 
 .page-content {
@@ -404,12 +402,7 @@ ul ol{
 
 .mentorshipCard{
   margin-bottom: -5em;
-  transition: all 1s ease;
-}
-
-.mentorshipCard:hover
-{
-	transform: scale(1.08);
+  border-radius: 13px;
 }
 
 @media(min-width: 60rem)
@@ -431,10 +424,14 @@ ul ol{
   }
 }
 
+.mentorshipCardCover {
+  box-shadow:  4px 4px 6px var(--shadow-col1),
+               -2px -2px 4px var(--shadow-col2);
+}
+
 .card2{
   background-color: var(--bg1-color);
   color: var(--text);
-  box-shadow: 0.45rem 0.45rem 0.8rem var(--shadow-col1), 0 0.5rem 1.125rem var(--shadow-col2);
 }
 
 .card2 .fa{

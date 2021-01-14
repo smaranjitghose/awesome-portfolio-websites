@@ -6,24 +6,27 @@ $(document).ready(function () {
 
 //Get the top button
 var mybutton = document.getElementById("myBtn");
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 350 ||
-    document.documentElement.scrollTop > 350
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+
+if(mybutton) {
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 350 ||
+      document.documentElement.scrollTop > 350
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
   }
-}
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 }
 
 //Footer and Navbar
@@ -42,7 +45,6 @@ let header = $(`
         <li><a class="white-text" href="education.html">Education</a></li>
         <li><a class="white-text" href="skill.html">Skills</a></li>
         <li><a class="white-text" href="index.html">Blog</a></li>
-        <li><a class="white-text" href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
         <!--TOGGLE FOR LIGHT/DARK MODE-->
         <li>
           <label for="switch-1" class="theme-switch">
@@ -64,6 +66,7 @@ let header = $(`
 
 <!--Side Nav Bar -->
 <ul class="sidenav" id="mobile-demo">
+<li><a class="sidenav-close" href="#!"><i class="material-icons">close</i></a></li>
 <li><a href="index.html">Home</a></li>
 <li><a href="experience.html">Experience</a></li>
 <li><a href="projects.html">Projects</a></li>
@@ -71,7 +74,7 @@ let header = $(`
 <li><a href="education.html">Education</a></li>
 <li><a href="skill.html">Skills</a></li>
 <li><a href="index.html">Blog</a></li>
-<li><a href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
+
 
 
 <!--TOGGLE FOR LIGHT/DARK MODE-->

@@ -94,84 +94,6 @@ html {
   color: var(--text-color);
 }
 
-/*SCROLL TO TOP BUTTON dark/light mode*/
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  z-index: 99;
-  background-color: #26a69a;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  overflow: hidden;
-  opacity: 0.7;
-}
-
-.left-arm {
-  position: absolute;
-  z-index: 1;
-  top: 21px;
-  left: 8.5px;
-  width: 20px;
-  display: block;
-  transform: rotate(-45deg);
-}
-.left-arm:after {
-  content: "";
-  background-color: #fff;
-  height: 4px;
-  display: block;
-  transition: all 0.5s;
-  transform-origin: right center;
-}
-
-.right-arm {
-  position: absolute;
-  z-index: 1;
-  top: 21px;
-  left: 20.5px;
-  width: 20px;
-  display: block;
-  transform: rotate(45deg);
-}
-.right-arm:after {
-  content: "";
-  background-color: #fff;
-  height: 4px;
-  display: block;
-  transition: all 0.5s;
-  transform-origin: left center;
-}
-
-/*for animation*/
-.arrow-slide {
-  left: 0;
-  top: -100%;
-  width: 100%;
-  height: 100%;
-  background: #ffffffd1;
-  position: absolute;
-  display: block;
-  z-index: 0;
-}
-
-/*slide animations on hover state*/
-#myBtn:hover {
-  opacity: 1;
-}
-#myBtn:hover .left-arm:after {
-  transform: rotate(-13deg);
-}
-#myBtn:hover .right-arm:after {
-  transform: rotate(13deg);
-}
-#myBtn:hover .arrow-slide {
-  transition: all 0.4s ease-in-out;
-  transform: translateY(200%);
-}
-
 /* NAVBAR*/
 
 .nav-wrapper a:hover,
@@ -194,7 +116,9 @@ html {
 .nav-wrapper a {
   font-weight: bold;
 }
-
+.sidenav{
+    z-index: 1031;
+}
 .sidenav-trigger {
   margin-left: 0px !important;
 }

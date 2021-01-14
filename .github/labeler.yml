@@ -1,7 +1,3 @@
-nwoc:
-  - ./*
-  - assets/*
-  - assets/**/*
 DWOC:
   - ./*
   - assets/*

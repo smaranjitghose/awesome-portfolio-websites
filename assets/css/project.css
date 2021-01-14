@@ -3,13 +3,23 @@ html[data-theme = 'light']
   --bg-col: #fafafa;
   --shadow1: rgba(0, 0, 0, 0.3);
   --shadow2: rgba(0, 0, 0, 0.2);
+
+  --neu-light: white;
+  --neu-dark: #c3c3c3;
+  --neu-color: #c3c3c3;
+  --neu-icon: #c3c3c3;
 }
 
 html[data-theme = 'dark']
 {
-  --bg-col: black;
+  --bg-col: #272727;
   --shadow1: rgba(128, 122, 122, 0.233);
   --shadow2: rgba(231, 216, 216, 0.007);
+
+  --neu-light: #282828;
+  --neu-dark: #080808;
+  --neu-color: white;
+  --neu-icon: whitesmoke;
 }
 
 /*For Changing background color of body according to theme*/
@@ -44,10 +54,34 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.page-content {
-  padding: 1rem;
-  max-width: 1124px;
-  /* margin: 1rem auto; */
+.NeuInput-outer {
+  width: 330px;
+  display: flex;
+  border-radius: 1rem;
+  background-color: var(--nue-light);
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+  box-shadow: .3rem .3rem .6rem var(--neu-dark), -.2rem -.2rem .5rem var(--neu-light); 
+  margin-left: auto;
+  margin-right: 3rem;
+}
+
+.NeuInput-outer #search {
+  position: absolute;
+  display: flex;
+  fill: var(--neu-icon);
+  margin: 1.25rem;
+}
+
+#myInput {
+  padding: 0.5rem;
+  padding-left: 4rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  border: none;
+  margin-bottom: 0;
+  box-shadow: inset .2rem .2rem .5rem var(--neu-dark), inset -.2rem -.2rem .5rem var(--neu-light);
+  color: var(--neu-color);
 }
 
 @media(min-width: 60rem)
@@ -63,21 +97,15 @@ a:hover {
     transition: width 0.8s;
   }
 
-  .card:hover{
-    width:45%;
-  }
   .column{
     margin-left: 1.5rem;
   }
 }
 
 .card .menu-content {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
   position: absolute;
-  float: left;
-  vertical-align: bottom;
+  right: 0;
 }
 
 .card .menu-content::before,
@@ -96,6 +124,8 @@ a:hover {
 
 .card .wrapper {
   background-color: #fff;
+  border: 0;
+  border-radius: 10px;
   min-height: 24rem;
   position: relative;
   overflow: hidden;
@@ -238,8 +268,10 @@ a:hover {
 
 .tagbutton{
   background-color: lawngreen;
-  border-radius: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
   border:none;
+  padding: 5px 10px;
 }
 .card input[type="checkbox"] {
   display: none;
@@ -256,6 +288,12 @@ input[type="text"]{
 .skill-card .wrapper:hover .menu-content span {
   transform: translate(-50%, -10px);
   opacity: 1;
+}
+
+.skill-card {
+  width: 450px;
+  border: 0;
+  border-radius: 10px;
 }
 
 .skill-card .header {
@@ -294,6 +332,7 @@ input[type="text"]{
 
 .skill-card .data {
   color: #fff;
+  background-color: rgba(0,0,0,0.55);
   transform: translateY(calc(60px + 4em));
   padding: 5px;
 }
@@ -305,13 +344,35 @@ input[type="text"]{
 /*social icons*/
 
 .social-icon svg {
-  margin-top: 4px;
+  margin-top: 50px;
 }
 .social-icon svg:hover {
   fill: #fff;
 }
 
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.page-content {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin: 1rem auto; */
+}
+
 /* Resopnsive*/
+@media only screen and (max-width: 768px) {
+  .social-icon svg {
+    margin-top: 0px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .project-box {
     margin-top: 18rem;
@@ -324,28 +385,21 @@ input[type="text"]{
   }
 }
 
-@media (min-width: 600px) {
-  .page-content {
-    grid-template-columns: repeat(2, 1fr);
+@media only screen and (max-width: 702px) {
+  .NeuInput-outer {
+    width: 300px;
+    margin: 0.3rem;
   }
 }
-
-@media (min-width: 800px) {
-  .page-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 800px) {
-	.skill-card .data {
-		transform: translateY(calc(0px));
-	  }
-  }
 
 @media (max-width: 377px) {
 	.skill-card .data {
 		transform: translateY(calc(90px + 4em));
-	  }
+    }
+    
+    .social-icon svg {
+      margin-top: 20px;
+    }
   }
   @media (min-width: 960px) {
     .skill-card .data {
@@ -353,4 +407,25 @@ input[type="text"]{
       transform: translateY(calc(80px + 4em));
       padding: 5px;
     }
+}
+.main{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.left {
+  position: relative;
+}
+
+.right {
+  position: relative;
+}
+
+
+@media screen and (max-width:480px){
+  .main {
+      display: flex;
+      flex-direction: column-reverse;
+  }
 }

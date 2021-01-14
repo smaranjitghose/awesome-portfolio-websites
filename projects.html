@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-
-<head>
-  <title>John Doe | Projects</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords"
-    content="free portfolio template,portfolio template, portfolio website template, open source and contribution to open source" />
-  <meta name="description"
-    content="This project serves as a free and beautiful portfolio template for everyone who needs the perfect portfolio. Anyone can showcase their work including moocs, education, projects, experience,etc. to the world." />
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167979537-2"></script>
-  <!-- Fetching our Google Tag Manager -->
-  <!-- Robot.txt -->
-  <meta name="robots" content="index,follow" />
-  <meta name="Googlebot" content="index,follow" />
-  <meta name="AdsBot-Google" content="index,follow" />
-
-  <meta property="og:site_name" content="https://portfolio.smaranjitghose.codes/projects.html">
-  <meta property="og:title" content="John Doe | Projects">
-  <meta property="og:description"
-    content="This project serves as a free and beautiful portfolio template for everyone who needs the perfect portfolio. Anyone can showcase their work including moocs, education, projects, experience,etc. to the world.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://portfolio.smaranjitghose.codes/projects.html">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="https://portfolio.smaranjitghose.codes/projects.html">
+  <head>
+    <title>John Doe | Projects</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <meta name="keywords" content="free portfolio template,portfolio template, portfolio website template, open source and contribution to open source"/>
+    <meta name="description" content="This project serves as a free and beautiful portfolio template for everyone who needs the perfect portfolio. Anyone can showcase their work including moocs, education, projects, experience,etc. to the world."
+    />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167979537-2"></script>
+    <!-- Robot.txt -->
+    <meta name="robots" content="index,follow" />
+    <meta name="Googlebot" content="index,follow" />
+    <meta name="AdsBot-Google" content="index,follow" />
+    <!-- Open Graph for Social Media -->
+    <meta property="og:site_name" content="https://portfolio.smaranjitghose.codes/projects.html"/>
+    <meta property="og:title" content="John Doe | Projects" />
+    <meta property="og:description" content="This project serves as a free and beautiful portfolio template for everyone who needs the perfect portfolio. Anyone can showcase their work including moocs, education, projects, experience,etc. to the world."/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://portfolio.smaranjitghose.codes/projects.html />
+    <meta name="twitter:card" content="summary" />
+    <!-- Twitter Posts -->
+    <meta name="twitter:site" content="https://portfolio.smaranjitghose.codes/projects.html"/>
 
   <meta name="application-name" content="John Doe | Projects" />
   <meta name="apple-mobile-web-app-title" content="John Doe | Projects" />
@@ -47,58 +45,69 @@
   <link rel="icon" href="assets/images/favicon.png" type="image/png"> <!--Favicon-->
 </head>
 
-<body>
-
-  <!--Dynamic Nav Bar-->
-
-  <!-- button for the top -->
-  <a class="arrow-up" id="myBtn" onclick="topFunction()">
-    <span class="left-arm"></span>
-    <span class="right-arm"></span>
-    <span class="arrow-slide"></span>
-  </a>
-
-
-
-  <div class="container pt-5" style="width: 100%; min-height: 80%;">
-    <section style=" height: 70vh;">
-      <div class="px-3 pt-5">
-        <div class="row text-dark">
-          <div
-            class="col-md-6 d-flex mt-5 flex-column text-center justify-content-center animate__animated animate__zoomIn animate__delay-1s">
-            <h2 class="main-heading mb-0">Projects</h2>
-            <p class="pre-heading font-weight-bolder"
-              class="mb-0 mt-3 text-center animate__animated animate__zoomIn animate__delay-2s">
-              My projects makes use of vast variety of latest technology tools. My best experience is to create Data
-              Science projects and deploy them to web applications using cloud infrastructure.
-            </p>
-          </div>
-          <div class="col-md-6" style="margin-top: 45px;">
-            <img class="img-header img-fluid d-block img-fluid d-block  animate__animated animate__zoomIn animate__delay-1s"" src="
-              ./assets/images/project-page/header-male.svg">
+  <body>
+    <div class="container pt-5" style="width: 100%; min-height: 80%">
+      <section style="height: 70vh">
+        <div class="px-3 pt-5">
+          <div class="row text-dark">
+            <div
+              class="col-md-6 d-flex mt-5 flex-column text-center justify-content-center animate__animated animate__zoomIn animate__delay-1s"
+            >
+              <h2 class="main-heading mb-0">Projects</h2>
+              <p
+                class="pre-heading font-weight-bolder"
+                class="mb-0 mt-3 text-center animate__animated animate__zoomIn animate__delay-2s"
+              >
+                My projects makes use of vast variety of latest technology
+                tools. My best experience is to create Data Science projects and
+                deploy them to web applications using cloud infrastructure.
+              </p>
+            </div>
+            <div class="col-md-6" style="margin-top: 45px">
+              <img
+                class="img-header img-fluid d-block img-fluid d-block animate__animated animate__zoomIn animate__delay-1s"
+                src="./assets/images/project-page/header-male.svg"
+              />
+            </div>
           </div>
         </div>
+      </section>
+    </div>
+
+    <div class="project-box">
+      <div class="NeuInput-outer">
+        <input
+          type="text"
+          name="search"
+          id="myInput"
+          onkeyup="myFunction()"
+          placeholder="Search..."
+          autocomplete="off"
+        />
+        <svg
+          id="search"
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        >
+          <path
+            d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"
+          />
+        </svg>
       </div>
-    </section>
-    
-    <div class="container-fluid project-box">
-      <input type="text" name="search" id="myInput" onkeyup="myFunction()" placeholder="Search for tags.. (eg. React.js, Python, JavaScript etc.)">
-    <div class="row page-content projectcards">
+      <div class="row page-content projectcards">
         <!-- Dynamic project card -->
       </div>
     </div>
 
-  </div>
+    <!-- Dynamic footer section -->
 
-  <!-- Dynamic footer section -->
-
-  <!-- script -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/project.js"></script>
-
-</body>
-
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" ></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/project.js"></script>
+  </body>
 </html>

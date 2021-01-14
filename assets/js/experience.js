@@ -141,7 +141,7 @@ const showCards3 = () => {
     ({ title, image, time, desp}) =>
       (output += `        
       <div class="column mentorshipCard"> 
-      <div class="card card2">
+      <div class="card card2 mentorshipCardCover">
         <img src="${image}" class="card-img-top" alt="..."  width="64" height="300">
         <div class="information">
         <div class="card-body">
