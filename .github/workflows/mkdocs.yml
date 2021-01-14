@@ -17,4 +17,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build and Deploy Documentation using MkDocs
-        uses: Tangerine-Community/tangy-mkdocs
+        uses: Tangerine-Community/tangy-mkdocs-build-action@v1
