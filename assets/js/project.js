@@ -139,6 +139,7 @@ function myFunction() {
   card = document.getElementsByClassName("card");
   button = document.getElementsByClassName("tagbutton");
   title = document.getElementsByClassName("title");
+
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < button.length; i++) {
     if (
