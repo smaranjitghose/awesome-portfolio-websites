@@ -113,10 +113,10 @@ const showCards = () => {
   moocscards.forEach(
     ({ title, cardImage, moocLink }) =>
     (output += `        
-        <div class="col-6 col-md-3 col-sm-4 column" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600" >  
+        <div class="col-6 col-md-3 col-sm-4 column neumorphismcards" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600" >  
             <div class="card mb-3 mx-auto">
-               <div class="content">
-                  <div class="content-overlay"></div>
+               <div class="content" >
+               <div class="content-overlay"></div>
                     <img src=${cardImage} class="card-img-top content-image">     
                   <div class="content-details fadeIn-bottom">
                     <a href="${moocLink}" target="_blank"><i class="fa fa-info-circle fa-2x" aria-hidden="true" style="color: white;"></i></a>                                   

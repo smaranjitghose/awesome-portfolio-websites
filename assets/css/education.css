@@ -155,3 +155,21 @@ html[data-theme = 'dark']
   height: 42vh;
   width: 52vh;
 }
+.neumorphism{
+  border-radius: 41px;
+  background: linear-gradient(145deg, #fffdff, #e0d4de);
+  box-shadow:  15px 15px 30px #989097,
+             -15px -15px 30px #ffffff;
+}
+.neumorphismcards{
+  border-radius: 41px;
+  background: linear-gradient(145deg, #fffdff, #e0d4de);
+  box-shadow:  13px 15px 30px #989097,
+             -13px -15px 30px #ffffff;
+ margin-block-start: 2px;
+ margin-block-end: 2px;
+ margin-top: 3px;
+ margin-bottom: 30px;
+ 
+}
+
