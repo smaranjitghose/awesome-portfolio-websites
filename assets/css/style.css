@@ -75,7 +75,9 @@ html {
 .nav-wrapper a {
   font-weight: bold;
 }
-
+.sidenav{
+    z-index: 1031;
+}
 .sidenav-trigger {
   margin-left: 0px !important;
 }
