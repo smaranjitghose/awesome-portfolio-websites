@@ -93,67 +93,37 @@ let header = $(`
 </ul>`);
 
 let footer = $(`
-<footer class="webintern-footer">
-    <div class="footer-left">
-      <div class="footer-text">
-        <p>"Develop a passion for learning. If you do, you will never cease to grow."</p>
-      </div>
-      <div class="footer-icons">
-      <a href="#" class="linkedin sub-footer-icon">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="#" class="git sub-footer-icon">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="#" class="twitter sub-footer-icon">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="email-icon sub-footer-icon" >
-        <i id="mail" class="fa fa-envelope" ></i>
-        </a>
-        <a href="#" class="kaggle sub-footer-icon" >
-        <i class="fab fa-kaggle" id="kaggle-icon" ></i>
-        </a> 
-        <!-- <a href="#" class="google-scholar sub-footer-icon">
-        <i class="ai ai-google-scholar-square ai-3x" ></i>
-        </a>
-         <a href="#" class="leetcode sub-footer-icon">
-        <span class="iconify" data-icon="cib:leetcode" data-inline="false"></span>
-        </a>
-        <a href="#" class="codeforces sub-footer-icon">
-        <span class="iconify" data-icon="simple-icons:codeforces" data-inline="false"></span>
-        </a>
-        <a href="#" class="dribbble sub-footer-icon">
-              <i class="fab fa-dribbble"></i>
-            </a>
-            <a href="#" class="instagram sub-footer-icon">
-            <i class="fab fa-instagram"></i>
-          </a>  -->
-        </div>
+<footer class="footer">
+<div class="container p-4">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+      <p class="tag" >"Develop a passion for learning. If you do, you will never cease to grow."
+      </p>
+          <div class="rounded-social-buttons col-lg-6 col-md-12 mb-4 mb-md-0">
+              <a class="social-button twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a class="social-button linkedin" href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a class="social-button medium" href="#" target="_blank"><i class="fab fa-medium"></i></a>
+              <a class="social-button github" href="#" target="_blank"><i class="fab fa-github"></i></a>
+           </div>
     </div>
-    <div class="footer-right">
-      <h6 class="display-7">Get in Touch</h6>
-      <form style="width:80%; margin-left:7%;">
-        <div class="name">
-          <input type="text" name="name" placeholder="Name" id="inputs" required>
-        </div>
-        <div class="email">
-          <input type="email" name="email"  placeholder="Email"  id="inputs" required>
-        </div>
-        <div class="msg">
-          <textarea type="text" name="msg" placeholder="Message" id="inputs" required></textarea>
-        </div>
-        <button class="submit"  type="submit">Send</button>
-      </form>
+
+    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+    <div class="form-style-6">
+    <h6 class="display">Get in Touch</h6>
+    <form>
+    <input type="text" name="field1" placeholder="Your Name" />
+    <input type="email" name="field2" placeholder="Email Address" />
+    <textarea name="field3" placeholder="Type your Message"></textarea>
+    <input type="submit" value="Send" />
+    </form>
     </div>
-    
-    <!-- <div class="tt-copy">
-      <div class="container col-sm-6">
-       <center class="text-animation">Made with <i class="fa fa-heart" style="color: red;"></i></center>
-      </div>
-    </div> -->
-    
-    </footer>`);
+  </div>
+    </div>
+  </div>
+</div>
+
+</footer>
+    `);
 let bodyElement = $(`body`);
 bodyElement.prepend(header);
 bodyElement.append(footer);
