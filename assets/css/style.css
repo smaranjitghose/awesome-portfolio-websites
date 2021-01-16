@@ -287,7 +287,9 @@ html.transition *:after {
   box-shadow: 0 10px 18px 2px #000;
 }
 
-/*Footer*/
+/**********
+  FOOTER SECTION
+**********/
 
 .footer{
   background-color: black;
@@ -380,8 +382,9 @@ html.transition *:after {
   border-color: #22B6A7;
 }
 
-
-/* Contact Form */
+/************ 
+  Contact Form In Footer 
+*************/
 .display{
   height: auto;
   width: auto;
@@ -399,7 +402,9 @@ form{
   color: #000;
 }
 
-/* FORM CSS*/
+/**********
+   Footer Form CSS
+**********/
 .form-style-6{
 	font: 95% Arial, Helvetica, sans-serif;
 	max-width: 400px;
@@ -543,7 +548,9 @@ form{
   }
 }
 
-/*social icons footer*/
+/***********
+Social Icons In Footer
+************/
 
 :root {
   --link-size: 64px;
