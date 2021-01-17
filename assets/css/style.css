@@ -302,11 +302,12 @@ html.transition *:after {
   text-align: center;
   color: #fff;
   height: 78px;
-  width: 220px;
-  margin: 10px 0 10px 0;
+  width: 250px;
+  margin: 5px auto;
   display: block;
   box-sizing: border-box;
 }
+
 
 .svg-inline--fa {
   vertical-align: -0.200em;
@@ -314,7 +315,6 @@ html.transition *:after {
 
 .rounded-social-buttons .social-button {
   display: inline-block;
-  position: relative;
   cursor: pointer;
   width: 3.125rem;
   height: 3.125rem;

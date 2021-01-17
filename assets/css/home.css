@@ -46,7 +46,9 @@ html[data-theme="dark"] {
   --col-white: #fff;
 }
 /* Particle effect*/
-
+body{
+  font-family: "Poppins";
+}
 #home,
 #particles-js {
   position: relative;
@@ -84,7 +86,7 @@ html[data-theme="dark"] {
 .animated-text:after {
   content: ".";
   display: inline-block;
-  width: 10px;
+  width: 6px;
   text-indent: 0;
   /* overflow: hidden; */
   background: var(--col-icon);
