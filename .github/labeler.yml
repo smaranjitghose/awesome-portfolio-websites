@@ -1,0 +1,8 @@
+DWOC:
+  - ./*
+  - assets/*
+  - assets/**/*
+SWoC2021:
+  - ./*
+  - assets/*
+  - assets/**/*
