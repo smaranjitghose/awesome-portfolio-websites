@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Agustina";
+  src: url(../fonts/Agustina.woff);
+}
 /*CSS variable declaration for light/dark mode*/
 html[data-theme="light"] {
   --bg-mybtn: red;
@@ -78,44 +82,9 @@ html {
 
 /*starting part of every page*/
 
-.main-heading {
-  font-size: 4em;
-  font-weight: bolder;
-  background: var(--bg-txt-img);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: var(--txt-fill);
-  padding-bottom: 0.1em;
-}
-
-.pre-heading {
-  font-size: 1.1em;
-  letter-spacing: 2px;
-  line-height: normal;
-  color: var(--text-color);
-}
-
-/* NAVBAR*/
-
-.nav-wrapper a:hover,
-.sidenav a:hover {
-  text-decoration: none;
-}
-
-.sidenav{
-   z-index: 1031;
-}
-.nav-wrapper {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-/*Navbar dark mode(research page)*/
-
-.black {
-  background-color: var(--bg-nav);
-  background-image: var(--bg-nav-img);
-}
-
-.nav-wrapper a {
+.navbar-brand{
+  font-family: Agustina;
+  font-size: 30px;
   font-weight: bold;
 }
 .sidenav{
@@ -518,3 +487,4 @@ form{
  60% { transform: rotate( 0.0deg) }  
 100% { transform: rotate( 0.0deg) }
 }
+

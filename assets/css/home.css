@@ -62,13 +62,13 @@ body{
   align-items: center;
 }
 
-.text span {
+.text .header {
   font-weight: bold;
 }
 
 .text {
-  font-size: 40px;
-  top: 50%;
+  font-size: 25px;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -80,17 +80,23 @@ body{
 }
 
 .animated-text span.active {
-  display: inline-block;
+  display: inline;
 }
 
 .animated-text:after {
   content: ".";
-  display: inline-block;
+  display: inline;
   width: 6px;
   text-indent: 0;
   /* overflow: hidden; */
   background: var(--col-icon);
   animation: blink 0.3s infinite alternate;
+}
+.datawords{
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 @keyframes blink {
