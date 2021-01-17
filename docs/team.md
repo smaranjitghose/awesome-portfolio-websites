@@ -1,15 +1,11 @@
 # Team {: style="text-align: center"}
 
-
-
 ![team](images/team.svg)
 
-<br>
-
-**_Coming together is a BEGINNING,_**{:style="text-align: center; display:block; margin:auto; font-size:1.2em"} <br>
-**_Staying together is PROGRESS_**{: style="text-align: center; display:block; margin:auto; font-size:1.2em"} <br>
-**_and working together is SUCCESS_**{: style="text-align: center; display:block; margin:auto; font-size:1.2em"} <br>
- _-Henry Ford_{: style="float: right; font-size:1.3em; margin-top: -1em"}
+## **_Coming together is a BEGINNING,_** {: style="text-align: center"}
+## **_Staying together is PROGRESS_** {: style="text-align: center"}
+## **_and working together is SUCCESS_** {: style="text-align: center"}
+ _-Henry Ford_{: style="float: right; margin-top: -1em"}
 
 # Project Maintainers {: style="text-align: center; margin-top: 3em"}
 
