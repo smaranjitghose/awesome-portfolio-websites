@@ -69,8 +69,13 @@ html[data-theme="light"] {
   flex-direction: column;
   max-height: 80%;
   border:none;
-  border-radius: 13px;
-  box-shadow: -3px -3px 7px var(--shadow-col2), 4px 4px 5px var(--shadow-col1);
+  border-radius: 4px;
+  box-shadow: -3px -3px 4px var(--shadow-col2), 2px 3px 4px var(--shadow-col1);
+  transition: all 0.4s;
+}
+
+.card1:hover{
+    transform: scale(1.08);
 }
 
 .card1 .card-body {
@@ -78,7 +83,7 @@ html[data-theme="light"] {
   flex-flow: row wrap;
   padding: 18px;
   color: var(--text);
-  background-color: var(--bg1-color);
+  background-color: #fff;
   border-radius: 0 13px 13px 0;
 }
 
