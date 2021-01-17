@@ -96,4 +96,3 @@ SOFTWARE.
 ![student-code-in](images/home-page/sci.jpg){: style="height:11rem;width:11rem; margin:10px;"}
 ![nwoc](images/home-page/nwoc.JPG){: style="height:11rem;width:11rem; margin:10px;"}
 ![dwoc](images/home-page/dwoc.png){: style="height:11rem;width:11rem; margin:10px;"}
-![swoc](images/home-page/swoc.png){: style="height:11rem;width:13rem; margin:10px;"}
