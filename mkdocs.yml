@@ -4,10 +4,11 @@ repo_url: https://github.com/smaranjitghose/awesome-portfolio-websites
 nav:
     - Home: index.md
     - Getting Started: gs.md
+    - Hosting: hosting.md
     - Team: team.md
     - How to Contribute?: Contribution.md
 
-theme: 
+theme:
     name: 'material'
     logo: 'images/icons/logo.png'
     favicon: 'images/icons/logo.png'
