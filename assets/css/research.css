@@ -7,7 +7,7 @@
 html[data-theme = 'light']
 {
     --bg-head : #ffffff;
-    --bg-col: #dde1e7;
+    --bg-col: #fff;
     --p-up: black;
     --bg-cite-y: #f5f5f5;
     --cite-bg: #fff;
@@ -71,9 +71,6 @@ body{
     color: var(--p-up);
 } 
 
-.researchMainWrapper tr{
-    transition: all 1s ease;
-}
 
 #researchDetailsTable {
     border-collapse: separate;
@@ -88,11 +85,26 @@ body{
 }
 
 #researchDetailsTable tr{
-    border-radius: 13px;
-    box-shadow: -3px -3px 7px #ffffff73,
+    transition: all 1s ease;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px #ddd,
     2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 
+#researchDetailsTable tr .card-body{
+    transition: 0.3s;
+}
+
+#researchDetailsTable tr button.button{
+    border: 1px solid #000;
+    outline: none;
+    background-color: #fff;
+    transition: 0.3s;
+}
+#researchDetailsTable tr button.button:hover{
+    background-color: #000;
+    color: #fff;
+}
 #rDetailsHead {
     z-index: 700;                             
     background-color: #f5f5f5;
