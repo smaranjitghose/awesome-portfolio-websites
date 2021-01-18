@@ -266,6 +266,66 @@ a:hover {
   color: transparent;
 }
 
+/**Navbar burger animations**/
+.navbar-toggler{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+}
+
+.menu-btn__burger{
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: #040406;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+  transition: all .2s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: #040406;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all .2s ease-in-out;
+}
+
+.menu-btn__burger::before{
+  transform: translateY(-12px);
+
+}
+
+.menu-btn__burger::after{
+  transform: translateY(12px);
+}
+
+.navbar-toggler.open .menu-btn__burger{
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.navbar-toggler.open .menu-btn__burger::before{
+   transform: rotate(45deg) translate(35px, -35px);
+}
+
+.navbar-toggler.open .menu-btn__burger::after{
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
 @media only screen and (max-width: 450px) {
   .text {
     margin-top: 5rem;

@@ -3,9 +3,11 @@
 let header = $(`
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 <a class="navbar-brand" href="index.html">John Doe </a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
+<div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <div class =  "menu-btn__burger">
+
+  </div>
+</div>
 
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
   <ul class="navbar-nav ml-auto">
@@ -27,7 +29,21 @@ let footer = $(`
 $(function () {
 	let bodyElement = $(`body`);
 	bodyElement.prepend(header);
-	bodyElement.append(footer);
+  bodyElement.append(footer);
+  
+  //toggler hamburger functions
+  const menuBtn = document.querySelector('.navbar-toggler');
+  let menuOpen = false;
+  menuBtn.addEventListener('click', () => {
+    if(!menuOpen){
+      menuBtn.classList.add('open')
+      menuOpen = true;
+    }
+    else{
+      menuBtn.classList.remove('open');
+      menuOpen = false;
+    }
+});
 
 });
 
