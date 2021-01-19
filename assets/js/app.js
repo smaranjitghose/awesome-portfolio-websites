@@ -23,6 +23,35 @@ let header = $(`
 </nav>`);
 
 let footer = $(`
+<footer class="footer">
+<div class="container p-4">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 mb-4 mb-md-0 justify-content-center">
+      <p class="tag" >"Develop a passion for learning. If you do, you will never cease to grow."
+      </p>
+          <div class="rounded-social-buttons tag">
+              <a class="social-button twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a class="social-button linkedin" href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a class="social-button medium" href="#" target="_blank"><i class="fab fa-medium"></i></a>
+              <a class="social-button github" href="#" target="_blank"><i class="fab fa-github"></i></a>
+           </div>
+    </div>
+
+    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+    <div class="form-style-6">
+    <h6 class="display">Get in Touch</h6>
+    <form>
+    <input type="text" name="field1" placeholder="Your Name" />
+    <input type="email" name="field2" placeholder="Email Address" />
+    <textarea name="field3" placeholder="Type your Message"></textarea>
+    <input type="submit" value="Send" />
+    </form>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+</footer>
 `);
 
 
