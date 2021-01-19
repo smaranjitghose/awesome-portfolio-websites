@@ -1,4 +1,4 @@
-<h1 align="center"><b>Getting Started...</b></h1>
+# **Getting Started** {: style="text-align: center"}
 
 ## Forking the repository
 
