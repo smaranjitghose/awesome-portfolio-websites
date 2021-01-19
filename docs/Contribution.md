@@ -1,4 +1,4 @@
-<h1 align="center"><b>Guidelines for Contribution 🏗</b></h1> 
+# **Guidelines for Contribution 🏗** {: style="text-align: center"}
 
 We want to make contributing to this project as easy and as transparent as possible, whether it's:<br>
 
@@ -31,7 +31,7 @@ cd awesome-portfolio-websites
 **4.** Add a reference to the original repository.
 
 ```
-git remote add upstream https://github.com/smaranjitghose/awesome-portfolio-websites.git 
+git remote add upstream https://github.com/smaranjitghose/awesome-portfolio-websites.git
 ```
 
 **5.** Check the remotes for this repository.
@@ -59,7 +59,7 @@ git checkout -b <your_branch_name>
 **9.** Track your changes:heavy_check_mark: .
 
 ```
-git add . 
+git add .
 ```
 
 **10.** Commit your changes .
