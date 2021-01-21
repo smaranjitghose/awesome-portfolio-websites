@@ -72,6 +72,7 @@ html[data-theme="light"] {
   border-radius: 4px;
   box-shadow: -3px -3px 4px var(--shadow-col2), 2px 3px 4px var(--shadow-col1);
   transition: all 0.4s;
+  contain: content;
 }
 
 .card1:hover{
@@ -115,7 +116,7 @@ ul ol{
 @media only screen and (min-width: 768px) {
   .card1 {
     flex-direction: row;
-    max-height: 279px;
+    max-height: 70vh;
   }
 
   .card1 h3 {
