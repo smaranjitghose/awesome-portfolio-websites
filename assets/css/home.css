@@ -266,6 +266,7 @@ a:hover {
   color: transparent;
 }
 
+
 @media only screen and (max-width: 450px) {
   .text {
     margin-top: 5rem;
