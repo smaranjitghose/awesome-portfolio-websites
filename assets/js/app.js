@@ -12,7 +12,7 @@ let header = $(`
 </div>
 
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
-  <ul class="navbar-nav ml-auto">
+  <ul class="navbar-nav ml-auto" id = "navbar-content">
    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
    <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>

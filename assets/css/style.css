@@ -349,3 +349,18 @@ form{
 .form-style-6 input[type="button"]:hover{
 	background: #2EBC99;
 }
+
+/* to make the navbar open full screen on mobile */
+    @media (max-width: 768px) {
+      .collapse navbar-collapse{
+        display: flex;
+        justify-content: center;
+      } 
+
+      #navbar-content {
+        height: 100vh;
+        text-align: center;
+        margin:0 auto;
+        transform: translateY(25%);
+     }
+   }
