@@ -8,8 +8,8 @@ html[data-theme="light"] {
  --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
  inset #4D4D4D -2px -2px 4px;
   --col-bd-icon:transparent;
-  --bg-icon: #fff;
-   --bg1-color: #fff;
+  --bg-icon: rgba(255, 255, 255, 0.26);
+   --bg1-color: rgba(255, 255, 255, 0.26);
   --col-icon-twitter: #1da1f2;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
@@ -113,7 +113,7 @@ body{
 
 :root {
   --link-size: 64px;
-  --trans-props: all 0.2s ease;
+  --trans-props: all 0.4s ease;
   --link-size-footer-b: 40px;
   --link-size-footer-s: 30px;
 }
@@ -142,7 +142,8 @@ body{
   overflow: hidden;
   width: var(--link-size);
   height: var(--link-size);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.267);
+  backdrop-filter: blur(3px);
   margin: 8px;
   border-radius: 50%;
   box-shadow: 2px 5px 5px var(--shadow-col);

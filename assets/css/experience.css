@@ -69,13 +69,16 @@ html[data-theme="light"] {
   flex-direction: column;
   max-height: 80%;
   border:none;
-  border-radius: 4px;
+  border-radius: 15px;
   box-shadow: -3px -3px 4px var(--shadow-col2), 2px 3px 4px var(--shadow-col1);
   transition: all 0.4s;
 }
 
 .card1:hover{
     transform: scale(1.08);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.468), 0 0 15px 4px var(--shadow-col1);
+    border-radius: 15px;
+    border: 0 solid;
 }
 
 .card1 .card-body {
@@ -198,14 +201,14 @@ ul ol{
 /*Volunteership card*/
 
 :root {
-  --d: 700ms;
-  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --d: 0.6s;
+  --e: cubic-bezier(0.19, 0.7, 0.1, 1);
 }
 
 .volunteerCard{
   border-radius: 10px;
-  box-shadow:  4px 4px 7px var(--shadow-col1),
-              -2px -2px 4px var(--shadow-col2);
+  box-shadow:  4px 4px 7px var(--shadow-col1), -2px -2px 4px var(--shadow-col2);
+  transition: 0.5s;
 }
 
 .page-content {
@@ -214,6 +217,7 @@ ul ol{
   padding: 2rem;
   max-width: 1124px;
   margin: 0 auto;
+  transition: 1s;
 }
 
 @media (min-width: 600px) {
@@ -280,16 +284,17 @@ ul ol{
 }
 
 .page-content .card:hover:after{
+  transition: 1s ease-in-out;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.009) 11.7%,
-    rgba(0, 0, 0, 0.034) 22.1%,
-    rgba(0, 0, 0, 0.072) 31.2%,
-    rgba(0, 0, 0, 0.123) 39.4%,
-    rgba(0, 0, 0, 0.182) 46.6%,
-    rgba(0, 0, 0, 0.249) 53.1%,
-    rgba(0, 0, 0, 0.32) 58.9%,
+    rgba(0, 0, 0, 0.005) 11.7%,
+    rgba(0, 0, 0, 0.014) 22.1%,
+    rgba(0, 0, 0, 0.042) 31.2%,
+    rgba(0, 0, 0, 0.073) 39.4%,
+    rgba(0, 0, 0, 0.122) 46.6%,
+    rgba(0, 0, 0, 0.189) 53.1%,
+    rgba(0, 0, 0, 0.22) 58.9%,
     rgba(0, 0, 0, 0.394) 64.3%,
     rgba(0, 0, 0, 0.468) 69.3%,
     rgba(0, 0, 0, 0.54) 74.1%,
@@ -299,7 +304,6 @@ ul ol{
     rgba(0, 0, 0, 0.762) 94.1%,
     rgba(0, 0, 0, 0.79) 100%
   ) !important;
-  transition: ease-out;
 }
 
 .card-body p{
@@ -430,8 +434,13 @@ ul ol{
 }
 
 .mentorshipCardCover {
-  box-shadow:  4px 4px 6px var(--shadow-col1),
-               -2px -2px 4px var(--shadow-col2);
+  box-shadow:  4px 4px 6px var(--shadow-col1), -2px -2px 4px var(--shadow-col2);
+  transition: 0.4s;
+}
+
+.mentorshipCardCover:hover {
+  transform: scale(1.08);
+  box-shadow:  0px 0px 15px 4px rgba(0, 0, 0, 0.394), 0px 0px 15px 4px var(--shadow-col2);
 }
 
 .card2{

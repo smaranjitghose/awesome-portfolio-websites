@@ -85,10 +85,15 @@ body{
 }
 
 #researchDetailsTable tr{
-    transition: all 1s ease;
+    transition: all 0.4s ease;
     border-radius: 5px;
     box-shadow: 2px 2px 7px #ddd,
     2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+#researchDetailsTable tr:hover{
+    transform: scale(1.07);
+    box-shadow: 0 0 15px 4px #ddd, 0 0 15px 4px rgba(70, 75, 85, 0.288);
 }
 
 #researchDetailsTable tr .card-body{
