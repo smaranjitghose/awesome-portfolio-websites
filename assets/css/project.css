@@ -69,8 +69,9 @@ a:hover {
 .NeuInput-outer #search {
   position: absolute;
   display: flex;
+  align-self: center;
   fill: var(--neu-icon);
-  margin: 1.25rem;
+  margin-left: 1rem;
 }
 
 #myInput {
@@ -82,6 +83,7 @@ a:hover {
   margin-bottom: 0;
   box-shadow: inset .2rem .2rem .5rem var(--neu-dark), inset -.2rem -.2rem .5rem var(--neu-light);
   color: var(--neu-color);
+  outline: none;
 }
 
 @media(min-width: 60rem)

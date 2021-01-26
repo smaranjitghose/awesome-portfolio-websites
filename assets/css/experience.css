@@ -188,8 +188,9 @@ ul ol{
 .main ul {
   display: block;
   margin: 0 auto;
+  min-height: 15rem;
   max-width: 1050px;
-  padding: 30px;
+  padding: 1rem !important;
 }
 
 .main a {
@@ -401,7 +402,7 @@ ul ol{
 
 .column{
   float: left;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem !important;
   padding-left: 0;
   padding-right: 0;
 }
