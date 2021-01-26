@@ -277,6 +277,14 @@ a:hover {
   font-size: .85rem;
   font-weight: bold;
 }
+
+.tagimg {
+  width: 2rem;
+  margin: auto 0;
+  outline: none;
+  margin-left: -5px;
+}
+
 .card input[type="checkbox"] {
   display: none;
 }
