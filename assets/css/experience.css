@@ -438,7 +438,7 @@ ul ol{
 }
 
 .card2{
-  background-color: var(--bg1-color);
+  /* background-color: var(--bg1-color); */
   color: var(--text);
 }
 
