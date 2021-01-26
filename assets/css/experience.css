@@ -23,6 +23,7 @@ html[data-theme="light"] {
 
 .head-upper{
   background: var(--bg-txt-img);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: var(--txt-fill);
 }
