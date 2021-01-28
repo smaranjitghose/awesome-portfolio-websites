@@ -126,9 +126,9 @@ const projects = [
 ];
 
 const showCards = () => {
-  let output = "", tagdata = "";
+  let output = "";
   projects.forEach(
-    ({ title, cardImage, tags, tagimg = "", Previewlink, Githublink }) => {
+    ({ title, cardImage, tags, Previewlink, Githublink }) => {
       (output += `       
     <div class="column skill-card card">
       <div class="wrapper" style="background: url(${cardImage}) center / cover no-repeat;">
