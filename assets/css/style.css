@@ -148,6 +148,7 @@ html {
 **********/
 
 .footer{
+  padding-top: 10px;
   background-color:#040406;
 }
 
@@ -193,9 +194,7 @@ Rotate Transition in foote Soical Icon
 *********/
 
 .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
+      transition: background-color 0.3s, var(--trans-props);
 }
 
 .rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-medium, .fa-github {
@@ -356,6 +355,10 @@ form{
         display: flex;
         justify-content: center;
       } 
+
+      .footer{
+        padding-top: 10px;
+      }
 
       #navbar-content {
         height: 100vh;
