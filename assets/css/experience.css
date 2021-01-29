@@ -23,6 +23,7 @@ html[data-theme="light"] {
 
 .head-upper{
   background: var(--bg-txt-img);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: var(--txt-fill);
 }
@@ -188,8 +189,9 @@ ul ol{
 .main ul {
   display: block;
   margin: 0 auto;
+  min-height: 15rem;
   max-width: 1050px;
-  padding: 30px;
+  padding: 1rem !important;
 }
 
 .main a {
@@ -401,7 +403,7 @@ ul ol{
 
 .column{
   float: left;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem !important;
   padding-left: 0;
   padding-right: 0;
 }
@@ -436,7 +438,7 @@ ul ol{
 }
 
 .card2{
-  background-color: var(--bg1-color);
+  /* background-color: var(--bg1-color); */
   color: var(--text);
 }
 
