@@ -269,12 +269,25 @@ a:hover {
 }
 
 .tagbutton{
-  background-color: lawngreen;
+  background-color: #b6bcebfd;
+  color: #0117E7;
   margin-top: 5px;
-  border-radius: 4px;
+  margin-right: 5px;
+  border-radius: 100px;
   border:none;
   padding: 5px 10px;
+  outline: none;
+  font-size: .85rem;
+  font-weight: bold;
 }
+
+.tagimg {
+  width: 2rem;
+  margin: auto 0;
+  outline: none;
+  margin-left: -5px;
+}
+
 .card input[type="checkbox"] {
   display: none;
 }
