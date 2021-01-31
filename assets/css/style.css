@@ -64,6 +64,27 @@ html[data-theme="dark"] {
   --col-white: #fff;
 }
 
+/*ScrollBar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 7px;
+    background: #f1f1f1;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 body {
   height: 100vh;
   margin: 0;
