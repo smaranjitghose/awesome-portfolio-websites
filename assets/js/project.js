@@ -143,7 +143,7 @@ const showCards = () => {
             ${tags.map(tag => (
                 `<button class="tagbutton">
                   <img class="tagbutton tagimg" width="40px" src=${tagImages[tag]} alt="" />
-                    ${tag}
+                    <span>${tag}</span>
                 </button>`
               )
         )}
