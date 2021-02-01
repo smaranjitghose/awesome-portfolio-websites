@@ -45,18 +45,21 @@ let header = $(`
         <li><a class="white-text" href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
         <!--TOGGLE FOR LIGHT/DARK MODE-->
         <li>
-          <label for="switch-1" class="theme-switch">
-            <input class="toggle-checkbox" type="checkbox" id="switch-1" name="theme" />
-            <div class='toggle-slot'>
-              <div class='sun-icon-wrapper'>
+            <label for="switch-1" class="theme-switch">
+        <input class="toggle-checkbox" type="checkbox" id="switch-1" name="theme" />
+          <div class='toggle-slot'>
+            <!-- <div class='sun-icon-wrapper'>
                 <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
-              </div>
-              <div class='toggle-button-1 toggle-button'></div>
-              <div class='moon-icon-wrapper'>
+            </div> -->
+          <div class='toggle-button-1 toggle-button'>
+           <span class="toggle--feature"></span>
+           </div>
+           <!-- <div class='moon-icon-wrapper'>
                 <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
-              </div>
-            </div>
+            </div> -->
+          </div>
           </label>
+
         </li>
     </ul>
 </div>
@@ -79,13 +82,15 @@ let header = $(`
         <label for="switch-2" class="theme-switch">
         <input class="toggle-checkbox" type="checkbox" id="switch-2" name="theme" />
           <div class='toggle-slot'>
-          <div class='sun-icon-wrapper'>
-          <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
-          </div>
-          <div class='toggle-button-2 toggle-button'></div>
-          <div class='moon-icon-wrapper'>
-          <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
-          </div>
+            <!-- <div class='sun-icon-wrapper'>
+                <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
+            </div> -->
+          <div class='toggle-button-2 toggle-button'>
+           <span class="toggle--feature"></span>
+           </div>
+           <!-- <div class='moon-icon-wrapper'>
+                <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
+            </div> -->
           </div>
           </label>
         </li>

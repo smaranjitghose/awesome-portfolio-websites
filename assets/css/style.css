@@ -191,47 +191,140 @@ p {
   position: relative;
   height: 3.5em;
   width: 8em;
-  border: 5px solid #e4e7ec;
+  /* border: 5px solid #e4e7ec; */
   border-radius: 10em;
-  background-color: white;
+  /* background-color: white; */
   transition: background-color 250ms;
   margin-top: 1em;
   margin-left: 1.5em;
   cursor: pointer;
+  background-color: #9ee3fb;
+  border: 5px solid #86c3d7;
 }
 
 .toggle-checkbox:checked ~ .toggle-slot {
-  background-color: #374151;
+  border: 5px solid #1c1c1c;
+  background-color: #45453c;
 }
-
 
 .toggle-button {
   transform: translate(11.75em, 1.75em);
   position: absolute;
-  height: 2em;
-  width: 2em;
+  height: 2.25em;
+  width: 2.25em;
   border-radius: 50%;
-  background-color: #ffeccf;
-  box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+  /* background-color: #ffeccf; */
+  /* box-shadow: inset 0px 0px 0px 0.75em #ffdf6d; */
   transition: background-color 250ms, border-color 250ms,
-    transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
+    transform 750ms cubic-bezier(0.26, 2, 0.46, 0.71);
   margin-top: -1.5em;
   margin-left: -7em;
   cursor: pointer;
   pointer-events: all;
+  background-color: #ffdf6d;
+  border: 5px solid #e1c348;
 }
 
 .theme-switch {
   pointer-events: none;
 }
 
-.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
-  background-color: #485367;
-  box-shadow: inset 0px 0px 0px 0.75em white;
-  transform: translate(7.5em, 1.75em);
+/*dents on moon */
+
+/* .toggle--feature:before,
+.toggle--feature:after {
+  content: "";
+  display: block;
+} */
+
+/* @keyframes starry_star {
+  50% {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: #fff 30px -3px 0 0, #fff 12px 10px 0 -1px,
+      rgba(255, 255, 255, 0.1) 38px 18px 0 1px, #fff 32px 34px 0 0,
+      rgba(255, 255, 255, 0.1) 20px 24px 0 -1.5px, #fff 5px 38px 0 1px;
+  }
+} */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 100;
+    transform: scale(1.1);
+  }
+  55% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 100;
+    transform: scale(1);
+  }
 }
 
-.sun-icon {
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+  /* background-color: #674851; */
+  /* box-shadow: inset 0px 0px 0px 0.75em white; */
+  transform: translate(7.5em, 1.75em);
+  background-color: #fff;
+  border: 5px solid #e3e3c7;
+}
+
+.toggle-slot .toggle-button .toggle--feature {
+  display: block;
+  position: absolute;
+  top: 55%;
+  right: 175%;
+  z-index: 10;
+  width: 0.9em;
+  height: 0.9em;
+  /* opacity: 0.75; */
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: #fff 0 0, #fff 3px 0, #fff 6px 0, #fff 9px 0, #fff 11px 0,
+    #fff 14px 0, #fff 16px 0, #fff 21px -1px 0 1px, #fff 16px -7px 0 -2px,
+    #fff 7px -7px 0 1px, #d3d3d3 0 0 0 4px, #d3d3d3 6px 0 0 4px,
+    #d3d3d3 11px 0 0 4px, #d3d3d3 16px 0 0 4px, #d3d3d3 21px -1px 0 5px,
+    #d3d3d3 16px -7px 0 1px, #d3d3d3 7px -7px 0 5px;
+  transition: opacity 1000ms ease-in;
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button .toggle--feature {
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: 152.5%;
+  z-index: 20;
+  width: 0.2em;
+  height: 0.2em;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: rgba(216, 24, 24, 0.1) 30px -3px 0 0,
+   rgb(255, 255, 255) 12px 15px 0 -1px, #fff 38px 10px 0 1px,
+    rgb(255, 255, 255) 30px 20px 0 0, #fff 20px 20px 0 -1.5px,
+    rgb(255, 255, 255) 15px 15px 0 1px;
+  /* animation: starry_star 5s ease-in-out infinite; */
+}
+
+/* .toggle-checkbox:checked ~ .toggle-slot .toggle-button .toggle--feature:before {
+  position: absolute;
+  top: 2px;
+  left: -30px;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 5px solid #e3e3c7;
+  box-shadow: #e3e3c7 -20px 0 0 -3px, #e3e3c7 -8px 20px 0 -2px;
+  transform-origin: -6px 130%;
+} */
+
+
+ /* .sun-icon {
   position: absolute;
   height: 2em;
   width: 2em;
@@ -248,15 +341,14 @@ p {
   transform: translate(2em, 2em) rotate(15deg);
   transform-origin: 50% 50%;
   transition: opacity 150ms, transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
-}
-
+} 
 
 .toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
   opacity: 0;
   transform: translate(3em, 2em) rotate(0deg);
-}
+} */
 
-.moon-icon {
+/* .moon-icon {
   position: absolute;
   height: 2em;
   width: 2em;
@@ -278,8 +370,7 @@ p {
 .toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
   opacity: 1;
   transform: translate(12em, 2em) rotate(-15deg);
-}
-
+} */
 
 /*Transition for Toggle*/
 
@@ -290,6 +381,8 @@ html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
 }
+
+
 
 /* About Section */
 #about .card{
