@@ -1,4 +1,10 @@
 /* Project Cards */
+var _window = window,Splitting = _window.Splitting,ScrollOut = _window.ScrollOut;
+Splitting();
+ScrollOut({
+  targets: '.word',
+  
+})
 
 const projectcards = document.querySelector(".projectcards");
 

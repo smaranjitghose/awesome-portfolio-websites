@@ -1,4 +1,9 @@
 //  Work experience cards
+var _window = window,Splitting = _window.Splitting,ScrollOut = _window.ScrollOut;
+Splitting();
+ScrollOut({
+  targets: '.word',
+})
 
 
 const experiencecards = document.querySelector(".experience-cards");
@@ -25,6 +30,7 @@ const exp = [
     desp:"<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
   },
 ];
+
 
 const showCards2 = () => {
   let output = "";
