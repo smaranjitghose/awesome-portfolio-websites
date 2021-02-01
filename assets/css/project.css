@@ -55,7 +55,6 @@ a:hover {
 }
 
 .NeuInput-outer {
-  width: 330px;
   display: flex;
   border-radius: 1rem;
   background-color: var(--nue-light);
@@ -402,8 +401,7 @@ input[type="text"]{
 
 @media only screen and (max-width: 702px) {
   .NeuInput-outer {
-    width: 300px;
-    margin: 0.3rem;
+    margin: -1.5rem 0.3rem 3rem 0.3rem;
   }
 }
 
