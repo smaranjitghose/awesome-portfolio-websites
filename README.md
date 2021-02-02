@@ -12,14 +12,11 @@ So, what else do you need?🤔.
 Here is the answer: An awesome personal website of yours that serves a portfolio of your work! 
 <p align="center"><img src="https://media.giphy.com/media/9JrkkDoJuU0FbdbUZU/giphy.gif" width = 40%></p>
 
-If you do not have a platform that shows your entire work then you might not be doing justice in potraying your hard work or dope skills. But you must be wondering that making a portfolio website might take time, require some web development knowledge and still you might get something really 
-cool. 
+If you do not have a platform that shows your entire work then you might not be doing justice in potraying your hard work or dope skills. But you must be wondering that making a portfolio website might take time, require some web development knowledge and still you might get something really cool. 
 <p align="center"><img src="https://media.giphy.com/media/521JLj0YGzz6AEWsZ5/giphy.gif" width = 40%></p>
 
 Well! Take a chill pill. Don't be intimidated by those thoughts. __Awesome Portfolio Wesbite__ is here for the rescue!
 <p align="center"><img src="https://media.giphy.com/media/T08JhumnpKAI8/giphy.gif" width = 40%></p>
-
-This is an open source project aimed at providing a free, full fledged template that anyone can use as a template to build and put out their website within an hour!. We take special care of the UI, SEO and all the cool stuff. This is possible to the hard work of our contributors and project maintainers. You just focus on putting your important info and expanding your digital presence!
 
 ## A sneek peek into what we have here🙈 :
 
@@ -128,7 +125,7 @@ git push -u origin <your_branch_name>
 
 ## The geeks🤓 behind this initiative:
 
-#### Our hard working Project Maintainers👨‍🏫:
+#### Our hard-working Project Maintainers👨‍🏫:
 
 <p align="center">
 <img width=20% src="https://avatars2.githubusercontent.com/u/46641503?v=4">&ensp;&ensp;&ensp;
@@ -152,6 +149,7 @@ git push -u origin <your_branch_name>
 <a href="https://njackwinterofcode.github.io/"><img src="./assets/readme_assets/nwoc.JPG" width= "25%" /></a>
 <a href="https://devscript.tech/woc/"><img src="./assets/readme_assets/dwoc.png" width="25%"></a>
 <a href="https://mexili.github.io/winter_of_code/#/"><img src="./assets/readme_assets/mwoc.png" width="25%"></a>
+<a href="https://crosswoc.ieeedtu.in/"><img src="./assets/readme_assets/crosswoc.png" width="25%"></a>
 </p>
 
 ## Code of Conduct
