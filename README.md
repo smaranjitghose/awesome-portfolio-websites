@@ -21,19 +21,19 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Awesome Portf
 ## A sneek peek into what we have here🙈 :
 
 ### Home Page:
-<p align="center"><img src="./assets/Readme_Assets/Home_Page.gif"></p>
+<p align="center"><img src="./readme_assets/Home_Page.gif"></p>
 
 ### Experience Page:
-<p align="center"><img src="./assets/Readme_Assets/Experience_Page.gif"></p>
+<p align="center"><img src="./readme_assets/Experience_Page.gif"></p>
 
 ### Project Page:
-<p align="center"><img src="./assets/Readme_Assets/Project_Page.gif"></p>
+<p align="center"><img src="./readme_assets/Project_Page.gif"></p>
 
 ### Research Page:
-<p align="center"><img src="./assets/Readme_Assets/Research_Page.gif"></p>
+<p align="center"><img src="./readme_assets/Research_Page.gif"></p>
 
 ### Education Page:
-<p align="center"><img src="./assets/Readme_Assets/Education_Page.gif"></p>
+<p align="center"><img src="./readme_assets/Education_Page.gif"></p>
 
 ## How to use this?🛠
 
@@ -52,7 +52,7 @@ To start contributing, follow the below guidelines:
 ```
 git clone --depth 1 https://github.com/<your_user_name>/awesome-portfolio-websites.git
 ```
-<img src="./assets/readme_assets/CloneRepo.png" width="500">
+<img src="./readme_assets/CloneRepo.png" width="500">
 
 **3.** Navigate to the project directory :file_folder: .
 
@@ -108,14 +108,14 @@ git push -u origin <your_branch_name>
 
 **12.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
 
-<img src="./assets/Readme_Assets/ComparePR.png" width=600>
+<img src="./readme_assets/ComparePR.png" width=600>
 
 **13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
 
 
 **14.** Click on `Create Pull Request`.
 
-<img src="./assets/readme_assets/CreatePR.png" width=600>
+<img src="./readme_assets/CreatePR.png" width=600>
 
 
 **15** Voila :exclamation: You have made a PR to the awesome-developer-portfolio project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days
@@ -144,12 +144,12 @@ git push -u origin <your_branch_name>
 ## Open Source Programs we have been a associated with: 
 
 <p align="center">
-<a href="https://scodein.tech/"><img src="./assets/readme_assets/sci.png" width= "25%"/></a>
-<a href="https://hakincodes.tech/"><img src="./assets/readme_assets/ch.png" width= "25%"/></a>
-<a href="https://njackwinterofcode.github.io/"><img src="./assets/readme_assets/nwoc.JPG" width= "25%" /></a>
-<a href="https://devscript.tech/woc/"><img src="./assets/readme_assets/dwoc.png" width="25%"></a>
-<a href="https://mexili.github.io/winter_of_code/#/"><img src="./assets/readme_assets/mwoc.png" width="25%"></a>
-<a href="https://crosswoc.ieeedtu.in/"><img src="./assets/readme_assets/crosswoc.png" width="25%"></a>
+<a href="https://scodein.tech/"><img src="./readme_assets/sci.png" width= "25%"/></a>
+<a href="https://hakincodes.tech/"><img src="./readme_assets/ch.png" width= "25%"/></a>
+<a href="https://njackwinterofcode.github.io/"><img src="./readme_assets/nwoc.png" width= "25%" /></a>
+<a href="https://devscript.tech/woc/"><img src="./readme_assets/dwoc.png" width="25%"></a>
+<a href="https://mexili.github.io/winter_of_code/#/"><img src="./readme_assets/mwoc.png" width="25%"></a>
+<a href="https://crosswoc.ieeedtu.in/"><img src="./readme_assets/crosswoc.png" width="25%"></a>
 </p>
 
 ## Code of Conduct
