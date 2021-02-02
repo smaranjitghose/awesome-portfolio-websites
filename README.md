@@ -141,7 +141,7 @@ git push -u origin <your_branch_name>
   <img src="https://contributors-img.web.app/image?repo=smaranjitghose/awesome-portfolio-websites" />
 </a>
 
-## Open Source Programs we have been a associated with: 
+## Open Source Programs we have been associated with: 
 
 <p align="center">
 <a href="https://scodein.tech/"><img src="./readme_assets/sci.png" width= "25%"/></a>
