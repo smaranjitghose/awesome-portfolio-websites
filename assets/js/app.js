@@ -18,6 +18,23 @@ let header = $(`
    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+     <!--TOGGLE FOR LIGHT/DARK MODE-->
+        <li>
+          <label for="switch-1" class="theme-switch">
+        <input class="toggle-checkbox" type="checkbox" id="switch-1" name="theme" />
+        <div class='toggle-slot'>
+            <!-- <div class='sun-icon-wrapper'>
+                    <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
+                </div> -->
+            <div class='toggle-button-1 toggle-button'>
+                <span class="toggle--feature"></span>
+            </div>
+            <!-- <div class='moon-icon-wrapper'>
+                    <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
+                </div> -->
+        </div>
+    </label>
+        </li>
   </ul>
 </div>
 </nav>`);
@@ -75,6 +92,89 @@ $(function () {
         menuOpen = false;
       }
   });
+
+  /*JavaScript for toggle for light/dark mode*/
+  
+    var checkbox = document.querySelector("#switch-1");
+    var toggler = document.querySelector('.toggle-button-1');
+  
+
+  if (checkbox) {
+    let a = localStorage.getItem("theme");
+    document.documentElement.setAttribute("data-theme", a); // setting the initial theme to light
+
+    if (localStorage.getItem("theme") === "dark") {
+      checkbox.checked = true;
+    }
+
+    // selecting the footer text & footer icons
+    const footerText = document.querySelector('.footer-text p');
+    const footerIcons = document.querySelectorAll('.sub-footer-icon');
+
+    // listening for click on toggler
+    toggler.addEventListener("click", () => {
+      if (checkbox.checked) {
+        // if theme is dark then on the toggler click we have to make it light
+        trans();
+        // changing the color
+        toggleDarkColor();
+
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("theme", "light");
+      } else {
+        /*
+        if there is click on toggler and if theme is light (initially it will be light) then the theme should convert to dark
+        */
+        trans();
+        // changing the color
+        toggleLightColor();
+
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("theme", "dark");
+      }
+    });
+
+    let trans = () => {
+      document.documentElement.classList.add("transition");
+      window.setTimeout(() => {
+        document.documentElement.classList.remove("transition");
+      }, 1000);
+    };
+
+    // function for changing color when dark theme is on.
+    let toggleDarkColor = () => {
+
+      footerIcons.forEach(icon => {
+        icon.style.backgroundColor = 'transparent';
+
+        // hover effect
+        icon.addEventListener('mouseover', () => {
+          icon.style.backgroundColor = 'transparent';
+        });
+
+        icon.addEventListener('mouseleave', () => {
+          icon.style.backgroundColor = 'transparent';
+        });
+      });
+    }
+
+    // function for changing color when the light theme is on.
+    let toggleLightColor = () => {
+
+      footerIcons.forEach(icon => {
+        icon.style.backgroundColor = 'transparent';
+        // hover effect
+        icon.addEventListener('mouseover', () => {
+          icon.style.backgroundColor = 'transparent';
+
+        });
+
+        icon.addEventListener('mouseleave', () => {
+          icon.style.backgroundColor = 'transparent';
+        });
+      });
+    }
+  }
 
 });
 

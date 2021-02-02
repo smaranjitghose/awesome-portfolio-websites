@@ -143,6 +143,111 @@ html {
   stroke-width: 6;
 }
 
+/*toggle for light/dark mode*/
+
+.toggle-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.side-toggle {
+  height: 2em;
+  width: 5em;
+}
+
+.toggle-slot {
+  position: relative;
+  height: 3em;
+  width: 7.5em;
+  border-radius: 10em;
+  transition: background-color 250ms;
+  margin-top: 0.75em;
+  margin-left: 0.5em;
+  cursor: pointer;
+  background-color: #9ee3fb;
+  border: 5px solid #86c3d7;
+}
+
+.toggle-checkbox:checked ~ .toggle-slot {
+  border: 5px solid #1c1c1c;
+  background-color: #45453c;
+}
+
+.toggle-button {
+  transform: translate(11.75em, 1.75em);
+  position: absolute;
+  height: 1.85em;
+  width: 1.85em;
+  border-radius: 50%;
+
+  transition: background-color 250ms, border-color 250ms,
+    transform 750ms cubic-bezier(0.26, 2, 0.46, 0.71);
+  margin-top: -1.5em;
+  margin-left: -7em;
+  cursor: pointer;
+  pointer-events: all;
+  background-color: #ffdf6d;
+  border: 5px solid #e1c348;
+}
+
+.theme-switch {
+  pointer-events: none;
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+  transform: translate(7.5em, 1.75em);
+  background-color: #fff;
+  border: 5px solid #e3e3c7;
+}
+
+.toggle-slot .toggle-button .toggle--feature {
+  display: block;
+  position: absolute;
+  top: 55%;
+  right: 175%;
+  z-index: 10;
+  width: 0.65em;
+  height: 0.65em;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: #fff 0 0, #fff 3px 0, #fff 6px 0, #fff 9px 0, #fff 11px 0,
+    #fff 14px 0, #fff 16px 0, #fff 21px -1px 0 1px, #fff 16px -7px 0 -2px,
+    #fff 7px -7px 0 1px, #d3d3d3 0 0 0 4px, #d3d3d3 6px 0 0 4px,
+    #d3d3d3 11px 0 0 4px, #d3d3d3 16px 0 0 4px, #d3d3d3 21px -1px 0 5px,
+    #d3d3d3 16px -7px 0 1px, #d3d3d3 7px -7px 0 5px;
+  transition: opacity 1000ms ease-in;
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button .toggle--feature {
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: 152.5%;
+  z-index: 20;
+  width: 0.2em;
+  height: 0.2em;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: rgba(216, 24, 24, 0.1) 30px -3px 0 0,
+   rgb(255, 255, 255) 12px 15px 0 -1px, #fff 38px 10px 0 1px,
+    rgb(255, 255, 255) 30px 20px 0 0, #fff 20px 20px 0 -1.5px,
+    rgb(255, 255, 255) 15px 15px 0 1px;
+}
+
+/*Transition for Toggle*/
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+
 /**********
   FOOTER SECTION
 **********/
