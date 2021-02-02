@@ -1,6 +1,4 @@
-<h1 align= "center"><b>Awesome Portfolio Websites</b></h1> 
-
-![awesome-portfolio-websites](https://socialify.git.ci/smaranjitghose/awesome-portfolio-websites/image?description=1&descriptionEditable=An%20open%20source%20project%20providing%20free%20%26%20beautiful%20templates%20to%20everyone%20to%20build%20their%20portfolio%20websites%20and%20showcase%20their%20work%20to%20the%20world.&forks=1&issues=1&owner=1&pattern=Formal%20Invitation&pulls=1&stargazers=1&theme=Dark)
+# Awesome Portfolio Websites
 
 Are you a researcher, a developer or perhaps an explorer of technology who is looking forward to create an awesome personal brand?
 <p align="center"><img src="https://media.giphy.com/media/dkGhBWE3SyzXW/giphy.gif" width = 40%></p>
@@ -46,7 +44,8 @@ This is an open source project aimed at providing a free, full fledged template 
 
 ## Contribution Guidelines🏗
 
-Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better. 
+Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and improve it further
+
 To start contributing, follow the below guidelines: 
 
 **1.**  Fork [this](https://github.com/smaranjitghose/awesome-portfolio-websites) repository.
@@ -56,7 +55,7 @@ To start contributing, follow the below guidelines:
 ```
 git clone --depth 1 https://github.com/<your_user_name>/awesome-portfolio-websites.git
 ```
-<img src="./assets/Readme_Assets/CloneRepo.png" width="500">
+<img src="./assets/readme_assets/CloneRepo.png" width="500">
 
 **3.** Navigate to the project directory :file_folder: .
 
@@ -88,7 +87,7 @@ git pull upstream master
 git checkout -b <your_branch_name>
 ```
 
-**8.** Perfom your desired changes to the code base.
+**8.** Perform your desired changes to the code base.
 
 <p align="center"><img width=35% src="https://media2.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif?cid=ecf05e47pzi2rpig0vc8pjusra8hiai1b91zgiywvbubu9vu&rid=giphy.gif"></p>
 
@@ -119,7 +118,7 @@ git push -u origin <your_branch_name>
 
 **14.** Click on `Create Pull Request`.
 
-<img src="./assets/Readme_Assets/CreatePR.png" width=600>
+<img src="./assets/readme_assets/CreatePR.png" width=600>
 
 
 **15** Voila :exclamation: You have made a PR to the awesome-developer-portfolio project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days
@@ -148,10 +147,11 @@ git push -u origin <your_branch_name>
 ## Open Source Programs we have been a associated with: 
 
 <p align="center">
-<a href="https://hakincodes.tech/"><img src="./assets/Readme_Assets/hakin_codes.png" width= "20%"/></a>
-<a href="https://scodein.tech/"><img src="./assets/Readme_Assets/sci.jpg" width= "20%" /></a>
-<a href="https://njackwinterofcode.github.io/"><img src="./assets/Readme_Assets/nwoc.JPG" width= "21%" /></a>
-<a href="https://devscript.tech/woc/"><img src="./assets/Readme_Assets/dwoc.png" width="20%"></a>
+<a href="https://scodein.tech/"><img src="./assets/readme_assets/sci.png" width= "25%"/></a>
+<a href="https://hakincodes.tech/"><img src="./assets/readme_assets/ch.png" width= "25%"/></a>
+<a href="https://njackwinterofcode.github.io/"><img src="./assets/readme_assets/nwoc.JPG" width= "25%" /></a>
+<a href="https://devscript.tech/woc/"><img src="./assets/readme_assets/dwoc.png" width="25%"></a>
+<a href="https://mexili.github.io/winter_of_code/#/"><img src="./assets/readme_assets/mwoc.png" width="25%"></a>
 </p>
 
 ## Code of Conduct
