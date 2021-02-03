@@ -1,12 +1,13 @@
 AOS.init();
 
-// MOOCs Cards
+// text animation effect
 var _window = window,Splitting = _window.Splitting,ScrollOut = _window.ScrollOut;
 Splitting();
 ScrollOut({
   targets: '.word',
 })
 
+// MOOCs Cards
 
 const moocs = document.querySelector(".moocs");
 const moocscards = [

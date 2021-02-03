@@ -446,17 +446,59 @@ ul ol{
   color: var(--text-color);
 }
 
-.text--perspective {
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
+/* 
+---------------------------------
+         TEXT ANIMATIONS
+----------------------------------
+*/
+.text--blocks [data-scroll='out'] .char {
+  visibility: hidden;
 }
-.text--perspective .char {
-  transition: opacity 0.05s calc(0.25s + var(--char-index) * 0.1s), -webkit-transform 0.25s calc(0.25s + var(--char-index) * 0.1s);
-  transition: transform 0.25s calc(0.25s + var(--char-index) * 0.1s), opacity 0.05s calc(0.25s + var(--char-index) * 0.1s);
-  transition: transform 0.25s calc(0.25s + var(--char-index) * 0.1s), opacity 0.05s calc(0.25s + var(--char-index) * 0.1s), -webkit-transform 0.25s calc(0.25s + var(--char-index) * 0.1s);
+.text--blocks [data-scroll='in'] {
+  overflow: hidden;
+  position: relative;
 }
-.text--perspective [data-scroll='out'] .char {
-  opacity: 0;
-  -webkit-transform: translate3d(-25px, -20px, -800px);
-          transform: translate3d(-25px, -20px, -800px);
+.text--blocks [data-scroll='in'] .char {
+  transition-delay: 0.5s;
+}
+.text--blocks [data-scroll='in']:after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  -webkit-animation: block 0.5s 0.25s both;
+          animation: block 0.5s 0.25s both;
+}
+@-webkit-keyframes block {
+  0% {
+    -webkit-transform: translate(-110%, 0);
+            transform: translate(-110%, 0);
+  }
+  45%, 55% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(110%, 0);
+            transform: translate(110%, 0);
+  }
+}
+@keyframes block {
+  0% {
+    -webkit-transform: translate(-110%, 0);
+            transform: translate(-110%, 0);
+  }
+  45%, 55% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(110%, 0);
+            transform: translate(110%, 0);
+  }
 }

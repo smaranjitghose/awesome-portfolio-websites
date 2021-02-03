@@ -1,10 +1,12 @@
-/* Project Cards */
+// text animation effect
 var _window = window,Splitting = _window.Splitting,ScrollOut = _window.ScrollOut;
 Splitting();
 ScrollOut({
   targets: '.word',
   
 })
+
+/* Project Cards */
 
 const projectcards = document.querySelector(".projectcards");
 

@@ -1,10 +1,11 @@
-//  Work experience cards
+// text animation effect
 var _window = window,Splitting = _window.Splitting,ScrollOut = _window.ScrollOut;
 Splitting();
 ScrollOut({
   targets: '.word',
 })
 
+//  Work experience cards
 
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [

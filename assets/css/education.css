@@ -159,6 +159,11 @@ html[data-theme = 'dark']
   padding:1px;
 }
 
+/* 
+---------------------------------
+         TEXT ANIMATIONS
+----------------------------------
+*/
 .text--blocks [data-scroll='out'] .char {
   visibility: hidden;
 }

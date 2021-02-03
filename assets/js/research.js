@@ -1,9 +1,11 @@
-/*Research Details Table*/
+// text animation effect
 var _window = window,Splitting = _window.Splitting,ScrollOut = _window.ScrollOut;
 Splitting();
 ScrollOut({
   targets: '.word',
 })
+
+/*Research Details Table*/
 
 const researchTable = document.querySelector(".main");
 
