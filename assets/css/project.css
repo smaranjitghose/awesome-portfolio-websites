@@ -55,7 +55,6 @@ a:hover {
 }
 
 .NeuInput-outer {
-  width: 330px;
   display: flex;
   border-radius: 1rem;
   background-color: var(--nue-light);
@@ -272,7 +271,7 @@ a:hover {
   background-color: #b6bcebfd;
   color: #0117E7;
   margin-top: 5px;
-  margin-right: 5px;
+  margin-right: 11px;
   border-radius: 100px;
   border:none;
   padding: 5px 10px;
@@ -281,11 +280,15 @@ a:hover {
   font-weight: bold;
 }
 
+.tagbutton span {
+  padding-right: 5.5px;
+}
+
 .tagimg {
   width: 2rem;
   margin: auto 0;
   outline: none;
-  margin-left: -5px;
+  margin-left: -8px;
 }
 
 .card input[type="checkbox"] {
@@ -402,8 +405,7 @@ input[type="text"]{
 
 @media only screen and (max-width: 702px) {
   .NeuInput-outer {
-    width: 300px;
-    margin: 0.3rem;
+    margin: -1.5rem 0.3rem 3rem 0.3rem;
   }
 }
 
