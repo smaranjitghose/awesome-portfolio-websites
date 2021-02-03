@@ -159,14 +159,14 @@ a:hover {
   margin-bottom: 4em;
 }
 
-@media(min-width: 378px)
+@media(min-width: 402px)
 {
   .card .data .content{
     margin-bottom: 1em;
   }
 }
 
-@media(min-width: 400px)
+@media(min-width: 402px)
 {
   .card .data .content{
     margin-bottom: 2em;
@@ -409,7 +409,7 @@ input[type="text"]{
   }
 }
 
-@media (max-width: 377px) {
+@media (max-width: 402px) {
 	.skill-card .data {
 		transform: translateY(calc(90px + 4em));
     }
