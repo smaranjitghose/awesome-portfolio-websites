@@ -82,8 +82,14 @@ html {
 
 /*starting part of every page*/
 
+
+/* 
+------------------------------------
+     HAMBURGER ANIMATION
+------------------------------------
+*/
 .hamburger_wrapper{
-  margin-left: 50vw;
+  float: right;
 }
 
 .hamburger {
