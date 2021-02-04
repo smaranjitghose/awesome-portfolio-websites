@@ -80,6 +80,7 @@ $(function () {
 
 });
 
+// function for toggling hamburger is-active class
 $(function(){
   
   $("#js-hamburger").on("click", function(){

@@ -2,6 +2,7 @@
 
 const projectcards = document.querySelector(".projectcards");
 
+// Object with tag name as key and their respective image as value
 const tagImages = {
   "React.js": "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
   "Game dev": "https://image.flaticon.com/icons/png/512/643/643350.png",
@@ -12,6 +13,7 @@ const tagImages = {
   "Tensorflow": "https://cdn-images-1.medium.com/max/1200/1*iDQvKoz7gGHc6YXqvqWWZQ.png",
 }
 
+// Array of object for projects
 const projects = [
   {
     title: "Quiz App",
@@ -125,6 +127,7 @@ const projects = [
   },
 ];
 
+// function for rendering project cards data
 const showCards = () => {
   let output = "";
   projects.forEach(
