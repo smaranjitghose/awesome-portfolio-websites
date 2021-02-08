@@ -59,6 +59,33 @@ body{
     color: var(--p-up);
 }
 
+/* Svg animation */
+.ai-element {
+    animation: MoveUpDown 3s ease-in-out infinite;
+}
+
+.ai-background {
+    animation: MoveLeftRight 3s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes MoveLeftRight {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    transform: translateX(7px);
+  }
+}
+
 /*Research page*/
 
 .txt-bottom{
