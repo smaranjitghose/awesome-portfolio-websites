@@ -1,5 +1,4 @@
 /*Research Details Table*/
-
 const researchTable = document.querySelector(".main");
 
 const research = [
@@ -114,47 +113,49 @@ const research = [
         absbox: "absPopup8"
     }
 ];
-   
 const fillData = () => {
     let output = "";
     research.forEach(
         ({image, title, authors, conferences, researchYr, citebox, citation, absbox, abstract}) =>
         (output +=`
-            <tr> 
-                <td class="imgCol"><img src="${image}" class="rImg"></td>
-                <td class = "researchTitleName">
-                    <div>
-                        <span class="imgResponsive">
-                            <img src="${image}" class="imgRes">
-                        </span>
-                    </div>
-                    <a href="#0" class="paperTitle"> ${title} </a> 
-                    <div> ${authors} </div> <div class="rConferences"> ${conferences} 
-                        <div class="researchY">${researchYr}</div>
-                    </div>
-        
-                    <!--CITE BUTTON-->
-                    <div class="d-flex" style="margin-right:5%;">
-                        <button class="button button-accent button-small text-right button-abstract " type="button" data-toggle="collapse" data-target="#${absbox}" aria-expanded="false" aria-controls="${absbox}">
-                            ABSTRACT
-                        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                
-                        <button class="button button-accent button-small text-right button-abstract " type="button" data-toggle="collapse" data-target="#${citebox}" aria-expanded="false" aria-controls="${citebox}">
-                            BIBTEX
-                        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </div>
-                    <div id="${absbox}" class="collapse" aria-labelledby="headingTwo" data-parent=".collapse">
-                        <div class="card-body">
-                            ${abstract}    
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-horizontal" style="display:flex; flex: 1 1 auto;">
+                        <div class="img-square-wrapper">
+                            <img class="" src="${image}" alt="Card image cap" style="width:300px; height:180px; margin:20px 20px;">
                         </div>
-                    </div>
-                    <div id="${citebox}" class="collapse" aria-labelledby="headingTwo" data-parent=".collapse">
                         <div class="card-body">
-                            ${citation.vancouver}    
+                            <h4 class="card-title">${title}</h4>
+                            <div> ${authors} </div> <div class="rConferences"> ${conferences} 
+                            <div class="researchY   ">${researchYr}</div>
                         </div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="d-flex" style="margin-right:5%;">
+               <button class="btn btn-primary"" type="button" data-toggle="collapse" data-target="#${absbox}" aria-expanded="false" aria-controls="${absbox}">
+            ABSTRACT
+                </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <button class="btn btn-primary"  type="button" data-toggle="collapse" data-target="#${citebox}" aria-expanded="false" aria-controls="${citebox}">
+            BIBTEX
+          </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div id="${absbox}" class="collapse" aria-labelledby="headingTwo" data-parent=".collapse">
+       <div class="card-body">
+        ${abstract}    
+         </div>
+</div>
+<div id="${citebox}" class="collapse" aria-labelledby="headingTwo" data-parent=".collapse">
+    <div class="card-body">
+        ${citation.vancouver}    
+    </div>
+                        </div>
+                        
                     </div>
-                </td>
-            </tr>`)
+                </div>
+            </div>
+        </div>
+    </div>`)
         );
     researchTable.innerHTML = output;
 

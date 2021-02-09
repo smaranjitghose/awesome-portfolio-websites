@@ -192,10 +192,10 @@ body{
 }
 
 .researchY {
-    font-weight: normal;
+    font-weight: bold;
     vertical-align: top;
     text-align: left;
-    color: grey;
+    color: black;
     margin-top: 1em;
     margin-bottom: 14%;
 }
@@ -505,3 +505,16 @@ body{
     color: transparent;
   }
   
+  .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+   
+  }
+  .card{
+      background-color: #22b6a7;
+      color:white;
+      border-radius: 20px;
+      margin:20px 20px;
+  }
