@@ -46,6 +46,55 @@
 </head>
 
 <body>
+<!-- loader -->
+  <div class="loader">
+    <div class="svg-container" style="min-width: '50vw'">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="390" height="390">
+  
+        <defs>
+          <linearGradient id="myGradient" gradientTransform="rotate(90)">
+            <stop offset="5%" stop-color="lightblue">
+              <animate attributeName="stop-color" values="lightblue;blue;red;red;black;red;red;purple;lightblue" dur="14s"
+                repeatCount="indefinite" />
+            </stop>
+            <stop offset="95%" stop-color="lightblue">
+              <animate attributeName="stop-color"
+                values="lightblue;orange;purple;purple;orange;purple;purple;blue;lightblue" dur="13s"
+                repeatCount="indefinite" />
+            </stop>
+          </linearGradient>
+        </defs>
+  
+        <path id="circle" fill="url('#myGradient')"
+          d="M378.76 320.52C378.76 351.53 353.36 376.7 322.06 376.7C290.77 376.7 265.36 351.53 265.36 320.52C265.36 289.51 290.77 264.33 322.06 264.33C353.36 264.33 378.76 289.51 378.76 320.52Z" />
+        <path id="Orbit1" fill-opacity="0" pathLength="1000" stroke="url('#myGradient')" stroke-width="5"
+          d="M405.9 274.06C473.08 393.25 490.24 511.08 444.18 537.04C398.13 563 306.2 487.31 239.03 368.13C171.85 248.94 154.69 131.11 200.75 105.15C246.8 79.19 338.73 154.88 405.9 274.06Z" />
+        <path id="Orbit2" fill-opacity="0" pathLength="1000" stroke="url('#myGradient')" stroke-width="5"
+          d="M402.81 368.13C334.06 486.41 241.14 560.88 195.44 534.32C149.73 507.75 168.44 390.16 237.19 271.87C305.94 153.59 398.86 79.12 444.56 105.68C490.27 132.25 471.56 249.84 402.81 368.13Z" />
+        <path id="Orbit3" fill-opacity="0" pathLength="1000" stroke="url('#myGradient')" stroke-width="5"
+          d="M323.21 219.49C460.01 217.59 571.66 258.96 572.4 311.82C573.13 364.68 462.66 409.13 325.87 411.03C189.07 412.93 77.41 371.56 76.67 318.7C75.94 265.84 186.41 221.38 323.21 219.49Z" />
+  
+        <circle r="10" fill="url('#myGradient')">
+          <animateMotion dur="10s" repeatCount="indefinite">
+            <mpath href="#Orbit1" />
+          </animateMotion>
+        </circle>
+  
+        <circle r="10" fill="url('#myGradient')"> {/* circle is revolving in reverse path */}
+          <animateMotion dur="11s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear">
+            <mpath href="#Orbit2" />
+          </animateMotion>
+        </circle>
+  
+        <circle r="10" fill="url('#myGradient')">
+          <animateMotion dur="10s" repeatCount="indefinite">
+            <mpath href="#Orbit3" />
+          </animateMotion>
+        </circle>
+  
+      </svg>
+    </div>
+  </div>
 
   <!--Dynamic Nav Bar-->
 
