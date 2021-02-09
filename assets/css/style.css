@@ -63,6 +63,30 @@ html[data-theme="dark"] {
   --col-icon-leetcode:rgb(255, 181, 62);
   --col-white: #fff;
 }
+/*-----------------------------
+            Scrollbar
+------------------------------*/
+::-webkit-scrollbar {
+    width: 16px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 2px;
+    background: #f1f1f1;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    max-height: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: #555;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666; 
+}
 
 body {
   height: 100vh;
@@ -81,6 +105,63 @@ html {
 }
 
 /*starting part of every page*/
+
+
+/* 
+------------------------------------
+     HAMBURGER ANIMATION
+------------------------------------
+*/
+.hamburger_wrapper{
+  float: right;
+}
+
+.hamburger {
+  width: 2.5em;
+  height: 2em;
+  font-size: 11px;
+  cursor: pointer;
+  position: relative;
+}
+
+.first, .second, .third {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: .45em;
+  width: 100%;
+  float: left;
+  border-radius: 2px;
+  transition: all .35s ease-in-out;
+  
+}
+
+.first {
+  top: 0px;
+}
+
+.is-active .first {
+  transform-origin: .167em .33em;
+  transform: rotate(45deg) translate(0.167em, -0.25em);
+}
+
+.second {
+  top: 50%;
+  margin-top: -.25em;
+}
+
+.is-active .second {
+  opacity: 0;
+  transform: translateX(8em)
+}
+
+.third {
+  bottom: 0px;
+  transform-origin: .25em -0.33em;
+}
+
+.is-active .third {
+  transform: rotate(-45deg) translate(-0.167em, 0.083em);
+}
 
 .navbar-brand{
   font-family: Agustina;
@@ -148,6 +229,7 @@ html {
 **********/
 
 .footer{
+  padding-top: 10px;
   background-color:#040406;
 }
 
@@ -193,9 +275,7 @@ Rotate Transition in foote Soical Icon
 *********/
 
 .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
+      transition: background-color 0.3s, var(--trans-props);
 }
 
 .rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-medium, .fa-github {
@@ -356,6 +436,10 @@ form{
         display: flex;
         justify-content: center;
       } 
+
+      .footer{
+        padding-top: 10px;
+      }
 
       #navbar-content {
         height: 100vh;

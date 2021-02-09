@@ -23,6 +23,7 @@ html[data-theme="light"] {
 
 .head-upper{
   background: var(--bg-txt-img);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: var(--txt-fill);
 }
@@ -72,6 +73,7 @@ html[data-theme="light"] {
   border-radius: 4px;
   box-shadow: -3px -3px 4px var(--shadow-col2), 2px 3px 4px var(--shadow-col1);
   transition: all 0.4s;
+  contain: content;
 }
 
 .card1:hover{
@@ -115,7 +117,7 @@ ul ol{
 @media only screen and (min-width: 768px) {
   .card1 {
     flex-direction: row;
-    max-height: 279px;
+    max-height: 70vh;
   }
 
   .card1 h3 {
@@ -133,7 +135,7 @@ ul ol{
     border-bottom-left-radius: 13px;
     border-top-right-radius: 0;
     max-width: 310px;
-    max-height: 279px;
+    height: inherit;
     width: 100%;
   }
 }
@@ -187,8 +189,9 @@ ul ol{
 .main ul {
   display: block;
   margin: 0 auto;
+  min-height: 15rem;
   max-width: 1050px;
-  padding: 30px;
+  padding: 1rem !important;
 }
 
 .main a {
@@ -400,13 +403,13 @@ ul ol{
 
 .column{
   float: left;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem !important;
   padding-left: 0;
   padding-right: 0;
 }
 
 .mentorshipCard{
-  margin-bottom: -5em;
+  margin-bottom: 5em;
   border-radius: 13px;
 }
 
@@ -435,7 +438,7 @@ ul ol{
 }
 
 .card2{
-  background-color: var(--bg1-color);
+  /* background-color: var(--bg1-color); */
   color: var(--text);
 }
 
