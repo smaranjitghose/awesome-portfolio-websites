@@ -142,7 +142,7 @@ const showCards = () => {
           <div class="title-div">
             <h1 class="title"><a href="#">${title}</a></h1>
             </div>
-            <div class="searchdiv">
+            <div class="searchdiv" style="margin-top:10px;">
             ${tags.map(tag => (
                 `<button class="tagbutton">
                   <img class="tagbutton tagimg" width="40px" src=${tagImages[tag]} alt="" />
