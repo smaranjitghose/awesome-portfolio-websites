@@ -147,6 +147,7 @@ const showCards = () => {
                 `<button class="tagbutton">
                   <img class="tagbutton tagimg" width="40px" src=${tagImages[tag]} alt="" />
                     <span>${tag}</span>
+                    
                 </button>`
               )
       ).join("")

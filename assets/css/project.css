@@ -169,7 +169,7 @@ a:hover {
 @media(min-width: 400px)
 {
   .card .data .content{
-    margin-bottom: 2em;
+    margin-bottom: 4em;
   }
 }
 
