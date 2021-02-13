@@ -112,7 +112,7 @@ html {
   justify-content: center;
 }
 
-.loader {
+.loader-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -124,6 +124,8 @@ html {
   align-items: center;
   z-index: 999999;
 }
+
+
 
 .disappear {
   animation: vanish 1s forwards;
