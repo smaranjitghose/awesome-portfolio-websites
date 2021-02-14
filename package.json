@@ -8,11 +8,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@tailwindcss/typography": "^0.4.0",
+    "alpinejs": "^2.8.0",
     "autoprefixer": "^10.2.4",
     "next": "10.0.6",
+    "next-themes": "0.0.10",
     "postcss": "^8.2.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-transition-group": "^4.4.1",
     "tailwindcss": "^2.0.3"
   }
 }

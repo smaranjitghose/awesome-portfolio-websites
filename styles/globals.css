@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html,
 body {
   padding: 0;
@@ -13,4 +16,7 @@ a {
 
 * {
   box-sizing: border-box;
+}
+#menu-toggle:checked + #menu {
+  display: block;
 }
