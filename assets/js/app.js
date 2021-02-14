@@ -51,6 +51,9 @@ let footer = $(`
           </div>
         </div>
       </div>
+    <div class="footer-copyright text-centre py-1" id="copyright" style="color:white">
+        <p>Created By <a href="#">Smaranjit Ghosh</a>|&copy; Copyright 2021 All right reserved. </p> 
+    </div>
     </div>
   </div>
 </footer>
