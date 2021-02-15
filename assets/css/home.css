@@ -10,12 +10,10 @@ html[data-theme="light"] {
   --col-bd-icon:transparent;
   --bg-icon: #fff;
    --bg1-color: #fff;
-  --col-icon-twitter: #1da1f2;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
   --col-icon-medium: #00ab6c;
-  --col-icon-kaggle: #41aff3;
-  --col-icon-github:#24292e;  
+  --col-icon-kaggle: #41aff3;  
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail:rgb(209, 82, 82);
   --col-icon-google-scholar:#3cba54;
@@ -32,12 +30,10 @@ html[data-theme="dark"] {
   --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7) , -5px -5px 10px rgba(255,255,255,0.1);
   --col-box-shadow-hover:inset rgba(255, 255, 255, 1) 2px 2px 4px, 
  inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
-  --col-icon-twitter: #1da1f2;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
   --col-icon-medium: #00ab6c;
   --col-icon-kaggle: #41aff3;
-  --col-icon-github:  #24292e;
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail:rgb(209, 82, 82);
   --col-icon-google-scholar:#3cba54;
@@ -179,19 +175,6 @@ body{
   z-index: 1;
   transition: var(--trans-props);
 }
-.github i {
-  margin: auto;
-  font-size: 24px;
-  z-index: 1;
-  transition: var(--trans-props);
-}
-.socialicon.twitter{
-  color: var(--col-icon-twitter);
-}
-
-.socialicon.github{
-  color:var(--col-icon-github);
-} 
 
 .socialicon.linkedin{
   color: var(--col-icon-linkedin);
@@ -219,17 +202,6 @@ body{
   
 }
 
-.socialicon.twitter:after {
-  background-color: #1da1f2;
-  box-shadow: var(--twitter);
-}
-
-.socialicon.github:after {
-  background-color: #1f2122;
-  box-shadow: var(--github);
-} 
-
-
 .socialicon.linkedin:after {
   background-color: #0e76a8;
   box-shadow: var(--linkedin);
@@ -249,6 +221,48 @@ body{
   background-color: #00ab6c;
   box-shadow: var(--medium);
 }
+
+
+/* twitter SVG code */
+.twitter-icon{
+  width: 40px;
+  margin-left: 12px;
+}
+
+.twitter:hover #wing1{
+      transform-origin:center;
+      animation: flap 0.4s ease-out infinite alternate;
+   }	
+   
+.twitter:hover #wing2{
+    transform-origin:center;
+    animation: flap 0.4s ease-in infinite alternate;
+ }		
+
+@keyframes flap{
+     50%{
+      transform:scaleX(-1) rotate(-45deg) translate(-40px,-40px);
+     }
+   }
+
+/* github svg code */
+.github-icon {
+  width: 40px;
+  margin-left: 12px;
+  margin-top: 5px;
+  fill: #000000;
+}
+
+.github:hover #arm {
+  transform-origin: bottom right;
+  animation: moveArm 1s infinite alternate;
+}
+
+@keyframes moveArm {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+ }
+
 
 /*** Social Icon Animations ***/
 
