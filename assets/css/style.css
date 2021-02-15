@@ -286,6 +286,47 @@ Rotate Transition in foote Soical Icon
   background:white;
 }
 
+/* twitter SVG code */
+.twitter-icon{
+  width: 40px;
+  margin-left: 12px;
+}
+
+.twitter:hover #wing1{
+      transform-origin:center;
+      animation: flap 0.4s ease-out infinite alternate;
+   }	
+   
+.twitter:hover #wing2{
+    transform-origin:center;
+    animation: flap 0.4s ease-in infinite alternate;
+ }		
+
+@keyframes flap{
+     50%{
+      transform:scaleX(-1) rotate(-45deg) translate(-40px,-40px);
+     }
+   }
+
+/* github svg code */
+.github-icon {
+  width: 40px;
+  margin-left: 12px;
+  margin-top: 5px;
+  fill: #000000;
+}
+
+.github:hover #arm {
+  transform-origin: bottom right;
+  animation: moveArm 1s infinite alternate;
+}
+
+@keyframes moveArm {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+ }
+
+
 /* twitter SVG micro animation */
 .twitter-icon-footer{
   margin-bottom: 6px;
