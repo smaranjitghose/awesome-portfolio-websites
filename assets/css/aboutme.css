@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+.section-title{
+    padding: 0 15px;
+    flex:0 0 100%;
+    max-width:100%;
+    text-align:center;
+    
+    margin-bottom: 60px;
+}
+.section-title h2{
+    
+    display:inline-block;
+    font-size: 30px;
+    font-weight:700;
+    color:var(--text-black-900);
+    text-transform:uppercase;
+    margin:0;
+    font-family: "Poppins";
+
+}
+.section-title h2:before{
+    content:attr(data-heading);
+    display:block;
+    font-size:16px;
+    font-weight:600;
+    color:var(--skin-color);
+    font-family: "Poppins";
+}
+.about-section .about-img{
+    flex:0 0 40%;
+    max-width: 40%;
+    padding:0 15px;
+}
+.about-section .about-info{
+    flex:0 0 60%;
+    max-width: 60%;
+    padding:0 15px;
+}
+.about-section .about-info .btn-1{
+    margin:30px 20px 0 0;
+    background-color:transparent;
+  
+   color: var(--skin-color);
+   box-shadow:0px 4px 12px rgba(0, 0, 0, 0.4);
+   border-radius: 25px;
+   box-sizing:30%; 
+}
+.skills-title{
+    padding: 0 30px;
+    flex:0 0 100%;
+    max-width:100%;
+    text-align:center;
+    
+    margin-bottom: 60px;
+}
+ .skills-items{
+    flex:0 0 50%;
+    max-width: 50%;
+    padding:0 15px;
+    margin-bottom: 30px;
+}
+ .skills-items .p{
+    font-size:16px;
+    color:var(--text-black-600);
+    text-transform: capitalize;
+    margin:0 0 10px;
+}
+ .skills-items .progress{
+    height:20px;
+    border-radius:10px;
+    position:relative;
+}
+
+ .skills-items .progress-bar{
+    background-color:#fb839e;
+    height:6px;
+    left:7px;
+    top:7px;
+    position:absolute;
+    border-radius:10px;
+    width:60%;
+    
+}
+.skills-items .progress-bar-html{
+    width:80%;
+    background-color:#fb839e;
+    height:6px;
+    left:7px;
+    top:7px;
+    position:absolute;
+    border-radius:10px;
+}
+.skills-items .progress-bar-css{
+    width:70%;
+    background-color:#fb839e;
+    height:6px;
+    left:7px;
+    top:7px;
+    position:absolute;
+    border-radius:10px;
+}
+.skills-items .progress-bar-c{
+    width:70%;
+    background-color:#fb839e;
+    height:6px;
+    left:7px;
+    top:7px;
+    position:absolute;
+    border-radius:10px;
+}
+.skills-items .progress-bar-cc{
+    width:80%;
+    background-color:#fb839e;
+    height:6px;
+    left:7px;
+    top:7px;
+    position:absolute;
+    border-radius:10px;
+}
+.skills-items .progress-bar-javascript{
+    width:60%;
+    background-color:#fb839e;
+    height:6px;
+    left:7px;
+    top:7px;
+    position:absolute;
+    border-radius:10px;
+}
+.skills-items .progress-bar .span{
+    justify-content: space-between;
+    font-size:16px;
+    font-weight:500;
+    align-items: center;
+    margin-top:-40;
+    display:flex;
+}
+
+ 
