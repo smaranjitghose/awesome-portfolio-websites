@@ -223,7 +223,11 @@ body{
 }
 
 
-/* twitter SVG code */
+/*
+---------------------------
+   TWITTER MICROANIMATION
+---------------------------
+*/
 .twitter-icon{
   width: 40px;
   margin-left: 12px;
@@ -245,7 +249,11 @@ body{
      }
    }
 
-/* github svg code */
+/*
+--------------------------
+   GITHUB MICROANIMATION
+--------------------------
+*/
 .github-icon {
   width: 40px;
   margin-left: 12px;
@@ -263,8 +271,11 @@ body{
   100% { transform: rotate(-10deg); }
  }
 
-
-/*** Social Icon Animations ***/
+/*
+----------------------------
+   SOCIAL MEDIA ANIMATIONS
+----------------------------
+*/
 
 .socialicon:hover {
   transform: translateY(-4px);
