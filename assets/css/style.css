@@ -63,9 +63,11 @@ html[data-theme="dark"] {
   --col-icon-leetcode:rgb(255, 181, 62);
   --col-white: #fff;
 }
-/*-----------------------------
-            Scrollbar
-------------------------------*/
+/*
+---------------------------
+        SCROLLBAR
+---------------------------
+*/
 ::-webkit-scrollbar {
     width: 16px;
 }
@@ -224,9 +226,11 @@ html {
   stroke-width: 6;
 }
 
-/**********
-  FOOTER SECTION
-**********/
+/*
+------------------------
+    FOOTER SECTION
+------------------------
+*/
 
 .footer{
   padding-top: 10px;
@@ -282,18 +286,85 @@ Rotate Transition in foote Soical Icon
   font-size: 25px;
 }
 
-.rounded-social-buttons .social-button.twitter {
-  background: #22B6A7;
+.rounded-social-buttons .social-button.twitter{
+  background:white;
 }
 
-/********
-Hover effect in foote Soical Icon
-*********/
+/*
+------------------------------
+   TWITTER MICROANIMATION
+-------------------------------
+*/
+.twitter-icon{
+  width: 40px;
+  margin-left: 12px;
+}
+
+.twitter:hover #wing1{
+      transform-origin:center;
+      animation: flap 0.4s ease-out infinite alternate;
+   }	
+   
+.twitter:hover #wing2{
+    transform-origin:center;
+    animation: flap 0.4s ease-in infinite alternate;
+ }		
+
+@keyframes flap{
+     50%{
+      transform:scaleX(-1) rotate(-45deg) translate(-40px,-40px);
+     }
+   }
+/*
+-----------------------------
+   GITHUB MICROANIMATION
+-----------------------------
+*/
+.github-icon {
+  width: 40px;
+  margin-left: 12px;
+  margin-top: 5px;
+  fill: #000000;
+}
+
+.github:hover #arm {
+  transform-origin: bottom right;
+  animation: moveArm 1s infinite alternate;
+}
+
+@keyframes moveArm {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+ }
+
+
+/* twitter SVG micro animation */
+.twitter-icon-footer{
+  margin-bottom: 6px;
+  width: 35px;
+}
+.twitter:hover{
+  background-color: white;
+}
+
+/* github SVG Micro animation */
+.github-icon-footer{
+  margin-bottom: 8px;
+  width: 35px;
+}
+
+.github:hover{
+  background-color: white;
+}
+/*
+----------------------------------------
+   HOVER EFFECT ON SOCIAL MEDIA ICONS
+----------------------------------------
+*/
 
 .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
   color: #000;
-  background: #22B6A7;
-  border-color: #22B6A7;
+  background: white;
 }
 
 .rounded-social-buttons .social-button.linkedin {
@@ -316,14 +387,13 @@ Hover effect in foote Soical Icon
   border-color: #22B6A7;
 }
 
-.rounded-social-buttons .social-button.github {
-  background: #22B6A7;
+.rounded-social-buttons .social-button.github{
+  background:white;
 }
 
 .rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
   color: #000000;
-  background: #22B6A7;
-  border-color: #22B6A7;
+  background: white;
 }
 
 /************ 
@@ -346,9 +416,11 @@ form{
   color: #000;
 }
 
-/**********
-   Footer Form CSS
-**********/
+/*
+-------------------
+   Footer Form 
+--------------------
+*/
 .form-style-6{
 	font: 95% Arial, Helvetica, sans-serif;
 	max-width: 400px;
