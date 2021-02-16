@@ -63,9 +63,11 @@ html[data-theme="dark"] {
   --col-icon-leetcode:rgb(255, 181, 62);
   --col-white: #fff;
 }
-/*-----------------------------
-            Scrollbar
-------------------------------*/
+/*
+---------------------------
+        SCROLLBAR
+---------------------------
+*/
 ::-webkit-scrollbar {
     width: 16px;
 }
@@ -224,9 +226,11 @@ html {
   stroke-width: 6;
 }
 
-/**********
-  FOOTER SECTION
-**********/
+/*
+------------------------
+    FOOTER SECTION
+------------------------
+*/
 
 .footer{
   padding-top: 10px;
@@ -286,7 +290,11 @@ Rotate Transition in foote Soical Icon
   background:white;
 }
 
-/* twitter SVG code */
+/*
+------------------------------
+   TWITTER MICROANIMATION
+-------------------------------
+*/
 .twitter-icon{
   width: 40px;
   margin-left: 12px;
@@ -307,8 +315,11 @@ Rotate Transition in foote Soical Icon
       transform:scaleX(-1) rotate(-45deg) translate(-40px,-40px);
      }
    }
-
-/* github svg code */
+/*
+-----------------------------
+   GITHUB MICROANIMATION
+-----------------------------
+*/
 .github-icon {
   width: 40px;
   margin-left: 12px;
@@ -345,9 +356,11 @@ Rotate Transition in foote Soical Icon
 .github:hover{
   background-color: white;
 }
-/********
-Hover effect in foote Soical Icon
-*********/
+/*
+----------------------------------------
+   HOVER EFFECT ON SOCIAL MEDIA ICONS
+----------------------------------------
+*/
 
 .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
   color: #000;
@@ -403,9 +416,11 @@ form{
   color: #000;
 }
 
-/**********
-   Footer Form CSS
-**********/
+/*
+-------------------
+   Footer Form 
+--------------------
+*/
 .form-style-6{
 	font: 95% Arial, Helvetica, sans-serif;
 	max-width: 400px;
