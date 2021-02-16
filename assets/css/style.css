@@ -175,6 +175,10 @@ html {
   background-color: #fff;
 }
 
+.current-link {
+  border-bottom: 3px solid #22B6A7;
+  font-weight: bolder;
+}
 /**Navbar burger animations**/
 .navbar-toggler{
   position: relative;

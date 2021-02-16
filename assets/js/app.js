@@ -157,4 +157,12 @@ $(function(){
 
 });
 
+//Navbar current page highlight
+$(function(){
+  $('a.nav-link').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current-link');
+    }
+  });
+});
 
