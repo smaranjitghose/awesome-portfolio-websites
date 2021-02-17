@@ -1,8 +1,254 @@
-#menu-toggle:checked + #menu {
-  display: block;
+.home,
+.particles_js {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.home {
+  position: absolute;
 }
 
-.dropdown:hover .dropdown-menu,
-.dropdown:active .dropdown-menu {
-  display: block;
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.text .header {
+  font-weight: bold;
+}
+
+.text {
+  font-size: 25px;
+}
+.animatedTextArea {
+  display: inline-block;
+  height: 100px;
+  width: 300px;
+}
+
+.animatedText span {
+  display: none;
+  line-height: 1;
+}
+
+.animatedText:after {
+  content: ".";
+  display: inline;
+  width: 6px;
+  text-indent: 0;
+  /* overflow: hidden; */
+  background: var(--col-icon);
+  animation: blink 0.3s infinite alternate;
+}
+/* .datawords {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} */
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*Social icons*/
+
+.socialIcons {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.socialicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  margin: 8px;
+  text-decoration: none;
+  transition: var(--trans-props);
+}
+.socialicon {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  background-color: #fff;
+  margin: 8px;
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px var(--shadow-col);
+  text-decoration: none;
+  transition: var(--trans-props);
+}
+.socialicon svg {
+  width: 24px;
+  height: 24px;
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.dribbble svg {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.linkedin svg {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.medium svg {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.kaggle svg {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.github svg {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.socialicon.twitter {
+  color: var(--col-icon-twitter);
+}
+
+.socialicon.github {
+  color: var(--col-icon-github);
+}
+
+.socialicon.linkedin {
+  color: var(--col-icon-linkedin);
+}
+
+.socialicon.kaggle {
+  color: var(--col-icon-kaggle);
+}
+
+.socialicon.dribbble {
+  color: var(--col-icon-dribbble);
+}
+
+.socialicon.medium {
+  color: var(--col-icon-medium);
+}
+.socialicon:after {
+  content: "";
+  width: var(--link-size);
+  height: var(--link-size);
+  position: absolute;
+  transform: translate(0, var(--link-size));
+  border-radius: 50%;
+  transition: var(--trans-props);
+}
+
+.socialicon.twitter:after {
+  background-color: #1da1f2;
+  box-shadow: var(--twitter);
+}
+
+.socialicon.github:after {
+  background-color: #1f2122;
+  box-shadow: var(--github);
+}
+
+.socialicon.linkedin:after {
+  background-color: #0e76a8;
+  box-shadow: var(--linkedin);
+}
+
+.socialicon.kaggle:after {
+  background-color: #41aff3;
+  box-shadow: var(--kaggle);
+}
+
+.socialicon.dribbble:after {
+  background-color: #ea4c89;
+  box-shadow: var(--kaggle);
+}
+
+.socialicon.medium:after {
+  background-color: #00ab6c;
+  box-shadow: var(--medium);
+}
+
+/*** Social Icon Animations ***/
+
+.socialicon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+}
+.socialicon:hover:after {
+  transform: translate(0) scale(1.2);
+}
+.socialicon:hover svg {
+  color: #fff;
+}
+/* a:hover {
+  color: transparent;
+} */
+
+@media only screen and (max-width: 450px) {
+  .text {
+    margin-top: 5rem;
+  }
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }

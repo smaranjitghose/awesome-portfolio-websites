@@ -1,0 +1,450 @@
+@font-face {
+  font-family: "Agustina";
+  src: url(../fonts/Agustina.woff);
+}
+/*CSS variable declaration for light/dark mode*/
+html[data-theme="light"] {
+  --bg-mybtn: red;
+  --bg-nav:black;
+  --bg-nav-img: black;
+  --bg-footer:#DDE1EC;
+  --bg: #ffffff;
+  --text: #191919;
+  --text-color: #6c757d;
+  --col-icon: black;
+  --col-bd-radius:rgb(2, 2, 2);
+  --col-box-shadow:#000000 2px 2px 4px, 
+  #4D4D4D -2px -2px 4px;
+ --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
+ inset #4D4D4D -2px -2px 4px;
+  --col-bd-icon:transparent;
+  --bg-icon: #fff;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-medium: #00ab6c;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github:#24292e;  
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail:rgb(209, 82, 82);
+  --col-icon-google-scholar:#3cba54;
+  --col-icon-codeforces:rgb(19, 145, 184);
+  --col-icon-leetcode:rgb(255, 181, 62);
+  --shadow-col: rgba(0, 0, 0, 0.3);
+
+}
+
+html[data-theme="dark"] {
+  --bg-mybtn: rgb(230, 109, 129);
+  --bg-nav: #6617cb;
+  --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
+  --bg-footer:linear-gradient(315deg, #6617cb 0%, #882463 74%);
+  --bg: #191919;
+  --text: #ffffff;
+  --text-color: #fff;
+  --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+  --txt-fill: transparent;
+  --col-icon:white;
+  --col-bd-radius:black;
+  --col-bd-icon:transparent;
+  --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7) , -5px -5px 10px rgba(255,255,255,0.1);
+  --col-box-shadow-hover:inset rgba(255, 255, 255, 1) 2px 2px 4px, 
+ inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-medium: #00ab6c;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github:  #24292e;
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail:rgb(209, 82, 82);
+  --col-icon-google-scholar:#3cba54;
+  --col-icon-codeforces:rgb(19, 145, 184);
+  --col-icon-leetcode:rgb(255, 181, 62);
+  --col-white: #fff;
+}
+/*-----------------------------
+            Scrollbar
+------------------------------*/
+::-webkit-scrollbar {
+    width: 16px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 2px;
+    background: #f1f1f1;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    max-height: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: #555;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666; 
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+}
+
+/* Top button */
+
+/* smooth scrolling to top */
+html {
+  scroll-behavior: smooth;
+}
+
+/*starting part of every page*/
+
+
+/* 
+------------------------------------
+     HAMBURGER ANIMATION
+------------------------------------
+*/
+.hamburger_wrapper{
+  float: right;
+}
+
+.hamburger {
+  width: 2.5em;
+  height: 2em;
+  font-size: 11px;
+  cursor: pointer;
+  position: relative;
+}
+
+.first, .second, .third {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: .45em;
+  width: 100%;
+  float: left;
+  border-radius: 2px;
+  transition: all .35s ease-in-out;
+  
+}
+
+.first {
+  top: 0px;
+}
+
+.is-active .first {
+  transform-origin: .167em .33em;
+  transform: rotate(45deg) translate(0.167em, -0.25em);
+}
+
+.second {
+  top: 50%;
+  margin-top: -.25em;
+}
+
+.is-active .second {
+  opacity: 0;
+  transform: translateX(8em)
+}
+
+.third {
+  bottom: 0px;
+  transform-origin: .25em -0.33em;
+}
+
+.is-active .third {
+  transform: rotate(-45deg) translate(-0.167em, 0.083em);
+}
+
+.navbar-brand{
+  font-family: Agustina;
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar{
+  color:#000000;
+  background-color: #fff;
+}
+
+/**Navbar burger animations**/
+.navbar-toggler{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+  border-color: white;
+  border: none;
+  outline: none;
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 50px;
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.open .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.open .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.open .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+/**********
+  FOOTER SECTION
+**********/
+
+.footer{
+  padding-top: 10px;
+  background-color:#040406;
+}
+
+.tag{
+  font-family:"Open Sans", sans-serif;
+  font: size 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  height: 78px;
+  width: 300px;
+  margin: 5px auto;
+  display: block;
+  box-sizing: border-box;
+}
+
+
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/********
+Rotate Transition in foote Soical Icon
+*********/
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+      transition: background-color 0.3s, var(--trans-props);
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-medium, .fa-github {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #22B6A7;
+}
+
+/********
+Hover effect in foote Soical Icon
+*********/
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #000;
+  background: #22B6A7;
+  border-color: #22B6A7;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #22B6A7;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #000;
+  background: #22B6A7;
+  border-color: #22B6A7;
+}
+
+.rounded-social-buttons .social-button.medium {
+  background:  #22B6A7;
+}
+
+.rounded-social-buttons .social-button.medium:hover, .rounded-social-buttons .social-button.medium:focus {
+  color: #000000;
+  background: #22B6A7;
+  border-color: #22B6A7;
+}
+
+.rounded-social-buttons .social-button.github {
+  background: #22B6A7;
+}
+
+.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
+  color: #000000;
+  background: #22B6A7;
+  border-color: #22B6A7;
+}
+
+/************ 
+  Contact Form In Footer 
+*************/
+.display{
+  height: auto;
+  width: auto;
+  text-align: left;
+  color: #fff;
+  display: inline;
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 18px;
+  border-bottom: 2px solid #26a69a;
+}
+
+form{
+  margin: 15px auto;
+  color: #000;
+}
+
+/**********
+   Footer Form CSS
+**********/
+.form-style-6{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+  padding: 16px;
+  border-radius: 2px;
+}
+.form-style-6 h1{
+	background: #43D1AF;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: rgb(46, 44, 44);
+  font: 95% Arial, Helvetica, sans-serif;
+  border-radius: 2px;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+	box-shadow: 0 0 5px #43D1AF;
+	padding: 3%;
+  border: 1px solid #43D1AF;
+  border-radius: 2px;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #43D1AF;
+  border-bottom: 2px solid #30C29E;
+  border-radius: 2px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+  color: #fff;
+  font-size: 20px;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+	background: #2EBC99;
+}
+
+/* to make the navbar open full screen on mobile */
+    @media (max-width: 768px) {
+      .collapse navbar-collapse{
+        display: flex;
+        justify-content: center;
+      } 
+
+      .footer{
+        padding-top: 10px;
+      }
+
+      #navbar-content {
+        height: 100vh;
+        text-align: center;
+        margin:0 auto;
+        transform: translateY(25%);
+     }
+   }
