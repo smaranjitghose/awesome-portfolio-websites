@@ -16,10 +16,12 @@ let header = $(`
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
   <ul class="navbar-nav ml-auto" id = "navbar-content">
    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+   <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
    <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+   
   </ul>
 </div>
 </nav>`);
@@ -51,9 +53,7 @@ let footer = $(`
           </div>
         </div>
       </div>
-    <!--<div class="footer-copyright text-centre py-1" id="copyright" style="color:white;text-align:centre">
-        <p>Created By <a href="#">Smaranjit Ghosh</a>|&copy; Copyright 2021 All right reserved. </p> 
-    </div>-->
+    
     </div>
   </div>
 </footer>
