@@ -8,9 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@iconscout/unicons": "^3.0.6",
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
+    "@svgr/webpack": "^5.5.0",
     "@tailwindcss/typography": "^0.4.0",
     "alpinejs": "^2.8.0",
     "autoprefixer": "^10.2.4",
