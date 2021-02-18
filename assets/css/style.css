@@ -175,6 +175,12 @@ html {
   background-color: #fff;
 }
 
+/*
+-------------------------------------
+    NAV BAR HIGHTLIGHTING
+--------------------------------------
+*/
+
 @media only screen and (min-width: 768px){
   .current-link {
     font-weight: bolder;

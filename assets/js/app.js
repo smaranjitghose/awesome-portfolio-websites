@@ -157,7 +157,8 @@ $(function(){
 
 });
 
-//Navbar current page highlight
+// Navbar current page highlight
+
 $(function(){
   $('a.nav-link').each(function() {
     if ($(this).prop('href') == window.location.href) {
@@ -166,3 +167,18 @@ $(function(){
   });
 });
 
+//function to remove underline on hover
+
+$(document).ready(function(){
+
+  $("a.nav-link").hover(
+       function () {
+         $(this).removeClass("current-link");
+       },
+       function () {
+        if ($(this).prop('href') == window.location.href) {
+          $(this).addClass('current-link');
+        }
+      }
+  );
+});
