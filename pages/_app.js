@@ -1,13 +1,11 @@
-import Layout from '../components/Layout'
-import "tailwindcss/tailwind.css"
-import '../styles/globals.css'
+import '../styles/globals.css';
+import { ThemeProvider } from 'next-themes';
+
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <div className="w-5/6 m-auto">
-        <Component {...pageProps} />
-      </div>
-    </Layout>
+    <ThemeProvider attribute="class">
+    <Component {...pageProps} />
+    </ThemeProvider>
   )
 }
 

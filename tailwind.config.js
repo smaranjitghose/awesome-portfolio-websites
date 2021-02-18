@@ -1,20 +1,26 @@
 const { spacing, fontFamily } = require('tailwindcss/defaultTheme');
-
 module.exports = {
-  purge: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js'],
-  darkMode: 'class',
+  purge: ['./pages/**/*.js', './components/**/*.js'],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Montserrat', ...fontFamily.sans]
+      },
+      strokeWidth: {
+        '1-3': '1.3',
+        '1-5': '1.5',
+        '2-5': '2.5',
+        3: '3',
+        4: '4',
+      },
+      boxShadow: ['active'],
       colors: {
         'blue-opaque': 'rgb(13 42 148 / 18%)'
-      },
-      fontFamily: {
-        sans: ['Inter', ...fontFamily.sans]
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.700'),
             a: {
               color: theme('colors.blue.500'),
               '&:hover': {
@@ -22,10 +28,7 @@ module.exports = {
               },
               code: { color: theme('colors.blue.400') }
             },
-            'h2,h3,h4': {
-              'scroll-margin-top': spacing[32]
-            },
-            code: { color: theme('colors.pink.500') },
+            code: { color: theme('colors.green.700') },
             'blockquote p:first-of-type::before': false,
             'blockquote p:last-of-type::after': false
           }
@@ -45,8 +48,7 @@ module.exports = {
               color: theme('colors.gray.300')
             },
             'h2,h3,h4': {
-              color: theme('colors.gray.100'),
-              'scroll-margin-top': spacing[32]
+              color: theme('colors.gray.100')
             },
             hr: { borderColor: theme('colors.gray.700') },
             ol: {
@@ -60,6 +62,8 @@ module.exports = {
               }
             },
             strong: { color: theme('colors.gray.300') },
+            code: { color: theme('colors.green.500') },
+            pre: { code: { color: theme('colors.gray.100') } },
             thead: {
               color: theme('colors.gray.100')
             },
@@ -71,10 +75,10 @@ module.exports = {
           }
         }
       })
-    }
+    },
   },
   variants: {
-    typography: ['dark']
+    typography: ['dark'],
   },
-  plugins: [require('@tailwindcss/typography')]
-};
+  plugins: [require('@tailwindcss/typography')],
+}
