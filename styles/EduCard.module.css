@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 400;
+  border: 1px rgba(0, 0, 0, 0.253) solid;
+  border-radius: 25px;
+  padding: 1rem;
+  margin: 1rem 6vw;
+}
+.SVG,
+.mainHead {
+  padding: 20px;
+  min-width: 320px;
+  max-width: 500px;
+  flex: 1;
+  width: 100%;
+}
+
+.mainHead h4 {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+}
+
+.mainHead .basicInfo {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.mainHead p{
+  font-weight: 300;
+  margin-bottom: 1rem;
+}

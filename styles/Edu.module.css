@@ -1,0 +1,133 @@
+.banner {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-weight: 400;
+}
+.SVG,
+.mainHead {
+  padding: 20px;
+  min-width: 340px;
+  max-width: 420px;
+  flex: 1;
+  width: 100%;
+}
+
+.mainHead h2 {
+  font-size: 2rem;
+}
+.mainHead p {
+  font-size: 1rem;
+}
+
+.sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sec .head {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 2rem 0;
+}
+
+/* MOOCs */
+.MOOCsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+  padding: 1rem 10px;
+  justify-content: center;
+  align-items: stretch;
+}
+.card {
+  border-radius: 5px;
+  background: #ecf0f3;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 165px;
+  flex-basis: 30%;
+  border:1px solid rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.cardHead {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.cardHead .contentOverlay {
+  border-radius: 5px 5px 0 0;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.cardHead:hover .contentOverlay {
+  opacity: 0.8;
+}
+
+.contentDetails {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.contentDetails svg {
+  cursor: pointer;
+  width: 2rem;
+  color: white;
+  margin: auto;
+}
+
+.cardHead:hover .contentDetails {
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+.fadeInBottom {
+  top: 80%;
+}
+
+.cardBody {
+  background-color: #fff;
+  padding: 1px;
+  width: 100%;
+}
+.moocTitle {
+  color: black;
+  margin: 3px;
+}
