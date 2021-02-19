@@ -158,3 +158,54 @@ html[data-theme = 'dark']
   background-color: #fff;
   padding:1px;
 }
+.box {
+  width:370px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.block {
+ width: 0%;
+      height: 40px;
+      background: #ffb510;
+      position: absolute;
+      animation: mainBlock 2.5s cubic-bezier(.74, .06, .4, .92) forwards;
+      display: flex;
+    }
+
+.box h1 {
+    font-family: 'Poppins';
+    color: #000000;
+    font-size: 32px;
+    animation: mainFadeIn 2.5s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    display: flex;     
+    position: relative;
+    text-align: center;
+  }
+@keyframes mainBlock {
+0% {
+  width: 0%;
+  left: 0;
+
+}
+50% {
+  width: 100%;
+  left: 0;
+
+}
+100% {
+  width: 0;
+  left: 100%;
+}
+}
+@keyframes mainFadeIn {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
