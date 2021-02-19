@@ -1,5 +1,5 @@
 {
-  "name": "awesome-portfolio-websites",
+  "name": "awesome-portolio-wesbites",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,14 +17,16 @@
     "@material-ui/icons": "^4.11.2",
     "@svgr/webpack": "^5.5.0",
     "@tailwindcss/typography": "^0.4.0",
-    "alpinejs": "^2.8.0",
-    "autoprefixer": "^10.2.4",
-    "next": "10.0.6",
+    "clsx": "^1.1.1",
+    "next": "10.0.7",
     "next-themes": "0.0.10",
-    "postcss": "^8.2.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-transition-group": "^4.4.1",
+    "react-rotating-text": "^1.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
     "tailwindcss": "^2.0.3"
   }
 }

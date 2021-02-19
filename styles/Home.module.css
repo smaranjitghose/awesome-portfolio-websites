@@ -88,7 +88,7 @@
   overflow: hidden;
   width: var(--link-size);
   height: var(--link-size);
-  background-color: #fff;
+  background: #fff;
   margin: 8px;
   border-radius: 50%;
   box-shadow: 2px 5px 5px var(--shadow-col);
@@ -202,15 +202,15 @@
   transform: translateY(-4px);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
 }
+.socialicon.github:hover {
+  background: #000;
+}
 .socialicon:hover:after {
   transform: translate(0) scale(1.2);
 }
 .socialicon:hover svg {
   color: #fff;
 }
-/* a:hover {
-  color: transparent;
-} */
 
 @media only screen and (max-width: 450px) {
   .text {
@@ -252,3 +252,55 @@
     transform: rotate(0deg);
   }
 }
+.react-rotating-text-cursor {
+    animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+  }
+  
+  @-moz-keyframes blinking-cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes blinking-cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-o-keyframes blinking-cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes blinking-cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

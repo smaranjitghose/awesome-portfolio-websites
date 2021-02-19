@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "Agustina";
-  src: url(../fonts/Agustina.woff);
-}
 /*CSS variable declaration for light/dark mode*/
 html[data-theme="light"] {
   --bg-mybtn: red;
@@ -72,6 +68,7 @@ html[data-theme="dark"] {
  
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     border-radius: 2px;
     background: #f1f1f1;
 }
@@ -80,6 +77,7 @@ html[data-theme="dark"] {
     border-radius: 2px;
     max-height: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
     background: #555;
     transition: 0.3s;
 }
@@ -93,7 +91,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: var(--text);
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--bg);
 }
 
@@ -379,6 +377,7 @@ form{
 	-moz-transition: all 0.30s ease-in-out;
 	-ms-transition: all 0.30s ease-in-out;
 	-o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
 	outline: none;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;

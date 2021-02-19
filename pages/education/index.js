@@ -5,6 +5,8 @@ import { moocscards } from "./../../public/assets/js/education";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import ContactLinks from "./../../components/contactlinks";
+import Container from "./../../components/Navbar/Nav";
 
 export default function Edu() {
 
@@ -14,7 +16,7 @@ export default function Edu() {
         <title>Awesome Portfolio Websites</title>
         <link rel="icon" href="/favicon.ico" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
           rel="stylesheet"
         ></link>
       </Head>
