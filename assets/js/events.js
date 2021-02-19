@@ -12,7 +12,7 @@ const research = [
     },
     {
         title: "Join the future of enterprise AI",
-        image: "assets/images/events-page/2.png",
+        image: "assets/images/events-page/5.svg",
         institution: "Google Cloud",
         description: "The event was very exciting! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         date: "April 10, 2020",
@@ -62,7 +62,7 @@ const fillData = () => {
         ({ image, title, institution, date, description }) =>
         (output += `
             <tr> 
-                <td class="imgCol"><img src="${image}" height=150 width=220></td>
+                <td class="imgCol"><img src="${image}" height=150 width=170></td>
                 <td class = "researchTitleName">
                     <div>
                         <span class="imgResponsive">
