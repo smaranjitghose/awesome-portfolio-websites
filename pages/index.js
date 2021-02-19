@@ -3,9 +3,8 @@ import styles from "../styles/Home.module.css";
 import { faTwitter, faDribbble, faLinkedinIn, faKaggle, faMediumM, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
-
-import ContactLinks from "../components/contactlinks";
-import Container from "../components/Navbar/Nav";
+import ContactLinks from "./../components/contactlinks";
+import Container from "./../components/Navbar/Nav";
 
 var ReactRotatingText = require("react-rotating-text");
 export default function Home() {

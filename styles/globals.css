@@ -87,10 +87,11 @@ html[data-theme="dark"] {
   --border: none;
 }
 
-/* for .animated-text */
-.animated-text span.active {
-  display: inline !important;
+
+.dark .card{
+  border: 1px rgba(255, 255, 255, 0.253) solid;
 }
+
 html {
   min-width: 360px;
   scroll-behavior: smooth;

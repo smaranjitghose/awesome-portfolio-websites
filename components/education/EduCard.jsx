@@ -2,7 +2,7 @@ import styles from "./../../styles/EduCard.module.css";
 
 function EduCard(props) {
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} card`}>
       <img className={styles.SVG} src="assets/education-page/education.png" />
 
       <div className={styles.mainHead}>
