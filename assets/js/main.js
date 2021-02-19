@@ -26,6 +26,14 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+// text animation effect
+var _window = window,Splitting = _window.Splitting,ScrollOut = _window.ScrollOut;
+Splitting();
+ScrollOut({
+  targets: '.word',
+
+})
+
 //Footer and Navbar
 
 let header = $(`

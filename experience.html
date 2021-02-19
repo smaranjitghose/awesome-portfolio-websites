@@ -32,6 +32,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <!--For Dark/Light mode Toggle-->
   <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+  <!-- For text animations -->
+  <script src="https://unpkg.com/splitting/dist/splitting.js"></script>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet" />
@@ -41,6 +44,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/experience.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <link rel="icon" href="assets/images/favicon.png" type="image/png"> <!--Favicon-->
+  <!-- For text animations -->
+  <link href="https://unpkg.com/splitting/dist/splitting.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -67,7 +72,7 @@
               src="./assets/images/experience-page/experience.svg" draggable="true"> </div>
           <div
             class="px-md-5 p-3 col-md-6 d-flex flex-column align-items-center justify-content-center animate__animated animate__fadeInUp animate__delay-1s">
-            <h2 class="main-heading mb-0">Experience</h2>
+            <h2 class="main-heading mb-0 text text--blocks" data-scroll="out" data-splitting="">Experience</h2>
             <p class="pre-heading font-weight-bolder text-center animate__animated animate__fadeInUp animate__delay-2s">
               Nothing ever becomes real 'til it is experienced.― John Keats
             </p>
@@ -76,7 +81,7 @@
       </div>
     </section>
 
-    <h4 class="text-center exp-head heading1">Work Experience</h4>
+    <h4 class="text-center exp-head heading1 text text--perspective" data-scroll="out" data-splitting="">Work Experience</h4>
 
     <!-- work experience Card -->
 
@@ -84,7 +89,7 @@
     <!-- Dynamic experience Card -->
     </main>
 
-    <h4 class="text-center heading1">Volunteership</h4>>
+    <h4 class="text-center heading1 text text--perspective" data-scroll="out" data-splitting="">Volunteership</h4>>
 
     <!-- Volunteership Card -->
 
@@ -92,7 +97,7 @@
       <!-- Dynamic volunteership Card -->
     </main>
 
-    <h4 class="text-center heading1">Mentorship</h4>
+    <h4 class="text-center heading1 text text--perspective" data-scroll="out" data-splitting="">Mentorship</h4>
 
     <!-- Mentorship Card -->
 

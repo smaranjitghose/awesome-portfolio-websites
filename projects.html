@@ -35,6 +35,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--For Dark/Light mode Toggle-->
   <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+  <!-- For text animations -->
+  <script src="https://unpkg.com/splitting/dist/splitting.js"></script>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
@@ -44,6 +47,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/project.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <link rel="icon" href="assets/images/favicon.png" type="image/png"> <!--Favicon-->
+  <!-- For text animations -->
+  <link href="https://unpkg.com/splitting/dist/splitting.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -65,7 +70,7 @@
         <div class="row text-dark">
           <div
             class="col-md-6 d-flex mt-5 flex-column text-center justify-content-center animate__animated animate__zoomIn animate__delay-1s">
-            <h2 class="main-heading mb-0">Projects</h2>
+            <h2 class="main-heading mb-0 text text--blocks" data-scroll="out" data-splitting="">Projects</h2>
             <p class="pre-heading font-weight-bolder"
               class="mb-0 mt-3 text-center animate__animated animate__zoomIn animate__delay-2s">
               My projects makes use of vast variety of latest technology tools. My best experience is to create Data
@@ -73,7 +78,7 @@
             </p>
           </div>
           <div class="col-md-6" style="margin-top: 10px;">
-            <img class="img-header img-fluid d-block img-fluid d-block  animate__animated animate__zoomIn animate__delay-1s"" src="
+            <img class="img-header img-fluid d-block img-fluid d-block  animate__animated animate__zoomIn animate__delay-1s" src="
               ./assets/images/project-page/header-male.svg">
           </div>
         </div>
