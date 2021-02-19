@@ -162,7 +162,7 @@ a:hover {
 @media(min-width: 378px)
 {
   .card .data .content{
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 }
 
@@ -176,7 +176,7 @@ a:hover {
 @media(min-width: 60rem)
 {
   .card .data .content{
-    margin-bottom: 0;
+    margin-bottom: 2em;
   }
 }
 
@@ -185,11 +185,22 @@ a:hover {
   height: 25%;
   margin: 0;
 }
-
+@media (max-width:400px){
+  .content .title-div{
+    margin-bottom:3em ;
+  }
+}
+@media (min-width:400px){
+  .content .title-div .title{
+    margin-bottom: 4em;
+    
+  }
+}
 @media(min-width: 60rem)
 {
   .card .title-div{
     padding-bottom: 2.3rem;
+    margin-bottom: 2em;
   }
 }
 
