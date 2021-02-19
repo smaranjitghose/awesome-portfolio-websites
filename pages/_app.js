@@ -1,12 +1,12 @@
-import Layout from '../components/Layout'
-import "tailwindcss/tailwind.css"
-import '../styles/globals.css'
+import "../styles/globals.css";
+import { ThemeProvider } from "next-themes";
+
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <ThemeProvider attribute="class">
       <Component {...pageProps} />
-    </Layout>
-  )
+    </ThemeProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
