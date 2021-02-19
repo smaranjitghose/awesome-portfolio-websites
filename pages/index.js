@@ -3,15 +3,13 @@ import styles from "../styles/Home.module.css";
 import { faTwitter, faDribbble, faLinkedinIn, faKaggle, faMediumM, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
-
-import ContactLinks from "../components/contactlinks";
-import Container from "../components/Navbar/Nav";
+import ContactLinks from "./../components/contactlinks";
+import Container from "./../components/Navbar/Nav";
 
 var ReactRotatingText = require("react-rotating-text");
 export default function Home() {
   useEffect(() => {
-    // if (window.particleInit() !== undefined) window.particleInit();
-    // if (window.initAnimatedText() !== undefined) window.initAnimatedText();
+    if (window.particleInit() !== undefined) window.particleInit();
   }, []);
   return (
     <>
@@ -77,8 +75,7 @@ export default function Home() {
           </div>
         </center>
 
-        <div>
-          <div className="w-full flex flex-wrap text-lg">
+          <div className={`${styles.about} w-full flex flex-wrap text-lg`}>
             <div className="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 w-full h-full flex flex-wrap justify-center items-center text-center p-2">
               <div className="w-full md:w-1/2  md:mb-0 ">
                 <h2 className=" bg-clip-text text-transparent bg-gradient-to-l from-blue-700 dark:from-blue-500 to-green-500">
@@ -91,7 +88,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
           <footer className="w-full pt-20 pb-2 text-sm font-light text-center text-gray-600 bg-gray-100 md:pb-6 dark:bg-gray-900 dark:text-gray-100">
             <p className="my-0">
               Made With
