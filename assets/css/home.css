@@ -121,17 +121,6 @@ body{
   justify-content: center;
   flex-flow: row wrap;
 }
-
-.socialicon {
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  width: var(--link-size);
-  height: var(--link-size);
-  margin: 8px;
-  text-decoration: none;
-  transition: var(--trans-props);
-}
 .socialicon{
   display: flex;
   position: relative;
@@ -157,12 +146,6 @@ body{
   z-index: 1;
   transition: var(--trans-props);
 }
-.linkedin i {
-  margin: auto;
-  font-size: 24px;
-  z-index: 1;
-  transition: var(--trans-props);
-}
 .medium i {
   margin: auto;
   font-size: 24px;
@@ -174,10 +157,6 @@ body{
   font-size: 24px;
   z-index: 1;
   transition: var(--trans-props);
-}
-
-.socialicon.linkedin{
-  color: var(--col-icon-linkedin);
 }
 
 .socialicon.kaggle{
@@ -202,11 +181,6 @@ body{
   
 }
 
-.socialicon.linkedin:after {
-  background-color: #0e76a8;
-  box-shadow: var(--linkedin);
-}
-
 .socialicon.kaggle:after {
   background-color: #41aff3;
   box-shadow: var(--kaggle);
@@ -220,6 +194,105 @@ body{
 .socialicon.medium:after {
   background-color: #00ab6c;
   box-shadow: var(--medium);
+}
+
+ /*
+---------------------------
+   LINKEDIN MICROANIMATION
+---------------------------
+*/
+
+ .linkedin-icon{
+  margin-left: 15px;
+}
+.linkedin:hover .linkedin-icon>rect{
+  animation: rect-up 0.3s linear infinite;
+}
+
+
+@keyframes rect-up {
+  50% {
+      y:10px;
+      height:11px;
+   }
+  0%{
+      y:13px;
+      height:8px;  
+      }
+  
+}
+
+.linkedin:hover .linkedin-icon> circle{
+  animation: bounce 0.4s linear infinite;
+}
+
+@keyframes bounce {
+  75% {
+      cy: 8px;
+   }
+   50%{
+      cy: 4px
+   }
+  0%{
+      cy:4px
+      }
+  
+}
+
+/*
+---------------------------
+   INSTAGRAM MICROANIMATION
+---------------------------
+*/
+
+.instagram-icon {
+  width: 90px !important;
+ 
+}
+.st0 {
+  fill:none;
+  stroke:#EF4649;
+  stroke-width:7;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+}
+
+.instagram:hover #littleCircle {
+  stroke-dasharray:150;
+}
+
+.instagram #shutter{
+  display:none;
+}
+.instagram:hover #shutter{
+  display: block;
+  animation: shutter 1s linear infinite;
+}
+.instagram:hover #lens{
+  fill:#EF4649;
+  animation: lens 1.5s linear infinite;
+
+}
+
+@keyframes shutter {
+  0%, 50% {
+          stroke-dashoffset: 150;
+          
+      }
+  75% {
+          fill:#EF4649;
+          stroke-dashoffset: 0;
+          stroke-width:11;
+      }
+}
+
+@keyframes lens {
+  0%, 75% {
+          opacity: 0;
+      }
+  100% {
+          opacity: 1;
+      }
 }
 
 
