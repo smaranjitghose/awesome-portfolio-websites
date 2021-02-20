@@ -104,9 +104,10 @@ const showCards = () => {
   volunteershipcards.forEach(
     ({ title, cardImage, description }) =>
       (output += `        
-      <div class="card volunteerCard" style="background-image: url(${cardImage});background-repeat: no-repeat, repeat; background-size: cover; background-position: center;">
+      <div class="card volunteerCard" style="height: 580px;">
+      <img src="${cardImage}" height="240" width="65" class="card-img">
       <div class="content">
-          <h2 class="volunteerTitle">${title}</h2>
+          <h2 class="volunteerTitle">${title}</h2><br>
           <p class="copy">${description}</p></div>
       </div>
       `)

@@ -205,10 +205,32 @@ ul ol{
   --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .volunteerCard{
   border-radius: 10px;
-  box-shadow:  4px 4px 7px var(--shadow-col1),
-              -2px -2px 4px var(--shadow-col2);
+  box-shadow: 0px 10px 8px #888888;
+  /* box-shadow:  4px 4px 7px var(--shadow-col1),
+              -2px -2px 4px var(--shadow-col2); */
+
+              animation: 0.5s ease-out 0s 1 slideInFromLeft;
+  
+              background: #333;
+              padding: 30px;
+}
+
+.volunteerCard:hover{
+  
+  transform: scale(1.1);
+  transition: ease-out;
+  transition-duration: 0.1s;
 }
 
 .page-content {
@@ -217,6 +239,19 @@ ul ol{
   padding: 2rem;
   max-width: 1124px;
   margin: 0 auto;
+}
+
+.page-content .card:hover {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: #43D1AF;
+  border: none;
 }
 
 @media (min-width: 600px) {
@@ -239,14 +274,14 @@ ul ol{
   padding: 1rem;
   width: 100%;
   text-align: center;
-  color: whitesmoke;
+  color: black;
   background-color: whitesmoke;
   border: none;
 }
 
 @media (min-width: 600px) {
   .page-content .card {
-    height: 360px;
+    height: 580px;
   }
 }
 
@@ -256,7 +291,7 @@ ul ol{
   }
 }
 
-.page-content .card:before {
+/* .page-content .card:before {
   content: "";
   position: absolute;
   top: 0;
@@ -303,7 +338,7 @@ ul ol{
     rgba(0, 0, 0, 0.79) 100%
   ) !important;
   transition: ease-out;
-}
+} */
 
 .card-body p{
   margin: 0px;
@@ -317,15 +352,15 @@ ul ol{
   align-items: center;
   width: 100%;
   padding: 1rem;
-  margin-bottom: 2rem;
-  margin-top: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 0.1rem;
   transition: transform var(--d) var(--e);
   z-index: 1;
 }
 
-.content:hover{
+/* .content:hover{
   background: transparent;
-}
+} */
 
  .content > * + * {
   margin-top: 1rem;
@@ -346,7 +381,7 @@ ul ol{
   line-height: 1.35;
 }
 
-.page-content .cardafter {
+/* .page-content .cardafter {
   transform: translateY(0);
 }
 
@@ -392,7 +427,7 @@ ul ol{
 .page-content .card:focus-within .content,
 .page-content .card:focus-within .content > *:not(.title) {
   transition-duration: 0s;
-}
+} */
 
 /*Mentorship card*/
 
