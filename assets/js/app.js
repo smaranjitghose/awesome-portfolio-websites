@@ -89,8 +89,25 @@ let footer = $(`
                                    c117.9-117.9,82.9-167.7,82.9-167.7l-2.8-0.1C241.6,182.3,238.2,181.9,233.2,181.5z" />
             </svg>
             </a>
-            <a class="social-button linkedin" href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a class="social-button medium" href="#" target="_blank"><i class="fab fa-medium"></i></a>
+           <a class="social-button linkedin" href="" target="_blank" >
+           <!-- svg code for linkedin icon -->
+              <svg class="linkedin-icon-footer" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="#0e76a8"
+                stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a class="social-button instagram" href="" target="_blank" >
+             <!-- svg code for instagram icon -->
+              <svg class="instagram-icon-footer" x="0px" y="0px" viewBox="0 0 202.5 202.5"
+                 style="enable-background:new 0 0 202.5 202.5;">
+                 <circle id="littleCircle" class="st0" cx="101" cy="101.5" r="18.9" />
+                 <circle id="shutter" class="st0" cx="101" cy="101.5" r="8" />
+                 <circle id="lens" class="st0" cx="125.5" cy="78.6" r="2.9" />
+                 <path id="camera" class="st0" d="M79,60.5h44c10.5,0,19,8.5,19,19v44c0,10.5-8.5,19-19,19H79c-10.5,0-19-8.5-19-19v-44                                                                            C60,69,68.5,60.5,79,60.5z" />
+              </svg>
+            </a>      
             <a class="social-button github" href="#" target="_blank">
             <!-- SVG code for Github icon -->
             <svg class="github-icon-footer" width="45px" height="45px" viewBox="0 0 300 300">
