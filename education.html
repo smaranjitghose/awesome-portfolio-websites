@@ -35,40 +35,33 @@
   <script src="https://unpkg.com/splitting/dist/splitting.js"></script>
   <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <link rel="stylesheet" href="assets/css/hover-min.css">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <link rel="stylesheet" href="assets/css/education.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" href="assets/images/favicon.png" type="image/png"> <!--Favicon-->
     <!-- For text animations -->
   <link href="https://unpkg.com/splitting/dist/splitting.css" rel="stylesheet" />
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> 
 </head>
 
 <body>
 
   <!--Dynamic Nav Bar-->
-  
-  <!-- button for the top -->
-  <a class="arrow-up" id="myBtn" onclick="topFunction()">
-    <span class="left-arm"></span>
-    <span class="right-arm"></span>
-    <span class="arrow-slide"></span>
-  </a>
-
 
   <!--Header Section-->
-<div class="container" style="width: 100%; min-height: 80%;">
+<div class="container pt-5" style="width: 100%; min-height: 80%;">
   <section style="height: 90vh;">
     <div class="container-fluid px-3 pt-5">
       <div class="row text-dark mx-auto">
         <div class="col-md-6"> <img class="img-fluid d-block  animate__animated animate__zoomIn animate__delay-1s"
-            src="./assets/images/education-page/header-male.svg" draggable="true"> </div>
+            src="./assets/images/education-page/header-male.svg" draggable="true" style="margin-top: 45px;"> </div>
         <div class="px-md-5 p-3 col-md-6 d-flex flex-column align-items-center justify-content-center animate__animated animate__zoomIn animate__delay-1s">
           <h2 class="main-heading mb-0 text text--blocks" data-scroll="out" data-splitting="">Education</h2>
           <p class=" pre-heading font-weight-bolder text-center animate__animated animate__fadeInUp animate__delay-2s">
@@ -78,6 +71,7 @@
       </div>
     </div>
   </section>
+</div>
 
 
   <!-- Education Section  -->
@@ -85,6 +79,9 @@
   <div class="container-sm mt-5">
     <div class="conatiner text-center">
       <h1 class="head text-center text text--perspective" data-scroll="out" data-splitting="" data-aos="fade-up" data-aos-delay="300">Education</h1>
+  <div class="container-sm  edSection">
+    <div class="conatiner text-center mb-5">
+      <h1 class="head" data-aos="fade-up" data-aos-delay="300">Education</h1>
     </div>
       <!-- CARDS -->
       <div class="card mb-5" data-aos="fade-left" data-aos-delay="500">
@@ -92,7 +89,7 @@
           <div class="col-xl-6 col-md-6 col-sm-12">
             <img src="assets/images/education-page/education.png">
           </div>
-          <div class="col-xl-6 col-md-6 col-sm-12">
+          <div class="col-xl-6 col-md-6 col-sm-12 p-5">
             <h4>Post Graduation</h4>
             <div class="qual">
             <h6><em>Massachusetts institute of technology</em></h6>
@@ -100,18 +97,15 @@
             <h6><em>2021-2023</em></h6></div>
             <p><i>Activities-</i> Sports, House Captain, Debate Club, Tech Society</p>
             <p>An investment in knowledge always pays the best interest.</p>
-            <div class="col-xl-6 col-md-6 col-sm-12">
-              <button class="btn btn-primary" type="button">Certificate</button>
-            </div>
           </div>
         </div>
       </div>
       <div class="card mb-5" data-aos="fade-right" data-aos-delay="500">
         <div class="row">
-          <div class="col-xl-6 col-md-6 col-sm-12">
+          <div class="col-xl-6 col-md-6 col-sm-12 p-5">
             <img src="assets/images/education-page/education.png">
           </div>
-          <div class="col-xl-6 col-md-6 col-sm-12">
+          <div class="col-xl-6 col-md-6 col-sm-12 p-5">
             <h4>Graduation</h4>
             <div class="qual">
               <h6><em>Massachusetts institute of technology</em></h6>
@@ -121,18 +115,15 @@
             <p>
               An investment in knowledge always pays the best interest.
             </p>
-            <div class="col-xl-6 col-md-6 col-sm-12">
-              <button class="btn btn-primary" type="button">Certificate</button>
-            </div>
           </div>
         </div>
       </div>
       <div class="card mb-5" data-aos="fade-left" data-aos-delay="500">
         <div class="row">
-          <div class="col-xl-6 col-md-6 col-sm-12">
+          <div class="col-xl-6 col-md-6 col-sm-12 p-5">
             <img src="assets/images/education-page/education.png">
           </div>
-          <div class="col-xl-6 col-md-6 col-sm-12">
+          <div class="col-xl-6 col-md-6 col-sm-12 p-5">
             <h4>High School</h4>
             <div class="qual">
               <h6><em>Delhi Public School</em></h6>
@@ -140,18 +131,15 @@
               <h6><em>2015-2017</em></h6></div>
             <p><i>Activities-</i> Sports, House Captain, Debate Club, Tech Society</p>
             <p>An investment in knowledge always pays the best interest.</p>
-            <div class="col-xl-6 col-md-6 col-sm-12">
-              <button class="btn btn-primary" type="button">Certificate</button>
-            </div>
         </div>
       </div>
     </div>
     <div class="card mb-5" data-aos="fade-right" data-aos-delay="500">
       <div class="row">
-        <div class="col-xl-6 col-md-6 col-sm-12">
+        <div class="col-xl-6 col-md-6 col-sm-12 p-5">
           <img src="assets/images/education-page/education.png">
         </div>
-        <div class="col-xl-6 col-md-6 col-sm-12">
+        <div class="col-xl-6 col-md-6 col-sm-12 p-5">
           <h4>Elementary School</h4>
           <div class="qual">
             <h6><em>Joyride</em></h6>
@@ -159,9 +147,6 @@
             <h6><em>2002-2015</em></h6></div>
             <p><i>Activities-</i> Sports, House Captain, Debate Club, Tech Society</p>
           <p>An investment in knowledge always pays the best interest.</p>
-          <div class="col-xl-6 col-md-6 col-sm-12">
-            <button class="btn btn-primary" type="button">Certificate</button>
-          </div>
       </div>
     </div>
   </div>
@@ -203,12 +188,12 @@
   <!-- Fetching our Google Tag Manager -->
 
   <!-- script -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" ></script>
+  <script src="assets/js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
   <script type="text/javascript" src="./assets/js/education.js"></script>
-  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

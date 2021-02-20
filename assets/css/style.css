@@ -1,22 +1,93 @@
+@font-face {
+  font-family: "Agustina";
+  src: url(../fonts/Agustina.woff);
+}
 /*CSS variable declaration for light/dark mode*/
 html[data-theme="light"] {
   --bg-mybtn: red;
-  --bg-nav: #000000;
-  --bg-nav-img: #000000;
+  --bg-nav:black;
+  --bg-nav-img: black;
+  --bg-footer:#DDE1EC;
   --bg: #ffffff;
   --text: #191919;
   --text-color: #6c757d;
+  --col-icon: black;
+  --col-bd-radius:rgb(2, 2, 2);
+  --col-box-shadow:#000000 2px 2px 4px, 
+  #4D4D4D -2px -2px 4px;
+ --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
+ inset #4D4D4D -2px -2px 4px;
+  --col-bd-icon:transparent;
+  --bg-icon: #fff;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-medium: #00ab6c;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github:#24292e;  
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail:rgb(209, 82, 82);
+  --col-icon-google-scholar:#3cba54;
+  --col-icon-codeforces:rgb(19, 145, 184);
+  --col-icon-leetcode:rgb(255, 181, 62);
+  --shadow-col: rgba(0, 0, 0, 0.3);
+
 }
 
 html[data-theme="dark"] {
   --bg-mybtn: rgb(230, 109, 129);
   --bg-nav: #6617cb;
   --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
+  --bg-footer:linear-gradient(315deg, #6617cb 0%, #882463 74%);
   --bg: #191919;
   --text: #ffffff;
   --text-color: #fff;
   --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
   --txt-fill: transparent;
+  --col-icon:white;
+  --col-bd-radius:black;
+  --col-bd-icon:transparent;
+  --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7) , -5px -5px 10px rgba(255,255,255,0.1);
+  --col-box-shadow-hover:inset rgba(                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     255, 255, 255, 1) 2px 2px 4px, 
+ inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-medium: #00ab6c;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github:  #24292e;
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail:rgb(209, 82, 82);
+  --col-icon-google-scholar:#3cba54;
+  --col-icon-codeforces:rgb(19, 145, 184);
+  --col-icon-leetcode:rgb(255, 181, 62);
+  --col-white: #fff;
+}
+/*
+---------------------------
+        SCROLLBAR
+---------------------------
+*/
+::-webkit-scrollbar {
+    width: 16px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 2px;
+    background: #f1f1f1;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    max-height: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: #555;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666; 
 }
 
 body {
@@ -37,238 +108,155 @@ html {
 
 /*starting part of every page*/
 
-.main-heading {
-  font-size: 4em;
-  font-weight: bolder;
-  background: var(--bg-txt-img);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: var(--txt-fill);
-  padding-bottom: 0.1em;
+
+/* 
+------------------------------------
+     HAMBURGER ANIMATION
+------------------------------------
+*/
+.hamburger_wrapper{
+  float: right;
 }
 
-.pre-heading {
-  font-size: 1.1em;
-  letter-spacing: 2px;
-  line-height: normal;
-  color: var(--text-color);
-}
-
-/*SCROLL TO TOP BUTTON dark/light mode*/
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  z-index: 99;
-  background-color: #26a69a;
-  height: 50px;
-  width: 50px;
+.hamburger {
+  width: 2.5em;
+  height: 2em;
+  font-size: 11px;
   cursor: pointer;
-  overflow: hidden;
-  opacity: 0.7;
+  position: relative;
 }
 
-.left-arm {
+.first, .second, .third {
   position: absolute;
-  z-index: 1;
-  top: 21px;
-  left: 8.5px;
-  width: 20px;
-  display: block;
-  transform: rotate(-45deg);
-}
-.left-arm:after {
-  content: "";
-  background-color: #fff;
-  height: 4px;
-  display: block;
-  transition: all 0.5s;
-  transform-origin: right center;
-}
-
-.right-arm {
-  position: absolute;
-  z-index: 1;
-  top: 21px;
-  left: 20.5px;
-  width: 20px;
-  display: block;
-  transform: rotate(45deg);
-}
-.right-arm:after {
-  content: "";
-  background-color: #fff;
-  height: 4px;
-  display: block;
-  transition: all 0.5s;
-  transform-origin: left center;
-}
-
-/*for animation*/
-.arrow-slide {
-  left: 0;
-  top: -100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: .45em;
   width: 100%;
-  height: 100%;
-  background: #ffffffd1;
-  position: absolute;
-  display: block;
-  z-index: 0;
+  float: left;
+  border-radius: 2px;
+  transition: all .35s ease-in-out;
+  
 }
 
-/*slide animations on hover state*/
-#myBtn:hover {
-  opacity: 1;
-}
-#myBtn:hover .left-arm:after {
-  transform: rotate(-13deg);
-}
-#myBtn:hover .right-arm:after {
-  transform: rotate(13deg);
-}
-#myBtn:hover .arrow-slide {
-  transition: all 0.4s ease-in-out;
-  transform: translateY(200%);
+.first {
+  top: 0px;
 }
 
-/* NAVBAR*/
-
-.nav-wrapper a:hover,
-.sidenav a:hover {
-  text-decoration: none;
+.is-active .first {
+  transform-origin: .167em .33em;
+  transform: rotate(45deg) translate(0.167em, -0.25em);
 }
 
-.nav-wrapper {
-  margin-left: 10px;
-  margin-right: 10px;
+.second {
+  top: 50%;
+  margin-top: -.25em;
 }
 
-/*Navbar dark mode(research page)*/
-
-.black {
-  background-color: var(--bg-nav);
-  background-image: var(--bg-nav-img);
+.is-active .second {
+  opacity: 0;
+  transform: translateX(8em)
 }
 
-.nav-wrapper a {
+.third {
+  bottom: 0px;
+  transform-origin: .25em -0.33em;
+}
+
+.is-active .third {
+  transform: rotate(-45deg) translate(-0.167em, 0.083em);
+}
+
+.navbar-brand{
+  font-family: Agustina;
+  font-size: 30px;
   font-weight: bold;
 }
-
-.sidenav-trigger {
-  margin-left: 0px !important;
+.navbar{
+  color:#000000;
+  background-color: #fff;
 }
 
-.brand-logo img {
-  width: 200px;
+/*
+-------------------------------------
+    NAV BAR HIGHTLIGHTING
+--------------------------------------
+*/
+
+@media only screen and (min-width: 768px){
+  .current-link {
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .current-link:after {
+    content: "";
+    position: absolute;
+    left: 34%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    width: 32%;
+    border-bottom: 3px solid #22B6A7;
+  }
+
+
+  .nav-link:hover{
+    border-radius: 40px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 0.5px rgba(0,0,0,0.2);
+    width: 100%;
+    
+  }
+  li.nav-item{
+
+    text-align: center;
+  }
+  a.nav-link{
+    padding: 6px 21px !important;
+  }
 }
 
-h1,
-p {
-  display: inline-block;
-  line-height: 1;
-  font-family: "Poppins", sans-serif;
-  margin: 20px 0;
-  font-weight: 300;
-  font-size: 18px;
-}
-
-/*toggle for light/dark mode*/
-
-.toggle-checkbox {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.side-toggle {
-  height: 2em;
-  width: 5em;
-}
-
-.toggle-slot {
+/**Navbar burger animations**/
+.navbar-toggler{
   position: relative;
-  height: 3.5em;
-  width: 8em;
-  border: 5px solid #e4e7ec;
-  border-radius: 10em;
-  background-color: white;
-  transition: background-color 250ms;
-  margin-top: 1em;
-  margin-left: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+  border-color: white;
+  border: none;
+  outline: none;
 }
 
-.toggle-checkbox:checked ~ .toggle-slot {
-  background-color: #374151;
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 50px;
 }
-
-.toggle-button {
-  transform: translate(11.75em, 1.75em);
-  position: absolute;
-  height: 2em;
-  width: 2em;
-  border-radius: 50%;
-  background-color: #ffeccf;
-  box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
-  transition: background-color 250ms, border-color 250ms,
-    transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
-  margin-top: -1.5em;
-  margin-left: -7em;
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
 }
-
-.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
-  background-color: #485367;
-  box-shadow: inset 0px 0px 0px 0.75em white;
-  transform: translate(7.5em, 1.75em);
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
 }
-
-.sun-icon {
-  position: absolute;
-  height: 2em;
-  width: 2em;
-  color: #ffbb52;
-  margin-top: -1.2em;
-  margin-left: -2em;
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
 }
-
-.sun-icon-wrapper {
-  position: absolute;
-  height: 3em;
-  width: 3em;
-  opacity: 1;
-  transform: translate(2em, 2em) rotate(15deg);
-  transform-origin: 50% 50%;
-  transition: opacity 150ms, transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
-}
-
-.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
-  opacity: 0;
-  transform: translate(3em, 2em) rotate(0deg);
-}
-
-.moon-icon {
-  position: absolute;
-  height: 2em;
-  width: 2em;
-  color: white;
-  margin-top: -3.5em;
-  margin-left: -6.5em;
-}
-
-.moon-icon-wrapper {
-  position: absolute;
-  height: 3em;
-  width: 3em;
-  opacity: 0;
-  transform: translate(11em, 2em) rotate(0deg);
-  transform-origin: 50% 50%;
-  transition: opacity 150ms, transform 500ms cubic-bezier(0.26, 2.5, 0.46, 0.71);
-}
-
-.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
-  opacity: 1;
-  transform: translate(12em, 2em) rotate(-15deg);
+.open .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
 
 /* 
@@ -351,304 +339,308 @@ html.transition *:before,
 html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
+.open .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.open .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
 
-/* About Section */
-#about .card, #mooc .card{
-  background-color: var(--bg);
-  color: var(--text-color);
-  transform: scale(.97);
-  cursor: pointer;
-  transition: all .3s ease-in-out;
+/*
+------------------------
+    FOOTER SECTION
+------------------------
+*/
+
+.footer{
+  padding-top: 10px;
+  background-color:#040406;
 }
 
-#about .card i, #mooc .card i{
-  color: white;
-}
-
-#about .card-img, #mooc .card-img{
-  background-color: var(--bg-nav);
-}
-
-#about .card:hover, #mooc .card:hover{
-  transform: scale(1.005);
-  box-shadow: 0 10px 18px 2px #000;
-}
-
-/*Footer*/
-
-.webintern-footer {
-  background-color: var(--bg-nav);
-  background-image: var(--bg-nav-img);
-  padding: 20px;
-}
-
-.row {
-  clear: both;
-  margin: 0 auto;
-  padding: 0 auto;
-  bottom: 0px;
-  clear: both !important;
-}
-
-.webintern-footer-inner {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.webintern-footer-logo {
-  display: inline-block;
-}
-
-.webintern-footer .webintern-footer-inner .simple-text p {
-  color: #fff;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.simple-text p {
-  font-size: 15px;
-  color: #42435d;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  line-height: 20px;
-  margin-bottom: 0;
-}
-
-@media (min-width: 40rem) {
-  .simple-text p {
-    font-size: 20px;
-  }
-}
-
-.footer-2 {
-  float: right;
-  margin-right: 0px;
-}
-.webintern_footer_title {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.webintern_footer_title small {
-  font-family: "Work Sans", sans-serif;
-  color: #fff;
-  font-weight: 500;
-  font-size: 10px;
-  text-transform: uppercase;
-}
-.webintern_footer_title:after {
-  content: "";
-  display: block;
-  width: 6rem;
-  height: 2px;
-  background: #26a69a;
-  margin-top: 4px;
-}
-
-.contact-form #inputEmail, #inputName {
-  background-color: #fff;
-  padding: 0.375rem 0.75rem;
-  height: 2rem;
-  width: 93%;
-  font-size: 15px;
-  border-radius: 2px;
-  margin-bottom: 0px;
-}
-
-.form-control:focus {
-  box-shadow: none;
-  border-bottom: 1px solid #26a69a;
-}
-.form-group {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.webintern-footer .webintern-footer-inner .simple-text p {
-  color: #fff;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.simple-text p {
-  font-size: 15px;
-  color: #42435d;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+.tag{
+  font-family:"Open Sans", sans-serif;
+  font: size 20px;
   line-height: 26px;
-  margin-bottom: 0;
-}
-
-.footer-2 {
-  float: right;
-  margin-right: 0px;
-}
-.webintern_footer_title {
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-.webintern_footer_title small {
-  font-family: "Work Sans", sans-serif;
+  text-align: center;
   color: #fff;
-  font-weight: 100;
-  font-size: 13px;
-  text-transform: uppercase;
-}
-.webintern_footer_title:after {
-  content: "";
+  height: 78px;
+  width: 300px;
+  margin: 5px auto;
   display: block;
-  width: 7rem;
-  height: 2px;
-  background: #26a69a;
-  margin-top: 2px;
+  box-sizing: border-box;
 }
 
-.contact-form #inputEmail, #inputName {
-  background-color: #fff;
-  padding: 0.375rem 0.75rem;
-  height: 2rem;
-  width: 93%;
-  font-size: 15px;
-  border-radius: 2px;
-}
-/*.tt-copy {
-  font-size: 0px;
-  line-height: 0px;
-  color: #fff;
-  padding: 0px 0;
-  font-family: "Open Sans", sans-serif;
-}*/
 
-/*Responsive*/
-
-@media (min-width: 40rem) {
-  .simple-text p {
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .webintern-footer .webintern-footer-inner .simple-text p {
-    width: 220px;
-  }
+.svg-inline--fa {
+  vertical-align: -0.200em;
 }
 
-.send-btn {
-  padding-top: 5px 3px 5px 3px;
-  font-size: 10px;
-  transition-property: font-size;
-  transition: all 0.5s ease;
-  outline: none;
-}
-.send-btn:hover {
-  background-color: #0dfde5;
-  font-size: 13px;
-}
-
-.btn:focus,
-.btn:active {
-  outline: none !important;
-  box-shadow: none;
-  background-color: #26a69a;
-  color: #fff;
-}
-
-.form-group:focus {
-  border: 2px solid black;
-}
-
-.text-animation {
-  animation: text 3s 1;
-}
-
-@keyframes text {
-  0% {
-    letter-spacing: 0px;
-  }
-  50% {
-    letter-spacing: 20px;
-  }
-  100% {
-    letter-spacing: 2px;
-  }
-}
-
-/*social icons footer*/
-
-:root {
-  --link-size: 64px;
-  --trans-props: all 0.3s ease;
-  --link-size-footer-b: 40px;
-  --link-size-footer-s: 30px;
-}
-
-.social-icons-footer {
-  font-size: 20px;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row wrap;
-  display: block;
-}
-
-.social-icon-footer {
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  width: var(--link-size-footer-s);
-  height: var(--link-size-footer-s);
-  margin: 3px;
-  background-color: #fff;
-  border-radius: 50%;
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
   text-decoration: none;
-  float: left;
-  transition: background-color 0.3s, var(--trans-props);
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
-.social-icon-footer:hover {
-  background-color: grey;
-  transform: translateY(-4px);
+/********
+Rotate Transition in foote Soical Icon
+*********/
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+      transition: background-color 0.3s, var(--trans-props);
 }
 
-.social-icon-footer i {
-  margin: auto;
-  font-size: 15px;
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-medium, .fa-github {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.twitter{
+  background:white;
+}
+
+/*
+------------------------------
+   TWITTER MICROANIMATION
+-------------------------------
+*/
+.twitter-icon{
+  width: 40px;
+  margin-left: 12px;
+}
+
+.twitter:hover #wing1{
+      transform-origin:center;
+      animation: flap 0.4s ease-out infinite alternate;
+   }	
+   
+.twitter:hover #wing2{
+    transform-origin:center;
+    animation: flap 0.4s ease-in infinite alternate;
+ }		
+
+@keyframes flap{
+     50%{
+      transform:scaleX(-1) rotate(-45deg) translate(-40px,-40px);
+     }
+   }
+/*
+-----------------------------
+   GITHUB MICROANIMATION
+-----------------------------
+*/
+.github-icon {
+  width: 40px;
+  margin-left: 12px;
+  margin-top: 5px;
+  fill: #000000;
+}
+
+.github:hover #arm {
+  transform-origin: bottom right;
+  animation: moveArm 1s infinite alternate;
+}
+
+@keyframes moveArm {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+ }
+
+
+/* twitter SVG micro animation */
+.twitter-icon-footer{
+  margin-bottom: 6px;
+  width: 35px;
+}
+.twitter:hover{
+  background-color: white;
+}
+
+/* github SVG Micro animation */
+.github-icon-footer{
+  margin-bottom: 8px;
+  width: 35px;
+}
+
+.github:hover{
+  background-color: white;
+}
+/*
+----------------------------------------
+   HOVER EFFECT ON SOCIAL MEDIA ICONS
+----------------------------------------
+*/
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #000;
+  background: white;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #22B6A7;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #000;
+  background: #22B6A7;
+  border-color: #22B6A7;
+}
+
+.rounded-social-buttons .social-button.medium {
+  background:  #22B6A7;
+}
+
+.rounded-social-buttons .social-button.medium:hover, .rounded-social-buttons .social-button.medium:focus {
+  color: #000000;
+  background: #22B6A7;
+  border-color: #22B6A7;
+}
+
+.rounded-social-buttons .social-button.github{
+  background:white;
+}
+
+.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
+  color: #000000;
+  background: white;
+}
+
+/************ 
+  Contact Form In Footer 
+*************/
+.display{
+  height: auto;
+  width: auto;
+  text-align: left;
+  color: #fff;
+  display: inline;
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 18px;
+  border-bottom: 2px solid #26a69a;
+}
+
+form{
+  margin: 15px auto;
   color: #000;
 }
 
-.social-icon-footer:hover i {
-  color: #000000;
+/*
+-------------------
+   Footer Form 
+--------------------
+*/
+.form-style-6{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+  padding: 16px;
+  border-radius: 2px;
+}
+.form-style-6 h1{
+	background: #43D1AF;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: rgb(46, 44, 44);
+  font: 95% Arial, Helvetica, sans-serif;
+  border-radius: 2px;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+	box-shadow: 0 0 5px #43D1AF;
+	padding: 3%;
+  border: 1px solid #43D1AF;
+  border-radius: 2px;
 }
 
-/*Responsive*/
-
-@media (min-width: 60rem) {
-  .social-icons-footer {
-    width: 280px;
-    text-align: center;
-  }
-
-  .social-icon-footer {
-    width: var(--link-size-footer-b);
-    height: var(--link-size-footer-b);
-  }
-
-  .social-icon-footer i {
-    font-size: 20px;
-  }
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #43D1AF;
+  border-bottom: 2px solid #30C29E;
+  border-radius: 2px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+  color: #fff;
+  font-size: 20px;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+	background: #2EBC99;
 }
 
-@media (min-width: 40rem) {
-  .webintern-footer .webintern-footer-inner .simple-text p {
-    width: auto; 
-  }
-}
+/* to make the navbar open full screen on mobile */
+    @media (max-width: 768px) {
+      .collapse navbar-collapse{
+        display: flex;
+        justify-content: center;
+      } 
 
-/*Animations*/
+      .footer{
+        padding-top: 10px;
+      }
 
-.social-icon-footer:hover {
-  transform: translateY(-4px);
-}
-
-.social-icon:hover:after {
-  transform: translate(0) scale(1.2);
-}
+      #navbar-content {
+        height: 100vh;
+        text-align: center;
+        margin:0 auto;
+        transform: translateY(25%);
+     }
+   }

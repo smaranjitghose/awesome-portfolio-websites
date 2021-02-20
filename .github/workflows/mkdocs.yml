@@ -1,0 +1,20 @@
+name: Awesome MkDocs
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: documentation
+  pull_request:
+    branches: documentation
+
+jobs:
+  build:
+    name: Build and Deploy Documentation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Master
+        uses: actions/checkout@v2
+
+      - name: Build and Deploy Documentation using MkDocs
+        uses: Tangerine-Community/tangy-mkdocs-build-action@v1

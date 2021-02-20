@@ -16,6 +16,7 @@ html[data-theme = 'dark']
 
 /* -----Education Section CSS----- */
 
+
 .sect
 {
     height: 140vh;
@@ -36,7 +37,7 @@ html[data-theme = 'dark']
 }
 
 .s2 h4{
-  margin-bottom: -0.3rem;
+  margin-bottom: 1.2rem;
 }
 
 .qual{
@@ -51,17 +52,31 @@ html[data-theme = 'dark']
 }
 .s2 .card img
 {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
 }
 .s2 .card, .s2 img
 {
     border-radius: 3rem;
 }
 
-.s2 button{
-  margin-bottom: 1rem;
-  background-color: #7d39b5;
+.s2 h4,h6,p{
+  color:black;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .edSection{
+        margin-top: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .edSection{
+        margin-top: 250px;
+    }
 }
 
 /* Card Hover Effect */
@@ -142,15 +157,4 @@ html[data-theme = 'dark']
 #mooc .card-body {
   background-color: #fff;
   padding:1px;
-}
-
-/* Certificate Carousel  */
-
-.carousel-container{
-  padding-bottom: 2vh;
-}
-
-.carousel-container #image{
-  height: 40vh;
-  width: 50vh;
 }

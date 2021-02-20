@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 html[data-theme="light"] {
-  --bg1-color: #fff;
+  --bg1-color: #DDE1E7;
   --text-color: #6C757D;
-  --shadow-col1: rgba(0,0,0,0.05);
-  --shadow-col2: rgba(75,0,0,0.05);
+  --shadow-col1: #babdc2;
+  --shadow-col2:#ffffff;
   --meta-col: #444;
   --head-col: black;
  }
@@ -14,17 +14,16 @@ html[data-theme="light"] {
   --text-color: #fff;
   --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
   --txt-fill: transparent;
-  --shadow-col1:rgb(46, 37, 37);
-  --shadow-col2:rgba(21, 22, 22, 0.459);
+  --shadow-col1: #191919;
+  --shadow-col2:#1d1d1d;
   --meta-col: rgb(155, 149, 149);
   --head-col: #fff;
-
-
  }
 /*Main section*/
 
 .head-upper{
   background: var(--bg-txt-img);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: var(--txt-fill);
 }
@@ -65,17 +64,20 @@ html[data-theme="light"] {
 }
 
 .card1 {
-  box-shadow: 0.45rem 0.45rem 0.8rem var(--shadow-col1), 0 0.5rem 1.125rem var(--shadow-col2);
   background: #fff;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   max-height: 80%;
   border:none;
+  border-radius: 4px;
+  box-shadow: -3px -3px 4px var(--shadow-col2), 2px 3px 4px var(--shadow-col1);
+  transition: all 0.4s;
+  contain: content;
 }
 
 .card1:hover{
-  transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .card1 .card-body {
@@ -83,7 +85,8 @@ html[data-theme="light"] {
   flex-flow: row wrap;
   padding: 18px;
   color: var(--text);
-  background-color: var(--bg1-color);
+  background-color: #fff;
+  border-radius: 0 13px 13px 0;
 }
 
 .card1 header {
@@ -114,7 +117,7 @@ ul ol{
 @media only screen and (min-width: 768px) {
   .card1 {
     flex-direction: row;
-    max-height: 279px;
+    max-height: 70vh;
   }
 
   .card1 h3 {
@@ -128,11 +131,11 @@ ul ol{
   }
 
   .card1 .featured-image {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
     border-top-right-radius: 0;
     max-width: 310px;
-    max-height: 279px;
+    height: inherit;
     width: 100%;
   }
 }
@@ -186,8 +189,9 @@ ul ol{
 .main ul {
   display: block;
   margin: 0 auto;
+  min-height: 15rem;
   max-width: 1050px;
-  padding: 30px;
+  padding: 1rem !important;
 }
 
 .main a {
@@ -202,7 +206,9 @@ ul ol{
 }
 
 .volunteerCard{
-  box-shadow: 0.45rem 0.45rem 0.8rem var(--shadow-col1), 0 0.5rem 1.125rem var(--shadow-col2);
+  border-radius: 10px;
+  box-shadow:  4px 4px 7px var(--shadow-col1),
+              -2px -2px 4px var(--shadow-col2);
 }
 
 .page-content {
@@ -397,13 +403,14 @@ ul ol{
 
 .column{
   float: left;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem !important;
   padding-left: 0;
   padding-right: 0;
 }
 
 .mentorshipCard{
-  margin-bottom: -5em;
+  margin-bottom: 5em;
+  border-radius: 13px;
 }
 
 @media(min-width: 60rem)
@@ -425,10 +432,14 @@ ul ol{
   }
 }
 
+.mentorshipCardCover {
+  box-shadow:  4px 4px 6px var(--shadow-col1),
+               -2px -2px 4px var(--shadow-col2);
+}
+
 .card2{
-  background-color: var(--bg1-color);
+  /* background-color: var(--bg1-color); */
   color: var(--text);
-  box-shadow: 0.45rem 0.45rem 0.8rem var(--shadow-col1), 0 0.5rem 1.125rem var(--shadow-col2);
 }
 
 .card2 .fa{
