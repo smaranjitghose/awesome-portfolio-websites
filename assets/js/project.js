@@ -1,12 +1,5 @@
 /* Project Cards */
 
-var _window = window,Splitting = _window.Splitting,ScrollOut = _window.ScrollOut;
-Splitting();
-ScrollOut({
-  targets: '.word',
-
-})
-
 const projectcards = document.querySelector(".projectcards");
 
 // Object with tag name as key and their respective image as value

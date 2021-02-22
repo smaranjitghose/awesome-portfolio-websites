@@ -1,12 +1,5 @@
 AOS.init();
 
-var _window = window,Splitting = _window.Splitting,ScrollOut = _window.ScrollOut;
-Splitting();
-ScrollOut({
-  targets: '.word',
-
-})
-
 // MOOCs Cards
 
 const moocs = document.querySelector(".moocs");
