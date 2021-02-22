@@ -239,7 +239,7 @@ ul ol{
   .volunteerCard:hover p {
     transition: all 0.3s ease-out;
     color: rgba(255, 255, 255, 0.8); }
-  .volunteerCard:hover h3 {
+  .volunteerCard:hover h2 {
     transition: all 0.3s ease-out;
     color: #ffffff; }
 
