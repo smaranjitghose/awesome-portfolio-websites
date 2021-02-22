@@ -532,3 +532,10 @@ body{
     color: transparent;
   }
   
+.format{
+    color: #4c8df5;
+    justify-content: center;
+  }
+ .sp{
+    margin-left: 10px;
+  }
