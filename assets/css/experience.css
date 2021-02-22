@@ -205,6 +205,44 @@ ul ol{
   --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+* {
+  transition: all 0.3s ease-out; 
+}
+
+  .volunteerCard {
+    display: block;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden; }
+    .volunteerCard:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background: #4c8bf5;
+      height: 32px;
+      width: 32px;
+      border-radius: 32px;
+      transform: scale(0);
+      transform-origin: 50% 50%;
+      transition: transform 0.25s ease-out; }
+    .volunteerCard:hover:before {
+      transform: scale(45); }
+  
+  .volunteerCard:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8); }
+  .volunteerCard:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #ffffff; }
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -216,21 +254,34 @@ ul ol{
 
 .volunteerCard{
   border-radius: 10px;
-  box-shadow: 0px 10px 8px #888888;
+  box-shadow: 0px 8px #093b8f, 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
   /* box-shadow:  4px 4px 7px var(--shadow-col1),
               -2px -2px 4px var(--shadow-col2); */
 
               animation: 0.5s ease-out 0s 1 slideInFromLeft;
   
               background: #333;
-              padding: 30px;
+              padding: 10px;
+ 
+              
+             
+
+              
 }
+
+/* .volunteerCard:before {
+  
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out; }
+.volunteerCard:hover:before {
+  transform: scale(21); } */
 
 .volunteerCard:hover{
   
   transform: scale(1.1);
-  transition: ease-out;
-  transition-duration: 0.1s;
+  
 }
 
 .page-content {
@@ -239,7 +290,9 @@ ul ol{
   padding: 2rem;
   max-width: 1124px;
   margin: 0 auto;
+  
 }
+
 
 .page-content .card:hover {
   position: relative;
@@ -250,8 +303,10 @@ ul ol{
   width: 100%;
   text-align: center;
   color: whitesmoke;
-  background-color: #43D1AF;
+  /* background-color: #43D1AF; */
   border: none;
+  
+  
 }
 
 @media (min-width: 600px) {
@@ -279,10 +334,12 @@ ul ol{
   border: none;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .page-content .card {
     height: 580px;
   }
+  
+  
 }
 
 @media (max-width: 390px) {
@@ -351,8 +408,8 @@ ul ol{
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  padding: 1px;
+  margin-bottom: 5rem;
   margin-top: 0.1rem;
   transition: transform var(--d) var(--e);
   z-index: 1;
@@ -369,10 +426,11 @@ ul ol{
 .volunteerTitle {
   font-size: 1.5rem;
   line-height: 1.2;
-  margin-top: 2.5em;
+  margin-top: 0.5em;
   transform: translateY(40px);
   transition: all 0.7s;
-  font-weight: bold;
+  font-weight: 900;
+  color: #093b8f;
 }
 
 .copy {
