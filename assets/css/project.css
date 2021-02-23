@@ -457,3 +457,10 @@ input[type="text"]{
       flex-direction: column-reverse;
   }
 }
+.format{
+  color: #4c8df5;
+  justify-content: center;
+}
+.sp{
+  margin-left: 10px;
+}
