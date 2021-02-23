@@ -152,6 +152,13 @@ a:hover {
   }
 }
 
+@media(min-width: 320px)
+{
+  .card .data{
+    height: 80%;
+  }
+}
+
 .card .data .content {
   padding: 1em;
   position: relative;
@@ -347,6 +354,13 @@ input[type="text"]{
 .skill-card .menu-content {
   float: right;
 }
+
+@media(max-width: 600px){
+  .skill-card .menu-content {
+    margin-top: 45px;
+  }
+}
+
 
 .skill-card .menu-content li {
   margin: 0 2px;
