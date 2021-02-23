@@ -538,10 +538,3 @@ ul ol{
 .card2 .fa{
   color: var(--text-color);
 }
-.format{
-  color:#4c8df5;
-  justify-content: center;
-}
-.sp{
-  margin-left: 10px;
-}
