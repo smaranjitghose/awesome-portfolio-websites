@@ -158,12 +158,3 @@ html[data-theme = 'dark']
   background-color: #fff;
   padding:1px;
 }
-.color{
-  color:#4c8bf5;
-}
-.format{
-  margin-left: 10px;
-}
-.space{
-  justify-content: center;
-}
