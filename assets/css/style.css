@@ -211,6 +211,63 @@ html {
 
 /*
 -------------------------------------
+    SIDEBAR SVG ANIMATION
+--------------------------------------
+*/
+
+
+.bike{
+  margin-top: 10px;
+ display: block;
+}
+
+#right-wheel,
+#left-wheel {
+ animation: wheel 3s linear infinite;
+ transform-origin: center;
+ transform-box: fill-box;
+}
+
+#man-bike {
+ animation: bikes 1s ease-in-out infinite alternate;
+ transform-origin: bottom;
+}
+
+#hat {
+ animation: hat 1s ease-in-out infinite alternate;
+ transform-origin: center;
+ transform-box: fill-box;
+}
+
+@keyframes wheel {
+ from {
+     transform: rotateZ(0deg);
+ }
+ to {
+     transform: rotateZ(360deg);
+ }
+}
+
+@keyframes bikes {
+ from {
+     transform: rotateX(0deg);
+ }
+ to {
+     transform: rotateX(12deg);
+ }
+}
+
+@keyframes hat {
+ from {
+     transform: translateY(0%) rotateZ(0deg);
+ }
+ to {
+     transform: translateY(10%) rotateZ(20deg);
+ }
+}
+
+/*
+-------------------------------------
     NAV BAR HIGHTLIGHTING
 --------------------------------------
 */
