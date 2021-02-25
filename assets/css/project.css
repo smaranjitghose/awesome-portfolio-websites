@@ -458,9 +458,10 @@ input[type="text"]{
   }
 }
 .format{
-  color: #4c8df5;
+  color: black;
   justify-content: center;
 }
 .sp{
   margin-left: 10px;
+  color:#4c8bf5;
 }
