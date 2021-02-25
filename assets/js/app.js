@@ -21,6 +21,14 @@ let header = $(`
    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
   </ul>
+  &nbsp;&nbsp;
+  <label class='switch'>
+    <input type='checkbox' id="checkboxtoggle" class='checkbox'>
+    <span class='slider rounded'>
+      <i class="fas fa-sun day"></i>
+      <i class="fas fa-moon night"></i>
+    </span>
+  </label>
 </div>
 </nav>`);
 
@@ -150,11 +158,18 @@ $(function () {
 
 // function for toggling hamburger is-active class
 $(function(){
-  
+
   $("#js-hamburger").on("click", function(){
     $(this).toggleClass('is-active');
   });
 
 });
 
-
+$(document).ready(function() {
+  $('input.checkbox').change(function () {
+      $('body').toggleClass('darkmode');
+      $('.text-dark').toggleClass('darkmodetext');
+      $('tr').toggleClass('bordered');
+      // $('.darkmodetext').toggleClass('text-dark');
+    });
+});
