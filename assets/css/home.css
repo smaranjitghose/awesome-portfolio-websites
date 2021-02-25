@@ -10,12 +10,10 @@ html[data-theme="light"] {
   --col-bd-icon:transparent;
   --bg-icon: #fff;
    --bg1-color: #fff;
-  --col-icon-twitter: #1da1f2;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
   --col-icon-medium: #00ab6c;
-  --col-icon-kaggle: #41aff3;
-  --col-icon-github:#24292e;  
+  --col-icon-kaggle: #41aff3;  
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail:rgb(209, 82, 82);
   --col-icon-google-scholar:#3cba54;
@@ -32,12 +30,10 @@ html[data-theme="dark"] {
   --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7) , -5px -5px 10px rgba(255,255,255,0.1);
   --col-box-shadow-hover:inset rgba(255, 255, 255, 1) 2px 2px 4px, 
  inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
-  --col-icon-twitter: #1da1f2;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
   --col-icon-medium: #00ab6c;
   --col-icon-kaggle: #41aff3;
-  --col-icon-github:  #24292e;
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail:rgb(209, 82, 82);
   --col-icon-google-scholar:#3cba54;
@@ -125,17 +121,6 @@ body{
   justify-content: center;
   flex-flow: row wrap;
 }
-
-.socialicon {
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  width: var(--link-size);
-  height: var(--link-size);
-  margin: 8px;
-  text-decoration: none;
-  transition: var(--trans-props);
-}
 .socialicon{
   display: flex;
   position: relative;
@@ -155,18 +140,6 @@ body{
   z-index: 1;
   transition: var(--trans-props);
 }
-.dribbble i {
-  margin: auto;
-  font-size: 24px;
-  z-index: 1;
-  transition: var(--trans-props);
-}
-.linkedin i {
-  margin: auto;
-  font-size: 24px;
-  z-index: 1;
-  transition: var(--trans-props);
-}
 .medium i {
   margin: auto;
   font-size: 24px;
@@ -179,30 +152,9 @@ body{
   z-index: 1;
   transition: var(--trans-props);
 }
-.github i {
-  margin: auto;
-  font-size: 24px;
-  z-index: 1;
-  transition: var(--trans-props);
-}
-.socialicon.twitter{
-  color: var(--col-icon-twitter);
-}
-
-.socialicon.github{
-  color:var(--col-icon-github);
-} 
-
-.socialicon.linkedin{
-  color: var(--col-icon-linkedin);
-}
 
 .socialicon.kaggle{
   color:var(--col-icon-kaggle);
-}
-
-.socialicon.dribbble{
-  color: var(--col-icon-dribbble);
 }
 
 .socialicon.medium{
@@ -219,29 +171,8 @@ body{
   
 }
 
-.socialicon.twitter:after {
-  background-color: #1da1f2;
-  box-shadow: var(--twitter);
-}
-
-.socialicon.github:after {
-  background-color: #1f2122;
-  box-shadow: var(--github);
-} 
-
-
-.socialicon.linkedin:after {
-  background-color: #0e76a8;
-  box-shadow: var(--linkedin);
-}
-
 .socialicon.kaggle:after {
   background-color: #41aff3;
-  box-shadow: var(--kaggle);
-}
-
-.socialicon.dribbble:after {
-  background-color: #ea4c89;
   box-shadow: var(--kaggle);
 }
 
@@ -250,7 +181,258 @@ body{
   box-shadow: var(--medium);
 }
 
-/*** Social Icon Animations ***/
+ /*
+---------------------------
+   LINKEDIN MICROANIMATION
+---------------------------
+*/
+
+ .linkedin-icon{
+  margin-left: 15px;
+}
+.linkedin:hover .linkedin-icon>rect{
+  animation: rect-up 0.3s linear infinite;
+}
+
+
+@keyframes rect-up {
+  50% {
+      y:10px;
+      height:11px;
+   }
+  0%{
+      y:13px;
+      height:8px;  
+      }
+  
+}
+
+.linkedin:hover .linkedin-icon> circle{
+  animation: bounce 0.4s linear infinite;
+}
+
+@keyframes bounce {
+  75% {
+      cy: 8px;
+   }
+   50%{
+      cy: 4px
+   }
+  0%{
+      cy:4px
+      }
+  
+}
+
+/*
+---------------------------
+   INSTAGRAM MICROANIMATION
+---------------------------
+*/
+
+.instagram-icon {
+  width: 90px !important;
+ 
+}
+.st0 {
+  fill:none;
+  stroke:#EF4649;
+  stroke-width:7;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+}
+
+.instagram:hover #littleCircle {
+  stroke-dasharray:150;
+}
+
+.instagram #shutter{
+  display:none;
+}
+.instagram:hover #shutter{
+  display: block;
+  animation: shutter 1s linear infinite;
+}
+.instagram:hover #lens{
+  fill:#EF4649;
+  animation: lens 1.5s linear infinite;
+
+}
+
+@keyframes shutter {
+  0%, 50% {
+          stroke-dashoffset: 150;
+          
+      }
+  75% {
+          fill:#EF4649;
+          stroke-dashoffset: 0;
+          stroke-width:11;
+      }
+}
+
+@keyframes lens {
+  0%, 75% {
+          opacity: 0;
+      }
+  100% {
+          opacity: 1;
+      }
+}
+
+
+/*
+---------------------------
+   TWITTER MICROANIMATION
+---------------------------
+*/
+.twitter-icon{
+  width: 40px;
+  margin-left: 12px;
+}
+
+.twitter:hover #wing1{
+      transform-origin:center;
+      animation: flap 0.4s ease-out infinite alternate;
+   }	
+   
+.twitter:hover #wing2{
+    transform-origin:center;
+    animation: flap 0.4s ease-in infinite alternate;
+ }		
+
+@keyframes flap{
+     50%{
+      transform:scaleX(-1) rotate(-45deg) translate(-40px,-40px);
+     }
+   }
+
+/*
+--------------------------
+   GITHUB MICROANIMATION
+--------------------------
+*/
+.github-icon {
+  width: 40px;
+  margin-left: 12px;
+  margin-top: 5px;
+  fill: #000000;
+}
+
+.github:hover #arm {
+  transform-origin: bottom right;
+  animation: moveArm 1s infinite alternate;
+}
+
+@keyframes moveArm {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+ }
+
+ /*
+  --------------------------
+     DRIBBBLE MICROANIMATION
+  --------------------------
+  */
+  
+  .dribbble-icon{
+    width: 30px;
+    height: 30px;
+    margin-left:16px;
+    margin-top: 20px;
+  }
+  
+  .dribbble:hover .dribbble-icon{ 
+      animation: dribbble-bounce .4s ease infinite;
+      transform: rotate(360deg);
+      transition: all 9s ease-in-out 0s;
+  }
+  
+  @keyframes dribbble-bounce {
+    from, to {
+      margin-top: 20px;
+    }
+    50% { 
+      margin-top: 15px; 
+    }
+    
+    75%{
+      margin-top: 15px;
+    }
+  }
+  
+  /*
+  --------------------------
+     CODEFORCES MICROANIMATION
+  --------------------------
+  */
+  
+  .codeforces-icon{
+    margin-right: 6px;
+    margin-top: 6px;
+  }
+  
+  .codeforces-icon .red {
+    height:4px;
+    y:2.5px;
+    
+  }
+  .codeforces:hover .red{
+    animation: red-animation 2.5s infinite alternate;
+  }
+  
+  
+  .codeforces-icon .yellow{
+    height:5px;
+    y:1.5px;
+    
+  }
+  
+  .codeforces:hover .yellow{
+    animation: yellow-animation 2s infinite alternate-reverse;
+  }
+  
+  .codeforces:hover .blue{
+    animation: blue-animation 2s  infinite alternate;
+  }
+  
+  @keyframes red-animation{
+    0%{
+       y:0px
+    }
+    0%{
+        height:6px;
+        y:0.5px;
+    }
+  }
+  
+  @keyframes yellow-animation{
+    0%{
+        y:0px;
+    }
+    0%{
+        height:6px;
+        y:0.5px;
+    }
+  }
+  
+  @keyframes blue-animation{
+    0%{
+        y:0px;
+    }
+    0%{
+        height:3px;
+        y:3.5;
+    }
+  }
+  
+  
+
+/*
+----------------------------
+   SOCIAL MEDIA ANIMATIONS
+----------------------------
+*/
 
 .socialicon:hover {
   transform: translateY(-4px);
