@@ -1,0 +1,276 @@
+/*Declaration of CSS variables for light/dark theme*/
+
+html[data-theme="light"] {
+  --col-icon: black;
+  --col-bd-radius:rgb(2, 2, 2);
+  --col-box-shadow:#000000 2px 2px 4px, 
+  #4D4D4D -2px -2px 4px;
+ --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
+ inset #4D4D4D -2px -2px 4px;
+  --col-bd-icon:transparent;
+  --bg-icon: #fff;
+   --bg1-color: #fff;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-medium: #00ab6c;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github:#24292e;  
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail:rgb(209, 82, 82);
+  --col-icon-google-scholar:#3cba54;
+  --col-icon-codeforces:rgb(19, 145, 184);
+  --col-icon-leetcode:rgb(255, 181, 62);
+  --shadow-col: rgba(0, 0, 0, 0.3);
+
+}
+
+html[data-theme="dark"] {
+  --col-icon:white;
+  --col-bd-radius:black;
+  --col-bd-icon:transparent;
+  --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7) , -5px -5px 10px rgba(255,255,255,0.1);
+  --col-box-shadow-hover:inset rgba(255, 255, 255, 1) 2px 2px 4px, 
+ inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-medium: #00ab6c;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github:  #24292e;
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail:rgb(209, 82, 82);
+  --col-icon-google-scholar:#3cba54;
+  --col-icon-codeforces:rgb(19, 145, 184);
+  --col-icon-leetcode:rgb(255, 181, 62);
+  --col-white: #fff;
+}
+/* Particle effect*/
+body{
+  font-family: "Poppins";
+}
+#home,
+#particles-js {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.section {
+  background-color: rgb(63, 25, 170);
+  justify-content: center;
+  align-items: center;
+}
+
+.text .header {
+  font-weight: bold;
+}
+
+.text {
+  font-size: 25px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.animated-text span {
+  display: none;
+  line-height: 1;
+}
+
+.animated-text span.active {
+  display: inline;
+}
+
+.animated-text:after {
+  content: ".";
+  display: inline;
+  width: 6px;
+  text-indent: 0;
+  /* overflow: hidden; */
+  background: var(--col-icon);
+  animation: blink 0.3s infinite alternate;
+}
+.datawords{
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*Social icons*/
+
+:root {
+  --link-size: 64px;
+  --trans-props: all 0.2s ease;
+  --link-size-footer-b: 40px;
+  --link-size-footer-s: 30px;
+}
+
+.social-icons {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.socialicon {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  margin: 8px;
+  text-decoration: none;
+  transition: var(--trans-props);
+}
+.socialicon{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  background-color: #fff;
+  margin: 8px;
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px var(--shadow-col);
+  text-decoration: none;
+  transition: var(--trans-props);
+}
+.socialicon i {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.dribbble i {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.linkedin i {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.medium i {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.kaggle i {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.github i {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+.socialicon.twitter{
+  color: var(--col-icon-twitter);
+}
+
+.socialicon.github{
+  color:var(--col-icon-github);
+} 
+
+.socialicon.linkedin{
+  color: var(--col-icon-linkedin);
+}
+
+.socialicon.kaggle{
+  color:var(--col-icon-kaggle);
+}
+
+.socialicon.dribbble{
+  color: var(--col-icon-dribbble);
+}
+
+.socialicon.medium{
+  color: var(--col-icon-medium);
+}
+.socialicon:after {
+  content: "";
+  width: var(--link-size);
+  height: var(--link-size);
+  position: absolute;
+  transform: translate(0, var(--link-size));
+  border-radius: 50%;
+  transition: var(--trans-props);
+  
+}
+
+.socialicon.twitter:after {
+  background-color: #1da1f2;
+  box-shadow: var(--twitter);
+}
+
+.socialicon.github:after {
+  background-color: #1f2122;
+  box-shadow: var(--github);
+} 
+
+
+.socialicon.linkedin:after {
+  background-color: #0e76a8;
+  box-shadow: var(--linkedin);
+}
+
+.socialicon.kaggle:after {
+  background-color: #41aff3;
+  box-shadow: var(--kaggle);
+}
+
+.socialicon.dribbble:after {
+  background-color: #ea4c89;
+  box-shadow: var(--kaggle);
+}
+
+.socialicon.medium:after {
+  background-color: #00ab6c;
+  box-shadow: var(--medium);
+}
+
+/*** Social Icon Animations ***/
+
+.socialicon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+}
+.socialicon:hover:after {
+  transform: translate(0) scale(1.2);
+}
+.socialicon:hover i {
+  color: #fff;
+}
+a:hover {
+  color: transparent;
+}
+
+
+@media only screen and (max-width: 450px) {
+  .text {
+    margin-top: 5rem;
+  }
+}
+
+
