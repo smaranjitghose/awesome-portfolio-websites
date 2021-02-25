@@ -24,6 +24,15 @@ let header = $(`
 </div>
 </nav>`);
 
+// text animation effect
+
+var _window = window,Splitting = _window.Splitting,ScrollOut = _window.ScrollOut;
+Splitting();
+ScrollOut({
+  targets: '.word',
+
+})
+
 let footer = $(`
 <footer class="footer">
   <div class="container p-4">

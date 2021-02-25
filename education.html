@@ -33,6 +33,10 @@
   <!--For Dark/Light mode Toggle-->
   <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
   
+   <!-- For text animations -->
+  <script src="https://unpkg.com/splitting/dist/splitting.js"></script>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -44,6 +48,8 @@
   <link rel="stylesheet" href="assets/css/education.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link id='favicon' rel="icon" href="assets/images/favicon.png" type="image/png">
+  <!-- For text animations -->
+  <link href="https://unpkg.com/splitting/dist/splitting.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> 
   <link id='favicon' rel="shortcut icon" href="assets/images/favicon.png" type="image/x-png">
   <script defer src="assets\js\dynamicTitle.js"></script>
@@ -96,7 +102,7 @@
             src="./assets/images/education-page/header-male.svg" draggable="true" style="margin-top: 45px;" alt="animated logo, Education" /> 
         </div>
         <div class="px-md-5 p-3 col-md-6 d-flex flex-column align-items-center justify-content-center animate__animated animate__zoomIn animate__delay-1s">
-          <h2 class="main-heading mb-0">Education</h2>
+          <h2 class="main-heading mb-0 text text--blocks" data-scroll="out" data-splitting="">Education</h2>
           <p class=" pre-heading font-weight-bolder text-center animate__animated animate__fadeInUp animate__delay-2s">
            An investment in knowledge pays the best interest. –  Benjamin Franklin
           </p>
@@ -111,7 +117,7 @@
 <section class="s2">
   <div class="container-sm  edSection">
     <div class="conatiner text-center mb-5">
-      <h1 class="head" data-aos="fade-up" data-aos-delay="300">Education</h1>
+      <h1 class="head text text--perspective mt-5" data-scroll="out" data-splitting="" data-aos="fade-up" data-aos-delay="300">Education</h1>
     </div>
       <!-- CARDS -->
       <div class="card mb-5" data-aos="fade-left" data-aos-delay="500">
@@ -185,7 +191,7 @@
 
   <!--MOOCs Cards-->
   <div id="mooc" class="container-fluid">
-    <h4 class="text-center pb-2 pt-5" data-aos="fade-up" data-aos-delay="300">MOOCs</h4>
+    <h4 class="text-center pb-2 pt-5  text text--perspective" data-scroll="out" data-splitting="" data-aos="fade-up" data-aos-delay="300">MOOCs</h4>
     <div class="row moocs">
       <!-- Dynamic MOOCs Cards -->
     </div>
