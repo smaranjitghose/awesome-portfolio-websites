@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+.section-title{
+    padding: 0 15px;
+    flex:0 0 100%;
+    max-width:100%;
+    text-align:center;
+    
+    margin-bottom: 60px;
+}
+.maintitle h2{
+    font-family: "Poppins";
+    padding-right:40px;
+}
+.section-title h2{
+    
+    display:inline-block;
+    font-size: 30px;
+    font-weight:700;
+    color:var(--text-black-900);
+    text-transform:uppercase;
+    margin:0;
+    font-family: "Poppins";
+
+}
+.section-title h2:before{
+    content:attr(data-heading);
+    display:block;
+    font-size:16px;
+    font-weight:600;
+    color:#fb839e;
+    font-family: "Poppins";
+}
+.about-section .about-img{
+    flex:0 0 40%;
+    max-width: 40%;
+    padding:0 15px;
+}
+.about-section .about-info{
+    flex:0 0 60%;
+    max-width: 60%;
+    padding:0 15px;
+}
+
+.aboutme{
+    padding-top:70px;
+    text-align:center;
+    padding-left: 15px;
+}
+.abouttext{
+    margin-top:30px;
+    text-align:left;
+    
+    
+}
+
+
+
+.aboutweb h5{
+    text-align: center;
+    font-family: 'Poppins';
+    margin-top:30px;
+    
+        -webkit-animation: skillsanimate 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: skillsanimate 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    
+}
+.aboutweb1 h5{
+    text-align: center;
+    font-family: 'Poppins';
+    margin-top:30px;
+    
+        -webkit-animation: skillsanimate 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: skillsanimate 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    
+}
+.aboutweb2 h5{
+    text-align: center;
+    font-family: 'Poppins';
+    margin-top:30px;
+    
+        -webkit-animation: skillsanimate 0.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: skillsanimate 0.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    
+}
+.aboutweb3 h5{
+    text-align: center;
+    font-family: 'Poppins';
+    margin-top:30px;
+    
+        -webkit-animation: skillsanimate 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: skillsanimate 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    
+}
+
+.images{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-template-columns: repeat(4,1fr);
+    padding-left:30px;
+    padding-right:10px;
+    
+    
+}
+
+
+.iconify{
+    align-items:center;
+    margin-bottom: 20px;
+    grid-gap:1.5rem;
+    margin-left:10px;
+    margin-right:10px;
+    
+    
+}
+#css{
+    -webkit-animation: skillsiconanimate 0.8s both;
+	        animation: skillsiconanimate 0.8s both;
+    
+}
+#html{
+    -webkit-animation: skillsiconanimate 0.9s both;
+	        animation: skillsiconanimate 0.9s both;
+    
+}
+#javascript{
+    -webkit-animation: skillsiconanimate 1.1s both;
+	        animation: skillsiconanimate 1.1s both;
+    
+}
+#flutter{
+    -webkit-animation: skillsiconanimate 1.1s both;
+	        animation: skillsiconanimate 1.1s both;
+} 
+#firebase{
+    -webkit-animation: skillsiconanimate 1.0s both;
+	        animation: skillsiconanimate 1.0s both;
+    
+} 
+#sass{
+    -webkit-animation: skillsiconanimate 0.8s both;
+	        animation: skillsiconanimate 0.8s both;
+    
+}
+#npm{
+    -webkit-animation: skillsiconanimate 0.9s both;
+	        animation: skillsiconanimate 0.9s both;
+    
+}
+#tensorflow{
+    -webkit-animation: skillsiconanimate 0.8s both;
+	        animation: skillsiconanimate 0.8s both;
+    
+}
+#python{
+    -webkit-animation: skillsiconanimate 0.9s both;
+	        animation: skillsiconanimate 0.9s both;
+    
+}
+#pytorch{
+    -webkit-animation: skillsiconanimate 1.1s both;
+	        animation: skillsiconanimate 1.1s both;
+    
+}
+#keras{
+    -webkit-animation: skillsiconanimate 1.1s both;
+	        animation: skillsiconanimate 1.1s both;
+} 
+#docker{
+    -webkit-animation: skillsiconanimate 0.8s both;
+	        animation: skillsiconanimate 0.8s both;
+    
+}
+#mongodb{
+    -webkit-animation: skillsiconanimate 0.9s both;
+	        animation: skillsiconanimate 0.9s both;
+    
+}
+#azure{
+    -webkit-animation: skillsiconanimate 1.1s both;
+	        animation: skillsiconanimate 1.1s both;
+    
+}
+#gcp{
+    -webkit-animation: skillsiconanimate 1.1s both;
+	        animation: skillsiconanimate 1.1s both;
+} 
+#kubernetes{
+    -webkit-animation: skillsiconanimate 1.0s both;
+	        animation: skillsiconanimate 1.0s both;
+    
+} 
+#aws{
+    -webkit-animation: skillsiconanimate 0.8s both;
+	        animation: skillsiconanimate 0.8s both;
+    
+}
+#postgresql{
+    -webkit-animation: skillsiconanimate 0.9s both;
+	        animation: skillsiconanimate 0.9s both;
+    
+} 
+#figma{
+    -webkit-animation: skillsiconanimate 1.0s both;
+	        animation: skillsiconanimate 1.0s both;
+    
+} 
+#adobexd{
+    -webkit-animation: skillsiconanimate 0.8s both;
+	        animation: skillsiconanimate 0.8s both;
+    
+}
+#adobeillustrator{
+    -webkit-animation: skillsiconanimate 0.9s both;
+	        animation: skillsiconanimate 0.9s both;
+    
+}
+#inkscape{
+    -webkit-animation: skillsiconanimate 0.8s both;
+            animation: skillsiconanimate 0.8s both;
+}
+.iconify:hover{
+    transform: rotate(45deg);
+
+}
+.header h3{
+    text-align: center;
+    font-family: 'Poppins';
+}
+@media all and (max-width: 500px) {
+    .images {
+        grid-template-columns: repeat(3,1fr);
+        flex-direction: column;
+    }
+}
+
+  
+@-webkit-keyframes skillsanimate {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(-500px);
+              transform: translateZ(-700px) translateY(-500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes skillsanimate {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(-500px);
+              transform: translateZ(-700px) translateY(-500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  /*skillsiconsanimate*/
+  
+@-webkit-keyframes skillsiconanimate {
+    0% {
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(-65px);
+              transform: translateY(-65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(-28px);
+              transform: translateY(-28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes skillsiconanimate {
+    0% {
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(-65px);
+              transform: translateY(-65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(-28px);
+              transform: translateY(-28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+  
