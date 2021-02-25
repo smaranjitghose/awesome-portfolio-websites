@@ -456,6 +456,7 @@ input[type="text"]{
       display: flex;
       flex-direction: column-reverse;
   }
+
 }
 .format{
   color: black;
@@ -464,4 +465,5 @@ input[type="text"]{
 .sp{
   margin-left: 10px;
   color:#4c8bf5;
+
 }
