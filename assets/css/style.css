@@ -217,7 +217,7 @@ html {
 
 
 .bike{
-  margin-top: 10px;
+  margin-top: 30px;
  display: block;
 }
 
@@ -272,7 +272,7 @@ html {
 --------------------------------------
 */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1024px){
   .current-link {
     font-weight: bolder;
     position: relative;
@@ -733,9 +733,52 @@ form{
       }
 
       #navbar-content {
-        height: 100vh;
+        margin-top: -200px;
+        height: 120vh;
         text-align: center;
-        margin:0 auto;
         transform: translateY(25%);
      }
    }
+
+   
+   @media (max-width:  414px) {
+    .collapse navbar-collapse{
+      display: flex;
+      justify-content: center;
+    } 
+
+    #navbar-content {
+      margin-top:-180px;
+      height: 120vh;
+      text-align: center;
+      transform: translateY(25%);
+   }
+  }
+
+   @media (max-width:  375px) {
+    .collapse navbar-collapse{
+      display: flex;
+      justify-content: center;
+    } 
+
+    #navbar-content {
+      margin-top:-180px;
+      height: 120vh;
+      text-align: center;
+      transform: translateY(25%);
+   }
+  }
+
+  @media (max-width:  320px) {
+    .collapse navbar-collapse{
+      display: flex;
+      justify-content: center;
+    } 
+
+    #navbar-content {
+      margin-top:-140px;
+      height: 130vh;
+      text-align: center;
+      transform: translateY(25%);
+   }
+  }
