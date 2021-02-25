@@ -48,7 +48,7 @@ html[data-theme="dark"] {
   --col-bd-radius:black;
   --col-bd-icon:transparent;
   --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7) , -5px -5px 10px rgba(255,255,255,0.1);
-  --col-box-shadow-hover:inset rgba(255, 255, 255, 1) 2px 2px 4px, 
+  --col-box-shadow-hover:inset rgba(                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     255, 255, 255, 1) 2px 2px 4px, 
  inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
   --col-icon-twitter: #1da1f2;
   --col-icon-dribbble: #ea4c89;
@@ -63,9 +63,11 @@ html[data-theme="dark"] {
   --col-icon-leetcode:rgb(255, 181, 62);
   --col-white: #fff;
 }
-/*-----------------------------
-            Scrollbar
-------------------------------*/
+/*
+---------------------------
+        SCROLLBAR
+---------------------------
+*/
 ::-webkit-scrollbar {
     width: 16px;
 }
@@ -102,6 +104,40 @@ body {
 /* smooth scrolling to top */
 html {
   scroll-behavior: smooth;
+}
+
+/* preloader */
+
+.svg-container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+
+
+
+.disappear {
+  animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 /*starting part of every page*/
@@ -173,6 +209,49 @@ html {
   background-color: #fff;
 }
 
+/*
+-------------------------------------
+    NAV BAR HIGHTLIGHTING
+--------------------------------------
+*/
+
+@media only screen and (min-width: 768px){
+  .current-link {
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .current-link:after {
+    content: "";
+    position: absolute;
+    left: 34%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    width: 32%;
+    border-bottom: 3px solid #22B6A7;
+  }
+
+
+  .nav-link:hover{
+    border-radius: 40px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 0.5px rgba(0,0,0,0.2);
+    width: 100%;
+    
+  }
+  li.nav-item{
+
+    text-align: center;
+  }
+  a.nav-link{
+    padding: 6px 21px !important;
+  }
+}
+
 /**Navbar burger animations**/
 .navbar-toggler{
   position: relative;
@@ -224,9 +303,11 @@ html {
   stroke-width: 6;
 }
 
-/**********
-  FOOTER SECTION
-**********/
+/*
+------------------------
+    FOOTER SECTION
+------------------------
+*/
 
 .footer{
   padding-top: 10px;
@@ -278,52 +359,203 @@ Rotate Transition in foote Soical Icon
       transition: background-color 0.3s, var(--trans-props);
 }
 
-.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-medium, .fa-github {
-  font-size: 25px;
+
+/*
+------------------------------
+   TWITTER MICROANIMATION
+-------------------------------
+*/
+.twitter:hover #wing1{
+      transform-origin:center;
+      animation: flap 0.4s ease-out infinite alternate;
+   }	
+   
+.twitter:hover #wing2{
+    transform-origin:center;
+    animation: flap 0.4s ease-in infinite alternate;
+ }		
+
+@keyframes flap{
+     50%{
+      transform:scaleX(-1) rotate(-45deg) translate(-40px,-40px);
+     }
+   }
+
+/*
+-----------------------------
+   LINKEDIN MICROANIMATION
+-----------------------------
+*/
+ 
+  .linkedin:hover .linkedin-icon-footer>rect{
+    animation: rect-up 0.3s linear infinite;
+  }
+  
+  
+  @keyframes rect-up {
+    50% {
+        y:10px;
+        height:11px;
+     }
+    0%{
+        y:13px;
+        height:8px;  
+        }
+    
+  }
+  
+  .linkedin:hover .linkedin-icon-footer> circle{
+    animation: bounce 0.4s linear infinite;
+  }
+  
+  @keyframes bounce {
+    75% {
+        cy: 8px;
+     }
+     50%{
+        cy: 4px
+     }
+    0%{
+        cy:4px
+        }
+    
+  }  
+
+/*
+-----------------------------
+   INSTAGRAM MICROANIMATION
+-----------------------------
+*/   
+  
+   .st0 {
+    fill:none;
+    stroke:#EF4649;
+    stroke-width:7;
+    stroke-linecap:round;
+    stroke-miterlimit:10;
+  }
+  
+  .instagram-icon-footer:hover #littleCircle {
+    stroke-dasharray:150;
+  }
+  
+  .instagram #shutter{
+    display:none;
+  }
+  .instagram-icon-footer:hover #shutter{
+    display: block;
+    animation: shutter 1s linear infinite;
+  }
+  .instagram-icon-footer:hover #lens{
+    fill:#EF4649;
+    animation: lens 1.5s linear infinite;
+  
+  }
+  
+  @keyframes shutter {
+    0%, 50% {
+            stroke-dashoffset: 150;
+            
+        }
+    75% {
+            fill:#EF4649;
+            stroke-dashoffset: 0;
+            stroke-width:11;
+        }
+  }
+  
+  @keyframes lens {
+    0%, 75% {
+            opacity: 0;
+        }
+    100% {
+            opacity: 1;
+        }
+  }
+  
+
+/*
+-----------------------------
+   GITHUB MICROANIMATION
+-----------------------------
+*/
+.github:hover #arm {
+  transform-origin: bottom right;
+  animation: moveArm 1s infinite alternate;
 }
 
-.rounded-social-buttons .social-button.twitter {
-  background: #22B6A7;
+@keyframes moveArm {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+ }
+
+
+/* twitter SVG micro animation */
+.twitter-icon-footer{
+  margin-bottom: 6px;
+  width: 35px;
+}
+  /* linkedin SVG micro animation */
+
+.linkedin-icon-footer{
+  margin-bottom: 8px;
+  width: 30px;
 }
 
-/********
-Hover effect in foote Soical Icon
-*********/
+/* instagram SVG micro animation */
+
+.instagram-icon-footer{
+  width:70px;
+  padding-right: 24px;
+  padding-bottom: 8px;
+}
+
+/* github SVG Micro animation */
+.github-icon-footer{
+  margin-bottom: 8px;
+  width: 35px;
+}
+
+/*
+----------------------------------------
+   HOVER EFFECT ON SOCIAL MEDIA ICONS
+----------------------------------------
+*/
+
+.rounded-social-buttons .social-button.twitter{
+  background:white;
+}
 
 .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
   color: #000;
-  background: #22B6A7;
-  border-color: #22B6A7;
+  background: white;
 }
 
 .rounded-social-buttons .social-button.linkedin {
-  background: #22B6A7;
+  background: white;
 }
 
 .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
   color: #000;
-  background: #22B6A7;
-  border-color: #22B6A7;
+  background: white;
 }
 
-.rounded-social-buttons .social-button.medium {
-  background:  #22B6A7;
+.rounded-social-buttons .social-button.instagram {
+  background: white;
 }
 
-.rounded-social-buttons .social-button.medium:hover, .rounded-social-buttons .social-button.medium:focus {
-  color: #000000;
-  background: #22B6A7;
-  border-color: #22B6A7;
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #000;
+  background: white;
 }
 
-.rounded-social-buttons .social-button.github {
-  background: #22B6A7;
+.rounded-social-buttons .social-button.github{
+  background:white;
 }
 
 .rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
   color: #000000;
-  background: #22B6A7;
-  border-color: #22B6A7;
+  background: white;
 }
 
 /************ 
@@ -346,9 +578,11 @@ form{
   color: #000;
 }
 
-/**********
-   Footer Form CSS
-**********/
+/*
+-------------------
+   Footer Form 
+--------------------
+*/
 .form-style-6{
 	font: 95% Arial, Helvetica, sans-serif;
 	max-width: 400px;

@@ -1,3 +1,4 @@
+
 /*Declaration of CSS variables for light/dark theme*/
 
 html[data-theme="light"] {
@@ -272,5 +273,7 @@ a:hover {
     margin-top: 5rem;
   }
 }
+
+
 
 
