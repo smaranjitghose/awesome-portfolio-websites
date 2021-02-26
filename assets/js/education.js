@@ -5,7 +5,7 @@ AOS.init();
 const moocs = document.querySelector(".moocs");
 const moocscards = [
   {
-    title: "Data Science",
+    title: "Datascience",
     cardImage: "assets/images/education-page/coursera1.png",
     moocLink: "https://www.coursera.org/browse/data-science",
   },
