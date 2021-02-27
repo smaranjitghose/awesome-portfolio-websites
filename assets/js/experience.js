@@ -24,6 +24,7 @@ const exp = [
     time: "(Dec, 19 - Jan, 20)",
     desp:"<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
   },
+  
 ];
 
 const showCards2 = () => {
@@ -136,6 +137,42 @@ const mentor = [
     time: "03/2020 - 08/2020",
     desp: "<li>Google Summer of Code is a global program focused on introducing students to open source software development.</li><hr /><li>It is a great platform to explore new areas, maybe discover a new career path!</li>",
   },
+  {
+    title:"Google Code-in",
+    image:"assets/images/experience-page/googlecode-in.png",
+    time:"10/2019-12/2019",
+    desp:"<li>Google Code-in was a contest that introduced pre-university students to open source software development.</li><hr/><li>Google Code-in grew out of GHOP (The Google Highly Open Participation contest) </li>"
+  },
+  {
+    title:"Red Hat Open Source Contest",
+    image:"assets/images/experience-page/red hat.png",
+    time:"03/2020-06/2020",
+    desp:"<li>From unikernels to privacy-preserving AI to usable security, Red Hat Research projects help open source communities innovate.</li><hr/><li>Insights into people and projects that bring universities together to share outcomes with open source communities. </li>"
+  },
+  {
+    title:"GirlScript Summer Of Code",
+    image:"assets/images/experience-page/1.jpg",
+    time:"04/2019-07/2019",
+    desp:"<li>The GirlScript  Foundation is a well-acclaimed organization in the EdTech field.</li><hr/><li>It help beginners get started with Open Source Development. </li>"
+  },
+  {
+    title:"BOSS - Bountiful Open Source Summer",
+    image:"assets/images/experience-page/BOSS.png",
+    time:"04/2020-05/2020",
+    desp:"<li> Coding Blocks brings BOSS,a summer programme and helps students by creating  a vibrant Open Source Community.</li><hr/><li> Coding Blocks strongly believe in free and open source software. </li>"
+  },
+  {
+    title:"Codeheat",
+    image:"assets/images/experience-page/codeheat.png",
+    time:"10/2019-06/2020",
+    desp:"<li>FOSSASIA and OpnTec run the Codeheat coding contest .</li><hr/><li> Codeheat is separated into two month periodsand after each period we announce winners of the period.  </li>"
+  },
+  {
+    title:"Season Of Docs",
+    image:"assets/images/experience-page/Seasonofdocs.png",
+    time:"05/2020-12/2020",
+    desp:"<li>Season of Docs provides support for open source projects to improve their documentation.</li><hr/><li>It gives professional technical writers an opportunity to gain experience in open source. </li>"
+  }
 ];
 
 const showCards3 = () => {
