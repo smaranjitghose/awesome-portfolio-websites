@@ -45,13 +45,22 @@
 .aboutme{
     padding-top:70px;
     text-align:center;
-    padding-left: 15px;
+    /*padding-left: 15px;*/
+}
+.maintitle h2{
+        text-align: center;
+        padding-left:70px;
 }
 .abouttext{
     margin-top:30px;
     text-align:left;
+    padding-left:50px;
+    padding-right:20px;
     
     
+}
+.rounded-circle{
+        padding-left: 20px;;
 }
 
 
@@ -60,6 +69,9 @@
     text-align: center;
     font-family: 'Poppins';
     margin-top:30px;
+    padding-left: 20px;
+   
+   
     
         -webkit-animation: skillsanimate 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
                 animation: skillsanimate 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -98,8 +110,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
     grid-template-columns: repeat(4,1fr);
-    padding-left:30px;
-    padding-right:10px;
+    padding-left:40px;
+    
     
     
 }
@@ -111,7 +123,7 @@
     grid-gap:1.5rem;
     margin-left:10px;
     margin-right:10px;
-    
+    margin:30px;
     
 }
 #css{
@@ -224,10 +236,13 @@
     transform: rotate(45deg);
 
 }
-.header h3{
+.header h2{
     text-align: center;
     font-family: 'Poppins';
+    
+    
 }
+
 @media all and (max-width: 500px) {
     .images {
         grid-template-columns: repeat(3,1fr);
