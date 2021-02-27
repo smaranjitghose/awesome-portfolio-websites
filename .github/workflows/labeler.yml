@@ -12,4 +12,4 @@ jobs:
           echo ${{ github.event.label.name }}
           SCORE=${{ github.event.label.name }}
           echo $SCORE
-          curl --data "score=$SCORE" --request POST https://wocleaderboard-backend.herokuapp.com/updateLeaderBoard/
+          curl --data "score=$SCORE" --request POST https://woc-backend.gigalixirapp.com/updateLeaderBoard/
