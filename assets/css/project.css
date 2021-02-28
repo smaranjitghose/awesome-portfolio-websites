@@ -190,26 +190,35 @@ a:hover {
     margin-bottom:3em ;
   }
 }
-@media (min-width:400px){
-  .content .title-div .title{
-    margin-bottom: 4em;
-    
-  }
-}
+
 @media(min-width: 60rem)
 {
   .card .title-div{
     padding-bottom: 2.3rem;
-    margin-bottom: 2em;
   }
 }
+
+@media(min-width: 40rem)
+{
+  .card .title-div{
+    padding-bottom: 2.8rem;
+  }
+}
+
+@media(min-width: 20rem)
+{
+  .card .title-div{
+    padding-bottom: 2.8rem;
+  }
+}
+
 
 .card .title {
   margin-top: 0em;
   font-size: 0.65em;
 }
 
-@media(min-width: 311px)
+@media(min-width: 411px)
 {
   .card .title{
     font-size: 0.8em;
@@ -281,14 +290,18 @@ a:hover {
 .tagbutton{
   background-color: #b6bcebfd;
   color: #0117E7;
-  margin-top: 5px;
+  margin-top: 8px;
   margin-right: 11px;
   border-radius: 100px;
   border:none;
+  overflow:hidden;
   padding: 5px 10px;
-  outline: none;
   font-size: .85rem;
   font-weight: bold;
+}
+
+.tagbutton:focus{
+  outline: none;
 }
 
 .tagbutton span {
@@ -370,10 +383,19 @@ input[type="text"]{
   color: #fff;
 }
 
+
 /*social icons*/
 
+ul{
+  padding-inline-start: 0px;
+}
+
 .social-icon svg {
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.menu-content{
+  margin-right: 10px;
 }
 .social-icon svg:hover {
   fill: #fff;
@@ -395,10 +417,108 @@ input[type="text"]{
   /* margin: 1rem auto; */
 }
 
-/* Resopnsive*/
+/* Responsive*/
+
+@media only screen and (max-width: 970px) {
+  .social-icon svg {
+    margin-top: -10px;
+  }
+  .tagbutton{
+    font-size: .90rem;
+  }
+
+  .card .title-div{
+    padding-bottom: 2rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+
+
 @media only screen and (max-width: 768px) {
   .social-icon svg {
-    margin-top: 0px;
+    margin-top: -10px;
+  }
+  .tagbutton{
+    font-size: .90rem;
+  }
+
+  .card .title-div{
+    padding-bottom: 2rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 419px) {
+  .social-icon svg {
+    margin-top: -10px;
+  }
+  .menu-content{
+    margin-right: 20px;
+  }
+  .tagbutton{
+    font-size: .90rem;
+  }
+  .card .title-div{
+    padding-bottom: 2rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .menu-content{
+    margin-top: -10px;
+    margin-right: 20px;
+  }
+  .tagbutton{
+    font-size: .80rem;
+  }
+  .card .title-div{
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .menu-content{
+    margin-top: -10px;
+    margin-right:20px;
+  }
+  .tagbutton{
+    margin-top: 2px;
+    font-size: .70rem;
+  }
+}
+
+@media only screen and (max-width: 305px) {
+  .menu-content{
+    margin-top:-20px;
+    margin-right: 20px;
+  }
+  .tagbutton{
+    font-size: .40rem;
+
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .social-icon svg {
+    margin-top: -20px;
+  }
+  .tagbutton{
+    font-size: .60rem;
+  }
+
+  .menu-content{
+    margin-top:-20px;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 2rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
   }
 }
 
