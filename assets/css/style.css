@@ -308,6 +308,11 @@ html {
     padding: 6px 21px !important;
   }
 }
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    align-items: center;
+  }
+}
 
 /**Navbar burger animations**/
 .navbar-toggler{
