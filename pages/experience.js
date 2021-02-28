@@ -106,12 +106,12 @@ function Mentorship({ card }) {
                 <ul className={styles.desp}>
                     {
                         desp.map((point, index) => (
-                            <>
-                                <li>{point}</li>
+                            <li key={index}>
+                                <span>{point}</span>
                                 {
                                     index !== desp.length-1 && <hr/>
                                 }
-                            </>
+                            </li>
                         ))
                     }
                 </ul>
