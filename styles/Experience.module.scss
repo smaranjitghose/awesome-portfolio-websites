@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    padding-top: 0;
     font-family: 'Poppins';
 }
 
@@ -10,7 +11,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 95vh;
+    height: 85vh;
 
     img {
         width: 40%;

@@ -1,0 +1,78 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Poppins';
+    background-color: #f8f9fa;
+
+    .logo img{
+        width: 150px;
+        height: auto;
+    }
+
+    .links {
+        display: flex;
+
+        .link {
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            color: #949495;
+            position: relative;
+            font-size: 1.1rem;
+
+            &:hover {
+                box-shadow: 0 0 11px gray;
+            }
+
+            &Active {
+                color: gray;
+                font-weight: bold;
+                position: relative;
+                
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 3.5px;
+                    width: 30%;
+                    border-radius: 5px;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #22b6a7;
+                }
+
+                &:hover::after {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    @media screen and (max-width: 850px) {
+        .link {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+        }
+    }
+}
+
+.mobileNav {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .mobileLink {
+        font-size: 1.3rem;
+        margin: 0.5rem 0;
+    }
+}

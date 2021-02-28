@@ -2,56 +2,61 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import styles from '../styles/Experience.module.scss';
 import { work, volunteership, mentorship } from '../data/experience';
+import Header from '../components/Header';
 
 export default function Experience() {
     return (
-        <section className={styles.experience}>
-            <Fade bottom>
-                <div className={styles.top}>
-                    <img src="/experience/experience.svg" alt="Experience"/>
-                    <div>
-                            <h1>Experience</h1>
-                            <p>Nothing ever becomes real 'til it is experienced.― John Keats</p>
+        <>
+            <Header active={1}/>
+            
+            <section className={styles.experience}>
+                <Fade bottom>
+                    <div className={styles.top}>
+                        <img src="/experience/experience.svg" alt="Experience"/>
+                        <div>
+                                <h1>Experience</h1>
+                                <p>Nothing ever becomes real 'til it is experienced.― John Keats</p>
+                        </div>
+                    </div>
+                </Fade>
+
+                <div className={styles.workExperience}>
+                    <h1>Work Experience</h1>
+
+                    <div className={styles.experiences}>
+                        {
+                            work.map((card, index) => (
+                                <WorkCard card={card} key={index}/>
+                            ))
+                        }
                     </div>
                 </div>
-            </Fade>
 
-            <div className={styles.workExperience}>
-                <h1>Work Experience</h1>
-
-                <div className={styles.experiences}>
-                    {
-                        work.map((card, index) => (
-                            <WorkCard card={card} key={index}/>
-                        ))
-                    }
+                <div className={styles.volunteership}>
+                    <h1>Volunteership</h1>
+                    
+                    <div className={styles.volunteerships}>
+                        {
+                            volunteership.map((card, index) => (
+                                <Volunteership card={card} key={index}/>
+                            ))
+                        }
+                    </div>
                 </div>
-            </div>
 
-            <div className={styles.volunteership}>
-                <h1>Volunteership</h1>
-                
-                <div className={styles.volunteerships}>
-                    {
-                        volunteership.map((card, index) => (
-                            <Volunteership card={card} key={index}/>
-                        ))
-                    }
+                <div className={styles.mentorship}>
+                    <h1>Mentorship</h1>
+
+                    <div className={styles.mentorships}>
+                        {
+                            mentorship.map((card, index) => (
+                                <Mentorship card={card} key={index}/>
+                            ))
+                        }
+                    </div>
                 </div>
-            </div>
-
-            <div className={styles.mentorship}>
-                <h1>Mentorship</h1>
-
-                <div className={styles.mentorships}>
-                    {
-                        mentorship.map((card, index) => (
-                            <Mentorship card={card} key={index}/>
-                        ))
-                    }
-                </div>
-            </div>
-        </section>
+            </section>
+        </>
     )
 }
 
