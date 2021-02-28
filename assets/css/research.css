@@ -59,33 +59,6 @@ body{
     color: var(--p-up);
 }
 
-/* Svg animation */
-.ai-element {
-    animation: MoveUpDown 3s ease-in-out infinite;
-}
-
-.ai-background {
-    animation: MoveLeftRight 3s ease-in-out infinite;
-}
-
-@keyframes MoveUpDown {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
-
-@keyframes MoveLeftRight {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    transform: translateX(7px);
-  }
-}
-
 /*Research page*/
 
 .txt-bottom{
@@ -532,3 +505,200 @@ body{
     color: transparent;
   }
   
+ /*
+---------------------------
+      SVG ANIMATION
+---------------------------
+*/
+  
+svg{
+    margin-top:-80px;
+}
+  @keyframes plantone {
+
+    0%,
+    to {
+        transform: scaleY(1) rotate(0deg)
+    }
+
+    50% {
+        transform: scaleY(1.02) rotate(1deg)
+    }
+}
+
+@keyframes steam {
+    0% {
+        transform: scaleY(1.02);
+        opacity: 0
+    }
+
+    50% {
+        opacity: .5
+    }
+
+    to {
+        transform: scaleY(1);
+        opacity: 0
+    }
+}
+
+@keyframes head {
+
+    0%,
+    to {
+        transform: rotate(0deg)
+    }
+
+    85% {
+        transform: rotate(3deg)
+    }
+}
+
+@keyframes shapemask {
+    0% {
+        transform: scaleX(1) scaleY(1) rotate(0deg)
+    }
+
+    25% {
+        transform: scaleX(1.03) rotate(0deg)
+    }
+
+    50% {
+        transform: scaleY(1.03) rotate(0deg)
+    }
+}
+
+@keyframes sleave {
+
+    0%,
+    to {
+        transform: rotate(0deg)
+    }
+
+    85% {
+        transform: rotate(3deg)
+    }
+}
+
+@keyframes arm {
+
+    0%,
+    to {
+        transform: translateX(0) rotate(0deg)
+    }
+
+    85% {
+        transform: translateX(-15px) rotate(0deg)
+    }
+}
+
+@keyframes armright {
+
+    0%,
+    10%,
+    80%,
+    to {
+        transform: rotate(0deg)
+    }
+
+    40%,
+    50% {
+        transform: rotate(-4deg)
+    }
+}
+
+@keyframes veraslidein {
+    0% {
+        transform: translateX(1200px)
+    }
+
+    50% {
+        transform: translateX(0)
+    }
+
+    75% {
+        transform: translateX(50px)
+    }
+
+    90% {
+        transform: translateX(42px)
+    }
+
+    to {
+        transform: translateX(45px)
+    }
+}
+
+@keyframes verascalein {
+
+    0%,
+    15% {
+        transform: scale(0)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    75% {
+        transform: scale(.98)
+    }
+
+    90% {
+        transform: scale(1.01)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes veradropin {
+    0% {
+        transform: translateY(-1200px)
+    }
+
+    50% {
+        transform: translateY(45px)
+    }
+
+    75% {
+        transform: translateY(-5px)
+    }
+
+    90% {
+        transform: translateY(3px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+#verapc.svgmate .plant {
+    animation-name: plantone;
+    transform-origin: 1907.25px 884.25px;
+    transition: all .5s
+}
+
+#verapc.svgmate .plant:hover {
+    opacity: .5
+}
+
+#verapc.svgmate .arm,
+#verapc.svgmate .plant,
+#verapc.svgmate .steam {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite
+}
+
+#verapc.svgmate .steam {
+    transition: all .5s;
+    animation-name: steam
+}
+
+#verapc.svgmate .arm {
+    animation-name: arm;
+    animation-duration: 5s;
+    transform-origin: 1009.149px 711.625px
+}
