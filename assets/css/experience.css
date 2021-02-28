@@ -538,3 +538,22 @@ ul ol{
 .card2 .fa{
   color: var(--text-color);
 }
+
+/*
+----------------------------
+       SVG ANIMATIONS 
+----------------------------
+*/
+
+#tie {
+  animation: tie 2s infinite ease-in-out;
+  transform-origin: 50% 62%;
+}
+@keyframes tie {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: skew(-12deg) rotate(-6deg);
+  }
+}
