@@ -10,6 +10,8 @@
   "dependencies": {
     "next": "10.0.7",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-reveal": "^1.2.2",
+    "sass": "^1.32.8"
   }
 }
