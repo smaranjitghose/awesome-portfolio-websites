@@ -577,3 +577,332 @@ ul{
       flex-direction: column-reverse;
   }
 }
+
+
+
+/*
+----------------------------
+SVG ANIMATIONS PROJECT PAGE
+----------------------------
+*/
+
+@keyframes ekumanslidein {
+    0% {
+      transform: translateX(-600px)
+    }
+
+    50% {
+      transform: translateX(-600px) scaleX(1)
+    }
+
+    75% {
+      transform: translateX(30px) scaleX(.9)
+    }
+
+    87.5% {
+      transform: translateX(-5px)
+    }
+
+    97% {
+      transform: translateX(3px)
+    }
+
+    to {
+      transform: translateX(0) scaleX(1)
+    }
+  }
+
+  @keyframes ekumanarmrotate {
+
+    0%,
+    45%,
+    65%,
+    85%,
+    to {
+      transform: rotate(0deg)
+    }
+
+    55%,
+    75% {
+      transform: rotate(-5deg)
+    }
+  }
+
+  @keyframes ekumanhairwobble {
+
+    50%,
+    to {
+      transform: scaleX(1)
+    }
+
+    75% {
+      transform: scaleX(1.2)
+    }
+
+    87.5% {
+      transform: scaleX(.8)
+    }
+
+    97% {
+      transform: scaleX(1.09)
+    }
+  }
+
+  @keyframes ekuwomanlidein {
+    0% {
+      transform: translateX(600px)
+    }
+
+    50% {
+      transform: translateX(600px) scaleX(1)
+    }
+
+    75% {
+      transform: translateX(-30px) scaleX(.9)
+    }
+
+    87.5% {
+      transform: translateX(5px)
+    }
+
+    97% {
+      transform: translateX(-3px)
+    }
+
+    to {
+      transform: translateX(0) scaleX(1)
+    }
+  }
+
+  @keyframes kulapdropin {
+    0% {
+      transform: translateY(-230px) scale(0) rotate(0deg)
+    }
+
+    35% {
+      transform: translateY(-230px) scale(1.03) rotate(20deg)
+    }
+
+    45% {
+      transform: rotate(10deg)
+    }
+
+    50% {
+      transform: translateY(-5px) scale(.98) rotate(0deg)
+    }
+
+    55% {
+      transform: translateY(-10px) scale(1.01) rotate(0deg)
+    }
+
+    60% {
+      transform: translateY(0) scale(1)
+    }
+
+    to {
+      transform: translateY(0)
+    }
+  }
+
+  @keyframes ekuwomanarmrotate {
+
+    0%,
+    45%,
+    65%,
+    85%,
+    to {
+      transform: rotate(0deg)
+    }
+
+    55%,
+    75% {
+      transform: rotate(10deg)
+    }
+  }
+
+  @keyframes ekuwomanarmbackrotate {
+
+    0%,
+    45%,
+    65%,
+    85%,
+    to {
+      transform: rotate(0deg)
+    }
+
+    55%,
+    75% {
+      transform: rotate(-13deg)
+    }
+  }
+
+  @keyframes manscreenpopup {
+
+    0%,
+    45%,
+    55%,
+    65%,
+    75%,
+    85% {
+      transform: scale(0)
+    }
+
+    to {
+      transform: scale(1)
+    }
+  }
+
+  @keyframes manscreenfloat {
+
+    0%,
+    to {
+      transform: translateY(0)
+    }
+
+    50% {
+      transform: translateY(-10px)
+    }
+  }
+
+  @keyframes backhairwave {
+
+    0%,
+    to {
+      transform: scaleX(1) skewX(0) skewY(0)
+    }
+
+    50% {
+      transform: scaleX(1.07) skewX(3deg) skewY(5deg)
+    }
+  }
+
+  #ku.svgmate #Bluearmbot,
+  #ku.svgmate #Chair,
+  #ku.svgmate #chairbackbar,
+  #ku.svgmate #man,
+  #ku.svgmate .mankauf {
+    animation-name: ekumanslidein;
+    animation-iteration-count: 1;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    transform-origin: 502px 454px
+  }
+
+  #ku.svgmate #Bluearmbot,
+  #ku.svgmate #Chair,
+  #ku.svgmate #chairbackbar,
+  #ku.svgmate .mankauf {
+    animation-duration: 1.5s
+  }
+
+  #ku.svgmate #Bluearmbot {
+    animation-name: ekumanarmrotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1.8s;
+    animation-delay: 1.2s;
+    transform-origin: 448.122px 403.482px
+  }
+
+  #ku.svgmate .mankauf {
+    animation-name: ekumanhairwobble;
+    animation-duration: 1.38s;
+    transform-origin: 396.257px 260.5px
+  }
+
+  #ku.svgmate #Chair_1_,
+  #ku.svgmate #Woman,
+  #ku.svgmate #back-arm,
+  #ku.svgmate #backleg_1_ {
+    animation-name: ekuwomanlidein;
+    animation-iteration-count: 1;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    transform-origin: 502px 454px
+  }
+
+  #ku.svgmate #Chair_1_ {
+    animation-duration: 1.95s
+  }
+
+  #ku.svgmate #Laptop,
+  #ku.svgmate #keyboard {
+    animation-name: kulapdropin;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    transform-origin: 648.689px 361.659px
+  }
+
+  #ku.svgmate #keyboard {
+    animation-duration: 2.5s;
+    transform-origin: 479.857px 383px
+  }
+
+  #ku.svgmate #lowerarm,
+  #ku.svgmate #lowervackarm {
+    animation-name: ekuwomanarmrotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1.8s;
+    animation-delay: 2.1s;
+    animation-timing-function: ease-out;
+    transform-origin: 751.134px 385.578px
+  }
+
+  #ku.svgmate #lowervackarm {
+    animation-name: ekuwomanarmbackrotate;
+    transform-origin: 736.882px 386px
+  }
+
+  #ku.svgmate #Man_screen .greenscreen,
+  #ku.svgmate #Man_screen .redscreen,
+  #ku.svgmate #Man_screen .screenbutton {
+    animation-name: manscreenpopup;
+    animation-iteration-count: 1;
+    animation-duration: 3.6s;
+    animation-timing-function: ease-in-out;
+    transform-origin: 526.882px 383px
+  }
+
+  #ku.svgmate #Man_screen .greenscreen,
+  #ku.svgmate #Man_screen .redscreen {
+    animation-duration: 3s
+  }
+
+  #ku.svgmate #Man_screen .greenscreen {
+    animation-duration: 3.3s
+  }
+
+  #ku.svgmate #Man_screen,
+  #ku.svgmate #Man_screen .greenscrmove,
+  #ku.svgmate #Man_screen .redskmove,
+  #ku.svgmate .womscreenmove {
+    animation-name: manscreenfloat;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+    animation-timing-function: ease-in-out
+  }
+
+  #ku.svgmate #Man_screen .greenscrmove,
+  #ku.svgmate #Man_screen .redskmove {
+    animation-duration: 6s
+  }
+
+  #ku.svgmate #Man_screen .greenscrmove {
+    animation-duration: 7.2s
+  }
+
+  #ku.svgmate #hairback,
+  #ku.svgmate #womanscreen {
+    animation-name: manscreenpopup;
+    animation-iteration-count: 1;
+    animation-duration: 3.9s;
+    animation-timing-function: ease-in-out;
+    transform-origin: 648.689px 361.659px
+  }
+
+  #ku.svgmate #hairback {
+    animation-name: backhairwave;
+    animation-iteration-count: infinite;
+    animation-duration: 3.3s;
+    transform-origin: 785.132px 295.833px
+  }
