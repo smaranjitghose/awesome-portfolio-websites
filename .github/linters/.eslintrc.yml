@@ -1,64 +1,44 @@
 ---
-root: true
 
-parser: babel-eslint
-extends:
-  # https://github.com/yannickcr/eslint-plugin-react
-  - plugin:react/recommended
-  # https://github.com/gajus/eslint-plugin-flowtype
-  - plugin:flowtype/recommended
-  # https://www.npmjs.com/package/eslint-plugin-jest
-  - plugin:jest/recommended
-  # https://www.npmjs.com/package/eslint-config-airbnb-base
-  - airbnb
-  # https://github.com/prettier/eslint-config-prettier
-  - prettier
-  - prettier/flowtype
-  - prettier/react
+#############################
+#############################
+## JavaScript Linter rules ##
+#############################
+#############################
 
-plugins:
-  - react
-  - import
-  - jest
-  - flowtype
-  # https://github.com/prettier/eslint-plugin-prettier
-  - prettier
-
-settings:
-  flowtype:
-    # with this option you do not have to add @flow in files
-    onlyFilesWithFlowAnnotation: false
-
+############
+# Env Vars #
+############
 env:
-  es6: true
   browser: true
-  node: true
-  jasmine: true
+  es6: true
   jest: true
-  jest/globals: true
 
+###############
+# Global Vars #
+###############
 globals:
-  fetch: true
-  navigator: true
-  __DEV__: true
-  XMLHttpRequest: true
-  React$Element: true
-  Generator: true
+  Atomics: readonly
+  SharedArrayBuffer: readonly
 
+###############
+# Parser vars #
+###############
+parser: '@typescript-eslint/parser'
 parserOptions:
-  ecmaVersion: 2017
+  ecmaVersion: 2018
   sourceType: module
-  ecmaFeatures:
-    jsx: true
 
+###########
+# Plugins #
+###########
+plugins:
+  - '@typescript-eslint'
+
+#########
+# Rules #
+#########
 rules:
-  prettier/prettier:
-    - error
-    -
-      trailingComma: all
-      bracketSpacing: false
-
-  ### Different from airbnb config
 
   ### Styling ###
 
@@ -92,37 +72,6 @@ rules:
   # add culry braces all the time
   # https://eslint.org/docs/rules/curly
   curly: [error, all] # airbnb default: [error, multi-line]
-
-  ### Import ###
-
-  # Require modules with a single export to use a default export
-  # https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
-  import/prefer-default-export: off # airbnb default: 'error'
-
-  # https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/imports-first.md
-  import/first: off # airbnb default: ['error', 'absolute-first']
-
-  ### Debugging is allowed but not allowed to commit ###
-  no-console: warn # airbnb default: 'error'
-  no-debugger: warn # airbnb default: 'error'
-
-  ### React ###
-  # do not force jsx use js
-  # https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-  react/jsx-filename-extension: off
-
-  # Require stateless functions when not using lifecycle methods, setState or ref
-  # https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
-  react/prefer-stateless-function: warn # airbnb default: 'error'
-
-  # Enforce a defaultProps definition for every prop that is not a required prop
-  # reason: function composition over default props
-  # https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-default-props.md
-  react/require-default-props: off # airbnb default: 'error'
-
-  ### Removed rules
-  # no longer defined
-  jsx-a11y/href-no-hash: off
 
   # was complaining about inline snapshots
   no-irregular-whitespace:
