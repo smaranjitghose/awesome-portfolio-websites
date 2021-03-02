@@ -48,7 +48,7 @@ jobs:
       - name: Lint HTML
         uses: github/super-linter@v3
         env:
-          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_ALL_CODEBASE: false
           VALIDATE_HTML: true
           DEFAULT_BRANCH: master
           LINTER_RULES_PATH: /.github/linters
@@ -77,7 +77,7 @@ jobs:
       - name: Lint JS
         uses: github/super-linter@v3
         env:
-          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_ALL_CODEBASE: flase
           VALIDATE_JAVASCRIPT_ES: true
           DEFAULT_BRANCH: master
           LINTER_RULES_PATH: /.github/linters
@@ -106,7 +106,7 @@ jobs:
       - name: Lint CSS
         uses: github/super-linter@v3
         env:
-          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_ALL_CODEBASE: false
           VALIDATE_CSS: true
           DEFAULT_BRANCH: master
           LINTER_RULES_PATH: /.github/linters
