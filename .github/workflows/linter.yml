@@ -83,7 +83,7 @@ jobs:
           DEFAULT_BRANCH: master
           LINTER_RULES_PATH: /.github/linters
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CSS_FILE_NAME: .stylelintrc.yml
+          CSS_FILE_NAME: .stylelintrc.json
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.yml
 
   build-CSS:
@@ -113,4 +113,4 @@ jobs:
           DEFAULT_BRANCH: master
           LINTER_RULES_PATH: /.github/linters
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CSS_FILE_NAME: .stylelintrc.yml
+          CSS_FILE_NAME: .stylelintrc.json
