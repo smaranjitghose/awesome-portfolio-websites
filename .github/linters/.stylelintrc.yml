@@ -1,0 +1,65 @@
+# Keep this file in sync with internal sass/stylelint/stylelintrc.yaml file.
+plugins:
+  - stylelint-scss
+  - stylelint-prettier
+rules:
+  prettier/prettier: true
+  # This list is to be verified with tests in `e2e_test.js`, in order to verify that each rule is
+  # functioning, and that this file does not contain typos.
+  block-closing-brace-newline-after:
+    - always
+    - ignoreAtRules:
+      - if
+      - else
+  block-no-empty: true
+  color-hex-case: lower
+  color-hex-length: short
+  color-no-invalid-hex: true
+  declaration-block-no-duplicate-properties: true
+  declaration-block-no-redundant-longhand-properties: true
+  declaration-block-no-shorthand-property-overrides: true
+  declaration-block-trailing-semicolon: always
+  function-calc-no-unspaced-operator: true
+  function-url-no-scheme-relative: true
+  function-url-quotes: never
+  # Need to check if units are required for some flex properties in some browsers.
+  # length-zero-no-unit
+  no-duplicate-at-import-rules: true
+  no-eol-whitespace: true
+  no-extra-semicolons: true
+  # In MDC, @keyframe's are defined in a separate file.
+  # no-unknown-animations: true
+  # Requires known-css-parser, not yet imported into third_party.
+  # property-no-unknown: true
+  rule-empty-line-before:
+    - always
+    - ignore:
+      - after-comment
+      - first-nested
+      - inside-block
+  selector-pseudo-class-no-unknown: true
+  selector-pseudo-element-no-unknown:
+    - true
+    - ignorePseudoElements:
+        ng-deep
+  scss/at-rule-no-unknown: true
+  # No config allows this:
+  #
+  # ```scss
+  # $long-varaible-name:
+  #     (long, list, of, strings, that, is, too, wide, for, good, formatting);
+  # ```
+  #
+  # Possibly solved with request at https://github.com/kristerkari/stylelint-scss/issues/172.
+  # scss/dollar-variable-colon-space-after: always
+  scss/dollar-variable-colon-space-before: never
+  scss/operator-no-unspaced: true
+  shorthand-property-no-redundant-values: true
+  # TODO: Enable this when not conflicting with other sass file changes.
+  # string-quotes: single
+  unit-case: lower
+  unit-no-unknown:
+    - true
+    - ignoreUnits:
+      - /^[-+][\d$(]/
+  value-keyword-case: lower
