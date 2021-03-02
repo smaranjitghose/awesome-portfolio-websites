@@ -78,12 +78,10 @@ jobs:
         uses: github/super-linter@v3
         env:
           VALIDATE_ALL_CODEBASE: true
-          VALIDATE_CSS: true
           VALIDATE_JAVASCRIPT_ES: true
           DEFAULT_BRANCH: master
           LINTER_RULES_PATH: /.github/linters
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CSS_FILE_NAME: .stylelintrc.json
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.yml
 
   build-CSS:
