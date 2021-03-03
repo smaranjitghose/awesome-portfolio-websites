@@ -7,25 +7,17 @@ import ReactRotatingText from "react-rotating-text";
 import { useRouter } from "next/router";
 
 import Particles from "../components/Particles";
+import Header from '../components/Header'
 
 export default function Home() {
   const router = useRouter();
 
   return (
     <>
-      <Head>
-        <title>Awesome Portfolio Websites</title>
-        <link rel="icon" href="/favicon.ico" />
-        <script defer src="lib/particles.min.js"></script>
-        <script defer src="lib/particle.js"></script>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
-          rel="stylesheet"
-        ></link>
-      </Head>
+      <Header active={0} />
       <Container>
         <section className={styles.home}>
-          <Particles/>
+          <Particles />
         </section>
         <center className={`${styles.main}`}>
           <div className={styles.text}>

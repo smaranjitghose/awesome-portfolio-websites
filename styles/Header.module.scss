@@ -1,0 +1,171 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Poppins';
+    background-color: #f8f9fa;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .logo {
+        width: 150px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .links {
+        display: flex;
+
+        .link {
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            color: #949495;
+            position: relative;
+            font-size: 1.1rem;
+
+            &:hover {
+                box-shadow: 0 0 11px gray;
+            }
+
+            &Active {
+                color: gray;
+                font-weight: bold;
+                position: relative;
+                
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 3.5px;
+                    width: 30%;
+                    border-radius: 5px;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #22b6a7;
+                }
+
+                &:hover::after {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 850px) {
+        .link {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+        }
+    }
+}
+
+.mobileNav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #00cba9;
+    z-index: 2;
+    animation: down 0.9s ease-in-out;
+    animation-fill-mode: forwards;
+
+    @keyframes down {
+        0% {
+            transform: translateY(-150%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    div {
+        padding: 1rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .cross {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 1rem;
+        right: 1rem;
+        height: 40px;
+        width: 40px;
+        padding: 0;
+        cursor: pointer;
+
+        .line1, .line2 {
+            position: absolute;
+            top: 50%;
+            padding: 0;
+            height: 5px;
+            width: 45px;
+            border-radius: 5px;
+            background-color: black;
+        }
+
+        .line1 {
+            animation: rotate1 0.7s ease-in-out 1s 1;
+            animation-fill-mode: forwards;
+        }
+
+        .line2 {
+            animation: rotate2 0.7s ease-in-out 1s 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes rotate1 {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(225deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate2 {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(-45deg);
+                opacity: 1;
+            }
+        }
+    }
+
+    img {
+        position: absolute;
+        width: 150px;
+        height: auto;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    svg {
+        position: absolute;
+        margin-top: -10px;
+    }
+
+    .mobileLink {
+        font-size: 1.3rem;
+        margin: 0.5rem 0;
+    }
+}

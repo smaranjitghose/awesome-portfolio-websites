@@ -1,0 +1,348 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 0;
+    font-family: 'Poppins';
+}
+
+/* ----- Top ----- */
+.top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 85vh;
+
+    img {
+        width: 40%;
+    }
+
+    div {
+        margin-left: 3rem;
+        text-align: center;
+        
+        h1 {
+            text-align: center;
+            font-size: 2.3rem;
+            font-weight: normal;
+            line-height: 0.1;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .top {
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            width: 70%;
+        }
+
+        div {
+            margin-top: 1rem;
+        }
+    }
+}
+
+/* ----- Work Experience ----- */
+.workExperience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .experiences {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+        box-shadow: -3px -3px 4px #ffffff, 2px 3px 4px #babdc2;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: all 0.3s ease-in;
+
+        img {
+            width: 320px;
+            height: 320px;
+            object-fit: contain;
+        }
+
+        .content {
+            padding: 1rem;
+
+            .title {
+                font-size: 2.3rem;
+            }
+
+            .place {
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            .time {
+                color: gray;
+                font-size: 0.9rem;
+            }
+
+            .desp {
+                margin-top: 1rem;
+                padding-left: 1rem;
+
+                li {
+                    margin: 0.3rem;
+                }   
+            }
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    @media screen and (min-width: 1000px) and (max-width: 1400px) {
+        .experiences {
+            width: 90%;
+        }
+    }
+
+    @media screen and (min-width: 800px) and (max-width: 1000px){
+        .experiences {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .experiences {
+            width: 100%;
+        }
+
+        .card {
+            flex-direction: column;
+            text-align: center;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            .content {
+                .title {
+                    font-size: 1.5rem;
+                }
+
+                .desp {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+
+/* ----- Volunteership ------ */
+
+.volunteership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .volunteerships {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        padding: 1rem;
+        box-shadow: 0px 8px #093b8f, 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 15px;
+        overflow: hidden;
+        transition: all 0.5s ease-in;
+        position: relative;
+        width: 250px;
+
+        &:hover {
+            transform: scale(1.05);
+
+            .title, .description {
+                color: white;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background: #4c8bf5;
+            clip-path: circle(0px at 100% 0);
+            z-index: -1;
+            transition: all 0.5s ease-out;
+        }
+
+        @keyframes clipAnimation {
+            0% {
+                clip-path: circle(0px at 100% 0);
+            }
+            100% {
+                clip-path: circle(1000px at 0px 0px);
+            }
+        }
+
+        &:hover::before {
+            animation: clipAnimation 1s linear;
+            animation-fill-mode:forwards;
+        }
+
+        &:active::before {
+            animation: clipAnimation 1s linear;
+            animation-fill-mode:forwards;
+        }
+
+        img {
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+        }
+
+        .title {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #656393;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .description {
+            text-align: center;
+            font-style: italic;
+        }
+    }
+
+    @media screen and (min-width: 800px) and (max-width: 1450px) {
+        .volunteerships {
+            width: 90%;
+        }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 800px) {
+        .volunteerships {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .volunteerships {
+            width: 100%;
+
+            .card img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+/* ----- Mentorship ----- */
+
+.mentorship {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .mentorships {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin: 1rem 3rem;
+        box-shadow: -3px -3px 4px #ffffff, 2px 3px 4px #babdc2;
+        border-radius: 5px;
+        overflow: hidden;
+
+        img {
+            width: 400px;
+            height: 300px;
+            object-fit: contain;
+        }
+
+        .content {
+            padding: 1rem;
+
+            .title {
+                font-size: 1.3rem;
+            }
+
+            .time {
+                color: gray;
+                font-size: 0.9rem;
+            }
+
+            .desp {
+                margin-top: 3rem;
+                padding-left: 1rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 1350px) {
+        .mentorships {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .mentorships {
+            width: 100%;
+
+            .card {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

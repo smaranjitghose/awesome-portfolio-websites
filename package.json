@@ -18,6 +18,8 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-rotating-text": "^1.4.1",
-    "react-tsparticles": "^1.18.12"
+    "react-tsparticles": "^1.18.12",
+    "react-reveal": "^1.2.2",
+    "sass": "^1.32.8"
   }
 }
