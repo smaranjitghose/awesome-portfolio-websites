@@ -1,0 +1,114 @@
+###########################
+###########################
+### Lint GitHub Actions ###
+###########################
+###########################
+name: Lint Code Base
+
+#
+# Documentation:
+# https://help.github.com/en/articles/workflow-syntax-for-github-actions
+#
+
+#############################
+# Start the job on all push #
+#############################
+on:
+  pull_request:
+    branches: [master]
+
+################
+# Set the Jobs #
+################
+jobs:
+  build-HTML:
+    # Name the Job
+    name: Lint HTML
+    # Set the agent to run on
+    runs-on: ubuntu-latest
+
+    ##################
+    # Load all steps #
+    ##################
+    steps:
+
+      ##########################
+      # Checkout the code base #
+      ##########################
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+
+      ################################
+      # Run Linter against code base #
+      ################################
+
+      - name: Lint HTML
+        uses: github/super-linter@v3
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_HTML: true
+          DEFAULT_BRANCH: master
+          LINTER_RULES_PATH: /.github/linters
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  build-JS:
+    # Name the Job
+    name: Lint JS
+    # Set the agent to run on
+    runs-on: ubuntu-latest
+
+    ##################
+    # Load all steps #
+    ##################
+    steps:
+
+      ##########################
+      # Checkout the code base #
+      ##########################
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+
+      - name: Lint JS
+        uses: github/super-linter@v3
+        env:
+          VALIDATE_ALL_CODEBASE: flase
+          VALIDATE_JAVASCRIPT_ES: true
+          DEFAULT_BRANCH: master
+          LINTER_RULES_PATH: /.github/linters
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.yml
+
+  build-CSS:
+    # Name the Job
+    name: Lint CSS
+    # Set the agent to run on
+    runs-on: ubuntu-latest
+
+    ##################
+    # Load all steps #
+    ##################
+    steps:
+
+      ##########################
+      # Checkout the code base #
+      ##########################
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+      - name: Lint CSS
+        uses: github/super-linter@v3
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_CSS: true
+          DEFAULT_BRANCH: master
+          LINTER_RULES_PATH: /.github/linters
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CSS_FILE_NAME: .stylelintrc.json
