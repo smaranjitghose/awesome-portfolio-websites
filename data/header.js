@@ -5,7 +5,7 @@ export const header = [
     },
     {
         name: "Experience",
-        to: "/experience"
+        to: "/assets/experience"
     },
     {
         name: "Projects",

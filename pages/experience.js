@@ -1,6 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import styles from '../styles/Experience.module.scss';
+import styles from '../styles/experience.module.scss';
 import { work, volunteership, mentorship } from '../data/experience';
 import Header from '../components/Header';
 
@@ -12,7 +12,7 @@ export default function Experience() {
             <section className={styles.experience}>
                 <Fade bottom>
                     <div className={styles.top}>
-                        <img src="/experience/experience.svg" alt="Experience"/>
+                        <img src="/assets/experience/experience.svg" alt="Experience"/>
                         <div>
                                 <h1>Experience</h1>
                                 <p>Nothing ever becomes real 'til it is experienced.― John Keats</p>

@@ -1,30 +1,32 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import { faTwitter, faDribbble, faLinkedinIn, faKaggle, faMediumM, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Container from "./../components/Navbar/Nav";
+import styles from "../styles/Home.module.scss";
+
 import ReactRotatingText from "react-rotating-text";
-import { useRouter } from "next/router";
+import UseAnimations from "react-useanimations";
+import github from "react-useanimations/lib/github";
+import linkedin from "react-useanimations/lib/linkedin";
+import twitter from "react-useanimations/lib/twitter";
+import codepen from "react-useanimations/lib/codepen";
+import instagram from "react-useanimations/lib/instagram";
 
 import Particles from "../components/Particles";
-import Header from '../components/Header'
+import Header from "../components/Header";
 
 export default function Home() {
-  const router = useRouter();
-
   return (
     <>
       <Header active={0} />
-      <Container>
+
+      <div className={styles.root}>
         <section className={styles.home}>
           <Particles />
         </section>
+
         <center className={`${styles.main}`}>
           <div className={styles.text}>
-            <p className="">
+            <p className={styles.name}>
               Hi <span className={`${styles.wave}`}>&#128075;</span>,I'm John Doe
             </p>
-            <div className="center">
+            <div className={`center ${styles.avatar}`}>
               <img src="assets/home/dp_male.svg" height="200" width="200" />
               <br />
               <span className={`${styles.animatedTextArea}`}>
@@ -33,56 +35,41 @@ export default function Home() {
                   items={["Designing", "UI/UX", "Cloud Computing", "Web Development", "Open Source", "Mentoring"]}
                 />
               </span>
-
-              <div className={styles.socialIcons}>
-                <a className={`${styles.socialicon} ${styles.twitter}`} href="" target="_blank" rel="author">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-
-                <a className={`${styles.socialicon} ${styles.dribbble}`} href="" target="_blank" rel="author">
-                  <FontAwesomeIcon icon={faDribbble} />
-                </a>
-
-                <a className={`${styles.socialicon} ${styles.linkedin}`} href="" target="_blank" rel="author">
-                  <FontAwesomeIcon icon={faLinkedinIn} />
-                </a>
-
-                <a className={`${styles.socialicon} ${styles.medium}`} href="" target="_blank" rel="author">
-                  <FontAwesomeIcon icon={faMediumM} />
-                </a>
-
-                <a className={`${styles.socialicon} ${styles.kaggle}`} href="" target="_blank" rel="author">
-                  <FontAwesomeIcon icon={faKaggle} />
-                </a>
-
-                <a className={`${styles.socialicon} ${styles.github}`} href="" target="_blank" rel="author">
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-              </div>
             </div>
+          </div>
+
+          <div className={styles.socialIcons}>
+            <a className={`${styles.socialicon} ${styles.linkedin}`} href="" target="_blank" rel="author">
+              <UseAnimations animation={linkedin} size={45} strokeColor={"#0e76a8"} />
+            </a>
+
+            <a className={`${styles.socialicon} ${styles.github}`} href="" target="_blank" rel="author">
+              <UseAnimations animation={github} size={45} />
+            </a>
+
+            <a className={`${styles.socialicon} ${styles.twitter}`} href="" target="_blank" rel="author">
+              <UseAnimations animation={twitter} size={45} strokeColor={"#007bff"} />
+            </a>
+
+            <a className={`${styles.socialicon} ${styles.codepen}`} href="" target="_blank" rel="author">
+              <UseAnimations animation={codepen} size={45} />
+            </a>
+
+            <a className={`${styles.socialicon} ${styles.instagram}`} href="" target="_blank" rel="author">
+              <UseAnimations animation={instagram} size={45} strokeColor="#00ab6c" />
+            </a>
           </div>
         </center>
 
-        <div className={`${styles.about} `}>
-          <div className="">
+        {/* <div className={`${styles.about} `}>
             <h2 className="">About</h2>
             <p className="leading-snug">
               My name is John Doe and I am a full-stack web developer. The tech stack I primarily work with is
               TypeScript, React.js, Node.js, and Python. I love spending my free time learning new things and improving
               myself.
-            </p>
-          </div>
-          <footer className="">
-            <p className="">
-              Made With
-              <span aria-label="love" className="" role="img">
-                ❤
-              </span>
-              <span>by Open Source</span>
-            </p>
-          </footer>
-        </div>
-      </Container>
+            </p>       
+        </div> */}
+      </div>
     </>
   );
 }

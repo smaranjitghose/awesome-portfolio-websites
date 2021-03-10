@@ -43,11 +43,11 @@ function Particle() {
         },
         particles: {
           color: {
-            value: ["#A9BD33", "#FEC73B", "#F45623", "#D62E32", "#9952CF"],
+            value: ["#A9BD33", "#9952CF", "#F45623", "#D62E32", "#9952CF"],
           },
           links: {
             color: {
-              value: ["#A9BD33", "#FEC73B", "#F45623", "#D62E32", "#9952CF"],
+              value: ["#A9BD33", "#9952CF", "#F45623", "#D62E32", "#9952CF"],
             },
             distance: 150,
             enable: true,
