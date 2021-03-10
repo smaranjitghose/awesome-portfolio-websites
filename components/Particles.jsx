@@ -29,8 +29,8 @@ function Particle() {
             bubble: {
               distance: 400,
               duration: 2,
-              opacity: 0.8,
-              size: 40,
+              opacity: 1,
+              size: 900,
             },
             push: {
               quantity: 4,
@@ -43,21 +43,11 @@ function Particle() {
         },
         particles: {
           color: {
-            value: ["#3998D0", "#2EB6AF", "#A9BD33", "#FEC73B", "#F89930", "#F45623", "#D62E32", "#EB586E", "#9952CF"],
+            value: ["#A9BD33", "#FEC73B", "#F45623", "#D62E32", "#9952CF"],
           },
           links: {
             color: {
-              value: [
-                "#3998D0",
-                "#2EB6AF",
-                "#A9BD33",
-                "#FEC73B",
-                "#F89930",
-                "#F45623",
-                "#D62E32",
-                "#EB586E",
-                "#9952CF",
-              ],
+              value: ["#A9BD33", "#FEC73B", "#F45623", "#D62E32", "#9952CF"],
             },
             distance: 150,
             enable: true,
@@ -80,17 +70,17 @@ function Particle() {
               enable: true,
               value_area: 800,
             },
-            value: 80,
+            value: 50,
           },
           opacity: {
-            value: 0.5,
+            value: 0.8,
           },
           shape: {
             type: "circle",
           },
           size: {
             random: true,
-            value: 5,
+            value: 10,
           },
         },
         detectRetina: true,
