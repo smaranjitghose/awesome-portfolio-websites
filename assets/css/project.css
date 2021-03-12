@@ -54,37 +54,6 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.NeuInput-outer {
-  display: flex;
-  border-radius: 1rem;
-  background-color: var(--nue-light);
-  padding: 0.5rem;
-  margin-bottom: 3rem;
-  box-shadow: .3rem .3rem .6rem var(--neu-dark), -.2rem -.2rem .5rem var(--neu-light); 
-  margin-left: auto;
-  margin-right: 3rem;
-}
-
-.NeuInput-outer #search {
-  position: absolute;
-  display: flex;
-  align-self: center;
-  fill: var(--neu-icon);
-  margin-left: 1rem;
-}
-
-#myInput {
-  padding: 0.5rem;
-  padding-left: 4rem;
-  border-radius: 1rem;
-  font-size: 1rem;
-  border: none;
-  margin-bottom: 0;
-  box-shadow: inset .2rem .2rem .5rem var(--neu-dark), inset -.2rem -.2rem .5rem var(--neu-light);
-  color: var(--neu-color);
-  outline: none;
-}
-
 @media(min-width: 60rem)
 {
   .row{
@@ -127,7 +96,7 @@ a:hover {
   background-color: #fff;
   border: 0;
   border-radius: 10px;
-  min-height: 24rem;
+  min-height: 21.5rem;
   position: relative;
   overflow: hidden;
   box-shadow: 0 19px 38px var(--shadow1), 0 15px 12px var(--shadow2);
@@ -148,7 +117,7 @@ a:hover {
 @media(min-width: 60rem)
 {
   .card .data{
-    height: 66%;
+    height: 76%;
   }
 }
 
@@ -156,64 +125,17 @@ a:hover {
   padding: 1em;
   position: relative;
   z-index: 1;
-  margin-bottom: 4em;
 }
 
-@media(min-width: 378px)
-{
-  .card .data .content{
-    margin-bottom: 2em;
-  }
-}
-
-@media(min-width: 400px)
-{
-  .card .data .content{
-    margin-bottom: 2em;
-  }
-}
-
-@media(min-width: 60rem)
-{
-  .card .data .content{
-    margin-bottom: 2em;
-  }
-}
 
 .card .title-div{
   width: 100%;
-  height: 25%;
+  height: 35%;
   margin: 0;
 }
-@media (max-width:400px){
-  .content .title-div{
-    margin-bottom:3em ;
-  }
-}
-
-@media(min-width: 60rem)
-{
-  .card .title-div{
-    padding-bottom: 2.3rem;
-  }
-}
-
-@media(min-width: 40rem)
-{
-  .card .title-div{
-    padding-bottom: 2.8rem;
-  }
-}
-
-@media(min-width: 20rem)
-{
-  .card .title-div{
-    padding-bottom: 2.8rem;
-  }
-}
-
 
 .card .title {
+  padding-bottom: 2rem;
   margin-top: 0em;
   font-size: 0.65em;
 }
@@ -246,7 +168,8 @@ a:hover {
 @media(min-width: 60rem)
 {
   .card .title {
-    font-size: 1.55em;
+    padding-bottom: 4rem;
+    font-size: 1.2em;
   }
 }
 
@@ -287,34 +210,6 @@ a:hover {
   }
 }
 
-.tagbutton{
-  background-color: #b6bcebfd;
-  color: #0117E7;
-  margin-top: 8px;
-  margin-right: 11px;
-  border-radius: 100px;
-  border:none;
-  overflow:hidden;
-  padding: 5px 10px;
-  font-size: .85rem;
-  font-weight: bold;
-}
-
-.tagbutton:focus{
-  outline: none;
-}
-
-.tagbutton span {
-  padding-right: 5.5px;
-}
-
-.tagimg {
-  width: 2rem;
-  margin: auto 0;
-  outline: none;
-  margin-left: -8px;
-}
-
 .card input[type="checkbox"] {
   display: none;
 }
@@ -333,7 +228,7 @@ input[type="text"]{
 }
 
 .skill-card {
-  width: 450px;
+  width: 300px;
   border: 0;
   border-radius: 10px;
 }
@@ -396,6 +291,7 @@ ul{
 
 .menu-content{
   margin-right: 10px;
+  margin-top: 1rem;
 }
 .social-icon svg:hover {
   fill: #fff;
@@ -419,107 +315,122 @@ ul{
 
 /* Responsive*/
 
-@media only screen and (max-width: 970px) {
-  .social-icon svg {
-    margin-top: -10px;
-  }
-  .tagbutton{
-    font-size: .90rem;
-  }
-
-  .card .title-div{
-    padding-bottom: 2rem;
-    margin-bottom: 0px;
-    font-size: 2rem;
-  }
-}
-
-
-@media only screen and (max-width: 768px) {
-  .social-icon svg {
-    margin-top: -10px;
-  }
-  .tagbutton{
-    font-size: .90rem;
-  }
-
-  .card .title-div{
-    padding-bottom: 2rem;
-    margin-bottom: 0px;
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 419px) {
-  .social-icon svg {
-    margin-top: -10px;
-  }
+@media (min-width:320px) and (max-width:321px){
   .menu-content{
+    margin-top: -4.5rem;
     margin-right: 20px;
   }
-  .tagbutton{
-    margin-bottom: -1px;
-    font-size: .90rem;
-  }
-  .card .title-div{
-    padding-bottom: 2rem;
-    margin-bottom: 0px;
-    font-size: 2rem;
-  }
-}
 
-@media only screen and (max-width: 380px) {
-  .menu-content{
-    margin-top: -10px;
-    margin-right: 20px;
-  }
-  .tagbutton{
-    margin-bottom: -2px;
-    font-size: .80rem;
-  }
   .card .title-div{
+    padding-bottom: 7rem;
+    margin-bottom: 0px;
     font-size: 3rem;
   }
 }
 
-@media only screen and (max-width: 340px) {
-  .menu-content{
-    margin-top: -10px;
-    margin-right:20px;
-  }
-  .tagbutton{
-    margin-bottom: -2px;
-    font-size: .70rem;
-  }
-}
-
-@media only screen and (max-width: 305px) {
-  .menu-content{
-    margin-top:-20px;
-    margin-right: 20px;
-  }
-  .tagbutton{
-    font-size: .40rem;
-
-  }
-}
-
-@media only screen and (max-width: 280px) {
-  .social-icon svg {
-    margin-top: -20px;
-  }
-  .tagbutton{
-    font-size: .60rem;
-  }
-
-  .menu-content{
-    margin-top:-20px;
+@media (min-width:360px) and (max-width:361px){
+  .card .menu-content{
+    margin-top: -4.5rem;
     margin-right: 20px;
   }
 
   .card .title-div{
-    padding-bottom: 2rem;
+     padding-bottom: 7rem;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width:374px) and (max-width:375px){
+  .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 8rem;
     margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+
+
+@media (min-width:410px) and (max-width:411px){
+  .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 6rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+@media (min-width:413px) and (max-width:414px){
+  .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 6rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width:535px) and (max-width:540px){
+  .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 6rem;
+    font-size: 2rem;
+  }
+}
+
+
+@media (min-height:822px) and (max-height:823px){
+  .menu-content{
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 6rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+
+
+@media only screen and (min-height:768px){
+  .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 6rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+  .skill-card {
+    width: 450px;
+    border: 0;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 7rem;
     font-size: 2rem;
   }
 }
@@ -536,11 +447,6 @@ ul{
   }
 }
 
-@media only screen and (max-width: 702px) {
-  .NeuInput-outer {
-    margin: -1.5rem 0.3rem 3rem 0.3rem;
-  }
-}
 
 @media (max-width: 377px) {
 	.skill-card .data {
