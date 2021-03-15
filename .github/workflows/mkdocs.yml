@@ -1,6 +1,5 @@
-name: Awesome MkDocs
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+name: Build and Deploy Documentation using MkDocs
+# The events that triggers the workflow
 on:
   push:
     branches: documentation
@@ -9,9 +8,10 @@ on:
 
 jobs:
   build:
-    name: Build and Deploy Documentation
+    name: Build and Deploy Documentation using MkDocs
+    # The machine each job should run
     runs-on: ubuntu-latest
-
+    # The tasks each job should run
     steps:
       - name: Checkout Master
         uses: actions/checkout@v2
