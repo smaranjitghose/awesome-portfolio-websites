@@ -1,0 +1,23 @@
+name: Mind your language
+# The events that triggers the workflow
+on:
+  issues:
+    types: [opened, edited] # issue is opened or edited
+  issue_comment:
+    types: [created, edited] # issue comment is created or edited
+  pull_request_review_comment:
+    types: [created, edited] # PR comment is created or edited
+
+jobs:
+  echo_issue_comment:
+    # The machine each job should run
+    runs-on: ubuntu-latest
+    name: profanity check
+    # The tasks each job should run
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Profanity check step
+        uses: tailaiw/mind-your-language-action@v1.0.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

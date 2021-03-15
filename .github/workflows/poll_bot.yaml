@@ -1,0 +1,19 @@
+# Reference: https://github.com/imjohnbo/gh-polls-bot-action
+name: Poll Bot 
+# The events that triggers the workflow
+on:
+  issue_comment:
+    types: [created, edited] # issue comment is created or edited
+  issues:
+    types: [opened, edited] # issue is opened or edited
+
+jobs:
+  polls:
+    name: Poll Bot 
+    # The machine each job should run
+    runs-on: ubuntu-latest
+    # The tasks each job should run
+    steps:
+    - uses: imjohnbo/gh-polls-bot-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
