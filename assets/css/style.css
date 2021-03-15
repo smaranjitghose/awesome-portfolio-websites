@@ -211,11 +211,68 @@ html {
 
 /*
 -------------------------------------
+    SIDEBAR SVG ANIMATION
+--------------------------------------
+*/
+
+
+.bike{
+  margin-top: 30px;
+ display: block;
+}
+
+#right-wheel,
+#left-wheel {
+ animation: wheel 3s linear infinite;
+ transform-origin: center;
+ transform-box: fill-box;
+}
+
+#man-bike {
+ animation: bikes 1s ease-in-out infinite alternate;
+ transform-origin: bottom;
+}
+
+#hat {
+ animation: hat 1s ease-in-out infinite alternate;
+ transform-origin: center;
+ transform-box: fill-box;
+}
+
+@keyframes wheel {
+ from {
+     transform: rotateZ(0deg);
+ }
+ to {
+     transform: rotateZ(360deg);
+ }
+}
+
+@keyframes bikes {
+ from {
+     transform: rotateX(0deg);
+ }
+ to {
+     transform: rotateX(12deg);
+ }
+}
+
+@keyframes hat {
+ from {
+     transform: translateY(0%) rotateZ(0deg);
+ }
+ to {
+     transform: translateY(10%) rotateZ(20deg);
+ }
+}
+
+/*
+-------------------------------------
     NAV BAR HIGHTLIGHTING
 --------------------------------------
 */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1024px){
   .current-link {
     font-weight: bolder;
     position: relative;
@@ -249,6 +306,11 @@ html {
   }
   a.nav-link{
     padding: 6px 21px !important;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    align-items: center;
   }
 }
 
@@ -676,9 +738,52 @@ form{
       }
 
       #navbar-content {
-        height: 100vh;
+        margin-top: -200px;
+        height: 120vh;
         text-align: center;
-        margin:0 auto;
         transform: translateY(25%);
      }
    }
+
+   
+   @media (max-width:  414px) {
+    .collapse navbar-collapse{
+      display: flex;
+      justify-content: center;
+    } 
+
+    #navbar-content {
+      margin-top:-180px;
+      height: 120vh;
+      text-align: center;
+      transform: translateY(25%);
+   }
+  }
+
+   @media (max-width:  375px) {
+    .collapse navbar-collapse{
+      display: flex;
+      justify-content: center;
+    } 
+
+    #navbar-content {
+      margin-top:-180px;
+      height: 120vh;
+      text-align: center;
+      transform: translateY(25%);
+   }
+  }
+
+  @media (max-width:  320px) {
+    .collapse navbar-collapse{
+      display: flex;
+      justify-content: center;
+    } 
+
+    #navbar-content {
+      margin-top:-140px;
+      height: 130vh;
+      text-align: center;
+      transform: translateY(25%);
+   }
+  }

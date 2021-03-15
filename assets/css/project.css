@@ -54,37 +54,6 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.NeuInput-outer {
-  display: flex;
-  border-radius: 1rem;
-  background-color: var(--nue-light);
-  padding: 0.5rem;
-  margin-bottom: 3rem;
-  box-shadow: .3rem .3rem .6rem var(--neu-dark), -.2rem -.2rem .5rem var(--neu-light); 
-  margin-left: auto;
-  margin-right: 3rem;
-}
-
-.NeuInput-outer #search {
-  position: absolute;
-  display: flex;
-  align-self: center;
-  fill: var(--neu-icon);
-  margin-left: 1rem;
-}
-
-#myInput {
-  padding: 0.5rem;
-  padding-left: 4rem;
-  border-radius: 1rem;
-  font-size: 1rem;
-  border: none;
-  margin-bottom: 0;
-  box-shadow: inset .2rem .2rem .5rem var(--neu-dark), inset -.2rem -.2rem .5rem var(--neu-light);
-  color: var(--neu-color);
-  outline: none;
-}
-
 @media(min-width: 60rem)
 {
   .row{
@@ -127,7 +96,7 @@ a:hover {
   background-color: #fff;
   border: 0;
   border-radius: 10px;
-  min-height: 24rem;
+  min-height: 21.5rem;
   position: relative;
   overflow: hidden;
   box-shadow: 0 19px 38px var(--shadow1), 0 15px 12px var(--shadow2);
@@ -148,7 +117,7 @@ a:hover {
 @media(min-width: 60rem)
 {
   .card .data{
-    height: 66%;
+    height: 76%;
   }
 }
 
@@ -156,60 +125,22 @@ a:hover {
   padding: 1em;
   position: relative;
   z-index: 1;
-  margin-bottom: 4em;
 }
 
-@media(min-width: 378px)
-{
-  .card .data .content{
-    margin-bottom: 2em;
-  }
-}
-
-@media(min-width: 400px)
-{
-  .card .data .content{
-    margin-bottom: 2em;
-  }
-}
-
-@media(min-width: 60rem)
-{
-  .card .data .content{
-    margin-bottom: 2em;
-  }
-}
 
 .card .title-div{
   width: 100%;
-  height: 25%;
+  height: 35%;
   margin: 0;
-}
-@media (max-width:400px){
-  .content .title-div{
-    margin-bottom:3em ;
-  }
-}
-@media (min-width:400px){
-  .content .title-div .title{
-    margin-bottom: 4em;
-    
-  }
-}
-@media(min-width: 60rem)
-{
-  .card .title-div{
-    padding-bottom: 2.3rem;
-    margin-bottom: 2em;
-  }
 }
 
 .card .title {
+  padding-bottom: 2rem;
   margin-top: 0em;
   font-size: 0.65em;
 }
 
-@media(min-width: 311px)
+@media(min-width: 411px)
 {
   .card .title{
     font-size: 0.8em;
@@ -237,7 +168,8 @@ a:hover {
 @media(min-width: 60rem)
 {
   .card .title {
-    font-size: 1.55em;
+    padding-bottom: 4rem;
+    font-size: 1.2em;
   }
 }
 
@@ -278,30 +210,6 @@ a:hover {
   }
 }
 
-.tagbutton{
-  background-color: #b6bcebfd;
-  color: #0117E7;
-  margin-top: 5px;
-  margin-right: 11px;
-  border-radius: 100px;
-  border:none;
-  padding: 5px 10px;
-  outline: none;
-  font-size: .85rem;
-  font-weight: bold;
-}
-
-.tagbutton span {
-  padding-right: 5.5px;
-}
-
-.tagimg {
-  width: 2rem;
-  margin: auto 0;
-  outline: none;
-  margin-left: -8px;
-}
-
 .card input[type="checkbox"] {
   display: none;
 }
@@ -320,7 +228,7 @@ input[type="text"]{
 }
 
 .skill-card {
-  width: 450px;
+  width: 300px;
   border: 0;
   border-radius: 10px;
 }
@@ -370,10 +278,20 @@ input[type="text"]{
   color: #fff;
 }
 
+
 /*social icons*/
 
+ul{
+  padding-inline-start: 0px;
+}
+
 .social-icon svg {
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.menu-content{
+  margin-right: 10px;
+  margin-top: 1rem;
 }
 .social-icon svg:hover {
   fill: #fff;
@@ -395,10 +313,125 @@ input[type="text"]{
   /* margin: 1rem auto; */
 }
 
-/* Resopnsive*/
-@media only screen and (max-width: 768px) {
-  .social-icon svg {
-    margin-top: 0px;
+/* Responsive*/
+
+@media (min-width:320px) and (max-width:321px){
+  .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 7rem;
+    margin-bottom: 0px;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width:360px) and (max-width:361px){
+  .card .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+     padding-bottom: 7rem;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width:374px) and (max-width:375px){
+  .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 8rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+
+
+@media (min-width:410px) and (max-width:411px){
+  .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 6rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+@media (min-width:413px) and (max-width:414px){
+  .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 6rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width:535px) and (max-width:540px){
+  .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 6rem;
+    font-size: 2rem;
+  }
+}
+
+
+@media (min-height:822px) and (max-height:823px){
+  .menu-content{
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 6rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+
+
+@media only screen and (min-height:768px){
+  .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 6rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+  .skill-card {
+    width: 450px;
+    border: 0;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .menu-content{
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+
+  .card .title-div{
+    padding-bottom: 7rem;
+    font-size: 2rem;
   }
 }
 
@@ -414,11 +447,6 @@ input[type="text"]{
   }
 }
 
-@media only screen and (max-width: 702px) {
-  .NeuInput-outer {
-    margin: -1.5rem 0.3rem 3rem 0.3rem;
-  }
-}
 
 @media (max-width: 377px) {
 	.skill-card .data {
@@ -457,3 +485,332 @@ input[type="text"]{
       flex-direction: column-reverse;
   }
 }
+
+
+
+/*
+----------------------------
+SVG ANIMATIONS PROJECT PAGE
+----------------------------
+*/
+
+@keyframes ekumanslidein {
+    0% {
+      transform: translateX(-600px)
+    }
+
+    50% {
+      transform: translateX(-600px) scaleX(1)
+    }
+
+    75% {
+      transform: translateX(30px) scaleX(.9)
+    }
+
+    87.5% {
+      transform: translateX(-5px)
+    }
+
+    97% {
+      transform: translateX(3px)
+    }
+
+    to {
+      transform: translateX(0) scaleX(1)
+    }
+  }
+
+  @keyframes ekumanarmrotate {
+
+    0%,
+    45%,
+    65%,
+    85%,
+    to {
+      transform: rotate(0deg)
+    }
+
+    55%,
+    75% {
+      transform: rotate(-5deg)
+    }
+  }
+
+  @keyframes ekumanhairwobble {
+
+    50%,
+    to {
+      transform: scaleX(1)
+    }
+
+    75% {
+      transform: scaleX(1.2)
+    }
+
+    87.5% {
+      transform: scaleX(.8)
+    }
+
+    97% {
+      transform: scaleX(1.09)
+    }
+  }
+
+  @keyframes ekuwomanlidein {
+    0% {
+      transform: translateX(600px)
+    }
+
+    50% {
+      transform: translateX(600px) scaleX(1)
+    }
+
+    75% {
+      transform: translateX(-30px) scaleX(.9)
+    }
+
+    87.5% {
+      transform: translateX(5px)
+    }
+
+    97% {
+      transform: translateX(-3px)
+    }
+
+    to {
+      transform: translateX(0) scaleX(1)
+    }
+  }
+
+  @keyframes kulapdropin {
+    0% {
+      transform: translateY(-230px) scale(0) rotate(0deg)
+    }
+
+    35% {
+      transform: translateY(-230px) scale(1.03) rotate(20deg)
+    }
+
+    45% {
+      transform: rotate(10deg)
+    }
+
+    50% {
+      transform: translateY(-5px) scale(.98) rotate(0deg)
+    }
+
+    55% {
+      transform: translateY(-10px) scale(1.01) rotate(0deg)
+    }
+
+    60% {
+      transform: translateY(0) scale(1)
+    }
+
+    to {
+      transform: translateY(0)
+    }
+  }
+
+  @keyframes ekuwomanarmrotate {
+
+    0%,
+    45%,
+    65%,
+    85%,
+    to {
+      transform: rotate(0deg)
+    }
+
+    55%,
+    75% {
+      transform: rotate(10deg)
+    }
+  }
+
+  @keyframes ekuwomanarmbackrotate {
+
+    0%,
+    45%,
+    65%,
+    85%,
+    to {
+      transform: rotate(0deg)
+    }
+
+    55%,
+    75% {
+      transform: rotate(-13deg)
+    }
+  }
+
+  @keyframes manscreenpopup {
+
+    0%,
+    45%,
+    55%,
+    65%,
+    75%,
+    85% {
+      transform: scale(0)
+    }
+
+    to {
+      transform: scale(1)
+    }
+  }
+
+  @keyframes manscreenfloat {
+
+    0%,
+    to {
+      transform: translateY(0)
+    }
+
+    50% {
+      transform: translateY(-10px)
+    }
+  }
+
+  @keyframes backhairwave {
+
+    0%,
+    to {
+      transform: scaleX(1) skewX(0) skewY(0)
+    }
+
+    50% {
+      transform: scaleX(1.07) skewX(3deg) skewY(5deg)
+    }
+  }
+
+  #ku.svgmate #Bluearmbot,
+  #ku.svgmate #Chair,
+  #ku.svgmate #chairbackbar,
+  #ku.svgmate #man,
+  #ku.svgmate .mankauf {
+    animation-name: ekumanslidein;
+    animation-iteration-count: 1;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    transform-origin: 502px 454px
+  }
+
+  #ku.svgmate #Bluearmbot,
+  #ku.svgmate #Chair,
+  #ku.svgmate #chairbackbar,
+  #ku.svgmate .mankauf {
+    animation-duration: 1.5s
+  }
+
+  #ku.svgmate #Bluearmbot {
+    animation-name: ekumanarmrotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1.8s;
+    animation-delay: 1.2s;
+    transform-origin: 448.122px 403.482px
+  }
+
+  #ku.svgmate .mankauf {
+    animation-name: ekumanhairwobble;
+    animation-duration: 1.38s;
+    transform-origin: 396.257px 260.5px
+  }
+
+  #ku.svgmate #Chair_1_,
+  #ku.svgmate #Woman,
+  #ku.svgmate #back-arm,
+  #ku.svgmate #backleg_1_ {
+    animation-name: ekuwomanlidein;
+    animation-iteration-count: 1;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    transform-origin: 502px 454px
+  }
+
+  #ku.svgmate #Chair_1_ {
+    animation-duration: 1.95s
+  }
+
+  #ku.svgmate #Laptop,
+  #ku.svgmate #keyboard {
+    animation-name: kulapdropin;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    transform-origin: 648.689px 361.659px
+  }
+
+  #ku.svgmate #keyboard {
+    animation-duration: 2.5s;
+    transform-origin: 479.857px 383px
+  }
+
+  #ku.svgmate #lowerarm,
+  #ku.svgmate #lowervackarm {
+    animation-name: ekuwomanarmrotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1.8s;
+    animation-delay: 2.1s;
+    animation-timing-function: ease-out;
+    transform-origin: 751.134px 385.578px
+  }
+
+  #ku.svgmate #lowervackarm {
+    animation-name: ekuwomanarmbackrotate;
+    transform-origin: 736.882px 386px
+  }
+
+  #ku.svgmate #Man_screen .greenscreen,
+  #ku.svgmate #Man_screen .redscreen,
+  #ku.svgmate #Man_screen .screenbutton {
+    animation-name: manscreenpopup;
+    animation-iteration-count: 1;
+    animation-duration: 3.6s;
+    animation-timing-function: ease-in-out;
+    transform-origin: 526.882px 383px
+  }
+
+  #ku.svgmate #Man_screen .greenscreen,
+  #ku.svgmate #Man_screen .redscreen {
+    animation-duration: 3s
+  }
+
+  #ku.svgmate #Man_screen .greenscreen {
+    animation-duration: 3.3s
+  }
+
+  #ku.svgmate #Man_screen,
+  #ku.svgmate #Man_screen .greenscrmove,
+  #ku.svgmate #Man_screen .redskmove,
+  #ku.svgmate .womscreenmove {
+    animation-name: manscreenfloat;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+    animation-timing-function: ease-in-out
+  }
+
+  #ku.svgmate #Man_screen .greenscrmove,
+  #ku.svgmate #Man_screen .redskmove {
+    animation-duration: 6s
+  }
+
+  #ku.svgmate #Man_screen .greenscrmove {
+    animation-duration: 7.2s
+  }
+
+  #ku.svgmate #hairback,
+  #ku.svgmate #womanscreen {
+    animation-name: manscreenpopup;
+    animation-iteration-count: 1;
+    animation-duration: 3.9s;
+    animation-timing-function: ease-in-out;
+    transform-origin: 648.689px 361.659px
+  }
+
+  #ku.svgmate #hairback {
+    animation-name: backhairwave;
+    animation-iteration-count: infinite;
+    animation-duration: 3.3s;
+    transform-origin: 785.132px 295.833px
+  }

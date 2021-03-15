@@ -1,0 +1,78 @@
+---
+
+#############################
+#############################
+## JavaScript Linter rules ##
+#############################
+#############################
+
+############
+# Env Vars #
+############
+env:
+  browser: true
+  es6: true
+  jest: true
+
+###############
+# Global Vars #
+###############
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+
+###############
+# Parser vars #
+###############
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+
+###########
+# Plugins #
+###########
+plugins:
+  - '@typescript-eslint'
+
+#########
+# Rules #
+#########
+rules:
+
+  ### Styling ###
+
+  # Prefer new line before return
+  # http://eslint.org/docs/rules/newline-before-return
+  newline-before-return: error # airbnb default: off
+
+  ### Variables ###
+
+  # Functions and classes can be used before declaration
+  # http://eslint.org/docs/rules/no-use-before-define
+  no-use-before-define: # airbnb default: ['error', { functions: true, classes: true, variables: true }]
+    - error
+    -
+      functions: false
+      classes: false
+      variables: true
+
+  ### From error to warning ###
+  # was not working when used with flow prop types
+  no-unused-vars: warn
+  react/no-unused-prop-types: warn
+
+  ### ES6 ###
+
+  ### Best practices ###
+  # require or disallow Yoda conditions
+  # https://eslint.org/docs/rules/yoda
+  yoda: [error, never, { exceptRange: true }] # airbnb default: 'error'
+
+  # add culry braces all the time
+  # https://eslint.org/docs/rules/curly
+  curly: [error, all] # airbnb default: [error, multi-line]
+
+  # was complaining about inline snapshots
+  no-irregular-whitespace:
+  - off
