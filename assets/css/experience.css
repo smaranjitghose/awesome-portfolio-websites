@@ -21,6 +21,17 @@ html[data-theme="light"] {
  }
 /*Main section*/
 
+@media (max-width:766px) {
+  .dropdown{
+    position: absolute;
+    padding-right: 3.5rem;
+  }
+  .godown{
+    z-index: 1;
+    padding-top: 8rem;
+    padding-left: 3.3rem;
+  }
+}
 .head-upper{
   background: var(--bg-txt-img);
   background-clip: text;

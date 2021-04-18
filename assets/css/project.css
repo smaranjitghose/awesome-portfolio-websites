@@ -26,7 +26,17 @@ html[data-theme = 'dark']
 body{
   background: var(--bg-col) !important;
 }
-
+@media (max-width:766px) {
+  .dropdown{
+    position: absolute;
+    padding-right: 3.5rem;
+  }
+  .godown{
+    z-index: 1;
+    padding-top: 15rem;
+    padding-left: 3.3rem;
+  }
+}
 .img-header{
   width: 90%;
   height: 90%;
