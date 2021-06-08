@@ -16,4 +16,4 @@ jobs:
           ignore-comments: true
           labels-synonyms: '{"bug":["error","need fix","not working"],"enhancement":["upgrade"],"question":["help"]}'
           labels-not-allowed: '["good first issue"]'
-          default-labels: '["gssoc21"]'
+          default-labels: '["LGMSOC21"]'
