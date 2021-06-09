@@ -15,7 +15,9 @@ html[data-theme = 'dark']
 }
 
 /* -----Education Section CSS----- */
-
+.dropdown1:hover{
+  color:green;
+}
 @media (max-width:766px) {
   .dropdown1{
     position: absolute;
@@ -23,6 +25,7 @@ html[data-theme = 'dark']
     /* padding-right: 1.2rem; */
     z-index: 3;
   }
+ 
   .dropdown2{
     position:absolute;
     text-align: center;
@@ -53,6 +56,9 @@ html[data-theme = 'dark']
 .s2 .head{
   font-size:2rem;
 }
+.s2 .head:hover{
+color: red;
+}
 
 .s2 h4{
   margin-bottom: 1.2rem;
@@ -81,7 +87,10 @@ html[data-theme = 'dark']
 .s2 h4,h6,p{
   color:black;
 }
-
+.s2 .card{
+  border: 3px red solid;
+  box-shadow:0px 18px 30px 0px rgba(0, 0, 0, 0.5);
+}
 
 @media only screen and (max-width: 767px) {
 
