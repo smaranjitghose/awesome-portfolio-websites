@@ -368,17 +368,32 @@
   </div>
 
   <!-- Dynamic footer section -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
-
-
-  <!-- script -->
+  <!-- scroll to top button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <a onclick="topBtnClick()" class="gotopbtn clr-wt" id="topBtn" style="opacity: 1; visibility: visible; font-size: 45px;"> <i class="fa fa-chevron-up clr-wt"></i> </a></button>
+<!-- script -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
   <script src="assets/js/research.js"></script>
-  <script>
+   <!-- When the user clicks on the button, scroll to the top of the document -->
+   <script>
+    //Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+// <!-- When the user clicks on the button, scroll to the top of the document -->
     function topFunction() {
 document.documentElement.scrollTop = 0; 
 }

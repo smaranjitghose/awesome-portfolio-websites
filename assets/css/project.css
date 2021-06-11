@@ -824,17 +824,4 @@ SVG ANIMATIONS PROJECT PAGE
     animation-duration: 3.3s;
     transform-origin: 785.132px 295.833px
   }
-  #myBtn{
-    float: right;
-   position: relative;
-   bottom: -252px;
-   left: -96px;
-   padding: 10px;
-   border: none; 
-   outline: none; 
-   border-radius: 20px;
-   
-}
-#myBtn:hover {
- background-color: rgb(241, 38, 38); 
-}
+ 

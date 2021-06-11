@@ -787,3 +787,30 @@ form{
       transform: translateY(25%);
    }
   }
+  #myBtn {
+    display: none;/* Hidden by default */
+    position: fixed;/* Fixed/sticky position */
+    bottom: 20px;/* Place the button at the bottom of the page */
+    right: 30px;/* Place the button 30px from the right */
+    z-index: 99;/* Make sure it does not overlap */
+    font-size: 18px;/* Increase font size */
+    border: none;/* Remove borders */
+    outline: none;/* Remove outline */
+    background-color: red;/* Set a background color */
+    color: white;/* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px;/* Some padding */
+    border-radius: 44px;/* Rounded corners */
+    height: 61px;
+    width: 59px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+  .fa-chevron-up:before {
+    content: "\f077";
+    position: relative;
+    top: -19px;
+    right: 4px;
+}

@@ -700,17 +700,3 @@ body{
     animation-duration: 5s;
     transform-origin: 1009.149px 711.625px
 }
-#myBtn{
-    float: right;
-   position: relative;
-   bottom: -252px;
-   left: -96px;
-   padding: 10px;
-   border: none; 
-   outline: none; 
-   border-radius: 20px;
-   
-}
-#myBtn:hover {
- background-color: rgb(241, 38, 38);
-}
