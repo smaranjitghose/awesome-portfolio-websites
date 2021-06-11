@@ -1,3 +1,5 @@
+AOS.init();
+
 //  Work experience cards
 
 
@@ -31,8 +33,8 @@ const showCards2 = () => {
   exp.forEach(
     ({ title, cardImage, place, time, desp }) =>
       (output += `        
-      <ul>
-      <li class="card card1">
+    
+      <div class="card card1" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">
         <img src="${cardImage}" class="featured-image"/>
         <article class="card-body">
           <header>
@@ -48,8 +50,8 @@ const showCards2 = () => {
             </ol>
           </header>
         </article>
-      </li>
-    </ul>
+      </div>
+    
       `)
   );
   experiencecards.innerHTML = output;
