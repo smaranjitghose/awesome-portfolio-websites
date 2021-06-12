@@ -139,6 +139,7 @@ section {height: 95vh;}
   z-index: 100;
   -webkit-transition: transform 0.4s, 0.4s box-shadow;
   -moz-transition: transform 0.4s, 0.4s box-shadow;
+  cursor:pointer;
 }
 
 @media only screen and (min-width: 551px){
@@ -392,6 +393,7 @@ ul ol{
   width: 100%;
   text-align: center;
   color: whitesmoke;
+  cursor:pointer;
   /* background-color: #43D1AF; */
   border: none;
   
@@ -593,6 +595,9 @@ ul ol{
 .mentorshipCard{
   margin-bottom: 5em;
   border-radius: 13px;
+}
+.mentorshipCard:hover{
+  cursor:pointer;
 }
 
 @media(min-width: 60rem){
