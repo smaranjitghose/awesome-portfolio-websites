@@ -306,6 +306,7 @@ html {
   }
   a.nav-link{
     padding: 6px 21px !important;
+    transition: 0.4s;
   }
 }
 @media (min-width: 992px) {
