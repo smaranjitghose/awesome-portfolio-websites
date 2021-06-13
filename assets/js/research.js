@@ -114,13 +114,13 @@ const research = [
         absbox: "absPopup8"
     }
 ];
-   
+AOS.init();   
 const fillData = () => {
     let output = "";
     research.forEach(
         ({image, title, authors, conferences, researchYr, citebox, citation, absbox, abstract}) =>
         (output +=`
-            <tr> 
+            <tr data-aos="zoom-in-left"> 
                 <td class="imgCol"><img src="${image}" class="rImg"></td>
                 <td class = "researchTitleName">
                     <div>
