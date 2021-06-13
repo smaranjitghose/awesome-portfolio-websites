@@ -91,6 +91,10 @@ body{
     2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 
+#researchDetailsTable tr:hover{
+    transform: scale(1.1);
+}
+
 #researchDetailsTable tr .card-body{
     transition: 0.3s;
 }

@@ -595,6 +595,10 @@ ul ol{
   border-radius: 13px;
 }
 
+.mentorshipCard:hover{
+  transform: scale(1.06);
+}
+
 @media(min-width: 60rem){
   .row{
     margin-top: 0em;
