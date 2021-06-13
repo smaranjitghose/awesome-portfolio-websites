@@ -88,6 +88,16 @@ section {height: 95vh;}
   font-size: 55px;
   color: var(--bg-txt-img);
 }
+
+.experience_head{
+  font-weight:bold;
+}
+
+ /*color of experience page headings*/
+.my_experience{          
+  color:#0e49b5;
+}
+
 .sub-heading {
   font-size: 17px;
   margin-top: 20px;

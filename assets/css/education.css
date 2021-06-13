@@ -14,6 +14,15 @@ html[data-theme = 'dark']
   --border:none;
 }
 
+.education_head{
+  font-weight:bold;
+}
+
+/*color of education page heading*/
+.edu_background{
+  color:#0e49b5;
+}
+
 /* -----Education Section CSS----- */
 
 @media (max-width:766px) {
@@ -52,6 +61,14 @@ html[data-theme = 'dark']
 
 .s2 .head{
   font-size:2rem;
+  font-weight:bold;
+}
+
+/*properties for online accreditaions(MOOCS) heading*/
+.h4,h4{
+  font-weight:bold;
+  font-size:2rem;
+  margin-bottom:2.5rem;
 }
 
 .s2 h4{
