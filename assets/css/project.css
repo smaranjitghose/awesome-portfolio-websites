@@ -67,7 +67,9 @@ a:hover {
 .card{
   width: 100%;
 }
-
+.card{
+  cursor: pointer;
+}
 .column{
   float: left;
   margin-bottom: 2rem;
