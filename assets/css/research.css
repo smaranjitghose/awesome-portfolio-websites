@@ -44,6 +44,15 @@ html[data-theme = 'dark']{
     --ppr-col: rgb(231, 85, 109);
 }
 
+.research_head{
+    font-weight:bold;
+}
+
+/* color of research page heading*/
+.research_work{
+    color:#0e49b5;
+}
+
 /*For Changing background color of body according to theme*/
 body{
     background: var(--bg-col) !important;
@@ -89,6 +98,10 @@ body{
     border-radius: 5px;
     box-shadow: 2px 2px 7px #ddd,
     2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+#researchDetailsTable tr:hover{
+    transform: scale(1.1);
 }
 
 #researchDetailsTable tr .card-body{

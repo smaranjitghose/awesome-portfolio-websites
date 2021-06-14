@@ -88,6 +88,16 @@ section {height: 95vh;}
   font-size: 55px;
   color: var(--bg-txt-img);
 }
+
+.experience_head{
+  font-weight:bold;
+}
+
+ /*color of experience page headings*/
+.my_experience{          
+  color:#0e49b5;
+}
+
 .sub-heading {
   font-size: 17px;
   margin-top: 20px;
@@ -139,6 +149,7 @@ section {height: 95vh;}
   z-index: 100;
   -webkit-transition: transform 0.4s, 0.4s box-shadow;
   -moz-transition: transform 0.4s, 0.4s box-shadow;
+  cursor:pointer;
 }
 
 @media only screen and (min-width: 551px){
@@ -392,6 +403,7 @@ ul ol{
   width: 100%;
   text-align: center;
   color: whitesmoke;
+  cursor:pointer;
   /* background-color: #43D1AF; */
   border: none;
   
@@ -593,6 +605,13 @@ ul ol{
 .mentorshipCard{
   margin-bottom: 5em;
   border-radius: 13px;
+}
+.mentorshipCard:hover{
+  cursor:pointer;
+}
+
+.mentorshipCard:hover{
+  transform: scale(1.06);
 }
 
 @media(min-width: 60rem){
