@@ -1,4 +1,5 @@
 /* Project Cards */
+AOS.init();
 
 const projectcards = document.querySelector(".projectcards");
 
@@ -109,7 +110,8 @@ const showCards = () => {
   let output = "";
   projects.forEach(
     ({ title, cardImage, tags, Previewlink, Githublink }) => {
-      (output += `       
+      (output += ` 
+    <div class="gaap" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500" data-aos-easing="ease-out">      
     <div class="column skill-card card">
       <div class="wrapper" style="background: url(${cardImage}) center / cover no-repeat;">
         <div class="header">
@@ -126,6 +128,7 @@ const showCards = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>`)
     }
   );

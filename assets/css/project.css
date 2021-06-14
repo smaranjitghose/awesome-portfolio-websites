@@ -26,7 +26,17 @@ html[data-theme = 'dark']
 body{
   background: var(--bg-col) !important;
 }
-@media (max-width:766px) {
+
+.topp {
+  padding-top: 5rem;
+}
+@media only screen and (max-width:767px){
+  .topp {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width:767px) {
   .dropdown{
     position: absolute;
     padding-right: 3.5rem;
@@ -50,19 +60,25 @@ a:hover {
 	border: none;
 }
 
-/* .row{
+.row{
   display: flex;
-  row-gap: 3em;
-} */
+  row-gap: 2.5em;
+}
+
+.gapp{
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+}
 
 .card{
   width: 100%;
 }
 
-/* .column{
+.column{
   float: left;
-  margin-bottom: 2rem;
-} */
+  margin: 0 1rem;
+}
 
 @media(min-width: 60rem)
 {
@@ -73,13 +89,8 @@ a:hover {
   .card{
     width: 43%;
     column-gap: 3rem;
-    /* margin: 0 2rem; */
     transition: width 0.8s;
   }
-
-  /* .column{
-    margin-left: 1.5rem;
-  } */
 }
 
 .card .menu-content {
@@ -109,11 +120,27 @@ a:hover {
   min-height: 21.5rem;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 19px 38px var(--shadow1), 0 15px 12px var(--shadow2);
+  box-shadow: 0 19px 38px var(--shadow1), 5px 15px 12px var(--shadow2);
+  transition: transform 0.4s, 0.4s box-shadow;
+}
+
+.card .wrapper:hover {
+  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-15px);
+  box-shadow: 7px 20px 40px var(--shadow1), 10px 20px 17px var(--shadow2);
+  transition: transform 0.4s, 0.4s box-shadow;
+  -webkit-transition: transform 0.4s, 0.4s box-shadow;
+  -moz-transition: transform 0.4s, 0.4s box-shadow;
 }
 
 .card .wrapper:hover .data {
   transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transition: transform 0.4s;
+  -webkit-transition: transform 0.4s;
+  -moz-transition: transform 0.4s;
 }
 
 .card .data {
@@ -121,8 +148,8 @@ a:hover {
   bottom: 0;
   width: 100%;
   height: 76%;
-  transition: transform 0.3s;
-  background: rgba(0,0,0,0.55);
+  transition: transform 0.4s;
+  background: rgba(0,0,0,0.75);
 }
 
 /* @media screen and (min-width: 60rem)
@@ -244,7 +271,7 @@ input[type="text"]{
 
 .skill-card .data {
   color: #fff;
-  background-color: rgba(0,0,0,0.55);
+  background-color: rgba(0,0,0,0.75);
   transform: translateY(calc(80px + 4em));
   padding: 5px;
 }
@@ -265,8 +292,8 @@ ul{
 }
 
 .menu-content{
-  margin-right: 10px;
-  margin-top: 1rem;
+  margin-right: 15px;
+  margin-top: 2rem;
 }
 .social-icon svg:hover {
   fill: #fff;
@@ -294,9 +321,9 @@ ul{
 
 /* Responsive*/
 
-@media (min-width:320px) and (max-width:321px){
+@media only screen and (max-width:321px){
   .menu-content{
-    margin-top: -4.5rem;
+    margin-top: -3rem;
     margin-right: 20px;
   }
 
@@ -307,9 +334,9 @@ ul{
   }
 }
 
-@media (min-width:360px) and (max-width:361px){
+@media only screen and (max-width:361px){
   .card .menu-content{
-    margin-top: -4.5rem;
+    margin-top: -3rem;
     margin-right: 20px;
   }
 
@@ -319,9 +346,9 @@ ul{
   }
 }
 
-@media (min-width:374px) and (max-width:375px){
+@media only screen and (max-width:375px){
   .menu-content{
-    margin-top: -4.5rem;
+    margin-top: -3rem;
     margin-right: 20px;
   }
 
@@ -333,9 +360,9 @@ ul{
 }
 
 
-@media (min-width:410px) and (max-width:411px){
+@media only screen and (max-width:400px){
   .menu-content{
-    margin-top: -4.5rem;
+    margin-top: -3rem;
     margin-right: 20px;
   }
 
@@ -347,7 +374,7 @@ ul{
 }
 @media (min-width:413px) and (max-width:414px){
   .menu-content{
-    margin-top: -4.5rem;
+    margin-top: -3rem;
     margin-right: 20px;
   }
 
@@ -360,7 +387,7 @@ ul{
 
 @media (min-width:535px) and (max-width:540px){
   .menu-content{
-    margin-top: -4.5rem;
+    margin-top: -3rem;
     margin-right: 20px;
   }
 
@@ -385,10 +412,10 @@ ul{
 
 
 @media only screen and (min-height:768px){
-  .menu-content{
+  /* .menu-content{
     margin-top: -4.5rem;
     margin-right: 20px;
-  }
+  } */
 
   .card .title-div{
     padding-bottom: 6rem;
@@ -398,21 +425,26 @@ ul{
 
 @media only screen and (max-width:665px){
   .skill-card {
-    width: 300px;
+    width: 325px;
     border: 0;
+    transition: 0.4s width;
   }
 }
 
 @media only screen and (max-width:400px){
   .skill-card {
-    width: 100%;
+    width: 300px;
     border: 0;
+    transition: 0.4s width;
   }
   .card .title-div{
     padding-bottom: 7rem;
   }
   .card .title{
     font-size: 1.2rem;
+  }
+  .skill-card .data {
+		transform: translateY(calc(90px + 4em));
   }
 }
 
@@ -425,15 +457,17 @@ ul{
 
 @media only screen and (max-width: 767px) {
   .project-box {
-    margin-top: 15rem;
+    margin-top: 10rem;
     margin-bottom: 15%;
+    transition: 0.4s margin-top;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .project-box {
     margin-top: 6rem;
     margin-bottom: 15%;
+    transition: 0.4s margin-top;
   }
 }
 
