@@ -114,6 +114,12 @@ section {height: 95vh;}
   }
 }
 
+.col.gaap {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+}
+
 .card1 {
   background: #ffffff;
   display: flex;
