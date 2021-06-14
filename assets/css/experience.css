@@ -39,17 +39,43 @@ html[data-theme="light"] {
   -webkit-text-fill-color: var(--txt-fill);
 }
 
-@media(min-width: 740px) and (max-width: 750px)
-{
+section > div {
+  padding-top: 7rem !important;
+}
+
+section {height: 95vh;}
+
+@media only screen and (max-width: 991px) {
   section{
-    margin-bottom: 5rem;
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 867px) {
+  section{
+    height: 70vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section{
+    height: 95vh;
+  }
+}
+@media only screen and (max-width: 550px) {
+  section{
+    height: 90vh;
+  }
+}
+@media only screen and (max-width: 400px) {
+  section{
+    height: 85vh;
   }
 }
 
-.main {
+.main, .main1 {
   width: 100%;
   padding-left: 4rem;
   padding-right: 4rem;
+  margin: 0 auto;
 }
 .column {
   padding: 70px;
@@ -62,33 +88,77 @@ html[data-theme="light"] {
   font-size: 55px;
   color: var(--bg-txt-img);
 }
+
+.experience_head{
+  font-weight:bold;
+}
+
+ /*color of experience page headings*/
+.my_experience{          
+  color:#0e49b5;
+}
+
 .sub-heading {
   font-size: 17px;
   margin-top: 20px;
 }
 @media (max-width: 550px) {
   .main {
-    width: 100%;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.experience-cards {
+  margin: 0 auto;
+}
+@media only screen and (max-width: 550px){
+  .experience-cards {
+    overflow: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 .card1 {
-  background: #fff;
-  border-radius: 5px;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   max-height: 80%;
   border:none;
-  border-radius: 4px;
-  box-shadow: -3px -3px 4px var(--shadow-col2), 2px 3px 4px var(--shadow-col1);
-  transition: all 0.4s;
+  border-radius: 13px;
   contain: content;
+  margin: 4em auto 36px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 15%),
+  2px 2px 7px rgba(0, 0, 0, 14%),
+  3px 3px 8px rgba(0, 0, 0, 13%),
+  4px 4px 9px rgba(0, 0, 0, 12%);
+  z-index: 1;
 }
 
 .card1:hover{
-    transform: scale(1.08);
+  transform: scale(1.06);
+  -webkit-transform: scale(1.06);
+  -moz-transform: scale(1.06);
+  transition: transform 0.4s, 0.4s box-shadow;
+  border-radius: 13px;
+  z-index: 100;
+  -webkit-transition: transform 0.4s, 0.4s box-shadow;
+  -moz-transition: transform 0.4s, 0.4s box-shadow;
+  cursor:pointer;
+}
+
+@media only screen and (min-width: 551px){
+  .card1:hover{
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 17%),
+  3px 6px 11px rgba(0, 0, 0, 16%),
+  4px 7px 13px rgba(0, 0, 0, 15%),
+  5px 8px 14px rgba(0, 0, 0, 14%);
+  }
 }
 
 .card1 .card-body {
@@ -118,11 +188,17 @@ ul ol{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  overflow: hidden;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  /* overflow: hidden; */
   width: 100%;
   height: 300px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .card1 h3 {
+    font-size: 32px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -135,19 +211,32 @@ ul ol{
     font-size: calc(100% + 1vw);
   }
 
-  @media only screen and (min-width: 1280px) {
-    .card1 h3 {
-      font-size: 32px;
-    }
-  }
-
   .card1 .featured-image {
     border-top-left-radius: 13px;
     border-bottom-left-radius: 13px;
     border-top-right-radius: 0;
-    max-width: 310px;
+    max-width: 300px;
     height: inherit;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .card1 .featured-image {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card1 .featured-image {
+    height: 400px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 401px) {
+  .card1 .featured-image {
+    height: 300px;
   }
 }
 
@@ -197,7 +286,7 @@ ul ol{
   color: var(--head-col);
 }
 
-.main ul {
+.main ul, .main1 ul {
   display: block;
   margin: 0 auto;
   min-height: 15rem;
@@ -205,7 +294,7 @@ ul ol{
   padding: 1rem !important;
 }
 
-.main a {
+.main a, .main a {
   text-decoration: none;
 }
 
@@ -314,6 +403,7 @@ ul ol{
   width: 100%;
   text-align: center;
   color: whitesmoke;
+  cursor:pointer;
   /* background-color: #43D1AF; */
   border: none;
   
@@ -354,7 +444,7 @@ ul ol{
 }
 
 @media (max-width: 390px) {
-  .main ul {
+  .main1 ul {
     padding: 15px;
   }
 }
@@ -516,9 +606,15 @@ ul ol{
   margin-bottom: 5em;
   border-radius: 13px;
 }
+.mentorshipCard:hover{
+  cursor:pointer;
+}
 
-@media(min-width: 60rem)
-{
+.mentorshipCard:hover{
+  transform: scale(1.06);
+}
+
+@media(min-width: 60rem){
   .row{
     margin-top: 0em;
   }

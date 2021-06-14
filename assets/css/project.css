@@ -22,6 +22,15 @@ html[data-theme = 'dark']
   --neu-icon: whitesmoke;
 }
 
+.projects_head{
+  font-weight:bold;
+}
+
+/*color of projects page heading*/
+.my_projects{             
+  color:#1eae98;
+}
+
 /*For Changing background color of body according to theme*/
 body{
   background: var(--bg-col) !important;
@@ -58,11 +67,6 @@ a:hover {
 .card{
   width: 100%;
 }
-
-/* .column{
-  float: left;
-  margin-bottom: 2rem;
-} */
 
 @media(min-width: 60rem)
 {
