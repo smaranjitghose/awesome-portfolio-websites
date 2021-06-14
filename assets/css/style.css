@@ -306,7 +306,6 @@ html {
   }
   a.nav-link{
     padding: 6px 21px !important;
-    transition: 0.4s;
   }
 }
 @media (min-width: 992px) {
@@ -385,11 +384,10 @@ html {
   color: #fff;
   height: 78px;
   width: 300px;
-  margin: 5px auto;
+  margin: 5px auto 3px;
   display: block;
   box-sizing: border-box;
 }
-
 
 .svg-inline--fa {
   vertical-align: -0.200em;
@@ -632,8 +630,14 @@ Rotate Transition in foote Soical Icon
   display: inline;
   font-size: 25px;
   font-weight: 200;
-  line-height: 18px;
-  border-bottom: 2px solid #26a69a;
+  line-height: 22px;
+  border-bottom: 2px solid #43D1AF;
+}
+
+.form-header
+{
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 form{
@@ -681,11 +685,12 @@ form{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	width: 100%;
-	background: #fff;
+	background: transparent;
 	margin-bottom: 4%;
-	border: 1px solid #ccc;
+  border: #000;
+	border-bottom: 2px solid #43D1AF;
 	padding: 3%;
-	color: rgb(46, 44, 44);
+	color: rgb(107, 105, 105);
   font: 95% Arial, Helvetica, sans-serif;
   border-radius: 2px;
 }
@@ -725,6 +730,19 @@ form{
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover{
 	background: #2EBC99;
+}
+
+.form-comtainer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer hr
+{
+    background-color: rgb(37, 51, 46);
+    height: 1.5px;
 }
 
 /* to make the navbar open full screen on mobile */
