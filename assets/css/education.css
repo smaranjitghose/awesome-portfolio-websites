@@ -20,7 +20,7 @@ html[data-theme = 'dark']
 
 /*color of education page heading*/
 .edu_background{
-  color:#0e49b5;
+  color:#907FA4
 }
 
 /* -----Education Section CSS----- */
@@ -135,7 +135,7 @@ html[data-theme = 'dark']
   height: 99%;
   width: 100%;
   left: 0;
-  top: 0;
+  top: 0;s
   bottom: 0;
   right: 0;
   opacity: 0;
