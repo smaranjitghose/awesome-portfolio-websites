@@ -200,9 +200,9 @@ let footer = $(`
           <div class="form-style-6">
             <h6 class="display">Get in Touch</h6>
             <form>
-              <input type="text" name="field1" placeholder="Your Name" />
-              <input type="email" name="field2" placeholder="Email Address" />
-              <textarea name="field3" placeholder="Type your Message"></textarea>
+              <input type="text" name="field1" placeholder="Your Name *" required/>
+              <input type="email" name="field2" placeholder="Email Address *"  required/>
+              <textarea name="field3" placeholder="Type your Message *" required></textarea>
               <input type="submit" value="Send" />
             </form>
           </div>
