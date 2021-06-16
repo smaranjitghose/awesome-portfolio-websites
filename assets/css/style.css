@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: "Agustina";
   src: url(../fonts/Agustina.woff);
 }
@@ -421,6 +421,76 @@ Rotate Transition in foote Soical Icon
 .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
       transition: background-color 0.3s, var(--trans-props);
 }
+
+/*
+---------------------------
+    Toogle  light /Dark
+---------------------------
+*/
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 38px;
+    position: relative;
+    width: 70px;
+}
+
+.theme-switch input {
+     display: none;
+}
+
+.slider {
+    background-color: #fff;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border: 3px solid #6600ff;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "🌙";
+    font-size: 20px;
+    height: 28px;
+    left: 1px;
+    position: absolute;
+    transition: .4s;
+    width: 28px;
+}
+
+input:checked + .slider {
+    background-color: #8c8c8c;
+    border: 3px solid black;
+}
+
+input:not(:checked) + .slider:before {
+    content: "☀️";
+    background-color: #cccccc;
+}
+
+input:checked + .slider:before {
+    transform: translateX(34px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+     border-radius: 50%;
+     top: 2px;
+}
+
 
 
 /*

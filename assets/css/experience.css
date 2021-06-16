@@ -168,12 +168,12 @@ section {height: 95vh;}
 }
 
 .card1 .card-body {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 18px;
-  color: var(--text);
-  background-color: #fff;
-  border-radius: 0 13px 13px 0;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 18px;
+    color: var(--text);
+    background-color: #fff;
+    border-radius: 0 13px 13px 0;
 }
 
 .card1 header {
@@ -285,11 +285,15 @@ ul ol{
   font-size: 12px;
 }
 
-.card-body h3{
-  font-size: 2rem;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  color: var(--head-col);
+.card-body h3 {
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #191919;
+}
+
+ol {
+    color: #191919;
 }
 
 .main ul, .main1 ul {
@@ -643,13 +647,13 @@ ul ol{
                -2px -2px 4px var(--shadow-col2);
 }
 
-.card2{
-  /* background-color: var(--bg1-color); */
-  color: var(--text);
+.card2 {
+    /* background-color: var(--bg1-color); */
+  color:  #191919;
 }
 
-.card2 .fa{
-  color: var(--text-color);
+.card2 .fa {
+  color: #191919;
 }
 
 /*

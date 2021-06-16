@@ -1,25 +1,21 @@
-html[data-theme = 'light']
-{
-  --bg-col: #fafafa;
-  --shadow1: rgba(0, 0, 0, 0.3);
-  --shadow2: rgba(0, 0, 0, 0.2);
-
-  --neu-light: white;
-  --neu-dark: #c3c3c3;
-  --neu-color: #c3c3c3;
-  --neu-icon: #c3c3c3;
+html[data-theme = 'light'] {
+    --bg-col: #fafafa;
+    --shadow1: rgba(0, 0, 0, 0.3);
+    --shadow2: rgba(0, 0, 0, 0.2);
+    --neu-light: white;
+    --neu-dark: #c3c3c3;
+    --neu-color: #c3c3c3;
+    --neu-icon: #c3c3c3;
 }
 
-html[data-theme = 'dark']
-{
-  --bg-col: #272727;
-  --shadow1: rgba(128, 122, 122, 0.233);
-  --shadow2: rgba(231, 216, 216, 0.007);
-
-  --neu-light: #282828;
-  --neu-dark: #080808;
-  --neu-color: white;
-  --neu-icon: whitesmoke;
+html[data-theme = 'dark'] {
+    --bg-col: #272727;
+    --shadow1: rgba(128, 122, 122, 0.233);
+    --shadow2: rgba(231, 216, 216, 0.007);
+    --neu-light: #282828;
+    --neu-dark: #080808;
+    --neu-color: white;
+    --neu-icon: whitesmoke;
 }
 
 .projects_head{
@@ -29,6 +25,11 @@ html[data-theme = 'dark']
 /*color of projects page heading*/
 .my_projects{             
   color:#1eae98;
+}
+
+/*color of (my) heading & paragraph*/
+h2.main-heading.mb-0.projects_head, .pre-heading {
+    color: var(--text);
 }
 
 /*For Changing background color of body according to theme*/

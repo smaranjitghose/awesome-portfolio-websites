@@ -53,6 +53,11 @@ html[data-theme = 'dark']{
     color:#0e49b5;
 }
 
+/* color of (research) heading*/
+h2.main-heading.mb-0.head-upper.research_head {
+    color: var(--text);
+}
+
 /*For Changing background color of body according to theme*/
 body{
     background: var(--bg-col) !important;

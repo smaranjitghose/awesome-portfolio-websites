@@ -13,6 +13,15 @@ let header = $(`
 
 </div>
 
+<!--toogle -->
+<div class="theme-switch-wrapper">
+       <label class="theme-switch" for="checkbox">
+    <input type="checkbox" class="toggle-checkbox" id="checkbox" />
+    <div class="slider round"></div>
+  </label>
+  </div>
+<!--toogle-end -->
+
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
   <ul class="navbar-nav ml-auto" id = "navbar-content">
    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -220,6 +229,32 @@ $(function () {
     let bodyElement = $(`body`);
     bodyElement.prepend(header);
     bodyElement.append(footer);
+
+/*JavaScript for toggle for light/dark mode*/
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+
+        if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
+        }
+    }
+
+    function switchTheme(e) {
+        if (e.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false); 
+
   
 //toggler hamburger functions
     const menuBtn = document.querySelector('.navbar-toggler');
