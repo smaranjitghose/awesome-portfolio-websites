@@ -100,6 +100,21 @@ body {
 }
 
 /* Top button */
+#btnScrollToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  margin: 8px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;  
+}
+
+
 
 /* smooth scrolling to top */
 html {

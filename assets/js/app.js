@@ -213,13 +213,18 @@ let footer = $(`
 </footer>
 `);
 
-
+let upArrow = $(`
+  <button id="btnScrollToTop" onclick="scrollToTop()"><i class="fas fa-2x fa-arrow-up"></i></button>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  })
+`)
 
 // Window Loads
 $(function () {
     let bodyElement = $(`body`);
     bodyElement.prepend(header);
     bodyElement.append(footer);
+    bodyElement.append(upArrow);
   
 //toggler hamburger functions
     const menuBtn = document.querySelector('.navbar-toggler');
@@ -277,3 +282,14 @@ $(document).ready(function(){
       }
   );
 });
+
+
+//function to scroll to top
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+  // window.scrollTo(0,0);
+}

@@ -1,5 +1,3 @@
-
-
 window.onload = function () {
   const favicon = document.getElementById("favicon");
   let pageTitle = document.title;
