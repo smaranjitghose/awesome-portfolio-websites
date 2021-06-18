@@ -125,16 +125,13 @@ git push -u origin <your_branch_name>
 
 ## The geeks🤓 behind this initiative:
 
-#### Our hard-working Project Maintainers👨‍🏫:
+### Project Maintainers👨‍🏫:
 
-<p align="center">
-<img width=20% src="https://avatars2.githubusercontent.com/u/46641503?v=4">&ensp;&ensp;&ensp;
-<img width=20% src="https://avatars2.githubusercontent.com/u/40017559?v=4">
-</p>
 
-<a href="https://github.com/smaranjitghose">
-<h5 align="center"><b>Smaranjit Ghose</b></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-<a href="https://github.com/anushbhatia"><b>Anush Bhatia</b></h5></a>
+| ![Smaranjit_Picture](https://avatars2.githubusercontent.com/u/46641503?v=4) | ![Anush_Picture](https://avatars2.githubusercontent.com/u/40017559?v=4) |
+|----------------------------------------|------------------------------------|
+| [Smaranjit Ghose](https://github.com/smaranjitghose) | [Anush Bhatia](https://github.com/smaranjitghose)
+
 
 #### Our valuable Contributors👩‍💻👨‍💻 :
 <a href="https://github.com/smaranjitghose/awesome-portfolio-websites/graphs/contributors">
