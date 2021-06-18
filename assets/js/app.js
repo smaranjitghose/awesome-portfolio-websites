@@ -20,7 +20,7 @@ let header = $(`
    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-   <li class="nav-item"><a class="nav-link" href="assets/Resume/jhon_doe.pdf" target="_blank">Resume</a></li>
+   <li class="nav-item"><a class="nav-link" href="./assets/docs/Jhon_Doe.pdf" target="_blank">Resume</a></li>
    <div class="bike">
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 0 650 400" preserveAspectRatio="xMinYMin meet"> 
      <rect/>
