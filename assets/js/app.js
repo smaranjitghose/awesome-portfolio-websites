@@ -204,10 +204,31 @@ let footer = $(`
           <div class="form-style-6">
             <h6 class="display">Get in Touch</h6>
             <form>
-              <input type="text" name="field1" placeholder="Your Name" required/>
-              <input type="email" name="field2" placeholder="Email Address"  required/>
-              <textarea name="field3" placeholder="Type your Message" required></textarea>
-              <input type="submit" value="Send" />
+            <div class="wrapper">
+            <div class="input-data">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label>Name</label>
+            </div>
+   
+         </div>
+   <div class="wrapper">
+            <div class="input-data">
+               <input type="email" required>
+               <div class="underline"></div>
+               <label>Email</label>
+            </div>
+   
+         </div>
+   <div class="wrapper">
+            <div class="input-data">
+               <textarea type="text" rows="2" cols="50" placeholder="Message" required></textarea>
+               <div class="underline"></div>
+               
+            </div>
+            <button class="button">Send</button>
+         </div>
+         
             </form>
           </div>
         </div>
