@@ -96,12 +96,15 @@ let header = $(`
 </div>
 </nav>`);
 
+
+// Footer
+
 let footer = $(`
 <footer class="footer">
   <div class="container p-4">
     <div class="row">
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0 justify-content-center">
-        <p class="tag" >"Develop a passion for learning. If you do, you will never cease to grow."
+        <p class="tag" >"Quaerendo Invenietis"
         </p>
           <div class="rounded-social-buttons tag">
             <a class="social-button twitter" href="#" target="_blank">
@@ -200,9 +203,9 @@ let footer = $(`
           <div class="form-style-6">
             <h6 class="display">Get in Touch</h6>
             <form>
-              <input type="text" name="field1" placeholder="Your Name *" required/>
-              <input type="email" name="field2" placeholder="Email Address *"  required/>
-              <textarea name="field3" placeholder="Type your Message *" required></textarea>
+              <input type="text" name="field1" placeholder="Your Name" required/>
+              <input type="email" name="field2" placeholder="Email Address"  required/>
+              <textarea name="field3" placeholder="Type your Message" required></textarea>
               <input type="submit" value="Send" />
             </form>
           </div>
