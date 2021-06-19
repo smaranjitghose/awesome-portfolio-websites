@@ -559,3 +559,80 @@ a:hover {
     margin-top: 1rem;
   }
 }
+.skills {
+
+}
+.skill-content{padding: 50px 0 80px;}
+.single-skill-content{padding-top: 100px;}
+.section-heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e5ebf2;
+}
+.single-progress-txt {
+    display: flex;
+    
+}
+.single-progress-txt h3 {
+    width: 5%;
+    font-size: medium;
+    color: #4947c2;
+    position: relative;
+    top: 6px;
+    left: 20px;
+}
+.barWrapper {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.progressText{
+  font-weight: 600;
+}
+#container {
+  margin: 20px;
+  width: 400px;
+  height: 8px;
+  position: relative;
+}
+
+.progress {
+    border-radius:3px;
+    overflow: visible;
+    background: #4947c2;
+    height:8px;
+    margin-top: 15px;
+    width: 85%;
+    margin-bottom: 37px;
+}
+.progress-bar {
+   background: #4947c2;
+    border-radius: 3px;
+   -webkit-transition: width 1.5s ease-in-out;
+   -ms-transition: width 1.5s ease-in-out;
+   -moz-transition: width 1.5s ease-in-out;
+   -o-transition: width 1.5s ease-in-out;
+   transition: width 1.5s ease-in-out;
+}
+.tooltip{
+   position:relative;
+   float:right;
+}
+.tooltip > .tooltip-inner {
+   background-color: transparent;
+   padding: 1px 5px;
+   color: #4947c2;
+   font-weight: 500;
+   font-size: 10px;
+   border-radius: 0;
+}
+.popOver + .tooltip > .tooltip-arrow {
+   border-left: 6px solid transparent;
+   border-right: 6px solid transparent;
+   border-top: 6px solid #fff;
+   bottom: -1px;
+   transform: translateX(-50%);
+   margin-left: 0;
+}
