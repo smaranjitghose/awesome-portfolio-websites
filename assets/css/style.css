@@ -687,7 +687,7 @@ form{
 	padding: 3%;
 	color: rgb(46, 44, 44);
   font: 95% Arial, Helvetica, sans-serif;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 .form-style-6 input[type="text"]:focus,
 .form-style-6 input[type="date"]:focus,
@@ -715,7 +715,7 @@ form{
 	padding: 3%;
 	background: #43D1AF;
   border-bottom: 2px solid #30C29E;
-  border-radius: 2px;
+  border-radius: 5px;
 	border-top-style: none;
 	border-right-style: none;
 	border-left-style: none;	
