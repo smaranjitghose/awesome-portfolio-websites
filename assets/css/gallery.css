@@ -188,24 +188,24 @@ div.picture-container:nth-child(8) {
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    color: #343a40;
 }
 .hero .item2 span {
     color: rgb(121, 59, 221);
 }
 .item2 h1 {
-    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 33px;
 }
 .item2 p {
     letter-spacing: 10px;
+    color: rgb(17, 16, 16);
 }
 
 @media only screen and (max-width: 950px) {
     .hero .item1 {
         background-size: 300px;
         background-position: 10% 35%;
-    }
-    .item2 h1 {
-        letter-spacing: 1px;
     }
     .item2 p {
         letter-spacing: 5px;
