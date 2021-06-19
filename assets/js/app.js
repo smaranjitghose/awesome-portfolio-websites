@@ -203,11 +203,11 @@ let footer = $(`
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
           <div class="form-style-6">
             <h6 class="display">Get in Touch</h6>
-            <form action="https://formcarry.com/s/S1peCWurw0C" method="POST" accept-charset="UTF-8">
+            <form action="https://formcarry.com/s/S2thQbCqEvW" method="POST" accept-charset="UTF-8" >
               <input type="text" name="field1" placeholder="Your Name" required/>
               <input type="email" name="field2" placeholder="Email Address"  required/>
               <textarea name="field3" placeholder="Type your Message" required></textarea>
-              <input onclick="JSalert()" type="submit" value="Send" />
+              <input type="submit" value="Send" />
             </form>
           </div>
         </div>
@@ -215,13 +215,6 @@ let footer = $(`
     </div>
   </div>
 </footer>
-<script type="text/javascript">
-        function JSalert() {
-      swal("Congrats!", "Thank you for the response. John will get in touch soon!", "success");
-        }
-</script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
 `);
 
 
