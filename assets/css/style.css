@@ -373,11 +373,12 @@ html {
 
 .footer{
   padding-top: 10px;
-  background-color:#040406;
+  font-family: "Poppins", sans-serif;
+  background-color:#121212;
 }
 
 .tag{
-  font-family:"Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font: size 20px;
   line-height: 26px;
   text-align: center;
@@ -737,6 +738,7 @@ form{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .footer hr
