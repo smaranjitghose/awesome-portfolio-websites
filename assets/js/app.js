@@ -204,9 +204,9 @@ let footer = $(`
           <div class="form-style-6">
             <h6 class="display">Get in Touch</h6>
             <form action="https://formcarry.com/s/S2thQbCqEvW" method="POST" accept-charset="UTF-8" >
-              <input type="text" name="field1" placeholder="Your Name" required/>
-              <input type="email" name="field2" placeholder="Email Address"  required/>
-              <textarea name="field3" placeholder="Type your Message" required></textarea>
+              <span><input type="text"  class="clean-slide" id="name"  name="field1" placeholder="Your Name" required/><label for="name">Name</label></span>
+              <span><input type="email"  class="clean-slide" id="e-mail" name="field2" placeholder="Email Address"  required/><label for="e-mail">E-mail</label></span>
+              <span><textarea name="field3"  class="clean-slide" id="msg" placeholder="Type your Message" required></textarea><label for="msg">Message</label></span>
               <input type="submit" value="Send" />
             </form>
           </div>

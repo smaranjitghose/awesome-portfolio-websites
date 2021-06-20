@@ -198,7 +198,81 @@ html {
 .is-active .third {
   transform: rotate(-45deg) translate(-0.167em, 0.083em);
 }
-
+span {
+  position: relative;
+  display: inline-block;
+  margin: 30px 10px;
+}
+.clean-slide {
+  position: relative;
+  display: inline-block;
+  width: 350px!important;
+  font-family: "Open Sans", sans;
+  font-weight: 400;
+  color: #377d6a;
+  background: #efefef;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  text-indent: 60px;
+  transition: all 0.3s ease-in-out;
+}
+.clean-slide::-webkit-input-placeholder {
+  color: #ffffff;
+  text-indent: 0;
+  font-weight: 300;
+}
+.clean-slide + label {
+  display: inline-block;
+  position: absolute;
+  transform: translateX(0);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 12px 13px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #848484;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+  transition: all 0.3s ease-in-out, color 0.3s ease-out;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  overflow: hidden;
+}
+.clean-slide + label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  width: 100%;
+  background: #4A47A3;
+  z-index: -1;
+  transform: translate(0);
+  transition: all 0.3s ease-in-out;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  margin-bottom: 11px !important;
+}
+.clean-slide:focus, .clean-slide:active {
+  color: #4A47A3;
+  text-indent: 0;
+  background: #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.clean-slide:focus::-webkit-input-placeholder, .clean-slide:active::-webkit-input-placeholder {
+  color: #aaa;
+}
+.clean-slide:focus + label, .clean-slide:active + label {
+  color: #fff;
+  transform: translateX(-100%);
+}
+.clean-slide:focus + label:after, .clean-slide:active + label:after {
+  transform: translate(100%);
+}
 .navbar-brand{
   font-family: Agustina;
   font-size: 30px;
@@ -208,7 +282,6 @@ html {
   color:#000000;
   background-color: #fff;
 }
-
 /*
 -------------------------------------
     SIDEBAR SVG ANIMATION
@@ -726,7 +799,6 @@ form{
 .form-style-6 input[type="button"]:hover{
 	background: rgb(74,71,163,0.8);
 }
-
 /* to make the navbar open full screen on mobile */
     @media (max-width: 768px) {
       .collapse navbar-collapse{
