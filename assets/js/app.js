@@ -213,11 +213,34 @@ let footer = $(`
 </footer>
 `);
 
+//"Scroll to top" button
 let upArrow = $(`
-  <button id="btnScrollToTop" onclick="scrollToTop()"><i class="fas fa-2x fa-arrow-up"></i></button>
+  <button id="btnScrollToTop" onclick="scrollToTop()"><i class="fas fa-2x fa-angle-up"></i></button>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
   })
 `)
+
+//function for the "Scroll To Top" button to detect the footer
+$(document).ready(function(){
+  $(window).scroll(function() {
+    if($(window).scrollTop() + $(window).height() > $(document).height() - 379) {
+      $("#btnScrollToTop").css("background-color","#43D1Af");
+    }
+    else {
+      $("#btnScrollToTop").css("background-color","#6C63FF");
+    }
+  })
+});
+
+//function to scroll to top
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+  // window.scrollTo(0,0);
+}
 
 // Window Loads
 $(function () {
@@ -282,14 +305,3 @@ $(document).ready(function(){
       }
   );
 });
-
-
-//function to scroll to top
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth"
-  });
-  // window.scrollTo(0,0);
-}
