@@ -48,8 +48,7 @@ html[data-theme="dark"] {
   --col-bd-radius:black;
   --col-bd-icon:transparent;
   --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7) , -5px -5px 10px rgba(255,255,255,0.1);
-  --col-box-shadow-hover:inset rgba(                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     255, 255, 255, 1) 2px 2px 4px, 
- inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
+  --col-box-shadow-hover:inset rgba(255, 255, 255, 1) 2px 2px 4px, inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
   --col-icon-twitter: #1da1f2;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
@@ -81,13 +80,13 @@ html[data-theme="dark"] {
 ::-webkit-scrollbar-thumb {
     border-radius: 2px;
     max-height: 10px;
-    -webkit-box-shadow: inset 0 0 6px #4A47A3; 
-    background: #4A47A3;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: #555;
     transition: 0.3s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(74,71,163,0.8); 
+  background: #666; 
 }
 
 body {
@@ -289,7 +288,7 @@ html {
     margin-right: auto;
     bottom: 0;
     width: 32%;
-    border-bottom: 3px solid #7E0CF5;
+    border-bottom: 3px solid #22B6A7;
   }
 
 
@@ -633,7 +632,7 @@ Rotate Transition in foote Soical Icon
   font-size: 25px;
   font-weight: 200;
   line-height: 18px;
-  border-bottom: 2.5px solid #4A47A3;
+  border-bottom: 2px solid #26a69a;
 }
 
 form{
@@ -713,8 +712,8 @@ form{
 	-moz-box-sizing: border-box;
 	width: 100%;
 	padding: 3%;
-	background: #4A47A3;
-  border-bottom: 2px solid transparent;
+	background: #43D1AF;
+  border-bottom: 2px solid #30C29E;
   border-radius: 2px;
 	border-top-style: none;
 	border-right-style: none;
@@ -724,7 +723,7 @@ form{
 }
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover{
-	background: rgb(74,71,163,0.8);
+	background: #2EBC99;
 }
 
 /* to make the navbar open full screen on mobile */
