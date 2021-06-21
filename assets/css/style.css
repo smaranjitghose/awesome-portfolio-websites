@@ -81,13 +81,13 @@ html[data-theme="dark"] {
 ::-webkit-scrollbar-thumb {
     border-radius: 2px;
     max-height: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-    background: #555;
+    -webkit-box-shadow: inset 0 0 6px #4A47A3; 
+    background: #4A47A3;
     transition: 0.3s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #666; 
+  background: rgb(74,71,163,0.8); 
 }
 
 body {
@@ -289,7 +289,7 @@ html {
     margin-right: auto;
     bottom: 0;
     width: 32%;
-    border-bottom: 3px solid #22B6A7;
+    border-bottom: 3px solid #7E0CF5;
   }
 
 
@@ -639,6 +639,7 @@ Rotate Transition in foote Soical Icon
 {
   text-align: center;
   margin-bottom: 4rem;
+
 }
 
 form{
@@ -720,8 +721,8 @@ form{
 	width: 100%;
   margin-top: 2rem;
 	padding: 3%;
-	background: #43D1AF;
-  border-bottom: 2px solid #30C29E;
+	background: #4A47A3;
+  border-bottom: 2px solid transparent;
   border-radius: 2px;
 	border-top-style: none;
 	border-right-style: none;
@@ -731,7 +732,7 @@ form{
 }
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover{
-	background: #2EBC99;
+	background: rgb(74,71,163,0.8);
 }
 
 .form-comtainer
