@@ -244,7 +244,7 @@ let footer = $(`
 
     <p style="color:white;"> 	&copy; All Rights Reserved</p>
     </div>
-    </div>
+    
 </footer>
 `);
 

@@ -385,7 +385,6 @@ html {
   text-align: center;
   color: #fff;
   height: 78px;
-  width: 300px;
   margin: 5px auto 0px;
   display: block;
   box-sizing: border-box;
@@ -719,6 +718,7 @@ form{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	width: 100%;
+  margin-top: 2rem;
 	padding: 3%;
 	background: #43D1AF;
   border-bottom: 2px solid #30C29E;
