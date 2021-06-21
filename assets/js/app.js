@@ -105,8 +105,9 @@ let footer = $(`
   <div class="container p-4">
     <div class="row">
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0 justify-content-center">
-        <p class="tag" >"Quaerendo Invenietis"
+        <p class="tag1" >"Quaerendoryjxhnmgukn,jolmnutr45t6yuj Invenietis"
         </p>
+        <div class="icons">
           <div class="rounded-social-buttons tag">
             <a class="social-button twitter" href="#" target="_blank">
             <!-- SVG code for twitter icon -->
@@ -197,6 +198,7 @@ let footer = $(`
                                             c6,5.1,10.8,11.5,13.8,18.8c2.9,7.4,7.7,24.1,41.5,17.8" />
             </svg>
             </a>
+          </div>
           </div>
       </div>
 

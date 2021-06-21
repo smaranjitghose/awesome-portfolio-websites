@@ -377,17 +377,32 @@ html {
   background-color:#040406;
 }
 
-.tag{
+.tag1{
   font-family:"Open Sans", sans-serif;
   font: size 20px;
   line-height: 26px;
-  text-align: center;
+  text-align: justify;
   color: #fff;
   height: 78px;
-  width: 300px;
-  margin: 25px auto;
+  width: 380px;
+  margin-top: 25px;
   display: block;
+  margin-left:-50px;
+  padding:3px;
+  
+  overflow-wrap: break-word;
+ 
   box-sizing: border-box;
+}
+.icons{
+ 
+  height: 78px;
+  width: 300px;
+  margin-top: 25px;
+  margin-left:-50px;
+  display: block; 
+   box-sizing: border-box;
+   
 }
 
 
@@ -634,11 +649,19 @@ Rotate Transition in foote Soical Icon
   font-weight: 200;
   line-height: 18px;
   border-bottom: 2.5px solid #4A47A3;
+  /* border:2px solid wheat; */
+  position:relative;
+  right:-120px;
 }
 
 form{
   margin: 15px auto;
   color: #000;
+  /* border:2px solid wheat; */
+  position:relative;
+  display:inline-block;
+  right:-120px;
+
 }
 
 /*
@@ -787,4 +810,32 @@ form{
       text-align: center;
       transform: translateY(25%);
    }
+  }
+  @media screen and (max-device-width:1024px) {
+  .tag1{
+    margin:auto;
+    flex-wrap:wrap;
+    width:200px;
+  }
+  .icons
+  {
+    margin:auto;
+  }
+  .display{
+    border-bottom: 2.5px solid #4A47A3;
+    /* border:2px solid white; */
+    position:relative;
+    left:100px;
+    
+   
+  }
+  form{
+    margin-right:50px;
+    /* border:2px solid white; */
+    position:relative;
+    left:20px;
+    /* margin:auto; */
+    
+  }
+
   }
