@@ -25,17 +25,19 @@ html[data-theme = 'dark']
 
 /* -----Education Section CSS----- */
 
-@media (max-width:766px) {
+@media (max-width:767px) {
   .dropdown1{
     position: absolute;
     text-align: center;
     /* padding-right: 1.2rem; */
     z-index: 3;
+    padding-left: 3.5%;
   }
   .dropdown2{
     position:absolute;
     text-align: center;
-    padding-top: 7rem;
+    padding-top: 10rem;
+    padding-left: 3.5%;
     z-index: 3;
   }
   .godown{
