@@ -377,6 +377,7 @@ html {
   background-color:#121212;
 }
 
+
 .tag{
   font-family: "Poppins", sans-serif;
   font: size 20px;
@@ -385,7 +386,7 @@ html {
   color: #fff;
   height: 78px;
   width: 300px;
-  margin: 5px auto 3px;
+  margin: 5px auto 0px;
   display: block;
   box-sizing: border-box;
 }
@@ -747,6 +748,8 @@ form{
     height: 1.5px;
 }
 
+
+
 /* to make the navbar open full screen on mobile */
     @media (max-width: 768px) {
       .collapse navbar-collapse{
@@ -807,4 +810,11 @@ form{
       text-align: center;
       transform: translateY(25%);
    }
+
+   .footer{
+     margin-top: 6rem;
+
+   }
+
+   
   }
