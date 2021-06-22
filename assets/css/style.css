@@ -306,6 +306,7 @@ html {
   }
   a.nav-link{
     padding: 6px 21px !important;
+    transition: 0.4s;
   }
 }
 @media (min-width: 992px) {
@@ -373,29 +374,18 @@ html {
 
 .footer{
   padding-top: 10px;
-  font-family: "Poppins", sans-serif;
-  background-color:#121212;
+  background-color:#040406;
 }
 
-<<<<<<< HEAD
 .tag1{
   font-family:"Open Sans", sans-serif;
-=======
-
-.tag{
-  font-family: "Poppins", sans-serif;
->>>>>>> f16ce2f2466ece18f2c52bed883fb862cd57603b
   font: size 20px;
   line-height: 26px;
   text-align: justify;
   color: #fff;
   height: 78px;
-<<<<<<< HEAD
   width: 380px;
   margin-top: 25px;
-=======
-  margin: 5px auto 0px;
->>>>>>> f16ce2f2466ece18f2c52bed883fb862cd57603b
   display: block;
   margin-left:-50px;
   padding:3px;
@@ -414,6 +404,7 @@ html {
    box-sizing: border-box;
    
 }
+
 
 .svg-inline--fa {
   vertical-align: -0.200em;
@@ -656,23 +647,11 @@ Rotate Transition in foote Soical Icon
   display: inline;
   font-size: 25px;
   font-weight: 200;
-<<<<<<< HEAD
   line-height: 18px;
   border-bottom: 2.5px solid #4A47A3;
   /* border:2px solid wheat; */
   position:relative;
   right:-120px;
-=======
-  line-height: 22px;
-  border-bottom: 2px solid #43D1AF;
-}
-
-.form-header
-{
-  text-align: center;
-  margin-bottom: 4rem;
-
->>>>>>> f16ce2f2466ece18f2c52bed883fb862cd57603b
 }
 
 form{
@@ -725,12 +704,11 @@ form{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	width: 100%;
-	background: transparent;
+	background: #fff;
 	margin-bottom: 4%;
-  border: #000;
-	border-bottom: 2px solid #43D1AF;
+	border: 1px solid #ccc;
 	padding: 3%;
-	color: rgb(107, 105, 105);
+	color: rgb(46, 44, 44);
   font: 95% Arial, Helvetica, sans-serif;
   border-radius: 2px;
 }
@@ -757,7 +735,6 @@ form{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	width: 100%;
-  margin-top: 2rem;
 	padding: 3%;
 	background: #4A47A3;
   border-bottom: 2px solid transparent;
@@ -772,22 +749,6 @@ form{
 .form-style-6 input[type="button"]:hover{
 	background: rgb(74,71,163,0.8);
 }
-
-.form-comtainer
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Poppins", sans-serif;
-}
-
-.footer hr
-{
-    background-color: rgb(37, 51, 46);
-    height: 1.5px;
-}
-
-
 
 /* to make the navbar open full screen on mobile */
     @media (max-width: 768px) {
@@ -849,16 +810,9 @@ form{
       text-align: center;
       transform: translateY(25%);
    }
-
-   .footer{
-     margin-top: 6rem;
-
-   }
-
-   
   }
   /*footer*/
-  @media  screen and (device-width:1024px),screen and(device-width:1366px;) {
+  @media  screen and (device-width:1024px),screen and(device-width:136px;) {
   .tag1{ margin-left:10px;flex-wrap:wrap;width:200px;}
   .icons{margin-left:10px;}
   .display{border-bottom: 2.5px solid #4A47A3;margin-right:10px;}
