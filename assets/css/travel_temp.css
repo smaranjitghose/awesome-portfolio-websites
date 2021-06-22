@@ -402,9 +402,8 @@ body {
     width:50%;
     background: url('../images/travel/hero.svg');
     background-repeat: no-repeat;
-    background-position: 20% 35%;
+    background-position: 60% 35%;
     background-size: 350px;
-    background-attachment: fixed;
 }
 .hero .item2 {
     background-color: white; /* rgb(245, 225, 245) */
@@ -472,7 +471,6 @@ body {
         background-size: 300px;
         height: 40%;
         width: 100%;
-        background-attachment: unset;
     }
     .hero .item2 {
         width: 100%;
