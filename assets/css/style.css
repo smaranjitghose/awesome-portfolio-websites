@@ -296,9 +296,10 @@ html {
   .nav-link:hover{
     border-radius: 40px;
     background: #ffffff;
+    transition: all 0.2s ease-in-out;
     box-shadow: 0px 0px 10px 0.5px rgba(0,0,0,0.2);
     width: 100%;
-    
+    font-weight: bold;
   }
   li.nav-item{
 
