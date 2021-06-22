@@ -295,9 +295,10 @@ html {
   .nav-link:hover{
     border-radius: 40px;
     background: #ffffff;
+    transition: all 0.2s ease-in-out;
     box-shadow: 0px 0px 10px 0.5px rgba(0,0,0,0.2);
     width: 100%;
-    
+    font-weight: bold;
   }
   li.nav-item{
 
@@ -305,7 +306,6 @@ html {
   }
   a.nav-link{
     padding: 6px 21px !important;
-    transition: 0.4s;
   }
 }
 @media (min-width: 992px) {
@@ -373,22 +373,22 @@ html {
 
 .footer{
   padding-top: 10px;
-  background-color:#040406;
+  font-family: "Poppins", sans-serif;
+  background-color:#121212;
 }
 
+
 .tag{
-  font-family:"Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font: size 20px;
   line-height: 26px;
   text-align: center;
   color: #fff;
   height: 78px;
-  width: 300px;
-  margin: 25px auto;
+  margin: 5px auto 0px;
   display: block;
   box-sizing: border-box;
 }
-
 
 .svg-inline--fa {
   vertical-align: -0.200em;
@@ -631,8 +631,14 @@ Rotate Transition in foote Soical Icon
   display: inline;
   font-size: 25px;
   font-weight: 200;
-  line-height: 18px;
-  border-bottom: 2px solid #26a69a;
+  line-height: 22px;
+  border-bottom: 2px solid #43D1AF;
+}
+
+.form-header
+{
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 form{
@@ -680,11 +686,12 @@ form{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	width: 100%;
-	background: #fff;
+	background: transparent;
 	margin-bottom: 4%;
-	border: 1px solid #ccc;
+  border: #000;
+	border-bottom: 2px solid #43D1AF;
 	padding: 3%;
-	color: rgb(46, 44, 44);
+	color: rgb(107, 105, 105);
   font: 95% Arial, Helvetica, sans-serif;
   border-radius: 2px;
 }
@@ -711,6 +718,7 @@ form{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	width: 100%;
+  margin-top: 2rem;
 	padding: 3%;
 	background: #43D1AF;
   border-bottom: 2px solid #30C29E;
@@ -725,6 +733,22 @@ form{
 .form-style-6 input[type="button"]:hover{
 	background: #2EBC99;
 }
+
+.form-comtainer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer hr
+{
+    background-color: rgb(37, 51, 46);
+    height: 1.5px;
+}
+
+
 
 /* to make the navbar open full screen on mobile */
     @media (max-width: 768px) {
@@ -786,4 +810,11 @@ form{
       text-align: center;
       transform: translateY(25%);
    }
+
+   .footer{
+     margin-top: 6rem;
+
+   }
+
+   
   }
