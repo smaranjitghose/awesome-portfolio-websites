@@ -124,27 +124,17 @@ let footer = $(`
 
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0 form-comtainer">
           <div class="form-style-6">
-<<<<<<< HEAD
-            <h6 class="display">Get in Touch</h6>
-            <form action="https://formcarry.com/s/S2thQbCqEvW" method="POST" accept-charset="UTF-8" >
-              <span><input type="text"  class="gate" id="name"  name="field1" placeholder="Your Name" required/><label for="name">Name</label></span>
-              <span><input type="email"  class="gate" id="e-mail" name="field2" placeholder="Email Address"  required/><label for="e-mail">E-mail</label></span>
-              <span><textarea name="field3"  class="gate" id="msg" placeholder="Type your Message" required></textarea><label for="msg">Message</label></span>
-              <input type="submit" value="Send" />
-            </form>
-=======
              <div class="form-header">
                 <h6 class="display">Get in Touch</h6>
               </div>
                 <form>
                   <form action="https://formcarry.com/s/S2thQbCqEvW" method="POST" accept-charset="UTF-8" >
-                  <input type="text" name="field1" placeholder="Your Name" required/>
-                  <input type="email" name="field2" placeholder="Email Address"  required/>
-                  <textarea name="field3" placeholder="Type your Message" required></textarea>
+                  <span><input type="text"  class="gate" id="name"  name="field1" placeholder="Your Name" required/><label for="name">Name</label></span>
+                  <span><input type="email"  class="gate" id="e-mail" name="field2" placeholder="Email Address"  required/><label for="e-mail">E-mail</label></span>
+                  <span><textarea name="field3"  class="gate" id="msg" placeholder="Type your Message" required></textarea><label for="msg">Message</label></span>
                   <input type="submit" value="Send" />
                 </form>
              </div>
->>>>>>> f16ce2f2466ece18f2c52bed883fb862cd57603b
           </div>
         </div>
     </div>

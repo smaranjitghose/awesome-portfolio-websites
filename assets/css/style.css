@@ -212,7 +212,7 @@ span {
   transition: all 0.3s ease-in-out;
 }
 .gate::-webkit-input-placeholder {
-  color: #efefef;
+  color: #2929299a;
   text-indent: 0;
   font-weight: 300;
 }
