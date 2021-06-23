@@ -151,44 +151,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* preloader */
 
-.svg-container {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.loader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999999;
-}
-
-
-
-.disappear {
-  animation: vanish 1s forwards;
-}
-
-@keyframes vanish {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-/*starting part of every page*/
-
-
-/* 
 ------------------------------------
      HAMBURGER ANIMATION
 ------------------------------------
