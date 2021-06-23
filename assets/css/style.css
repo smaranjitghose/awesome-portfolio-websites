@@ -98,7 +98,53 @@ body {
   background-color: var(--bg);
 }
 
-/* Top button */
+/* Scroll to Top button */
+#btnScrollToTop {
+	width: 50px;
+	height: 50px;
+  background-color: #6C63FF;
+  margin: 8px;
+  border: none;
+	border-radius: 50%;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;  
+	position: fixed;
+  outline: none;
+  bottom: 10px;
+  right: 10px;
+	animation: up 1.5s infinite;
+	-webkit-animation: up 1.5s infinite;
+}
+
+/*
+---------------------------------------
+   SCROLL TO TOP BUTTON MICROANIMATION
+---------------------------------------
+*/
+
+@keyframes up {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(-15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes up {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(-15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
 
 /* smooth scrolling to top */
 html {
@@ -370,7 +416,7 @@ html {
     FOOTER SECTION
 ------------------------
 */
-
+/* Also have a look at the scroll to top button if changing footer's height (below upArrow in app.js) */
 .footer{
   padding-top: 10px;
   font-family: "Poppins", sans-serif;
@@ -767,6 +813,9 @@ form{
         text-align: center;
         transform: translateY(25%);
      }
+      #btnScrollToTop {
+        display: none;
+     }      
    }
 
    
@@ -782,6 +831,9 @@ form{
       text-align: center;
       transform: translateY(25%);
    }
+    #btnScrollToTop {
+          display: none;
+   }
   }
 
    @media (max-width:  375px) {
@@ -795,6 +847,9 @@ form{
       height: 120vh;
       text-align: center;
       transform: translateY(25%);
+   }
+    #btnScrollToTop {
+          display: none;
    }
   }
 
@@ -815,6 +870,7 @@ form{
      margin-top: 6rem;
 
    }
-
-   
+    #btnScrollToTop {
+          display: none;
+   }
   }
