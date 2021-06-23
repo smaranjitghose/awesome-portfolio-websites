@@ -245,13 +245,51 @@ let footer = $(`
 </footer>
 `);
 
+//"Scroll to top" button
+let upArrow = $(`
+  <button id="btnScrollToTop" onclick="scrollToTop()"><i class="fas fa-2x fa-angle-up"></i></button>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  })
+`)
 
+//function for the "Scroll To Top" button to detect the footer
+$(document).ready(function(){
+  $(window).scroll(function() {
+    console.log($(window).scrollTop());
+    //The button will be hidden until we scroll more than the window's height
+    if ($(window).scrollTop() < $(window).height()) {
+      $("#btnScrollToTop").css("visibility","hidden");
+    }
+    else {
+      $("#btnScrollToTop").css("visibility","visible");
+      //The button will change it's color when it hits the footer
+      if($(window).scrollTop() + $(window).height() > $(document).height() - 838) {
+        // 838 should be changed if footer's height is changed so that the button changes it's color exactly when it hits the footer (preferably 14 less than the computer height of the footer)
+        $("#btnScrollToTop").css("background-color","#43D1Af");
+      }
+      else {
+        $("#btnScrollToTop").css("background-color","#6C63FF");
+      }
+    }
+  })
+});
+
+//function to scroll to top
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+}
 
 // Window Loads
 $(function() {
     let bodyElement = $(`body`);
     bodyElement.prepend(header);
     bodyElement.append(footer);
+    bodyElement.append(upArrow);
+    $("#btnScrollToTop").css("visibility","hidden");
 
     //toggler hamburger functions
     const menuBtn = document.querySelector('.navbar-toggler');
