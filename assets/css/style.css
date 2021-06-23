@@ -115,17 +115,6 @@ body {
   right: 10px;
 	animation: up 1.5s infinite;
 	-webkit-animation: up 1.5s infinite;
-	&::before {
-		content: '';
-		position: absolute;
-		top: 15px;
-		left: 18px;
-		width: 18px;
-		height: 18px;
-		border-left: 2px solid #333;
-  	border-bottom: 2px solid #333;
-		transform: rotate(-45deg);
-	}
 }
 
 /*
@@ -785,7 +774,7 @@ form{
 	background: #2EBC99;
 }
 
-/* to make the navbar open full screen on mobile */
+/* to make the navbar open full screen and to hide the "Scroll to top" button on mobile  */
     @media (max-width: 768px) {
       .collapse navbar-collapse{
         display: flex;
@@ -802,6 +791,10 @@ form{
         text-align: center;
         transform: translateY(25%);
      }
+
+      #btnScrollToTop {
+       display: none;
+     }
    }
 
    
@@ -817,6 +810,9 @@ form{
       text-align: center;
       transform: translateY(25%);
    }
+    #btnScrollToTop {
+      display: none;
+   }
   }
 
    @media (max-width:  375px) {
@@ -831,6 +827,9 @@ form{
       text-align: center;
       transform: translateY(25%);
    }
+    #btnScrollToTop {
+       display: none;
+   }
   }
 
   @media (max-width:  320px) {
@@ -844,5 +843,8 @@ form{
       height: 130vh;
       text-align: center;
       transform: translateY(25%);
+   }
+    #btnScrollToTop {
+       display: none;
    }
   }

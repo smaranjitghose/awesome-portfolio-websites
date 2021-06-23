@@ -223,11 +223,19 @@ let upArrow = $(`
 //function for the "Scroll To Top" button to detect the footer
 $(document).ready(function(){
   $(window).scroll(function() {
-    if($(window).scrollTop() + $(window).height() > $(document).height() - 379) {
-      $("#btnScrollToTop").css("background-color","#43D1Af");
+    //The button will be hidden until we scroll more than the window's height
+    if ($(window).scrollTop() < $(window).height()) {
+      $("#btnScrollToTop").css("visibility","hidden");
     }
     else {
-      $("#btnScrollToTop").css("background-color","#6C63FF");
+      $("#btnScrollToTop").css("visibility","visible");
+      //The button will change it's color when it hits the footer
+      if($(window).scrollTop() + $(window).height() > $(document).height() - 379) {
+        $("#btnScrollToTop").css("background-color","#43D1Af");
+      }
+      else {
+        $("#btnScrollToTop").css("background-color","#6C63FF");
+      }
     }
   })
 });
@@ -239,6 +247,7 @@ const scrollToTop = () => {
     left: 0,
     behavior: "smooth"
   });
+  // $("#btnScrollToTop").hide();
   // window.scrollTo(0,0);
 }
 
@@ -248,6 +257,7 @@ $(function () {
     bodyElement.prepend(header);
     bodyElement.append(footer);
     bodyElement.append(upArrow);
+    $("#btnScrollToTop").css("visibility","hidden");
   
 //toggler hamburger functions
     const menuBtn = document.querySelector('.navbar-toggler');
