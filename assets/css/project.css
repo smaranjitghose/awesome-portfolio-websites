@@ -1,3 +1,4 @@
+
 html[data-theme = 'light']
 {
   --bg-col: #fafafa;
@@ -27,7 +28,7 @@ html[data-theme = 'dark']
 }
 
 /*color of projects page heading*/
-.my_projects{             
+.my_projects{
   color:#0e49b5;
 }
 
@@ -480,7 +481,7 @@ ul{
 	.skill-card .data {
 		transform: translateY(calc(90px + 4em));
     }
-    
+
     .social-icon svg {
       margin-top: 20px;
     }

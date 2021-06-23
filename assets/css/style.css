@@ -13,9 +13,9 @@ html[data-theme="light"] {
   --text-color: #6c757d;
   --col-icon: black;
   --col-bd-radius:rgb(2, 2, 2);
-  --col-box-shadow:#000000 2px 2px 4px, 
+  --col-box-shadow:#000000 2px 2px 4px,
   #4D4D4D -2px -2px 4px;
- --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
+ --col-box-shadow-hover:inset #8a7373 2px 2px 4px,
  inset #4D4D4D -2px -2px 4px;
   --col-bd-icon:transparent;
   --bg-icon: #fff;
@@ -24,7 +24,7 @@ html[data-theme="light"] {
   --col-icon-linkedin: #0e76a8;
   --col-icon-medium: #00ab6c;
   --col-icon-kaggle: #41aff3;
-  --col-icon-github:#24292e;  
+  --col-icon-github:#24292e;
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail:rgb(209, 82, 82);
   --col-icon-google-scholar:#3cba54;
@@ -70,23 +70,23 @@ html[data-theme="dark"] {
 ::-webkit-scrollbar {
     width: 16px;
 }
- 
+
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     border-radius: 2px;
     background: #f1f1f1;
 }
- 
+
 ::-webkit-scrollbar-thumb {
     border-radius: 2px;
     max-height: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
     background: #555;
     transition: 0.3s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #666; 
+  background: #666;
 }
 
 body {
@@ -142,7 +142,7 @@ html {
 /*starting part of every page*/
 
 
-/* 
+/*
 ------------------------------------
      HAMBURGER ANIMATION
 ------------------------------------
@@ -167,7 +167,7 @@ html {
   float: left;
   border-radius: 2px;
   transition: all .35s ease-in-out;
-  
+
 }
 
 .first {
@@ -279,7 +279,7 @@ html {
     text-align: center;
     border-radius: 15px;
   }
-  
+
   .current-link:after {
     content: "";
     position: absolute;
@@ -323,7 +323,7 @@ html {
   width: 60px;
   height: 60px;
   cursor: pointer;
-  transition: all .2s ease-in-out; 
+  transition: all .2s ease-in-out;
   border-color: white;
   border: none;
   outline: none;
@@ -375,7 +375,10 @@ html {
   padding-top: 10px;
   font-family: "Poppins", sans-serif;
   background-color:#121212;
+
+
 }
+
 
 
 .tag{
@@ -388,10 +391,115 @@ html {
   margin: 5px auto 0px;
   display: block;
   box-sizing: border-box;
+
+}
+
+.glow-on-hover {
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 160px;
+    height: 35px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 5px;
+}
+
+
+
+.glow-on-hover:active {
+    color: #000
+
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+    cursor: pointer;
+
+
+}
+
+.glow-on-hover span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+  .glow-on-hover span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+
+
+
+}
+
+.glow-on-hover:hover span {
+    padding-right: 25px;
+}
+
+.glow-on-hover:hover span:after {
+
+      opacity: 1;
+      right: 0;
+
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 
 .svg-inline--fa {
   vertical-align: -0.200em;
+
+
 }
 
 .rounded-social-buttons .social-button {
@@ -411,7 +519,9 @@ html {
   transition: all 0.5s ease;
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
+
 }
+
 
 /********
 Rotate Transition in foote Soical Icon
@@ -430,12 +540,12 @@ Rotate Transition in foote Soical Icon
 .twitter:hover #wing1{
       transform-origin:center;
       animation: flap 0.4s ease-out infinite alternate;
-   }	
-   
+   }
+
 .twitter:hover #wing2{
     transform-origin:center;
     animation: flap 0.4s ease-in infinite alternate;
- }		
+ }
 
 @keyframes flap{
      50%{
@@ -448,12 +558,12 @@ Rotate Transition in foote Soical Icon
    LINKEDIN MICROANIMATION
 -----------------------------
 */
- 
+
   .linkedin:hover .linkedin-icon-footer>rect{
     animation: rect-up 0.3s linear infinite;
   }
-  
-  
+
+
   @keyframes rect-up {
     50% {
         y:10px;
@@ -461,15 +571,15 @@ Rotate Transition in foote Soical Icon
      }
     0%{
         y:13px;
-        height:8px;  
+        height:8px;
         }
-    
+
   }
-  
+
   .linkedin:hover .linkedin-icon-footer> circle{
     animation: bounce 0.4s linear infinite;
   }
-  
+
   @keyframes bounce {
     75% {
         cy: 8px;
@@ -480,15 +590,15 @@ Rotate Transition in foote Soical Icon
     0%{
         cy:4px
         }
-    
-  }  
+
+  }
 
 /*
 -----------------------------
    INSTAGRAM MICROANIMATION
 -----------------------------
-*/   
-  
+*/
+
    .st0 {
     fill:none;
     stroke:#EF4649;
@@ -496,11 +606,11 @@ Rotate Transition in foote Soical Icon
     stroke-linecap:round;
     stroke-miterlimit:10;
   }
-  
+
   .instagram-icon-footer:hover #littleCircle {
     stroke-dasharray:150;
   }
-  
+
   .instagram #shutter{
     display:none;
   }
@@ -511,13 +621,13 @@ Rotate Transition in foote Soical Icon
   .instagram-icon-footer:hover #lens{
     fill:#EF4649;
     animation: lens 1.5s linear infinite;
-  
+
   }
-  
+
   @keyframes shutter {
     0%, 50% {
             stroke-dashoffset: 150;
-            
+
         }
     75% {
             fill:#EF4649;
@@ -525,7 +635,7 @@ Rotate Transition in foote Soical Icon
             stroke-width:11;
         }
   }
-  
+
   @keyframes lens {
     0%, 75% {
             opacity: 0;
@@ -534,7 +644,7 @@ Rotate Transition in foote Soical Icon
             opacity: 1;
         }
   }
-  
+
 
 /*
 -----------------------------
@@ -620,8 +730,8 @@ Rotate Transition in foote Soical Icon
   background: white;
 }
 
-/************ 
-  Contact Form In Footer 
+/************
+  Contact Form In Footer
 *************/
 .display{
   height: auto;
@@ -648,7 +758,7 @@ form{
 
 /*
 -------------------
-   Footer Form 
+   Footer Form
 --------------------
 */
 .form-style-6{
@@ -675,7 +785,7 @@ form{
 .form-style-6 input[type="time"],
 .form-style-6 input[type="url"],
 .form-style-6 textarea,
-.form-style-6 select 
+.form-style-6 select
 {
 	-webkit-transition: all 0.30s ease-in-out;
 	-moz-transition: all 0.30s ease-in-out;
@@ -725,7 +835,7 @@ form{
   border-radius: 2px;
 	border-top-style: none;
 	border-right-style: none;
-	border-left-style: none;	
+	border-left-style: none;
   color: #fff;
   font-size: 20px;
 }
@@ -755,7 +865,7 @@ form{
       .collapse navbar-collapse{
         display: flex;
         justify-content: center;
-      } 
+      }
 
       .footer{
         padding-top: 10px;
@@ -769,12 +879,12 @@ form{
      }
    }
 
-   
+
    @media (max-width:  414px) {
     .collapse navbar-collapse{
       display: flex;
       justify-content: center;
-    } 
+    }
 
     #navbar-content {
       margin-top:-180px;
@@ -788,7 +898,7 @@ form{
     .collapse navbar-collapse{
       display: flex;
       justify-content: center;
-    } 
+    }
 
     #navbar-content {
       margin-top:-180px;
@@ -802,7 +912,7 @@ form{
     .collapse navbar-collapse{
       display: flex;
       justify-content: center;
-    } 
+    }
 
     #navbar-content {
       margin-top:-140px;
@@ -816,5 +926,5 @@ form{
 
    }
 
-   
+
   }
