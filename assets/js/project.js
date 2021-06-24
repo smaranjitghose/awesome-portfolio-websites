@@ -109,32 +109,69 @@ const projects = [
 const showCards = () => {
   let output = "";
   projects.forEach(
-    ({ title, cardImage, tags, Previewlink, Githublink }) => {
+    ({ title, cardImage, tags, description, Previewlink, Githublink }) => {
       (output += ` 
-    <div class="gaap" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500" data-aos-easing="ease-out">      
-    <div class="column skill-card card">
-      <div class="wrapper" style="background: url(${cardImage}) center / cover no-repeat;">
-        <div class="header">
-        </div>
-        <div class="data">
+    <div class="gaap" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500" data-aos-easing="ease-out">
+      <div class="column card-wrap">    
+        <div class="skill-card card" style="">
+          <div class="wrapper" style="background-image: url(${cardImage})">
+          </div>
+
           <div class="content">
-          <div class="title-div">
-            <h1 class="title"><a href="#">${title}</a></h1>
-            </div>
-        <ul class="menu-content"><br>
+            <div class="title-div">
+              <h1 class="title"><a href="#">${title}</a></h1>
+            </div> 
+            <ul class="menu-content">
               <li><a href="${Previewlink}" class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 30 28" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></a></li>
               <li><a href="${Githublink}" class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 30 28" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
     </div>`)
     }
   );
   projectcards.innerHTML = output;
+    
+const wrapper = document.querySelectorAll(".card-wrap");
+
+wrapper.forEach(element => {
+  let state = {
+    mouseX: 0,
+    mouseY: 0,
+    height: element.clientHeight,
+    width: element.clientWidth
+  };
+
+  element.addEventListener("mousemove", ele => {
+    const card = element.querySelector(".card");
+    const cardBg = card.querySelector(".wrapper");
+    state.mouseX = ele.pageX - element.offsetLeft - state.width / 2;
+    state.mouseY = ele.pageY - element.offsetTop - state.height / 2;
+
+    // parallax angle in card
+    const angleX = (state.mouseX / state.width) * 30;
+    const angleY = (state.mouseY / state.height) * -30;
+    card.style.transform = `rotateY(${angleX}deg) rotateX(${angleY}deg)`;
+
+    // parallax position of background in card
+    const posX = (state.mouseX / state.width) * -40;
+    const posY = (state.mouseY / state.height) * -40;
+    cardBg.style.transform = `translateX(${posX}px) translateY(${posY}px)`;
+  });
+
+  element.addEventListener("mouseout", () => {
+    const card = element.querySelector(".card");
+    const cardBg = card.querySelector(".wrapper");
+    card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    cardBg.style.transform = `translateX(0px) translateY(0px)`;
+  });
+});
+
 };
 document.addEventListener("DOMContentLoaded", showCards);
+
+
 
 function myFunction() {
   // Declare variables
