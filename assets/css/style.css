@@ -791,8 +791,8 @@ form{
 
   /* box shadow for profile picture */
   .rounded-circle{
-    box-shadow: 10px 10px 5px #ccc;
-      -moz-box-shadow: 10px 10px 5px #ccc;
-      -webkit-box-shadow: 10px 10px 5px #ccc;
-      -khtml-box-shadow: 10px 10px 5px #ccc;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+      -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   }
