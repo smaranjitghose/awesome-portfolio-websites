@@ -112,9 +112,11 @@ git push -u origin <your_branch_name>
 
 ## Project Maintainers👨🏫::
 
-|            [Smaranjit Ghose](https://github.com/smaranjitghose)             |            [Anush Bhatia](https://github.com/smaranjitghose)            | [Srividhya Inampudi](https://github.com/sriinampudi) |
-| :-------------------------------------------------------------------------: | :---------------------------------------------------------------------: | :--------------------------------------------------: |
-| ![Smaranjit_Picture](https://avatars2.githubusercontent.com/u/46641503?v=4) | ![Anush_Picture](https://avatars2.githubusercontent.com/u/40017559?v=4) |     ![Srividya_Picture](./readme_assets/srv.jpg)     |
+| <img src = "https://avatars2.githubusercontent.com/u/46641503?v=4" width = 600 height = 150> | <img src = "https://avatars2.githubusercontent.com/u/40017559?v=4" width = 600 height = 150> | <img src = "./readme_assets/srv.jpg" width = 600 height = 150> |
+| :------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | :------------------------------------------------------------: |
+|                    [Smaranjit Ghose](https://github.com/smaranjitghose)\*                    |                        [Anush Bhatia](https://github.com/anushbhatia)                        |     [Srividhya Inampudi](https://github.com/sriinampudi)\*     |
+
+\*\* Open Source Day 2021
 
 ## Our valuable Contributors👩‍💻👨‍💻 :
 
