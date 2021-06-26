@@ -110,13 +110,59 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
 @media (max-width:767px) {
   .dropdown{
     position: absolute;
-    padding-right: 3.5rem;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #d6d7db;
+    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+    transition: .3s;
   }
-  .godown{
-    z-index: 1;
-    padding-top: 15rem;
-    padding-left: 3.3rem;
-  }
+}
+
+.light-mode-button span:nth-child(2) {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    transition: .3s;
+}
+
+body {
+    background-color: #f6f6f6;
+    transition: background-color .3s;
+}
+
+body[light-mode=dark] {
+    background-color: #141516;
+    color: #ced4e2;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+    background-color: #ced4e2;
+    color: #141516;
+}
+
+body[light-mode=dark] .light-mode-button span:nth-child(2) {
+    left: 65px;
+    background-color: #141516;
+}
+
+@media (max-width:766px) {
+    .dropdown {
+        position: absolute;
+        padding-right: 3.5rem;
+    }
+    .godown {
+        z-index: 1;
+        padding-top: 15rem;
+        padding-left: 3.3rem;
+    }
 }
 
 .img-header{
@@ -125,11 +171,11 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
 }
 
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .skill-card {
-	border: none;
+    border: none;
 }
 
 .row {
@@ -194,14 +240,13 @@ a:hover {
 }
 
 .card .menu-content li {
-  display: inline-block;
+    display: inline-block;
 }
 
 .card .content {
   padding: 1rem;
   z-index: 1;
 }
-
 
 .card .title-div {
   width: 100%;
@@ -224,28 +269,28 @@ a:hover {
 }
 
 .skill-card .menu-content {
-  float: right;
+    float: right;
 }
 
 .skill-card .menu-content li {
-  margin: 0 2px;
-  position: relative;
+    margin: 0 2px;
+    position: relative;
 }
 
 .skill-card .menu-content span {
-  transition: all 0.3s;
-  opacity: 0;
+    transition: all 0.3s;
+    opacity: 0;
 }
 
 .skill-card .title a {
-  color: #fff;
+    color: #fff;
 }
 
 
 /*social icons*/
 
-ul{
-  padding-inline-start: 0px;
+ul {
+    padding-inline-start: 0px;
 }
 
 .menu-content{
@@ -253,8 +298,9 @@ ul{
   margin-bottom: 0.2rem;
   margin-left: 1rem;
 }
+
 .social-icon svg:hover {
-  fill: #fff;
+    fill: #fff;
 }
 
 .container-fluid {
@@ -275,6 +321,7 @@ ul{
   flex-wrap: wrap;
   margin: 0 auto;
 }
+
 
 /* Responsive*/
 
@@ -321,19 +368,18 @@ ul{
 }
 
 .left {
-  position: relative;
+    position: relative;
 }
 
 .right {
-  position: relative;
+    position: relative;
 }
 
-
-@media screen and (max-width:480px){
-  .main {
-      display: flex;
-      flex-direction: column-reverse;
-  }
+@media screen and (max-width:480px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 /*
@@ -344,319 +390,287 @@ SVG ANIMATIONS PROJECT PAGE
 
 @keyframes ekumanslidein {
     0% {
-      transform: translateX(-600px)
+        transform: translateX(-600px)
     }
-
     50% {
-      transform: translateX(-600px) scaleX(1)
+        transform: translateX(-600px) scaleX(1)
     }
-
     75% {
-      transform: translateX(30px) scaleX(.9)
+        transform: translateX(30px) scaleX(.9)
     }
-
     87.5% {
-      transform: translateX(-5px)
+        transform: translateX(-5px)
     }
-
     97% {
-      transform: translateX(3px)
+        transform: translateX(3px)
     }
-
     to {
-      transform: translateX(0) scaleX(1)
+        transform: translateX(0) scaleX(1)
     }
-  }
+}
 
-  @keyframes ekumanarmrotate {
-
+@keyframes ekumanarmrotate {
     0%,
     45%,
     65%,
     85%,
     to {
-      transform: rotate(0deg)
+        transform: rotate(0deg)
     }
-
     55%,
     75% {
-      transform: rotate(-5deg)
+        transform: rotate(-5deg)
     }
-  }
+}
 
-  @keyframes ekumanhairwobble {
-
+@keyframes ekumanhairwobble {
     50%,
     to {
-      transform: scaleX(1)
+        transform: scaleX(1)
     }
-
     75% {
-      transform: scaleX(1.2)
+        transform: scaleX(1.2)
     }
-
     87.5% {
-      transform: scaleX(.8)
+        transform: scaleX(.8)
     }
-
     97% {
-      transform: scaleX(1.09)
+        transform: scaleX(1.09)
     }
-  }
+}
 
-  @keyframes ekuwomanlidein {
+@keyframes ekuwomanlidein {
     0% {
-      transform: translateX(600px)
+        transform: translateX(600px)
     }
-
     50% {
-      transform: translateX(600px) scaleX(1)
+        transform: translateX(600px) scaleX(1)
     }
-
     75% {
-      transform: translateX(-30px) scaleX(.9)
+        transform: translateX(-30px) scaleX(.9)
     }
-
     87.5% {
-      transform: translateX(5px)
+        transform: translateX(5px)
     }
-
     97% {
-      transform: translateX(-3px)
+        transform: translateX(-3px)
     }
-
     to {
-      transform: translateX(0) scaleX(1)
+        transform: translateX(0) scaleX(1)
     }
-  }
+}
 
-  @keyframes kulapdropin {
+@keyframes kulapdropin {
     0% {
-      transform: translateY(-230px) scale(0) rotate(0deg)
+        transform: translateY(-230px) scale(0) rotate(0deg)
     }
-
     35% {
-      transform: translateY(-230px) scale(1.03) rotate(20deg)
+        transform: translateY(-230px) scale(1.03) rotate(20deg)
     }
-
     45% {
-      transform: rotate(10deg)
+        transform: rotate(10deg)
     }
-
     50% {
-      transform: translateY(-5px) scale(.98) rotate(0deg)
+        transform: translateY(-5px) scale(.98) rotate(0deg)
     }
-
     55% {
-      transform: translateY(-10px) scale(1.01) rotate(0deg)
+        transform: translateY(-10px) scale(1.01) rotate(0deg)
     }
-
     60% {
-      transform: translateY(0) scale(1)
+        transform: translateY(0) scale(1)
     }
-
     to {
-      transform: translateY(0)
+        transform: translateY(0)
     }
-  }
+}
 
-  @keyframes ekuwomanarmrotate {
-
+@keyframes ekuwomanarmrotate {
     0%,
     45%,
     65%,
     85%,
     to {
-      transform: rotate(0deg)
+        transform: rotate(0deg)
     }
-
     55%,
     75% {
-      transform: rotate(10deg)
+        transform: rotate(10deg)
     }
-  }
+}
 
-  @keyframes ekuwomanarmbackrotate {
-
+@keyframes ekuwomanarmbackrotate {
     0%,
     45%,
     65%,
     85%,
     to {
-      transform: rotate(0deg)
+        transform: rotate(0deg)
     }
-
     55%,
     75% {
-      transform: rotate(-13deg)
+        transform: rotate(-13deg)
     }
-  }
+}
 
-  @keyframes manscreenpopup {
-
+@keyframes manscreenpopup {
     0%,
     45%,
     55%,
     65%,
     75%,
     85% {
-      transform: scale(0)
+        transform: scale(0)
     }
-
     to {
-      transform: scale(1)
+        transform: scale(1)
     }
-  }
+}
 
-  @keyframes manscreenfloat {
-
+@keyframes manscreenfloat {
     0%,
     to {
-      transform: translateY(0)
+        transform: translateY(0)
     }
-
     50% {
-      transform: translateY(-10px)
+        transform: translateY(-10px)
     }
-  }
+}
 
-  @keyframes backhairwave {
-
+@keyframes backhairwave {
     0%,
     to {
-      transform: scaleX(1) skewX(0) skewY(0)
+        transform: scaleX(1) skewX(0) skewY(0)
     }
-
     50% {
-      transform: scaleX(1.07) skewX(3deg) skewY(5deg)
+        transform: scaleX(1.07) skewX(3deg) skewY(5deg)
     }
-  }
+}
 
-  #ku.svgmate #Bluearmbot,
-  #ku.svgmate #Chair,
-  #ku.svgmate #chairbackbar,
-  #ku.svgmate #man,
-  #ku.svgmate .mankauf {
+#ku.svgmate #Bluearmbot,
+#ku.svgmate #Chair,
+#ku.svgmate #chairbackbar,
+#ku.svgmate #man,
+#ku.svgmate .mankauf {
     animation-name: ekumanslidein;
     animation-iteration-count: 1;
     animation-duration: 1.2s;
     animation-timing-function: ease-out;
     transform-origin: 502px 454px
-  }
+}
 
-  #ku.svgmate #Bluearmbot,
-  #ku.svgmate #Chair,
-  #ku.svgmate #chairbackbar,
-  #ku.svgmate .mankauf {
+#ku.svgmate #Bluearmbot,
+#ku.svgmate #Chair,
+#ku.svgmate #chairbackbar,
+#ku.svgmate .mankauf {
     animation-duration: 1.5s
-  }
+}
 
-  #ku.svgmate #Bluearmbot {
+#ku.svgmate #Bluearmbot {
     animation-name: ekumanarmrotate;
     animation-iteration-count: infinite;
     animation-duration: 1.8s;
     animation-delay: 1.2s;
     transform-origin: 448.122px 403.482px
-  }
+}
 
-  #ku.svgmate .mankauf {
+#ku.svgmate .mankauf {
     animation-name: ekumanhairwobble;
     animation-duration: 1.38s;
     transform-origin: 396.257px 260.5px
-  }
+}
 
-  #ku.svgmate #Chair_1_,
-  #ku.svgmate #Woman,
-  #ku.svgmate #back-arm,
-  #ku.svgmate #backleg_1_ {
+#ku.svgmate #Chair_1_,
+#ku.svgmate #Woman,
+#ku.svgmate #back-arm,
+#ku.svgmate #backleg_1_ {
     animation-name: ekuwomanlidein;
     animation-iteration-count: 1;
     animation-duration: 1.8s;
     animation-timing-function: ease-out;
     transform-origin: 502px 454px
-  }
+}
 
-  #ku.svgmate #Chair_1_ {
+#ku.svgmate #Chair_1_ {
     animation-duration: 1.95s
-  }
+}
 
-  #ku.svgmate #Laptop,
-  #ku.svgmate #keyboard {
+#ku.svgmate #Laptop,
+#ku.svgmate #keyboard {
     animation-name: kulapdropin;
     animation-iteration-count: 1;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     transform-origin: 648.689px 361.659px
-  }
+}
 
-  #ku.svgmate #keyboard {
+#ku.svgmate #keyboard {
     animation-duration: 2.5s;
     transform-origin: 479.857px 383px
-  }
+}
 
-  #ku.svgmate #lowerarm,
-  #ku.svgmate #lowervackarm {
+#ku.svgmate #lowerarm,
+#ku.svgmate #lowervackarm {
     animation-name: ekuwomanarmrotate;
     animation-iteration-count: infinite;
     animation-duration: 1.8s;
     animation-delay: 2.1s;
     animation-timing-function: ease-out;
     transform-origin: 751.134px 385.578px
-  }
+}
 
-  #ku.svgmate #lowervackarm {
+#ku.svgmate #lowervackarm {
     animation-name: ekuwomanarmbackrotate;
     transform-origin: 736.882px 386px
-  }
+}
 
-  #ku.svgmate #Man_screen .greenscreen,
-  #ku.svgmate #Man_screen .redscreen,
-  #ku.svgmate #Man_screen .screenbutton {
+#ku.svgmate #Man_screen .greenscreen,
+#ku.svgmate #Man_screen .redscreen,
+#ku.svgmate #Man_screen .screenbutton {
     animation-name: manscreenpopup;
     animation-iteration-count: 1;
     animation-duration: 3.6s;
     animation-timing-function: ease-in-out;
     transform-origin: 526.882px 383px
-  }
+}
 
-  #ku.svgmate #Man_screen .greenscreen,
-  #ku.svgmate #Man_screen .redscreen {
+#ku.svgmate #Man_screen .greenscreen,
+#ku.svgmate #Man_screen .redscreen {
     animation-duration: 3s
-  }
+}
 
-  #ku.svgmate #Man_screen .greenscreen {
+#ku.svgmate #Man_screen .greenscreen {
     animation-duration: 3.3s
-  }
+}
 
-  #ku.svgmate #Man_screen,
-  #ku.svgmate #Man_screen .greenscrmove,
-  #ku.svgmate #Man_screen .redskmove,
-  #ku.svgmate .womscreenmove {
+#ku.svgmate #Man_screen,
+#ku.svgmate #Man_screen .greenscrmove,
+#ku.svgmate #Man_screen .redskmove,
+#ku.svgmate .womscreenmove {
     animation-name: manscreenfloat;
     animation-iteration-count: infinite;
     animation-duration: 9s;
     animation-timing-function: ease-in-out
-  }
+}
 
-  #ku.svgmate #Man_screen .greenscrmove,
-  #ku.svgmate #Man_screen .redskmove {
+#ku.svgmate #Man_screen .greenscrmove,
+#ku.svgmate #Man_screen .redskmove {
     animation-duration: 6s
-  }
+}
 
-  #ku.svgmate #Man_screen .greenscrmove {
+#ku.svgmate #Man_screen .greenscrmove {
     animation-duration: 7.2s
-  }
+}
 
-  #ku.svgmate #hairback,
-  #ku.svgmate #womanscreen {
+#ku.svgmate #hairback,
+#ku.svgmate #womanscreen {
     animation-name: manscreenpopup;
     animation-iteration-count: 1;
     animation-duration: 3.9s;
     animation-timing-function: ease-in-out;
     transform-origin: 648.689px 361.659px
-  }
+}
 
-  #ku.svgmate #hairback {
+#ku.svgmate #hairback {
     animation-name: backhairwave;
     animation-iteration-count: infinite;
     animation-duration: 3.3s;
@@ -792,4 +806,3 @@ SVG ANIMATIONS PROJECT PAGE
   .content h1 {
     text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
   }
-  
