@@ -3,7 +3,7 @@ html[data-theme = 'light']
   --bg-col: #fafafa;
   --shadow1: rgba(0, 0, 0, 0.3);
   --shadow2: rgba(0, 0, 0, 0.2);
-
+  --text: #191919;
   --neu-light: white;
   --neu-dark: #c3c3c3;
   --neu-color: #c3c3c3;
@@ -15,25 +15,38 @@ html[data-theme = 'dark']
   --bg-col: #272727;
   --shadow1: rgba(128, 122, 122, 0.233);
   --shadow2: rgba(231, 216, 216, 0.007);
-
+  --text: #ced4e2;
   --neu-light: #282828;
   --neu-dark: #080808;
   --neu-color: white;
   --neu-icon: whitesmoke;
 }
 
-.projects_head{
-  font-weight:bold;
+body {
+  color: var(--text);
+  background-color: var(--bg);
 }
+
+.projects_head {
+  font-weight: bold;
+}
+
 
 /*color of projects page heading*/
-.my_projects{             
-  color:#1eae98;
+
+.my_projects {
+  color: #0e49b5;
 }
 
-/*For Changing background color of body according to theme*/
-body{
-  background: var(--bg-col) !important;
+.light-mode-button {
+  background: 0;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 
 .topp {
@@ -43,6 +56,55 @@ body{
   .topp {
     padding-top: 3rem;
   }
+}
+
+.light-mode-button:focus {
+  outline: none;
+  /* Not ideal for accessibility */
+}
+
+.light-mode-button span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #d6d7db;
+  box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+  transition: .3s;
+}
+
+.light-mode-button span:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+  transition: .3s;
+}
+
+body {
+  background-color: #f6f6f6;
+  transition: background-color .3s;
+}
+
+body[light-mode=dark] {
+  background-color: #141516;
+  color: #ced4e2;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+body[light-mode=dark] .light-mode-button span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
 }
 
 @media (max-width:767px) {
@@ -56,6 +118,7 @@ body{
     padding-left: 3.3rem;
   }
 }
+
 .img-header{
   width: 90%;
   height: 90%;
@@ -82,9 +145,34 @@ a:hover {
 
 .column{
   margin-top: 10px;
-  margin-right: calc(1rem + 10px);
-  margin-left: calc(1rem + 10px);
+  margin-right: calc(1rem + 15px);
+  margin-left: calc(1rem + 15px);
   margin-bottom: 10px;
+  transition: 0.4s margin-top,
+    0.4s margin-right,
+    0.4s margin-left,
+    0.4s margin-bottom;
+  -webkit-transition: 0.4s margin-top,
+    0.4s margin-right,
+    0.4s margin-left,
+    0.4s margin-bottom;
+}
+
+@media only screen and (min-width:1300px) {
+  .column {
+    margin-top: 20px;
+    margin-right: calc(1rem + 25px);
+    margin-left: calc(1rem + 25px);
+    margin-bottom: 20px;
+    transition: 0.4s margin-top,
+    0.4s margin-right,
+    0.4s margin-left,
+    0.4s margin-bottom;
+    -webkit-transition: 0.4s margin-top,
+    0.4s margin-right,
+    0.4s margin-left,
+    0.4s margin-bottom;
+  }
 }
 
 @media(min-width: 60rem)
@@ -617,9 +705,7 @@ SVG ANIMATIONS PROJECT PAGE
       box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
     transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1),
       box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
-    box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px,
-      rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
-      inset white 0 0 0 6px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.55) 0 25px 55px 0;
   }
   
   .card {
@@ -628,15 +714,14 @@ SVG ANIMATIONS PROJECT PAGE
     -webkit-box-flex: 0;
     background-color: #333;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
-      inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    box-shadow: rgba(0, 0, 0, 0.55) 0 25px 55px 0;
     -webkit-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     border-radius: 0;
   }
   
   .wrapper {
-    opacity: 0.5;
+    opacity: 0.55;
     position: absolute;
     top: -20px;
     left: -20px;
@@ -689,12 +774,12 @@ SVG ANIMATIONS PROJECT PAGE
       left top,
       left bottom,
       from(transparent),
-      to(rgba(0, 0, 0, 0.6))
+      to(rgba(0, 0, 0, 0.5))
     );
     background-image: linear-gradient(
       to bottom,
       transparent 0%,
-      rgba(0, 0, 0, 0.6) 100%
+      rgba(0, 0, 0, 0.5) 100%
     );
     background-blend-mode: overlay;
     opacity: 0;
