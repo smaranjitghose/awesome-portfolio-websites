@@ -48,8 +48,7 @@ html[data-theme="dark"] {
   --col-bd-radius:black;
   --col-bd-icon:transparent;
   --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7) , -5px -5px 10px rgba(255,255,255,0.1);
-  --col-box-shadow-hover:inset rgba(                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     255, 255, 255, 1) 2px 2px 4px, 
- inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
+  --col-box-shadow-hover:inset rgba(255, 255, 255, 1) 2px 2px 4px, inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
   --col-icon-twitter: #1da1f2;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
@@ -99,51 +98,60 @@ body {
   background-color: var(--bg);
 }
 
-/* Top button */
+/* Scroll to Top button */
+#btnScrollToTop {
+	width: 50px;
+	height: 50px;
+  background-color: #6C63FF;
+  margin: 8px;
+  border: none;
+	border-radius: 50%;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;  
+	position: fixed;
+  outline: none;
+  bottom: 10px;
+  right: 10px;
+	animation: up 1.5s infinite;
+	-webkit-animation: up 1.5s infinite;
+}
+
+/*
+---------------------------------------
+   SCROLL TO TOP BUTTON MICROANIMATION
+---------------------------------------
+*/
+
+@keyframes up {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(-15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes up {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(-15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
 
 /* smooth scrolling to top */
 html {
   scroll-behavior: smooth;
 }
 
-/* preloader */
 
-.svg-container {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.loader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999999;
-}
-
-
-
-.disappear {
-  animation: vanish 1s forwards;
-}
-
-@keyframes vanish {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-/*starting part of every page*/
-
-
-/* 
 ------------------------------------
      HAMBURGER ANIMATION
 ------------------------------------
@@ -296,9 +304,10 @@ html {
   .nav-link:hover{
     border-radius: 40px;
     background: #ffffff;
+    transition: all 0.2s ease-in-out;
     box-shadow: 0px 0px 10px 0.5px rgba(0,0,0,0.2);
     width: 100%;
-    
+    font-weight: bold;
   }
   li.nav-item{
 
@@ -306,7 +315,6 @@ html {
   }
   a.nav-link{
     padding: 6px 21px !important;
-    transition: 0.4s;
   }
 }
 @media (min-width: 992px) {
@@ -371,25 +379,25 @@ html {
     FOOTER SECTION
 ------------------------
 */
-
+/* Also have a look at the scroll to top button if changing footer's height (below upArrow in app.js) */
 .footer{
   padding-top: 10px;
-  background-color:#040406;
+  font-family: "Poppins", sans-serif;
+  background-color:#121212;
 }
 
+
 .tag{
-  font-family:"Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font: size 20px;
   line-height: 26px;
   text-align: center;
   color: #fff;
   height: 78px;
-  width: 300px;
-  margin: 5px auto;
+  margin: 5px auto 0px;
   display: block;
   box-sizing: border-box;
 }
-
 
 .svg-inline--fa {
   vertical-align: -0.200em;
@@ -632,8 +640,14 @@ Rotate Transition in foote Soical Icon
   display: inline;
   font-size: 25px;
   font-weight: 200;
-  line-height: 18px;
-  border-bottom: 2px solid #26a69a;
+  line-height: 22px;
+  border-bottom: 2px solid #43D1AF;
+}
+
+.form-header
+{
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 form{
@@ -681,11 +695,12 @@ form{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	width: 100%;
-	background: #fff;
+	background: transparent;
 	margin-bottom: 4%;
-	border: 1px solid #ccc;
+  border: #000;
+	border-bottom: 2px solid #43D1AF;
 	padding: 3%;
-	color: rgb(46, 44, 44);
+	color: rgb(107, 105, 105);
   font: 95% Arial, Helvetica, sans-serif;
   border-radius: 2px;
 }
@@ -712,6 +727,7 @@ form{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	width: 100%;
+  margin-top: 2rem;
 	padding: 3%;
 	background: #43D1AF;
   border-bottom: 2px solid #30C29E;
@@ -726,6 +742,22 @@ form{
 .form-style-6 input[type="button"]:hover{
 	background: #2EBC99;
 }
+
+.form-comtainer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer hr
+{
+    background-color: rgb(37, 51, 46);
+    height: 1.5px;
+}
+
+
 
 /* to make the navbar open full screen on mobile */
     @media (max-width: 768px) {
@@ -744,6 +776,9 @@ form{
         text-align: center;
         transform: translateY(25%);
      }
+      #btnScrollToTop {
+        display: none;
+     }      
    }
 
    
@@ -759,6 +794,9 @@ form{
       text-align: center;
       transform: translateY(25%);
    }
+    #btnScrollToTop {
+          display: none;
+   }
   }
 
    @media (max-width:  375px) {
@@ -772,6 +810,9 @@ form{
       height: 120vh;
       text-align: center;
       transform: translateY(25%);
+   }
+    #btnScrollToTop {
+          display: none;
    }
   }
 
@@ -787,4 +828,20 @@ form{
       text-align: center;
       transform: translateY(25%);
    }
+
+   .footer{
+     margin-top: 6rem;
+
+   }
+    #btnScrollToTop {
+          display: none;
+   }
+  }
+
+  /* box shadow for profile picture */
+  .rounded-circle{
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+      -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   }

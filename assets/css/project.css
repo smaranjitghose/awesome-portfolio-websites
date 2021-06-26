@@ -128,11 +128,11 @@ a:hover {
   text-decoration: none;
 }
 
-.skill-card{
+.skill-card {
 	border: none;
 }
 
-.row{
+.row {
   display: flex;
   row-gap: 2.5em;
 }
@@ -177,11 +177,11 @@ a:hover {
 
 @media(min-width: 60rem)
 {
-  .row{
+  .row {
     margin-top: 0em;
   }
 
-  .card{
+  .card {
     width: 43%;
     column-gap: 3rem;
     transition: width 0.8s;
@@ -203,7 +203,7 @@ a:hover {
 }
 
 
-.card .title-div{
+.card .title-div {
   width: 100%;
   margin: 0;
 }

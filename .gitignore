@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 vscode/
 .idea/
 .vscode/settings.json
+=======
+vscode/*
+.idea/*
+>>>>>>> 3527dd9df2b5b3a99dd2262d199126dd4949ce07

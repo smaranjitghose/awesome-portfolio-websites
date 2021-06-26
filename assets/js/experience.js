@@ -33,8 +33,8 @@ const showCards2 = () => {
   exp.forEach(
     ({ title, cardImage, place, time, desp }) =>
       (output += `        
-    
-      <div class="card card1" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">
+    <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400"> 
+      <div class="card card1">
         <img src="${cardImage}" class="featured-image"/>
         <article class="card-body">
           <header>
@@ -51,7 +51,7 @@ const showCards2 = () => {
           </header>
         </article>
       </div>
-    
+    </div>
       `)
   );
   experiencecards.innerHTML = output;
