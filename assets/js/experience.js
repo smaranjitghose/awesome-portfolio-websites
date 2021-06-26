@@ -87,18 +87,6 @@ const volunteershipcards = [
     description:
       "Mentoring for the open source projects Deeppixel, Awesome Developer Portfolios and Doc2Pen.",
   },
-  {
-    title: "30 DaysofFlutter",
-    cardImage: "assets/images/experience-page/5.jpg",
-    description:
-      "Helping beginners from their first steps in Flutter to building fully functional cross-platform applications.",
-  },
-  {
-    title: "Garuda Hacks",
-    cardImage: "assets/images/experience-page/6.jpg",
-    description:
-      "MLH sponsored Indonesia's premier Global Virtual Hackathon on 14 - 16th August 2020.",
-  },
 ];
 
 const showCards = () => {
@@ -108,7 +96,7 @@ const showCards = () => {
       (output += `        
       <div class="card volunteerCard" style="height: 600px;width:400px">
       
-      <img src="${cardImage}" height="300" width="65" class="card-img" style="border-radius:10px">
+      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
       <div class="content">
           <h2 class="volunteerTitle">${title}</h2><br>
           <p class="copy">${description}</p></div>
