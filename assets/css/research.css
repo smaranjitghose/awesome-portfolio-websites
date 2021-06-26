@@ -256,16 +256,29 @@ body {
     color: var(--ppr-col);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 850px) {
     .researchMainWrapper {
-        margin-top: 400px;
+      margin-top: 150px;
     }
+  }
+
+@media only screen and (max-width: 767px) {
+  .researchMainWrapper {
+    margin-top: 180px;
+  }
 }
 
-@media only screen and (max-width: 600px) {
-    .researchMainWrapper {
-        margin-top: 250px;
-    }
+@media only screen and (max-width: 624px) {
+  .researchMainWrapper {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .researchMainWrapper {
+    margin-top: 85px;
+    margin-bottom: 100px;
+  }
 }
 
 
