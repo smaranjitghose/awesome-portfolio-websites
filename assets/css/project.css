@@ -58,6 +58,22 @@ body {
   }
 }
 
+/* .topp > section {
+  height: 75vh;
+}
+
+@media only screen and (m-width:767px){
+  .topp > section {
+    height: 65vh;
+  }
+}
+
+@media only screen and (max-width:400px){
+  .topp > section {
+    height: 70vh;
+  }
+} */
+
 .light-mode-button:focus {
   outline: none;
   /* Not ideal for accessibility */
@@ -107,17 +123,19 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
   background-color: #141516;
 }
 
-@media (max-width:767px) {
-  .dropdown{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #d6d7db;
-    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
-    transition: .3s;
+.drop-down{
+  display: flex;
+}
+.upper-view {
+  display: none;
+}
+
+@media only screen and (max-width:767px) {
+  .drop-down{
+    display: none;
+  }
+  .upper-view {
+    display: flex;
   }
 }
 
@@ -153,16 +171,16 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
     background-color: #141516;
 }
 
-@media (max-width:766px) {
-    .dropdown {
-        position: absolute;
-        padding-right: 3.5rem;
-    }
+@media (max-width:767px) {
     .godown {
         z-index: 1;
-        padding-top: 15rem;
         padding-left: 3.3rem;
     }
+}
+@media (max-width:400px) {
+  .godown {
+      padding-left: 2.3rem;
+  }
 }
 
 .img-header{
@@ -180,7 +198,6 @@ a:hover {
 
 .row {
   display: flex;
-  row-gap: 2.5em;
 }
 
 .gapp{
@@ -190,10 +207,10 @@ a:hover {
 }
 
 .column{
-  margin-top: 10px;
+  margin-top: calc(1rem + 15px);
   margin-right: calc(1rem + 15px);
   margin-left: calc(1rem + 15px);
-  margin-bottom: 10px;
+  margin-bottom: calc(1rem + 15px);
   transition: 0.4s margin-top,
     0.4s margin-right,
     0.4s margin-left,
@@ -206,10 +223,26 @@ a:hover {
 
 @media only screen and (min-width:1300px) {
   .column {
-    margin-top: 20px;
+    margin-top: calc(1rem + 25px);
     margin-right: calc(1rem + 25px);
     margin-left: calc(1rem + 25px);
-    margin-bottom: 20px;
+    margin-bottom: calc(1rem + 25px);
+    transition: 0.4s margin-top,
+    0.4s margin-right,
+    0.4s margin-left,
+    0.4s margin-bottom;
+    -webkit-transition: 0.4s margin-top,
+    0.4s margin-right,
+    0.4s margin-left,
+    0.4s margin-bottom;
+  }
+}
+@media only screen and (max-width:400px) {
+  .column {
+    margin-top: 1.5rem;
+    margin-right: calc(1rem + 25px);
+    margin-left: calc(1rem + 25px);
+    margin-bottom: 1.5rem;
     transition: 0.4s margin-top,
     0.4s margin-right,
     0.4s margin-left,
@@ -347,7 +380,7 @@ ul {
 
 @media only screen and (max-width: 767px) {
   .project-box {
-    margin-top: 10rem;
+    margin-top: 8rem;
     margin-bottom: 15%;
     transition: 0.4s margin-top;
   }
@@ -355,7 +388,7 @@ ul {
 
 @media only screen and (max-width: 450px) {
   .project-box {
-    margin-top: 6rem;
+    margin-top: 5rem;
     margin-bottom: 15%;
     transition: 0.4s margin-top;
   }
