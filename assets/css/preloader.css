@@ -17,13 +17,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #F5F5F5;
+  background-color: #202124;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999999;
+  color: white;
 }
 
 .preloader-text {
@@ -31,6 +32,11 @@
   top: 1.5em;
   font-family: Agustina;
   font-size: 50px;
+}
+
+.text-anime {
+	position: relative;
+	font-weight: 600;
 }
 
 /* Atom */
