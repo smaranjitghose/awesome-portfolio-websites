@@ -116,7 +116,7 @@ let footer = $(`
       <p class="tag" >Develop a passion for learning. If you do, you will never cease to grow.</p>
     </div>
 
-    <hr>
+    
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0 justify-content-center">
@@ -146,7 +146,7 @@ let footer = $(`
     </div>
 
 
-    <hr>
+    
 
     <div class="rounded-social-buttons tag">
     <a class="social-button twitter" href="#" target="_blank">
@@ -245,7 +245,7 @@ let footer = $(`
     </a>
 
 
-    <p style="color:white;"> 	&copy; All Rights Reserved</p>
+    
     </div>
     </div>
 </footer>
