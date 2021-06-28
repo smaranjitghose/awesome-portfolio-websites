@@ -7,6 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 svg{
   width: 50rem;
@@ -80,8 +81,8 @@ svg{
 /* responsiveness */
 @media (max-width:550px){
   svg{
-    width: 20rem;
-    margin-top: 8rem;
+    width: 24rem;
+    margin-top: 10rem;
     margin-bottom: 4rem;
   }
   .btn {
