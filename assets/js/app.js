@@ -22,10 +22,7 @@ let header = $(`
    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
    <li class="nav-item"><a class="nav-link" href="./assets/docs/john_doe.pdf" target="_blank">Resume</a></li>
    <li class="nav-item">
-   <button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
-      <span></span>
-      <span></span>
-    </button>
+   <input type="checkbox" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
    </li>
    <div class="bike">
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 0 650 400" preserveAspectRatio="xMinYMin meet">
@@ -259,64 +256,64 @@ let upArrow = $(`
 `)
 
 //function for the "Scroll To Top" button to detect the footer
-$(document).ready(function() {
-    $(window).scroll(function() {
-        console.log($(window).scrollTop());
-        //The button will be hidden until we scroll more than the window's height
-        if ($(window).scrollTop() < $(window).height()) {
-            $("#btnScrollToTop").css("visibility", "hidden");
-        } else {
-            $("#btnScrollToTop").css("visibility", "visible");
-            //The button will change it's color when it hits the footer
-            if ($(window).scrollTop() + $(window).height() > $(document).height() - 838) {
-                // 838 should be changed if footer's height is changed so that the button changes it's color exactly when it hits the footer (preferably 14 less than the computer height of the footer)
-                $("#btnScrollToTop").css("background-color", "#43D1Af");
-            } else {
-                $("#btnScrollToTop").css("background-color", "#6C63FF");
-            }
-        }
-    })
+$(document).ready(function () {
+  $(window).scroll(function () {
+    console.log($(window).scrollTop());
+    //The button will be hidden until we scroll more than the window's height
+    if ($(window).scrollTop() < $(window).height()) {
+      $("#btnScrollToTop").css("visibility", "hidden");
+    } else {
+      $("#btnScrollToTop").css("visibility", "visible");
+      //The button will change it's color when it hits the footer
+      if ($(window).scrollTop() + $(window).height() > $(document).height() - 838) {
+        // 838 should be changed if footer's height is changed so that the button changes it's color exactly when it hits the footer (preferably 14 less than the computer height of the footer)
+        $("#btnScrollToTop").css("background-color", "#43D1Af");
+      } else {
+        $("#btnScrollToTop").css("background-color", "#6C63FF");
+      }
+    }
+  })
 });
 
 //function to scroll to top
 const scrollToTop = () => {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-    });
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
 }
 
 // Window Loads
-$(function() {
-    let bodyElement = $(`body`);
-    bodyElement.prepend(header);
-    bodyElement.append(footer);
-    bodyElement.append(upArrow);
-    $("#btnScrollToTop").css("visibility", "hidden");
+$(function () {
+  let bodyElement = $(`body`);
+  bodyElement.prepend(header);
+  bodyElement.append(footer);
+  bodyElement.append(upArrow);
+  $("#btnScrollToTop").css("visibility", "hidden");
 
-    //toggler hamburger functions
-    const menuBtn = document.querySelector('.navbar-toggler');
-    let menuOpen = false;
-    menuBtn.addEventListener('click', () => {
-        if (!menuOpen) {
-            menuBtn.classList.add('open')
-            menuOpen = true;
-        } else {
-            menuBtn.classList.remove('open');
-            menuOpen = false;
-        }
-    });
+  //toggler hamburger functions
+  const menuBtn = document.querySelector('.navbar-toggler');
+  let menuOpen = false;
+  menuBtn.addEventListener('click', () => {
+    if (!menuOpen) {
+      menuBtn.classList.add('open')
+      menuOpen = true;
+    } else {
+      menuBtn.classList.remove('open');
+      menuOpen = false;
+    }
+  });
 
 });
 
 // function for toggling hamburger is-active class
 
-$(function() {
+$(function () {
 
-    $("#js-hamburger").on("click", function() {
-        $(this).toggleClass('is-active');
-    });
+  $("#js-hamburger").on("click", function () {
+    $(this).toggleClass('is-active');
+  });
 
 });
 
@@ -327,50 +324,50 @@ let loader = document.querySelector('.loader-container');
 window.addEventListener("load", vanish);
 
 function vanish() {
-    loader.classList.add("disappear")
+  loader.classList.add("disappear")
 }
-$(function() {
-    $('a.nav-link').each(function() {
-        if ($(this).prop('href') == window.location.href) {
-            $(this).addClass('current-link');
-        }
-    });
+$(function () {
+  $('a.nav-link').each(function () {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current-link');
+    }
+  });
 });
 
 //function to remove underline on hover
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $("a.nav-link").hover(
-        function() {
-            $(this).removeClass("current-link");
-        },
-        function() {
-            if ($(this).prop('href') == window.location.href) {
-                $(this).addClass('current-link');
-            }
-        }
-    );
+  $("a.nav-link").hover(
+    function () {
+      $(this).removeClass("current-link");
+    },
+    function () {
+      if ($(this).prop('href') == window.location.href) {
+        $(this).addClass('current-link');
+      }
+    }
+  );
 });
 
 function toggle_light_mode() {
-    var app = document.getElementsByTagName("HTML")[0];
-    var nav = document.getElementById("navbar");
-    if (localStorage.lightMode == "dark") {
-        localStorage.lightMode = "light";
-        app.setAttribute("light-mode", "light");
-        nav.classList.remove("dark-theme");
-    } else {
-        nav.classList.add("dark-theme");
-        localStorage.lightMode = "dark";
-        app.setAttribute("light-mode", "dark");
-    }
+  var app = document.getElementsByTagName("HTML")[0];
+  var nav = document.getElementById("navbar");
+  if (localStorage.lightMode == "dark") {
+    localStorage.lightMode = "light";
+    app.setAttribute("light-mode", "light");
+    nav.classList.remove("dark-theme");
+  } else {
+    nav.classList.add("dark-theme");
+    localStorage.lightMode = "dark";
+    app.setAttribute("light-mode", "dark");
+  }
 }
 
-window.addEventListener("storage", function() {
-    if (localStorage.lightMode == "dark") {
-        app.setAttribute("light-mode", "dark");
-    } else {
-        app.setAttribute("light-mode", "light");
-    }
+window.addEventListener("storage", function () {
+  if (localStorage.lightMode == "dark") {
+    app.setAttribute("light-mode", "dark");
+  } else {
+    app.setAttribute("light-mode", "light");
+  }
 }, false);
