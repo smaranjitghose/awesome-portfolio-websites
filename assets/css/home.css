@@ -514,28 +514,6 @@ a:hover {
   }
 }
 
-@media (min-width:320px) and (max-width:321px){
-  .text{
-    margin-top: 3rem;
-  }
-  img{
-    height:100px;
-    width:150px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-  .text{
-    font-size:20px;
-  }
-  .socialicon{
-    width:56px;
-    height:56px;
-  }
-  .tag{
-    width:78px;
-  }
-}
-
 @media (min-height:822px) and (max-height:823px){
   .text{
     margin-top: 10rem;
@@ -558,14 +536,10 @@ a:hover {
 @media (min-width:1020px)and (max-width:1024px){
   .text{
     margin-top: 4rem;
-  }
-  img{
-    height:100px;
-    width:150px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    font-size: xx-large;
   }
 }
+
 @media (max-width:320px)and (max-height:440px){
   .text{
     margin-top: 4rem;
