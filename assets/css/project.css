@@ -52,27 +52,17 @@ body {
 .topp {
   padding-top: 5rem;
 }
+@media (max-width:1024px) and (min-width:768px){
+  .topp {
+    max-width: 100%;
+  }
+}
+
 @media only screen and (max-width:767px){
   .topp {
     padding-top: 3rem;
   }
 }
-
-/* .topp > section {
-  height: 75vh;
-}
-
-@media only screen and (m-width:767px){
-  .topp > section {
-    height: 65vh;
-  }
-}
-
-@media only screen and (max-width:400px){
-  .topp > section {
-    height: 70vh;
-  }
-} */
 
 .light-mode-button:focus {
   outline: none;
@@ -174,13 +164,7 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
 @media (max-width:767px) {
     .godown {
         z-index: 1;
-        padding-left: 3.3rem;
     }
-}
-@media (max-width:400px) {
-  .godown {
-      padding-left: 2.3rem;
-  }
 }
 
 .img-header{
@@ -206,64 +190,10 @@ a:hover {
   margin: 0 auto;
 }
 
-.column{
-  margin-top: calc(1rem + 15px);
-  margin-right: calc(1rem + 15px);
-  margin-left: calc(1rem + 15px);
-  margin-bottom: calc(1rem + 15px);
-  transition: 0.4s margin-top,
-    0.4s margin-right,
-    0.4s margin-left,
-    0.4s margin-bottom;
-  -webkit-transition: 0.4s margin-top,
-    0.4s margin-right,
-    0.4s margin-left,
-    0.4s margin-bottom;
-}
-
-@media only screen and (min-width:1300px) {
-  .column {
-    margin-top: calc(1rem + 25px);
-    margin-right: calc(1rem + 25px);
-    margin-left: calc(1rem + 25px);
-    margin-bottom: calc(1rem + 25px);
-    transition: 0.4s margin-top,
-    0.4s margin-right,
-    0.4s margin-left,
-    0.4s margin-bottom;
-    -webkit-transition: 0.4s margin-top,
-    0.4s margin-right,
-    0.4s margin-left,
-    0.4s margin-bottom;
-  }
-}
-@media only screen and (max-width:400px) {
-  .column {
-    margin-top: 1.5rem;
-    margin-right: calc(1rem + 25px);
-    margin-left: calc(1rem + 25px);
-    margin-bottom: 1.5rem;
-    transition: 0.4s margin-top,
-    0.4s margin-right,
-    0.4s margin-left,
-    0.4s margin-bottom;
-    -webkit-transition: 0.4s margin-top,
-    0.4s margin-right,
-    0.4s margin-left,
-    0.4s margin-bottom;
-  }
-}
-
 @media(min-width: 60rem)
 {
   .row {
     margin-top: 0em;
-  }
-
-  .card {
-    width: 43%;
-    column-gap: 3rem;
-    transition: width 0.8s;
   }
 }
 
@@ -284,17 +214,6 @@ a:hover {
 .card .title-div {
   width: 100%;
   margin: 0;
-}
-
-.card .title {
-  padding-bottom: 1rem;
-  margin-top: 0em;
-  font-size: 1.5rem;
-}
-
-.skill-card {
-  width: 325px;
-  border: 0;
 }
 
 .skill-card .header {
@@ -358,29 +277,277 @@ ul {
 
 /* Responsive*/
 
-@media only screen and (max-width:665px){
+.card .title {
+  padding-bottom: 1rem;
+  margin-top: 0em;
+  font-size: 1.3rem;
+}
+
+.skill-card {
+  width: 300px;
+  border: 0;
+  min-height: 20rem;
+  -webkit-transition: 0.4s width, 0.4s min-height;
+  transition: 0.4s width, 0.4s min-height;
+}
+
+.column{
+  margin-top: calc(1rem + 10px);
+  margin-right: calc(1rem + 10px);
+  margin-left: calc(1rem + 10px);
+  margin-bottom: calc(1rem + 10px);
+  transition: 0.4s margin-top,
+    0.4s margin-right,
+    0.4s margin-left,
+    0.4s margin-bottom;
+  -webkit-transition: 0.4s margin-top,
+    0.4s margin-right,
+    0.4s margin-left,
+    0.4s margin-bottom;
+}
+
+@media only screen and (min-width:1300px) {
   .skill-card {
     width: 325px;
     border: 0;
-    transition: 0.4s width;
+    min-height: 21.5rem;
+    -webkit-transition: 0.4s width, 0.4s min-height;
+    transition: 0.4s width, 0.4s min-height;
+  }
+  .card .title{
+    font-size: 1.5rem;
+  }
+  .column {
+    margin-top: calc(1rem + 25px);
+    margin-right: calc(1rem + 25px);
+    margin-left: calc(1rem + 25px);
+    margin-bottom: calc(1rem + 25px);
+    transition: 0.4s margin-top,
+    0.4s margin-right,
+    0.4s margin-left,
+    0.4s margin-bottom;
+    -webkit-transition: 0.4s margin-top,
+    0.4s margin-right,
+    0.4s margin-left,
+    0.4s margin-bottom;
+  }
+}
+
+@media only screen and (max-width:1100px) {
+  .card .title {
+    font-size: 1.3rem;
+  }
+  
+  .skill-card {
+    width: 290px;
+    border: 0;
+    min-height: 20rem;
+    -webkit-transition: 0.4s width, 0.4s min-height;
+    transition: 0.4s width, 0.4s min-height;
+  }
+  
+  .column{
+    margin-top: calc(1rem + 5px);
+    margin-right: calc(1rem + 5px);
+    margin-left: calc(1rem + 5px);
+    margin-bottom: calc(1rem + 5px);
+    transition: 0.4s margin-top,
+      0.4s margin-right,
+      0.4s margin-left,
+      0.4s margin-bottom;
+    -webkit-transition: 0.4s margin-top,
+      0.4s margin-right,
+      0.4s margin-left,
+      0.4s margin-bottom;
+  }
+}
+
+@media only screen and (max-width:1015px){
+  .skill-card {
+    width: 325px;
+    border: 0;
+    min-height: 21.5rem;
+    -webkit-transition: 0.4s width, 0.4s min-height;
+    transition: 0.4s width, 0.4s min-height;
+  }
+  .card .title{
+    font-size: 1.5rem;
+  }
+  .column{
+    margin-top: calc(1rem + 15px);
+    margin-right: calc(1rem + 15px);
+    margin-left: calc(1rem + 15px);
+    margin-bottom: calc(1rem + 15px);
+    transition: 0.4s margin-top,
+      0.4s margin-right,
+      0.4s margin-left,
+      0.4s margin-bottom;
+    -webkit-transition: 0.4s margin-top,
+      0.4s margin-right,
+      0.4s margin-left,
+      0.4s margin-bottom;
+  }
+}
+
+@media only screen and (max-width:850px) {
+  .card .title {
+    font-size: 1.3rem;
+  }
+  
+  .skill-card {
+    width: 300px;
+    border: 0;
+    min-height: 20.5rem;
+    -webkit-transition: 0.4s width, 0.4s min-height;
+    transition: 0.4s width, 0.4s min-height;
+  }
+  
+  .column{
+    margin-top: calc(1rem + 10px);
+    margin-right: calc(1rem + 10px);
+    margin-left: calc(1rem + 10px);
+    margin-bottom: calc(1rem + 10px);
+    transition: 0.4s margin-top,
+      0.4s margin-right,
+      0.4s margin-left,
+      0.4s margin-bottom;
+    -webkit-transition: 0.4s margin-top,
+      0.4s margin-right,
+      0.4s margin-left,
+      0.4s margin-bottom;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .card .title {
+    font-size: 1.3rem;
+  }
+  
+  .skill-card {
+    width: 285px;
+    border: 0;
+    min-height: 20rem;
+    -webkit-transition: 0.4s width, 0.4s min-height;
+    transition: 0.4s width, 0.4s min-height;
+  }
+  
+  .column{
+    margin-top: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+    margin-left: calc(1rem + 2px);
+    margin-bottom: calc(1rem + 2px);
+    transition: 0.4s margin-top,
+      0.4s margin-right,
+      0.4s margin-left,
+      0.4s margin-bottom;
+    -webkit-transition: 0.4s margin-top,
+      0.4s margin-right,
+      0.4s margin-left,
+      0.4s margin-bottom;
+  }
+}
+
+@media only screen and (max-width:668px){
+  .skill-card {
+    width: 325px;
+    border: 0;
+    min-height: 21.5rem;
+    -webkit-transition: 0.4s width, 0.4s min-height;
+    transition: 0.4s width, 0.4s min-height;
+  }
+  .card .title{
+    font-size: 1.5rem;
+  }
+  .column{
+    margin-top: calc(1rem + 15px);
+    margin-right: calc(1rem + 15px);
+    margin-left: calc(1rem + 15px);
+    margin-bottom: calc(1rem + 15px);
+    transition: 0.4s margin-top,
+      0.4s margin-right,
+      0.4s margin-left,
+      0.4s margin-bottom;
+    -webkit-transition: 0.4s margin-top,
+      0.4s margin-right,
+      0.4s margin-left,
+      0.4s margin-bottom;
+  }
+}
+
+@media only screen and (max-width:576px) {
+  .card .title {
+    font-size: 1.3rem;
+  }
+  
+  .skill-card {
+    width: 310px;
+    border: 0;
+    min-height: 20.5rem;
+    -webkit-transition: 0.4s width, 0.4s min-height;
+    transition: 0.4s width, 0.4s min-height;
+  }
+  
+  .column{
+    margin-top: calc(1rem + 10px);
+    margin-right: calc(1rem + 10px);
+    margin-left: calc(1rem + 10px);
+    margin-bottom: calc(1rem + 10px);
+    transition: 0.4s margin-top,
+      0.4s margin-right,
+      0.4s margin-left,
+      0.4s margin-bottom;
+    -webkit-transition: 0.4s margin-top,
+      0.4s margin-right,
+      0.4s margin-left,
+      0.4s margin-bottom;
   }
 }
 
 @media only screen and (max-width:400px){
   .skill-card {
-    width: 300px;
+    width: 285px;
     border: 0;
-    transition: 0.4s width;
+    min-height: 20rem;
+    -webkit-transition: 0.4s width, 0.4s min-height;
+    transition: 0.4s width, 0.4s min-height;
   }
   
   .card .title{
     font-size: 1.2rem;
   }
+
+  .column {
+    margin-top: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1.5rem;
+    transition: 0.4s margin-top,
+    0.4s margin-right,
+    0.4s margin-left,
+    0.4s margin-bottom;
+    -webkit-transition: 0.4s margin-top,
+    0.4s margin-right,
+    0.4s margin-left,
+    0.4s margin-bottom;
+  }
+}
+
+@media only screen and (max-width:310px){
+  .skill-card {
+    width: 250px;
+    border: 0;
+    min-height: 19rem;
+    -webkit-transition: 0.4s width, 0.4s min-height;
+    transition: 0.4s width, 0.4s min-height;
+  }
+  
+  .card .title{
+    font-size: 1.0rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .project-box {
-    margin-top: 8rem;
     margin-bottom: 15%;
     transition: 0.4s margin-top;
   }
@@ -388,7 +555,6 @@ ul {
 
 @media only screen and (max-width: 450px) {
   .project-box {
-    margin-top: 5rem;
     margin-bottom: 15%;
     transition: 0.4s margin-top;
   }
@@ -710,7 +876,7 @@ SVG ANIMATIONS PROJECT PAGE
     transform-origin: 785.132px 295.833px
   }
 
-  
+  /* ============================================= */
   
   .card-wrap {
     -webkit-transform: perspective(800px);
@@ -756,7 +922,6 @@ SVG ANIMATIONS PROJECT PAGE
   }
   
   .card {
-    min-height: 21.5rem;
     position: relative;
     -webkit-box-flex: 0;
     background-color: #333;
