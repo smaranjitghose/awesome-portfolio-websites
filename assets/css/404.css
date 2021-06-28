@@ -81,7 +81,8 @@ svg{
 @media (max-width:550px){
   svg{
     width: 20rem;
-    height: 15rem;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
   }
   .btn {
     padding: .8rem .8rem;
