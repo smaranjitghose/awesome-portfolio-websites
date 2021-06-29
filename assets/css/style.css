@@ -829,7 +829,7 @@ form {
     background: transparent;
     margin-bottom: 4%;
     border: #000;
-    border-bottom: 2px solid #43D1AF;
+    border-bottom: 0px solid #43D1AF;
     padding: 3%;
     color: rgb(107, 105, 105);
     font: 95% Arial, Helvetica, sans-serif;
