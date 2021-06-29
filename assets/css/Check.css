@@ -85,3 +85,25 @@ span {
 #yourMessage {
     background-color: aliceblue;
 }
+
+@media (max-width:768px){
+    .FooterAnimation + label {
+        padding: 10.5px 15px;
+    }
+}
+@media (max-width:414px){
+    .FooterAnimation + label {
+        padding: 9px 15px;
+    }
+}
+@media (max-width:375px){
+    .FooterAnimation + label {
+        padding: 8px 15px;
+    }
+}
+@media (max-width:320px){
+    .FooterAnimation + label {
+        padding: 6px 15px;
+    }
+}
+
