@@ -7,7 +7,6 @@ html[data-theme="light"] {
   --shadow-col2:#ffffff;
   --meta-col: #444;
   --head-col: black;
-  --cards-bg:#ffffff;
  }
  
  html[data-theme="dark"] {
@@ -19,7 +18,6 @@ html[data-theme="light"] {
   --shadow-col2:#1d1d1d;
   --meta-col: rgb(155, 149, 149);
   --head-col: #fff;
-  --cards-bg:#2B2A2A;
  }
 /*Main section*/
 
@@ -133,7 +131,7 @@ section {height: 95vh;}
 }
 
 .card1 {
-  background-color: var( --cards-bg);
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   max-height: 80%;
@@ -173,8 +171,8 @@ section {height: 95vh;}
   display: flex;
   flex-flow: row wrap;
   padding: 18px;
-  color: var(--text-color);
-  background-color: var(--cards-bg);
+  color: var(--text);
+  background-color: #fff;
   border-radius: 0 13px 13px 0;
 }
 
@@ -438,8 +436,8 @@ ul ol{
   padding: 1rem;
   width: 100%;
   text-align: center;
-  color: var(--text-color);
-  background-color: var(--cards-bg);
+  color: black;
+  background-color: whitesmoke;
   border: none;
 }
 
@@ -546,7 +544,6 @@ ul ol{
   font-size: 1.125rem;
   font-style: italic;
   line-height: 1.35;
-  
 }
 
 /* .page-content .cardafter {
@@ -647,8 +644,8 @@ ul ol{
 }
 
 .card2{
-  background-color: var(--cards-bg);
-  color: var(--text-color);
+  /* background-color: var(--bg1-color); */
+  color: var(--text);
 }
 
 .card2 .fa{
