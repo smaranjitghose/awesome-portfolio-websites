@@ -229,56 +229,45 @@ html {
     background-color: #fff;
 }
 
-.light-mode-button {
-    background: 0;
-    border: 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    height: 40px;
-    width: 100px;
+/* Dark Mode toggle switch button */
+.dark_toggler {
+    -webkit-appearance: none;
     position: relative;
-    border: 1px solid rgba(255, 255, 255, 0);
-}
-
-.light-mode-button:focus {
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+    background-size: cover;
+    border-radius: 50px;
     outline: none;
-    /* Not ideal for accessibility */
-}
-
-.light-mode-button span:nth-child(2) {
-    display: flex;
-}
-
-.light-mode-button span:nth-child(2) i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.light-mode-button span:nth-child(1) {
+    transition: background-image 0.9s;
+    box-shadow: 0px 2px 5px 1px gray;
+  }
+  
+  .dark_toggler:before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
     height: 40px;
-    border-radius: 20px;
-    background-color: #d6d7db;
-    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
-    transition: .3s;
-}
-
-.light-mode-button span:nth-child(2) {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
-    transition: .3s;
-}
+    width: 40px;
+    background-color: navy;
+    border-radius: 50px;
+    transition: all 0.9s;
+    background-color: #f7ca33;
+  }
+  
+  .dark_toggler:checked {
+    background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+    transition: background-image 0.9s;
+  }
+  
+  .dark_toggler:checked:before {
+    transform: translate(150%);
+    transition: all 0.9s;
+    background-color: #ecf0f3;
+  }
+  /* end of dark mode toggle switch button */
 
 html {
     background-color: #f6f6f6;
@@ -288,16 +277,6 @@ html {
 html[light-mode="dark"] {
     background-color: #141516;
     color: #ced4e2;
-}
-
-html[light-mode="dark"] .light-mode-button span:nth-child(1) {
-    background-color: #ced4e2;
-    color: #141516;
-}
-
-html[light-mode="dark"] .light-mode-button span:nth-child(2) {
-    left: 65px;
-    background-color: #141516;
 }
 
 .dark-theme {
