@@ -867,6 +867,89 @@ form {
 }
 
 
+/*
+-----------------------------
+  SEND BUTTON MICROANIMATION
+-----------------------------
+*/
+
+
+.footer-btn{
+    position: relative;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 50px;
+    padding: 6%;
+    background: #30C29E;
+    color: white;
+    font-size:larger;
+    text-align: center;
+  }
+  
+  #lnch_btn:hover{
+      cursor: pointer;
+  }
+  #lnch_btn{
+  transition: 0.3s ease transform;
+  font-size: larger;
+  }
+  
+  #lnch_btn.launching{
+   transform: rotateZ(-90deg);
+   animation: shake 0.3s ease 0.5s infinite;
+  }
+  
+  #send-btn.launching{
+      font-weight: bold;    
+  }
+
+  .footer-btn.launching{
+      background-color: #e44d6a;
+  }
+
+  .footer-btn.launched{
+    background: #30C29E; 
+    color: white;  
+  }
+  
+  @keyframes shake{
+      0%,50%,100%{
+          transform: translate3d(-1px, 0, 0) rotateZ(-90deg);
+      }
+      25%,75%{
+          transform: translate3d(1px, 0, 0) rotateZ(-90deg);
+      }  
+  }
+  
+  #lnch_btn.launched{
+      transform: rotateZ(-90deg);
+      animation: moveUp 1s ease 0s forwards;
+  }
+  
+  #send-btn.launched{
+    align-items: center;
+    font-size: large;
+    margin-left: 25%;
+    padding: 0%;
+    font-weight: bold;
+  }
+  
+  @keyframes moveUp{
+      0%{
+      margin-top: 0;
+      transform:scale(1) rotateZ(-90deg) ;
+      color: #e44d6a;
+      }
+      100%{
+      color: #e44d6a;
+      margin-top: -600px;
+      transform: scale(0) rotateZ(-90deg); 
+      }
+  }
+
+
 /* to make the navbar open full screen on mobile */
 
 @media (max-width: 768px) {
@@ -948,3 +1031,5 @@ form {
     -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
     -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
+
+

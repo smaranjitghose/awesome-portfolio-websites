@@ -135,7 +135,10 @@ let footer = $(`
                   <input type="text" name="field1" placeholder="Your Name" required/>
                   <input type="email" name="field2" placeholder="Email Address"  required/>
                   <textarea name="field3" placeholder="Type your Message" required></textarea>
-                  <input type="submit" value="Send" />
+                  <div class="footer-btn" type="submit">
+                  <div id="send-btn"><b>SEND</b></div>
+                  <div id="lnch_btn"><i class="fas fa-space-shuttle"></i></div>
+                  </div>
                 </form>
              </div>
           </div>
@@ -371,3 +374,21 @@ window.addEventListener("storage", function () {
     app.setAttribute("light-mode", "light");
   }
 }, false);
+
+//function to add microanimation to send button in footer
+
+$(function () {
+  $(".footer-btn").on("click", function () {
+    setTimeout(function () {
+      $("#send-btn").addClass("launching").text("SENDING...");
+      $("#lnch_btn").addClass("launching");
+      $(".footer-btn").addClass("launching");
+    }, 1);
+  
+    setTimeout(function () {
+      $("#send-btn").addClass("launched").text("SENT");
+      $("#lnch_btn").addClass("launched");
+      $(".footer-btn").addClass("launched");
+    }, 1500);
+  });
+});
