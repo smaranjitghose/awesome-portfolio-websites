@@ -5,7 +5,7 @@ span {
 	 margin: 0px 0px;
      
 }
-.animation{
+.FooterAnimation{
 	 display: inline;
 	 width: 215px;
 	 padding: 10px 0 10px 15px;
@@ -19,12 +19,12 @@ span {
 	 text-indent: 82px;
 	 transition: all 0.3s ease-in-out;
 }
- .animation::-webkit-input-placeholder {
+ .FooterAnimation::-webkit-input-placeholder {
 	 color: #efefef;
 	 text-indent: 0;
 	 font-weight: 300;
 }
- .animation + label {
+ .FooterAnimation + label {
 	 display: inline;
 	 position: absolute;
 	 transform: translateX(0);
@@ -38,7 +38,7 @@ span {
 	 overflow: hidden;
       
 }
- .animation + label:before, .animation + label:after {
+ .FooterAnimation + label:before, .FooterAnimation + label:after {
 	 content: "";
 	 position: absolute;
 	 right: 0;
@@ -47,7 +47,7 @@ span {
 	 transition: all 0.3s ease-in-out;
      text-indent: 75px;
 }
- .animation + label:before {
+ .FooterAnimation + label:before {
 	 top: 5px;
 	 bottom: 5px;
 	 background: #25c29c;
@@ -55,24 +55,24 @@ span {
 	 border-bottom-left-radius: 3px;
      
 }
- .animation + label:after {
+ .FooterAnimation + label:after {
 	 top: 0;
 	 bottom: 0;
 	 background:#25c29c ;
      
 }
- .animation:focus, .animation:active {
+ .FooterAnimation:focus, .FooterAnimation:active {
 	 color: #377d6a;
 	 text-indent: 0;
 	 background: #fff;
 }
- .animation:focus::-webkit-input-placeholder, .animation:active::-webkit-input-placeholder {
+ .FooterAnimation:focus::-webkit-input-placeholder, .FooterAnimation:active::-webkit-input-placeholder {
 	 color: #aaa;
 }
- .animation:focus + label, .animation:active + label {
+ .FooterAnimation:focus + label, .FooterAnimation:active + label {
 	 transform: translateX(-100%);
 }
- .animation:focus + label:after, .animation:active + label:after {
+ .FooterAnimation:focus + label:after, .FooterAnimation:active + label:after {
 	 transform: translateX(100%);
      
 }
