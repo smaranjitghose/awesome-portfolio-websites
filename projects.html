@@ -35,20 +35,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-    <!--For Dark/Light mode Toggle-->
-    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
-    <!--Import animation.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="assets/css/preloader.css">
+  <!--For Dark/Light mode Toggle-->
+  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+  <!--Import animation.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="assets/css/preloader.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/project.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <link id='favicon' rel="icon" href="assets/images/favicon.png" type="image/png"> <!--Favicon-->
+  <script defer src="./assets/js/dynamicTitle.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/project.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link id='favicon' rel="icon" href="assets/images/favicon.png" type="image/png">
-    <!--Favicon-->
-    <script defer src="./assets/js/dynamicTitle.js"></script>
 </head>
 
 <body>
@@ -65,13 +65,19 @@
     </div>
 
 
-    <div class="container pt-5" style="width: 100%; min-height: 80%">
-        <section style="height: 70vh">
-            <div class="px-3 pt-5">
-                <div class="row">
+    <div class="container topp" style="width: 100%;">
+      <section>
+        <div class="px-3 pt-5">
+          <div class="row">
 
-                    <div class="col-md-6 godown">
-                        <svg xmlns="http://www.w3.org/2000/svg" id="ku" width="90%" baseProfile="tiny" class="svgmate" version="1" viewBox="300 150 550 570">
+            <div class="upper-view col-md-6 mt-5 flex-column text-center justify-content-center animate__animated animate__zoomIn animate__delay-1s">
+              <h2 class="main-heading mb-0 projects_head">My <span class="my_projects">Projects</span></h2>
+                <p class="pre-heading font-weight-bolder" class="mb-0 mt-3 text-center animate__animated animate__zoomIn animate__delay-2s">
+                  My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.
+                </p>
+            </div>
+            <div class="col-md-6 godown">
+              <svg xmlns="http://www.w3.org/2000/svg" id="ku" width="100%" baseProfile="tiny" class="svgmate" version="1" viewBox="300 150 550 570">
 
                 <g id="wall">
                   <path fill="#7E0CF5" d="M674 333c0 2-2 4-4 4H553c-2 0-4-2-4-4V203c0-2 2-4 4-4h117c2 0 4 2 4 4v130z">
@@ -287,22 +293,22 @@
                   </g>
                 </g>
               </svg>
-                    </div>
-                    <div class="dropdown col-md-6 d-flex mt-5 flex-column text-center justify-content-center animate__animated animate__zoomIn animate__delay-1s">
-                        <h2 class="main-heading mb-0 projects_head">My <span class="my_projects">Projects</span></h2>
-                        <p class="pre-heading font-weight-bolder" class="mb-0 mt-3 text-center animate__animated animate__zoomIn animate__delay-2s">
-                            My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.
-                        </p>
-                    </div>
-                </div>
             </div>
-        </section>
+            <div class="drop-down col-md-6 flex-column text-center justify-content-center animate__animated animate__zoomIn animate__delay-1s">
+              <h2 class="main-heading mb-0 projects_head">My <span class="my_projects">Projects</span></h2>
+                <p class="pre-heading font-weight-bolder" class="mb-0 mt-3 text-center animate__animated animate__zoomIn animate__delay-2s">
+                  My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.
+                </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <div class="project-box" style="padding: 20px;">
-        <div class="row page-content projectcards">
-            <!-- Dynamic project card -->
-        </div>
+    <div class="container-fluid project-box">
+      <div class="row page-content projectcards">
+        <!-- Dynamic project card -->
+      </div>
     </div>
 
     <!-- Dynamic footer section -->
@@ -312,7 +318,9 @@
     <script src="assets/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="assets/js/parallax depth card.js"></script> -->
     <script src="assets/js/project.js"></script>
-</body>
-
+    
+  </body>
 </html>
