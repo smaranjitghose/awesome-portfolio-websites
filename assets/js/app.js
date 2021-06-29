@@ -135,19 +135,11 @@ let footer = $(`
               </div>
                 <form>
                   <form action="https://formcarry.com/s/S2thQbCqEvW" method="POST" accept-charset="UTF-8" >
-                    <link rel="stylesheet"  href="assets/css/Check.css">
-                  <div class="row1">
-  <span>
-    <input class="skinnyx" id="yourName" type="text" placeholder="Enter your Name" /><label for="Name">Name</label>
-  </span>
-  <span>
-    <input class="skinnyx" id="yourEmail" type="email" placeholder="Enter your Email-id" /><label for="EmailId">Email</label>
-  </span>
-  
-</div>
-                  <textarea name="field3" placeholder="Type your Message" required></textarea>
+                  <link rel="stylesheet"  href="assets/css/Check.css">  
+                  <span><input class="animation" id="yourName" type="text" placeholder="Enter your Name" /><label style="color:#efefef" for="Name">Name</label></span>
+                  <span><input class="animation" id="yourEmail" type="email" placeholder="Enter your Email-id" /><label style="color:#efefef" for="EmailId">Email</label></span>
+                  <span><input class="animation" id="yourMessage" type="text" placeholder="Type your Message" /><label style="color:#efefef" for="Message">Message </label></span>
                   <input type="submit" value="Send" />
-
                 </form>
              </div>
           </div>

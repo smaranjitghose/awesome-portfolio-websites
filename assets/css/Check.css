@@ -1,40 +1,11 @@
-@import "compass/css3";
- @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800);
 
- /*html, body {
-	 overflow-x: hidden;
-	 font-family: "Open Sans", sans-serif;
-	 font-weight: 300;
-	 color: #fff;
-	 background: #efefef;
-}*/
-/*.row1 {
-	 max-width: 800px;
-	 margin: 0 auto;
-	 padding: 60px 30px;
-	 background: #032429;
-	 position: relative;
-	 z-index: 1;
-	 text-align: center;
-}*/
- /*.row1:before {
-	 position: relative;
-	 content: "";
-	 display: block-inline;
-	 top: 0;
-	 left: -5000px;
-	 height: 100%;
-	 width: 15000px;
-	 z-index: -1;
-	 background: inherit;
-}*/
- .row1 span {
+span {
 	 position: relative;
 	 display: inline;
 	 margin: 0px 0px;
      
 }
-.skinnyx{
+.animation{
 	 display: inline;
 	 width: 215px;
 	 padding: 10px 0 10px 15px;
@@ -45,15 +16,15 @@
 	 border: 0;
 	 border-radius: 3px;
 	 outline: 0;
-	 text-indent: 75px;
+	 text-indent: 82px;
 	 transition: all 0.3s ease-in-out;
 }
- .skinnyx::-webkit-input-placeholder {
+ .animation::-webkit-input-placeholder {
 	 color: #efefef;
 	 text-indent: 0;
 	 font-weight: 300;
 }
- .skinnyx + label {
+ .animation + label {
 	 display: inline;
 	 position: absolute;
 	 transform: translateX(0);
@@ -67,7 +38,7 @@
 	 overflow: hidden;
       
 }
- .skinnyx + label:before, .skinny + label:after {
+ .animation + label:before, .animation + label:after {
 	 content: "";
 	 position: absolute;
 	 right: 0;
@@ -76,40 +47,41 @@
 	 transition: all 0.3s ease-in-out;
      text-indent: 75px;
 }
- .skinnyx + label:before {
+ .animation + label:before {
 	 top: 5px;
 	 bottom: 5px;
-	 background: #fff;
+	 background: #25c29c;
 	 border-top-left-radius: 3px;
 	 border-bottom-left-radius: 3px;
      
 }
- .skinnyx + label:after {
+ .animation + label:after {
 	 top: 0;
 	 bottom: 0;
 	 background:aliceblue ;
      
 }
- .skinnyx:focus, .skinnyx:active {
+ .animation:focus, .animation:active {
 	 color: #377d6a;
 	 text-indent: 0;
 	 background: #fff;
 }
- .skinnyx:focus::-webkit-input-placeholder, .skinnyx:active::-webkit-input-placeholder {
+ .animation:focus::-webkit-input-placeholder, .animation:active::-webkit-input-placeholder {
 	 color: #aaa;
 }
- .skinnyx:focus + label, .skinnyx:active + label {
+ .animation:focus + label, .animation:active + label {
 	 transform: translateX(-100%);
 }
- .skinnyx:focus + label:after, .skinnyx:active + label:after {
+ .animation:focus + label:after, .animation:active + label:after {
 	 transform: translateX(100%);
      
 }
 #yourName {
     background-color: aliceblue;
-    text-decoration-color:#fff;
-    
 }
 #yourEmail {
     background-color: aliceblue;
-}*/
+}
+#yourMessage {
+    background-color: aliceblue;
+}
