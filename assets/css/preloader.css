@@ -3,7 +3,7 @@
     --atom-size: 350px;
     /* --atom-color-hex: #0d00ff; */
     --atom-color-hex: #0d00ff;
-    --atom-color-rgb: 0,0,0;
+    --atom-color-rgb: 217,217,217;
     --nucleus-size: calc(var(--atom-size) / 5);
     --electron-color-hex: #36C5F0;
     --electron-size : calc(var(--atom-size) / 25);
@@ -28,28 +28,21 @@
 }
 
 .preloader-text {
-  position: fixed;
-  top: 1.5em;
-  font-family: Agustina;
-  font-size: 50px;
-}
-
-.text-anime {
 	animation: fadeInAnimation ease 3s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
-	margin: 0;
-	position: relative;
-	font-weight: 600;
-	top: 10em;
+	position: fixed;
 	text-align: center;
+	top: 1.5em;
+	font-size: 30px;
 }
 
 /* Atom */
 .atom {
-  position: fixed;
+  position: relative;
   justify-content: center;
   align-items: center;
+  top: 3em;
   width: var(--atom-size);
   height: var(--atom-size);
   animation: 8s atom infinite cubic-bezier(1, .25, 0, .75);
