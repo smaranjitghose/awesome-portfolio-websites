@@ -888,9 +888,25 @@ form {
     text-align: center;
   }
   
-  #lnch_btn:hover{
-      cursor: pointer;
+  @media (max-width:280px){
+    .footer-btn{
+     width: 140px;
+     height: 30px;   
+     padding: 8%;
+    }
   }
+
+  @media (max-width:375px){
+    .footer-btn{
+     width: 140px;
+     height:53px;   
+    }
+  }
+
+  #lnch_btn:hover{
+    cursor: pointer;
+  }
+
   #lnch_btn{
   transition: 0.3s ease transform;
   font-size: larger;
@@ -902,30 +918,32 @@ form {
   }
   
   #send-btn.launching{
-      font-weight: bold;    
+   font-weight: bold;    
   }
 
   .footer-btn.launching{
-      background-color: #e44d6a;
+    background-color: #e44d6a;
+    box-shadow: 0 20px 30px -6px #e44d6a;
   }
 
   .footer-btn.launched{
     background: #30C29E; 
     color: white;  
+    box-shadow: 0 0 0 0;
   }
   
   @keyframes shake{
-      0%,50%,100%{
-          transform: translate3d(-1px, 0, 0) rotateZ(-90deg);
-      }
-      25%,75%{
-          transform: translate3d(1px, 0, 0) rotateZ(-90deg);
-      }  
+    0%,20%,40%,60%,80%,100%{
+     transform: translate3d(-1px, 0, 0) rotateZ(-90deg);
+    }
+    10%,30%,50%,70%,90%{
+     transform: translate3d(1px, 0, 0) rotateZ(-90deg);
+    }  
   }
   
   #lnch_btn.launched{
-      transform: rotateZ(-90deg);
-      animation: moveUp 1s ease 0s forwards;
+    transform: rotateZ(-90deg);
+    animation: moveUp 1s ease 0s forwards;
   }
   
   #send-btn.launched{
