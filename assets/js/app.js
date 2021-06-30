@@ -357,10 +357,18 @@ function toggle_light_mode() {
     localStorage.lightMode = "light";
     app.setAttribute("light-mode", "light");
     nav.classList.remove("dark-theme");
+    var sc = document.getElementsByClassName("socialicon");
+    for(var i=0; i<sc.length; i++) {
+      sc[i].classList.remove("dsc");
+   }
   } else {
     nav.classList.add("dark-theme");
     localStorage.lightMode = "dark";
     app.setAttribute("light-mode", "dark");
+    var sc = document.getElementsByClassName("socialicon");
+    for(var i=0; i<sc.length; i++) {
+      sc[i].classList.add("dsc");
+   }
   }
 }
 
