@@ -35,13 +35,19 @@
 }
 
 .text-anime {
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	margin: 0;
 	position: relative;
 	font-weight: 600;
+	top: 10em;
+	text-align: center;
 }
 
 /* Atom */
 .atom {
-  position: relative;
+  position: fixed;
   justify-content: center;
   align-items: center;
   width: var(--atom-size);
@@ -219,6 +225,15 @@
         left: calc(var(--electron-size) / -1);
         transform: scale(1);
     }
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .disappear {
