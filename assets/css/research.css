@@ -17,7 +17,8 @@ html[data-theme='light'] {
     --hover-link: black;
     --shadow-col1: #a3b1c6;
     --shadow-col2: #ffffff;
-    --ppr-col: black;
+    /* --ppr-col: black;     */
+    /* --ppr-col: rgb(231, 85, 109); */
 }
 
 
@@ -41,7 +42,7 @@ html[data-theme='dark'] {
     --hover-link: rgb(236, 103, 125);
     --shadow-col1: rgb(29, 28, 28);
     --shadow-col2: rgba(34, 34, 34, 0.459);
-    --ppr-col: rgb(231, 85, 109);
+    /* --button-col: rgb(231, 85, 109); */
 }
 
 .research_head {
@@ -111,17 +112,27 @@ body {
     transition: 0.3s;
 }
 
-#researchDetailsTable tr button.button {
-    border: 1px solid #000;
+/* #researchDetailsTable tr button.button {
+    border: 1px solid rgb(231, 85, 109);
+    color: rgb(231, 85, 109);
     outline: none;
-    background-color: #fff;
+    background-color: transparent;
     transition: 0.3s;
-}
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.3em 1.3em;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 1em;
+} */
 
-#researchDetailsTable tr button.button:hover {
-    background-color: #000;
+/* #researchDetailsTable tr button.button:hover , #researchDetailsTable tr button.button:focus {
+    background-color: rgb(231, 85, 109);
     color: #fff;
-}
+    border-radius: 4px;
+    box-shadow: -3px -3px 9px #ffffff73, 2px 2px 9px rgba(94, 104, 121, 0.288);
+} */
 
 #rDetailsHead {
     z-index: 700;
@@ -314,40 +325,37 @@ body {
 }
 
 
-/*Button for Citing*/
-
-.button {
-    text-decoration: none;
-    text-transform: uppercase;
-    /* border-width: 2px;
-    border-style: solid; */
-    padding: 0.3em 1.3em;
-    display: inline-block;
-    cursor: pointer;
-    margin-top: 1em;
-}
-
-.button-accent {
-    color: var(--ppr-col);
-    /* border-color: var(--ppr-col);
-    border: 0.2px solid var(--ppr-col);  */
-    border-radius: 4px;
-    box-shadow: -3px -3px 9px #ffffff73, 2px 2px 9px rgba(94, 104, 121, 0.288);
-}
-
-.button-accent:hover,
-.button-accent:focus {
-    /* background: var(--ppr-col); */
-    text-decoration: none;
-    color: purple;
-    box-shadow: inset -3px -3px 9px #ffffff73, inset 2px 2px 9px rgba(94, 104, 121, 0.288);
-}
 
 @media(min-width: 60rem) {
     .button {
         font-size: 0.9rem;
         margin-top: 0em;
     }
+}
+
+/* Button for citing  */
+
+.button {
+    border: 1px solid rgb(231, 85, 109);
+    color: rgb(231, 85, 109);
+    outline: none;
+    background-color: transparent;
+    transition: 0.3s;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.3em 1.3em;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+
+.button:hover , .button:focus {
+    background-color: rgb(231, 85, 109);
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: -3px -3px 9px #ffffff73, 2px 2px 9px rgba(94, 104, 121, 0.288);
 }
 
 
