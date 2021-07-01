@@ -3,7 +3,7 @@
     --atom-size: 350px;
     /* --atom-color-hex: #0d00ff; */
     --atom-color-hex: #0d00ff;
-    --atom-color-rgb: 0,0,0;
+    --atom-color-rgb: 217,217,217;
     --nucleus-size: calc(var(--atom-size) / 5);
     --electron-color-hex: #36C5F0;
     --electron-size : calc(var(--atom-size) / 25);
@@ -17,20 +17,24 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #F5F5F5;
+  background-color: #202124;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999999;
+  color: white;
 }
 
 .preloader-text {
-  position: fixed;
-  top: 1.5em;
-  font-family: Agustina;
-  font-size: 50px;
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	position: fixed;
+	text-align: center;
+	top: 1.5em;
+	font-size: 30px;
 }
 
 /* Atom */
@@ -38,6 +42,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
+  top: 3em;
   width: var(--atom-size);
   height: var(--atom-size);
   animation: 8s atom infinite cubic-bezier(1, .25, 0, .75);
@@ -213,6 +218,15 @@
         left: calc(var(--electron-size) / -1);
         transform: scale(1);
     }
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .disappear {
