@@ -876,34 +876,56 @@ form {
 
 .footer-btn{
     position: relative;
-    width: 150px;
-    height: 60px;
+    width: 135px;
+    height: 47px;
     display: flex;
     justify-content: space-around;
     border-radius: 50px;
-    padding: 6%;
+    padding: 3.5%;
     background: #30C29E;
     color: white;
     font-size:larger;
     text-align: center;
+    margin-left: 30%;
+    margin-top: 5%;
   }
   
-  @media (max-width:280px){
+  @media (max-width:281px){
     .footer-btn{
-     width: 140px;
-     height: 30px;   
-     padding: 8%;
+     width: 60px;
+     height: 25px;   
+     padding: 6%;
+     margin-left: 10%;
     }
   }
 
   @media (max-width:375px){
     .footer-btn{
-     width: 140px;
-     height:53px;   
+     width: 125px;
+     height:45px;   
+     margin-left:16%;
+     padding: 4%;
+    }
+  }
+  
+  @media (max-width:415px){
+    .footer-btn{
+     width: 135px;
+     height:45px;   
+     margin-left:23%;
     }
   }
 
-  #lnch_btn:hover{
+  @media (max-width:320px){
+    .footer-btn{
+     width: 125px;
+     height:45px;   
+     margin-left:18%;
+     padding: 5%;
+    }
+  }
+
+  .footer-btn:hover{
     cursor: pointer;
   }
 
@@ -917,13 +939,13 @@ form {
    animation: shake 0.3s ease 0.5s infinite;
   }
   
-  #send-btn.launching{
+  #send-btn.launching,.restored{
    font-weight: bold;    
   }
 
   .footer-btn.launching{
-    background-color: #e44d6a;
-    box-shadow: 0 20px 30px -6px #e44d6a;
+    background-color: #43D1AF;
+    box-shadow: 0 20px 30px -6px #30C29E;
   }
 
   .footer-btn.launched{
@@ -958,10 +980,10 @@ form {
       0%{
       margin-top: 0;
       transform:scale(1) rotateZ(-90deg) ;
-      color: #e44d6a;
+      /* color: #e44d6a; */
       }
       100%{
-      color: #e44d6a;
+      /* color: #e44d6a; */
       margin-top: -600px;
       transform: scale(0) rotateZ(-90deg); 
       }

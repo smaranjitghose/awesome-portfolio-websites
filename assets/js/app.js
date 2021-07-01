@@ -380,7 +380,7 @@ window.addEventListener("storage", function () {
 $(function () {
   $(".footer-btn").on("click", function () {
     setTimeout(function () {
-      $("#send-btn").addClass("launching").text("SENDING...");
+      $("#send-btn").addClass("launching").text("SENDING..");
       $("#lnch_btn").addClass("launching");
       $(".footer-btn").addClass("launching");
     }, 1);
@@ -390,5 +390,16 @@ $(function () {
       $("#lnch_btn").addClass("launched");
       $(".footer-btn").addClass("launched");
     }, 1500);
+   
+    setTimeout(function () {
+      $("#send-btn").removeClass("launched");
+      $("#send-btn").addClass("restored").text("SEND");
+      $("#send-btn").removeClass("launching");
+      $("#lnch_btn").removeClass("launched");
+      $("#lnch_btn").removeClass("launching");
+      $(".footer-btn").removeClass("launched");
+      $(".footer-btn").removeClass("launching");
+    }, 3000);
+  
   });
 });
