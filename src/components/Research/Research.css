@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.research-container {
+    background-color: #f4f4f4;
+}
+
+.pt-5,
+.py-5 {
+    padding-top: 3rem;
+}
+
+.mt-5,
+.my-5 {
+    margin-top: 3rem;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.research-upper {
+    width: 100%;
+    min-height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column!important;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+}
+
+.txt-bottom {
+    height: 80vh;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.research_head {
+    font-weight: normal;
+}
+
+.research_work {
+    color: #4e00bb;
+}
+
+.font-weight-bolder {
+    font-weight: bolder;
+}
+
+p .font-weight-bolder {
+    width: 90%;
+    margin: auto;
+}
+
+
+/*svg*/
+
+.svgmate {
+    width: 525px;
+    height: 463px;
+}
+
+.peopletableslide {
+    animation-name: veraslidein;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    transform: translateX(45px);
+}
+
+
+/* cards */
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
+
+.researchMainWrapper {
+    margin: 50px 0 200px;
+    position: relative;
+    color: var(--p-up);
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+#researchDetailsTable {
+    border-collapse: separate;
+    border-width: 0;
+    empty-cells: show;
+    border-spacing: 3em;
+    position: relative;
+    width: 85%;
+    margin: auto;
+}
+
+#researchDetailsTable tr {
+    transition: all 1s ease;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px #ddd, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+#researchDetailsTable tr:hover {
+    transform: scale(1.1);
+}
+
+#researchDetailsTable tr .card-body {
+    transition: 0.3s;
+}
+
+#researchDetailsTable tr button.button {
+    border: 1px solid #000;
+    outline: none;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+#researchDetailsTable tr button.button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#rDetailsHead {
+    z-index: 700;
+    background-color: #f5f5f5;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+.researchTitle {
+    font-weight: bold;
+    padding: 16px 16px 0 16px;
+    text-align: left;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--bg-head);
+    background-image: var(--bg-head-img);
+}
+
+.researchTitle span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+.researchTitle span a {
+    padding: 8px 0;
+}
+
+.researchCited {
+    font-weight: bold;
+    text-align: right;
+    padding: 16px 8px 0 8px;
+    width: 64px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--bg-cite-y);
+}
+
+.researchYear {
+    font-weight: bold;
+    padding: 16px 16px 0 16px;
+    text-align: right;
+    width: 88px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--bg-cite-y);
+}
+
+.researchTitleName {
+    padding: 16px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.paperTitle:hover {
+    text-decoration: none;
+    color: var(--hover-link);
+}
+
+.paperTitle {
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+.researchCitedNumber span,
+.researchY span {
+    display: inline-block;
+    margin-top: 3px;
+    color: grey;
+}
+
+.rConferences {
+    font-style: italic;
+    font-size: 0.88em;
+}
+
+.researchY {
+    font-weight: normal;
+    vertical-align: top;
+    text-align: left;
+    color: grey;
+    margin-top: 1em;
+    margin-bottom: 0%;
+}
+
+.researchCite {
+    text-align: right;
+    vertical-align: top;
+}
+
+.resCite {
+    display: none;
+}
+
+
+/*IMAGES SECTION OF LIST*/
+
+.rImg {
+    margin-left: 0em;
+    width: 100%;
+    height: 17em;
+    border-radius: 10px;
+}
+
+.imgCol {
+    width: 30%;
+}
+
+
+/* .imgRes {
+    width: 14em;
+    height: 14em;
+}
+
+.imgResponsive {
+    display: none;
+    margin-bottom: 1em;
+} */
+
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    /* border-width: 2px;
+    border-style: solid; */
+    padding: 0.3em 1.3em;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.button-accent {
+    color: var(--ppr-col);
+    /* border-color: var(--ppr-col);
+    border: 0.2px solid var(--ppr-col);  */
+    border-radius: 4px;
+    box-shadow: -3px -3px 9px #ffffff73, 2px 2px 9px rgba(94, 104, 121, 0.288);
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    /* background: var(--ppr-col); */
+    text-decoration: none;
+    color: purple;
+    box-shadow: inset -3px -3px 9px #ffffff73, inset 2px 2px 9px rgba(94, 104, 121, 0.288);
+}
+
+
+/* --------------------- */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 400ms ease-in;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 20px auto;
+    background: var(--cite-bg);
+    width: 60%;
+    position: relative;
+    animation: moveUp 2s 0s ease alternate;
+}
+
+.popup h5 {
+    margin-top: 0;
+    text-align: center;
+    color: var(--cite-col-txt);
+    background-color: var(--cite-head) !important;
+    padding: 8px;
+    position: sticky;
+    font-size: 1em;
+}
+
+
+/*Close button for popup*/
+
+.popup .close {
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    transition: all 200ms;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--cite-close);
+}
+
+.popup .close:hover {
+    color: var(--cite-hover);
+}
+
+.popup .content {
+    max-height: 70%;
+    overflow: auto;
+    font-size: 1em;
+}
+
+
+/*Table for research works*/
+
+.left-cell {
+    font-size: 0.8em;
+    text-align: right;
+    color: grey;
+    vertical-align: top;
+}
+
+.right-cell {
+    font-size: 0.8em;
+    color: var(--p-up);
+}
+
+
+/*social icons footer*/
+
+.social-icons-footer {
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 220px;
+    display: block;
+}
+
+.social-icon-footer {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: var(--link-size-footer-s);
+    height: var(--link-size-footer-s);
+    margin: 3px;
+    background-color: #26a69a;
+    border-radius: 50%;
+    text-decoration: none;
+    float: left;
+}
+
+.social-icon-footer i {
+    margin: auto;
+    font-size: 15px;
+    color: #fff;
+}
+
+.social-icon-footer:hover i {
+    color: #000000;
+}
+
+
+/*Animations*/
+
+.social-icon-footer:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 12px rgb(100, 248, 233);
+}
+
+.social-icon:hover:after {
+    transform: translate(0) scale(1.2);
+}
+
+a:hover {
+    color: transparent;
+}
+
+#verapc.svgmate .plant {
+    animation-name: plantone;
+    transform-origin: 1907.25px 884.25px;
+    transition: all .5s
+}
+
+#verapc.svgmate .plant:hover {
+    opacity: .5
+}
+
+#verapc.svgmate .arm,
+#verapc.svgmate .plant,
+#verapc.svgmate .steam {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite
+}
+
+#verapc.svgmate .steam {
+    transition: all .5s;
+    animation-name: steam
+}
+
+#verapc.svgmate .arm {
+    animation-name: arm;
+    animation-duration: 5s;
+    transform-origin: 1009.149px 711.625px
+}
+
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Agustina";
+    src: url(../assets/fonts/Agustina.woff);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: black;
+}
+
+.navbar {
+    padding: 8px 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 1;
+}
+
+.nav-link {
+    padding: 6px 21px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link {
+    color: rgba(0, 0, 0, .5);
+}
+
+.nav-link:hover {
+    color: rgba(0, 0, 0, .7);
+}
+
+.navbar-brand {
+    font-family: Agustina;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, .9);
+}
+
+.navbar-brand:hover {
+    color: rgba(0, 0, 0, 1);
+}
