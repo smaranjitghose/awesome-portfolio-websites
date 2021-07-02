@@ -142,7 +142,7 @@ const mentor = [
     title: "PitchTeen",
     subtitle: "Judge",
     image: "assets/images/experience-page/pitchteen.png",
-    desp: "<li>PitchTeen 2.0 was a tech startup competition for female and non-binary communities in high school and college from all over the world with an aim to create a safe and encouraging place for women to help them explore tech and business fields.</li>",
+    desp: "PitchTeen 2.0 was a tech startup competition for female and non-binary communities in high school and college from all over the world with an aim to create a safe and encouraging place for women to help them explore tech and business fields.",
   },
   {
     title: "Hack-A-Solution",

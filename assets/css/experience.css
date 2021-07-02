@@ -816,7 +816,7 @@ a:link{
 }
 @media screen and (max-width: 768px) {
   .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 5px;
+    margin: 2px 5px;
  }
 }
 .blog-slider__pagination .swiper-pagination-bullet {
@@ -824,15 +824,15 @@ a:link{
   height: 11px;
   display: block;
   border-radius: 10px;
-  background: #062744;
+  background: #0e49b5;
   opacity: 0.2;
   transition: all 0.3s;
 }
 .blog-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #fd3838;
+  background: #0e49b5;
   height: 30px;
-  box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
+  box-shadow: 0px 0px 20px rgba(14,73,181, 0.3);
 }
 @media screen and (max-width: 768px) {
   .blog-slider__pagination .swiper-pagination-bullet-active {
