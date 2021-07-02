@@ -391,7 +391,10 @@ ul ol{
 }
 
 .page-content {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   grid-gap: 5rem;
   padding: 2rem;
   max-width: 1124px;
