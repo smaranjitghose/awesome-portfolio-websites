@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 let header = $(`
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
@@ -100,7 +100,6 @@ let header = $(`
 </div>
 </nav>`);
 
-
 // Footer
 
 let footer = $(`
@@ -132,13 +131,13 @@ let footer = $(`
               </div>
                 <form>
                   <form action="https://formcarry.com/s/S2thQbCqEvW" method="POST" accept-charset="UTF-8" >
-                  <input type="text" name="field1" placeholder="Your Name" required/>
-                  <input type="email" name="field2" placeholder="Email Address"  required/>
-                  <textarea name="field3" placeholder="Type your Message" required></textarea>
-                  <div class="footer-btn">
+                  <input type="text" id="username" name="field1" placeholder="Your Name" required/>
+                  <input type="email" id="email" name="field2" placeholder="Email Address"  required/>
+                  <textarea name="field3" id="message" placeholder="Type your Message" required></textarea>
+                  <button class="footer-btn">
                   <div id="send-btn"><b>SEND</b></div>
                   <div id="lnch_btn"><i class="fas fa-space-shuttle"></i></div>
-                  </div>
+                  </button>
                 </form>
              </div>
           </div>
@@ -256,7 +255,7 @@ let upArrow = $(`
   <button id="btnScrollToTop" onclick="scrollToTop()"><i class="fas fa-2x fa-angle-up"></i></button>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
   })
-`)
+`);
 
 //function for the "Scroll To Top" button to detect the footer
 $(document).ready(function () {
@@ -268,14 +267,17 @@ $(document).ready(function () {
     } else {
       $("#btnScrollToTop").css("visibility", "visible");
       //The button will change it's color when it hits the footer
-      if ($(window).scrollTop() + $(window).height() > $(document).height() - 838) {
+      if (
+        $(window).scrollTop() + $(window).height() >
+        $(document).height() - 838
+      ) {
         // 838 should be changed if footer's height is changed so that the button changes it's color exactly when it hits the footer (preferably 14 less than the computer height of the footer)
         $("#btnScrollToTop").css("background-color", "#43D1Af");
       } else {
         $("#btnScrollToTop").css("background-color", "#6C63FF");
       }
     }
-  })
+  });
 });
 
 //function to scroll to top
@@ -283,9 +285,9 @@ const scrollToTop = () => {
   window.scrollTo({
     top: 0,
     left: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
-}
+};
 
 // Window Loads
 $(function () {
@@ -296,43 +298,40 @@ $(function () {
   $("#btnScrollToTop").css("visibility", "hidden");
 
   //toggler hamburger functions
-  const menuBtn = document.querySelector('.navbar-toggler');
+  const menuBtn = document.querySelector(".navbar-toggler");
   let menuOpen = false;
-  menuBtn.addEventListener('click', () => {
+  menuBtn.addEventListener("click", () => {
     if (!menuOpen) {
-      menuBtn.classList.add('open')
+      menuBtn.classList.add("open");
       menuOpen = true;
     } else {
-      menuBtn.classList.remove('open');
+      menuBtn.classList.remove("open");
       menuOpen = false;
     }
   });
-
 });
 
 // function for toggling hamburger is-active class
 
 $(function () {
-
   $("#js-hamburger").on("click", function () {
-    $(this).toggleClass('is-active');
+    $(this).toggleClass("is-active");
   });
-
 });
 
 // Navbar current page highlight
 
-let loader = document.querySelector('.loader-container');
+let loader = document.querySelector(".loader-container");
 
 window.addEventListener("load", vanish);
 
 function vanish() {
-  loader.classList.add("disappear")
+  loader.classList.add("disappear");
 }
 $(function () {
-  $('a.nav-link').each(function () {
-    if ($(this).prop('href') == window.location.href) {
-      $(this).addClass('current-link');
+  $("a.nav-link").each(function () {
+    if ($(this).prop("href") == window.location.href) {
+      $(this).addClass("current-link");
     }
   });
 });
@@ -340,14 +339,13 @@ $(function () {
 //function to remove underline on hover
 
 $(document).ready(function () {
-
   $("a.nav-link").hover(
     function () {
       $(this).removeClass("current-link");
     },
     function () {
-      if ($(this).prop('href') == window.location.href) {
-        $(this).addClass('current-link');
+      if ($(this).prop("href") == window.location.href) {
+        $(this).addClass("current-link");
       }
     }
   );
@@ -367,31 +365,38 @@ function toggle_light_mode() {
   }
 }
 
-window.addEventListener("storage", function () {
-  if (localStorage.lightMode == "dark") {
-    app.setAttribute("light-mode", "dark");
-  } else {
-    app.setAttribute("light-mode", "light");
-  }
-}, false);
+window.addEventListener(
+  "storage",
+  function () {
+    if (localStorage.lightMode == "dark") {
+      app.setAttribute("light-mode", "dark");
+    } else {
+      app.setAttribute("light-mode", "light");
+    }
+  },
+  false
+);
 
 //function to add microanimation to send button in footer
 
-$(function () {
-  $(".footer-btn").on("click", function () {
+$(function submit() {
+  if($("#username").val()!="" && $("#email").val()!="" && $("#message").val()!=""){
+  $(".footer-btn").on("click",function() {
+ 
     setTimeout(function () {
       $("#send-btn").addClass("launching").text("SENDING..");
       $("#lnch_btn").addClass("launching");
       $(".footer-btn").addClass("launching");
     }, 1);
-  
+
     setTimeout(function () {
       $("#send-btn").addClass("launched").text("SENT");
       $("#lnch_btn").addClass("launched");
       $(".footer-btn").addClass("launched");
     }, 1500);
-   
+
     setTimeout(function () {
+      alert("Thank you for connecting");
       $("#send-btn").removeClass("launched");
       $("#send-btn").addClass("restored").text("SEND");
       $("#send-btn").removeClass("launching");
@@ -399,7 +404,9 @@ $(function () {
       $("#lnch_btn").removeClass("launching");
       $(".footer-btn").removeClass("launched");
       $(".footer-btn").removeClass("launching");
-    }, 3000);
-  
+    }, 3000); 
+ 
   });
+ }
 });
+

@@ -888,6 +888,8 @@ form {
     text-align: center;
     margin-left: 30%;
     margin-top: 5%;
+    outline: none;
+    border: none;
   }
   
   @media (max-width:281px){
@@ -987,6 +989,13 @@ form {
       margin-top: -600px;
       transform: scale(0) rotateZ(-90deg); 
       }
+  }
+
+  .disabledBtn{
+      pointer-events: none;
+  }
+  .enable{
+      pointer-events: all;
   }
 
 
