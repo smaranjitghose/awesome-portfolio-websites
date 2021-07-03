@@ -34,12 +34,13 @@ const showCards2 = () => {
     ({ title, cardImage, place, time, desp }) =>
       (output += `        
     <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400"> 
-      <div class="card card1">
+      <div class="card card1" id="bg-color">
         <img src="${cardImage}" class="featured-image"/>
         <article class="card-body">
           <header>
             <div class="title">
               <h3>${title}</h3>
+              
             </div>
             <p class="meta">
               <span class="pre-heading">${place}</span><br>
@@ -94,7 +95,7 @@ const showCards = () => {
   volunteershipcards.forEach(
     ({ title, cardImage, description }) =>
       (output += `        
-      <div class="card volunteerCard" style="height: 550px;width:400px">
+      <div class="card volunteerCard" id="bg-color" style="height: 550px;width:400px">
       
       <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
       <div class="content">
@@ -133,17 +134,17 @@ const showCards3 = () => {
   mentor.forEach(
     ({ title, image, time, desp}) =>
       (output += `        
-      <div class="column mentorshipCard"> 
-      <div class="card card2 mentorshipCardCover">
+      <div class="column mentorshipCard" > 
+      <div class="card card2 mentorshipCardCover" id="bg-color">
         <img src="${image}" class="card-img-top" alt="..."  width="64" height="300">
         <div class="information">
         <div class="card-body">
           <h5 class="card-title">${title}</h5>
           <p class=""sub-title">${time}</p>
         </div>
-        <div class="more-information">
+        <div class="more-information" id="bg-color">
         <ul class="list-group list-group-flush p-0 right-aligned">
-          <div class="list-group-item card2 disclaimer">${desp}</div>
+          <div class="list-group-item card2 disclaimer" id="bg-color">${desp}</div>
         </ul>
         </div>
         </div>
