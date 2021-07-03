@@ -1,7 +1,15 @@
 import React from 'react';
 import './Footer.css'
 import { FaQuoteLeft } from 'react-icons/fa';
-import {FaAngleUp} from 'react-icons/fa';
+import { FaAngleUp } from 'react-icons/fa';
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+};
+
 
 const Footer = () => {
     return (
@@ -118,7 +126,7 @@ const Footer = () => {
                             </svg>
                         </a>
                         <a className="social-button instagram" href="" target="_blank">
-                            <svg className="instagram-icon-footer" x="0px" y="0px" viewBox="0 0 202.5 202.5" style={{enableBackground:'new 0 0 202.5 202.5'}}>
+                            <svg className="instagram-icon-footer" x="0px" y="0px" viewBox="0 0 202.5 202.5" style={{ enableBackground: 'new 0 0 202.5 202.5' }}>
                                 <circle id="littleCircle" class="st0" cx="101" cy="101.5" r="18.9"></circle>
                                 <circle id="shutter" class="st0" cx="101" cy="101.5" r="8"></circle>
                                 <circle id="lens" class="st0" cx="125.5" cy="78.6" r="2.9"></circle>
@@ -138,7 +146,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <button id="btnScrollToTop" onclick="scrollToTop()" style={{visibility: "visible", backgroundColor: 'rgb(46, 188, 153)' }}><FaAngleUp className="fz"/></button>
+
+            <button id="btnScrollToTop" onclick={scrollToTop()} style={{ visibility: "visible", backgroundColor: 'rgb(106, 0, 187)', color: '#fff' }}><FaAngleUp className="fz" /></button>
         </div>
     );
 }

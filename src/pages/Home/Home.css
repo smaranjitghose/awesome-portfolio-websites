@@ -19,7 +19,7 @@
 }
 .desc {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -46,7 +46,7 @@
 .center img {
     width: 200px;
     height: 200px;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
 
@@ -351,7 +351,7 @@ a:hover {
     background-color: #fff;
     margin: 8px;
     border-radius: 50%;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1) ;
     text-decoration: none;
     transition: all .2s ease;
 }
