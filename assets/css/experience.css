@@ -43,7 +43,7 @@ section > div {
   padding-top: 7rem !important;
 }
 
-section {height: 95vh;}
+/* section {height: 95vh;} */
 
 @media only screen and (max-width: 991px) {
   section{
@@ -77,9 +77,9 @@ section {height: 95vh;}
   padding-right: 4rem;
   margin: 0 auto;
 }
-.column {
+/* .column {
   padding: 70px;
-}
+} */
 .section {
   padding: 20px;
   padding-left: 0;
@@ -183,6 +183,7 @@ section {height: 95vh;}
 .card1 .meta {
   margin-bottom: 22px;
   margin:0;
+  text-align: center;
 }
 
 ul ol{
@@ -290,6 +291,7 @@ ul ol{
   margin-top: 5px;
   margin-bottom: 5px;
   color: var(--head-col);
+  text-align: center;
 }
 
 .main ul, .main1 ul {
@@ -518,8 +520,8 @@ ul ol{
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 1px;
-  margin-bottom: 5rem;
+  /* padding: 1px; */
+  /* margin-bottom: 10rem; */
   margin-top: 0.1rem;
   transition: transform var(--d) var(--e);
   z-index: 1;
@@ -529,14 +531,15 @@ ul ol{
   background: transparent;
 } */
 
- .content > * + * {
+ /* .content > * + * {
   margin-top: 1rem;
-} 
+}  */
 
 .volunteerTitle {
   font-size: 1.5rem;
   line-height: 1.2;
-  margin-top: 0.5em;
+  /* margin-top: 0.5em; */
+  padding-bottom: 40px;
   transform: translateY(40px);
   transition: all 0.7s;
   font-weight: 900;
@@ -544,9 +547,10 @@ ul ol{
 }
 
 .copy {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: italic;
   line-height: 1.35;
+  padding-bottom: 40px;
 }
 
 /* .page-content .cardafter {
