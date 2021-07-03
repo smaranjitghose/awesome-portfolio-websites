@@ -8,10 +8,15 @@
 .home {
     background: #f4f4f4;
     color: #222;
-    height: auto;
+    position: relative;
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
-
+#particlejs{
+    position: relative;
+  height: 100vh;
+  width: 100%;
+}
 .desc {
     position: absolute;
     top: 50%;

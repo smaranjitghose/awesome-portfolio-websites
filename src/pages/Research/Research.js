@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './Research.css';
-import inteferenceNetwork from '../assets/images/research-page/inteferenceNetwork.png'
-import crossLingual from '../assets/images/research-page/crossLingual.png'
-import wordRepresentation from '../assets/images/research-page/wordRepresentation.png'
-import dialogueState from '../assets/images/research-page/dialogueState.png'
-import semanticSegmentation from '../assets/images/research-page/semanticSegmentation.png';
-import deepNetwork from '../assets/images/research-page/deepNetwork.png'
-import imageDecomposition from '../assets/images/research-page/imageDecomposition.png'
-import neuralNetworks from '../assets/images/research-page/neuralNetworks.jpg'
+import inteferenceNetwork from '../../assets/images/research-page/inteferenceNetwork.png'
+import crossLingual from '../../assets/images/research-page/crossLingual.png'
+import wordRepresentation from '../../assets/images/research-page/wordRepresentation.png'
+import dialogueState from '../../assets/images/research-page/dialogueState.png'
+import semanticSegmentation from '../../assets/images/research-page/semanticSegmentation.png';
+import deepNetwork from '../../assets/images/research-page/deepNetwork.png'
+import imageDecomposition from '../../assets/images/research-page/imageDecomposition.png'
+import neuralNetworks from '../../assets/images/research-page/neuralNetworks.jpg'
 
 const Research = () => {
 
@@ -394,7 +394,7 @@ const Research = () => {
                                                     CITE
                                                 </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                             </div>
-                                            <div id="absPopup5" class="collapse" aria-labelledby="headingTwo" className={isActive ? 'active' : 'hidden'}rent=".collapse">
+                                            <div id="absPopup5" class="collapse" aria-labelledby="headingTwo" className={isActive ? 'active' : 'hidden'} rent=".collapse">
                                                 <div class="card-body">
                                                     This is currently left empty and this can be considered as a dummy data 5
                                                 </div>
