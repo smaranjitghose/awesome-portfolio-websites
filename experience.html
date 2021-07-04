@@ -39,7 +39,10 @@
     <!--Favicon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script defer src="./assets/js/dynamicTitle.js"></script>
+
 </head>
 
 <body>
@@ -177,21 +180,33 @@
     <div class="main1 pt-1">
         <h4 class="text-center heading1">Open <span class="my_experience">Source</span></h4>
 
-        <!-- Volunteership Card -->
+        <!-- Hackathon Section -->
 
         <main class="page-content volunteership">
-            <!-- Dynamic volunteership Card -->
+            <!-- Dynamic Hackathon Section -->
 
         </main>
 
-        <h4 class="text-center heading1">Mentorship <span class="my_experience">Initiatives</span></h4>
+      
+    </div>
+
+
+    
+    
+    <div>
+        <h4 class="text-center heading1 mcard">Hackathon <span class="my_experience">Participation</span></h4>
 
         <!-- Mentorship Card -->
 
-        <main class="container mt-5 animate__animated animate__fadeInUp animate__delay-1s">
-            <div class="row mentorship-cards">
-                <!-- Dynamic mentorship Card -->
+        <main class="">
+         
+            <div class="blog-slider mb-5 mt-5">
+               <div class="blog-slider__wrp swiper-wrapper hackathon-section">
+                     <!-- Dynamic  Card -->
+               </div>
+                <div class="blog-slider__pagination"></div>
             </div>
+            
         </main>
     </div>
 
@@ -212,6 +227,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/experience.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper('.blog-slider', {
+                observer: true,
+                observeParents: true,
+                spaceBetween: 30,
+                effect: 'fade',
+                loop: true,
+                mousewheel: {
+                invert: false,
+            },
+            pagination: {
+                el: '.blog-slider__pagination',
+                clickable: true,
+            }
+        });
+     </script>
 </body>
 
 </html>
