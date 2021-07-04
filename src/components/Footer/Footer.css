@@ -1,30 +1,17 @@
 @import '../../pages/Home/Home.css';
+
+/*Footer Base*/
 .footer {
     padding-top: 10px;
     font-family: "Poppins", sans-serif;
-    background-color: #2b2a2a;
+    background-color: #121212;
 }
 
 .p-4 {
     padding: 1.5rem;
 }
 
-.form-comtainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
-    width: 400px;
-}
-
-.form-style-6 {
-    font: 95% Arial, Helvetica, sans-serif;
-    max-width: 400px;
-    margin: 10px auto;
-    padding: 16px;
-    border-radius: 2px;
-}
-
+/*Form*/
 .form-header {
     text-align: center;
     margin-bottom: 4rem;
@@ -49,7 +36,7 @@ form {
 }
 
 .form-style-6 h1 {
-    background: #43D1AF;
+    background: #bb86fc;
     font-size: 140%;
     font-weight: 300;
     text-align: center;
@@ -60,6 +47,23 @@ form {
 
 .col-lg-6 {
     width: 50%;
+}
+
+.form-style-6 {
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    border-radius: 2px;
+}
+
+.form-style-6 h1 {
+    background: #bb86fc;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
 }
 
 .form-style-6 input[type="text"],
@@ -84,7 +88,7 @@ form {
     background: transparent;
     margin-bottom: 4%;
     border: #000;
-    border-bottom: 2px solid #43D1AF;
+    border-bottom: 2px solid #bb86fc;
     padding: 3%;
     color: rgb(107, 105, 105);
     font: 95% Arial, Helvetica, sans-serif;
@@ -101,9 +105,9 @@ form {
 .form-style-6 input[type="url"]:focus,
 .form-style-6 textarea:focus,
 .form-style-6 select:focus {
-    box-shadow: 0 0 5px #43D1AF;
+    box-shadow: 0 0 5px #bb86fc;
     padding: 3%;
-    border: 1px solid #43D1AF;
+    border: 1px solid #bb86fc;
     border-radius: 2px;
 }
 
@@ -115,8 +119,8 @@ form {
     width: 100%;
     margin-top: 2rem;
     padding: 3%;
-    background: #43D1AF;
-    border-bottom: 2px solid #30C29E;
+    background: #6a00bb;
+    border-bottom: 2px solid #6a00bb;
     border-radius: 2px;
     border-top-style: none;
     border-right-style: none;
@@ -127,15 +131,15 @@ form {
 
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover {
-    background: #2EBC99;
+    background:#6a00bbd2;;
+  
 }
 
 .form-comtainer {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     font-family: "Poppins", sans-serif;
-    width: auto;
 }
 
 .footer hr {
@@ -156,8 +160,9 @@ form {
     font-size: 25px;
     font-weight: 200;
     line-height: 22px;
-    border-bottom: 2px solid #43D1AF;
+    border-bottom: 3px solid #bb86fc;
 }
+
 
 .tag {
     font-family: "Poppins", sans-serif;
@@ -286,7 +291,7 @@ form {
 }
 
 #elswvit1tjfz {
-    fill: #4FC8AD;
+    fill: #bb86fc;
     transform-origin: 189.55px 204.84px;
     transform: rotate( -45deg);
 }
@@ -337,12 +342,12 @@ form {
 }
 
 #elu3ra9n0vuvr {
-    fill: #4FC8AD;
+    fill: #bb86fc;
     transform-origin: 298.8px 311.06px;
 }
 
 #eli4p1ct2pom {
-    fill: #4FC8AD;
+    fill: #bb86fc;
     transform-origin: 334.649px 311.82px;
 }
 
@@ -353,7 +358,7 @@ form {
 
 #elybggkgwy7w,
 #el7bsk8ohj0wq {
-    fill: #4FC8AD;
+    fill: #bb86fc;
 }
 
 #elljcq3lr6ure {
@@ -392,11 +397,11 @@ form {
 
 #elok3k7m7rsq,
 #el0y5r0oe5z848 {
-    fill: #4FC8AD
+    fill: #bb86fc
 }
 
 #el19ja9ku3plk {
-    fill: #4FC8AD;
+    fill: #bb86fc;
     opacity: 0.6;
     transform-origin: 199.565px 180.622px;
 }
@@ -511,5 +516,28 @@ svg#freepik_stories-smiley-face.animated #freepik--Character--inject-31 {
     100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+@keyframes up {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(-15px);
+    }
+    40% {
+        transform: translate(0);
+    }
+}
+
+@-webkit-keyframes up {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(-15px);
+    }
+    40% {
+        transform: translate(0);
     }
 }
