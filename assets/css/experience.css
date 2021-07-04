@@ -44,7 +44,7 @@ section > div {
   padding-top: 7rem !important;
 }
 
-section {height: 95vh;}
+
 
 @media only screen and (max-width: 991px) {
   section{
@@ -78,9 +78,7 @@ section {height: 95vh;}
   padding-right: 4rem;
   margin: 0 auto;
 }
-.column {
-  padding: 70px;
-}
+
 .section {
   padding: 20px;
   padding-left: 0;
@@ -184,6 +182,7 @@ section {height: 95vh;}
 .card1 .meta {
   margin-bottom: 22px;
   margin:0;
+  text-align: center;
 }
 
 ul ol{
@@ -197,7 +196,6 @@ ul ol{
   background-repeat: no-repeat;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
-  /* overflow: hidden; */
   width: 100%;
   height: 300px;
 }
@@ -291,6 +289,7 @@ ul ol{
   margin-top: 5px;
   margin-bottom: 5px;
   color: var(--head-col);
+  text-align: center;
 }
 
 .main ul, .main1 ul {
@@ -363,9 +362,7 @@ ul ol{
   border-radius: 10px;
   box-shadow: 0px 8px #093b8f, 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
-  /* box-shadow:  4px 4px 7px var(--shadow-col1),
-              -2px -2px 4px var(--shadow-col2); */
-
+  
               animation: 0.5s ease-out 0s 1 slideInFromLeft;
   
               background: #333;
@@ -377,13 +374,7 @@ ul ol{
               
 }
 
-/* .volunteerCard:before {
-  
-  transform: scale(1);
-  transform-origin: 50% 50%;
-  transition: transform 0.25s ease-out; }
-.volunteerCard:hover:before {
-  transform: scale(21); } */
+
 
 .volunteerCard:hover{
   
@@ -392,7 +383,10 @@ ul ol{
 }
 
 .page-content {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   grid-gap: 5rem;
   padding: 2rem;
   max-width: 1124px;
@@ -411,7 +405,6 @@ ul ol{
   text-align: center;
   color: whitesmoke;
   cursor:pointer;
-  /* background-color: #43D1AF; */
   border: none;
   
   
@@ -456,52 +449,6 @@ ul ol{
   }
 }
 
-/* .page-content .card:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 110%;
-  background-size: cover;
-  background-position: 0 0;
-  transition: transform calc(var(--d) * 1.5) var(--e);
-  pointer-events: none;
-}
-.page-content .card:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  pointer-events: none;
-  transform: translateY(-50%);
-  transition: transform calc(var(--d) * 2) var(--e);
-}
-.page-content .card:hover:after{
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.009) 11.7%,
-    rgba(0, 0, 0, 0.034) 22.1%,
-    rgba(0, 0, 0, 0.072) 31.2%,
-    rgba(0, 0, 0, 0.123) 39.4%,
-    rgba(0, 0, 0, 0.182) 46.6%,
-    rgba(0, 0, 0, 0.249) 53.1%,
-    rgba(0, 0, 0, 0.32) 58.9%,
-    rgba(0, 0, 0, 0.394) 64.3%,
-    rgba(0, 0, 0, 0.468) 69.3%,
-    rgba(0, 0, 0, 0.54) 74.1%,
-    rgba(0, 0, 0, 0.607) 78.8%,
-    rgba(0, 0, 0, 0.668) 83.6%,
-    rgba(0, 0, 0, 0.721) 88.7%,
-    rgba(0, 0, 0, 0.762) 94.1%,
-    rgba(0, 0, 0, 0.79) 100%
-  ) !important;
-  transition: ease-out;
-} */
 
 .card-body p{
   margin: 0px;
@@ -514,25 +461,19 @@ ul ol{
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 1px;
-  margin-bottom: 5rem;
   margin-top: 0.1rem;
   transition: transform var(--d) var(--e);
   z-index: 1;
 }
 
-/* .content:hover{
-  background: transparent;
-} */
 
- .content > * + * {
-  margin-top: 1rem;
-} 
+
+
 
 .volunteerTitle {
   font-size: 1.5rem;
   line-height: 1.2;
-  margin-top: 0.5em;
+  padding-bottom: 40px;
   transform: translateY(40px);
   transition: all 0.7s;
   font-weight: 900;
@@ -540,50 +481,12 @@ ul ol{
 }
 
 .copy {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: italic;
   line-height: 1.35;
+  padding-bottom: 40px;
 }
 
-/* .page-content .cardafter {
-  transform: translateY(0);
-}
-.content {
-  transform: translateY(calc(100% - 4.5rem));
-}
-.content > *:not(.title) {
-  opacity: 0;
-  transform: translateY(1rem);
-  transition: transform var(--d) var(--e), opacity var(--d) var(--e);
-}
-.page-content .card:hover,
-.page-content .card:focus-within {
-  align-items: center;
-}
-.page-content .card:hover:before,
-.page-content .card:focus-within:before {
-  transform: translateY(-4%);
-}
-.page-content .card:hover:after,
-.page-content .card:focus-within:after {
-  transform: translateY(-50%);
-}
-.page-content .card:hover .content,
-.page-content .card:focus-within .content {
-  transform: translateY(0);
-}
-.page-content .card:hover .content > *:not(.title),
-.page-content .card:focus-within .content > *:not(.title) {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: calc(var(--d) / 8);
-}
-.page-content .card:focus-within:before,
-.page-content .card:focus-within:after,
-.page-content .card:focus-within .content,
-.page-content .card:focus-within .content > *:not(.title) {
-  transition-duration: 0s;
-} */
 
 
 
@@ -793,63 +696,9 @@ a:link{
  }
 }
 
-/*Slider Scrollbar */
+.card2{
 
-.blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
-  bottom: 10px;
-  left: 0;
-  width: 100%;
-}
-.blog-slider__pagination {
-  position: absolute;
-  z-index: 21;
-  right: 20px;
-  width: 11px !important;
-  text-align: center;
-  left: auto !important;
-  top: 50%;
-  bottom: auto !important;
-  transform: translateY(-50%);
-}
-@media screen and (max-width: 768px) {
-  .blog-slider__pagination {
-    transform: translateX(-50%);
-    left: 50% !important;
-    top: 205px;
-    width: 100% !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
-}
-.blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 8px 0;
-}
-@media screen and (max-width: 768px) {
-  .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 2px 5px;
- }
-}
-.blog-slider__pagination .swiper-pagination-bullet {
-  width: 11px;
-  height: 11px;
-  display: block;
-  border-radius: 10px;
-  background: #0e49b5;
-  opacity: 0.2;
-  transition: all 0.3s;
-}
-.blog-slider__pagination .swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #0e49b5;
-  height: 30px;
-  box-shadow: 0px 0px 20px rgba(14,73,181, 0.3);
-}
-@media screen and (max-width: 768px) {
-  .blog-slider__pagination .swiper-pagination-bullet-active {
-    height: 11px;
-    width: 30px;
- }
+  color: var(--text);
 }
 
 @media(max-width: 768px){
