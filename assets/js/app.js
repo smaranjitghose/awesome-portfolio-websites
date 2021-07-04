@@ -108,7 +108,7 @@ let footer = $(`
   <div class="p-4">
     <div class="container-fluid quote-container">
       <div class="quotes"    style="text-align:center;">
-        <i class="fas fa-quote-left" style="color:white;"></i>
+        <i class="fas fa-feather" style="color:white;"></i>
       </div>
       <p class="tag" >Develop a passion for learning. If you do, you will never cease to grow.</p>
     </div>
