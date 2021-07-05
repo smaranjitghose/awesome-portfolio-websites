@@ -380,7 +380,6 @@ window.addEventListener(
 //function to add microanimation to send button in footer
 
 $(function submit() {
-  if($("#username").val()!="" && $("#email").val()!="" && $("#message").val()!=""){
   $(".footer-btn").on("click",function() {
  
     setTimeout(function () {
@@ -393,7 +392,7 @@ $(function submit() {
       $("#send-btn").addClass("launched").text("SENT");
       $("#lnch_btn").addClass("launched");
       $(".footer-btn").addClass("launched");
-    }, 1500);
+    }, 2000);
 
     setTimeout(function () {
       alert("Thank you for connecting");
@@ -405,8 +404,6 @@ $(function submit() {
       $(".footer-btn").removeClass("launched");
       $(".footer-btn").removeClass("launching");
     }, 3000); 
- 
   });
- }
 });
 
