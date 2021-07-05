@@ -1,4 +1,8 @@
 /* preloader */
+body {
+  overflow: hidden;
+}
+
 :root {
     --atom-size: 350px;
     /* --atom-color-hex: #0d00ff; */
@@ -227,10 +231,6 @@
 	100% {
 		opacity: 1;
 	}
-}
-
-.disappear {
-  animation: vanish 1s forwards;
 }
 
 @keyframes vanish {

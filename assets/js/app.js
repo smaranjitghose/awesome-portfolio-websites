@@ -318,14 +318,6 @@ $(function () {
 });
 
 // Navbar current page highlight
-
-let loader = document.querySelector('.loader-container');
-
-window.addEventListener("load", vanish);
-
-function vanish() {
-  loader.classList.add("disappear")
-}
 $(function () {
   $('a.nav-link').each(function () {
     if ($(this).prop('href') == window.location.href) {
@@ -371,3 +363,12 @@ window.addEventListener("storage", function () {
     app.setAttribute("light-mode", "light");
   }
 }, false);
+
+// smooth vanish of preloader
+$(document).ready(function () {
+  let loader = document.querySelector('.loader-container');
+
+  $(loader).fadeOut(600, function(){
+    $(`body`).css("overflow", "auto");
+  });
+})
