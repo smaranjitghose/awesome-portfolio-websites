@@ -1,4 +1,8 @@
 @import url(./style.css);
+@font-face {
+    font-family: "NHaas";
+    src: url(../fonts/NHaas\ Bold.63b9aba.woff2);
+}
 
 /* Dark and Light theme */
 
@@ -9,20 +13,21 @@ html[data-theme='light'] {
 }
 
 html[data-theme='dark'] {
-    --bg1-color: #272727;
+    --bg1-color: #000033;
     --shadow: 0 4px 8px 0 rgba(104, 102, 102, 0.2);
     --border: none;
 }
 
 .education_head {
     font-weight: bold;
+    font-family: NHaas;
 }
 
 
 /*color of education page heading*/
 
 .edu_background {
-    color: #4e00bb;
+    color: rgb(0, 57, 230);
 }
 
 
@@ -93,12 +98,13 @@ h4 {
 }
 
 .s2 .card img {
-    height: 90%;
+    height: 80%;
     width: 90%;
 }
 
 .s2 .card,
 .s2 img {
+/* background-color: #202f44; */
     border-radius: 3rem;
 }
 

@@ -5,11 +5,10 @@ html[data-theme="light"] {
   --col-bd-radius:rgb(2, 2, 2);
   --col-box-shadow:#000000 2px 2px 4px, 
   #4D4D4D -2px -2px 4px;
- --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
- inset #4D4D4D -2px -2px 4px;
+  --col-box-shadow-hover:inset #8a7373 2px 2px 4px,
   --col-bd-icon:transparent;
   --bg-icon: #fff;
-   --bg1-color: #fff;
+  --bg1-color: #fff;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
   --col-icon-medium: #00ab6c;
@@ -53,7 +52,7 @@ body{
 }
 
 .section {
-  background-color: rgb(63, 25, 170);
+  background-color: rgb(0, 57, 230);
   justify-content: center;
   align-items: center;
 }
