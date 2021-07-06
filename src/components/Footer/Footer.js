@@ -66,7 +66,7 @@ const Footer = () => {
                     </div>
 
                     <div className="rounded-social-buttons tag">
-                        <a className="social-button twitter" href="#" target="_blank">
+                        <a className="social-button twitter" href="https://twitter.com/" target="_blank" rel="noreferrer" >
                             <svg className="twitter-icon-footer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" enableBackground="new 0 0 500 500" xmlSpace="preserve">
                                 <path id="body" fill="#5DA8DC" d="M142.9,364.1c-1.6,1-3,1.7-4,2.3c-3,1.5-7.9,3.8-14.9,6.9c-7,3.1-14.7,5.7-23.1,7.9
                           c-8.4,2.2-15.6,3.8-21.8,4.7c-6.2,0.9-12.2,1.5-18.1,1.8s-11.4,0.3-16.7,0c-5.2-0.3-8.5-0.5-9.6-0.6l-1.8-0.2l-0.4-0.1l-0.4-0.1v0.8
@@ -118,14 +118,14 @@ const Footer = () => {
                             </svg>
                         </a>
 
-                        <a className="social-button linkedin" href="" target="_blank">
+                        <a className="social-button linkedin" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
                             <svg className="linkedin-icon-footer" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="#0e76a8" strokeWidth="1" strokeLinecap="round" strokeLineJoin="round">
                                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                                 <rect x="2" y="9" width="4" height="12"></rect>
                                 <circle cx="4" cy="4" r="2"></circle>
                             </svg>
                         </a>
-                        <a className="social-button instagram" href="" target="_blank">
+                        <a className="social-button instagram" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
                             <svg className="instagram-icon-footer" x="0px" y="0px" viewBox="0 0 202.5 202.5" style={{ enableBackground: 'new 0 0 202.5 202.5' }}>
                                 <circle id="littleCircle" class="st0" cx="101" cy="101.5" r="18.9"></circle>
                                 <circle id="shutter" class="st0" cx="101" cy="101.5" r="8"></circle>
@@ -133,7 +133,7 @@ const Footer = () => {
                                 <path id="camera" class="st0" d="M79,60.5h44c10.5,0,19,8.5,19,19v44c0,10.5-8.5,19-19,19H79c-10.5,0-19-8.5-19-19v-44                                                                            C60,69,68.5,60.5,79,60.5z"></path>
                             </svg>
                         </a>
-                        <a className="social-button github" href="#" target="_blank">
+                        <a className="social-button github" href="https://github.com/" target="_blank" rel="noreferrer">
                             <svg className="github-icon-footer" width="45px" height="45px" viewBox="0 0 300 300">
                                 <path id="body" d="M112.5,234.4v43.1c24.5,7.5,50.5,7.5,75,0V225c-0.4-11.1-4.9-21.6-12.7-29.6c30-3.4,59.5-23.5,59.5-64.1
                                     c0.9-13.9-3.3-27.7-11.8-38.7c4.1-11.6,3.7-24.4-1.3-35.7c0,0-11.2-3.7-37.5,13.8c-22.1-6.1-45.3-6.1-67.4,0
