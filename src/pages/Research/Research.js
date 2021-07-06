@@ -231,7 +231,7 @@ const Research = () => {
                             <table id="researchDetailsTable">
                                 <tbody class="main">
                                     <tr data-aos="zoom-in-left" class="aos-init">
-                                        <td class="imgCol"><img src={inteferenceNetwork} class="rImg" /></td>
+                                        <td class="imgCol"><img src={inteferenceNetwork} class="rImg" alt="research" /></td>
                                         <td class="researchTitleName">
                                             <div>
                                                 {/* <span class="imgResponsive">
@@ -267,7 +267,7 @@ const Research = () => {
                                         </td>
                                     </tr>
                                     <tr data-aos="zoom-in-left" class="aos-init">
-                                        <td class="imgCol"><img src={crossLingual} class="rImg" /></td>
+                                        <td class="imgCol"><img src={crossLingual} class="rImg" alt="research" /></td>
                                         <td class="researchTitleName">
                                             <div>
                                                 {/* <span class="imgResponsive">
@@ -302,7 +302,7 @@ const Research = () => {
                                         </td>
                                     </tr>
                                     <tr data-aos="zoom-in-left" class="aos-init">
-                                        <td class="imgCol"><img src={wordRepresentation} class="rImg" /></td>
+                                        <td class="imgCol"><img src={wordRepresentation} class="rImg" alt="research" /></td>
                                         <td class="researchTitleName">
                                             <div>
                                                 {/* <span class="imgResponsive">
@@ -337,7 +337,7 @@ const Research = () => {
                                         </td>
                                     </tr>
                                     <tr data-aos="zoom-in-left" class="aos-init">
-                                        <td class="imgCol"><img src={dialogueState} class="rImg" /></td>
+                                        <td class="imgCol"><img src={dialogueState} class="rImg" alt="research" /></td>
                                         <td class="researchTitleName">
                                             <div>
                                                 {/* <span class="imgResponsive">
@@ -372,7 +372,7 @@ const Research = () => {
                                         </td>
                                     </tr>
                                     <tr data-aos="zoom-in-left" class="aos-init">
-                                        <td class="imgCol"><img src={semanticSegmentation} class="rImg" /></td>
+                                        <td class="imgCol"><img src={semanticSegmentation} class="rImg" alt="research" /></td>
                                         <td class="researchTitleName">
                                             <div>
                                                 {/* <span class="imgResponsive">
@@ -407,7 +407,7 @@ const Research = () => {
                                         </td>
                                     </tr>
                                     <tr data-aos="zoom-in-left" class="aos-init">
-                                        <td class="imgCol"><img src={deepNetwork} class="rImg" /></td>
+                                        <td class="imgCol"><img src={deepNetwork} class="rImg" alt="research" /></td>
                                         <td class="researchTitleName">
                                             <div>
                                                 {/* <span class="imgResponsive">
@@ -442,7 +442,7 @@ const Research = () => {
                                         </td>
                                     </tr>
                                     <tr data-aos="zoom-in-left" class="aos-init">
-                                        <td class="imgCol"><img src={imageDecomposition} class="rImg" /></td>
+                                        <td class="imgCol"><img src={imageDecomposition} class="rImg" alt="research" /></td>
                                         <td class="researchTitleName">
                                             <div>
                                                 {/* <span class="imgResponsive">
@@ -477,7 +477,7 @@ const Research = () => {
                                         </td>
                                     </tr>
                                     <tr data-aos="zoom-in-left" class="aos-init">
-                                        <td class="imgCol"><img src={neuralNetworks} class="rImg" /></td>
+                                        <td class="imgCol"><img src={neuralNetworks} class="rImg" alt="research" /></td>
                                         <td class="researchTitleName">
                                             <div>
                                                 {/* <span class="imgResponsive">

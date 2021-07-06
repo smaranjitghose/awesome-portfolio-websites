@@ -268,7 +268,6 @@
 
 .codeforces-icon .red {
     height: 4px;
-    y: 2.5px;
 }
 
 .codeforces:hover .red {
@@ -277,7 +276,6 @@
 
 .codeforces-icon .yellow {
     height: 5px;
-    y: 1.5px;
 }
 
 .codeforces:hover .yellow {

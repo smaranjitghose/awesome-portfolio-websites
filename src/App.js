@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import './App.css';
 import Experience from './pages/Experience/Experience'
@@ -14,19 +14,21 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Switch>
-        <Route exact path='/' component={Home} exact={true} />
-        <Route path='/experience' component={Experience} />
-        <Route path='/projects' component={Projects} />
-        <Route path='/education' component={Education} />
-        <Route path='/research' component={Research} />
-        <Route path="*" component={NotFound} />
-        <Route path='/resume' component={Resume}></Route>
-      </Switch>
-      <Footer />
-    </div>
+    <>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/experience' component={Experience} />
+          <Route path='/projects' component={Projects} />
+          <Route path='/education' component={Education} />
+          <Route path='/research' component={Research} />
+          <Route path='' component={NotFound} />
+          <Route path='/resume' component={Resume} />
+        </Switch>
+        <Footer />
+      </div>
+    </>
   );
 }
 
