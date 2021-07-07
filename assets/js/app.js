@@ -258,7 +258,7 @@ let upArrow = $(`
 //function for the "Scroll To Top" button to detect the footer
 $(document).ready(function () {
   $(window).scroll(function () {
-    console.log($(window).scrollTop());
+    // console.log($(window).scrollTop());
     //The button will be hidden until we scroll more than the window's height
     if ($(window).scrollTop() < $(window).height()) {
       $("#btnScrollToTop").css("visibility", "hidden");
