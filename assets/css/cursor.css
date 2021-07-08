@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+
+html,
+html *,
+body,
+body * {
+  cursor: none;
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #b83030f1;
+}
+
+.cursor-dot-outline {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(211, 115, 115, 0.959);
+}
