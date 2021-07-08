@@ -366,7 +366,6 @@ html[light-mode="dark"] {
         position: relative;
         z-index: 1;
         text-align: center;
-        border-radius: 15px;
     }
     .current-link:after {
         content: "";
@@ -378,14 +377,23 @@ html[light-mode="dark"] {
         width: 32%;
         border-bottom: 3px solid #6a00bb;
     }
-    .nav-link:hover {
-        border-radius: 40px;
-        background: #ffffff;
-        transition: all 0.2s ease-in-out;
-        box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.2);
-        width: 100%;
-        font-weight: bold;
+    
+    .nav-item::after {
+        content: "";
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 0.15em;
+        bottom: 0;
+        width: 0%;
+        background-color: #6a00bb;
+        transition: all ease-in-out 280ms;
     }
+    
+    .nav-item:hover::after {
+        width: 50%;
+    }
+
     li.nav-item {
         text-align: center;
     }
