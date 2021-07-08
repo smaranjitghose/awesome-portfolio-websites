@@ -1,4 +1,8 @@
 /* preloader */
+.no-scroll-preload {
+    overflow: hidden;
+}
+
 :root {
     --atom-size: 350px;
     /* --atom-color-hex: #0d00ff; */
