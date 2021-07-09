@@ -151,7 +151,7 @@ section > div {
   -moz-transform: scale(1.06);
   transition: transform 0.4s, 0.4s box-shadow;
   border-radius: 13px;
-  z-index: 100;
+  z-index: 0;
   -webkit-transition: transform 0.4s, 0.4s box-shadow;
   -moz-transition: transform 0.4s, 0.4s box-shadow;
   cursor:pointer;
@@ -463,7 +463,7 @@ ul ol{
   width: 100%;
   margin-top: 0.1rem;
   transition: transform var(--d) var(--e);
-  z-index: 1;
+  z-index: -1;
 }
 
 
