@@ -58,20 +58,6 @@ $(document).ready(function () {
           </div>
          </div> 
           <!-- wraper freee -->
-            <div class="controls">
-              <div class="swiper-button-prev ctrl prev-ctrl">
-                <i class="material-icons icon">
-                  arrow_back
-                </i>
-              </div>
-              </div>
-              <div class="controls1">
-              <div class="swiper-button-next ctrl next-ctrl">
-                <i class="material-icons icon">
-                  arrow_forward
-                </i>
-              </div>      
-        </div>
       </div>
     </div>
   </div>`;
