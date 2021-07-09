@@ -104,53 +104,53 @@ div.picture-container:nth-child(8) {
 }
 
 .item1 div.picture-container:nth-child(1) {
-    background-image: url(../images/gallery-page/ui_ux/1.svg);
+    background-image: url(../images/designs/ui_ux/1.svg);
 }
 .item1 div.picture-container:nth-child(2) {
-    background-image: url(../images/gallery-page/ui_ux/2.svg);
+    background-image: url(../images/designs/ui_ux/2.svg);
 }
 .item1 div.picture-container:nth-child(3) {
-    background-image: url(../images/gallery-page/ui_ux/3.svg);
+    background-image: url(../images/designs/ui_ux/3.svg);
 }
 .item1 div.picture-container:nth-child(4) {
-    background-image: url(../images/gallery-page/ui_ux/4.svg);
+    background-image: url(../images/designs/ui_ux/4.svg);
 }
 .item1 div.picture-container:nth-child(5) {
-    background-image: url(../images/gallery-page/ui_ux/5.svg);
+    background-image: url(../images/designs/ui_ux/5.svg);
 }
 .item1 div.picture-container:nth-child(6) {
-    background-image: url(../images/gallery-page/ui_ux/6.svg);
+    background-image: url(../images/designs/ui_ux/6.svg);
 }
 .item1 div.picture-container:nth-child(7) {
-    background-image: url(../images/gallery-page/ui_ux/7.svg);
+    background-image: url(../images/designs/ui_ux/7.svg);
 }
 .item1 div.picture-container:nth-child(8) {
-    background-image: url(../images/gallery-page/ui_ux/8.svg);
+    background-image: url(../images/designs/ui_ux/8.svg);
 }
 
 .item2 div.picture-container:nth-child(1) {
-    background-image: url(../images/gallery-page/mockups/1.svg);
+    background-image: url(../images/designs/mockups/1.svg);
 }
 .item2 div.picture-container:nth-child(2) {
-    background-image: url(../images/gallery-page/mockups/2.svg);
+    background-image: url(../images/designs/mockups/2.svg);
 }
 .item2 div.picture-container:nth-child(3) {
-    background-image: url(../images/gallery-page/mockups/3.svg);
+    background-image: url(../images/designs/mockups/3.svg);
 }
 .item2 div.picture-container:nth-child(4) {
-    background-image: url(../images/gallery-page/mockups/4.svg);
+    background-image: url(../images/designs/mockups/4.svg);
 }
 .item2 div.picture-container:nth-child(5) {
-    background-image: url(../images/gallery-page/mockups/5.svg);
+    background-image: url(../images/designs/mockups/5.svg);
 }
 .item2 div.picture-container:nth-child(6) {
-    background-image: url(../images/gallery-page/mockups/6.svg);
+    background-image: url(../images/designs/mockups/6.svg);
 }
 .item2 div.picture-container:nth-child(7) {
-    background-image: url(../images/gallery-page/mockups/7.svg);
+    background-image: url(../images/designs/mockups/7.svg);
 }
 .item2 div.picture-container:nth-child(8) {
-    background-image: url(../images/gallery-page/mockups/8.svg);
+    background-image: url(../images/designs/mockups/8.svg);
 }
 
 .container_gallery {
@@ -174,7 +174,7 @@ div.picture-container:nth-child(8) {
 }
 .hero .item1 {
     width:50%;
-    background: url('../images/gallery-page/hero.svg');
+    background: url('../images/designs/hero.svg');
     background-repeat: no-repeat;
     background-position: 20% 35%;
     background-size: 350px;
