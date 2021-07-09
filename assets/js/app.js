@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 let header = $(`
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
@@ -99,7 +99,6 @@ let header = $(`
   </ul>
 </div>
 </nav>`);
-
 
 // Footer
 
@@ -254,7 +253,7 @@ let upArrow = $(`
   <button id="btnScrollToTop" onclick="scrollToTop()"><i class="fas fa-2x fa-angle-up"></i></button>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
   })
-`)
+`);
 
 //function for the "Scroll To Top" button to detect the footer
 $(document).ready(function () {
@@ -266,14 +265,17 @@ $(document).ready(function () {
     } else {
       $("#btnScrollToTop").css("visibility", "visible");
       //The button will change it's color when it hits the footer
-      if ($(window).scrollTop() + $(window).height() > $(document).height() - 838) {
+      if (
+        $(window).scrollTop() + $(window).height() >
+        $(document).height() - 838
+      ) {
         // 838 should be changed if footer's height is changed so that the button changes it's color exactly when it hits the footer (preferably 14 less than the computer height of the footer)
         $("#btnScrollToTop").css("background-color", "#6a00bb");
       } else {
         $("#btnScrollToTop").css("background-color", "#6a00bb");
       }
     }
-  })
+  });
 });
 
 //function to scroll to top
@@ -281,9 +283,9 @@ const scrollToTop = () => {
   window.scrollTo({
     top: 0,
     left: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
-}
+};
 
 // Window Loads
 $(function () {
@@ -294,43 +296,40 @@ $(function () {
   $("#btnScrollToTop").css("visibility", "hidden");
 
   //toggler hamburger functions
-  const menuBtn = document.querySelector('.navbar-toggler');
+  const menuBtn = document.querySelector(".navbar-toggler");
   let menuOpen = false;
-  menuBtn.addEventListener('click', () => {
+  menuBtn.addEventListener("click", () => {
     if (!menuOpen) {
-      menuBtn.classList.add('open')
+      menuBtn.classList.add("open");
       menuOpen = true;
     } else {
-      menuBtn.classList.remove('open');
+      menuBtn.classList.remove("open");
       menuOpen = false;
     }
   });
-
 });
 
 // function for toggling hamburger is-active class
 
 $(function () {
-
   $("#js-hamburger").on("click", function () {
-    $(this).toggleClass('is-active');
+    $(this).toggleClass("is-active");
   });
-
 });
 
 // Navbar current page highlight
 
-let loader = document.querySelector('.loader-container');
+let loader = document.querySelector(".loader-container");
 
 window.addEventListener("load", vanish);
 
 function vanish() {
-  loader.classList.add("disappear")
+  loader.classList.add("disappear");
 }
 $(function () {
-  $('a.nav-link').each(function () {
-    if ($(this).prop('href') == window.location.href) {
-      $(this).addClass('current-link');
+  $("a.nav-link").each(function () {
+    if ($(this).prop("href") == window.location.href) {
+      $(this).addClass("current-link");
     }
   });
 });
@@ -338,14 +337,13 @@ $(function () {
 //function to remove underline on hover
 
 $(document).ready(function () {
-
   $("a.nav-link").hover(
     function () {
       $(this).removeClass("current-link");
     },
     function () {
-      if ($(this).prop('href') == window.location.href) {
-        $(this).addClass('current-link');
+      if ($(this).prop("href") == window.location.href) {
+        $(this).addClass("current-link");
       }
     }
   );
@@ -365,6 +363,7 @@ function toggle_light_mode() {
   }
 }
 
+
 window.addEventListener("storage", function () {
   if (localStorage.lightMode == "dark") {
     app.setAttribute("light-mode", "dark");
@@ -380,3 +379,4 @@ $(window).on('load', function() {
     $('.no-scroll-preload').css('overflow', 'visible');
   });
 });
+
