@@ -32,12 +32,10 @@ nav a {
   align-self: center;
   overflow: hidden;
 }
-
 .image-slider .swiper-slide .wrapper {
   margin-top: 340px;
   margin-bottom: 60px;
 }
-
 .image-slider .swiper-slide .img-container {
   position: absolute;
   top: 0;
@@ -59,13 +57,11 @@ nav a {
   width: 80%;
   height: 100%;
 }
-
 .image-slider .swiper-slide .title {
   font-size: 3rem;
   color: var(--text-color);
   text-transform: uppercase;
 }
-
 .controller,
 .controller1 {
   position: absolute;
@@ -112,7 +108,6 @@ nav a {
   align-items: center;
   justify-content: center;
 }
-
 .swiper-button-next .swiper-nav-ctrl :hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -129,19 +124,15 @@ nav a {
 .swiper-container-rtl .swiper-button-next {
   background-image: none;
 }
-
 .image-slider .ctrl:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 .parallax-slider .swiper-nav-ctrl.next-ctrl {
   right: 0;
 }
-
 .parallax-slider .swiper-nav-ctrl.prev-ctrl {
   left: 0;
 }
-
 .image-slider .text-wrapper {
   overflow: hidden;
   width: 100%;
@@ -149,7 +140,6 @@ nav a {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
-
 .image-slider .text-wrapper .text-inner {
   -webkit-transform: translateY(100%);
   color: var(--text-color);
@@ -157,28 +147,23 @@ nav a {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
-
 .image-slider .swiper-slide-active.active .text-inner {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
 }
-
 .image-slider .swiper-slide.active .sub-title .text-inner {
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
 }
-
 .image-slider .swiper-slide.active .title .text-inner {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
-
 .image-slider .swiper-slide.active .description .text-inner {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
-
 /* positioning */
 .container {
   position: relative;
@@ -193,14 +178,12 @@ nav a {
 .event_svg {
   height: 100%;
 }
-
 .arrow_contain {
   width: 85%;
 }
 .root_block {
   margin-top: 8%;
 }
-
 /* Responsiveness*/
 @media only screen and (max-width: 1000px) {
   .heading {

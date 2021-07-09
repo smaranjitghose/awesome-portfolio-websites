@@ -36,7 +36,7 @@ $(document).ready(function () {
   // Filling the details from the object array event
   function fillData() {
     let output = "";
-    for (var x = 0; x < event.length; x++) {
+    for (let x = 0; x < event.length; x++) {
       output += `
     <div class="swiper-slide">
     <div class="img-container">
@@ -65,7 +65,7 @@ $(document).ready(function () {
     eventswiper.innerHTML = output;
   }
   document.addEventListener("DOMContentLoaded", fillData());
-  var parallaxSliderOptions = {
+  const parallaxSliderOptions = {
     speed: 1000,
     effect: "coverflow",
     autoplay: false,
@@ -83,7 +83,7 @@ $(document).ready(function () {
     // parallax effect
     on: {
       init: function () {
-        let swiper = this;
+        const swiper = this;
         for (let i = 0; i < swiper.slides.length; i++) {
           $(swiper.slides[i])
             .find(".img-container")
@@ -92,13 +92,13 @@ $(document).ready(function () {
               "data-swiper-paralalx-opacity": 0.5,
             });
         }
-        let index = swiper.activeIndex;
+        const index = swiper.activeIndex;
         $(swiper.slides).removeClass("active");
         $(swiper.slides[index]).addClass("active");
       },
       transitionEnd: function () {
-        let swiper = this;
-        let index = swiper.activeIndex;
+        const swiper = this;
+        const index = swiper.activeIndex;
         $(swiper.slides).removeClass("active");
         $(swiper.slides[index]).addClass("active");
       },
@@ -112,5 +112,5 @@ $(document).ready(function () {
     },
   };
   // initializing swiper
-  var slider = new Swiper(".image-slider", parallaxSliderOptions);
+  const slider = new Swiper(".image-slider", parallaxSliderOptions);
 });
