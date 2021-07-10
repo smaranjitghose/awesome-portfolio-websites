@@ -301,11 +301,20 @@ $(function () {
   menuBtn.addEventListener("click", () => {
     if (!menuOpen) {
       menuBtn.classList.add("open");
+      var style = document.createElement("style");
+      style.innerHTML = `body::-webkit-scrollbar {display:none;}`;
+      document.head.appendChild(style);
       menuOpen = true;
+     
     } else {
       menuBtn.classList.remove("open");
+      var style = document.createElement("style");
+      style.innerHTML = `body::-webkit-scrollbar {display: inline;}`;
+      document.head.appendChild(style);
       menuOpen = false;
+ 
     }
+    
   });
 });
 
@@ -314,6 +323,7 @@ $(function () {
 $(function () {
   $("#js-hamburger").on("click", function () {
     $(this).toggleClass("is-active");
+   
   });
 });
 
