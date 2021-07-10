@@ -8,6 +8,10 @@ html[data-theme="light"] {
   --shadow-col2:#ffffff;
   --meta-col: #444;
   --head-col: black;
+  --font-color: black;
+  --box-shadow-color:#093b8f;
+  /*--box-shadow-effect:0px 8px #093b8f,  0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+ 
  }
  
  html[data-theme="dark"] {
@@ -19,6 +23,9 @@ html[data-theme="light"] {
   --shadow-col2:#1d1d1d;
   --meta-col: rgb(155, 149, 149);
   --head-col: #fff;
+  --font-color: #fff;
+  --box-shadow-color:black;
+  /*--box-shadow-effect:0px 0px #093b8f,  0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
  }
 /*Main section*/
 
@@ -138,7 +145,7 @@ section > div {
   border-radius: 13px;
   contain: content;
   margin: 4em auto 36px;
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 15%),
+  box-shadow: 1px 1px 6px rgba(226, 11, 11, 0.15),
   2px 2px 7px rgba(0, 0, 0, 14%),
   3px 3px 8px rgba(0, 0, 0, 13%),
   4px 4px 9px rgba(0, 0, 0, 12%);
@@ -166,12 +173,14 @@ section > div {
   }
 }
 
+#bg-color{
+  background-color: var(--bg1-color);
+}
 .card1 .card-body {
   display: flex;
   flex-flow: row wrap;
   padding: 18px;
   color: var(--text);
-  background-color: #fff;
   border-radius: 0 13px 13px 0;
 }
 
@@ -356,18 +365,11 @@ ul ol{
 
 .volunteerCard{
   border-radius: 10px;
+  /*box-shadow: var(--box-shadow-effect) !important;*/
   box-shadow: 0px 8px #093b8f, 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-  
-              animation: 0.5s ease-out 0s 1 slideInFromLeft;
-  
-              background: #333;
-              padding: 10px;
- 
-              
-             
-
-              
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+  background: #333;
+   padding: 10px;
 }
 
 
@@ -426,9 +428,10 @@ ul ol{
   padding: 1rem;
   width: 100%;
   text-align: center;
-  color: black;
+  color: var(--font-color);
   background-color: whitesmoke;
   border: none;
+
 }
 
 @media (max-width: 600px) {
@@ -493,7 +496,7 @@ ul ol{
   position: relative;
   max-width: 800px;
   margin: auto;
-  background: #fff;
+  background: var(--bg1-color);
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 25px;
   border-radius: 25px;
@@ -650,14 +653,14 @@ ul ol{
 .blog-slider__title {
   font-size: 24px;
   font-weight: 900;
-  color: #0d0925;
+  color: #093b8f;
   margin-bottom: 20px;
 }
 
 /* Role in Hackathon   */
 
 .blog-slider__code {
-  color: #4f4d63;
+  color: #4e00bb;
   margin-bottom: 20px;
   display: block;
   font-size: 17px;
@@ -667,7 +670,7 @@ ul ol{
  /* Hackathon Description   */ 
 
 .blog-slider__text {
-  color: #4e4a67;
+  color: var(--font-color);
   margin-bottom: 30px;
   line-height: 1.5em;
 }
@@ -690,6 +693,10 @@ a:link{
   .blog-slider__button {
     width: 100%;
  }
+}
+
+.blog-slider:hover{
+  transform: scale(1.06);
 }
 
 .card2{
