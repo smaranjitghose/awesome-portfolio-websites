@@ -106,7 +106,7 @@ const Home = () => {
             <div className="desc">
                 <div className='desc-1'>
                     <span className='text'>
-                        Hi <img className='wave' src={Hand} alt="" />, I'm <span> <b> John Doe</b></span>
+                        Hi <img className='wave' src={Hand} alt="" />, I'm <span> <b> Anush Bhatia</b></span>
                     </span>
                     <div className="center">
                         <img src={dp_male} alt="" />
