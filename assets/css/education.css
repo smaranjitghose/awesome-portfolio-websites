@@ -1,8 +1,4 @@
 @import url(./style.css);
-@font-face {
-    font-family: "NHaas";
-    src: url(../fonts/NHaas\ Bold.63b9aba.woff2);
-}
 
 /* Dark and Light theme */
 
@@ -11,6 +7,7 @@ html[data-theme='light'] {
     --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     --border: 1px solid #ecf0f3;
     --font-color: black;
+    --card-color: #fff;
 }
 
 html[data-theme='dark'] {
@@ -18,20 +15,18 @@ html[data-theme='dark'] {
     --shadow: 0 4px 8px 0 rgb(255, 255, 255);
     --border: 1px solid rgb(0, 57, 230);
     --font-color: #fff;
+    --card-color: rgb(24, 61, 93);
 }
-
 .education_head {
     font-weight: bold;
-    font-family: NHaas;
+    font-family: 'Inter', sans-serif;
 }
-
 
 /*color of education page heading*/
 
 .edu_background {
     color: rgb(0, 57, 230);
 }
-
 
 /* -----Education Section CSS----- */
 
@@ -108,16 +103,14 @@ h4 {
 .s2 .card img {
     height: 80%;
     width: 90%;
-    color: var(--font-color);
     border-radius: 3rem;
     margin: 2rem 1rem 1rem 2rem;
 }
 
 .s2 .card{
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12), 0 0 6px rgb(0, 57, 230);
-    background-color: var(--bg1-color);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
+    background-color: var(--card-color);
     border-radius: 3rem;
-    color: var(--font-color);
 }
 
 .card .row {
@@ -206,7 +199,7 @@ p {
 #mooc .card {
     border-radius: 5px;
     background-color: var(--bg1-color);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12), 0 0 6px rgb(0, 0, 0);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
     transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
     cursor: pointer;
     display: flex;
@@ -215,7 +208,7 @@ p {
 
 #mooc .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgb(0, 57, 230);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
 #mooc .card-body {
