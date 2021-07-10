@@ -4,7 +4,7 @@
 }
 
 :root {
-    --atom-size: 350px;
+    --atom-size: 400px;
     /* --atom-color-hex: #0d00ff; */
     --atom-color-hex: #0d00ff;
     --atom-color-rgb: 217,217,217;
@@ -31,22 +31,11 @@
   color: white;
 }
 
-.preloader-text {
-	animation: fadeInAnimation ease 3s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-	position: fixed;
-	text-align: center;
-	top: 1.5em;
-	font-size: 30px;
-}
-
 /* Atom */
 .atom {
   position: relative;
   justify-content: center;
   align-items: center;
-  top: 3em;
   width: var(--atom-size);
   height: var(--atom-size);
   animation: 8s atom infinite cubic-bezier(1, .25, 0, .75);

@@ -311,10 +311,6 @@ ul ol{
   --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-* {
-  transition: all 0.3s ease-out; 
-}
-
   .volunteerCard {
     display: block;
     position: relative;
