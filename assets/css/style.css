@@ -296,8 +296,11 @@ html[light-mode="dark"] {
 .dark-theme .third {
     background-color: rgba(255, 255, 255, 0.5);
 }
-
-
+.dsc{
+     box-shadow:   2px 5px 5px 0px rgb(130 216 251), 
+     inset -2px -5px 5px 0px rgb(130 216 251);
+     background: #1f1d1d;
+}
 /*
 -------------------------------------
     SIDEBAR SVG ANIMATION
