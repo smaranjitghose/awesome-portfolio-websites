@@ -382,9 +382,9 @@ window.addEventListener("storage", function () {
 
 // Function to remove scroll bar during preload
 $(window).on('load', function() {
-
-  $('.loader-container').fadeOut(2500, function() {
+  setTimeout(function(){
     $('.no-scroll-preload').css('overflow', 'visible');
-  });
+  },1000);
+  $('.loader-container').fadeOut(2500);
 });
 
