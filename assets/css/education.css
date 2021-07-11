@@ -6,25 +6,27 @@ html[data-theme='light'] {
     --bg1-color: #ecf0f3;
     --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     --border: 1px solid #ecf0f3;
+    --font-color: black;
+    --card-color: #fff;
 }
 
 html[data-theme='dark'] {
-    --bg1-color: #272727;
-    --shadow: 0 4px 8px 0 rgba(104, 102, 102, 0.2);
-    --border: none;
+    --bg1-color: #000033;
+    --shadow: 0 4px 8px 0 rgb(255, 255, 255);
+    --border: 1px solid rgb(0, 57, 230);
+    --font-color: #fff;
+    --card-color: rgb(24, 61, 93);
 }
-
 .education_head {
     font-weight: bold;
+    font-family: 'Inter', sans-serif;
 }
-
 
 /*color of education page heading*/
 
 .edu_background {
-    color: #4e00bb;
+    color: rgb(0, 57, 230);
 }
-
 
 /* -----Education Section CSS----- */
 
@@ -61,11 +63,13 @@ html[data-theme='dark'] {
 
 .s2 {
     overflow-x: hidden;
+    color: var(--font-color);
 }
 
 .s2 .head {
     font-size: 2rem;
     font-weight: bold;
+    color: var(--font-color);
 }
 
 
@@ -74,42 +78,49 @@ html[data-theme='dark'] {
 .h4,
 h4 {
     font-weight: bold;
+    color: var(--font-color);
     font-size: 2rem;
     margin-bottom: 2.5rem;
 }
 
 .s2 h4 {
     margin-bottom: 1.2rem;
+    color: var(--font-color);
 }
 
 .qual {
     margin-bottom: 2rem;
+    color: var(--font-color);
 }
 
 .s2 p {
     margin-top: -0.5rem;
     font-weight: 450;
     font-size: 2.5vh;
+    color: var(--font-color);
 }
 
 .s2 .card img {
-    height: 90%;
+    height: 80%;
     width: 90%;
+    border-radius: 3rem;
+    margin: 2rem 1rem 1rem 2rem;
 }
 
-.s2 .card,
-.s2 img {
+.s2 .card{
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
+    background-color: var(--card-color);
     border-radius: 3rem;
 }
 
 .card .row {
-    color: black;
+    color: var(--font-color);
 }
 
 .s2 h4,
 h6,
 p {
-    color: var(--text);
+    color: var(--font-color);
 }
 
 @media only screen and (max-width: 767px) {
@@ -128,7 +139,7 @@ p {
 /* Card Hover Effect */
 
 .mooc-title {
-    color: black;
+    color: var(--font-color);
 }
 
 .content {
@@ -141,7 +152,7 @@ p {
 }
 
 .content .content-overlay {
-    background: rgba(0, 0, 0, 0.7);
+    background-color: var(--bg1-color);
     position: absolute;
     height: 99%;
     width: 100%;
@@ -187,8 +198,8 @@ p {
 
 #mooc .card {
     border-radius: 5px;
-    background: #ecf0f3;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+    background-color: var(--bg1-color);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
     transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
     cursor: pointer;
     display: flex;
@@ -197,11 +208,11 @@ p {
 
 #mooc .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
 #mooc .card-body {
-    background-color: #fff;
+    background-color: var(--bg1-color);
     padding: 1px;
 }
 
