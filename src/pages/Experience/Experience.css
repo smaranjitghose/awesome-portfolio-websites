@@ -14,7 +14,7 @@
   margin: 0 auto;
 }
 .card1 {
-  background: #f1f0f0;
+  background: white;
   display: flex;
   flex-direction: column;
   /* max-height: 80%; */
