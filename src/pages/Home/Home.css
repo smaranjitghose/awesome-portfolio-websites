@@ -51,17 +51,59 @@
 }
 
 .typing {
+    font-size: 20px;
     width: 100%;
     display: inline-block;
     margin: auto;
     text-align: center;
 }
 
-.typingEffect {
+/* .typingEffect {
     font-size: 25px;
     width: 100%;
     margin: auto;
-}
+} */
+
+.foo {
+    width: 200px;
+  }
+  .foo .container {
+    display: inline-block;
+    position: relative;
+    padding: 2px 4px;
+    transition: all 200ms cubic-bezier(0.2, 1, 0.2, 1);
+  }
+  .foo .container:after {
+    background-color: #2F1F52;
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: 100%;
+    bottom: 2px;
+    left: 0;
+    transition: all cubic-bezier(0.2, 1, 0.2, 1) 500ms 250ms;
+  }
+  .foo.foo-out .container:after {
+    right: 0;
+    transition: all cubic-bezier(0.5, -0.5, 0.25, 1.5) 500ms;
+  }
+  .text-width-wrapper {
+    display: inline-block;
+  }
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .hidden-text {
+    position: absolute;
+    top: -999px;
+    left: -999px;
+  }
+  
 
 .social-icons {
     display: flex;
