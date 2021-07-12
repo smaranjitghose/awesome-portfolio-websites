@@ -1,28 +1,11 @@
-.my_experience {
-  color: #4e00bb;
-}
-.experience-cards {
-  margin: 0 auto;
-}
-.sub-heading {
-  font-size: 17px;
-  margin-top: 20px;
-}
-.col.gaap {
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0 auto;
-}
 .card1 {
   background: white;
   display: flex;
   flex-direction: column;
-  /* max-height: 80%; */
   border: none;
   border-radius: 13px;
   contain: content;
-  margin: 60px 130px;
-
+  margin: 60px 140px;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 15%), 2px 2px 7px rgba(0, 0, 0, 14%),
     3px 3px 8px rgba(0, 0, 0, 13%), 4px 4px 9px rgba(0, 0, 0, 12%);
   z-index: 1;
@@ -69,9 +52,10 @@
   background-repeat: no-repeat;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
-  /* width: ; */
+
   height: 300px;
 }
+
 
 .card-body .pre-heading {
   color: var(--meta-col);
@@ -99,7 +83,8 @@
 .card-body .list {
   list-style: decimal;
   line-height: 25px;
-  padding: 0 80px;
+  padding: 15px 80px  0px 80px;
+
 }
 
 .heading1 {
@@ -112,23 +97,9 @@
   color: var(--text);
 }
 
-@media (max-width: 550px) {
-  .main {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .main1 {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
 
 @media only screen and (max-width: 550px) {
-  .experience-cards {
-    overflow: hidden;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+
   .card-body .list {
   list-style: decimal;
   line-height: 22px;
@@ -164,6 +135,7 @@
     border-bottom-left-radius: 13px;
     border-top-right-radius: 0;
     max-width: 50%;
+    padding: 0 40px;
     height: inherit;
     width: 100%;
   }
@@ -191,11 +163,5 @@
 @media (min-width: 675px) {
   .heading1 {
     margin-top: 5em;
-  }
-}
-
-@media (min-width: 60rem) {
-  .exp-head {
-    margin-top: 0rem !important;
   }
 }
