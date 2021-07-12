@@ -1,24 +1,62 @@
 import { Card } from "@material-ui/core";
 import React from "react";
-
-function OpenSourceCard(props){
-   const {card}=props;
+import './Experience.css';
+import GSSOC from './../../../src/assets/images/open-source/1.jpg';
+import SCI from './../../../src/assets/images/open-source/2.jpg';
+import PSOC from './../../../src/assets/images/open-source/3.jpg';
+import HC from './../../../src/assets/images/open-source/4.jpg';
+function OpenSourceCard(){
+    const openSourcePrograms = [
+        {
+          title: "GirlScript Summer Of Code 2020",
+          cardImage: GSSOC,
+          description:
+            "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
+        },
+        {
+          title: "Student CodeIn-20",
+          cardImage: SCI,
+          description:
+            "Responsible for handling open source contributions for the project Awesome Developer Portfolio.",
+        },
+        {
+          title: "PClub Summer Of Code 2020",
+          cardImage: PSOC,
+          description:
+            "Mentoring for the projects Deep Pixel, AutoVaidya, Just Resume and Doc2pen.",
+        },
+        {
+          title: "Hakin-Codes",
+          cardImage: HC,
+          description:
+            "Mentoring for the open source projects Deeppixel, Awesome Developer Portfolios and Doc2Pen.",
+        },
+      ];
 
     return (
-    <div style={{padding:'10px',marginTop:'200px'}}>
-        <Card>
-            <div className="card volunteerCard" style={{height: "550px",width:"400px"}}>
-            
-            <img src={card.cardImage} height="250" width="100%" className="card-img" style={{borderRadius:'10px'}} alt="card" />
-            <div class="content">
-                <h2 className="volunteerTitle">{card.title}</h2><br />
-                <p className="copy">{card.description}</p>
-            </div>
-            
-            </div>
-        
-        </Card>
-    </div>
+      <div>
+          <h1>Open <span style={{color:'purple'}}>Source</span></h1>
+          <div style={{display:'flex',flexWrap:'wrap',justifyContent:'space-around'}}>
+        {openSourcePrograms.map(({title,cardImage,description}) => {
+            return (
+              <div style={{padding:'50px',marginTop:'200px',background:'white'}}>
+              <Card>
+                  <div className="card volunteerCard">
+                  
+                  <img src={cardImage} height="250" width="100%" className="card-img" alt="card" />
+                  <div class="content">
+                      <h2 className="volunteerTitle">{title}</h2><br />
+                      <p className="copy">{description}</p>
+                  </div>
+                  
+                  </div>
+              
+              </Card>
+          </div>
+            )
+        })}
+        </div>
+       </div>
     )
 
 }
