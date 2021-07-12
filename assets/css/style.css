@@ -32,6 +32,12 @@ html[data-theme="light"] {
     --col-icon-codeforces: rgb(19, 145, 184);
     --col-icon-leetcode: rgb(255, 181, 62);
     --shadow-col: rgba(0, 0, 0, 0.3);
+    --scroll-br-track-color:rgb(204, 204, 204);
+    --scroll-br-thumb-color:#d261ff;
+    --scroll-br-thumb-hover-color:#d28eff;
+    --scroll-track-box-shadow:rgb(170, 170, 170);
+    --scroll-thumb-border-color:rgba(217, 45, 252, 0.945);
+    --scroll-thumb-box-shadow:rgb(170, 170, 170);
     
 }
 
@@ -62,7 +68,12 @@ html[data-theme="dark"] {
     --col-icon-codeforces: rgb(19, 145, 184);
     --col-icon-leetcode: rgb(255, 181, 62);
     --col-white: #fff;
-    
+    --scroll-br-track-color:rgb(204, 204, 204);
+    --scroll-br-thumb-color:#d261ff;
+    --scroll-br-thumb-hover-color:#d28eff;
+    --scroll-track-box-shadow:rgb(170, 170, 170);
+    --scroll-thumb-border-color:rgba(217, 45, 252, 0.945);
+    --scroll-thumb-box-shadow:rgb(170, 170, 170);
 }
 
 
@@ -865,9 +876,9 @@ form {
     width: 100%;
     margin-top: 2rem;
     padding: 3%;
-    background: #6a00bb;
-    border-bottom: 2px solid #6a00bb;
-    border-radius: 2px;
+    background: #bb86fc;
+    border-bottom: 2px solid #bb86fc;
+    border-radius: 23px;
     border-top-style: none;
     border-right-style: none;
     border-left-style: none;
