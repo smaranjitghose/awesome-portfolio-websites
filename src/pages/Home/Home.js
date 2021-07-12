@@ -1,63 +1,16 @@
-import React, { useState,useLayoutEffect, useRef, useEffect } from "react";
+import React from "react";
 import Particles from "react-particles-js";
 import Hand from "../../assets/images/Hand.gif";
 import dp_male from "../../assets/images/dp_male.svg";
 // import ReactTypingEffect from "react-typing-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { AnimateOnChange } from "react-animation";
 import { faMediumM } from "@fortawesome/free-brands-svg-icons";
 import { faKaggle } from "@fortawesome/free-brands-svg-icons";
+import Textanimate from "./textAnimate";
 
 import "./Home.css";
 
-const Home = () => {
-  const textForReactAnimations = [
-    "Designing",
-    "UI/UX",
-    "Cloud Computing",
-    "Web Development",
-    "Open Source",
-    "Mentoring",
-  ];
-  const changingTextTime=2000;
-  const [currentWidth, setCurrentWidth] =  useState(0)
-  const [currentTextStyle, setCurrentTextStyle] = useState({})
-  const currentTextRef = useRef()
-  const nextTextRef = useRef()
-  const [indexForAnimationWord, setIndexForAnimationWord] = useState(0);
-
-  const getNextTextItem = current => {
-    if (current === textForReactAnimations.length - 1) {
-        return 0;
-      } else {
-        return current+1;
-      }
-  }
-    
-  useEffect(() => {
-    //this just keeps changing words for react animation
-    const interval = setInterval(() => {
-        setIndexForAnimationWord(getNextTextItem(indexForAnimationWord));
-        nextTextRef.current.innerText = textForReactAnimations[getNextTextItem(indexForAnimationWord)];        
-        setCurrentWidth(nextTextRef.current.offsetWidth)
-        setCurrentTextStyle ({
-            opacity: 0
-        })
-        setTimeout(()=>{
-            setCurrentTextStyle({
-                opacity:1
-            })
-        },500)
-    }, changingTextTime); //2000 the time duration for changing words
-    return(()=>{
-        clearInterval(interval);        
-    })
-  });
-//   useEffect(()=>{
-//     console.log("currentWidth ",currentWidth);
-//     console.log("indexForAnimationWord ",indexForAnimationWord);
-//   })
-
+const Home = () => {  
   return (
     <div className="home">
       <Particles
@@ -165,41 +118,8 @@ const Home = () => {
           <div className="center">
             <img src={dp_male} alt="" />
           </div>
-        </div>
-        {/* <div className="typing">
-          I'm into
-           <ReactTypingEffect
-                        className='typingEffect'
-                        staticText="I'm into"
-                        text={}
-                        speed={50}
-                        eraseSpeed={50}
-                        typingDelay={50}
-                        eraseDelay={150}
-                    />                   
-        </div> */}
-
-        <div>
-        <h3>
-            I'm into &ensp;
-            <AnimateOnChange className="foo" durationOut={500}>
-              <div
-                className="container"
-                style={{ width: currentWidth ? currentWidth + "px" : "auto" }}
-              >
-                <div
-                  className="text-width-wrapper"
-                  style={currentTextStyle}
-                  ref={currentTextRef}
-                >
-                  {textForReactAnimations[indexForAnimationWord]}
-                </div>
-              </div>
-            </AnimateOnChange>
-          </h3>
-          <h1 className="hidden-text" ref={nextTextRef} />
-        </div>
-
+        </div>        
+        <Textanimate/>       
         <div class="social-icons">
           <a
             class="socialicon twitter"
