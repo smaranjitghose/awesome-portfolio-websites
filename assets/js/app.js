@@ -6,9 +6,9 @@ let header = $(`
 <div class="hamburger_wrapper navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
   <div id="js-hamburger" class="hamburger">
-    <span class="first"></span>
-    <span class="second"></span>
-    <span class="third"></span>
+    <span id="js-line"class="line"></span>
+    <span  id="js-line" class="line"></span>
+    <span  id="js-line" class="line"></span>
   </div>
 
 </div>
@@ -303,14 +303,14 @@ $(function () {
       menuBtn.classList.add("open");
       var style = document.createElement("style");
       style.innerHTML = `body::-webkit-scrollbar {display:none;}`;
-      document.head.appendChild(style);
+      document.body.appendChild(style);
       menuOpen = true;
      
     } else {
       menuBtn.classList.remove("open");
       var style = document.createElement("style");
       style.innerHTML = `body::-webkit-scrollbar {display: inline;}`;
-      document.head.appendChild(style);
+      document.body.appendChild(style);
       menuOpen = false;
  
     }
