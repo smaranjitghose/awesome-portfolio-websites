@@ -1,5 +1,10 @@
 @import '../../pages/Home/Home.css';
 
+:root{
+    --primary-color: #bb86fc;
+    --button-hover-color: #6a00bbd2;
+}
+
 /*Footer Base*/
 .footer {
     padding-top: 10px;
@@ -36,7 +41,7 @@ form {
 }
 
 .form-style-6 h1 {
-    background: #bb86fc;
+    background: var(--primary-color);
     font-size: 140%;
     font-weight: 300;
     text-align: center;
@@ -58,7 +63,7 @@ form {
 }
 
 .form-style-6 h1 {
-    background: #bb86fc;
+    background: var(--primary-color);
     font-size: 140%;
     font-weight: 300;
     text-align: center;
@@ -88,7 +93,7 @@ form {
     background: transparent;
     margin-bottom: 4%;
     border: #000;
-    border-bottom: 2px solid #bb86fc;
+    border-bottom: 2px solid var(--primary-color);
     padding: 3%;
     color: rgb(107, 105, 105);
     font: 95% Arial, Helvetica, sans-serif;
@@ -105,9 +110,9 @@ form {
 .form-style-6 input[type="url"]:focus,
 .form-style-6 textarea:focus,
 .form-style-6 select:focus {
-    box-shadow: 0 0 5px #bb86fc;
+    box-shadow: 0 0 5px var(--primary-color);
     padding: 3%;
-    border: 1px solid #bb86fc;
+    border: 1px solid var(--primary-color);
     border-radius: 2px;
 }
 
@@ -119,9 +124,9 @@ form {
     width: 100%;
     margin-top: 2rem;
     padding: 3%;
-    background: #6a00bb;
-    border-bottom: 2px solid #6a00bb;
-    border-radius: 2px;
+    background: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    border-radius: 23px;
     border-top-style: none;
     border-right-style: none;
     border-left-style: none;
@@ -131,7 +136,7 @@ form {
 
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover {
-    background:#6a00bbd2;;
+    background: var(--button-hover-color);
   
 }
 
@@ -160,7 +165,7 @@ form {
     font-size: 25px;
     font-weight: 200;
     line-height: 22px;
-    border-bottom: 3px solid #bb86fc;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 
