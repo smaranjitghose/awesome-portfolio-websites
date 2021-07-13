@@ -32,6 +32,7 @@ html[data-theme="light"] {
     --col-icon-codeforces: rgb(19, 145, 184);
     --col-icon-leetcode: rgb(255, 181, 62);
     --shadow-col: rgba(0, 0, 0, 0.3);
+    
 }
 
 html[data-theme="dark"] {
@@ -70,11 +71,10 @@ body{
 .cursor{
     width: 35px;
     height: 35px;
-    border: 2px solid #000;
     border-radius: 50%;
     position: absolute;
     z-index: 100000;
-    background-color: rgba(255,56,56, 0.4);
+    background-color: rgba(102,23,203,0.5);
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -83,7 +83,7 @@ body{
 
 .link-grow{
     transform: scale(1.5);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(100, 100, 100, 0.3);
 }
 
 /*
