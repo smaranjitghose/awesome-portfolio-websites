@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Level3",
+    "description": "This issue will be considered as level 3 issue for DCP21 21.Points will be 40.",
+    "color": "ff9f1c"
+  },
+  {
+    "name": "Level2",
+    "description": "This issue will be considered as level 2 issue for DCP21 21.Points will be 20",
+    "color": "ffcc00"
+  },
+  {
+    "name": "Level1",
+    "description": "This issue will be considered as level 1 issue for DCP21 21.Points will be 10",
+    "color": "cfda2c"
+  },
+  {
+    "name": "Level0",
+    "description": "This issue will be considered as level 0 issue for LGM-SOC 21.Points will be 5",
+    "color": "aa00de"
+  },
+  {
+    "name": "DCP21",
+    "description": "This issue will be considered for LGM-SOC 21",
+    "color": "d93f0b"
+  },
+ 
+]
