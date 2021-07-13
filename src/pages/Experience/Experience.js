@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import styles from "./Experience.css";
+import React from "react";
+import  "./Experience.css";
 import Gnome from "../../assets/images/workex/gnome.svg";
 import Layer5 from "../../assets/images/workex/layer5-white.png";
 import Google from "../../assets/images/workex/google.png";
@@ -48,7 +48,7 @@ const Experience = () => {
             <div key={item.id} className="card card1">
               <img
                 src={item.cardImage}
-                className="featured-image"
+                className="featured-image" alt="experience logo"
               />
 
               <article className="card-body">
@@ -73,6 +73,6 @@ const Experience = () => {
       </section>
     </>
   );
-};
+}
 
 export default Experience;

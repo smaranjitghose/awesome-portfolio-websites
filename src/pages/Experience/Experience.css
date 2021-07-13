@@ -1,5 +1,5 @@
 .card1 {
-  background: white;
+  background: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   border: none;
@@ -83,7 +83,7 @@
 .card-body .list {
   list-style: decimal;
   line-height: 25px;
-  padding: 15px 80px  0px 80px;
+  padding: 15px 60px  0px 60px;
 
 }
 
