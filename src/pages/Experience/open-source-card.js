@@ -1,4 +1,3 @@
-import { Card } from "@material-ui/core";
 import React from "react";
 import './Experience.css';
 import GSSOC from './../../../src/assets/images/open-source/1.jpg';
