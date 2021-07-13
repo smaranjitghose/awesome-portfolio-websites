@@ -63,6 +63,28 @@ html[data-theme="dark"] {
     --col-white: #fff;
 }
 
+body{
+    cursor: none;
+}
+/* Custom cursor */
+.cursor{
+    width: 35px;
+    height: 35px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100000;
+    background-color: rgba(255,56,56, 0.4);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform-origin: 100% 100%;
+}
+
+.link-grow{
+    transform: scale(1.5);
+    background-color: rgba(255, 255, 255, 0.3);
+}
 
 /*
 ---------------------------
