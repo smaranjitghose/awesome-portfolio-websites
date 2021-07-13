@@ -228,7 +228,7 @@ html {
 .navbar {
     color: #000000;
     background-color: #fff;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Dark Mode toggle switch button */
