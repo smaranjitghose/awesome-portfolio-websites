@@ -35,23 +35,23 @@ function OpenSourceCard(){
 
     return (
       <div>
-          <h1>Open <span style={{color:'purple'}}>Source</span></h1>
+        <div>
+          <h1  style={{paddingTop:'500px'}}>Open <span style={{color:'purple'}}>Source</span></h1>
+          </div>
           <div style={{display:'flex',flexWrap:'wrap',justifyContent:'space-around'}}>
         {openSourcePrograms.map(({title,cardImage,description}) => {
             return (
-              <div style={{padding:'50px',marginTop:'200px',background:'white'}}>
-              <Card>
+              <div style={{padding:'15px',marginTop:'100px',background:'white'}}>
+    
                   <div className="card volunteerCard">
                   
-                  <img src={cardImage} height="250" width="100%" className="card-img" alt="card" />
-                  <div class="content">
-                      <h2 className="volunteerTitle">{title}</h2><br />
-                      <p className="copy">{description}</p>
-                  </div>
+                    <img src={cardImage} height="250" width="100%" className="card-img" alt="card" />
+                    <div class="content">
+                        <h2 className="volunteerTitle">{title}</h2><br />
+                        <p className="copy">{description}</p>
+                    </div>
                   
                   </div>
-              
-              </Card>
           </div>
             )
         })}

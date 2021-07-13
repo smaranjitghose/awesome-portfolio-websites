@@ -1,18 +1,11 @@
 import React from 'react';
 import OpenSourceCard from './open-source-card';
-import topIlus from './top_ilus';
 
 const Experience = () => {
    
     return (
-        <div>
-         
-        <topIlus></topIlus>
-        
+        <div style={{textAlign:'center'}}>
         <OpenSourceCard />
-
-        
-        
         </div>
     );
 }
