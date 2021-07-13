@@ -18,6 +18,6 @@ jobs:
       - uses: christianvuerings/add-labels@v1
         with:
           labels: |
-                   LGMSOC21
+                   DCP21
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
