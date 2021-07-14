@@ -33,12 +33,7 @@ form {
     justify-content: space-around;
 }
 
-.form-style-6 {
-    font: 95% Arial, Helvetica, sans-serif;
-    margin: 10px auto;
-    padding: 16px;
-    border-radius: 2px;
-}
+
 
 .form-style-6 h1 {
     background: var(--primary-color);
@@ -61,6 +56,7 @@ form {
     padding: 16px;
     border-radius: 2px;
 }
+
 
 .form-style-6 h1 {
     background: var(--primary-color);
@@ -545,4 +541,15 @@ svg#freepik_stories-smiley-face.animated #freepik--Character--inject-31 {
     40% {
         transform: translate(0);
     }
+}
+
+@media only screen and (max-width: 840px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-lg-6 {
+        width: 100%;
+    }
+    
 }
