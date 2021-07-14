@@ -94,7 +94,7 @@ const showCards = () => {
   volunteershipcards.forEach(
     ({ title, cardImage, description }) =>
       (output += `        
-      <div class="card volunteerCard" style="height: 550px;width:400px">
+      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
       
       <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
       <div class="content">
