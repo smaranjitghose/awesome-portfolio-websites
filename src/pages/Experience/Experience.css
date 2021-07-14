@@ -1,0 +1,147 @@
+.experience{
+ margin: 0px 180px;
+      background: #fff;
+         padding-top: 130px;
+}
+
+.exp-card {
+   margin-bottom: 40px;
+
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 15%), 2px 2px 7px rgba(0, 0, 0, 14%),
+    3px 3px 8px rgba(0, 0, 0, 13%), 4px 4px 9px rgba(0, 0, 0, 12%);
+  display: flex;
+  flex-direction: column;
+  /* position: relative;
+  top: 100px; */
+  border: none;
+  border-radius: 13px; 
+}
+
+.exp-card:hover {
+  transform: scale(1.06);
+  -webkit-transform: scale(1.06);
+  -moz-transform: scale(1.06);
+  transition: transform 0.4s, 0.4s box-shadow;
+  border-radius: 13px;
+  z-index: 0;
+  -webkit-transition: transform 0.4s, 0.4s box-shadow;
+  -moz-transition: transform 0.4s, 0.4s box-shadow;
+  cursor: pointer;
+}
+
+ .card-body {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #fff;
+  border-radius: 0 13px 13px 0;
+  padding: 30px 0 30px 30px;
+}
+
+.exp-card .header {
+  flex: 100%;
+}
+
+.meta {
+  margin-bottom: 22px;
+  margin: 0;
+}
+
+.exp-card .featured-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.card-body .duration {
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.card-body .header {
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.card-body .list {
+  list-style-type: circle;
+  line-height: 25px;
+  padding: 15px 35px 0px 35px;
+}
+.role {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #222;
+  margin: 0.5em 0;
+  margin-top: 5rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .card-body .list {
+    list-style: decimal;
+    line-height: 22px;
+    padding: 0 40px;
+  }
+
+  .featured-image {
+    width: 50%;
+    height: 0;
+  }
+  .experience{
+ margin: 0px ;
+}
+}
+
+@media only screen and (min-width: 551px) {
+  .exp-card:hover {
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 17%), 3px 6px 11px rgba(0, 0, 0, 16%),
+      4px 7px 13px rgba(0, 0, 0, 15%), 5px 8px 14px rgba(0, 0, 0, 14%);
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .exp-card {
+    flex-direction: row;
+    max-height: 70vh;
+  }
+
+  .exp-card .featured-image {
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-top-right-radius: 0;
+    max-width: 30%;
+    height: 100%;
+    padding: 95px 25px 0px 25px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .exp-card .featured-image {
+    height: 400px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 401px) {
+  .exp-card .featured-image {
+    height: 50%;
+    width: 80%;
+    padding: 20px 0px 0px 80px;
+  }
+}
+
+@media (min-width: 675px) {
+  .header {
+    margin-top: 5em;
+  }
+}
