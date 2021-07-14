@@ -1,16 +1,18 @@
 .experience{
  margin: 0px 180px;
       background: #fff;
+         padding-top: 130px;
 }
 
 .exp-card {
    margin-bottom: 40px;
+
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 15%), 2px 2px 7px rgba(0, 0, 0, 14%),
     3px 3px 8px rgba(0, 0, 0, 13%), 4px 4px 9px rgba(0, 0, 0, 12%);
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 120px;
+  /* position: relative;
+  top: 100px; */
   border: none;
   border-radius: 13px; 
 }
