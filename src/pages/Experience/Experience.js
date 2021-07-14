@@ -1,5 +1,5 @@
 import React from "react";
-import  "./Experience.css";
+import "./Experience.css";
 import Gnome from "../../assets/images/workex/gnome.svg";
 import Layer5 from "../../assets/images/workex/layer5-white.png";
 import Google from "../../assets/images/workex/google.png";
@@ -62,7 +62,7 @@ const Experience = () => {
   return (
     <>
       <section>
-        <div>
+        <div className="experience">
           {exp.map((item, id) => (
             <div key={item.id} className="exp-card">
               <img
@@ -77,9 +77,7 @@ const Experience = () => {
                     <h3 className="header">{item.place}</h3>
                     <p className="meta">
                       <span className="role">{item.title}</span>
-                      <div>
-                        <span className="duration">{item.time}</span>
-                      </div>
+                      <span className="duration">{item.time}</span>
                     </p>
                   </div>
                   <ul className="list">
@@ -95,6 +93,6 @@ const Experience = () => {
       </section>
     </>
   );
-}
+};
 
 export default Experience;

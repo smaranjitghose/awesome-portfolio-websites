@@ -1,14 +1,18 @@
+.experience{
+ margin: 0px 180px;
+      background: #fff;
+}
+
 .exp-card {
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  border: none;
-  border-radius: 13px;
-  contain: content;
-  margin: 60px 140px;
+   margin-bottom: 40px;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 15%), 2px 2px 7px rgba(0, 0, 0, 14%),
     3px 3px 8px rgba(0, 0, 0, 13%), 4px 4px 9px rgba(0, 0, 0, 12%);
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 120px;
+  border: none;
+  border-radius: 13px; 
 }
 
 .exp-card:hover {
@@ -23,15 +27,12 @@
   cursor: pointer;
 }
 
-
-.exp-card .card-body {
+ .card-body {
   display: flex;
   flex-flow: row wrap;
-  color: var(--text);
   background-color: #fff;
   border-radius: 0 13px 13px 0;
-    padding: 30px 0;
-   
+  padding: 30px 0 30px 30px;
 }
 
 .exp-card .header {
@@ -41,7 +42,6 @@
 .meta {
   margin-bottom: 22px;
   margin: 0;
-  text-align: center;
 }
 
 .exp-card .featured-image {
@@ -52,37 +52,23 @@
   border-top-right-radius: 13px;
 }
 
-.card-body .header {
-  color: var(--meta-col);
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.card-body .meta {
-  color: var(--meta-col);
-  font-size: 16px;
-}
-
 .card-body .duration {
   font-size: 12px;
   padding-top: 5px;
 }
 
-.card-body h3 {
+.card-body .header {
   font-size: 2rem;
   margin-top: 5px;
   margin-bottom: 5px;
-  color: var(--head-col);
-  text-align: center;
+  font-weight: 700;
 }
 .card-body .list {
-  list-style: decimal;
+  list-style-type: circle;
   line-height: 25px;
-  padding: 15px 35px  0px 35px;
-
+  padding: 15px 35px 0px 35px;
 }
-.role{
+.role {
   font-size: 18px;
   font-weight: 600;
 }
@@ -94,24 +80,21 @@
   color: #222;
   margin: 0.5em 0;
   margin-top: 5rem;
-  color: var(--text);
 }
-
 
 @media only screen and (max-width: 550px) {
-
   .card-body .list {
-  list-style: decimal;
-  line-height: 22px;
-  padding: 0 40px;
-}
+    list-style: decimal;
+    line-height: 22px;
+    padding: 0 40px;
+  }
 
-.featured-image{
-  width: 50%;
-  height: 0;
-}
-.exp-card{
-  margin: 0;
+  .featured-image {
+    width: 50%;
+    height: 0;
+  }
+  .experience{
+ margin: 0px ;
 }
 }
 
@@ -122,11 +105,6 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  .exp-card h3 {
-    font-size: 32px;
-  }
-}
 
 @media only screen and (min-width: 768px) {
   .exp-card {
@@ -134,27 +112,14 @@
     max-height: 70vh;
   }
 
-  .exp-card h3 {
-    font-size: calc(100% + 1vw);
-  }
-
-  
   .exp-card .featured-image {
     border-top-left-radius: 13px;
     border-bottom-left-radius: 13px;
     border-top-right-radius: 0;
-    max-width: 40%;
-    /* padding: 0 40px; */
+    max-width: 30%;
     height: 100%;
-    width: 100%;
-    padding: 65px 30px  0px 30px;
+    padding: 95px 25px 0px 25px;
     text-align: center;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .exp-card .featured-image {
-    width: 400px;
   }
 }
 
@@ -168,7 +133,8 @@
 @media only screen and (max-width: 401px) {
   .exp-card .featured-image {
     height: 50%;
-   padding: 10px 40px;
+    width: 80%;
+    padding: 20px 0px 0px 80px;
   }
 }
 
