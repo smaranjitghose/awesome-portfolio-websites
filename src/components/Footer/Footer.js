@@ -8,10 +8,12 @@ const Footer = () => {
 
   const [show, setShow] = useState(showBelow ? false : true);
 
+  // function to scroll page to top
   const scrollToTop = () => {
     window[`scrollTo`]({ top: 0, behavior: `smooth` });
   };
 
+  // for hiding to-top button on main screen
   const handleScroll = () => {
     if (window.pageYOffset > showBelow) {
       if (!show) setShow(true);
@@ -20,6 +22,7 @@ const Footer = () => {
     }
   };
 
+  // to show button at a length of showbelow
   useEffect(() => {
     if (showBelow) {
       window.addEventListener(`scroll`, handleScroll);
@@ -886,6 +889,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      {/* For to-top button */}
       <div>
         {show && (
           <button

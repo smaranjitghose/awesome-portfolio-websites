@@ -3,13 +3,16 @@
 :root {
   --primary-color: #bb86fc;
   --button-hover-color: #6a00bbd2;
+  --black: #000;
+  --white: #fff;
+  --grey: rgb(58, 58, 58);
 }
 
 /*Footer Base*/
 .footer {
   padding-top: 10px;
   font-family: "Poppins", sans-serif;
-  background-color: #121212;
+  background-color: var(--black);
 }
 
 .p-4 {
@@ -24,7 +27,7 @@
 
 form {
   margin: 15px auto;
-  color: #000;
+  color: var(--black);
 }
 
 .row {
@@ -45,7 +48,7 @@ form {
   font-size: 140%;
   font-weight: 300;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   margin: -16px -16px 16px -16px;
   width: inherit;
 }
@@ -67,7 +70,7 @@ form {
   font-size: 140%;
   font-weight: 300;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   margin: -16px -16px 16px -16px;
 }
 
@@ -92,7 +95,7 @@ form {
   width: 100%;
   background: transparent;
   margin-bottom: 4%;
-  border: #000;
+  border: var(--black);
   border-bottom: 2px solid var(--primary-color);
   padding: 3%;
   color: rgb(107, 105, 105);
@@ -130,7 +133,7 @@ form {
   border-top-style: none;
   border-right-style: none;
   border-left-style: none;
-  color: #fff;
+  color: var(--white);
   font-size: 20px;
 }
 
@@ -152,14 +155,14 @@ form {
 }
 
 .icons-quote {
-  color: white;
+  color: var(--white);
 }
 
 .display {
   height: auto;
   width: auto;
   text-align: left;
-  color: #fff;
+  color: var(--white);
   display: inline;
   font-size: 25px;
   font-weight: 200;
@@ -172,7 +175,7 @@ form {
   font: size 20px;
   line-height: 26px;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   height: 78px;
   margin: 5px auto 0px;
   display: block;
@@ -188,7 +191,7 @@ form {
   padding: 0;
   text-decoration: none;
   text-align: center;
-  color: #fefefe;
+  color: var(--white);
   font-size: 1.5625rem;
   font-weight: normal;
   line-height: 2em;
@@ -202,7 +205,7 @@ form {
 .rounded-social-buttons .social-button.linkedin,
 .rounded-social-buttons .social-button.instagram,
 .rounded-social-buttons .social-button.github {
-  background: white;
+  background: var(--white);
 }
 
 .twitter-icon-footer {
@@ -255,6 +258,7 @@ form {
   animation: up 1.5s infinite;
   -webkit-animation: up 1.5s infinite;
 }
+/*for hiding to-top button in small-screen devices  */
 @media (max-width: 580px) {
   #btnScrollToTop {
     display: none;
@@ -270,56 +274,56 @@ form {
 }
 
 #el946yuot26mr {
-  fill: rgb(38, 50, 56);
+  fill: var(--grey);
   transform-origin: 329.358px 191.663px;
 }
 
 #el6nwl8k97tju {
-  fill: rgb(235, 235, 235);
+  fill: var(--white);
   transform-origin: 401.034px 69.16px;
 }
 
 #elqv1umdpmofn {
-  fill: rgb(235, 235, 235);
+  fill: var(--white);
   transform-origin: 122.74px 109.59px;
   transform: rotate(-45deg);
 }
 
 #elqi86kkazii9 {
-  fill: rgb(245, 245, 245);
+  fill: var(--white);
   transform-origin: 358.27px 103.18px;
   transform: rotate(-45deg);
 }
 
 #el7qamk7i2df9 {
-  fill: rgb(240, 240, 240);
+  fill: var(--white);
   transform-origin: 355.9px 275.72px;
   transform: rotate(-45deg);
 }
 
 #elswvit1tjfz {
-  fill: #bb86fc;
+  fill: var(--primary-color);
   transform-origin: 189.55px 204.84px;
   transform: rotate(-45deg);
 }
 
 #elewdgpqhr7bg {
-  fill: rgb(38, 50, 56);
+  fill: var(--grey);
   transform-origin: 325.702px 123.44px;
 }
 
 #elbvpzy66yy06 {
-  fill: rgb(38, 50, 56);
+  fill: var(--grey);
   transform-origin: 330.962px 132.641px;
 }
 
 #elnbodgf37rw {
-  fill: rgb(38, 50, 56);
+  fill: var(--grey);
   transform-origin: 336.174px 121.333px;
 }
 
 #el9wx9gvsjtjl {
-  fill: rgb(38, 50, 56);
+  fill: var(--grey);
   transform-origin: 326.199px 118.624px;
 }
 
@@ -329,69 +333,69 @@ form {
 }
 
 #elax0lxbklnq6 {
-  fill: rgb(38, 50, 56);
+  fill: var(--grey);
   transform-origin: 332.863px 125.756px;
 }
 
 #el3vrz7e7oaja {
-  fill: rgb(38, 50, 56);
+  fill: var(--grey);
   transform-origin: 340.419px 118.544px;
 }
 
 #elm02m2cvzvi {
-  fill: rgb(38, 50, 56);
+  fill: var(--grey);
   transform-origin: 351.301px 172.681px;
 }
 
 #elvlqn45kl9b {
-  fill: rgb(38, 50, 56);
+  fill: var(--grey);
   transform-origin: 309.139px 165.67px;
 }
 
 #elu3ra9n0vuvr {
-  fill: #bb86fc;
+  fill: var(--primary-color);
   transform-origin: 298.8px 311.06px;
 }
 
 #eli4p1ct2pom {
-  fill: #bb86fc;
+  fill: var(--primary-color);
   transform-origin: 334.649px 311.82px;
 }
 
 #elw965xu7ard,
 #elgiznyosr41v {
-  fill: rgb(38, 50, 56);
+  fill: var(--grey);
 }
 
 #elybggkgwy7w,
 #el7bsk8ohj0wq {
-  fill: #bb86fc;
+  fill: var(--primary-color);
 }
 
 #elljcq3lr6ure {
-  fill: rgb(255, 255, 255);
+  fill: var(--white);
   transform-origin: 332.385px 158.512px;
 }
 
 #el9jk9mqjah0t {
-  fill: rgb(255, 255, 255);
+  fill: var(--white);
   opacity: 0.07;
   transform-origin: 195.48px 182.76px;
 }
 
 #elbkp2k6by87d {
-  fill: rgb(250, 250, 250);
+  fill: var(--white);
   transform-origin: 110.29px 305.94px;
   transform: rotate(-45deg);
 }
 
 #freepik--path--inject-31 {
-  fill: rgb(245, 245, 245);
+  fill: var(--white);
   transform-origin: 250px 416.24px;
 }
 
 #el9jk9mqjah0t {
-  fill: rgb(255, 255, 255);
+  fill: var(--white);
   opacity: 0.07;
   transform-origin: 195.48px 182.76px;
 }
@@ -399,32 +403,32 @@ form {
 #elu7g5jhbm0om,
 #elqtnmhnj1lja,
 #elr104jqj61tr {
-  fill: rgb(38, 50, 56);
+  fill: var(--grey);
 }
 
 #elok3k7m7rsq,
 #el0y5r0oe5z848 {
-  fill: #bb86fc;
+  fill: var(--primary-color);
 }
 
 #el19ja9ku3plk {
-  fill: #bb86fc;
+  fill: var(--primary-color);
   opacity: 0.6;
   transform-origin: 199.565px 180.622px;
 }
 
 #elaqe9wyt3w7f {
-  fill: rgb(240, 240, 240);
+  fill: var(--white);
   transform-origin: 70.4113px 109.237px;
 }
 
 #eld2400dcgy64 {
-  fill: rgb(240, 240, 240);
+  fill: var(--white);
   transform-origin: 114.169px 89.8721px;
 }
 
 #ellxn1f8vo9z {
-  fill: rgb(255, 255, 255);
+  fill: var(--white);
   transform-origin: 104.671px 82.7102px;
 }
 
@@ -432,12 +436,12 @@ form {
 #elnfdxc6486h,
 #elv9mhsatd7dl,
 #el8o56g9k4os5 {
-  fill: rgb(255, 255, 255);
+  fill: var(--white);
 }
 
 #ela0xzo5jc17k,
 #elb8wu07kh5ik {
-  fill: rgb(224, 224, 224);
+  fill: var(--white);
   transform-origin: 95.5343px 112.803px;
 }
 
@@ -445,7 +449,7 @@ form {
 #elpaf77a8n7sa,
 #el92bi8cxpvav,
 #elpbqyu6v2yks {
-  fill: rgb(235, 235, 235);
+  fill: var(--white);
 }
 
 #elrncsb9jbzu,
@@ -462,7 +466,7 @@ form {
 #eledad4o6o5d,
 #elvxkkohbhat,
 #el1hzhibkohdp {
-  fill: rgb(224, 224, 224);
+  fill: var(--white);
 }
 
 svg {
