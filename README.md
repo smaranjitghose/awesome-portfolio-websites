@@ -1,4 +1,5 @@
 ![Awesome Portfolio Website](./readme_assets/banner_apw.png)
+
 <div align="center">
 
 <a href="https://github.com/smaranjitghose/awesome-portfolio-websites"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
@@ -13,7 +14,8 @@
 <a href="https://github.com/smaranjitghose/awesome-portfolio-websites/issues"><img src="https://img.shields.io/github/issues/smaranjitghose/awesome-portfolio-websites?color=0059b3"></a>
 <a href="https://github.com/smaranjitghose/awesome-portfolio-websites/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/smaranjitghose/awesome-portfolio-websites?color=yellow"></a>
 <a href="https://github.com/smaranjitghose/awesome-portfolio-websites/pulls"><img src="https://img.shields.io/github/issues-pr/smaranjitghose/awesome-portfolio-websites?color=brightgreen"></a>
-<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/smaranjitghose/awesome-portfolio-websites?color=0059b3"></a> 
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/smaranjitghose/awesome-portfolio-websites?color=0059b3"></a>
+
 </div>
 
 A community maintained open source project aimed at making personal portfolio for researchers, developers and analysts simple, fast and less cumbersome. We make sure you have a full fledged website to showcase your work while you can spend time on your learning and innovative endeavours.
@@ -48,7 +50,7 @@ A community maintained open source project aimed at making personal portfolio fo
 
 Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and improve it further.
 
-Click on the image below to set up and contribute to the project:
+Click on the image below to set up and contribute to the project or [Click here](https://github.com/smaranjitghose/awesome-portfolio-websites/blob/master/CONTRIBUTING.md)
 
 <a href = "https://github.com/smaranjitghose/awesome-portfolio-websites/blob/master/CONTRIBUTING.md">
 <img src = "./readme_assets/Contribution.png"></a>
@@ -57,7 +59,7 @@ Click on the image below to set up and contribute to the project:
 
 | <img src = "https://avatars2.githubusercontent.com/u/46641503?v=4" width = 500 height = 250> | <img src = "https://avatars2.githubusercontent.com/u/40017559?v=4" width = 500 height = 250> | <img src = "./readme_assets/srv.jpg" width = 500 height = 250> |
 | :------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | :------------------------------------------------------------: |
-|                    [Smaranjit Ghose](https://github.com/smaranjitghose)\*                    |                        [Anush Bhatia](https://github.com/anushbhatia)                        |     [Srividya Inampudi](https://github.com/sriinampudi)\*     |
+|                    [Smaranjit Ghose](https://github.com/smaranjitghose)\*                    |                        [Anush Bhatia](https://github.com/anushbhatia)                        |     [Srividya Inampudi](https://github.com/sriinampudi)\*      |
 
 \*\* Open Source Day 2021
 
