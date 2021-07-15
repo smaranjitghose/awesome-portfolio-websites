@@ -108,6 +108,9 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: var(--bg);
 }
+.text-center heading1 exp-head {
+    color: white;
+}
 
 
 /* Scroll to Top button */
