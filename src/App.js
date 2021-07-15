@@ -10,12 +10,17 @@ import Education from './pages/Education/Education'
 import Resume from './pages/Resume/Resume';
 import NotFound from './pages/404/404';
 import Footer from './components/Footer/Footer';
+import { Helmet } from "react-helmet";
 
 
 function App() {
   return (
     <>
       <div className="App">
+        <Helmet>
+          <meta name="description" content="portfolio website" />
+          <meta name="keywords" content="portfolio, website, developer, researcher, designer, open source"/>
+        </Helmet>
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />

@@ -7,10 +7,15 @@ import ReactTypingEffect from 'react-typing-effect';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMediumM } from '@fortawesome/free-brands-svg-icons';
 import { faKaggle } from '@fortawesome/free-brands-svg-icons';
+import { Helmet } from "react-helmet";
 
 const Home = () => {
     return (
         <div className='home'>
+            <Helmet>
+                <meta name="description" content="portfolio website"/>
+                <meta name="keywords" content="portfolio, website"/>
+            </Helmet>
             <Particles id="particlejs"
                 params={{
                     particles: {

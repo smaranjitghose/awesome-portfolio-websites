@@ -8,6 +8,7 @@ import semanticSegmentation from '../../assets/images/research-page/semanticSegm
 import deepNetwork from '../../assets/images/research-page/deepNetwork.png'
 import imageDecomposition from '../../assets/images/research-page/imageDecomposition.png'
 import neuralNetworks from '../../assets/images/research-page/neuralNetworks.jpg'
+import { Helmet } from "react-helmet";
 
 const Research = () => {
 
@@ -24,6 +25,10 @@ const Research = () => {
 
     return (
         <div>
+            <Helmet>
+                <meta name="description" content="portfolio website"/>
+                <meta name="keywords" content="research, open source"/>
+            </Helmet>
             <div class="research-container research-upper pt-5" style={{ width: '100%', minHeight: '80%;' }}>
                 <section class="txt-bottom">
                     <div class="px-3 pt-5">
