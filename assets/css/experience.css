@@ -19,6 +19,9 @@ html[data-theme="light"] {
   --shadow-col2:#1d1d1d;
   --meta-col: rgb(155, 149, 149);
   --head-col: #fff;
+  .my_experience {
+    color: white;
+  }
  }
 
  html{
@@ -174,7 +177,7 @@ section > div {
   display: flex;
   flex-flow: row wrap;
   padding: 18px;
-  color: var(--text);
+  color: #000;
   background-color: #fff;
   border-radius: 0 13px 13px 0;
 }
