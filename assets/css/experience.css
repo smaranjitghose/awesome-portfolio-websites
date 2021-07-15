@@ -19,9 +19,7 @@ html[data-theme="light"] {
   --shadow-col2:#1d1d1d;
   --meta-col: rgb(155, 149, 149);
   --head-col: #fff;
-  .my_experience {
-    color: white;
-  }
+  
  }
 
  html{
