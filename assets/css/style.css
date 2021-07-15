@@ -406,6 +406,7 @@ html[light-mode="dark"] {
     
     .nav-item:hover::after {
         width: 50%;
+        
     }
 
     li.nav-item {
