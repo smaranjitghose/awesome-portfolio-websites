@@ -41,7 +41,9 @@ html[data-theme='dark'] {
     --shadow-col1: rgb(29, 28, 28);
     --shadow-col2: rgba(34, 34, 34, 0.459);
 }
-
+html{
+    overflow-x: hidden;
+  }
 .research_head {
     font-weight: bold;
 }

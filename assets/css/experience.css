@@ -20,6 +20,10 @@ html[data-theme="light"] {
   --meta-col: rgb(155, 149, 149);
   --head-col: #fff;
  }
+
+ html{
+  overflow-x: hidden;
+}
 /*Main section*/
 
 @media (max-width:766px) {

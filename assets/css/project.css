@@ -19,7 +19,9 @@ html[data-theme='dark'] {
     --text: rgba(255, 255, 255, 0.5);
     --neu-icon: whitesmoke;
 }
-
+html{
+    overflow-x: hidden;
+  }
 body {
     color: var(--text);
     background-color: var(--bg);
