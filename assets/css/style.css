@@ -93,6 +93,13 @@ html[data-theme="dark"] {
     
 }
 
+/* Custom Scrollbar for Mozilla Firefox*/
+html{
+    overflow-y: scroll;
+    scrollbar-color: #ca9eff #f1f1f1;
+    scrollbar-width: auto;
+}
+
 body {
     height: 100vh;
     margin: 0;
@@ -403,6 +410,11 @@ html[light-mode="dark"] {
     }
     a.nav-link {
         padding: 6px 21px !important;
+    }
+
+    /* Hide svg on laptop screens to prevent overlap between sidebar and navbar */
+    .bike {
+        display: none;
     }
 }
 
