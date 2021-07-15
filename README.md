@@ -77,4 +77,5 @@ Click on the image below to set up and contribute to the project:
 <a href="https://mexili.github.io/winter_of_code/#/"><img src="./readme_assets/open_source_programs/mwoc.png" width="25%"></a>
 <a href="https://crosswoc.ieeedtu.in/"><img src="./readme_assets/open_source_programs/crosswoc.png" width="25%"></a>
 <a href="https://letsgrowmore.in/soc/"><img src="./readme_assets/open_source_programs/lgmsoc.png" width="25%"></a>
+<a href="https://devincept.codes/"><img src="./readme_assets/open_source_programs/devincept.gif" width="25%"></a>
 </p>
