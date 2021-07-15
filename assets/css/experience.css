@@ -690,6 +690,7 @@ ul ol{
 }
 a:link{
   text-decoration: none !important;
+  color: white;
 }
 @media screen and (max-width: 576px) {
   .blog-slider__button {
