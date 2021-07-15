@@ -114,6 +114,10 @@ body{
   --link-size-footer-s: 30px;
 }
 
+a.socialicon {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
 .social-icons {
   display: flex;
   font-size: 20px;
