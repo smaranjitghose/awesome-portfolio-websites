@@ -273,7 +273,7 @@ body {
 /*IMAGES SECTION OF LIST*/
 
 .rImg {
-    margin-left: 2.5em;
+    margin-left: 0;
     width: 17em;
     height: 17em;
     border-radius: 10px;
