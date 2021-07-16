@@ -48,6 +48,8 @@ ul {
 
 .nav-link:hover {
     color: rgba(0, 0, 0, .7);
+    bottom: 0;
+    border-bottom: 3px solid #6a00bb;
 }
 
 .navbar-brand {
