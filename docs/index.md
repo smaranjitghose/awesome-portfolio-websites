@@ -90,7 +90,7 @@ SOFTWARE.
 
 ---
 
-## Open Source Programs we have been a associated with {: align="center""}
+## Open Source Programs we have been associated with {: align="center""}
 
 ![hakin-codes](images/home-page/hakin_codes.png){: style="height:11rem;width:11rem; margin:10px;"}
 ![student-code-in](images/home-page/sci.jpg){: style="height:11rem;width:11rem; margin:10px;"}
