@@ -13,8 +13,24 @@ const Home = () => {
     return (
         <div className='home'>
             <Helmet>
-                <meta name="description" content="portfolio website"/>
-                <meta name="keywords" content="portfolio, website"/>
+                <title>John Doe | Home</title>
+                <meta charset="UTF-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <meta name="keywords" content="free portfolio template,portfolio template, portfolio website template, open source, open sourcing, contributing to open source" />
+                <meta name="description" content="This project serves free and beautiful portfolio template for everyone. Anyone can showcase their work including moocs, education, projects, experience,etc. to the world." />
+                <meta name="robots" content="index,follow" />
+                <meta name="Googlebot" content="index,follow" />
+                <meta name="AdsBot-Google" content="index,follow" />
+                <meta property="og:site_name" content="https://portfolio.smaranjitghose.codes/"/>
+                <meta property="og:title" content="John Doe | Home"/>
+                <meta property="og:description" content="This project serves free and beautiful portfolio template for everyone. Anyone can showcase their work including moocs, education, projects, experience,etc. to the world." />
+                <meta property="og:type" content="website"/>
+                <meta property="og:url" content="https://portfolio.smaranjitghose.codes/" />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:site" content="https://portfolio.smaranjitghose.codes/" />
+                <meta name="application-name" content="John Doe | Home" />
+                <meta name="apple-mobile-web-app-title" content="John Doe | Home" />
+                <meta name="summary" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
             </Helmet>
             <Particles id="particlejs"
                 params={{
