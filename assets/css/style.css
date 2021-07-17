@@ -408,6 +408,10 @@ html[light-mode="dark"] {
         width: 50%;
         
     }
+    
+    .no-underline{
+        background-color: transparent;
+    }
 
     li.nav-item {
         text-align: center;
