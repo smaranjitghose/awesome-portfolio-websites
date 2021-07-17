@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AnimateHeight from 'react-animate-height';
 import HamburgerButton from './HambugerButton';
@@ -20,8 +20,8 @@ const Navbar = () => {
             {title: 'Home', path: '/'},
             {title: 'Experience', path: '/experience'},
             {title: 'Projects', path: '/projects'},
-            {title: 'Research', path: '/education'},
-            {title: 'Education', path: '/research'},
+            {title: 'Research', path: '/research'},
+            {title: 'Education', path: '/education'},
             {title: 'Resume', path: '/resume'},
         ]
         const orientationClass = orientation === ROW_ORIENTATION ? 'flex-row' : '';
@@ -32,7 +32,7 @@ const Navbar = () => {
                    sections.map((sectionObj, index) => (
                     <li key = {index} style = {{marginTop: listItemMarginTop}}>
                         <Link onClick = {()=>{toggleNavbar(false, false)}} exact className='nav-link link' to={sectionObj.path}> 
-                            <span className = 'span-link'>{sectionObj.title}</span>
+                            {sectionObj.title}
                         </Link>
                     </li>
                    ))

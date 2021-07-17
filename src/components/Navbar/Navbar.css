@@ -76,25 +76,6 @@ ul {
     color: var(--text-nav-link-hover);
 }
 
-.span-link {
-    display: inline-block;
-    position: relative;
-    padding-bottom: 3px;
-    margin-right: 10px;
-}
-
-.span-link::after {
-    display: block;
-    content: '';
-    border-bottom: solid 3px var(--link-border);  
-    transform: scaleX(0);  
-    transition: transform 250ms ease-in-out;
-}
-
-.span-link:hover::after{
-    transform: scaleX(1);
-}
-
 /*navbar signature*/
 .navbar-brand {
     font-family: Agustina;
