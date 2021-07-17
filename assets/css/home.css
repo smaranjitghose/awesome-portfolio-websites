@@ -71,7 +71,6 @@ body {
 .animated-text span {
   display: none;
   line-height: 1;
-  font-size: 2.5rem;
 }
 
 .animated-text span.active {
@@ -606,10 +605,7 @@ a:hover {
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   :root {
     --link-size: 100px;
   }
@@ -649,5 +645,152 @@ a:hover {
 
   .greeting {
     font-size: 2rem;
+  }
+  .animated-text span {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  :root {
+    --link-size: 80px;
+  }
+
+  .twitter-icon {
+    margin-left: 20px;
+  }
+
+  .dribbble-icon {
+    margin-left: 25px;
+    margin-top: 25px;
+  }
+  .linkedin-icon {
+    margin-left: 25px;
+    width: 35px;
+  }
+
+  .codeforces-icon {
+    margin-top: 25px;
+  }
+
+  .instagram-icon {
+    margin-left: 5px;
+  }
+
+  .github-icon {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .rounded-circle {
+    height: 200px;
+    width: 200px;
+  }
+
+  #interest {
+    font-size: 90%;
+  }
+
+  .greeting {
+    font-size: 2.5rem;
+  }
+
+  .animated-text span {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  :root {
+    --link-size: 110px;
+  }
+
+  .twitter-icon {
+    margin-left: 30px;
+  }
+
+  .dribbble-icon {
+    margin-left: 25px;
+    margin-top: 25px;
+  }
+  .linkedin-icon {
+    margin-left: 25px;
+    width: 35px;
+  }
+
+  .codeforces-icon {
+    margin-top: 25px;
+  }
+
+  .instagram-icon {
+    margin-left: 5px;
+  }
+
+  .github-icon {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .rounded-circle {
+    height: 400px;
+    width: 400px;
+  }
+
+  #interest {
+    font-size: 90%;
+  }
+
+  .greeting {
+    font-size: 3.5rem;
+  }
+
+  .animated-text span {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  :root {
+    --link-size: 90px;
+  }
+
+  .twitter-icon {
+    margin-left: 25px;
+  }
+
+  .dribbble-icon {
+    margin-left: 25px;
+    margin-top: 25px;
+  }
+  .linkedin-icon {
+    margin-left: 25px;
+    width: 35px;
+  }
+
+  .codeforces-icon {
+    margin-top: 25px;
+  }
+
+  .instagram-icon {
+    margin-left: 5px;
+  }
+
+  .github-icon {
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+  .rounded-circle {
+    height: 400px;
+    width: 400px;
+  }
+
+  #interest {
+    font-size: 90%;
+  }
+
+  .greeting {
+    font-size: 3rem;
+  }
+
+  .animated-text span {
+    font-size: 3.5rem;
   }
 }
