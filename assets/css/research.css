@@ -273,9 +273,9 @@ body {
 /*IMAGES SECTION OF LIST*/
 
 .rImg {
-    margin-left: -2.5em;
-    width: 17em;
-    height: 17em;
+    margin-left: 0;
+    width: 22em;
+    height: 20em;
     border-radius: 10px;
 }
 
