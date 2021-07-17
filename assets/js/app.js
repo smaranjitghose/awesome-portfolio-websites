@@ -377,7 +377,7 @@ window.addEventListener("storage", function () {
   } else {
     app.setAttribute("light-mode", "light");
   }
-}, false);
+}, window.localStorage.clear());
 
 // Function to remove scroll bar during preload
 $(window).on('load', function() {
