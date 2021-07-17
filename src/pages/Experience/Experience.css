@@ -1,20 +1,17 @@
-.experience{
- margin: 0px 180px;
-      background: #fff;
-         padding-top: 130px;
+.experience {
+  margin: 0px 180px;
+  background: #fff;
+  padding-top: 130px;
 }
 
 .exp-card {
-   margin-bottom: 40px;
-
+  margin-bottom: 40px;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 15%), 2px 2px 7px rgba(0, 0, 0, 14%),
     3px 3px 8px rgba(0, 0, 0, 13%), 4px 4px 9px rgba(0, 0, 0, 12%);
   display: flex;
   flex-direction: column;
-  /* position: relative;
-  top: 100px; */
   border: none;
-  border-radius: 13px; 
+  border-radius: 13px;
 }
 
 .exp-card:hover {
@@ -29,7 +26,7 @@
   cursor: pointer;
 }
 
- .card-body {
+.card-body {
   display: flex;
   flex-flow: row wrap;
   background-color: #fff;
@@ -84,20 +81,30 @@
   margin-top: 5rem;
 }
 
+.duration {
+  padding-left: 5px;
+}
+
 @media only screen and (max-width: 550px) {
   .card-body .list {
     list-style: decimal;
     line-height: 22px;
-    padding: 0 40px;
+    padding: 10px 40px;
   }
 
   .featured-image {
     width: 50%;
     height: 0;
   }
-  .experience{
- margin: 0px ;
-}
+  .card-body {
+    padding-left: 15px;
+  }
+  .experience {
+    margin: 0px 8px;
+  }
+  .header {
+    font-size: 10px;
+  }
 }
 
 @media only screen and (min-width: 551px) {
@@ -106,7 +113,6 @@
       4px 7px 13px rgba(0, 0, 0, 15%), 5px 8px 14px rgba(0, 0, 0, 14%);
   }
 }
-
 
 @media only screen and (min-width: 768px) {
   .exp-card {
