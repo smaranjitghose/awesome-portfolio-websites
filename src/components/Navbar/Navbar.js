@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AnimateHeight from 'react-animate-height';
-import HamburgerButton from './HambugerButton';
+import HamburgerButton from '../HamburgerButton/HambugerButton';
 import './Navbar.css'
 
 const MOBILE_WIDTH = 840;
