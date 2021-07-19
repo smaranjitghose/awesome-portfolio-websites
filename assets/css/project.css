@@ -25,6 +25,7 @@ html{
 body {
     color: var(--text);
     background-color: var(--bg);
+    cursor:none;
 }
 
 .projects_head {

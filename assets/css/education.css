@@ -17,7 +17,9 @@ html[data-theme='dark'] {
 html{
     overflow-x: hidden;
   }
-  
+body{
+    cursor:none;
+}  
 .education_head {
     font-weight: bold;
 }

@@ -25,6 +25,9 @@ html[data-theme="light"] {
  html{
   overflow-x: hidden;
 }
+body{
+  cursor:none;
+}
 /*Main section*/
 
 @media (max-width:766px) {
