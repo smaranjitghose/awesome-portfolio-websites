@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <div className="App">
-        {/* <Navbar /> */}
+        <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/experience' component={Experience} />
@@ -26,7 +26,7 @@ function App() {
           <Route path='' component={NotFound} />
           <Route path='/resume' component={Resume} />
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

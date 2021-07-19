@@ -15,7 +15,7 @@ import SwiperCore, {
 SwiperCore.use([Pagination, Mousewheel]);
 
 const params = {
-  // container: ".container",
+  container: ".container",
   pagination: ".swiper-pagination",
   paginationClickable: true,
   direction: "vertical",
@@ -27,13 +27,12 @@ function Hackathon() {
     <div>
       <h4 className="text-center heading1 mcard">Hackathon <span className="my_experience">Participation</span></h4>
 
-      <main>
+      <main style={{ height: '30em' }}>
         <div className="blog-slider mb-5 mt-5">
           <Swiper {...params} pagination={true} className=" blog-slider__wrp swiper-wrapper">
             {
               mentor.map((data) => (
                 <SwiperSlide key={data.title} className="blog-slider__item swiper-slide" >
-                  {/* <div className="blog-slider__item swiper-slide"> */}
                   <div className="blog-slider__img">
                     <img src="https://picsum.photos/200/300" alt={data.title}></img>
                   </div>
@@ -43,12 +42,10 @@ function Hackathon() {
                     <div className="blog-slider__text">{data.desp}</div>
                     <a href="#" className="blog-slider__button">Read More</a>
                   </div>
-
-                  {/* </div> */}
+                  <div class="blog-slider__pagination"></div>
                 </SwiperSlide>
               ))
             }
-            <div class="blog-slider__pagination"></div>
           </Swiper>
         </div>
       </main>
