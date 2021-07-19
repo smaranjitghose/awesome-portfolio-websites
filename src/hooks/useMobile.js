@@ -4,7 +4,7 @@
  * USAGE:
  *  const [isMobile] = useMobile();
  * 
- *  isMobile is true depending on the window size
+ *  isMobile is true/false depending on the window size
  */
 import { useState, useEffect } from 'react';
 
