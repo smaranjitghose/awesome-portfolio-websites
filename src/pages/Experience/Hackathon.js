@@ -34,7 +34,7 @@ function Hackathon() {
               mentor.map((data) => (
                 <SwiperSlide key={data.title} className="blog-slider__item swiper-slide" >
                   <div className="blog-slider__img">
-                    <img src="https://picsum.photos/200/300" alt={data.title}></img>
+                    <img src={data.image} alt={data.title}></img>
                   </div>
                   <div className="blog-slider__content">
                     <div className="blog-slider__title">{data.title}</div>
