@@ -13,7 +13,9 @@
         "@testing-library/react": "^11.2.7",
         "@testing-library/user-event": "^12.8.3",
         "aos": "^2.3.4",
+        "bootstrap": "^5.0.2",
         "classnames": "^2.3.1",
+        "framer-motion": "^4.1.17",
         "react": "^17.0.2",
         "react-animate-height": "^2.0.23",
         "react-bootstrap": "^1.6.1",
@@ -25,6 +27,7 @@
         "react-router-dom": "^5.2.0",
         "react-scripts": "4.0.3",
         "react-typing-effect": "^2.0.5",
+        "styled-components": "^5.3.0",
         "tsparticles": "^1.30.2",
         "web-vitals": "^1.1.2"
     },
