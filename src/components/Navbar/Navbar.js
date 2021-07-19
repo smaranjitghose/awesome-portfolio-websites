@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import AnimateHeight from 'react-animate-height';
 import HamburgerButton from '../HamburgerButton/HambugerButton';
 import './Navbar.css'
+import useMobile from '../../hooks/useMobile';
 
-const MOBILE_WIDTH = 840;
 const DROPDOWN_ANIMATION_DURATION = 500;
 const ROW_ORIENTATION = 'row';
 const COLUMN_ORIENTATION = 'column';
 
 const Navbar = () => {
-    const [width, setWidth] = useState(0);
+    const [isMobile] = useMobile();
     const [isExtended, setIsExtended] = useState(false);
     const [renderExtendedSectionList, setRenderExtendedSectionList] = useState(false);
 
@@ -41,30 +41,15 @@ const Navbar = () => {
         )
     }
 
-
+    /* the following if, fixes the bug when you are in mobile dimensions with open
+    * menu and then you resize to full screen, the menu doesnt close automatically
+    * so we listen to the window height, and when it detects mobile mode, it closes the menu
+    */
     useEffect(() => {
-        /* updateWindowWidth() is called everytime window width changes */
-        function updateWindowWidth() {
-            setWidth(window.innerWidth);
-
-            /* the following if, fixes the bug when you are in mobile dimensions with open
-             * menu and then you resize to full screen, the menu doesnt close automatically
-             * so we listen to the window height, and when it detects mobile mode, it closes the menu
-             */
-            if(window.innerWidth > MOBILE_WIDTH) {
-                toggleNavbar(false, false);
-            }
+        if(isMobile === false) {
+            toggleNavbar(false, false);
         }
-        window.addEventListener('resize', updateWindowWidth);
-        updateWindowWidth();
-        return () => window.removeEventListener('resize', updateWindowWidth);
-    }, []);
-
-
-    /* this function helps us to show hamburger button when the window goes into mobile dimensions*/
-    function isMobile() {
-        return width <= 840 && width !== 0;
-    }
+    }, [isMobile])
 
     function toggleNavbar(toggleHeight, toggleSectionList) {
         setIsExtended(toggleHeight); //extend or shrink the navbar height
@@ -87,7 +72,7 @@ const Navbar = () => {
                     <Link onClick={()=>{toggleNavbar(false, false)}} to='/' className='link'>John Doe</Link>
                 </div>
                 {
-                    isMobile() ? 
+                    isMobile ? 
                     ( 
                         <HamburgerButton
                             onClick = {()=>{toggleNavbar(!isExtended, !renderExtendedSectionList)}}

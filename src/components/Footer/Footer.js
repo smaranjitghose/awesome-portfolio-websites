@@ -2,16 +2,17 @@ import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
-
+import useMobile from "../../hooks/useMobile";
 const Footer = () => {
   const showBelow = 500;
-
+  const [isMobile] = useMobile();
   const [show, setShow] = useState(showBelow ? false : true);
 
   // function to scroll page to top
   const scrollToTop = () => {
     window[`scrollTo`]({ top: 0, behavior: `smooth` });
   };
+
 
   // for hiding to-top button on main screen
   const handleScroll = () => {
@@ -891,7 +892,7 @@ const Footer = () => {
       </div>
       {/* For to-top button */}
       <div>
-        {show && (
+        {show && !isMobile && (
           <button
             id="btnScrollToTop"
             onClick={scrollToTop}
