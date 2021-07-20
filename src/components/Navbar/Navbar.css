@@ -42,25 +42,6 @@ ul {
     font-family: 'Poppins', sans-serif;
 }
 
-
-    
-.nav-item::after {
-    content: "";
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 0.15em;
-    bottom: 0;
-    width: 0%;
-    background-color: #6a00bb;
-    transition: all ease-in-out 280ms;
-}
-
-.nav-item:hover::after {
-    width: 50%;
-    
-}
-
 .nav-link {
     color: rgba(0, 0, 0, .5);
 }
