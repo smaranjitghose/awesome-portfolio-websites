@@ -30,18 +30,19 @@ const Research = () => {
                 <meta charset="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="keywords" content="free portfolio template,portfolio template, portfolio website template, open source, open sourcing, contributing to open source" />
-                <meta name="description" content="This project serves free and beautiful portfolio template for everyone. The sole aim of this project is to help all those who are not sure or face difficulties while trying to create the perfect portfolio for themselves. Anyone can showcase their work including moocs, education, projects, experience,etc. to the world."
-                />
+                <meta name="description" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
                 <meta name="robots" content="index,follow" />
-                <meta name="Googlebot" content="index,follow" />
+                <meta name="googlebot" content="index,follow" />
                 <meta name="AdsBot-Google" content="index,follow" />
                 <meta property="og:site_name" content="https://portfolio.smaranjitghose.codes/research.html" />
                 <meta property="og:title" content="John Doe | Research" />
-                <meta property="og:description" content="This project serves free and beautiful portfolio template for everyone. Anyone can showcase their work including moocs, education, projects, experience,etc. to the world." />
+                <meta property="og:description" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://portfolio.smaranjitghose.codes/research.html" />
                 <meta name="twitter:card" content="summary" />
-                <meta name="twitter:site" content="https://portfolio.smaranjitghose.codes/research.html" />
+                <meta name="twitter:title" content="John Doe | Research" />
+                <meta name="twitter:description" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
+                <meta name="twitter:url" content="https://portfolio.smaranjitghose.codes/research.html" />
                 <meta name="application-name" content="John Doe | Research" />
                 <meta name="apple-mobile-web-app-title" content="John Doe | Research" />
                 <meta name="summary" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
