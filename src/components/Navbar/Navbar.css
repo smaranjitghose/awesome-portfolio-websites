@@ -1,62 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @font-face {
     font-family: "Agustina";
     src: url(../../assets/fonts/Agustina.woff);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html {
+    --bg-nav: #fff;
+    --nav-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    --txt-signature: black;
+    --txt-signature-hover: black; 
+    --txt-nav-link: rgba(0, 0, 0, .5);
+    --text-nav-link-hover: rgba(0, 0, 0, .7);
+    --link-border: #6a00bb;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-.flex {
+.flex-row {
     display: flex;
-    align-items: center;
+    align-self: center;
     justify-content: space-between;
 }
 
+/*navbar container*/
+.navbar {
+    box-shadow: var(--nav-box-shadow);
+    position: fixed;
+    width: 100%;
+    background: var(--bg-nav);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+/*mobile extended navbar container*/
+.extended-container {
+    display: flex;
+    flex-direction: 'column';
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+/*navbar links list*/
 ul {
     list-style: none;
 }
 
 .link {
     text-decoration: none;
-    color: black;
+    user-select: none;
+    color: var(--txt-signature);
 }
 
 .link:hover {
-    color: black;
+    color: var(--txt-signature-hover);
 }
 
-.navbar {
-    padding: 8px 16px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    position: fixed;
-    width: 100%;
-    background: #fff;
-    z-index: 1;
+.nav-items {
+    text-align: center;
 }
 
 .nav-link {
     padding: 6px 21px;
     font-family: 'Poppins', sans-serif;
-}
-
-.nav-link {
-    color: rgba(0, 0, 0, .5);
+    color: var(--txt-nav-link);
 }
 
 .nav-link:hover {
-    color: rgba(0, 0, 0, .7);
+    color: var(--text-nav-link-hover);
 }
 
+/*navbar signature*/
 .navbar-brand {
     font-family: Agustina;
     font-size: 30px;
     font-weight: bold;
-    color: rgba(0, 0, 0, .9);
+    margin-left: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0;
 }
 
-.navbar-brand:hover {
-    color: rgba(0, 0, 0, 1);
+/*container of bike svg*/
+.bike {
+    margin-top: 10%;
+}
+
+/*
+-------------------------------------
+    NAVBAR BIKE ANIMATIONS
+--------------------------------------
+*/
+#left-wheel, #right-wheel{
+    animation: wheel 3s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#man-bike {
+    animation: bikes 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+#hat {
+    animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wheel {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bikes {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(12deg);
+    }
+}
+
+@keyframes hat {
+    from {
+        transform: translateY(0%) rotateZ(0deg);
+    }
+    to {
+        transform: translateY(10%) rotateZ(20deg);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-link {
+        padding: 6px 15px;
+        font-family: 'Poppins', sans-serif;
+    }
 }
