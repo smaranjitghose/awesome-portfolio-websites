@@ -1,0 +1,70 @@
+html {
+    --hamburger-btn: #202020;
+}
+
+.hamburger {
+    margin-right: 4%;
+    align-self: center;
+}
+
+.hamburger .line{
+    width: 32px;
+    height: 5px;
+    background-color: var(--hamburger-btn);
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.line {
+    border-radius: 5px;
+}
+  
+.hamburger:hover{
+    cursor: pointer;
+}
+
+/*
+-------------------------------------
+    HAMBURGER BUTTON ANIMATIONS
+--------------------------------------
+*/
+#hamburger.is-active{
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition-delay: 0.6s;
+    -o-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #hamburger.is-active .line:nth-child(2){
+    width: 0px;
+  }
+  
+  #hamburger.is-active .line:nth-child(1),
+  #hamburger.is-active .line:nth-child(3){
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  
+  #hamburger.is-active .line:nth-child(1){
+    -webkit-transform: translateY(13px);
+    -ms-transform: translateY(13px);
+    -o-transform: translateY(13px);
+    transform: translateY(13px);
+  }
+  
+  #hamburger.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-13px) rotate(90deg);
+    -ms-transform: translateY(-13px) rotate(90deg);
+    -o-transform: translateY(-13px) rotate(90deg);
+    transform: translateY(-13px) rotate(90deg);
+  }
