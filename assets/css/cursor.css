@@ -19,14 +19,14 @@ body * {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.cursor-dot {
-  width: 10px;
-  height: 10px;
-  background-color: #b83030f1;
-}
 
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #dc5656;
+}
 .cursor-dot-outline {
-  width: 20px;
-  height: 20px;
-  background-color: rgba(211, 115, 115, 0.959);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(229, 128, 128, 0.5);
 }
