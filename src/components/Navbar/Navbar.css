@@ -76,6 +76,25 @@ ul {
     color: var(--text-nav-link-hover);
 }
 
+
+
+.nav-item::after {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 0.15em;
+    bottom: 0;
+    width: 0%;
+    background-color: #6a00bb;
+    transition: all ease-in-out 280ms;
+}
+
+.nav-item:hover::after {
+    width: 50%;
+
+}
+
 /*navbar signature*/
 .navbar-brand {
     font-family: Agustina;

@@ -30,7 +30,7 @@ const Navbar = () => {
             <ul className={`nav-items ${orientationClass}`}>
                {
                    sections.map((sectionObj, index) => (
-                    <li key = {index} style = {{marginTop: listItemMarginTop}}>
+                    <li className="nav-item" key = {index} style = {{marginTop: listItemMarginTop}}>
                         <Link onClick = {()=>{toggleNavbar(false, false)}} exact className='nav-link link' to={sectionObj.path}> 
                             {sectionObj.title}
                         </Link>
