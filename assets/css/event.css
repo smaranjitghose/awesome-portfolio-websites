@@ -7,13 +7,13 @@
 
 /* light mode */
 html[data-theme='light'] {
-  --bg1-color: #ecf0f3;
+  --bg-color: #ecf0f3;
   --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   --border: 1px solid #ecf0f3;
 }
 /* dark mode */
 html[data-theme='dark'] {
-  --bg1-color: #272727;
+  --bg-color: #272727;
   --shadow: 0 4px 8px 0 rgba(104, 102, 102, 0.2);
   --border: none;
 }
@@ -107,6 +107,7 @@ html[data-theme='dark'] {
 .content {
   display: flex;
   justify-content: end;
+  color: #fff;
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
