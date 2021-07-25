@@ -95,6 +95,16 @@ body{
     white-space: nowrap;
 }
 
+.rounded-circle{
+  transition: transform .5s;
+}
+
+  .rounded-circle:hover {
+    -ms-transform: scale(0.9); /* IE 9 */
+    -webkit-transform: scale(0.9); /* Safari 3-8 */
+    transform: scale(0.9); 
+  }
+
 @keyframes blink {
   from {
     opacity: 0;
