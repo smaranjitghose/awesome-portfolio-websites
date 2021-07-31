@@ -865,6 +865,7 @@ form {
     margin-top: 2rem;
     padding: 3%;
     background: #80498a;
+    box-shadow: 1px 1px 20px darkgrey;
     border-bottom: 2px solid #bb86fc;
     border-radius: 23px;
     border-top-style: none;
