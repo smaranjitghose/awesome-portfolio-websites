@@ -301,6 +301,10 @@ html[light-mode="dark"] {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.dark-theme .nav-link:hover{
+color: #ffffff !important;
+}
+
 .dark-theme .first,
 .dark-theme .second,
 .dark-theme .third {
