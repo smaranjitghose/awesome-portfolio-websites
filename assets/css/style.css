@@ -286,10 +286,6 @@ html {
     transition: background-color .3s;
 }
 
-html[light-mode="dark"] {
-    background-color: #141516;
-    color: #ced4e2;
-}
 
 .dark-theme {
     background-color: #2b2a2A;
@@ -868,7 +864,7 @@ form {
     width: 100%;
     margin-top: 2rem;
     padding: 3%;
-    background: #bb86fc;
+    background: #80498a;
     border-bottom: 2px solid #bb86fc;
     border-radius: 23px;
     border-top-style: none;
@@ -880,7 +876,7 @@ form {
 
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover {
-    background:#6a00bbd2;;
+    background:#80498a;;
   
 }
 
