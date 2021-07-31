@@ -41,6 +41,13 @@ html[data-theme='dark'] {
     --shadow-col1: rgb(29, 28, 28);
     --shadow-col2: rgba(34, 34, 34, 0.459);
 }
+html[light-mode="dark"]
+ {
+    background-color: #80498a;
+    color: #fdfdfd;
+}
+
+
 html{
     overflow-x: hidden;
   }
@@ -94,6 +101,7 @@ body {
 
 #researchDetailsTable {
     width: 100%;
+     box-shadow: 1px 8px 40px darkgrey;
 }
 
 #researchDetailsTable tr {
@@ -757,3 +765,9 @@ a:hover {
     animation-duration: 5s;
     transform-origin: 1009.149px 711.625px
 }
+
+@media (prefers-color-scheme: dark)
+{
+   html{ background-color:rgb(138, 16, 138) ;}
+}
+.col-md-6 svg {overflow: hidden;vertical-align: middle;box-shadow: 1px 8px 40px darkgrey }
