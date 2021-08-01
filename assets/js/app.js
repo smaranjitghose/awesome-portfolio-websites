@@ -348,7 +348,27 @@ $(document).ready(function () {
   );
 });
 
+//consistent dark mode for page change
+if (localStorage.getItem("lightMode") == "dark") {
+  var app = document.getElementsByTagName("HTML")[0];
+  app.setAttribute("light-mode", "dark");
+
+  //to add dark theme to nav bar after its been loaded
+  window.addEventListener("load", function () {
+    var nav = document.getElementById("navbar");
+    nav.classList.add("dark-theme");
+  });
+
+  var sc = document.getElementsByClassName("socialicon");
+  for (var i = 0; i < sc.length; i++) {
+    sc[i].classList.add("dsc");
+  }
+} else {
+  localStorage.setItem("lightMode", "light");
+}
+
 function toggle_light_mode() {
+  console.log(localStorage.getItem("lightMode"));
   var app = document.getElementsByTagName("HTML")[0];
   var nav = document.getElementById("navbar");
   if (localStorage.lightMode == "dark") {
@@ -356,20 +376,19 @@ function toggle_light_mode() {
     app.setAttribute("light-mode", "light");
     nav.classList.remove("dark-theme");
     var sc = document.getElementsByClassName("socialicon");
-    for(var i=0; i<sc.length; i++) {
+    for (var i = 0; i < sc.length; i++) {
       sc[i].classList.remove("dsc");
-   }
+    }
   } else {
     nav.classList.add("dark-theme");
     localStorage.lightMode = "dark";
     app.setAttribute("light-mode", "dark");
     var sc = document.getElementsByClassName("socialicon");
-    for(var i=0; i<sc.length; i++) {
+    for (var i = 0; i < sc.length; i++) {
       sc[i].classList.add("dsc");
-   }
+    }
   }
 }
-
 
 window.addEventListener("storage", function () {
   if (localStorage.lightMode == "dark") {
@@ -377,13 +396,12 @@ window.addEventListener("storage", function () {
   } else {
     app.setAttribute("light-mode", "light");
   }
-}, window.localStorage.clear());
-
-// Function to remove scroll bar during preload
-$(window).on('load', function() {
-  setTimeout(function(){
-    $('.no-scroll-preload').css('overflow', 'visible');
-  },1000);
-  $('.loader-container').fadeOut(2500);
 });
 
+// Function to remove scroll bar during preload
+$(window).on("load", function () {
+  setTimeout(function () {
+    $(".no-scroll-preload").css("overflow", "visible");
+  }, 1000);
+  $(".loader-container").fadeOut(2500);
+});
