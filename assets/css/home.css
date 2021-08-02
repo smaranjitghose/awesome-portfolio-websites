@@ -161,9 +161,6 @@ a.socialicon {
   color:var(--col-icon-kaggle);
 }
 
-.socialicon.medium{
-  color: var(--col-icon-medium);
-}
 .socialicon:after {
   content: "";
   width: var(--link-size);
@@ -180,10 +177,6 @@ a.socialicon {
   box-shadow: var(--kaggle);
 }
 
-.socialicon.medium:after {
-  background-color: #00ab6c;
-  box-shadow: var(--medium);
-}
 
  /*
 ---------------------------
