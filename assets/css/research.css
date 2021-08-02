@@ -400,7 +400,7 @@ body {
   background-color: rgb(231, 85, 109);
   color: #fff;
   border-radius: 4px;
-  box-shadow: -3px -3px 9px #ffffff73, 2px 2px 9px rgba(94, 104, 121, 0.288);
+  box-shadow: -3px -3px 9px #ffffff, 2px 2px 9px rgba(94, 104, 121, 0.288);
 }
 
 @media (min-width: 60rem) {

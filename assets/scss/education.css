@@ -1,0 +1,377 @@
+@import url(d:\Github-contribute\awesome-portfolio-websites\assets\scss\style.css);
+/* Dark and Light theme */
+/*color of education page heading*/
+/* -----Education Section CSS----- */
+/*properties for online accreditaions(MOOCS) heading*/
+/* Card Hover Effect */
+/* SVG animation */
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(9deg);
+            transform: rotate(9deg);
+  }
+  100% {
+    -webkit-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+  }
+}
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(9deg);
+            transform: rotate(9deg);
+  }
+  100% {
+    -webkit-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+  }
+}
+
+@-webkit-keyframes shake-bottom {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%, 40%, 60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes shake-bottom {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%, 40%, 60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+
+html[light-mode="light"] {
+  --bg1-color: white;
+  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  --border: 1px solid #ecf0f3;
+  --meta-col: #444;
+  --head-col: black;
+  --tint-col: #ecf0f3;
+}
+
+html[light-mode="dark"] {
+  --bg1-color: #272727;
+  --shadow: 0 4px 8px 0 rgba(104, 102, 102, 0.2);
+  --border: none;
+  --meta-col: rgb(155, 149, 149);
+  --head-col: #fff;
+  --tint-col: #ecf0f3be;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.education_head {
+  font-weight: bold;
+}
+
+.edu_background {
+  color: #4e00bb;
+}
+
+.sect {
+  height: 140vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.s2 {
+  overflow-x: hidden;
+}
+
+.s2 .head {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.s2 h4 {
+  margin-bottom: 1.2rem;
+  color: var(--head-col);
+}
+
+.s2 p {
+  margin-top: -0.5rem;
+  font-weight: 450;
+  font-size: 2.5vh;
+}
+
+.s2 .card {
+  border-radius: 3rem;
+}
+
+.s2 .card img {
+  height: 90%;
+  width: 90%;
+}
+
+.s2 img {
+  border-radius: 3rem;
+}
+
+.h4 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.qual {
+  margin-bottom: 2rem;
+  color: var(--meta-col);
+}
+
+.card {
+  background-color: var(--bg1-color);
+}
+
+.card .row {
+  color: black;
+}
+
+p {
+  color: var(--head-col);
+}
+
+.mooc-title {
+  color: var(--head-col);
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  overflow: hidden;
+  height: 75%;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 0.8;
+}
+
+.content:hover .content-details {
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+#mooc .card {
+  border-radius: 5px;
+  background: var(--tint-col);
+  -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#mooc .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+#mooc .card-body {
+  background-color: var(--bg1-color);
+  padding: 1px;
+}
+
+#Girl {
+  -webkit-animation: swing ease-in-out 1s infinite alternate;
+          animation: swing ease-in-out 1s infinite alternate;
+  -webkit-transform-origin: center -20px;
+          transform-origin: center -20px;
+  transform-box: fill-box;
+  float: left;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#Vector_38 {
+  -webkit-animation: swing ease-in-out 1s infinite alternate;
+          animation: swing ease-in-out 1s infinite alternate;
+  -webkit-transform-origin: center 0px;
+          transform-origin: center 0px;
+  transform-box: fill-box;
+  float: left;
+}
+
+#Vector_39 {
+  -webkit-animation: swing ease-in-out 1s infinite alternate;
+          animation: swing ease-in-out 1s infinite alternate;
+  -webkit-transform-origin: center 0px;
+          transform-origin: center 0px;
+  transform-box: fill-box;
+  float: left;
+}
+
+#Vector_40 {
+  -webkit-animation: swing ease-in-out 1s infinite alternate;
+          animation: swing ease-in-out 1s infinite alternate;
+  -webkit-transform-origin: center -20px;
+          transform-origin: center -20px;
+  transform-box: fill-box;
+  float: left;
+}
+
+#leaf12 {
+  -webkit-animation: shake-bottom 9s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  animation: shake-bottom 9s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  transform-box: fill-box;
+}
+
+#leaf13 {
+  -webkit-animation: shake-bottom 8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  animation: shake-bottom 8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  transform-box: fill-box;
+}
+
+#lef14 {
+  -webkit-animation: shake-bottom 7.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  animation: shake-bottom 7.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  transform-box: fill-box;
+}
+
+#leaf15 {
+  -webkit-animation: shake-bottom 7s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  animation: shake-bottom 7s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  transform-box: fill-box;
+}
+
+#leaf16 {
+  -webkit-animation: shake-bottom 6.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  animation: shake-bottom 6.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  transform-box: fill-box;
+}
+
+#leaf17 {
+  -webkit-animation: shake-bottom 6s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+          animation: shake-bottom 6s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  transform-box: fill-box;
+}
+
+@media (max-width: 767px) {
+  .dropdown1 {
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    padding-left: 3.5%;
+  }
+  .dropdown2 {
+    position: absolute;
+    text-align: center;
+    padding-top: 10rem;
+    padding-left: 3.5%;
+    z-index: 3;
+  }
+  .godown {
+    position: absolute;
+    z-index: 1;
+    padding-top: 8rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .edSection {
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .edSection {
+    margin-top: 250px;
+  }
+}
+/*# sourceMappingURL=education.css.map */

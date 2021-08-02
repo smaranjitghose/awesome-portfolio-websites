@@ -1,0 +1,40 @@
+html {
+	cursor: none;
+	* {
+		cursor: none;
+	}
+}
+body {
+	cursor: none;
+	* {
+		cursor: none;
+	}
+}
+.cursor-dot {
+	pointer-events: none;
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	opacity: 0;
+	transform: translate(-50%, -50%);
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+	width: 10px;
+	height: 10px;
+	background-color: #b83030;
+}
+.cursor-dot-outline {
+	pointer-events: none;
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	opacity: 0;
+	transform: translate(-50%, -50%);
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+	width: 20px;
+	height: 20px;
+	background-color: rgba(211, 115, 115, 0.959);
+}

@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes swinghair {
+  0% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  100% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+}
+
+@keyframes swinghair {
+  0% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  100% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+}
+
+/* go back btn */
+/* responsiveness */
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#02aab0), to(#00cdac));
+  background: linear-gradient(to right, #02aab0, #00cdac);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+svg {
+  width: 50rem;
+  height: auto;
+}
+
+#handboy {
+  -webkit-animation: swing ease-in-out 1.3s infinite alternate;
+          animation: swing ease-in-out 1.3s infinite alternate;
+  -webkit-transform-origin: 98% 98%;
+          transform-origin: 98% 98%;
+  transform-box: fill-box;
+}
+
+#girllight {
+  -webkit-animation: swing ease-in-out 1.3s infinite alternate;
+          animation: swing ease-in-out 1.3s infinite alternate;
+  -webkit-transform-origin: 0% 97%;
+          transform-origin: 0% 97%;
+  transform-box: fill-box;
+}
+
+#hairgirl {
+  -webkit-animation: swinghair ease-in-out 1.3s infinite alternate;
+          animation: swinghair ease-in-out 1.3s infinite alternate;
+  -webkit-transform-origin: 60% 0%;
+          transform-origin: 60% 0%;
+  transform-box: fill-box;
+}
+
+#zero {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+.backbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
+  font-family: 'Nunito', sans-serif;
+  line-height: 0;
+  padding: .8rem 1rem;
+  border-radius: 8em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 2rem;
+  color: #fff;
+  background: #272727;
+  -webkit-box-shadow: 0px 5px 10px rgba(109, 39, 238, 0.6);
+          box-shadow: 0px 5px 10px rgba(109, 39, 238, 0.6);
+}
+
+.btn span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+
+.btn i {
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: #ffe600;
+}
+
+.btn:hover i {
+  -webkit-transform: translateX(-4px);
+          transform: translateX(-4px);
+}
+
+@media (max-width: 550px) {
+  svg {
+    width: 24rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
+  .btn {
+    padding: .8rem .8rem;
+    border-radius: 6em;
+    margin-top: 1.5rem;
+  }
+  .btn i {
+    margin-left: 0.2rem;
+    font-size: 1rem;
+  }
+  .btn span {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=404.css.map */
