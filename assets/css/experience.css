@@ -24,6 +24,9 @@ html[light-mode="dark"] {
 html {
   overflow-x: hidden;
 }
+body{
+  font-family: 'Noto Serif', serif;
+}
 /*Main section*/
 
 @media (max-width: 766px) {

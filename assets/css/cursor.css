@@ -2,6 +2,7 @@ html,
 html *,
 body,
 body * {
+  font-family: 'Noto Serif', serif;
   cursor: none;
 }
 

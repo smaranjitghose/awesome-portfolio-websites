@@ -23,6 +23,9 @@ html[light-mode="dark"] {
 html {
   overflow-x: hidden;
 }
+body{
+  font-family: 'Noto Serif', serif;
+}
 
 .education_head {
   font-weight: bold;

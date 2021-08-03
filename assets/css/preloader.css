@@ -1,4 +1,7 @@
 /* preloader */
+body{
+  font-family: 'Noto Serif', serif;
+}
 .no-scroll-preload {
     overflow: hidden;
 }

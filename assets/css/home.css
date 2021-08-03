@@ -43,7 +43,7 @@ html[data-theme="dark"] {
 }
 /* Particle effect*/
 body{
-  font-family: "Poppins";
+  font-family: 'Noto Serif', serif;
 }
 #home,
 #particles-js {

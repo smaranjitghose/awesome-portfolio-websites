@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Agustina";
+    font-family: 'Noto Serif', serif;
     src: url(../fonts/Agustina.woff);
 }
 
@@ -105,7 +105,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     color: var(--text);
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif', serif;
     background-color: var(--bg);
 }
 .text-center heading1 exp-head {
@@ -230,7 +230,7 @@ html {
 }
 
 .navbar-brand {
-    font-family: Agustina;
+    font-family: 'Noto Serif', serif;
     font-size: 30px;
     font-weight: bold;
 }
@@ -502,12 +502,12 @@ color: #ffffff !important;
 
 .footer {
     padding-top: 10px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif', serif;
     background-color: #121212;
 }
 
 .tag {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif', serif;
     font: size 20px;
     line-height: 26px;
     text-align: center;
@@ -803,7 +803,8 @@ form {
 */
 
 .form-style-6 {
-    font: 95% Arial, Helvetica, sans-serif;
+    font-family: 'Noto Serif', serif;
+    font: 95% ;
     max-width: 400px;
     margin: 10px auto;
     padding: 16px;
@@ -844,7 +845,8 @@ form {
     border-bottom: 2px solid #bb86fc;
     padding: 3%;
     color: rgb(107, 105, 105);
-    font: 95% Arial, Helvetica, sans-serif;
+    font-family: 'Noto Serif', serif;
+    font: 95% ;
     border-radius: 2px;
 }
 
@@ -892,7 +894,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif', serif;
 }
 
 .footer hr {

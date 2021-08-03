@@ -23,6 +23,7 @@ html{
     overflow-x: hidden;
   }
 body {
+    font-family: 'Noto Serif', serif;
     color: var(--text);
     background-color: var(--bg);
 }
