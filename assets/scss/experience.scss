@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
-@mixin gridgap($gap){
-    grid-gap:$gap
-}
-
-@mixin contain($contain){
-    contain:$contain
-}
-
-@mixin grid-template-columns($col){
-    grid-template-columns:$col;
-}
-
 /*Main section*/
 /*color of experience page headings*/
 /*Volunteership card*/
+
+@mixin cont($cont){
+	contain:$cont
+}
+
+@mixin grid-gap($gap){
+	grid-gap:$gap
+}
+
+@mixin grid-template-columns($gridcol){
+	grid-template-columns:$gridcol
+}
+
 @keyframes slideInFromLeft {
 	0% {
 		transform: translateX(-100%);
@@ -137,9 +137,9 @@ section {
 	max-height: 80%;
 	border: none;
 	border-radius: 13px;
-	@include contain(content);
+	@include cont(content);
 	margin: 4em auto 36px;
-	box-shadow: 1px 1px 6px rgba(0, 0, 0, 15%), 2px 2px 7px rgba(0, 0, 0, 14%), 3px 3px 8px rgba(0, 0, 0, 13%), 4px 4px 9px rgba(0, 0, 0, 12%);
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15), 2px 2px 7px rgba(0, 0, 0, 0.14), 3px 3px 8px rgba(0, 0, 0, 0.13), 4px 4px 9px rgba(0, 0, 0, 0.12);
 	z-index: 1;
 	&:hover {
 		transform: scale(1.06);
@@ -271,7 +271,7 @@ ul {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
-	@include gridgap(5rem);
+	@include grid-gap(5rem);
 	padding: 2rem;
 	max-width: 1124px;
 	margin: 0 auto;
@@ -540,7 +540,7 @@ a {
 @media only screen and (min-width: 551px) {
 	.card1 {
 		&:hover {
-			box-shadow: 2px 5px 10px rgba(0, 0, 0, 17%), 3px 6px 11px rgba(0, 0, 0, 16%), 4px 7px 13px rgba(0, 0, 0, 15%), 5px 8px 14px rgba(0, 0, 0, 14%);
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.17), 3px 6px 11px rgba(0, 0, 0, 0.16), 4px 7px 13px rgba(0, 0, 0, 0.15), 5px 8px 14px rgba(0, 0, 0, 0.14);
 		}
 	}
 }
@@ -594,12 +594,12 @@ a {
 }
 @media (min-width: 600px) {
 	.page-content {
-		@include grid-template-columns(repeat(2, 1fr));
+		@include grid-template-columns( repeat(2, 1fr));
 	}
 }
 @media (min-width: 800px) {
 	.page-content {
-        @include grid-template-columns(repeat(3, 1fr));
+		@include grid-template-columns( repeat(3, 1fr));
 	}
 }
 @media (max-width: 600px) {

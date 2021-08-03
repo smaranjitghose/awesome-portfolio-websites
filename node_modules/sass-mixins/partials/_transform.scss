@@ -1,0 +1,28 @@
+///
+/// Generates cross-browser-compatible `transform` for a given element.
+///
+/// @author drublic
+///
+/// @link http://caniuse.com/transforms2d caniuse 2d
+/// @link http://caniuse.com/transforms3d caniuse 3d
+/// @link http://www.w3.org/TR/css3-transforms spec
+///
+/// @param {String} $values
+///
+/// @output
+/// ```css
+///  -webkit-transform: <values>;
+///      -ms-transform: <values>;
+///          transform: <values>;
+/// ```
+///
+/// @example
+///  .selector {
+///    @include x-transform(rotate(1deg));
+///  }
+///
+@mixin x-transform ($values) {
+	-webkit-transform: $values; // Chrome, Safari, iOS Safari, Android Stock
+	    -ms-transform: $values; // IE9
+	        transform: $values;
+}

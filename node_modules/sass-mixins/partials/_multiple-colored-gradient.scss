@@ -1,0 +1,84 @@
+///
+/// This mixin creates (endless) multiple color stops in gradients just with one
+/// call for the mixin.
+///
+/// Note: This mixin does not define a fallback-color for your background as it
+/// is likely you want to add an image or something. Please specify one by
+/// yourself.
+///
+/// @author drublic
+///
+/// @link http://caniuse.com/css-gradients caniuse
+/// @link http://www.w3.org/TR/2011/WD-css3-images-20110217/#linear-gradients spec
+///
+/// @param {Arglist} $args
+///
+/// @output
+/// ```css
+///   background-image: -webkit-linear-gradient(top, <stops[1]>, <stops[2]>, ..., <stops[n]>);
+///   background-image:         linear-gradient(to bottom, <stops[1]>, <stops[2]>, ..., <stops[n]>);
+/// ```
+///
+/// @example
+///   .selector {
+///     @include x-multiple-colored-gradient(
+///         'top',
+///         #f22 0%,
+///         #f2f 15%,
+///         #22f 30%,
+///         #2ff 45%,
+///         #2f2 60%,
+///         #2f2 75%,
+///         #ff2 90%,
+///         #f22 100%
+///     );
+///   }
+///
+@mixin x-multiple-colored-gradient ($args...) {
+
+	$gradient: ();
+	$pos: nth($args, 1);
+	$pos_newsyntax: ();
+
+	@if not is-valid-keyword-direction($pos) {
+		$pos: 'top';
+	}
+
+	// New Syntax
+	@if $pos == 'top' {
+		$pos_newsyntax: 'to bottom';
+	} @else if $pos == 'right' {
+		$pos_newsyntax: 'to left';
+	} @else if $pos == 'bottom' {
+		$pos_newsyntax: 'to top';
+	} @else if $pos == 'left' {
+		$pos_newsyntax: 'to right';
+	}
+
+	@each $g in $args {
+		@if not is-valid-keyword-direction($g) {
+			$gradient: append($gradient, $g, comma);
+		}
+	}
+
+	background-image: -webkit-linear-gradient(unquote($pos), $gradient);
+	background-image:         linear-gradient(unquote($pos_newsyntax), $gradient);
+}
+
+
+///
+/// Returns whether a value is a valid keyword direction.
+///
+/// @param {String} $value
+///
+/// @returns {Bool}
+///
+@function is-valid-keyword-direction($value) {
+  @return not not index(
+    'top' 'right' 'bottom' 'left'
+    'to top' 'to right' 'to bottom' 'to left'
+    'to top right' 'to right top'
+    'to bottom right' 'to right bottom'
+    'to top left' 'to left top'
+    'to bottom left' 'to left bottom', $value);
+}

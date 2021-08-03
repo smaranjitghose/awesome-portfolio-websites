@@ -1,0 +1,29 @@
+///
+/// Disables selection of content of a given element.
+///
+/// @author drublic
+///
+/// @link http://caniuse.com/user-select-none caniuse
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/user-select MDN
+///
+/// @param {none|auto} $value [none] - optional
+///
+/// @output
+/// ```css
+///   -webkit-user-select: <value>;
+///      -moz-user-select: <value>;
+///       -ms-user-select: <value>;
+///           user-select: <value>;
+/// ```
+///
+/// @example
+///   .selector {
+///     @include x-user-select;
+///   }
+///
+@mixin x-user-select ($value: none) {
+	-webkit-user-select: $value;
+	   -moz-user-select: $value;
+	    -ms-user-select: $value;
+	        user-select: $value;
+}

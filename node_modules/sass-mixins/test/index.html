@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Visual tests for SASS-Mixins</title>
+
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<h1>SASS-Mixins</h1>
+
+		<div class="test-case animation">
+			<pre><code>x-animation(jump 1s infinite ease-out);
+x-keyframes(jump) {
+	from { top: 0; }
+	to { top: -10px; }
+}
+</code></pre>
+
+		</div>
+
+		<div class="test-case">
+			<span class="appearance">x-appearance(button);</span>
+		</div>
+
+		<div class="test-case background-size">
+			<pre><code>x-background-size(100px auto);</code></pre>
+		</div>
+
+		<div class="test-case border-radius">
+			<pre><code>x-border-radius(20px 10px);</code></pre>
+		</div>
+
+		<div class="test-case box-shadow">
+			<pre><code>x-box-shadow(5px 5px 10px 5px #aaa);</code></pre>
+		</div>
+
+		<div class="test-case box-shadow-multi">
+			<pre><code>x-box-shadow(inset 1px 1px 2px #333, 5px 5px 10px 5px #aaa);</code></pre>
+		</div>
+
+		<div class="test-case box-sizing">
+			<pre><code>x-box-sizing(); <strong>while</strong> width: 100%; padding: 0 30px;</code></pre>
+		</div>
+
+		<div class="test-case breakpoint">
+			<pre><code>x-until(125em) { background: green; }
+x-at-least(40em) { color: blue; }
+x-breakpoints(desktop) { color: black; }</code></pre>
+		</div>
+
+		<div class="test-case calc">
+			<pre><code>x-calc(width, '600px - 2em');</code></pre>
+		</div>
+
+		<div class="test-case">
+			<pre><code>x-display-flex;</code></pre>
+			<div class="display-flex">
+				<article class="order-2 flex-3">
+					<pre><code>x-order(2);</code></pre>
+					<pre><code>x-flex(3 1 auto);</code></pre>
+				</article>
+				<nav class="order-1 flex-1">
+					<pre><code>x-order(1);</code></pre>
+					<pre><code>x-flex(1 1 auto);</code></pre>
+				</nav>
+				<aside class="order-3 flex-1">
+					<pre><code>x-order(3);</code></pre>
+					<pre><code>x-flex(1 1 auto);</code></pre>
+				</aside>
+			</div>
+		</div>
+
+		<div class="test-case">
+			<pre><code>x-display-flex;</code></pre>
+			<pre><code>x-align-content(center);</code></pre>
+			<pre><code>x-flex-wrap(wrap);</code></pre>
+			<pre><code>x-flex-direction(row-reverse)</code></pre>
+			<div class="display-flex align-content flex-wrap flex-direction">
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+			</div>
+		</div>
+
+		<div class="test-case linear-gradient">
+			<pre><code>x-linear-gradient('to bottom', #ddd, #ddd, #555);</code></pre>
+		</div>
+
+		<div class="test-case linear-gradient-2">
+			<pre><code>x-linear-gradient("to right", #ddd, #ddd, #555);</code></pre>
+		</div>
+
+		<div class="test-case linear-gradient-3">
+			<pre><code>x-linear-gradient(45deg, #ddd, #ddd, #555);</code></pre>
+		</div>
+
+		<div class="test-case multiple-colored-gradient">
+			<pre><code>x-multiple-colored-gradient("top", #aff 0%, #faf 20%, #ffa 40%, #aaf 60%, #faa 80%, #aaa 100%);</code></pre>
+		</div>
+
+		<div class="test-case multiple-backgrounds">
+			<pre><code>x-multiple-backgrounds(
+	rgba(0, 0, 0, 0.3),
+	url('../img/html5_logo.png') top right no-repeat,
+	(linear-gradient, to bottom, #aaa, #ddd)
+);</code></pre>
+		</div>
+
+		<div class="test-case opacity">
+			<pre><code>x-opacity(0.4);</code></pre>
+		</div>
+
+		<div class="test-case">
+			<pre><code>x-placeholder(#bada55);</code></pre>
+			<input class="placeholder" name="name" placeholder="Enter yout name" type="text" />
+		</div>
+
+		<div class="test-case rem">
+			<pre><code>x-rem(font-size, 1.3);</code></pre>
+			<pre><code>x-rem(padding, 20px);</code></pre>
+		</div>
+
+		<div class="test-case rem-2">
+			<pre><code>x-rem(padding, 16px 0 3);</code></pre>
+		</div>
+
+		<div class="test-case rem-3">
+			<pre><code>x-rem(margin, 1 auto);</code></pre>
+		</div>
+
+		<div class="test-case rem-4">
+			<pre><code>x-rem(border, 1 solid #bada55);</code></pre>
+		</div>
+
+		<div class="test-case transform">
+			<pre><code>x-transform(rotate(1deg));</code></pre>
+		</div>
+
+		<div class="test-case transition">
+			<pre><code>x-transition(background 0.3s ease-in); <strong>while</strong> :hover { background: #bbb }</code></pre>
+		</div>
+
+		<div class="test-case transition-multi">
+			<pre><code>x-transition(background 0.3s ease-in, color 1s); <strong>while</strong> :hover { background: #bbb; color: #f00; }</code></pre>
+		</div>
+
+		<div class="test-case user-select">
+			<pre><code>x-user-select;</code></pre>
+		</div>
+	</body>
+</html>

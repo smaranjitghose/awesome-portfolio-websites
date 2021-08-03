@@ -1,0 +1,25 @@
+///
+/// Generates cross-browser-compatible `transition` output for a given element.
+///
+/// @author drublic
+///
+/// @link http://caniuse.com/css-transitions caniuse
+/// @link http://www.w3.org/TR/css3-transitions spec
+///
+/// @param {Arglist} $values
+///
+/// @output
+/// ```css
+///   -webkit-transition: <values>;
+///           transition: <values>;
+/// ```
+///
+/// @example
+///   .selector {
+///     @include x-transition(background 0.3s ease-in);
+///   }
+///
+@mixin x-transition ($values...) {
+	-webkit-transition: $values;
+	        transition: $values;
+}

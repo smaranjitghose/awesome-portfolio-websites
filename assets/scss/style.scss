@@ -3,8 +3,6 @@
 	src: url(../fonts/Agustina.woff);
 }
 
-$shadows:inset 0 0 6px #bb86fc;
-
 @mixin box-shadow($params) {
   -webkit-box-shadow: $params;
 }
@@ -267,7 +265,7 @@ html[data-theme="dark"] {
     &-thumb {
         border-radius: 2px;
         max-height: 10px;
-        @include box-shadow($shadows);
+        @include box-shadow(inset 0 0 6px #bb86fc);
         background: #bb86fc;
         transition: 0.3s;
         &:hover {

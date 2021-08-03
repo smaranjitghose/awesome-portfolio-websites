@@ -1,0 +1,26 @@
+///
+/// Sass-mixin for CSS property `tab-size`, generates cross-browser-compatible
+/// `tab-size` output.
+///
+/// @author drublic
+///
+/// @link http://caniuse.com/css3-tabsize caniuse
+/// @link http://dev.w3.org/csswg/css-text/#tab-size1 spec
+///
+/// @param {Number} $value [4] - optional
+///
+/// @output
+/// ```css
+///  -moz-tab-size: <value>;
+///       tab-size: <value>;
+/// ```
+///
+/// @example
+///  .selector {
+///    @include x-tab-size(4);
+///   }
+///
+@mixin x-tab-size ($value: 4) {
+	-moz-tab-size: $value;
+	     tab-size: $value;
+}

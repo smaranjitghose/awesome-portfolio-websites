@@ -1,0 +1,26 @@
+///
+/// Generates `calc` function which allows mathematical expressions for a given property.
+///
+/// @author romamatusevich
+///
+/// @link http://caniuse.com/calc caniuse
+/// @link http://www.w3.org/TR/css3-values/#calc spec
+///
+/// @param {String} $property
+/// @param {String} $expression
+///
+/// @output
+/// ```css
+///   <property>: -webkit-calc(<expression>);
+///   <property>: calc(<expression>);
+/// ```
+///
+/// @example
+///  .selector {
+///    @include x-calc(width, "600px - 2em");
+///  }
+///
+@mixin x-calc ($property, $expression) {
+	#{$property}: -webkit-calc(#{$expression});
+	#{$property}: calc(#{$expression});
+}

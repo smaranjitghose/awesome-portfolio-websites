@@ -1,0 +1,25 @@
+///
+/// Generates `background-size` output for a given element.
+///
+/// @author drublic
+///
+/// @link http://caniuse.com/background-img-opts caniuse
+/// @link http://www.w3.org/TR/css3-background spec
+///
+/// @param {List} $values
+///
+/// @output
+/// ```css
+///   -webkit-background-size: $values;
+///           background-size: $values;
+/// ```
+///
+/// @example
+///   .selector {
+///     @include x-background-size(100% auto);
+///   }
+///
+@mixin x-background-size ($values...) {
+    -webkit-background-size: $values; // For Android 2.x
+            background-size: $values;
+}

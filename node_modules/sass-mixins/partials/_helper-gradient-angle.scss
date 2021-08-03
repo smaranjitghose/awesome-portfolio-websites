@@ -1,0 +1,62 @@
+///
+/// Helper for old syntax (for Angles) in linear-gradients.
+///
+/// @param {Number|String} $deg
+///
+/// @return {Number|String} - Return the corrected angle or position for a css gradient
+///
+
+@function angle ($deg) {
+	@if type-of($deg) == 'number' {
+		@return mod(abs($deg - 450), 360deg);
+	} @else {
+		$position: to + " ";
+		@each $pos in $deg {
+			$position: $position + opposite-position($pos) + " ";
+		}
+
+		@return $position;
+	}
+}
+///
+/// Get the old direction keyword syntax for gradients, for backward compability.
+///
+/// @param {String} $direction
+///
+/// @return {String}
+///
+@function helper-gradient-angle ($direction) {
+
+	$old-direction: $direction;
+	$veryold-direction: $direction;
+
+	// New Syntax has to be evaluated to old one
+	@if $direction == 'to bottom' {
+		$old-direction: 'top';
+	} @else if $direction == 'to right' {
+		$old-direction: 'left';
+	} @else if $direction == 'to top' {
+		$old-direction: 'bottom';
+	} @else if $direction == 'to left' {
+		$old-direction: 'right';
+	} @else {
+		$old-direction: angle($direction);
+	}
+
+	// And also for very old syntax
+	@if $direction == 'to bottom' {
+		$veryold-direction: 'left top, left bottom';
+	} @else if $direction == 'to right' {
+		$veryold-direction: 'top left, bottom right';
+	} @else if $direction == 'to top' {
+		$veryold-direction: 'left bottom, left top';
+	} @else if $direction == 'to left' {
+		$veryold-direction: 'top right, bottom left';
+	} @else {
+		$veryold-direction: angle($direction);
+	}
+
+
+	@return $old-direction, $veryold-direction;
+}
+

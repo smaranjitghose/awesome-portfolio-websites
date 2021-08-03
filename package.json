@@ -1,0 +1,22 @@
+{
+  "name": "awesome-portfolio-websites",
+  "version": "1.0.0",
+  "description": "![Awesome Portfolio Website](./readme_assets/banner_apw.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smaranjitghose/awesome-portfolio-websites.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smaranjitghose/awesome-portfolio-websites/issues"
+  },
+  "homepage": "https://github.com/smaranjitghose/awesome-portfolio-websites#readme",
+  "dependencies": {
+    "sass-mixins": "^0.13.0"
+  }
+}

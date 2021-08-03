@@ -1,0 +1,27 @@
+///
+/// Generates cross-browser-compatible `box-sizing` output for a given element.
+///
+/// @author drublic
+///
+/// @link http://caniuse.com/#feat=css3-boxsizing caniuse
+/// @link http://www.w3.org/TR/css3-ui/#box-sizing spec
+///
+/// @param {String} $type [border-box]
+///
+/// @output
+/// ```css
+///   -webkit-box-sizing: <type>;
+///      -moz-box-sizing: <type>;
+///           box-sizing: <type>;
+/// ```
+///
+/// @example
+///   .selector {
+///     @include x-box-sizing;
+///   }
+///
+@mixin x-box-sizing ($type: border-box) {
+	-webkit-box-sizing: $type; // Safari <= 5.0, Chrome <= 9.0, iOS Safari 3.2 - 4.3 and Android 2.1 - 3.0
+	   -moz-box-sizing: $type; // FF 2.0 - 28.0
+	        box-sizing: $type; // IE 8, Opera 9.5+
+}

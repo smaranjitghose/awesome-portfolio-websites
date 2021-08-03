@@ -1,0 +1,43 @@
+///
+/// Generates a linear gradient for a given element with a fallback color.
+///
+/// Note: By default this linear-gradient-mixin encourages people to use the
+/// latest CSS-syntax for gradients.
+///
+/// @author drublic
+///
+/// @link http://caniuse.com/#feat=css-gradients caniuse
+/// @link https://drafts.csswg.org/css-images-3/#linear-gradients spec
+///
+/// @require helper-gradient-angle
+///
+/// @param {String | Angle} $direction [to bottom] - Either an angle value or any of `to bottom`, `to right`, `to top` or `to left`
+/// @param {Color} $fallback [#ccc]
+/// @param {Color} $from [#ccc]
+/// @param {Color} $to [#aaa]
+///
+/// @output
+/// ```css
+///   background-color: <fallback>;
+///   background-image: -webkit-gradient(linear, <direction - old converted>, from(<from>), to(<to>));
+///   background-image: -webkit-linear-gradient(<direction - converted>, <from>, <to>);
+///   background-image:         linear-gradient(<direction>, <from>, <to>);
+/// ```
+///
+/// @example
+///   .selector {
+///     @include x-linear-gradient('to bottom', #ccc, #ddd, #bbb);
+///   }
+///
+@mixin x-linear-gradient ($direction: 'to bottom', $fallback: #ccc, $from: #ccc, $to: #aaa) {
+
+	$directions: helper-gradient-angle($direction);
+
+	// Provide a fallback-color
+	background-color: $fallback;
+
+	// Cross-browser linear-gradients
+	background-image: -webkit-gradient(linear, unquote(nth($directions, 2)), from($from), to($to)); // Android 2.1-3.0
+	background-image: -webkit-linear-gradient(unquote(nth($directions, 1)), $from, $to);
+	background-image:         linear-gradient(unquote($direction), $from, $to);
+}

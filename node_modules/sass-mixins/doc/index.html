@@ -1,0 +1,535 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sass-Mixins - v0.12.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Sass-Mixins - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>Some Sass-Mixins to use in your project</p>
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title"><a href="https://github.com/drublic/Sass-Mixins">Sass-Mixins - v0.12.0</a></h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="x-animation" data-type="mixin"><a href="#mixin-x-animation">x-animation</a></li><li class="sidebar__item sassdoc__item" data-name="x-keyframes" data-type="mixin"><a href="#mixin-x-keyframes">x-keyframes</a></li><li class="sidebar__item sassdoc__item" data-name="x-appearance" data-type="mixin"><a href="#mixin-x-appearance">x-appearance</a></li><li class="sidebar__item sassdoc__item" data-name="x-background-size" data-type="mixin"><a href="#mixin-x-background-size">x-background-size</a></li><li class="sidebar__item sassdoc__item" data-name="x-border-radius" data-type="mixin"><a href="#mixin-x-border-radius">x-border-radius</a></li><li class="sidebar__item sassdoc__item" data-name="x-box-shadow" data-type="mixin"><a href="#mixin-x-box-shadow">x-box-shadow</a></li><li class="sidebar__item sassdoc__item" data-name="x-box-sizing" data-type="mixin"><a href="#mixin-x-box-sizing">x-box-sizing</a></li><li class="sidebar__item sassdoc__item" data-name="x-at-least" data-type="mixin"><a href="#mixin-x-at-least">x-at-least</a></li><li class="sidebar__item sassdoc__item" data-name="x-until" data-type="mixin"><a href="#mixin-x-until">x-until</a></li><li class="sidebar__item sassdoc__item" data-name="x-breakpoints" data-type="mixin"><a href="#mixin-x-breakpoints">x-breakpoints</a></li><li class="sidebar__item sassdoc__item" data-name="x-calc" data-type="mixin"><a href="#mixin-x-calc">x-calc</a></li><li class="sidebar__item sassdoc__item" data-name="x-display-flex" data-type="mixin"><a href="#mixin-x-display-flex">x-display-flex</a></li><li class="sidebar__item sassdoc__item" data-name="x-flex" data-type="mixin"><a href="#mixin-x-flex">x-flex</a></li><li class="sidebar__item sassdoc__item" data-name="x-order" data-type="mixin"><a href="#mixin-x-order">x-order</a></li><li class="sidebar__item sassdoc__item" data-name="x-flex-wrap" data-type="mixin"><a href="#mixin-x-flex-wrap">x-flex-wrap</a></li><li class="sidebar__item sassdoc__item" data-name="x-align-content" data-type="mixin"><a href="#mixin-x-align-content">x-align-content</a></li><li class="sidebar__item sassdoc__item" data-name="x-flex-direction" data-type="mixin"><a href="#mixin-x-flex-direction">x-flex-direction</a></li><li class="sidebar__item sassdoc__item" data-name="x-linear-gradient" data-type="mixin"><a href="#mixin-x-linear-gradient">x-linear-gradient</a></li><li class="sidebar__item sassdoc__item" data-name="x-multiple-backgrounds" data-type="mixin"><a href="#mixin-x-multiple-backgrounds">x-multiple-backgrounds</a></li><li class="sidebar__item sassdoc__item" data-name="x-multiple-colored-gradient" data-type="mixin"><a href="#mixin-x-multiple-colored-gradient">x-multiple-colored-gradient</a></li><li class="sidebar__item sassdoc__item" data-name="x-opacity" data-type="mixin"><a href="#mixin-x-opacity">x-opacity</a></li><li class="sidebar__item sassdoc__item" data-name="x-placeholder" data-type="mixin"><a href="#mixin-x-placeholder">x-placeholder</a></li><li class="sidebar__item sassdoc__item" data-name="x-rem" data-type="mixin"><a href="#mixin-x-rem">x-rem</a></li><li class="sidebar__item sassdoc__item" data-name="x-tab-size" data-type="mixin"><a href="#mixin-x-tab-size">x-tab-size</a></li><li class="sidebar__item sassdoc__item" data-name="x-transform" data-type="mixin"><a href="#mixin-x-transform">x-transform</a></li><li class="sidebar__item sassdoc__item" data-name="x-transition" data-type="mixin"><a href="#mixin-x-transition">x-transition</a></li><li class="sidebar__item sassdoc__item" data-name="x-user-select" data-type="mixin"><a href="#mixin-x-user-select">x-user-select</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-function"><a href="#undefined-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="angle" data-type="function"><a href="#function-angle">angle</a></li><li class="sidebar__item sassdoc__item" data-name="helper-gradient-angle" data-type="function"><a href="#function-helper-gradient-angle">helper-gradient-angle</a></li><li class="sidebar__item sassdoc__item" data-name="prefixed-gradient" data-type="function"><a href="#function-prefixed-gradient">prefixed-gradient</a></li><li class="sidebar__item sassdoc__item" data-name="is-valid-keyword-direction" data-type="function"><a href="#function-is-valid-keyword-direction">is-valid-keyword-direction</a></li><li class="sidebar__item sassdoc__item" data-name="strip-unit" data-type="function"><a href="#function-strip-unit">strip-unit</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="mixin-x-animation"><h3 class="item__heading"><a class="item__name" href="#mixin-x-animation">x-animation</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-animation($values) { 
+	-webkit-animation: $values;
+	        animation: $values;
+ }" data-collapsed="@mixin x-animation($values) { ... }"><code>@mixin x-animation($values) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L24-L27" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Add animation to element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$values</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">    -webkit-animation: &lt;values&gt;;
+            animation: &lt;values&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-animation(jump 1s ease-out);
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/#feat=css-animation">caniuse</a></li><li><a href="http://www.w3.org/TR/css3-animations">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></section><section class="main__item container item" id="mixin-x-keyframes"><h3 class="item__heading"><a class="item__name" href="#mixin-x-keyframes">x-keyframes</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-keyframes($name) { 
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+
+	@keyframes #{$name} {
+		@content;
+	}
+ }" data-collapsed="@mixin x-keyframes($name) { ... }"><code>@mixin x-keyframes($name) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L41-L49" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates keyframe animations.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$name</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).<h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>@include x-keyframes(jump) {
+  from { top: 0; }
+  to { top: -10px; }
+}</code></pre></div></p></section><section class="main__item container item" id="mixin-x-appearance"><h3 class="item__heading"><a class="item__name" href="#mixin-x-appearance">x-appearance</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-appearance($value) { 
+	-webkit-appearance: $value;
+	   -moz-appearance: $value;
+	        appearance: $value;
+ }" data-collapsed="@mixin x-appearance($value) { ... }"><code>@mixin x-appearance($value) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L75-L79" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates appearance for a given element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  -webkit-appearance: &lt;value&gt;;
+     -moz-appearance: &lt;value&gt;;
+          appearance: &lt;value&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-appearance(button);
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/#feat=css-appearance">caniuse</a></li><li><a href="http://www.w3.org/TR/2004/CR-css3-ui-20040511/#appearance">spec</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-appearance">MDN</a></li><li><a href="http://css-tricks.com/almanac/properties/a/appearance">css-tricks</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>romamatusevich</p></li></ul></section><section class="main__item container item" id="mixin-x-background-size"><h3 class="item__heading"><a class="item__name" href="#mixin-x-background-size">x-background-size</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-background-size($values) { 
+    -webkit-background-size: $values; // For Android 2.x
+            background-size: $values;
+ }" data-collapsed="@mixin x-background-size($values) { ... }"><code>@mixin x-background-size($values) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L102-L105" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates <code>background-size</code> output for a given element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$values</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  -webkit-background-size: $values;
+          background-size: $values;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-background-size(100% auto);
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/background-img-opts">caniuse</a></li><li><a href="http://www.w3.org/TR/css3-background">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></section><section class="main__item container item" id="mixin-x-border-radius"><h3 class="item__heading"><a class="item__name" href="#mixin-x-border-radius">x-border-radius</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-border-radius($values) { 
+	-webkit-border-radius: $values; // iOS Safari 3.2, Android 2.1
+	        border-radius: $values;
+ }" data-collapsed="@mixin x-border-radius($values) { ... }"><code>@mixin x-border-radius($values) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L128-L131" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates cross-browser-compatible <code>border-radius</code> for a given element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$values</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  -webkit-border-radius: &lt;values&gt;;
+          border-radius: &lt;values&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-border-radius(20px 10px);
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/border-radius">caniuse</a></li><li><a href="http://www.w3.org/TR/css3-background/#corners">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></section><section class="main__item container item" id="mixin-x-box-shadow"><h3 class="item__heading"><a class="item__name" href="#mixin-x-box-shadow">x-box-shadow</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-box-shadow($values) { 
+	-webkit-box-shadow: $values; // iOS Safari 3.2 - 4.3, Android 2.1+
+	        box-shadow: $values;
+ }" data-collapsed="@mixin x-box-shadow($values) { ... }"><code>@mixin x-box-shadow($values) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L154-L157" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates cross-browser-compatible <code>box-shadow</code> for a given element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$values</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  -webkit-box-shadow: &lt;values&gt;;
+          box-shadow: &lt;values&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-box-shadow(5px 5px 10px 5px #aaa);
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/css-boxshadow">caniuse</a></li><li><a href="http://www.w3.org/TR/css3-background/#the-box-shadow">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></section><section class="main__item container item" id="mixin-x-box-sizing"><h3 class="item__heading"><a class="item__name" href="#mixin-x-box-sizing">x-box-sizing</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-box-sizing($type: border-box) { 
+	-webkit-box-sizing: $type; // Safari &lt;= 5.0, Chrome &lt;= 9.0, iOS Safari 3.2 - 4.3 and Android 2.1 - 3.0
+	   -moz-box-sizing: $type; // FF 2.0 - 28.0
+	        box-sizing: $type; // IE 8, Opera 9.5+
+ }" data-collapsed="@mixin x-box-sizing($type: border-box) { ... }"><code>@mixin x-box-sizing($type: border-box) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L181-L185" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates cross-browser-compatible <code>box-sizing</code> output for a given element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$type</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default"><code>border-box</code></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  -webkit-box-sizing: &lt;type&gt;;
+     -moz-box-sizing: &lt;type&gt;;
+          box-sizing: &lt;type&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-box-sizing;
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/#feat=css3-boxsizing">caniuse</a></li><li><a href="http://www.w3.org/TR/css3-ui/#box-sizing">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></section><section class="main__item container item" id="mixin-x-at-least"><h3 class="item__heading"><a class="item__name" href="#mixin-x-at-least">x-at-least</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-at-least($device-width) { 
+	@media screen and (min-width: $device-width) {
+		@content;
+	}
+ }" data-collapsed="@mixin x-at-least($device-width) { ... }"><code>@mixin x-at-least($device-width) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L213-L217" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Add Breakpoint greater than the specified device-width.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$device-width</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).<h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  @media screen and (min-width: &lt;device-width&gt;) {
+     &lt;content&gt;
+  }
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>Note: Please use the CSS unit `em` for device-width in order to stay
+responsive.
+```css
+  .selector {
+    @include x-at-least(40em) { width: 60%; }
+  }
+```</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/#feat=css-mediaqueries">caniuse</a></li><li><a href="http://www.w3.org/TR/css3-mediaqueries">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></p></section><section class="main__item container item" id="mixin-x-until"><h3 class="item__heading"><a class="item__name" href="#mixin-x-until">x-until</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-until($device-width) { 
+	@media screen and (max-width: $device-width - 0.01) {
+		@content;
+	}
+ }" data-collapsed="@mixin x-until($device-width) { ... }"><code>@mixin x-until($device-width) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L236-L240" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Add Breakpoint until the specified device-width.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$device-width</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).<h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  @media screen and (max-width: &lt;device-width - 0.01&gt;) {
+     &lt;content&gt;
+  }
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-until(40em) { width: 100%; }
+}</code></pre></div></p></section><section class="main__item container item" id="mixin-x-breakpoints"><h3 class="item__heading"><a class="item__name" href="#mixin-x-breakpoints">x-breakpoints</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-breakpoints($point, $bp-mobile-width: 640px, $bp-tablet-width: 1024px) { 
+	$bp-mobile: &#39;(max-width: #{$bp-mobile-width})&#39;;
+	$bp-tablet: &#39;(min-width: #{$bp-mobile-width}) and (max-width: #{$bp-tablet-width})&#39;;
+	$bp-desktop: &#39;(min-width: #{$bp-tablet-width})&#39;;
+
+	@if $point == mobile {
+		@media #{$bp-mobile} {
+			@content;
+		}
+	}
+	@else if $point == tablet {
+		@media #{$bp-tablet} {
+			@content;
+		}
+	}
+	@else if $point == desktop {
+		@media #{$bp-desktop} {
+			@content;
+		}
+	}
+	@else {
+		@warn &quot;You are requesting an invalid breakpoint: `#{$point}`.&quot;;
+	}
+ }" data-collapsed="@mixin x-breakpoints($point, $bp-mobile-width: 640px, $bp-tablet-width: 1024px) { ... }"><code>@mixin x-breakpoints($point, $bp-mobile-width: 640px, $bp-tablet-width: 1024px) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L263-L286" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Add Breakpoint between specified device-widths.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$point</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$bp-mobile-width</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Number</code></td><td data-label="default"><code>640px</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$bp-tablet-width</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Number</code></td><td data-label="default"><code>1024px</code></td></tr></tbody></table><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).<h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  @media (max-width: &lt;bp-mobile-width&gt;) {
+     &lt;content&gt;
+  }
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-breakpoints(mobile,  320px) { width: 100%; }
+}</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>romamatusevich</p></li></ul></p></section><section class="main__item container item" id="mixin-x-calc"><h3 class="item__heading"><a class="item__name" href="#mixin-x-calc">x-calc</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-calc($property, $expression) { 
+	#{$property}: -webkit-calc(#{$expression});
+	#{$property}: calc(#{$expression});
+ }" data-collapsed="@mixin x-calc($property, $expression) { ... }"><code>@mixin x-calc($property, $expression) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L310-L313" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates <code>calc</code> function which allows mathematical expressions for a given property.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$property</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$expression</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  &lt;property&gt;: -webkit-calc(&lt;expression&gt;);
+  &lt;property&gt;: calc(&lt;expression&gt;);
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-calc(width, &quot;600px - 2em&quot;);
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/calc">caniuse</a></li><li><a href="http://www.w3.org/TR/css3-values/#calc">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>romamatusevich</p></li></ul></section><section class="main__item container item" id="mixin-x-display-flex"><h3 class="item__heading"><a class="item__name" href="#mixin-x-display-flex">x-display-flex</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-display-flex() { 
+	display: -webkit-box;  // Chrome 20-, iOS 6-, Safari 3.1  -6
+	display: -moz-box;     // FF 19-
+	display: -webkit-flex; // Chrome 21 - 28
+	display: -ms-flexbox;  // IE 10
+	display: flex;         // FF 20+, Chrome 29+, Opera 12.1, 17+
+ }" data-collapsed="@mixin x-display-flex() { ... }"><code>@mixin x-display-flex() { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L339-L345" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates flexbox properties for a given element.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-display-flex;
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/#feat=flexbox">caniuse</a></li><li><a href="http://www.w3.org/TR/css3-flexbox">spec</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes">MDN</a></li><li><a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox">css-tricks</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>romamatusevich</p></li></ul></section><section class="main__item container item" id="mixin-x-flex"><h3 class="item__heading"><a class="item__name" href="#mixin-x-flex">x-flex</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-flex($values...) { 
+	-webkit-box-flex: $values; // Chrome 20-, iOS 6-, Safari 3.1 - 6
+	   -moz-box-flex: $values; // FF 19-
+	    -webkit-flex: $values; // Chrome 21 - 28
+	        -ms-flex: $values; // IE 10
+	            flex: $values; // FF 20+, Chrome 29+, Opera 12.1, 17+
+ }" data-collapsed="@mixin x-flex($values...) { ... }"><code>@mixin x-flex($values...) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L366-L372" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Add flex values to element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$values</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Arglist</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  -webkit-box-flex: &lt;values&gt;;
+     -moz-box-flex: &lt;values&gt;;
+      -webkit-flex: &lt;values&gt;;
+          -ms-flex: &lt;values&gt;;
+              flex: &lt;values&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-flex(1 1 auto);
+}</code></pre></div></section><section class="main__item container item" id="mixin-x-order"><h3 class="item__heading"><a class="item__name" href="#mixin-x-order">x-order</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-order($value) { 
+	-webkit-box-ordinal-group: $value; // Chrome 20-, iOS 6-, Safari 3.1 - 6
+	   -moz-box-ordinal-group: $value; // FF 19-
+	           -ms-flex-order: $value; // IE 10
+	            -webkit-order: $value; // Chrome 21 - 28
+	                    order: $value; // FF 20+, Chrome 29+, Opera 12.1, 17+
+ }" data-collapsed="@mixin x-order($value) { ... }"><code>@mixin x-order($value) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L393-L399" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Add flex order to element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  -webkit-box-ordinal-group: &lt;value&gt;;
+     -moz-box-ordinal-group: &lt;value&gt;;
+             -ms-flex-order: &lt;value&gt;;
+              -webkit-order: &lt;value&gt;;
+                      order: &lt;value&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-order(1);
+}</code></pre></div></section><section class="main__item container item" id="mixin-x-flex-wrap"><h3 class="item__heading"><a class="item__name" href="#mixin-x-flex-wrap">x-flex-wrap</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-flex-wrap($value) { 
+	// IE 10
+	@if $value == nowrap {
+		-ms-flex-wrap: none;
+	} @else {
+		-ms-flex-wrap: $value;
+	}
+	-webkit-flex-wrap: $value; // Chrome 20-, iOS 6-, Safari 3.1 - 6
+	        flex-wrap: $value; // FF 28+, Chrome 21+, Opera 12.1, 17+, IE 11
+ }" data-collapsed="@mixin x-flex-wrap($value) { ... }"><code>@mixin x-flex-wrap($value) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L418-L427" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Add flex wrap to element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">   -webkit-flex-wrap: &lt;value&gt;;
+       -ms-flex-wrap: &lt;value&gt;;
+           flex-wrap: &lt;value&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-flex-wrap(wrap);
+}</code></pre></div></section><section class="main__item container item" id="mixin-x-align-content"><h3 class="item__heading"><a class="item__name" href="#mixin-x-align-content">x-align-content</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-align-content($value) { 
+ 	// IE 10
+ 	@if $value == flex-start {
+ 		-ms-flex-line-pack: start;
+ 	} @else if $value == flex-end {
+ 		-ms-flex-line-pack: end;
+ 	} @else if $value == space-between {
+ 		-ms-flex-line-pack: justify;
+ 	} @else if $value == space-around {
+ 		-ms-flex-line-pack: distribute;
+ 	} @else {
+ 		-ms-flex-line-pack: $value;
+ 	}
+	-webkit-align-content: $value; // Chrome 20-, iOS 6-, Safari 3.1 - 6
+	   -moz-align-content: $value; // FF 19-
+	        align-content: $value; // FF 20+, Chrome 21+, Opera 12.1, 17+, IE 11
+  }" data-collapsed="@mixin x-align-content($value) { ... }"><code>@mixin x-align-content($value) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L446-L462" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Add flex align-content to element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  -webkit-align-content: &lt;value&gt;;
+     -moz-align-content: &lt;value&gt;;
+     -ms-flex-line-pack: &lt;value&gt;;
+          align-content: &lt;value&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-align-content(center);
+}</code></pre></div></section><section class="main__item container item" id="mixin-x-flex-direction"><h3 class="item__heading"><a class="item__name" href="#mixin-x-flex-direction">x-flex-direction</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-flex-direction($value) { 
+	@if $value == row {
+		-webkit-box-direction: normal;
+		   -moz-box-direction: normal;
+		   -webkit-box-orient: horizontal;
+		      -moz-box-orient: horizontal;
+	} @elseif $value == row-reverse {
+		-webkit-box-direction: reverse;
+		   -moz-box-direction: reverse;
+		   -webkit-box-orient: horizontal;
+		      -moz-box-orient: horizontal;
+	} @elseif $value == column {
+		-webkit-box-direction: normal;
+		   -moz-box-direction: normal;
+		   -webkit-box-orient: vertical;
+		      -moz-box-orient: vertical;
+	} @elseif $value == column-reverse {
+		-webkit-box-direction: reverse;
+		   -moz-box-direction: reverse;
+		   -webkit-box-orient: vertical;
+		      -moz-box-orient: vertical;
+	}
+
+ 	-webkit-flex-direction: $value;
+ 	   -moz-flex-direction: $value;
+ 	    -ms-flex-direction: $value;
+ 	        flex-direction: $value;
+  }" data-collapsed="@mixin x-flex-direction($value) { ... }"><code>@mixin x-flex-direction($value) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L486-L513" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Add flex direction to element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">   -webkit-box-direction: &lt;value&gt;;
+      -moz-box-direction: &lt;value&gt;;
+      -webkit-box-orient: &lt;value&gt;;
+         -moz-box-orient: &lt;value&gt;;
+  -webkit-flex-direction: &lt;value&gt;;
+     -moz-flex-direction: &lt;value&gt;;
+      -ms-flex-direction: &lt;value&gt;;
+          flex-direction: &lt;value&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-flex-direction(row-reverse);
+}</code></pre></div></section><section class="main__item container item" id="mixin-x-linear-gradient"><h3 class="item__heading"><a class="item__name" href="#mixin-x-linear-gradient">x-linear-gradient</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-linear-gradient($direction: to bottom, $fallback: #ccc, $from: #ccc, $to: #aaa) { 
+
+	$directions: helper-gradient-angle($direction);
+
+	// Provide a fallback-color
+	background-color: $fallback;
+
+	// Cross-browser linear-gradients
+	background-image: -webkit-gradient(linear, unquote(nth($directions, 2)), from($from), to($to)); // Android 2.1-3.0
+	background-image: -webkit-linear-gradient(unquote(nth($directions, 1)), $from, $to);
+	background-image:         linear-gradient(unquote($direction), $from, $to);
+ }" data-collapsed="@mixin x-linear-gradient($direction: to bottom, $fallback: #ccc, $from: #ccc, $to: #aaa) { ... }"><code>@mixin x-linear-gradient($direction: to bottom, $fallback: #ccc, $from: #ccc, $to: #aaa) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L610-L621" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates a linear gradient for a given element with a fallback color.</p><p>Note: By default this linear-gradient-mixin encourages people to use the latest CSS-syntax for gradients.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$direction</code></th><td data-label="desc"><p>Either an angle value or any of <code>to bottom</code>, <code>to right</code>, <code>to top</code> or <code>to left</code></p></td><td data-label="type"><code>String</code> or <code>Angle</code></td><td data-label="default"><code>to bottom</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$fallback</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#ccc; color: #000">#ccc</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$from</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#ccc; color: #000">#ccc</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$to</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#aaa; color: #000">#aaa</code></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  background-color: &lt;fallback&gt;;
+  background-image: -webkit-gradient(linear, &lt;direction - old converted&gt;, from(&lt;from&gt;), to(&lt;to&gt;));
+  background-image: -webkit-linear-gradient(&lt;direction - converted&gt;, &lt;from&gt;, &lt;to&gt;);
+  background-image:         linear-gradient(&lt;direction&gt;, &lt;from&gt;, &lt;to&gt;);
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-linear-gradient(&#39;to bottom&#39;, #ccc, #ddd, #bbb);
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-helper-gradient-angle"><code>helper-gradient-angle</code></a></li></ul><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/#feat=css-gradients">caniuse</a></li><li><a href="https://drafts.csswg.org/css-images-3/#linear-gradients">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></section><section class="main__item container item" id="mixin-x-multiple-backgrounds"><h3 class="item__heading"><a class="item__name" href="#mixin-x-multiple-backgrounds">x-multiple-backgrounds</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-multiple-backgrounds($backgrounds...) { 
+	$combined-background-webkit-old: ();
+	$combined-background-webkit: ();
+	$combined-background: ();
+	$end: &#39;&#39;;
+
+	// Iterate through all backgrounds passed
+	@each $background in $backgrounds {
+
+		// Prefix gradients
+		@if (type-of($background) == list) {
+
+			@if (nth($background, 1) == &#39;linear-gradient&#39;) {
+				$combined-background-webkit-old: append($combined-background-webkit-old, prefixed-gradient(&#39;webkit-old&#39;, $background), comma);
+				$combined-background-webkit: append($combined-background-webkit, prefixed-gradient(&#39;webkit&#39;, $background), comma);
+				$combined-background: append($combined-background, prefixed-gradient(&#39;&#39;, $background), comma);
+
+			// Nothing to do for non-gradients
+			} @else {
+				$combined-background-webkit-old: append($combined-background-webkit-old, $background, comma);
+				$combined-background-webkit: append($combined-background-webkit, $background, comma);
+				$combined-background: append($combined-background, $background, comma);
+			}
+
+		// Put colors at end of combined background
+		} @else if (type-of($background) == color) {
+			$end: $background;
+			$background: null;
+		} @else if (type-of($background) == string) {
+			$combined-background-webkit-old: append($combined-background-webkit-old, $background, space);
+			$combined-background-webkit: append($combined-background-webkit, $background, comma);
+			$combined-background: append($combined-background, $background, comma);
+		}
+	}
+
+	// Append color if there is one
+	@if $end != &#39;&#39; {
+		$combined-background-webkit-old: append($combined-background-webkit-old, $end, space);
+		$combined-background-webkit: append($combined-background-webkit, $end, comma);
+		$combined-background: append($combined-background, $end, comma);
+	}
+
+	// Only print all prefixed versions if necessary
+	@if ($combined-background != $combined-background-webkit) {
+		background: unquote($combined-background-webkit-old);
+		background: unquote($combined-background-webkit);
+		background: unquote($combined-background);
+	} @else {
+		background: unquote($combined-background);
+	}
+
+ }" data-collapsed="@mixin x-multiple-backgrounds($backgrounds...) { ... }"><code>@mixin x-multiple-backgrounds($backgrounds...) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L687-L738" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>This mixin generates multiple backgrounds.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$backgrounds</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Arglist</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-multiple-backgrounds(
+    rgba(0, 0, 0, 0.3),
+    url(&#39;../img/html5_logo.png&#39;) top right no-repeat,
+    (linear-gradient, to bottom, #aaa, #ddd)
+  );
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-prefixed-gradient"><code>prefixed-gradient</code></a></li></ul><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/css-gradients">caniuse</a></li><li><a href="http://www.w3.org/TR/2011/WD-css3-images-20110217/#linear-gradients">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></section><section class="main__item container item" id="mixin-x-multiple-colored-gradient"><h3 class="item__heading"><a class="item__name" href="#mixin-x-multiple-colored-gradient">x-multiple-colored-gradient</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-multiple-colored-gradient($args...) { 
+
+	$gradient: ();
+	$pos: nth($args, 1);
+	$pos_newsyntax: ();
+
+	@if not is-valid-keyword-direction($pos) {
+		$pos: &#39;top&#39;;
+	}
+
+	// New Syntax
+	@if $pos == &#39;top&#39; {
+		$pos_newsyntax: &#39;to bottom&#39;;
+	} @else if $pos == &#39;right&#39; {
+		$pos_newsyntax: &#39;to left&#39;;
+	} @else if $pos == &#39;bottom&#39; {
+		$pos_newsyntax: &#39;to top&#39;;
+	} @else if $pos == &#39;left&#39; {
+		$pos_newsyntax: &#39;to right&#39;;
+	}
+
+	@each $g in $args {
+		@if not is-valid-keyword-direction($g) {
+			$gradient: append($gradient, $g, comma);
+		}
+	}
+
+	background-image: -webkit-linear-gradient(unquote($pos), $gradient);
+	background-image:         linear-gradient(unquote($pos_newsyntax), $gradient);
+ }" data-collapsed="@mixin x-multiple-colored-gradient($args...) { ... }"><code>@mixin x-multiple-colored-gradient($args...) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L776-L805" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>This mixin creates (endless) multiple color stops in gradients just with one call for the mixin.</p><p>Note: This mixin does not define a fallback-color for your background as it is likely you want to add an image or something. Please specify one by yourself.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$args</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Arglist</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  background-image: -webkit-linear-gradient(top, &lt;stops[1]&gt;, &lt;stops[2]&gt;, ..., &lt;stops[n]&gt;);
+  background-image:         linear-gradient(to bottom, &lt;stops[1]&gt;, &lt;stops[2]&gt;, ..., &lt;stops[n]&gt;);
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-multiple-colored-gradient(
+      &#39;top&#39;,
+      #f22 0%,
+      #f2f 15%,
+      #22f 30%,
+      #2ff 45%,
+      #2f2 60%,
+      #2f2 75%,
+      #ff2 90%,
+      #f22 100%
+  );
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-is-valid-keyword-direction"><code>is-valid-keyword-direction</code></a></li></ul><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/css-gradients">caniuse</a></li><li><a href="http://www.w3.org/TR/2011/WD-css3-images-20110217/#linear-gradients">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></section><section class="main__item container item" id="mixin-x-opacity"><h3 class="item__heading"><a class="item__name" href="#mixin-x-opacity">x-opacity</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-opacity($value: 0) { 
+	$value-percentage: $value * 100;
+
+	opacity: $value;
+	-ms-filter: &quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$value-percentage})&quot;;
+	filter: alpha(opacity=#{$value-percentage});
+ }" data-collapsed="@mixin x-opacity($value: 0) { ... }"><code>@mixin x-opacity($value: 0) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L846-L852" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates <code>opacity</code> output for a given element and adds a filter for old IE.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Number</code></td><td data-label="default"><code>0</code></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  opacity: &lt;value&gt;;
+   filter: alpha(opacity=&lt;value * 100&gt;);
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-opacity(0.3);
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/css-opacity">caniuse</a></li><li><a href="http://www.w3.org/TR/css3-color/#transparency">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>bartveneman</p></li></ul></section><section class="main__item container item" id="mixin-x-placeholder"><h3 class="item__heading"><a class="item__name" href="#mixin-x-placeholder">x-placeholder</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-placeholder() { 
+	&amp;::-webkit-input-placeholder {
+		@content // Chrome, Safari, Opera
+	}
+	&amp;::-moz-placeholder {
+		@content // Firefox 19+
+	}
+	&amp;:-ms-input-placeholder {
+		@content // IE 10+
+	}
+ }" data-collapsed="@mixin x-placeholder() { ... }"><code>@mixin x-placeholder() { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L885-L895" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates <code>placeholder</code> content for a given element.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive).<h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">   &amp;::-webkit-input-placeholder {
+       &lt;content&gt;
+   }
+   &amp;::-moz-placeholder {
+       &lt;content&gt;
+   }
+   &amp;:-ms-input-placeholder {
+       &lt;content&gt;
+   }
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-placeholder {
+      color: #bada55;
+      font-weight: bold;
+  }
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/#feat=css-placeholder">caniuse</a></li><li><a href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-placeholder-attribute">spec</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-placeholder">MDN</a></li><li><a href="http://css-tricks.com/snippets/css/style-placeholder-text">css-tricks</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>romamatusevich</p></li></ul></p></section><section class="main__item container item" id="mixin-x-rem"><h3 class="item__heading"><a class="item__name" href="#mixin-x-rem">x-rem</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-rem($property, $values, $default-font-size: 16px) { 
+
+	// Empty list for all values in px
+	$px-values: ();
+	$rem-values: ();
+
+	// Iterate over entries
+	@each $value in $values {
+
+		// If the value is zero or of a type that doesn’t need conversion, return the value untouched
+		@if index(auto inherit initial none 0, $value) or type-of($value) != &quot;number&quot; {
+			$px-values: append($px-values, $value);
+			$rem-values: append($rem-values, $value);
+
+		// Otherwise convert it properly
+		} @else {
+			$unit: unit($value);
+
+			@if $unit == &#39;px&#39; {
+				$px-values: append($px-values, #{strip-unit($value)} * 1px );
+				$rem-values: append($rem-values, (strip-unit($value) / strip-unit($main-font-size) * 1rem));
+			} @else {
+				$px-values: append($px-values, ($value * $main-font-size) );
+				$rem-values: append($rem-values, #{$value} * 1rem);
+			}
+
+		}
+	}
+
+	// Return the property and its list of converted values
+	#{$property}: #{$px-values};
+	#{$property}: #{$rem-values};
+ }" data-collapsed="@mixin x-rem($property, $values, $default-font-size: 16px) { ... }"><code>@mixin x-rem($property, $values, $default-font-size: 16px) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L941-L973" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>This mixin enables you to use the CSS3 value <code>rem</code>, which lets you define property sizes based on the root element&#39;s font-size.</p><p>Outputs properties that use rem with a px fallback. It also takes px values and converts them to rem.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$property</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$values</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$default-font-size</code></th><td data-label="desc"><p>optional</p></td><td data-label="type"><code>Number</code></td><td data-label="default"><code>16px</code></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  &lt;property&gt;: &lt;parsed value&gt;px;
+  &lt;property&gt;: &lt;parsed value&gt;rem;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-rem(font-size, 1.3);
+  @include x-rem(padding, 20px);
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-strip-unit"><code>strip-unit</code></a></li></ul><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/rem">caniuse</a></li><li><a href="http://www.w3.org/TR/css3-values/#relative0">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></section><section class="main__item container item" id="mixin-x-tab-size"><h3 class="item__heading"><a class="item__name" href="#mixin-x-tab-size">x-tab-size</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-tab-size($value: 4) { 
+	-moz-tab-size: $value;
+	     tab-size: $value;
+ }" data-collapsed="@mixin x-tab-size($value: 4) { ... }"><code>@mixin x-tab-size($value: 4) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L997-L1000" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Sass-mixin for CSS property <code>tab-size</code>, generates cross-browser-compatible <code>tab-size</code> output.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc"><p>optional</p></td><td data-label="type"><code>Number</code></td><td data-label="default"><code>4</code></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css"> -moz-tab-size: &lt;value&gt;;
+      tab-size: &lt;value&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-tab-size(4);
+ }</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/css3-tabsize">caniuse</a></li><li><a href="http://dev.w3.org/csswg/css-text/#tab-size1">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></section><section class="main__item container item" id="mixin-x-transform"><h3 class="item__heading"><a class="item__name" href="#mixin-x-transform">x-transform</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-transform($values) { 
+	-webkit-transform: $values; // Chrome, Safari, iOS Safari, Android Stock
+	    -ms-transform: $values; // IE9
+	        transform: $values;
+ }" data-collapsed="@mixin x-transform($values) { ... }"><code>@mixin x-transform($values) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L1025-L1029" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates cross-browser-compatible <code>transform</code> for a given element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$values</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css"> -webkit-transform: &lt;values&gt;;
+     -ms-transform: &lt;values&gt;;
+         transform: &lt;values&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-transform(rotate(1deg));
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/transforms2d">caniuse 2d</a></li><li><a href="http://caniuse.com/transforms3d">caniuse 3d</a></li><li><a href="http://www.w3.org/TR/css3-transforms">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></section><section class="main__item container item" id="mixin-x-transition"><h3 class="item__heading"><a class="item__name" href="#mixin-x-transition">x-transition</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-transition($values...) { 
+	-webkit-transition: $values;
+	        transition: $values;
+ }" data-collapsed="@mixin x-transition($values...) { ... }"><code>@mixin x-transition($values...) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L1052-L1055" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates cross-browser-compatible <code>transition</code> output for a given element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$values</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Arglist</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  -webkit-transition: &lt;values&gt;;
+          transition: &lt;values&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-transition(background 0.3s ease-in);
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/css-transitions">caniuse</a></li><li><a href="http://www.w3.org/TR/css3-transitions">spec</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></section><section class="main__item container item" id="mixin-x-user-select"><h3 class="item__heading"><a class="item__name" href="#mixin-x-user-select">x-user-select</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin x-user-select($value: none) { 
+	-webkit-user-select: $value;
+	   -moz-user-select: $value;
+	    -ms-user-select: $value;
+	        user-select: $value;
+ }" data-collapsed="@mixin x-user-select($value: none) { ... }"><code>@mixin x-user-select($value: none) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L1080-L1085" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Disables selection of content of a given element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc"><p>optional</p></td><td data-label="type"><code>None</code> or <code>Auto</code></td><td data-label="default"><code>none</code></td></tr></tbody></table><h3 class="item__sub-heading">Output</h3><div class="item__description"><pre><code class="lang-css">  -webkit-user-select: &lt;value&gt;;
+     -moz-user-select: &lt;value&gt;;
+      -ms-user-select: &lt;value&gt;;
+          user-select: &lt;value&gt;;
+</code></pre></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.selector {
+  @include x-user-select;
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://caniuse.com/user-select-none">caniuse</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/user-select">MDN</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>drublic</p></li></ul></section></section><section class="main__sub-section" id="undefined-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="function-angle"><h3 class="item__heading"><a class="item__name" href="#function-angle">angle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function angle($deg) { 
+	@if type-of($deg) == &#39;number&#39; {
+		@return mod(abs($deg - 450), 360deg);
+	} @else {
+		$position: to + &quot; &quot;;
+		@each $pos in $deg {
+			$position: $position + opposite-position($pos) + &quot; &quot;;
+		}
+
+		@return $position;
+	}
+ }" data-collapsed="@function angle($deg) { ... }"><code>@function angle($deg) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L524-L535" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Helper for old syntax (for Angles) in linear-gradients.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$deg</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Number</code> or <code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Number</code> or <code>String</code> &mdash;<p>Return the corrected angle or position for a css gradient</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#function-helper-gradient-angle"><code>helper-gradient-angle</code></a></li></ul></section><section class="main__item container item" id="function-helper-gradient-angle"><h3 class="item__heading"><a class="item__name" href="#function-helper-gradient-angle">helper-gradient-angle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function helper-gradient-angle($direction) { 
+
+	$old-direction: $direction;
+	$veryold-direction: $direction;
+
+	// New Syntax has to be evaluated to old one
+	@if $direction == &#39;to bottom&#39; {
+		$old-direction: &#39;top&#39;;
+	} @else if $direction == &#39;to right&#39; {
+		$old-direction: &#39;left&#39;;
+	} @else if $direction == &#39;to top&#39; {
+		$old-direction: &#39;bottom&#39;;
+	} @else if $direction == &#39;to left&#39; {
+		$old-direction: &#39;right&#39;;
+	} @else {
+		$old-direction: angle($direction);
+	}
+
+	// And also for very old syntax
+	@if $direction == &#39;to bottom&#39; {
+		$veryold-direction: &#39;left top, left bottom&#39;;
+	} @else if $direction == &#39;to right&#39; {
+		$veryold-direction: &#39;top left, bottom right&#39;;
+	} @else if $direction == &#39;to top&#39; {
+		$veryold-direction: &#39;left bottom, left top&#39;;
+	} @else if $direction == &#39;to left&#39; {
+		$veryold-direction: &#39;top right, bottom left&#39;;
+	} @else {
+		$veryold-direction: angle($direction);
+	}
+
+
+	@return $old-direction, $veryold-direction;
+ }" data-collapsed="@function helper-gradient-angle($direction) { ... }"><code>@function helper-gradient-angle($direction) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L543-L576" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Get the old direction keyword syntax for gradients, for backward compability.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$direction</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>String</code></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-angle"><code>angle</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-x-linear-gradient"><code>x-linear-gradient</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#function-prefixed-gradient"><code>prefixed-gradient</code></a></li></ul></section><section class="main__item container item" id="function-prefixed-gradient"><h3 class="item__heading"><a class="item__name" href="#function-prefixed-gradient">prefixed-gradient</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function prefixed-gradient($mode, $gradient...) { 
+
+	$prefix: &#39;-&#39; + $mode + &#39;-&#39;;
+
+	// Get angles
+	$angles: helper-gradient-angle(&#39;&#39; + nth($gradient, 2));
+	$angle: nth($angles, 1);
+
+	// If unprefixed
+	@if ($mode == &#39;&#39;) {
+		$prefix: &#39;&#39;;
+		$angle: nth($gradient, 2);
+	}
+
+	// @TODO define old webkit mode
+	@if ($mode == &#39;webkit-old&#39;) {
+		$prefix: &#39;-webkit-&#39;;
+		$angle: nth($angles, 2);
+	}
+
+	$prefixed: $prefix + &#39;linear-gradient(&#39; + $angle;
+
+	@for $i from 1 through length($gradient) {
+		@if ($i &gt; 2) {
+			$prefixed: append(unquote($prefixed), nth($gradient, $i), comma);
+		}
+	}
+
+	$prefixed: $prefixed + &#39;)&#39;;
+
+	@return unquote($prefixed);
+ }" data-collapsed="@function prefixed-gradient($mode, $gradient...) { ... }"><code>@function prefixed-gradient($mode, $gradient...) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L633-L664" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>A function for prefixing gradients.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$mode</code></th><td data-label="desc"><p>Either <code>webkit-old</code>, <code>webkit</code> or <code>&#39;&#39;</code></p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$gradient</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Arglist</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>String</code> &mdash;<p><code>-&lt;mode&gt;-linear-gradient(&lt;gradient&gt;)</code></p></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#function-helper-gradient-angle"><code>helper-gradient-angle</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-x-multiple-backgrounds"><code>x-multiple-backgrounds</code></a></li></ul><h3 class="item__sub-heading">TODO's</h3><ul class="list-unstyled"><li><p>define old webkit mode</p></li></ul></section><section class="main__item container item" id="function-is-valid-keyword-direction"><h3 class="item__heading"><a class="item__name" href="#function-is-valid-keyword-direction">is-valid-keyword-direction</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function is-valid-keyword-direction($value) { 
+  @return not not index(
+    &#39;top&#39; &#39;right&#39; &#39;bottom&#39; &#39;left&#39;
+    &#39;to top&#39; &#39;to right&#39; &#39;to bottom&#39; &#39;to left&#39;
+    &#39;to top right&#39; &#39;to right top&#39;
+    &#39;to bottom right&#39; &#39;to right bottom&#39;
+    &#39;to top left&#39; &#39;to left top&#39;
+    &#39;to bottom left&#39; &#39;to left bottom&#39;, $value);
+ }" data-collapsed="@function is-valid-keyword-direction($value) { ... }"><code>@function is-valid-keyword-direction($value) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L815-L823" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Returns whether a value is a valid keyword direction.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Bool</code></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-x-multiple-colored-gradient"><code>x-multiple-colored-gradient</code></a></li></ul></section><section class="main__item container item" id="function-strip-unit"><h3 class="item__heading"><a class="item__name" href="#function-strip-unit">strip-unit</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function strip-unit($value) { 
+     @return $value / ($value * 0 + 1);
+  }" data-collapsed="@function strip-unit($value) { ... }"><code>@function strip-unit($value) { ... }</code></pre><a href="https://github.com/drublic/Sass-Mixins/blob/master/mixins.scss#L906-L908" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Returns a number without unit.</p><p>Borrowed from <a href="https://github.com/zurb/foundation/blob/master/scss/foundation/_functions.scss">https://github.com/zurb/foundation/blob/master/scss/foundation/_functions.scss</a></p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc">&mdash;<span class="visually-hidden">none</span></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Number</code> &mdash;<p>30px -&gt; 30</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-x-rem"><code>x-rem</code></a></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --><a class="project-info__name" href="https://github.com/drublic/Sass-Mixins">Sass-Mixins</a><!-- Version --> <span class="project-info__version">- v0.12.0</span><!-- License --> <span class="project-info__license">, under MIT</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

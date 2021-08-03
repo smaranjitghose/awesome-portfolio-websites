@@ -1,0 +1,77 @@
+///
+/// Returns a number without unit.
+///
+/// Borrowed from https://github.com/zurb/foundation/blob/master/scss/foundation/_functions.scss
+///
+/// @param {Number} $value
+///
+/// @returns {Number} - 30px -> 30
+///
+ @function strip-unit($value) {
+     @return $value / ($value * 0 + 1);
+ }
+
+
+///
+/// This mixin enables you to use the CSS3 value `rem`, which lets you define
+/// property sizes based on the root element's font-size.
+///
+/// Outputs properties that use rem with a px fallback.
+/// It also takes px values and converts them to rem.
+///
+/// @author drublic
+///
+/// @link http://caniuse.com/rem caniuse
+/// @link http://www.w3.org/TR/css3-values/#relative0 spec
+///
+/// @param {String} $property
+/// @param {List} $values
+/// @param {Number} $default-font-size [16px] - optional
+///
+/// @require {Function} strip-unit
+///
+/// @output
+/// ```css
+///   <property>: <parsed value>px;
+///   <property>: <parsed value>rem;
+/// ```
+///
+/// @example
+///   .selector {
+///     @include x-rem(font-size, 1.3);
+///     @include x-rem(padding, 20px);
+///   }
+///
+@mixin x-rem ($property, $values, $main-font-size: 16px) {
+
+	// Empty list for all values in px
+	$px-values: ();
+	$rem-values: ();
+
+	// Iterate over entries
+	@each $value in $values {
+
+		// If the value is zero or of a type that doesn’t need conversion, return the value untouched
+		@if index(auto inherit initial none 0, $value) or type-of($value) != "number" {
+			$px-values: append($px-values, $value);
+			$rem-values: append($rem-values, $value);
+
+		// Otherwise convert it properly
+		} @else {
+			$unit: unit($value);
+
+			@if $unit == 'px' {
+				$px-values: append($px-values, #{strip-unit($value)} * 1px );
+				$rem-values: append($rem-values, (strip-unit($value) / strip-unit($main-font-size) * 1rem));
+			} @else {
+				$px-values: append($px-values, ($value * $main-font-size) );
+				$rem-values: append($rem-values, #{$value} * 1rem);
+			}
+
+		}
+	}
+
+	// Return the property and its list of converted values
+	#{$property}: #{$px-values};
+	#{$property}: #{$rem-values};
+}

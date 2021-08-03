@@ -455,8 +455,8 @@ body {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 6px black, 2px 2px 7px black, 3px 3px 8px black, 4px 4px 9px black;
-          box-shadow: 1px 1px 6px black, 2px 2px 7px black, 3px 3px 8px black, 4px 4px 9px black;
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15), 2px 2px 7px rgba(0, 0, 0, 0.14), 3px 3px 8px rgba(0, 0, 0, 0.13), 4px 4px 9px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15), 2px 2px 7px rgba(0, 0, 0, 0.14), 3px 3px 8px rgba(0, 0, 0, 0.13), 4px 4px 9px rgba(0, 0, 0, 0.12);
 }
 
 #researchDetailsTable tr:hover {

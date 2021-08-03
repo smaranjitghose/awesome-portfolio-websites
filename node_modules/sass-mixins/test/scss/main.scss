@@ -1,0 +1,236 @@
+// Import all mixins
+@import '../../mixins.scss';
+
+// Import the layout and styling for tests
+@import 'layout';
+
+
+@include x-keyframes(jump) {
+	from {
+		top: 0;
+	}
+	to {
+		top: -10px;
+	}
+}
+
+.align-content {
+	@include x-align-content(center);
+
+	height: 400px;
+	background: #fff;
+}
+
+.animation {
+	@include x-animation(jump 1s infinite ease-out);
+	@include x-box-sizing;
+
+	position: relative;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-align: left;
+}
+
+.appearance {
+	@include x-appearance(button);
+
+	display: inline-block;
+	margin: 10px;
+	padding: 5px;
+}
+
+.background-size {
+	@include x-background-size(100px auto);
+
+	background: url(../img/html5_logo.png);
+}
+
+.border-radius {
+	@include x-border-radius(20px 10px);
+}
+
+.box-shadow {
+	@include x-box-shadow(5px 5px 10px 5px #aaa);
+}
+.box-shadow-multi {
+	@include x-box-shadow(inset 5px 5px 10px #333, 5px 5px 10px 5px #aaa);
+}
+
+.box-sizing {
+	@include x-box-sizing();
+
+	width: 100%;
+	padding: 0 30px;
+}
+
+.breakpoint {
+	@include x-until(30em) {
+		color: green;
+	}
+
+	@include x-at-least(40em) {
+		color: blue;
+	}
+
+	@include x-breakpoints(desktop) {
+		color: black;
+	}
+}
+
+.calc {
+	@include x-calc(width, "600px - 2em");
+
+	margin: 0 auto 20px;
+}
+
+.display-flex {
+	@include x-display-flex;
+}
+
+.flex-1 {
+	@include x-flex(1 1 auto);
+}
+
+.flex-3 {
+	@include x-flex(3 1 auto);
+}
+
+.flex-direction {
+	@include x-flex-direction(row-reverse);
+}
+
+.flex-item {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	background: #c8fc98;
+}
+
+.flex-wrap {
+	@include x-flex-wrap(wrap);
+}
+
+.linear-gradient {
+	@include x-linear-gradient("to bottom", #ccc, #ddd, #bbb);
+}
+
+.linear-gradient-2 {
+	@include x-linear-gradient("to right", #ddd, #ddd, #555);
+}
+
+.linear-gradient-3 {
+	@include x-linear-gradient(45deg, #ddd, #fff, #000);
+
+	padding: 50px 0;
+}
+
+.multiple-colored-gradient {
+	/* Expected output:
+	  background-image: -webkit-linear-gradient(top, red 0%, green 50%, blue 100%);
+	  background-image: -moz-linear-gradient(top, red 0%, green 50%, blue 100%);
+	  background-image: -ms-linear-gradient(top, red 0%, green 50%, blue 100%);
+	  background-image: -o-linear-gradient(top, red 0%, green 50%, blue 100%);
+	  background-image: linear-gradient(to bottom, red 0%, green 50%, blue 100%);
+	*/
+	@include x-multiple-colored-gradient((
+		"top",
+		#aff 0%,
+		#faf 20%,
+		#ffa 40%,
+		#aaf 60%,
+		#faa 80%,
+		#aaa 100%
+	));
+}
+
+.multiple-backgrounds {
+	@include x-multiple-backgrounds(
+		rgba(0, 0, 0, 0.3),
+		url('../img/html5_logo.png') top right no-repeat,
+		(linear-gradient, to bottom, #aaa, #ddd)
+	);
+
+	@include x-box-sizing;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-align: left;
+}
+
+.placeholder {
+	@include x-placeholder {
+		color: #bada55;
+	};
+}
+
+.opacity {
+	@include x-opacity(0.4);
+}
+
+.order-1 {
+	@include x-order(1);
+
+	padding: 2%;
+	background-color: #c8fc98;
+}
+
+.order-2 {
+	@include x-order(2);
+
+	width: 60%;
+	padding: 2%;
+	background-color: #fff;
+}
+
+.order-3 {
+	@include x-order(3);
+
+	padding: 2%;
+	background-color: #fde95e;
+}
+
+.rem {
+	@include x-rem(font-size, 1.3);
+	@include x-rem(padding, 20px);
+}
+
+.rem-2 {
+	@include x-rem(padding, 16px 0 3);
+}
+
+.rem-3 {
+	@include x-rem(margin, 1 auto);
+
+	width: 50%;
+}
+
+.rem-4 {
+	@include x-rem(border, 1 solid #bada55);
+
+	@include x-box-sizing;
+}
+
+.transform {
+	@include x-transform(rotate(1deg));
+}
+
+.transition {
+	@include x-transition(background 0.3s ease-in);
+
+	&:hover {
+		background: #bbb;
+	}
+}
+
+.transition-multi {
+	@include x-transition(background 0.3s ease-in, color 1s);
+
+	&:hover {
+		background: #bbb;
+		color: #f00;
+	}
+}
+
+.user-select {
+	@include x-user-select;
+}
+
