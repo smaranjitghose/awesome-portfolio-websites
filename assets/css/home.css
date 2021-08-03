@@ -12,7 +12,6 @@ html[data-theme="light"] {
    --bg1-color: #fff;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
-  --col-icon-medium: #00ab6c;
   --col-icon-kaggle: #41aff3;  
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail:rgb(209, 82, 82);
@@ -32,7 +31,6 @@ html[data-theme="dark"] {
  inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
-  --col-icon-medium: #00ab6c;
   --col-icon-kaggle: #41aff3;
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail:rgb(209, 82, 82);
@@ -144,12 +142,7 @@ a.socialicon {
   z-index: 1;
   transition: var(--trans-props);
 }
-.medium i {
-  margin: auto;
-  font-size: 24px;
-  z-index: 1;
-  transition: var(--trans-props);
-}
+
 .kaggle i {
   margin: auto;
   font-size: 24px;
