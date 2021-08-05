@@ -103,7 +103,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     color: var(--text);
-    font-family: "Poppins", sans-serif;
+    font-family: 'Frank Ruhl Libre', serif;
     background-color: var(--bg);
 }
 .text-center heading1 exp-head {
@@ -500,12 +500,12 @@ color: #ffffff !important;
 
 .footer {
     padding-top: 10px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Frank Ruhl Libre', serif;
     background-color: #121212;
 }
 
 .tag {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Frank Ruhl Libre', serif;
     font: size 20px;
     line-height: 26px;
     text-align: center;
@@ -890,7 +890,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Frank Ruhl Libre', serif;
 }
 
 .footer hr {
