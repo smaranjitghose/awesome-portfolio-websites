@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Frank Ruhl Libre', serif;
     src: url(../fonts/Agustina.woff);
 }
 
@@ -105,7 +105,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     color: var(--text);
-    font-family: 'Noto Serif', serif;
+    font-family: 'Frank Ruhl Libre', serif;
     background-color: var(--bg);
 }
 .text-center heading1 exp-head {
@@ -230,7 +230,7 @@ html {
 }
 
 .navbar-brand {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Frank Ruhl Libre', serif;
     font-size: 30px;
     font-weight: bold;
 }
@@ -502,12 +502,12 @@ color: #ffffff !important;
 
 .footer {
     padding-top: 10px;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Frank Ruhl Libre', serif;
     background-color: #121212;
 }
 
 .tag {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Frank Ruhl Libre', serif;
     font: size 20px;
     line-height: 26px;
     text-align: center;
@@ -803,7 +803,7 @@ form {
 */
 
 .form-style-6 {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Frank Ruhl Libre', serif;
     font: 95% ;
     max-width: 400px;
     margin: 10px auto;
@@ -845,7 +845,7 @@ form {
     border-bottom: 2px solid #bb86fc;
     padding: 3%;
     color: rgb(107, 105, 105);
-    font-family: 'Noto Serif', serif;
+    font-family: 'Frank Ruhl Libre', serif;
     
     border-radius: 2px;
 }
@@ -894,7 +894,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Frank Ruhl Libre', serif;
 }
 
 .footer hr {

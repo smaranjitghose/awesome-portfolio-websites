@@ -23,7 +23,7 @@ html{
     overflow-x: hidden;
   }
 body {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Frank Ruhl Libre', serif;
     color: var(--text);
     background-color: var(--bg);
 }

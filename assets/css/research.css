@@ -58,7 +58,7 @@ html {
 /*For Changing background color of body according to theme*/
 
 body {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Frank Ruhl Libre', serif;
   background: var(--bg-col) !important;
 }
 
