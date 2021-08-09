@@ -173,35 +173,30 @@ document.addEventListener("DOMContentLoaded", showCards1);
 
 /* Timeline Section*/
 
-const timeline = document.querySelector(".timeline");
+const timeline = document.querySelector(".timeline-container");
 const timelinesection = [
   {
-    heading: "Massachusetts Institute of Technology",
-    image: "./assets/images/education-page/timeline-1.svg",
-    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
+    heading: "Columbia University",
+    image: "assets/images/education-page/edTimeline1.png",
+    subheading: "Masters of Science, Computer Science & Engineering, (2021-2022)",
     description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
   },
 
   {
     heading: "Massachusetts Institute of Technology",
-    image: "./assets/images/education-page/timeline-1.svg",
-    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
+    image: "assets/images/education-page/edTimeline2.png",
+    subheading: "Bachelors of Science, Computer Science & Engineering, (2017-2021)",
     description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
   },
 
   {
-    heading: "Massachusetts Institute of Technology",
-    image: "./assets/images/education-page/timeline-1.svg",
-    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
+    heading: "Delhi Public School",
+    image: "assets/images/education-page/edTimeline3.png",
+    subheading: "High School, (2013-2017)",
     description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
   },
 
-  {
-    heading: "Massachusetts Institute of Technology",
-    image: "./assets/images/education-page/timeline-1.svg",
-    subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
-    description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
-  },
+
 ];
 
 const showCards2 = () => {
@@ -209,26 +204,21 @@ const showCards2 = () => {
   timelinesection.forEach(
     ({ heading, image, subheading, description }) =>
     (output += `       
-      <div class="timeline" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600">
-      <div class="timeline-content">
-        <h6 class="center-align font-weight-bolder pt-1">${heading}</h6>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <img src="${image}" alt="" height="110"
-              class=" mt-2 w-100 mx-auto">
-          </div>
-          <div class="col-lg-8 col-md-8 col-sm-8 px-4">
-            <span style="opacity: 0.9; font-size: 15px;">
-              ${subheading}
-            </span>
-            <h6 class="text-muted mt-2" style="font-size: small;">Activities:</h6>
-            <ol style="margin-top: -8px; margin-left: -10px; font-size: 12px; list-style: disc;">
-              ${description}
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>`)
+    <div class="timeline-item">
+    <div class="timeline-img">
+        
+    </div>
+
+    <div class="timeline-content js--fadeInLeft">
+        <img src="${image}">
+    <div class="timeline-content-text">
+      <h2>${heading}</h2>
+      <h6>${subheading}</h6>
+      <p>${description}</p>
+     
+    </div>
+    </div>
+  </div>`)
   );
   timeline.innerHTML = output;
 };
