@@ -58,6 +58,7 @@ html {
   }
 }
 
+
 .sect {
   height: 140vh;
   width: 100%;
@@ -131,7 +132,37 @@ p {
   .edSection {
     margin-top: 250px;
   }
+  
 }
+@media only screen and (max-width: 463px) {
+  .dropdown1 {
+    position: absolute;
+    text-align: center;
+    padding-top: 3rem;
+    /* padding-right: 1.2rem; */
+    z-index: 3;
+    padding-left: 3.5%;
+  }
+  .dropdown2 {
+    position: absolute;
+    text-align: center;
+    padding-top: 12rem;
+    padding-left: 3.5%;
+    z-index: 3;
+  }
+}
+@media only screen and (max-width: 370px) {
+  
+  .dropdown2 {
+    position: absolute;
+    text-align: center;
+    padding-top: 12rem;
+    padding-left: 3.5%;
+    z-index: 3;
+    font-size: 12px;
+  }
+}
+
 
 /* Card Hover Effect */
 
