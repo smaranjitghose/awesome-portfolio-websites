@@ -21,6 +21,8 @@ html[data-theme='dark'] {
 }
 html{
     overflow-x: hidden;
+    max-width:120%;
+    height:auto;
   }
 body {
     color: var(--text);
