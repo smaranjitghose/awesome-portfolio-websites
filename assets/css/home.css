@@ -5,7 +5,7 @@ html[data-theme="light"] {
   --col-bd-radius:rgb(2, 2, 2);
   --col-box-shadow:#000000 2px 2px 4px, 
   #4D4D4D -2px -2px 4px;
- --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
+ --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 				
  inset #4D4D4D -2px -2px 4px;
   --col-bd-icon:transparent;
   --bg-icon: #fff;
@@ -51,7 +51,7 @@ body{
 }
 
 .section {
-  background-color: rgb(63, 25, 170);
+  background-color: rgb(63, 25, 170);			/*not editd*/
   justify-content: center;
   align-items: center;
 }
@@ -64,7 +64,7 @@ body{
   font-size: 25px;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);			
   position: absolute;
 }
 

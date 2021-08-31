@@ -391,7 +391,7 @@ color: #ffffff !important;
         margin-right: auto;
         bottom: 0;
         width: 32%;
-        border-bottom: 3px solid #6a00bb;
+        border-bottom: 3px solid #26b8bd;			/*edited #6a00bb #02e0d5 #ff0015*/
     }
     
     .nav-item-hover::after {
@@ -402,7 +402,7 @@ color: #ffffff !important;
         height: 0.15em;
         bottom: 0;
         width: 0%;
-        background-color: #6a00bb;
+        background-color: #26b8bd;					/*edited #6a00bb*/
         transition: all ease-in-out 280ms;
     }
     
