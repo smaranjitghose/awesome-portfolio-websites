@@ -173,53 +173,54 @@ document.addEventListener("DOMContentLoaded", showCards1);
 
 /* Timeline Section*/
 
-const timeline = document.querySelector(".timeline-container");
-const timelinesection = [
-  {
-    heading: "Columbia University",
-    image: "assets/images/education-page/edTimeline1.png",
-    subheading: "Masters of Science, Computer Science & Engineering, (2021-2022)",
-    description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
-  },
+$(function(){
 
-  {
-    heading: "Massachusetts Institute of Technology",
-    image: "assets/images/education-page/edTimeline2.png",
-    subheading: "Bachelors of Science, Computer Science & Engineering, (2017-2021)",
-    description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
-  },
+  window.sr = ScrollReveal();
 
-  {
-    heading: "Delhi Public School",
-    image: "assets/images/education-page/edTimeline3.png",
-    subheading: "High School, (2013-2017)",
-    description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
-  },
+  if ($(window).width() < 768) {
+
+    if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+      $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+    }
+
+    sr.reveal('.js--fadeInRight', {
+      origin: 'right',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+
+  } else {
+    
+    sr.reveal('.js--fadeInLeft', {
+      origin: 'left',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+
+    sr.reveal('.js--fadeInRight', {
+      origin: 'right',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+
+  }
+  
+  sr.reveal('.js--fadeInLeft', {
+      origin: 'left',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+
+    sr.reveal('.js--fadeInRight', {
+      origin: 'right',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
 
 
-];
-
-const showCards2 = () => {
-  let output = "";
-  timelinesection.forEach(
-    ({ heading, image, subheading, description }) =>
-    (output += `       
-    <div class="timeline-item">
-    <div class="timeline-img">
-        
-    </div>
-
-    <div class="timeline-content js--fadeInLeft">
-        <img src="${image}">
-    <div class="timeline-content-text">
-      <h2>${heading}</h2>
-      <h6>${subheading}</h6>
-      <p>${description}</p>
-     
-    </div>
-    </div>
-  </div>`)
-  );
-  timeline.innerHTML = output;
-};
-document.addEventListener("DOMContentLoaded", showCards2);
+});
