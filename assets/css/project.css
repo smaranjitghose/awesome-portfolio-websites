@@ -811,7 +811,7 @@ SVG ANIMATIONS PROJECT PAGE
 #ku.svgmate #Man_screen .screenbutton {
     animation-name: manscreenpopup;
     animation-iteration-count: 1;
-    animation-duration: 3.6s;
+    animation-duration: 5.6s;
     animation-timing-function: ease-in-out;
     transform-origin: 526.882px 383px
 }
