@@ -571,6 +571,10 @@ blockquote {
   padding-left: 20px;
 }
 
+.align-third{
+  padding-top: 50px;
+}
+
 @media screen and (max-width: 768px) {
   .timeline::before {
     left: 50px;
