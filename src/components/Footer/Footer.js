@@ -3,6 +3,7 @@ import "./Footer.css";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
 import useMobile from "../../hooks/useMobile";
+
 const Footer = () => {
   const showBelow = 500;
   const [isMobile] = useMobile();
