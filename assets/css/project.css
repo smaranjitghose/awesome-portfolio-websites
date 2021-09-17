@@ -171,6 +171,7 @@ a:hover {
     list-style-type: none;
     position: absolute;
     right: 0;
+    top: 25px;
 }
 
 .card .menu-content::before,
@@ -228,7 +229,7 @@ a:hover {
 }
 
 .card .title {
-    padding-bottom: 2rem;
+    /* padding-bottom: -2rem; */
     margin-top: 0em;
     font-size: 0.65em;
 }
@@ -259,7 +260,7 @@ a:hover {
 
 @media(min-width: 60rem) {
     .card .title {
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
         font-size: 1.2em;
     }
 }
