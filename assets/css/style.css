@@ -237,6 +237,7 @@ html {
     color: #000000;
     background-color: #fff;
     z-index: 2;
+    box-shadow: 0 2px 2px rgb(230, 230, 230);
 }
 
 /* Dark Mode toggle switch button */
@@ -292,6 +293,7 @@ html[light-mode="dark"] {
 .dark-theme {
     background-color: #2b2a2A;
     transition: background-color .3s;
+    box-shadow: 0 0 0;
 }
 
 .dark-theme .navbar-nav .nav-link,
