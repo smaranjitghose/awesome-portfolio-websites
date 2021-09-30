@@ -438,13 +438,13 @@ color: #ffffff !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
     cursor: pointer;
     transition: all .2s ease-in-out;
     border-color: white;
     border: none;
     outline: none;
+    padding: 0;
+    margin: 1.25rem 1rem;
 }
 
 .line {
