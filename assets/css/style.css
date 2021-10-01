@@ -275,7 +275,7 @@ html {
   .dark_toggler:checked:before {
     transform: translate(150%);
     transition: all 0.9s;
-    background-color: #ecf0f3;
+    background-color: #bb86fc;
   }
   /* end of dark mode toggle switch button */
 

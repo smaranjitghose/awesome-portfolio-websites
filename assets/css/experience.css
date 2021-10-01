@@ -654,7 +654,7 @@ ul ol {
 }
 .blog-slider__button {
   display: inline-flex;
-  background-image: linear-gradient(147deg, #009ffd 0%, #0e49b5 74%);
+  background-image: linear-gradient(147deg, #bb86fc 0%, #940eb5 74%);
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;
