@@ -139,7 +139,7 @@ p {
 
 @media only screen and (max-width: 600px) {
   .edSection {
-    margin-top: 250px;
+    margin-top: 50px; /*changed the margin-to from 250px to 50px to eliminate space */
   }
 }
 
