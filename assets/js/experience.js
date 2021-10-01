@@ -116,7 +116,7 @@ const hackathonsection = document.querySelector(".hackathon-section");
 const mentor = [
   {
     title: "The Uplift Project",
-    subtitle: "Metor",
+    subtitle: "Mentor",
     image: "assets/images/experience-page/uplift.png",
     desp: "I would be responsible for guiding 100s of participants across the globe in their first steps towards Applied Data Science and building end-to-end machine learning projects.",
   },
