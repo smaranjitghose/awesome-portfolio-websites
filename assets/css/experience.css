@@ -565,7 +565,7 @@ ul ol {
   width: 300px;
   flex-shrink: 0;
   height: 300px;
-  box-shadow: 4px 13px 30px 1px rgba(14, 73, 181, 0.1);
+  box-shadow: 4px 13px 30px 1px rgba(187, 132, 204, 0.1);
   border-radius: 20px;
   transform: translateX(-80px);
   overflow: hidden;
@@ -654,11 +654,11 @@ ul ol {
 }
 .blog-slider__button {
   display: inline-flex;
-  background-image: linear-gradient(147deg, #009ffd 0%, #0e49b5 74%);
+  background-image: linear-gradient(147deg, #bb86fc 0%, #940eb5 74%);
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;
-  box-shadow: 0px 14px 80px rgba(14, 73, 181, 0.4);
+  box-shadow: 0px 14px 80px rgba(162, 14, 181, 0.4);
   font-weight: 500;
   justify-content: center;
   text-align: center;

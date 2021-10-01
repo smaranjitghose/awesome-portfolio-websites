@@ -271,12 +271,13 @@ html {
   .dark_toggler:checked {
     background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
     transition: background-image 0.9s;
-  }
+    box-shadow: 0px 2px 5px 1px rgb(187, 134, 201);
+}
   
   .dark_toggler:checked:before {
     transform: translate(150%);
     transition: all 0.9s;
-    background-color: #ecf0f3;
+    background-color: #bb86fc;
   }
   /* end of dark mode toggle switch button */
 
