@@ -23,6 +23,7 @@ const Navbar = () => {
             {title: 'Research', path: '/research'},
             {title: 'Education', path: '/education'},
             {title: 'Resume', path: '/resume'},
+            {title: 'References', path: '/references'}
         ]
         const orientationClass = orientation === ROW_ORIENTATION ? 'flex-row' : '';
         const listItemMarginTop = orientation === ROW_ORIENTATION ? '0%' : '15%';
