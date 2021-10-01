@@ -255,8 +255,11 @@ let upArrow = $(`
   })
 `);
 
-//function for the "Scroll To Top" button to detect the footer
 $(document).ready(function () {
+  // updating the color of the swiper bullets (initial update of color)
+  updateColorOfSwiperBullets(localStorage.getItem('lightMode'))
+
+  //function for the "Scroll To Top" button to detect the footer
   $(window).scroll(function () {
     //The button will be hidden until we scroll more than the window's height
     if ($(window).scrollTop() < $(window).height()) {
@@ -389,6 +392,20 @@ function toggle_light_mode() {
       sc[i].classList.add("dsc");
     }
   }
+
+  // updating the swiper bullets
+  updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
+}
+
+// function to update swiper bullets
+function updateColorOfSwiperBullets(lightMode) {
+  document.querySelectorAll('.swiper-pagination-bullet').forEach((bullet) => {
+    if (lightMode == 'light') {
+      bullet.style.backgroundColor = 'blue';
+    } else {
+      bullet.style.backgroundColor = 'white';
+    }
+  })
 }
 
 window.addEventListener("storage", function () {
