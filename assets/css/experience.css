@@ -565,7 +565,7 @@ ul ol {
   width: 300px;
   flex-shrink: 0;
   height: 300px;
-  box-shadow: 4px 13px 30px 1px rgba(14, 73, 181, 0.1);
+  box-shadow: 4px 13px 30px 1px rgba(187, 132, 204, 0.1);
   border-radius: 20px;
   transform: translateX(-80px);
   overflow: hidden;
