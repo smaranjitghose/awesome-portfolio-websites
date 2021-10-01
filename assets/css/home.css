@@ -20,7 +20,34 @@ html[data-theme="light"] {
   --col-icon-leetcode:rgb(255, 181, 62);
   --shadow-col: rgba(0, 0, 0, 0.3);
 
+
+  /*Comments to the right of variables are trackers for where color was originally hard-coded in code*/
+  --col-home-background-color: rgb(63, 25, 170); /*background-color: rgb(63, 25, 170);*/
+  --col-a-dot-socialicon-box-shadow:rgba(0, 0, 0, 0.2);/*a.socialicon {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}*/
+  --col-socialicon-background-color: #fff; /*background-color: #fff;*/
+  --col-socialicon-kaggle-after: #41aff3; /*.socialicon.kaggle:after {
+  background-color: #41aff3;
+  box-shadow: var(--kaggle);
+}*/
+  --col-instagram-icon-st0-stroke: #EF4649; /*.st0 {
+    fill:none;
+    stroke:#EF4649;*/
+  --col-instagram-icon-hover-lens-fill: #EF4649; /*.instagram:hover #lens{
+  fill:#EF4649;*/
+  --col-instagram-icon-shutter-75-fill: #EF4649; /*75% {  fill:#EF4649;*/
+  --col-github-icon-fill: #000000; /*github-icon {
+  width: 40px;
+  margin-left: 12px;
+  margin-top: 5px;
+  fill: #000000;*/
+  --col-socialicon-hover-box-shadow:rgba(0, 0, 0, 0.16); /*box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);*/
+  --col-socialicon-hover-color: #fff; /*.socialicon:hover i {
+  color: #fff;*/
 }
+
+
 
 html[data-theme="dark"] {
   --col-icon:white;
