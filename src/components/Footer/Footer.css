@@ -36,38 +36,18 @@ form {
   justify-content: space-around;
 }
 
-
-.form-style-6 {
-  font: 95% Arial, Helvetica, sans-serif;
-  margin: 10px auto;
-  padding: 16px;
-  border-radius: 2px;
-}
-
-
-.form-style-6 h1 {
-  background: var(--primary-color);
-  font-size: 140%;
-  font-weight: 300;
-  text-align: center;
-  color: var(--white);
-  margin: -16px -16px 16px -16px;
-  width: inherit;
-}
-
 .col-lg-6 {
   width: 50%;
 }
 
 .form-style-6 {
-  font: 95% Arial, Helvetica, sans-serif;
+  font: 95% "Poppins", sans-serif;
   max-width: 400px;
   margin: 10px auto;
   padding: 16px;
   border-radius: 2px;
 }
 
-
 .form-style-6 h1 {
   background: var(--primary-color);
   font-size: 140%;
@@ -75,6 +55,10 @@ form {
   text-align: center;
   color: var(--white);
   margin: -16px -16px 16px -16px;
+}
+
+.form-style-6 input {
+  font-family: "Poppins", sans-serif;
 }
 
 .form-style-6 input[type="text"],
@@ -102,7 +86,7 @@ form {
   border-bottom: 2px solid var(--primary-color);
   padding: 3%;
   color: rgb(107, 105, 105);
-  font: 95% Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 2px;
 }
 
