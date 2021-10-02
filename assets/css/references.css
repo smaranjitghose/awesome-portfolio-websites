@@ -598,3 +598,49 @@ a:hover {
 .circlemove {
   animation-duration: 6s;
 }
+
+@media screen and (min-width: 540px) and (max-width: 1000px) {
+  *{
+    max-width: 100% !important;
+  }
+
+  .referenceTitleName{
+    padding: 5%;
+  }
+  .imgResponsive  .imgRes {
+    width: 260px !important;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px){
+  *{
+    max-width: 100% !important;
+  }
+
+  .imgCol .rImg {
+    width: 1500px;
+  }
+  .imgCol .rImg1 {
+    width: 1500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  *{
+    max-width: 100% !important;
+  }
+
+  .referenceTitleName{
+    padding: 0%;
+  
+  }
+}
+
+@media screen and (max-width: 340px)
+{
+  .imgResponsive  .imgRes {
+    height: 160px !important;
+  }
+}
+
