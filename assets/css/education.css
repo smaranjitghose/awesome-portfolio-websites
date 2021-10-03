@@ -610,3 +610,7 @@ blockquote {
     border-color: transparent #f5f5f5 transparent transparent;
   }
 }
+
+.instagram-icon-footer{
+  padding-right: 10px !important;
+}
