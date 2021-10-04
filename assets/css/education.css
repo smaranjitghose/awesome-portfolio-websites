@@ -8,7 +8,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   max-width:120%;
-  height:auto;
 }
 
 html[light-mode="light"] {
@@ -610,4 +609,8 @@ blockquote {
     border-width: 10px 15px 10px 0;
     border-color: transparent #f5f5f5 transparent transparent;
   }
+}
+
+.instagram-icon-footer{
+  padding-right: 10px !important;
 }
