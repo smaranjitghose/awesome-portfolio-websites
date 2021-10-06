@@ -1,5 +1,7 @@
 "use strict";
 
+// Header
+
 let header = $(`
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
 <a class="navbar-brand" href="index.html">John Doe </a>
@@ -257,7 +259,7 @@ let upArrow = $(`
 
 $(document).ready(function () {
   // updating the color of the swiper bullets (initial update of color)
-  updateColorOfSwiperBullets(localStorage.getItem('lightMode'))
+  updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
 
   //function for the "Scroll To Top" button to detect the footer
   $(window).scroll(function () {
@@ -399,13 +401,13 @@ function toggle_light_mode() {
 
 // function to update swiper bullets
 function updateColorOfSwiperBullets(lightMode) {
-  document.querySelectorAll('.swiper-pagination-bullet').forEach((bullet) => {
-    if (lightMode == 'light') {
-      bullet.style.backgroundColor = 'blue';
+  document.querySelectorAll(".swiper-pagination-bullet").forEach((bullet) => {
+    if (lightMode == "light") {
+      bullet.style.backgroundColor = "blue";
     } else {
-      bullet.style.backgroundColor = 'white';
+      bullet.style.backgroundColor = "white";
     }
-  })
+  });
 }
 
 window.addEventListener("storage", function () {
