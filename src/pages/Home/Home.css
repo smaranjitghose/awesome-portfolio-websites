@@ -18,14 +18,18 @@
   width: 100%;
 }
 .desc {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    min-width: 330px;
+}
+
+.desc-container{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .wave {

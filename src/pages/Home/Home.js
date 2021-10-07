@@ -126,6 +126,7 @@ const Home = () => {
                     retina_detect: true
                 }}
             />
+            <div className="desc-container">
             <div className="desc">
                 <div className='desc-1'>
                     <span className='text'>
@@ -253,6 +254,7 @@ const Home = () => {
                         </svg>
                     </a>
                 </div>
+            </div>
             </div>
         </div>
     );
