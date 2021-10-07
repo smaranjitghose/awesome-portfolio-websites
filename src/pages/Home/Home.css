@@ -52,6 +52,8 @@
     height: 200px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 .typing {
