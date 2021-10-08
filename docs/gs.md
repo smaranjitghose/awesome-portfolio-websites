@@ -33,9 +33,9 @@
     1. Open _index.html_
     2. Change the name from **John Doe** to **Your Name**
 
-- To change the interests displayed :
+- To change the interests displayed : 
     1. Open _index.html_
-    2. Inside `h1` tag, change the `data-words` with your interests
+    2. Inside `span` tag, change the `data-words` with your interests
 
 - To add your social media links :
     1. Open _index.html_
@@ -47,10 +47,9 @@
 
 ![Navbar](images/Navbar.png)
 
-- To change the logo :
-    1. Add your logo image inside assets -> images folder
-    2. Open _main.js_
-    3. Under **Footer and Navbar** heading, inside `<a href="#!" class="brand-logo">`, change the path inside `<img src="">` to your image path
+- To change the name :
+    1. Open _app.js_
+    2. Under `let header`, inside `<a class="navbar-brand" href="index.html">`, change the name from **John Doe** to **Your Name**
 
 ---
 
@@ -58,13 +57,15 @@
 
 ![Footer](images/footer.png)
 
-- To change the logo :
-    1. Open _main.js_
-    2. Go to `let footer`, inside `<a class="webintern-footer-logo" href="#">`, change the path inside`<img src="">` to your image path
+- To change the quote :
+    1. Open _app.js_
+    2. Go to `let footer`, inside `<div class="container-fluid quote-container">`, change the quote inside`<p class="tag" >` from "**Develop a passion for learning. If you do, you will never cease to grow.**" to your quote
 
 - To add your social media links :
-    1. Open _main.js_
-    2. Inside `<div class="social-icons-footer">` fill up the link to your social media accounts inside `href`
+    1. Open _app.js_
+    2. Inside `<div class="rounded-social-buttons tag">`, under ` <a class="social-button"` fill up the link to your social media accounts inside `href="#"` by replacing `#`.
+     [ For example: `<a class="social-button twitter" href="#" target="_blank">` Here, replace `#` with twitter account link]
+
 
 ---
 
@@ -81,7 +82,7 @@
         2. Change the current **image path** to your image path inside `cardImage`
         3. Change the current **place** to your industry/company name inside `place`
         4. Change the current **time** to your duration of work inside `time`
-        5. Change the current **description** to your job description inside `desp`
+        5. Change the current **description** to your job description inside `desp`. [ Let `<li>` remain]
 
 ![Volunteership](images/volunteer.png)
 
@@ -94,16 +95,16 @@
         2. Change the current **image path** to your image path inside `cardImage`
         3. Change the current **description** to your job description inside `description`
 
-![Mentorship](images/mentorship.png)
+![Hackathons](images/mentorship.png)
 
-- To change the **mentorship** details :
+- To change the **hackathon** details :
 
-    1. Add your mentorship work images to assets -> images -> experience-page folder
+    1. Add your hackathon work images to assets -> images -> experience-page folder
     2. Open _experience.js_
-    3. Under **Mentorship Card** heading,
+    3. Under **Hackathon Section** heading, in `const mentor`
         1. Change the current **title** to your organisation name inside `title`
-        2. Change the current **image path** to your image path inside `image`
-        3. Change the current **time** to your duration of work inside `time`
+        2. Change the current **designation** to the designation under which you participated as, i.e., mentor, judge, team-leader etc, inside `subtitle`
+        3. Change the current **image path** to your image path inside `image`
         4. Change the current **description** to your work description inside `desp`
 
 ---
