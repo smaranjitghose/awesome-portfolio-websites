@@ -8,6 +8,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   max-width:120%;
+  height:auto;
 }
 
 html[light-mode="light"] {
@@ -440,10 +441,19 @@ header p {
   float: right;
   padding: 40px 30px 10px 30px;
 }
-
+ .timeline-item:nth-child(even) .timeline-content .alignment {
+  position:absolute;
+  text-align: left;
+  padding-right: 5px;
+} 
 .timeline-item:nth-child(even) .timeline-content .date {
-  right: auto;
-  left: 0;
+  left: auto;
+  right: 0;
+}
+.timeline-item:nth-child(even) .timeline-content .bnt-more {
+  position: absolute;
+  right:0;
+  bottom: 65px;
 }
 
 .timeline-item:nth-child(even) .timeline-content::after {
@@ -506,11 +516,12 @@ header p {
   padding: 8px 20px;
   text-transform: uppercase;
   font-size: 14px;
-  margin-bottom: 20px;
   margin-top: 10px;
   display: inline-block;
   border-radius: 2px;
   box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+  position: absolute; 
+  right:0;
 }
 
 .bnt-mor:hover, .bnt-mor:active, .bnt-mor:focus {
@@ -573,11 +584,9 @@ blockquote {
 
 .alignment{
   padding-left: 20px;
+  
 }
 
-.align-third{
-  padding-top: 50px;
-}
 
 @media screen and (max-width: 768px) {
   .timeline::before {
@@ -597,6 +606,12 @@ blockquote {
   .timeline .timeline-item:nth-child(even) .timeline-content {
     float: none;
   }
+  h2{
+    font-size: 1.75rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
 
   .timeline .timeline-item:nth-child(odd) .timeline-content::after {
     content: "";
@@ -610,7 +625,12 @@ blockquote {
     border-color: transparent #f5f5f5 transparent transparent;
   }
 }
-
-.instagram-icon-footer{
-  padding-right: 10px !important;
-}
+  @media screen and (max-width: 760px) {
+    h2{
+      font-size: 1.5rem;
+    }
+    h3{
+      font-size: .85rem;
+      font-weight: bold;
+    }
+  }
