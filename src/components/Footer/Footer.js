@@ -3,6 +3,7 @@ import "./Footer.css";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
 import useMobile from "../../hooks/useMobile";
+import Terrain from "../Terrain/Terrain.js";
 
 const Footer = () => {
   const showBelow = 500;
@@ -35,6 +36,9 @@ const Footer = () => {
   return (
     <div>
       <div className="footer">
+        <div style={{width:'100vw',height:"100vh"}}>
+            <Terrain />
+        </div>
         <div className="p-4">
           <div className="container-fluid quote-container">
             <div className="quotes" style={{ textAlign: "center" }}>
