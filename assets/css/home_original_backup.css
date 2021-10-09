@@ -19,16 +19,6 @@ html[data-theme="light"] {
   --col-icon-codeforces:rgb(19, 145, 184);
   --col-icon-leetcode:rgb(255, 181, 62);
   --shadow-col: rgba(0, 0, 0, 0.3);
-  --col-home-background-color: rgb(63, 25, 170); 
-  --col-a-dot-socialicon-box-shadow:rgba(0, 0, 0, 0.2);
-  --col-socialicon-background-color: #fff; 
-  --col-socialicon-kaggle-after: #41aff3; 
-  --col-instagram-icon-st0-stroke: #EF4649; 
-  --col-instagram-icon-hover-lens-fill: #EF4649; 
-  --col-instagram-icon-shutter-75-fill: #EF4649; 
-  --col-github-icon-fill: #000000; 
-  --col-socialicon-hover-box-shadow:rgba(0, 0, 0, 0.16); 
-  --col-socialicon-hover-color: #fff; 
 
 }
 
@@ -61,7 +51,7 @@ body{
 }
 
 .section {
-  background-color: var(--col-home-background-color);
+  background-color: rgb(63, 25, 170);
   justify-content: center;
   align-items: center;
 }
@@ -123,7 +113,7 @@ body{
 }
 
 a.socialicon {
-  box-shadow: 10px 10px 5px var(--col-a-dot-socialicon-box-shadow);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .social-icons {
@@ -139,7 +129,7 @@ a.socialicon {
   overflow: hidden;
   width: var(--link-size);
   height: var(--link-size);
-  background-color: var(--col-socialicon-background-color);
+  background-color: #fff;
   margin: 8px;
   border-radius: 50%;
   box-shadow: 2px 5px 5px var(--shadow-col);
@@ -176,7 +166,7 @@ a.socialicon {
 }
 
 .socialicon.kaggle:after {
-  background-color: var(--col-socialicon-kaggle-after);
+  background-color: #41aff3;
   box-shadow: var(--kaggle);
 }
 
@@ -236,7 +226,7 @@ a.socialicon {
 }
 .st0 {
   fill:none;
-  stroke:var(--col-instagram-icon-st0-stroke);
+  stroke:#EF4649;
   stroke-width:7;
   stroke-linecap:round;
   stroke-miterlimit:10;
@@ -254,7 +244,7 @@ a.socialicon {
   animation: shutter 1s linear infinite;
 }
 .instagram:hover #lens{
-  fill:var(--col-instagram-icon-hover-lens-fill);
+  fill:#EF4649;
   animation: lens 1.5s linear infinite;
 
 }
@@ -265,7 +255,7 @@ a.socialicon {
           
       }
   75% {
-          fill:var(--col-instagram-icon-shutter-75-fill);
+          fill:#EF4649;
           stroke-dashoffset: 0;
           stroke-width:11;
       }
@@ -316,7 +306,7 @@ a.socialicon {
   width: 40px;
   margin-left: 12px;
   margin-top: 5px;
-  fill: var(--col-github-icon-fill);
+  fill: #000000;
 }
 
 .github:hover #arm {
@@ -436,13 +426,13 @@ a.socialicon {
 
 .socialicon:hover {
   transform: translateY(-4px);
-  box-shadow: 0px 4px 12px var(--col-socialicon-hover-box-shadow);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
 }
 .socialicon:hover:after {
   transform: translate(0) scale(1.2);
 }
 .socialicon:hover i {
-  color: var(--col-socialicon-hover-color);
+  color: #fff;
 }
 a:hover {
   color: transparent;
