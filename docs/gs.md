@@ -1,4 +1,4 @@
-# **Getting Started...** {: style="text-align: center"}
+# **Getting Started...** {style="text-align: center"}
 
 ## Forking the repository
 
