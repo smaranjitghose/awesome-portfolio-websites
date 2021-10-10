@@ -1,4 +1,4 @@
-# **Getting Started...** style="text-align: center"
+# **Getting Started...** {: style="text-align: center"}
 
 ## Forking the repository
 
@@ -84,7 +84,7 @@
         4. Change the current **time** to your duration of work inside `time`
         5. Change the current **description** to your job description inside `desp`. [ Let `<li>` remain]
 
-![Volunteership](images/volunteer.png)
+![Volunteership](images/opensource.png)
 
 - To change the **volunteership** details :
 
@@ -95,7 +95,7 @@
         2. Change the current **image path** to your image path inside `cardImage`
         3. Change the current **description** to your job description inside `description`
 
-![Hackathons](images/mentorship.png)
+![Hackathons](images/hackathon.png)
 
 - To change the **hackathon** details :
 
@@ -121,8 +121,9 @@
         1. Change the current **title** to your project name inside `title`
         2. Change the current **image path** to your project image path inside `cardImage`
         3. Change the current **description** to your project description inside `description`
-        4. Add the **preview link** inside `Previewlink`
-        5. Add the **github link** inside `Githublink`
+        4. Add the links to images of **language or framework** used inside `tagimg`
+        5. Add the **preview link** inside `Previewlink`
+        6. Add the **github link** inside `Githublink`
 
 ---
 
@@ -141,7 +142,7 @@
         4. Change the current **research year** to your research year inside `researchYr`
         5. Change the current **image path** to your image path inside `image`
         6. Change the current **vancouver** to yours inside `vancouver`
-        7. Change the current **bibtex** to yours inside `bibtex`
+        7. Change the current **abstract** to yours inside `abstract`
 
 ---
 
@@ -152,12 +153,12 @@
 - To change the **formal education** details :
 
     1. Add your institute images to assets -> images -> education-page folder
-    2. Open _education.js_
-    3. Under **Timeline Section** heading,
-        1. Change the current **title** to your institute name inside `heading`
-        2. Change the current **image path** to your image path inside `image`
-        3. Change the current **sub heading** to yours inside `subheading`
-        4. Change the current **description** to yours inside `description`
+    2. Open _education.html_
+    3. Under **Dynamic Education Timeline Cards** heading,
+        1. Change the current **title** to your institute name inside `<h2>` tag. [ Example: `<h2>Columbia University</h2>` replace `Columbia University` with your institute name]
+        2. Change the current **date** to the years range studied in the institute inside `<div class="date">`
+        3. Change the current **specialization or education stream** to yours inside `<h6>` tag
+        4. Change the current list of  **activities** to yours inside `<li>` tags
 
 ![mooc](images/mooc.png)
 
