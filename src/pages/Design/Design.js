@@ -2,6 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { ReactComponent as HeroSvg } from "../../assets/images/design-page/hero.svg";
 import projectImage1 from "../../assets/images/design-page/flower.jpg";
+import projectImage2 from "../../assets/images/design-page/masonry.jpg"
+import projectImage3 from "../../assets/images/design-page/dice.jpg"
+import projectImage4 from "../../assets/images/design-page/purple.jpg"
 import "./design.css";
 
 const PageContainer = ({ children }) => {
@@ -70,7 +73,7 @@ const StatementSection = () => {
   );
 
   return (
-    <div className="design-statement pt-5">
+    <div className="design-statement pt-4">
       <Projects />
       <div className="design-statement-divider"></div>
       <Process />
@@ -81,11 +84,32 @@ const StatementSection = () => {
 const ProjectsSection = () => {
   const Items = [
     {
-      title: "Project name",
-      tags: ["tag", "another tag", "tag me"],
-      image: projectImage1,
+      title: "Masonry in action",
+      tags: ["grid", "layout"],
+      image: projectImage2,
       description:
-        "Add one or two sentences here to describe the project. Avoid lengthy descriptions.",
+        "Practical designs using layouts with masonry.",
+        href: "https://www.google.com/search?q=masonry+layout",
+        hoverText: "see it",
+        
+    },
+    {
+      title: "3D browser",
+      tags: ["3.js", "OpenGL"],
+      image: projectImage3,
+      description:
+        "A 3D interactive experience, playble in any modern browser.",
+        href: "https://github.com/mrdoob/three.js/",
+        hoverText: "play it",
+    },
+    {
+      title: "Data visualizations",
+      tags: ["data driven", "dynamic"],
+      image: projectImage4,
+      description:
+        "Experimental data visualizations using color gradiants.",
+      hoverText: "track it",
+      href: "https://d3js.org/"
     },
     {
       title: "Project name",
@@ -93,33 +117,15 @@ const ProjectsSection = () => {
       image: projectImage1,
       description:
         "Add one or two sentences here to describe the project. Avoid lengthy descriptions.",
+        href: "https://google.com/",
+        hoverText: "verb"
     },
-    {
-      title: "Project name",
-      tags: ["tag", "another tag", "tag me"],
-      image: projectImage1,
-      description:
-        "Add one or two sentences here to describe the project. Avoid lengthy descriptions.",
-    },
-    {
-      title: "Project name",
-      tags: ["tag", "another tag", "tag me"],
-      image: projectImage1,
-      description:
-        "Add one or two sentences here to describe the project. Avoid lengthy descriptions.",
-    },
-    {
-      title: "Project name",
-      tags: ["tag", "another tag", "tag me"],
-      image: projectImage1,
-      description:
-        "Add one or two sentences here to describe the project. Avoid lengthy descriptions.",
-    },
+    
   ];
 
-  const Item = ({ title, tags, image, description }) => {
+  const Item = ({ title, tags, image, description, hoverText, href }) => {
     return (
-      <div className="design-project-item pt-5">
+      <div className="design-project-item">
         <div className="design-project-item-title">{title}</div>
         <div className="pt-half">
           {tags.map((tag, index, array) => {
@@ -132,20 +138,26 @@ const ProjectsSection = () => {
             );
           })}
         </div>
-        <a href="google.com">
+        <div style={{position:"relative"}} className="mt-1">
+        <a href={href} target="_blank" rel="noreferrer" >
+        <div class="design-project-item-image-overlay">
+        <h1 style={{fontSize: 50}} class="design-project-item-image-text">{hoverText}</h1>
+        </div>
           <img
-            className="design-project-item-image pt-1"
+            className="design-project-item-image "
             alt="project"
             src={image}
-          ></img>
+          />
+          
         </a>
+        </div>
         <div className="pt-1">{description}</div>
       </div>
     );
   };
 
   return (
-    <div className=" design-project">
+    <div className="design-project">
       {Items.map((item, index, array) => {
         const isDividerAdded = index % 2 === 0 && array.length !== index + 1;
         return (

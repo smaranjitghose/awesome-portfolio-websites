@@ -10,7 +10,7 @@ import Education from './pages/Education/Education'
 import Resume from './pages/Resume/Resume';
 import NotFound from './pages/404/404';
 import Footer from './components/Footer/Footer';
-import Designs from './pages/Designs/Designs'
+import Design from './pages/Design/Design'
 import { Helmet } from "react-helmet";
 
 
@@ -43,7 +43,7 @@ function App() {
         </Helmet>
         <Navbar />
         <Switch>
-          <Route path='/designs' component={Designs} />
+          <Route path='/designs' component={Design} />
           <Route exact path='/' component={Home} />
           <Route path='/experience' component={Experience} />
           <Route path='/projects' component={Projects} />
