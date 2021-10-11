@@ -79,30 +79,82 @@ const StatementSection = () => {
 };
 
 const ProjectsSection = () => {
-  const Item = () => {
+  const Items = [
+    {
+      title: "Project name",
+      tags: ["tag", "another tag", "tag me"],
+      image: projectImage1,
+      description:
+        "Add one or two sentences here to describe the project. Avoid lengthy descriptions.",
+    },
+    {
+      title: "Project name",
+      tags: ["tag", "another tag", "tag me"],
+      image: projectImage1,
+      description:
+        "Add one or two sentences here to describe the project. Avoid lengthy descriptions.",
+    },
+    {
+      title: "Project name",
+      tags: ["tag", "another tag", "tag me"],
+      image: projectImage1,
+      description:
+        "Add one or two sentences here to describe the project. Avoid lengthy descriptions.",
+    },
+    {
+      title: "Project name",
+      tags: ["tag", "another tag", "tag me"],
+      image: projectImage1,
+      description:
+        "Add one or two sentences here to describe the project. Avoid lengthy descriptions.",
+    },
+    {
+      title: "Project name",
+      tags: ["tag", "another tag", "tag me"],
+      image: projectImage1,
+      description:
+        "Add one or two sentences here to describe the project. Avoid lengthy descriptions.",
+    },
+  ];
+
+  const Item = ({ title, tags, image, description }) => {
     return (
-      <div className="design-project-item">
-        <div>Project name</div>
-        <div>tag | another tag | another tag</div>
-        <img
-          className="design-project-item-image"
-          alt="project"
-          src={projectImage1}
-        ></img>
-        <div>
-          Add one or two sentences here to describe the project. Avoid lengthy
-          descriptions.
+      <div className="design-project-item pt-5">
+        <div className="design-project-item-title">{title}</div>
+        <div className="pt-half">
+          {tags.map((tag, index, array) => {
+            const isLastTag = array.length !== index + 1;
+            return (
+              <>
+                <span className="purple">{tag}</span>
+                {isLastTag && " | "}
+              </>
+            );
+          })}
         </div>
+        <a href="google.com">
+          <img
+            className="design-project-item-image pt-1"
+            alt="project"
+            src={image}
+          ></img>
+        </a>
+        <div className="pt-1">{description}</div>
       </div>
     );
   };
 
   return (
-    <div className="pt-5 design-project">
-      <Item />
-      <Item />
-      <Item />
-      <Item />
+    <div className=" design-project">
+      {Items.map((item, index, array) => {
+        const isDividerAdded = index % 2 === 0 && array.length !== index + 1;
+        return (
+          <>
+            <Item {...item} />
+            {isDividerAdded && <div className="design-statement-divider" />}
+          </>
+        );
+      })}
     </div>
   );
 };
@@ -111,7 +163,7 @@ const Designs = () => {
   return (
     <div>
       <Helmet>
-        <title>John Doe | Education</title>
+        <title>John Doe | Design</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
@@ -165,7 +217,6 @@ const Designs = () => {
         <StatementSection />
         <hr className="design-hr purple mt-4" />
         <ProjectsSection />
-        <h1>↓ SCROLL DOWN FOR MORE ↓</h1>
       </PageContainer>
     </div>
   );

@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+tmpnodejsnpm-cache
 
 # testing
 /coverage
@@ -21,3 +22,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
