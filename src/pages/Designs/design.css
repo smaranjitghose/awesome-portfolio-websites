@@ -15,6 +15,9 @@
   .design-statement-process {
     display: none;
   }
+  .design-statement-divider {
+    display: none;
+  }
 }
 
 .pt-1 {
@@ -84,13 +87,12 @@
   text-align: center;
 }
 
-.design-statement-process {
-  padding-left: 90px;
+.design-statement-divider {
+  min-width: 50px;
 }
 
 .design-statement-item {
   flex: 1;
-  /* width: 0%; */
 }
 
 .design-project-item {

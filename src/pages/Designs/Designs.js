@@ -72,6 +72,7 @@ const StatementSection = () => {
   return (
     <div className="design-statement pt-5">
       <Projects />
+      <div className="design-statement-divider"></div>
       <Process />
     </div>
   );
