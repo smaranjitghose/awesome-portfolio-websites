@@ -10,10 +10,12 @@ import Education from './pages/Education/Education'
 import Resume from './pages/Resume/Resume';
 import NotFound from './pages/404/404';
 import Footer from './components/Footer/Footer';
+import Designs from './pages/Designs/Designs'
 import { Helmet } from "react-helmet";
 
 
 function App() {
+  console.log(Research)
   return (
     <>
       <div className="App">
@@ -41,13 +43,14 @@ function App() {
         </Helmet>
         <Navbar />
         <Switch>
+          <Route path='/designs' component={Designs} />
           <Route exact path='/' component={Home} />
           <Route path='/experience' component={Experience} />
           <Route path='/projects' component={Projects} />
           <Route path='/education' component={Education} />
           <Route path='/research' component={Research} />
-          <Route path='' component={NotFound} />
           <Route path='/resume' component={Resume} />
+          <Route path='' component={NotFound} />
         </Switch>
         <Footer />
       </div>

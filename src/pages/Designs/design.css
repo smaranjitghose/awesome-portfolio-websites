@@ -1,0 +1,109 @@
+@media only screen and (max-width: 750px) {
+  .design-hero-image {
+    display: none;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 650px) {
+  .page-container .design-hero {
+    padding: 0;
+  }
+  div .page-container {
+    padding: 0 20px 0 20px;
+  }
+  .design-statement-process {
+    display: none;
+  }
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pt-6 {
+  padding-top: 6rem;
+}
+
+.pt-5 {
+  padding-top: 5rem;
+}
+
+.pt-half {
+  padding-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 5rem;
+}
+
+.page-container {
+  /* height of the navbar */
+  padding-top: 69.69px;
+  padding-left: 70px;
+  padding-right: 70px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.design-hero-text {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.design-hero-image {
+  flex: 1;
+  padding-bottom: 88px;
+}
+
+.design-hero {
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+}
+
+.purple {
+  color: #6c63ff;
+}
+
+.design-statement {
+  display: flex;
+  flex: 1;
+}
+
+.design-hr {
+  border: none;
+  border-top: 4px solid;
+  overflow: visible;
+  text-align: center;
+}
+
+.design-statement-process {
+  padding-left: 90px;
+}
+
+.design-statement-item {
+  flex: 1;
+  /* width: 0%; */
+}
+
+.design-project-item {
+  max-width: 500px;
+}
+
+.design-project-item-image {
+  max-width: 100%;
+}
+
+.design-project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
