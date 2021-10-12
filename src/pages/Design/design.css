@@ -1,0 +1,170 @@
+.design-pt-1 {
+  padding-top: 1rem;
+}
+
+.design-pt-2 {
+  padding-top: 2rem;
+}
+
+.design-pt-4 {
+  padding-top: 4rem;
+}
+
+.design-pt-5 {
+  padding-top: 5rem;
+}
+
+.design-pt-half {
+  padding-top: 0.5rem;
+}
+
+.design-mt-4 {
+  margin-top: 5rem;
+}
+
+.design-mt-1 {
+  margin-top: 1rem;
+}
+
+.page-container {
+  /* height of the navbar */
+  padding-top: 69.69px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 100px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.design-hero-text {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.design-hero-image {
+  flex: 1;
+  padding-bottom: 88px;
+}
+
+.design-hero {
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+}
+
+.purple {
+  color: #6c63ff;
+}
+
+.design-statement {
+  display: flex;
+  flex: 1;
+}
+
+.design-hr {
+  border: none;
+  border-top: 4px solid;
+  overflow: visible;
+  text-align: center;
+}
+
+.design-statement-divider {
+  min-width: 50px;
+}
+
+.design-statement-item {
+  flex: 1;
+}
+
+.design-project {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.design-project-item:hover {
+  color: black;
+}
+
+.design-project-item:last-child {
+  max-width: calc(50% - 25px);
+}
+
+.design-project-item {
+  font-weight: normal;
+  /* 50px to match the width of the design-statement-divider */
+  flex: 1 calc(50% - 50px);
+  padding-top: 4rem;
+}
+
+.design-project-item-image {
+  width: 100%;
+  vertical-align: bottom;
+  aspect-ratio: 1.5 / 1;
+  object-fit: cover;
+}
+
+.design-project-item-image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #6c63ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.design-project-item-image-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+}
+
+.design-project-item-image-overlay:hover {
+  opacity: 1;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.design-project-item-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 750px) {
+  .design-hero-image {
+    display: none;
+  }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 650px) {
+  .page-container .design-hero {
+    padding: 0;
+  }
+  div .page-container {
+    padding: 0 20px 100px 20px;
+  }
+  .design-statement-process {
+    display: none;
+  }
+  .design-statement-divider {
+    display: none;
+  }
+  .design-project-item {
+    flex: 1 100%;
+    padding-top: 3rem;
+  }
+  .design-project-item:last-child {
+    max-width: 100%;
+  }
+}
