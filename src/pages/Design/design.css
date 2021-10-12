@@ -1,32 +1,28 @@
-.pt-1 {
+.design-pt-1 {
   padding-top: 1rem;
 }
 
-.pt-2 {
+.design-pt-2 {
   padding-top: 2rem;
 }
 
-.pt-4 {
+.design-pt-4 {
   padding-top: 4rem;
 }
 
-.pt-6 {
-  padding-top: 6rem;
-}
-
-.pt-5 {
+.design-pt-5 {
   padding-top: 5rem;
 }
 
-.pt-half {
+.design-pt-half {
   padding-top: 0.5rem;
 }
 
-.mt-4 {
+.design-mt-4 {
   margin-top: 5rem;
 }
 
-.mt-1 {
+.design-mt-1 {
   margin-top: 1rem;
 }
 
@@ -35,7 +31,6 @@
   padding-top: 69.69px;
   padding-left: 70px;
   padding-right: 70px;
-  /* padding-bottom: 8rem; */
   padding-bottom: 100px;
   max-width: 1400px;
   margin-left: auto;
@@ -85,7 +80,6 @@
 
 .design-project {
   display: flex;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 
@@ -122,18 +116,15 @@
   opacity: 0;
   transition: 0.5s ease;
   background-color: #6c63ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .design-project-item-image-text {
   color: white;
   font-size: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .design-project-item-image-overlay:hover {
@@ -155,7 +146,7 @@
   }
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices */
 @media only screen and (max-width: 650px) {
   .page-container .design-hero {
     padding: 0;
@@ -176,33 +167,4 @@
   .design-project-item:last-child {
     max-width: 100%;
   }
-}
-
-.test-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #008cba;
-}
-
-.test-container:hover .test-overlay {
-  opacity: 1;
-}
-
-.test-text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
 }

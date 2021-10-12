@@ -15,7 +15,6 @@ import { Helmet } from "react-helmet";
 
 
 function App() {
-  console.log(Research)
   return (
     <>
       <div className="App">
@@ -43,7 +42,7 @@ function App() {
         </Helmet>
         <Navbar />
         <Switch>
-          <Route path='/designs' component={Design} />
+          <Route path='/design' component={Design} />
           <Route exact path='/' component={Home} />
           <Route path='/experience' component={Experience} />
           <Route path='/projects' component={Projects} />

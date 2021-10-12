@@ -2,9 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { ReactComponent as HeroSvg } from "../../assets/images/design-page/hero.svg";
 import projectImage1 from "../../assets/images/design-page/flower.jpg";
-import projectImage2 from "../../assets/images/design-page/masonry.jpg"
-import projectImage3 from "../../assets/images/design-page/dice.jpg"
-import projectImage4 from "../../assets/images/design-page/purple.jpg"
+import projectImage2 from "../../assets/images/design-page/masonry.jpg";
+import projectImage3 from "../../assets/images/design-page/dice.jpg";
+import projectImage4 from "../../assets/images/design-page/purple.jpg";
 import "./design.css";
 
 const PageContainer = ({ children }) => {
@@ -18,7 +18,7 @@ const Hero = () => (
         I'm <span className="purple">John Doe</span>.
       </h1>
       <h1>I design stuff.</h1>
-      <div className="pt-5">Currently doing this.</div>
+      <div className="design-pt-5">Currently doing this.</div>
       <div>And also that.</div>
     </div>
     <HeroSvg className="design-hero-image"></HeroSvg>
@@ -29,7 +29,7 @@ const StatementSection = () => {
   const ListItem = ({ number, text }) => (
     <div>
       <span className="purple">
-        [ <span>{number}</span> ]
+        [ {number} ]
       </span>{" "}
       {text}
     </div>
@@ -38,15 +38,15 @@ const StatementSection = () => {
   const Projects = () => (
     <div className="design-statement-item">
       <div>Observe</div>
-      <h1 className="pt-half">My Projects.</h1>
-      <div className="pt-1 purple">
+      <h1 className="design-pt-half">My Projects.</h1>
+      <div className="design-pt-1 purple">
         Write something interesting below to sum up your project examples.
       </div>
-      <div className="pt-1">
+      <div className="design-pt-1">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </div>
-      <div className="pt-1">
+      <div className="design-pt-1">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </div>
@@ -56,15 +56,15 @@ const StatementSection = () => {
   const Process = () => (
     <div className="design-statement-process design-statement-item">
       <div>Fathom</div>
-      <h1 className="pt-half">My Process</h1>
-      <div className="pt-1 purple">
+      <h1 className="design-pt-half">My Process.</h1>
+      <div className="design-pt-1 purple">
         Write something interesting below about how you approach your projects.
       </div>
-      <div className="pt-1">
+      <div className="design-pt-1">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </div>
-      <div className="pt-1">
+      <div className="design-pt-1">
         <ListItem number={1} text="lists can be" />
         <ListItem number={2} text="a great way" />
         <ListItem number={3} text="to convey information" />
@@ -73,7 +73,7 @@ const StatementSection = () => {
   );
 
   return (
-    <div className="design-statement pt-4">
+    <div className="design-statement design-pt-4">
       <Projects />
       <div className="design-statement-divider"></div>
       <Process />
@@ -87,11 +87,9 @@ const ProjectsSection = () => {
       title: "Masonry in action",
       tags: ["grid", "layout"],
       image: projectImage2,
-      description:
-        "Practical designs using layouts with masonry.",
-        href: "https://www.google.com/search?q=masonry+layout",
-        hoverText: "see it",
-        
+      description: "Practical designs using layouts with masonry.",
+      href: "https://www.google.com/search?q=masonry+layout",
+      hoverText: "see it",
     },
     {
       title: "3D browser",
@@ -99,17 +97,16 @@ const ProjectsSection = () => {
       image: projectImage3,
       description:
         "A 3D interactive experience, playble in any modern browser.",
-        href: "https://github.com/mrdoob/three.js/",
-        hoverText: "play it",
+      href: "https://github.com/mrdoob/three.js/",
+      hoverText: "play it",
     },
     {
       title: "Data visualizations",
       tags: ["data driven", "dynamic"],
       image: projectImage4,
-      description:
-        "Experimental data visualizations using color gradiants.",
+      description: "Experimental data visualizations using color gradiants.",
       hoverText: "track it",
-      href: "https://d3js.org/"
+      href: "https://d3js.org/",
     },
     {
       title: "Project name",
@@ -117,17 +114,16 @@ const ProjectsSection = () => {
       image: projectImage1,
       description:
         "Add one or two sentences here to describe the project. Avoid lengthy descriptions.",
-        href: "https://google.com/",
-        hoverText: "verb"
+      href: "https://google.com/",
+      hoverText: "verb it",
     },
-    
   ];
 
   const Item = ({ title, tags, image, description, hoverText, href }) => {
     return (
       <div className="design-project-item">
         <div className="design-project-item-title">{title}</div>
-        <div className="pt-half">
+        <div className="design-pt-half">
           {tags.map((tag, index, array) => {
             const isLastTag = array.length !== index + 1;
             return (
@@ -138,20 +134,24 @@ const ProjectsSection = () => {
             );
           })}
         </div>
-        <div style={{position:"relative"}} className="mt-1">
-        <a href={href} target="_blank" rel="noreferrer" >
-        <div class="design-project-item-image-overlay">
-        <h1 style={{fontSize: 50}} class="design-project-item-image-text">{hoverText}</h1>
+        <div style={{ position: "relative" }} className="design-mt-1">
+          <a href={href} target="_blank" rel="noreferrer">
+            <div class="design-project-item-image-overlay">
+              <h1
+                style={{ fontSize: 50 }}
+                class="design-project-item-image-text"
+              >
+                {hoverText}
+              </h1>
+            </div>
+            <img
+              className="design-project-item-image "
+              alt="project"
+              src={image}
+            />
+          </a>
         </div>
-          <img
-            className="design-project-item-image "
-            alt="project"
-            src={image}
-          />
-          
-        </a>
-        </div>
-        <div className="pt-1">{description}</div>
+        <div className="design-pt-1">{description}</div>
       </div>
     );
   };
@@ -173,64 +173,37 @@ const ProjectsSection = () => {
 
 const Designs = () => {
   return (
-    <div>
+    <>
       <Helmet>
         <title>John Doe | Design</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="keywords"
-          content="free portfolio template,portfolio template, portfolio website template, open source, open sourcing, contributing to open source"
-        />
-        <meta
-          name="description"
-          content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world."
-        />
+        <meta name="keywords" content="free portfolio template,portfolio template, portfolio website template, open source, open sourcing, contributing to open source" />
+        <meta name="description" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
         <meta name="AdsBot-Google" content="index,follow" />
-        <meta
-          property="og:site_name"
-          content="https://portfolio.smaranjitghose.codes/education.html"
-        />
-        <meta property="og:title" content="John Doe | Education" />
-        <meta
-          property="og:description"
-          content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world."
-        />
+        <meta property="og:site_name" content="https://portfolio.smaranjitghose.codes/design.html" />
+        <meta property="og:title" content="John Doe | Design" />
+        <meta property="og:description" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://portfolio.smaranjitghose.codes/education.html"
-        />
+        <meta property="og:url" content="https://portfolio.smaranjitghose.codes/design.html" />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="John Doe | Education" />
-        <meta
-          name="twitter:description"
-          content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world."
-        />
-        <meta
-          name="twitter:url"
-          content="https://portfolio.smaranjitghose.codes/education.html"
-        />
-        <meta name="application-name" content="John Doe | Education" />
-        <meta
-          name="apple-mobile-web-app-title"
-          content="John Doe | Education"
-        />
-        <meta
-          name="summary"
-          content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world."
-        />
+        <meta name="twitter:title" content="John Doe | Design" />
+        <meta name="twitter:description" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
+        <meta name="twitter:url" content="https://portfolio.smaranjitghose.codes/design.html" />
+        <meta name="application-name" content="John Doe | Design" />
+        <meta name="apple-mobile-web-app-title" content="John Doe | Design" />
+        <meta name="summary" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
       </Helmet>
       <PageContainer>
         <Hero />
         <hr className="design-hr purple" />
         <StatementSection />
-        <hr className="design-hr purple mt-4" />
+        <hr className="design-hr purple design-mt-4" />
         <ProjectsSection />
       </PageContainer>
-    </div>
+    </>
   );
 };
 
