@@ -51,6 +51,7 @@ const Navbar = () => {
     );
   }
 
+
   /* the following if, fixes the bug when you are in mobile dimensions with open
    * menu and then you resize to full screen, the menu doesnt close automatically
    * so we listen to the window height, and when it detects mobile mode, it closes the menu
