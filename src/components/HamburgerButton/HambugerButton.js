@@ -1,12 +1,12 @@
 import React from 'react';
-import './HamburgerButton.css'
+import styles from './HamburgerButton.module.css'
 
 const HamburgerButton = (props) => {
     return(
-        <div onClick = {props.onClick} className={`hamburger ${props.activated ? 'is-active' : ''}`} id="hamburger">
-          <span className="line"></span>
-          <span className="line"></span>
-          <span className="line"></span>
+        <div onClick = {props.onClick} className={`${styles.hamburger} ${props.activated ? styles['is-active'] : ''}`} id={styles.hamburger}>
+          <span className={styles.line}></span>
+          <span className={styles.line}></span>
+          <span className={styles.line}></span>
         </div>
     )
 }

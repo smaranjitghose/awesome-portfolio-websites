@@ -49,6 +49,9 @@ p {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-around;
 }
 
 .research_head {
@@ -470,4 +473,15 @@ a:hover {
 
 .hidden {
     display: none;
+}
+
+@media only screen and (max-width: 840px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-lg-6 {
+        width: 100%;
+    }
+    
 }
