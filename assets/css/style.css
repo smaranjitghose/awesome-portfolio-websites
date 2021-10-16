@@ -731,43 +731,47 @@ Rotate Transition in foote Soical Icon
 */
 
 .rounded-social-buttons .social-button.twitter {
-    background: white;
+    background: #2b2a2A;
+    box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.twitter:hover,
 .rounded-social-buttons .social-button.twitter:focus {
     color: #000;
-    background: white;
+    background: #2b2a2A;
 }
 
 .rounded-social-buttons .social-button.linkedin {
-    background: white;
+    background: #2b2a2A;
+    box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.linkedin:hover,
 .rounded-social-buttons .social-button.linkedin:focus {
     color: #000;
-    background: white;
+    background: #2b2a2A;
 }
 
 .rounded-social-buttons .social-button.instagram {
-    background: white;
+    background: #2b2a2A;
+    box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.instagram:hover,
 .rounded-social-buttons .social-button.instagram:focus {
     color: #000;
-    background: white;
+    background: #2b2a2A;
 }
 
 .rounded-social-buttons .social-button.github {
-    background: white;
+    background: #2b2a2A;
+    box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.github:hover,
 .rounded-social-buttons .social-button.github:focus {
     color: #000000;
-    background: white;
+    background: #2b2a2A;
 }
 
 
