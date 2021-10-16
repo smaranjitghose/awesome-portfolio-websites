@@ -113,119 +113,6 @@
 }
 
 
-/*
-  ---------------------------
-     INSTAGRAM MICROANIMATION
-  ---------------------------
-  */
-
-.instagram-icon {
-    width: 90px !important;
-}
-
-.st0 {
-    fill: none;
-    stroke: #EF4649;
-    stroke-width: 7;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-}
-
-.instagram:hover #littleCircle {
-    stroke-dasharray: 150;
-}
-
-.instagram #shutter {
-    display: none;
-}
-
-.instagram:hover #shutter {
-    display: block;
-    animation: shutter 1s linear infinite;
-}
-
-.instagram:hover #lens {
-    fill: #EF4649;
-    animation: lens 1.5s linear infinite;
-}
-
-@keyframes shutter {
-    0%,
-    50% {
-        stroke-dashoffset: 150;
-    }
-    75% {
-        fill: #EF4649;
-        stroke-dashoffset: 0;
-        stroke-width: 11;
-    }
-}
-
-@keyframes lens {
-    0%,
-    75% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
-/*
-  ---------------------------
-     TWITTER MICROANIMATION
-  ---------------------------
-  */
-
-.twitter-icon {
-    width: 40px;
-    margin-left: 12px;
-}
-
-.twitter:hover #wing1 {
-    transform-origin: center;
-    animation: flap 0.4s ease-out infinite alternate;
-}
-
-.twitter:hover #wing2 {
-    transform-origin: center;
-    animation: flap 0.4s ease-in infinite alternate;
-}
-
-@keyframes flap {
-    50% {
-        transform: scaleX(-1) rotate(-45deg) translate(-40px, -40px);
-    }
-}
-
-
-/*
-  --------------------------
-     GITHUB MICROANIMATION
-  --------------------------
-  */
-
-.github-icon {
-    width: 40px;
-    margin-left: 12px;
-    margin-top: 5px;
-    fill: #000000;
-}
-
-.github:hover #arm {
-    transform-origin: bottom right;
-    animation: moveArm 1s infinite alternate;
-}
-
-@keyframes moveArm {
-    0% {
-        transform: rotate(10deg);
-    }
-    100% {
-        transform: rotate(-10deg);
-    }
-}
 
 
 /*
@@ -292,35 +179,6 @@
     animation: blue-animation 2s infinite alternate;
 }
 
-@keyframes red-animation {
-    0% {
-        y: 0px
-    }
-    0% {
-        height: 6px;
-        y: 0.5px;
-    }
-}
-
-@keyframes yellow-animation {
-    0% {
-        y: 0px;
-    }
-    0% {
-        height: 6px;
-        y: 0.5px;
-    }
-}
-
-@keyframes blue-animation {
-    0% {
-        y: 0px;
-    }
-    0% {
-        height: 3px;
-        y: 3.5;
-    }
-}
 
 
 /*
@@ -407,4 +265,34 @@ a:hover {
 .socialicon.medium:after {
     background-color: #00ab6c;
     box-shadow: var(--medium);
+}
+
+@keyframes red-animation {
+    0% {
+        y: 0px
+    }
+    0% {
+        height: 6px;
+        y: 0.5px;
+    }
+}
+
+@keyframes yellow-animation {
+    0% {
+        y: 0px;
+    }
+    0% {
+        height: 6px;
+        y: 0.5px;
+    }
+}
+
+@keyframes blue-animation {
+    0% {
+        y: 0px;
+    }
+    0% {
+        height: 3px;
+        y: 3.5;
+    }
 }

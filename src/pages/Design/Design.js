@@ -5,30 +5,30 @@ import projectImage1 from "../../assets/images/design-page/flower.jpg";
 import projectImage2 from "../../assets/images/design-page/masonry.jpg";
 import projectImage3 from "../../assets/images/design-page/dice.jpg";
 import projectImage4 from "../../assets/images/design-page/purple.jpg";
-import "./design.css";
+import styles from "./design.module.css";
 
 const PageContainer = ({ children }) => {
-  return <div className="page-container">{children}</div>;
+  return <div className={styles['page-container']}>{children}</div>;
 };
 
 const Hero = () => (
-  <div className="design-hero">
-    <div className="design-hero-text">
+  <div className={styles['design-hero']}>
+    <div className={styles['design-hero-text']}>
       <h1>
-        I'm <span className="purple">John Doe</span>.
+        I'm <span className={styles.purple}>John Doe</span>.
       </h1>
       <h1>I design stuff.</h1>
-      <div className="design-pt-5">Currently doing this.</div>
+      <div className={styles['design-pt-5']}>Currently doing this.</div>
       <div>And also that.</div>
     </div>
-    <HeroSvg className="design-hero-image"></HeroSvg>
+    <HeroSvg className={styles['design-hero-image']}></HeroSvg>
   </div>
 );
 
 const StatementSection = () => {
   const ListItem = ({ number, text }) => (
     <div>
-      <span className="purple">
+      <span className={styles['purple']}>
         [ {number} ]
       </span>{" "}
       {text}
@@ -36,17 +36,17 @@ const StatementSection = () => {
   );
 
   const Projects = () => (
-    <div className="design-statement-item">
+    <div className={styles['design-statement-item']}>
       <div>Observe</div>
-      <h1 className="design-pt-half">My Projects.</h1>
-      <div className="design-pt-1 purple">
+      <h1 className={styles['design-pt-half']}>My Projects.</h1>
+      <div className={styles['design-pt-1 purple']}>
         Write something interesting below to sum up your project examples.
       </div>
-      <div className="design-pt-1">
+      <div className={styles['design-pt-1']}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </div>
-      <div className="design-pt-1">
+      <div className={styles['design-pt-1']}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </div>
@@ -54,17 +54,17 @@ const StatementSection = () => {
   );
 
   const Process = () => (
-    <div className="design-statement-process design-statement-item">
+    <div className={`${styles['design-statement-process']} ${styles['design-statement-item']}`}>
       <div>Fathom</div>
-      <h1 className="design-pt-half">My Process.</h1>
-      <div className="design-pt-1 purple">
+      <h1 className={styles['design-pt-half']}>My Process.</h1>
+      <div className={styles['design-pt-1 purple']}>
         Write something interesting below about how you approach your projects.
       </div>
-      <div className="design-pt-1">
+      <div className={styles['design-pt-1']}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </div>
-      <div className="design-pt-1">
+      <div className={styles['design-pt-1']}>
         <ListItem number={1} text="lists can be" />
         <ListItem number={2} text="a great way" />
         <ListItem number={3} text="to convey information" />
@@ -73,9 +73,9 @@ const StatementSection = () => {
   );
 
   return (
-    <div className="design-statement design-pt-4">
+    <div className={`${styles['design-statement']} ${styles['design-pt-4']}`}>
       <Projects />
-      <div className="design-statement-divider"></div>
+      <div className={styles['design-statement-divider']}></div>
       <Process />
     </div>
   );
@@ -121,49 +121,49 @@ const ProjectsSection = () => {
 
   const Item = ({ title, tags, image, description, hoverText, href }) => {
     return (
-      <div className="design-project-item">
-        <div className="design-project-item-title">{title}</div>
-        <div className="design-pt-half">
+      <div className={styles['design-project-item']}>
+        <div className={styles['design-project-item-title']}>{title}</div>
+        <div className={styles['design-pt-half']}>
           {tags.map((tag, index, array) => {
             const isLastTag = array.length !== index + 1;
             return (
               <>
-                <span className="purple">{tag}</span>
+                <span className={styles['purple']}>{tag}</span>
                 {isLastTag && " | "}
               </>
             );
           })}
         </div>
-        <div style={{ position: "relative" }} className="design-mt-1">
+        <div style={{ position: "relative" }} className={styles['design-mt-1']}>
           <a href={href} target="_blank" rel="noreferrer">
-            <div class="design-project-item-image-overlay">
+            <div className={styles['design-project-item-image-overlay']}>
               <h1
                 style={{ fontSize: 50 }}
-                class="design-project-item-image-text"
+                className={styles[`design-project-item-image-text`]}
               >
                 {hoverText}
               </h1>
             </div>
             <img
-              className="design-project-item-image "
+              className={styles['design-project-item-image']}
               alt="project"
               src={image}
             />
           </a>
         </div>
-        <div className="design-pt-1">{description}</div>
+        <div className={styles['design-pt-1']}>{description}</div>
       </div>
     );
   };
 
   return (
-    <div className="design-project">
+    <div className={styles['design-project']}>
       {Items.map((item, index, array) => {
         const isDividerAdded = index % 2 === 0 && array.length !== index + 1;
         return (
           <>
             <Item {...item} />
-            {isDividerAdded && <div className="design-statement-divider" />}
+            {isDividerAdded && <div className={styles['design-statement-divider']}/>}
           </>
         );
       })}
@@ -198,9 +198,9 @@ const Designs = () => {
       </Helmet>
       <PageContainer>
         <Hero />
-        <hr className="design-hr purple" />
+        <hr className={`${styles['design-hr']} ${styles['purple']}`} />
         <StatementSection />
-        <hr className="design-hr purple design-mt-4" />
+        <hr className={`${styles['design-hr']} ${styles['purple']} ${styles['design-mt-4']}`} />
         <ProjectsSection />
       </PageContainer>
     </>

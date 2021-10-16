@@ -1,3 +1,4 @@
+/* ADD GLOBAL STYLES HERE */
 
 /*ScrollBar Code*/
 ::-webkit-scrollbar {
@@ -22,3 +23,204 @@
   background: #ca9eff;
   
 }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/*
+  ---------------------------
+     TWITTER MICROANIMATION
+  ---------------------------
+  */
+
+  .twitter-icon {
+    width: 40px;
+    margin-left: 12px;
+}
+
+.twitter:hover #wing1 {
+    transform-origin: center;
+    animation: flap 0.4s ease-out infinite alternate;
+}
+
+.twitter:hover #wing2 {
+    transform-origin: center;
+    animation: flap 0.4s ease-in infinite alternate;
+}
+
+@keyframes flap {
+    50% {
+        transform: scaleX(-1) rotate(-45deg) translate(-40px, -40px);
+    }
+}
+
+/*
+  --------------------------
+     GITHUB MICROANIMATION
+  --------------------------
+  */
+
+  .github-icon {
+    width: 40px;
+    margin-left: 12px;
+    margin-top: 5px;
+    fill: #000000;
+}
+
+.github:hover #arm {
+    transform-origin: bottom right;
+    animation: moveArm 1s infinite alternate;
+}
+
+@keyframes moveArm {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+/*
+  ---------------------------
+     INSTAGRAM MICROANIMATION
+  ---------------------------
+  */
+
+  .instagram-icon {
+    width: 90px !important;
+}
+
+.st0 {
+    fill: none;
+    stroke: #EF4649;
+    stroke-width: 7;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.instagram:hover #shutter {
+    stroke-dasharray: 150;
+}
+
+.instagram #shutter {
+    display: none;
+}
+
+.instagram:hover #shutter {
+    display: block;
+    animation: shutter 1s linear infinite;
+}
+
+.instagram:hover #lens {
+    fill: #EF4649;
+    animation: lens 1.5s linear infinite;
+}
+
+@keyframes shutter {
+    0%,
+    50% {
+        stroke-dashoffset: 150;
+    }
+    75% {
+        fill: #EF4649;
+        stroke-dashoffset: 0;
+        stroke-width: 11;
+    }
+}
+
+@keyframes lens {
+    0%,
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+  /*
+  ---------------------------
+     FOOTER ANIMATION
+  ---------------------------
+  */
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes floating {
+    0% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  @keyframes up {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(-15px);
+    }
+    40% {
+      transform: translate(0);
+    }
+  }
+  
+  @-webkit-keyframes up {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(-15px);
+    }
+    40% {
+      transform: translate(0);
+    }
+  }
+
+  
+
+
+
+
+
+
+
+
