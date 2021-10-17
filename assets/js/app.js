@@ -4,7 +4,7 @@
 
 let header = $(`
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
-<a class="navbar-brand" href="index.html">John Doe </a>
+<a class="navbar-brand" href="index.html">Riya Jha </a>
 <div class="hamburger_wrapper navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
   <div id="js-hamburger" class="hamburger">
@@ -112,7 +112,7 @@ let footer = $(`
       <!--SVG code for quote-left icon-->
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1.5em" height="1.5em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M7 21a4 4 0 0 1-4-4c0-1.473 1.333-6.14 4-14h2L7 13a4 4 0 1 1 0 8zm10 0a4 4 0 0 1-4-4c0-1.473 1.333-6.14 4-14h2l-2 10a4 4 0 1 1 0 8z" fill="#fff" fill-rule="evenodd"/></svg>
       </div>
-      <p class="tag" >Develop a passion for learning. If you do, you will never cease to grow.</p>
+      <p class="tag" >Work HARD in silence & let yoour SUCCESS roar</p>
     </div>
 
     
@@ -206,7 +206,7 @@ let footer = $(`
     </svg>
     </a>
 
-    <a class="social-button linkedin" href="" target="_blank" >
+    <a class="social-button linkedin" href="https://www.linkedin.com/in/riya-jha-7b4774210/" target="_blank" >
     <!-- svg code for linkedin icon -->
       <svg class="linkedin-icon-footer" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="#0e76a8"
         stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
@@ -218,7 +218,7 @@ let footer = $(`
 
 
 
-    <a class="social-button instagram" href="" target="_blank" >
+    <a class="social-button instagram" href="https://www.instagram.com/riya_jha2305/channel/?hl=en" target="_blank" >
     <!-- svg code for instagram icon -->
       <svg class="instagram-icon-footer" x="0px" y="0px" viewBox="0 0 202.5 202.5"
         style="enable-background:new 0 0 202.5 202.5;">
@@ -229,7 +229,7 @@ let footer = $(`
       </svg>
     </a>
 
-    <a class="social-button github" href="#" target="_blank">
+    <a class="social-button github" href="https://github.com/riyajha2305" target="_blank">
     <!-- SVG code for Github icon -->
     <svg class="github-icon-footer" width="45px" height="45px" viewBox="0 0 300 300">
         <!-- body -->
