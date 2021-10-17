@@ -1,6 +1,9 @@
 @font-face {
-    font-family: "Agustina";
+    font-family: "Frank Ruhl Libre";
     src: url(../fonts/Agustina.woff);
+}
+*{
+    font-family: "Frank Ruhl Libre";
 }
 
 
@@ -103,7 +106,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     color: var(--text);
-    font-family: "Poppins", sans-serif;
+    font-family: "Frank Ruhl Libre";
     background-color: var(--bg);
 }
 .text-center heading1 exp-head {
@@ -229,7 +232,7 @@ html {
 }
 
 .navbar-brand {
-    font-family: Agustina;
+    font-family: "Frank Ruhl Libre";
     font-size: 30px;
     font-weight: bold;
 }
@@ -504,12 +507,12 @@ color: #ffffff !important;
 
 .footer {
     padding-top: 10px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Frank Ruhl Libre";
     background-color: #121212;
 }
 
 .tag {
-    font-family: "Poppins", sans-serif;
+    font-family: "Frank Ruhl Libre";
     font: size 20px;
     line-height: 26px;
     text-align: center;
@@ -803,9 +806,36 @@ form {
    Footer Form
 --------------------
 */
+/*footer form font-family*/
+
+.input-text::-webkit-input-placeholder {/* Chrome/Opera/Safari/Edge */
+	font-family: "Frank Ruhl Libre";
+}
+
+.input-text::-ms-input-placeholder { /* Microsoft Edge */
+   font-family: "Frank Ruhl Libre";
+}
+
+.input-text:-ms-input-placeholder {/* IE 10+ */
+	font-family: "Frank Ruhl Libre";
+}
+
+.input-text::-moz-placeholder {/* Firefox 19+ */
+	opacity: 1; /*Firefox by default has an opacity object that usually is ideal to reset so it matches webkit*/
+	font-family: "Frank Ruhl Libre";
+}
+
+.input-text:-moz-placeholder {/* Firefox 18- */
+	opacity: 1; /*Firefox by default has an opacity object that usually is ideal to reset so it matches webkit*/
+	font-family: "Frank Ruhl Libre";
+}
+
+.input-text::placeholder {
+	font-family: "Frank Ruhl Libre";
+}
 
 .form-style-6 {
-    font: 95% Arial, Helvetica, sans-serif;
+    font: 95% "Frank Ruhl Libre";
     max-width: 400px;
     margin: 10px auto;
     padding: 16px;
@@ -894,7 +924,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "Frank Ruhl Libre";
 }
 
 .footer hr {

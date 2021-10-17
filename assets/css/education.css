@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Frank Ruhl Libre";
   max-width:120%;
   height:auto;
 }
@@ -390,7 +390,7 @@ html, body {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Frank Ruhl Libre";
   font-size: 17px;
   font-weight: 400;
   background-color: #eee;
@@ -409,7 +409,7 @@ header {
   padding: 150px 0;
 }
 header p {
-  font-family: "Allura";
+  font-family: "Frank Ruhl Libre";
   color: rgba(255, 255, 255, 0.2);
   margin-bottom: 0;
   font-size: 60px;

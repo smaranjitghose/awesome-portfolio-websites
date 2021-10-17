@@ -134,10 +134,10 @@ let footer = $(`
               </div>
                 <form>
                   <form action="https://formcarry.com/s/S2thQbCqEvW" method="POST" accept-charset="UTF-8" >
-                  <input type="text" name="field1" placeholder="Your Name" required/>
-                  <input type="email" name="field2" placeholder="Email Address"  required/>
-                  <textarea name="field3" placeholder="Type your Message" required></textarea>
-                  <input type="submit" value="Send" />
+                  <input class="input-text" type="text" name="field1" placeholder="Your Name" required/>
+                  <input class="input-text" type="email" name="field2" placeholder="Email Address"  required/>
+                  <textarea class="input-text" name="field3" placeholder="Type your Message" required></textarea>
+                  <input class="input-text" type="submit" value="Send" />
                 </form>
              </div>
           </div>

@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
 html[light-mode="light"] {
   --bg1-color: rgba(0, 0, 0, 0);
   --text-color: #6c757d;

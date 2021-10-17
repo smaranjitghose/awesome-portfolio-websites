@@ -1,7 +1,3 @@
-/*Import font*/
-
-@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
-
 /*Declaring CSS variables for Light mode*/
 
 html[light-mode="light"] {
