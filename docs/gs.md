@@ -171,16 +171,6 @@
         2. Change the current **image path** to your course image path inside `cardImage`
         3. Change the current **MOOC link** to yours inside `moocLink`
 
-![badges](images/badges.png)
-
-- To change the **badges section** details :
-
-    1. Add your badges' images to assets -> images -> education-page folder
-    2. Open _education.js_
-    3. Under **Badges** heading,
-        1. Change the current **badge title** to yours inside `title`
-        2. Change the current **image path** to your badge image path inside `image`
-        3. Change the current **description** to yours inside `description`
 
 ## SEO and Miscellaneous
 
