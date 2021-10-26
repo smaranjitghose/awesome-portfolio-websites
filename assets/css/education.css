@@ -8,7 +8,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   max-width:120%;
-  height:auto;
+/*   height:auto; */
 }
 
 html[light-mode="light"] {
