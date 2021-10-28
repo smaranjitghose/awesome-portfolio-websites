@@ -82,3 +82,4 @@ Click on the image below to set up and contribute to the project or [Click here]
 <a href="https://devincept.codes/"><img src="./readme_assets/open_source_programs/devincept.gif" width="25%"></a>
 <a href="https://ghc.anitab.org/programs-and-awards/open-source-day/"><img src="./readme_assets/open_source_programs/OSD.jpg" width="25%"></a>
 </p>
+                                      Thanks for reading!!!
