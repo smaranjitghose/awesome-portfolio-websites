@@ -1,5 +1,7 @@
 "use strict";
 
+// Header
+
 let header = $(`
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
 <a class="navbar-brand" href="index.html">John Doe </a>
@@ -15,14 +17,14 @@ let header = $(`
 
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
   <ul class="navbar-nav ml-auto" id = "navbar-content">
-   <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-   <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-   <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-   <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-   <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-   <li class="nav-item"><a class="nav-link" href="./assets/docs/john_doe.pdf" target="_blank">Resume</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="experience.html">Experience</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="projects.html">Projects</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="research.html">Research</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="education.html">Education</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="https://hashnode.com/" target="_blank">Blogs</a></li>
    <li class="nav-item">
-   <input type="checkbox" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+   <input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
    </li>
    <div class="bike">
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 0 650 400" preserveAspectRatio="xMinYMin meet">
@@ -255,10 +257,12 @@ let upArrow = $(`
   })
 `);
 
-//function for the "Scroll To Top" button to detect the footer
 $(document).ready(function () {
+  // updating the color of the swiper bullets (initial update of color)
+  updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
+
+  //function for the "Scroll To Top" button to detect the footer
   $(window).scroll(function () {
-    console.log($(window).scrollTop());
     //The button will be hidden until we scroll more than the window's height
     if ($(window).scrollTop() < $(window).height()) {
       $("#btnScrollToTop").css("visibility", "hidden");
@@ -349,20 +353,62 @@ $(document).ready(function () {
   );
 });
 
+//consistent dark mode for page change
+if (localStorage.getItem("lightMode") == "dark") {
+  var app = document.getElementsByTagName("HTML")[0];
+  app.setAttribute("light-mode", "dark");
+
+  //to add dark theme to nav bar after its been loaded
+  window.addEventListener("load", function () {
+    var nav = document.getElementById("navbar");
+    nav.classList.add("dark-theme");
+    document.getElementById("dark_toggler").checked = true;
+  });
+
+  var sc = document.getElementsByClassName("socialicon");
+  for (var i = 0; i < sc.length; i++) {
+    sc[i].classList.add("dsc");
+  }
+} else {
+  localStorage.setItem("lightMode", "light");
+}
+
 function toggle_light_mode() {
+  console.log(localStorage.getItem("lightMode"));
   var app = document.getElementsByTagName("HTML")[0];
   var nav = document.getElementById("navbar");
   if (localStorage.lightMode == "dark") {
     localStorage.lightMode = "light";
     app.setAttribute("light-mode", "light");
     nav.classList.remove("dark-theme");
+    var sc = document.getElementsByClassName("socialicon");
+    for (var i = 0; i < sc.length; i++) {
+      sc[i].classList.remove("dsc");
+    }
   } else {
     nav.classList.add("dark-theme");
     localStorage.lightMode = "dark";
     app.setAttribute("light-mode", "dark");
+    var sc = document.getElementsByClassName("socialicon");
+    for (var i = 0; i < sc.length; i++) {
+      sc[i].classList.add("dsc");
+    }
   }
+
+  // updating the swiper bullets
+  updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
 }
 
+// function to update swiper bullets
+function updateColorOfSwiperBullets(lightMode) {
+  document.querySelectorAll(".swiper-pagination-bullet").forEach((bullet) => {
+    if (lightMode == "light") {
+      bullet.style.backgroundColor = "blue";
+    } else {
+      bullet.style.backgroundColor = "white";
+    }
+  });
+}
 
 window.addEventListener("storage", function () {
   if (localStorage.lightMode == "dark") {
@@ -370,13 +416,12 @@ window.addEventListener("storage", function () {
   } else {
     app.setAttribute("light-mode", "light");
   }
-}, false);
-
-// Function to remove scroll bar during preload
-$(window).on('load', function() {
-
-  $('.loader-container').fadeOut(2500, function() {
-    $('.no-scroll-preload').css('overflow', 'visible');
-  });
 });
 
+// Function to remove scroll bar during preload
+$(window).on("load", function () {
+  setTimeout(function () {
+    $(".no-scroll-preload").css("overflow", "visible");
+  }, 1000);
+  $(".loader-container").fadeOut(2500);
+});

@@ -1,39 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
-html[data-theme="light"] {
-  --bg1-color: #DDE1E7;
-  --text-color: #6C757D;
+html[light-mode="light"] {
+  --bg1-color: rgba(0, 0, 0, 0);
+  --text-color: #6c757d;
   --shadow-col1: #babdc2;
-  --shadow-col2:#ffffff;
+  --shadow-col2: #ffffff;
   --meta-col: #444;
   --head-col: black;
- }
- 
- html[data-theme="dark"] {
+}
+
+html[light-mode="dark"] {
   --bg1-color: #272727;
   --text-color: #fff;
   --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
   --txt-fill: transparent;
   --shadow-col1: #191919;
-  --shadow-col2:#1d1d1d;
+  --shadow-col2: #1d1d1d;
   --meta-col: rgb(155, 149, 149);
   --head-col: #fff;
- }
+}
+
+html {
+  overflow-x: hidden;
+}
 /*Main section*/
 
-@media (max-width:766px) {
-  .dropdown{
+@media (max-width: 766px) {
+  .dropdown {
     position: absolute;
     padding-right: 3.5rem;
   }
-  .godown{
+  .godown {
     z-index: 1;
     padding-top: 8rem;
     padding-left: 3.3rem;
   }
 }
-.head-upper{
+.head-upper {
   background: var(--bg-txt-img);
   background-clip: text;
   -webkit-background-clip: text;
@@ -44,35 +48,34 @@ section > div {
   padding-top: 7rem !important;
 }
 
-
-
 @media only screen and (max-width: 991px) {
-  section{
+  section {
     height: 80vh;
   }
 }
 @media only screen and (max-width: 867px) {
-  section{
+  section {
     height: 70vh;
   }
 }
 @media only screen and (max-width: 767px) {
-  section{
+  section {
     height: 95vh;
   }
 }
 @media only screen and (max-width: 550px) {
-  section{
+  section {
     height: 90vh;
   }
 }
 @media only screen and (max-width: 400px) {
-  section{
+  section {
     height: 85vh;
   }
 }
 
-.main, .main1 {
+.main,
+.main1 {
   width: 100%;
   padding-left: 4rem;
   padding-right: 4rem;
@@ -88,13 +91,13 @@ section > div {
   color: var(--bg-txt-img);
 }
 
-.experience_head{
-  font-weight:bold;
+.experience_head {
+  font-weight: bold;
 }
 
- /*color of experience page headings*/
-.my_experience{          
-  color:#4e00bb;
+/*color of experience page headings*/
+.my_experience {
+  color: #4e00bb;
 }
 
 .sub-heading {
@@ -115,7 +118,7 @@ section > div {
 .experience-cards {
   margin: 0 auto;
 }
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 550px) {
   .experience-cards {
     overflow: hidden;
     padding-left: 30px;
@@ -130,22 +133,20 @@ section > div {
 }
 
 .card1 {
-  background: #ffffff;
+  background-color: var(--bg1-color);
   display: flex;
   flex-direction: column;
   max-height: 80%;
-  border:none;
+  border: none;
   border-radius: 13px;
   contain: content;
   margin: 4em auto 36px;
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 15%),
-  2px 2px 7px rgba(0, 0, 0, 14%),
-  3px 3px 8px rgba(0, 0, 0, 13%),
-  4px 4px 9px rgba(0, 0, 0, 12%);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 15%), 2px 2px 7px rgba(0, 0, 0, 14%),
+    3px 3px 8px rgba(0, 0, 0, 13%), 4px 4px 9px rgba(0, 0, 0, 12%);
   z-index: 1;
 }
 
-.card1:hover{
+.card1:hover {
   transform: scale(1.06);
   -webkit-transform: scale(1.06);
   -moz-transform: scale(1.06);
@@ -154,15 +155,13 @@ section > div {
   z-index: 0;
   -webkit-transition: transform 0.4s, 0.4s box-shadow;
   -moz-transition: transform 0.4s, 0.4s box-shadow;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-@media only screen and (min-width: 551px){
-  .card1:hover{
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 17%),
-  3px 6px 11px rgba(0, 0, 0, 16%),
-  4px 7px 13px rgba(0, 0, 0, 15%),
-  5px 8px 14px rgba(0, 0, 0, 14%);
+@media only screen and (min-width: 551px) {
+  .card1:hover {
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 17%), 3px 6px 11px rgba(0, 0, 0, 16%),
+      4px 7px 13px rgba(0, 0, 0, 15%), 5px 8px 14px rgba(0, 0, 0, 14%);
   }
 }
 
@@ -170,8 +169,7 @@ section > div {
   display: flex;
   flex-flow: row wrap;
   padding: 18px;
-  color: var(--text);
-  background-color: #fff;
+  color: var(--head-col);
   border-radius: 0 13px 13px 0;
 }
 
@@ -181,12 +179,12 @@ section > div {
 
 .card1 .meta {
   margin-bottom: 22px;
-  margin:0;
+  margin: 0;
   text-align: center;
 }
 
-ul ol{
-  list-style: disc; 
+ul ol {
+  list-style: disc;
   padding: 3%;
 }
 
@@ -226,7 +224,7 @@ ul ol{
   }
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px) {
   .card1 .featured-image {
     width: 400px;
   }
@@ -252,20 +250,19 @@ ul ol{
   color: #222;
   margin: 0.5em 0;
   margin-top: 5rem;
-  color:var(--text);
+  color: var(--text);
 }
 
-@media(min-width: 675px){
-  .heading1{
+@media (min-width: 675px) {
+  .heading1 {
     margin-top: 5em;
   }
 }
 
-@media(min-width: 60rem)
-{
-  .exp-head{
+@media (min-width: 60rem) {
+  .exp-head {
     margin-top: 0rem !important;
-  } 
+  }
 }
 
 .card-body .pre-heading {
@@ -284,7 +281,7 @@ ul ol{
   font-size: 12px;
 }
 
-.card-body h3{
+.card-body h3 {
   font-size: 2rem;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -292,7 +289,8 @@ ul ol{
   text-align: center;
 }
 
-.main ul, .main1 ul {
+.main ul,
+.main1 ul {
   display: block;
   margin: 0 auto;
   min-height: 15rem;
@@ -300,7 +298,8 @@ ul ol{
   padding: 1rem !important;
 }
 
-.main a, .main a {
+.main a,
+.main a {
   text-decoration: none;
 }
 
@@ -311,39 +310,43 @@ ul ol{
   --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-  .volunteerCard {
-    display: block;
-    position: relative;
-    max-width: 262px;
-    background-color: #f2f8f9;
-    border-radius: 4px;
-    padding: 32px 24px;
-    margin: 12px;
-    text-decoration: none;
-    z-index: 0;
-    overflow: hidden; }
-    .volunteerCard:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: -16px;
-      right: -16px;
-      background: #4c8bf5;
-      height: 32px;
-      width: 32px;
-      border-radius: 32px;
-      transform: scale(0);
-      transform-origin: 50% 50%;
-      transition: transform 0.25s ease-out; }
-    .volunteerCard:hover:before {
-      transform: scale(45); }
-  
-  .volunteerCard:hover p {
-    transition: all 0.3s ease-out;
-    color: rgba(255, 255, 255, 0.8); }
-  .volunteerCard:hover h2 {
-    transition: all 0.3s ease-out;
-    color: #ffffff; }
+.volunteerCard {
+  display: block;
+  position: relative;
+  max-width: 262px;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.volunteerCard:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: #4c8bf5;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+.volunteerCard:hover:before {
+  transform: scale(45);
+}
+
+.volunteerCard:hover p {
+  transition: all 0.3s ease-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+.volunteerCard:hover h2 {
+  transition: all 0.3s ease-out;
+  color: #ffffff;
+}
 
 @keyframes slideInFromLeft {
   0% {
@@ -354,28 +357,19 @@ ul ol{
   }
 }
 
-.volunteerCard{
+.volunteerCard {
   border-radius: 10px;
-  box-shadow: 0px 8px #093b8f, 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-  
-              animation: 0.5s ease-out 0s 1 slideInFromLeft;
-  
-              background: #333;
-              padding: 10px;
- 
-              
-             
+  box-shadow: 0px 8px #093b8f, 0 6px 20px 0 rgba(0, 0, 0, 0.19),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-              
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+
+  background: #333;
+  padding: 10px;
 }
 
-
-
-.volunteerCard:hover{
-  
+.volunteerCard:hover {
   transform: scale(1.1);
-  
 }
 
 .page-content {
@@ -387,9 +381,7 @@ ul ol{
   padding: 2rem;
   max-width: 1124px;
   margin: 0 auto;
-  
 }
-
 
 .page-content .card:hover {
   position: relative;
@@ -400,10 +392,8 @@ ul ol{
   width: 100%;
   text-align: center;
   color: whitesmoke;
-  cursor:pointer;
+  cursor: pointer;
   border: none;
-  
-  
 }
 
 @media (min-width: 600px) {
@@ -427,7 +417,7 @@ ul ol{
   width: 100%;
   text-align: center;
   color: black;
-  background-color: whitesmoke;
+  background-color: var(--bg1-color);
   border: none;
 }
 
@@ -435,8 +425,6 @@ ul ol{
   .page-content .card {
     height: 580px;
   }
-  
-  
 }
 
 @media (max-width: 390px) {
@@ -445,8 +433,7 @@ ul ol{
   }
 }
 
-
-.card-body p{
+.card-body p {
   margin: 0px;
   font-size: 14px;
 }
@@ -462,10 +449,6 @@ ul ol{
   z-index: -1;
 }
 
-
-
-
-
 .volunteerTitle {
   font-size: 1.5rem;
   line-height: 1.2;
@@ -473,7 +456,7 @@ ul ol{
   transform: translateY(40px);
   transition: all 0.7s;
   font-weight: 900;
-  color: #093b8f;
+  color: #303f9f;
 }
 
 .copy {
@@ -481,10 +464,8 @@ ul ol{
   font-style: italic;
   line-height: 1.35;
   padding-bottom: 40px;
+  color: var(--head-col);
 }
-
-
-
 
 /*Hackathon Section Starts*/
 
@@ -493,7 +474,7 @@ ul ol{
   position: relative;
   max-width: 800px;
   margin: auto;
-  background: #fff;
+  background: var(--bg1-color);
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 25px;
   border-radius: 25px;
@@ -504,19 +485,19 @@ ul ol{
   .blog-slider {
     max-width: 680px;
     height: 400px;
- }
+  }
 }
 @media screen and (max-width: 768px) {
   .blog-slider {
     min-height: 500px;
     height: auto;
     margin: 180px auto;
- }
+  }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
   .blog-slider {
     height: 350px;
- }
+  }
 }
 .blog-slider__item {
   display: flex;
@@ -525,7 +506,7 @@ ul ol{
 @media screen and (max-width: 768px) {
   .blog-slider__item {
     flex-direction: column;
- }
+  }
 }
 .blog-slider__item.swiper-slide-active .blog-slider__img img {
   opacity: 1;
@@ -584,13 +565,13 @@ ul ol{
   width: 300px;
   flex-shrink: 0;
   height: 300px;
-  box-shadow: 4px 13px 30px 1px rgba(14,73,181, 0.1);
+  box-shadow: 4px 13px 30px 1px rgba(187, 132, 204, 0.1);
   border-radius: 20px;
   transform: translateX(-80px);
   overflow: hidden;
 }
 .blog-slider__img:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -612,17 +593,17 @@ ul ol{
   .blog-slider__img {
     transform: translateY(-50%);
     width: 90%;
- }
+  }
 }
 @media screen and (max-width: 576px) {
   .blog-slider__img {
     width: 95%;
- }
+  }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
   .blog-slider__img {
     height: 270px;
- }
+  }
 }
 .blog-slider__content {
   padding-right: 25px;
@@ -632,12 +613,12 @@ ul ol{
     margin-top: -80px;
     text-align: center;
     padding: 0 30px;
- }
+  }
 }
 @media screen and (max-width: 576px) {
   .blog-slider__content {
     padding: 0;
- }
+  }
 }
 .blog-slider__content > * {
   opacity: 0;
@@ -650,61 +631,60 @@ ul ol{
 .blog-slider__title {
   font-size: 24px;
   font-weight: 900;
-  color: #0d0925;
+  color: var(--head-col);
   margin-bottom: 20px;
 }
 
 /* Role in Hackathon   */
 
 .blog-slider__code {
-  color: #4f4d63;
+  color: var(--meta-col);
   margin-bottom: 20px;
   display: block;
   font-size: 17px;
   font-weight: 700;
 }
 
- /* Hackathon Description   */ 
+/* Hackathon Description   */
 
 .blog-slider__text {
-  color: #4e4a67;
+  color: (var(--head-col));
   margin-bottom: 30px;
   line-height: 1.5em;
 }
 .blog-slider__button {
   display: inline-flex;
-  background-image: linear-gradient(147deg, #009ffd 0%, #0e49b5 74%);
+  background-image: linear-gradient(147deg, #bb86fc 0%, #940eb5 74%);
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;
-  box-shadow: 0px 14px 80px rgba(14,73,181, 0.4);
+  box-shadow: 0px 14px 80px rgba(162, 14, 181, 0.4);
   font-weight: 500;
   justify-content: center;
   text-align: center;
   letter-spacing: 1px;
 }
-a:link{
+a:link {
   text-decoration: none !important;
+  color: white;
 }
 @media screen and (max-width: 576px) {
   .blog-slider__button {
     width: 100%;
- }
+  }
 }
 
-.card2{
-
+.card2 {
   color: var(--text);
 }
 
-@media(max-width: 768px){
-  .mcard{
+@media (max-width: 768px) {
+  .mcard {
     margin-bottom: 12rem !important;
   }
 }
 
 /*Hackathon Section Ends*/
-
 
 /*
 ----------------------------
@@ -717,7 +697,8 @@ a:link{
   transform-origin: 50% 62%;
 }
 @keyframes tie {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0);
   }
   50% {

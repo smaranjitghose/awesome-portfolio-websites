@@ -12,7 +12,6 @@ html[data-theme="light"] {
    --bg1-color: #fff;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
-  --col-icon-medium: #00ab6c;
   --col-icon-kaggle: #41aff3;  
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail:rgb(209, 82, 82);
@@ -32,7 +31,6 @@ html[data-theme="dark"] {
  inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
-  --col-icon-medium: #00ab6c;
   --col-icon-kaggle: #41aff3;
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail:rgb(209, 82, 82);
@@ -114,6 +112,10 @@ body{
   --link-size-footer-s: 30px;
 }
 
+a.socialicon {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
 .social-icons {
   display: flex;
   font-size: 20px;
@@ -140,12 +142,7 @@ body{
   z-index: 1;
   transition: var(--trans-props);
 }
-.medium i {
-  margin: auto;
-  font-size: 24px;
-  z-index: 1;
-  transition: var(--trans-props);
-}
+
 .kaggle i {
   margin: auto;
   font-size: 24px;
@@ -157,9 +154,6 @@ body{
   color:var(--col-icon-kaggle);
 }
 
-.socialicon.medium{
-  color: var(--col-icon-medium);
-}
 .socialicon:after {
   content: "";
   width: var(--link-size);
@@ -176,10 +170,6 @@ body{
   box-shadow: var(--kaggle);
 }
 
-.socialicon.medium:after {
-  background-color: #00ab6c;
-  box-shadow: var(--medium);
-}
 
  /*
 ---------------------------

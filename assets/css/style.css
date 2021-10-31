@@ -23,7 +23,6 @@ html[data-theme="light"] {
     --col-icon-twitter: #1da1f2;
     --col-icon-dribbble: #ea4c89;
     --col-icon-linkedin: #0e76a8;
-    --col-icon-medium: #00ab6c;
     --col-icon-kaggle: #41aff3;
     --col-icon-github: #24292e;
     --col-icon-instagram: rgb(201, 94, 174);
@@ -52,7 +51,6 @@ html[data-theme="dark"] {
     --col-icon-twitter: #1da1f2;
     --col-icon-dribbble: #ea4c89;
     --col-icon-linkedin: #0e76a8;
-    --col-icon-medium: #00ab6c;
     --col-icon-kaggle: #41aff3;
     --col-icon-github: #24292e;
     --col-icon-instagram: rgb(201, 94, 174);
@@ -93,6 +91,13 @@ html[data-theme="dark"] {
     
 }
 
+/* Custom Scrollbar for Mozilla Firefox*/
+html{
+    overflow-y: visible;
+    scrollbar-color: #ca9eff #f1f1f1;
+    scrollbar-width: auto;
+}
+
 body {
     height: 100vh;
     margin: 0;
@@ -100,6 +105,9 @@ body {
     color: var(--text);
     font-family: "Poppins", sans-serif;
     background-color: var(--bg);
+}
+.text-center heading1 exp-head {
+    color: white;
 }
 
 
@@ -109,6 +117,7 @@ body {
     width: 50px;
     height: 50px;
     background-color: #bb86fc;
+    color: #fff;
     margin: 8px;
     border: none;
     border-radius: 50%;
@@ -228,7 +237,8 @@ html {
 .navbar {
     color: #000000;
     background-color: #fff;
-    z-index: 1;
+    z-index: 2;
+    box-shadow: 0 2px 2px rgb(230, 230, 230);
 }
 
 /* Dark Mode toggle switch button */
@@ -262,12 +272,13 @@ html {
   .dark_toggler:checked {
     background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
     transition: background-image 0.9s;
-  }
+    box-shadow: 0px 2px 5px 1px rgb(187, 134, 201);
+}
   
   .dark_toggler:checked:before {
     transform: translate(150%);
     transition: all 0.9s;
-    background-color: #ecf0f3;
+    background-color: #bb86fc;
   }
   /* end of dark mode toggle switch button */
 
@@ -284,6 +295,7 @@ html[light-mode="dark"] {
 .dark-theme {
     background-color: #2b2a2A;
     transition: background-color .3s;
+    box-shadow: 0 0 0;
 }
 
 .dark-theme .navbar-nav .nav-link,
@@ -291,13 +303,20 @@ html[light-mode="dark"] {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.dark-theme .nav-link:hover{
+color: #ffffff !important;
+}
+
 .dark-theme .first,
 .dark-theme .second,
 .dark-theme .third {
     background-color: rgba(255, 255, 255, 0.5);
 }
-
-
+.dsc{
+     box-shadow:   2px 5px 5px 0px rgb(130 216 251), 
+     inset -2px -5px 5px 0px rgb(130 216 251);
+     background: #1f1d1d;
+}
 /*
 -------------------------------------
     SIDEBAR SVG ANIMATION
@@ -379,7 +398,7 @@ html[light-mode="dark"] {
         border-bottom: 3px solid #6a00bb;
     }
     
-    .nav-item::after {
+    .nav-item-hover::after {
         content: "";
         display: block;
         margin-left: auto;
@@ -393,6 +412,7 @@ html[light-mode="dark"] {
     
     .nav-item:hover::after {
         width: 50%;
+        
     }
 
     li.nav-item {
@@ -400,6 +420,11 @@ html[light-mode="dark"] {
     }
     a.nav-link {
         padding: 6px 21px !important;
+    }
+
+    /* Hide svg on laptop screens to prevent overlap between sidebar and navbar */
+    .bike {
+        display: none;
     }
 }
 
@@ -417,13 +442,13 @@ html[light-mode="dark"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
     cursor: pointer;
     transition: all .2s ease-in-out;
     border-color: white;
     border: none;
     outline: none;
+    padding: 0;
+    margin: 1.25rem 1rem;
 }
 
 .line {
@@ -706,43 +731,47 @@ Rotate Transition in foote Soical Icon
 */
 
 .rounded-social-buttons .social-button.twitter {
-    background: white;
+    background: #2b2a2A;
+    box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.twitter:hover,
 .rounded-social-buttons .social-button.twitter:focus {
     color: #000;
-    background: white;
+    background: #2b2a2A;
 }
 
 .rounded-social-buttons .social-button.linkedin {
-    background: white;
+    background: #2b2a2A;
+    box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.linkedin:hover,
 .rounded-social-buttons .social-button.linkedin:focus {
     color: #000;
-    background: white;
+    background: #2b2a2A;
 }
 
 .rounded-social-buttons .social-button.instagram {
-    background: white;
+    background: #2b2a2A;
+    box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.instagram:hover,
 .rounded-social-buttons .social-button.instagram:focus {
     color: #000;
-    background: white;
+    background: #2b2a2A;
 }
 
 .rounded-social-buttons .social-button.github {
-    background: white;
+    background: #2b2a2A;
+    box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.github:hover,
 .rounded-social-buttons .social-button.github:focus {
     color: #000000;
-    background: white;
+    background: #2b2a2A;
 }
 
 
@@ -849,9 +878,9 @@ form {
     width: 100%;
     margin-top: 2rem;
     padding: 3%;
-    background: #6a00bb;
-    border-bottom: 2px solid #6a00bb;
-    border-radius: 2px;
+    background: #bb86fc;
+    border-bottom: 2px solid #bb86fc;
+    border-radius: 23px;
     border-top-style: none;
     border-right-style: none;
     border-left-style: none;

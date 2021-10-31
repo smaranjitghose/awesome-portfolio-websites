@@ -94,7 +94,7 @@ const showCards = () => {
   volunteershipcards.forEach(
     ({ title, cardImage, description }) =>
       (output += `        
-      <div class="card volunteerCard" style="height: 550px;width:400px">
+      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
       
       <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
       <div class="content">
@@ -116,7 +116,7 @@ const hackathonsection = document.querySelector(".hackathon-section");
 const mentor = [
   {
     title: "The Uplift Project",
-    subtitle: "Metor",
+    subtitle: "Mentor",
     image: "assets/images/experience-page/uplift.png",
     desp: "I would be responsible for guiding 100s of participants across the globe in their first steps towards Applied Data Science and building end-to-end machine learning projects.",
   },
