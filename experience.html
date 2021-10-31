@@ -32,7 +32,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="stylesheet" href="assets/css/preloader.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/experience.css" />
+    <link rel="stylesheet" href="assets/css/experience.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/cursor.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -209,7 +209,17 @@
          
             <div class="blog-slider mb-5 mt-5">
                <div class="blog-slider__wrp swiper-wrapper hackathon-section">
-                     <!-- Dynamic  Card -->
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="${image}" alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                      <div class="blog-slider__title">${title}</div>
+                      <span class="blog-slider__code">${subtitle}</span>
+                      <div class="blog-slider__text">${desp}</div>
+                      <a href="#" class="blog-slider__button">Read More</a>   
+                    </div>
+                  </div>    
                </div>
                 <div class="blog-slider__pagination"></div>
             </div>
@@ -237,8 +247,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="assets/js/experience.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
       <script>
         var swiper = new Swiper('.blog-slider', {
                 observer: true,
@@ -252,9 +262,12 @@
             pagination: {
                 el: '.blog-slider__pagination',
                 clickable: true,
-            }
+            },
+            
         });
      </script>
+         <script src="assets/js/experience.js"></script>
+
 </body>
 
 </html>
