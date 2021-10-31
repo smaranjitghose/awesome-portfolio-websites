@@ -1,4 +1,4 @@
-# Contribution Guidelines [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/smaranjitghose/awesome-portfolio-websites/issues) 🤝🏽🍀:
+# Contribution Guidelines [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/smaranjitghose/awesome-portfolio-websites/issues):
 
 
 <p align="center"><img src="./readme_assets/Contribute.png" width=600></p>
