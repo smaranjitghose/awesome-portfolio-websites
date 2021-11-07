@@ -16,8 +16,8 @@ const exp = [
     title: "Machine Learning Intern",
     cardImage: "assets/images/experience-page/Uff.jpeg",
     place: "UFF India",
-    time: "(Aug-Nov, 2019)",
-    desp: "<li> Collected, cleaned and tagged the Data for recomendation system</li><li>Reaserched on various nlp models</li><li>leanred pandas, numpy, seaborn</li>",
+    time: "(Aug-Nov, 2021)",
+    desp: "<li> Collected, cleaned and tagged the Data for recomendation system</li><li>Wrote Scripts for web Scraping using selenium in python</li><li>learned pandas, numpy, seaborn, web scraping</li>",
   },
 ];
 
@@ -50,7 +50,6 @@ const showCards2 = () => {
   experiencecards.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards2);
-
 
 // Volunteership Cards
 
