@@ -57,7 +57,7 @@ const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
   {
     title: "Research Associate",
-    cardImage: "assets/images/experience-page/advaita.jpg",
+    cardImage: "assets/images/experience-page/advaita.jpeg",
     description:
       "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
   },

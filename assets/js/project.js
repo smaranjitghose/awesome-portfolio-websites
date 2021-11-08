@@ -7,7 +7,7 @@ const projectcards = document.querySelector(".projectcards");
 const projects = [
   {
     title: "Mazer",
-    cardImage: "assets/images/project-page/mazer.jpg",
+    cardImage: "assets/images/project-page/mazer.png",
     description: "A 2d python game built using pygame library.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
