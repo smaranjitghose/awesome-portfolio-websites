@@ -11,7 +11,7 @@ const projects = [
     description: "A 2d python game built using pygame library.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
-    Githublink: "",
+    Githublink: "https://github.com/Saksham2002/Mazer",
   },
   {
     title: "Chess Engine",
