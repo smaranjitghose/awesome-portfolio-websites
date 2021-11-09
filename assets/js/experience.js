@@ -59,7 +59,7 @@ const volunteershipcards = [
     title: "Research Associate",
     cardImage: "assets/images/experience-page/advaita.jpeg",
     description:
-      "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
+      "Responsible for social media research and content collabration",
   },
 ];
 
