@@ -17,7 +17,7 @@ const exp = [
     cardImage: "assets/images/experience-page/Uff.jpeg",
     place: "UFF India",
     time: "(Aug-Nov, 2021)",
-    desp: "<li> Collected, cleaned and tagged the Data for recomendation system</li><li>Wrote Scripts for web Scraping using selenium in python for scraping dynamic content</li><li>learned pandas, numpy, seaborn, web scraping</li>",
+    desp: "<li>Collected, cleaned and tagged the Data for recomendation system</li><li>Wrote Scripts for web Scraping using selenium in python for scraping dynamic content</li><li>Worked on ETL(Extract, Transfer and Load) using pandas, numpy, seaborn, web scraping</li>",
   },
 ];
 
