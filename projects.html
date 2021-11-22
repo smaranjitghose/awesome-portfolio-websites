@@ -1,5 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+<! webpage design >
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #eff7f2;
+  font-family: "Lato", sans-serif;
+}
+<! profile card>
+<div class="user-card skeleton">
+
+</div>
+.user-card {
+  width: 300px;
+  height: 400px;
+  box-shadow: -10px 5px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: box-shadow 0.2s ease-in;
+  cursor: pointer;
+}
+
+.user-card:hover {
+  box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+<! add profile image and cover page>
+<div class="user-cover">
+   <img class="user-avatar" src="img.jpg" alt="user profile image" />
+</div>
+.user-card .user-cover {
+  height: 150px;
+  width: 100%;
+  position: relative;
+  background-image: url(img1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.user-card .user-cover .user-avatar {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -35px;
+  border: 2px solid #fff;
+  <! add basic information to the profile card >
+  <div class="user-details">
+   <div class="user-name hide-text">joram nzamuye</div>
+   <div class="user-email hide-text">Web Designer</div>
+   <div class="user-text hide-text"> With ten year experience </div>
+</div>
+.user-card .user-details {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  width: 80%;
+}
+<! adding the contact button >
+<button class="contact-user hide-text">0700254743</button>
+.user-card .contact-user {
+  margin-bottom: 15px;
+  height: 35px;
+  width: 80%;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background: #035f7d;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ <! add loading effects to the images >
+ .user-card.skeleton .user-cover {
+  background: #e2e2e2;
+}
+
+.user-card.skeleton .user-cover .user-avatar {
+  display: none;
+}
+
+.user-card.skeleton .user-cover::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -35px;
+  border: 2px solid #fff;
+  z-index: 10;
+  background: #e2e2e2;
+}
+<! have implemented it using @keyframes>
+@keyframes gradient-animation {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+<! turning off the skeleton loading >
+const $el = document.querySelector(".user-card");
+
+// Loading finished
+setTimeout(() => {
+  $el.classList.remove("skeleton");
+  $el
+    .querySelectorAll(".hide-text")
+    .forEach((el) => el.classList.remove("hide-text"));
+}, 3000);
+
+.user-card .user-details .user-name {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.user-card .user-details .user-email {
+  font-size: 14px;
+  color: #0f5fc0;
+  font-weight: 500;
+}
+.user-card .user-details .user-text{
+  margin-top: 5px;
+  font-size: 15px;
+  color: #666;
+}
+}
 
 <head>
     <title>John Doe | Projects</title>
