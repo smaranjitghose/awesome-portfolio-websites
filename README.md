@@ -57,9 +57,9 @@ Click on the image below to set up and contribute to the project or [Click here]
 
 ## Project Maintainers👨🏫:
 
-| <img src = "https://avatars2.githubusercontent.com/u/46641503?v=4" width = 500 height = 250> | <img src = "https://avatars2.githubusercontent.com/u/40017559?v=4" width = 500 height = 250> | 
-| :------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | 
-|                    [Smaranjit Ghose](https://github.com/smaranjitghose)\*                    |                        [Anush Bhatia](https://github.com/anushbhatia)                       
+| <img src = "https://avatars2.githubusercontent.com/u/46641503?v=4"> | <img src = "https://avatars2.githubusercontent.com/u/40017559?v=4"> | 
+| :----------------------------------------------------------: | :----------------------------------------------------------: | 
+|     [Smaranjit Ghose](https://github.com/smaranjitghose) |    [Anush Bhatia](https://github.com/anushbhatia)                       
 
 
 ## Our valuable Contributors👩‍💻👨‍💻 :
