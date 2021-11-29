@@ -57,11 +57,10 @@ Click on the image below to set up and contribute to the project or [Click here]
 
 ## Project Maintainers👨🏫:
 
-| <img src = "https://avatars2.githubusercontent.com/u/46641503?v=4" width = 500 height = 250> | <img src = "https://avatars2.githubusercontent.com/u/40017559?v=4" width = 500 height = 250> | <img src = "./readme_assets/srv.jpg" width = 500 height = 250> |
-| :------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | :------------------------------------------------------------: |
-|                    [Smaranjit Ghose](https://github.com/smaranjitghose)\*                    |                        [Anush Bhatia](https://github.com/anushbhatia)                        |     [Srividya Inampudi](https://github.com/sriinampudi)\*      |
+| <img src = "https://avatars2.githubusercontent.com/u/46641503?v=4" width = 500 height = 250> | <img src = "https://avatars2.githubusercontent.com/u/40017559?v=4" width = 500 height = 250> | 
+| :------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | 
+|                    [Smaranjit Ghose](https://github.com/smaranjitghose)\*                    |                        [Anush Bhatia](https://github.com/anushbhatia)                       
 
-\*\* Open Source Day 2021
 
 ## Our valuable Contributors👩‍💻👨‍💻 :
 
