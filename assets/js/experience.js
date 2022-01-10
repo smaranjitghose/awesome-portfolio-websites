@@ -2,7 +2,6 @@ AOS.init();
 
 //  Work experience cards
 
-
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
@@ -24,7 +23,7 @@ const exp = [
     cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
     place: "IIT, Bombay",
     time: "(Dec, 19 - Jan, 20)",
-    desp:"<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
+    desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
   },
 ];
 
@@ -58,7 +57,6 @@ const showCards2 = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards2);
 
-
 // Volunteership Cards
 
 const volunteership = document.querySelector(".volunteership");
@@ -91,26 +89,28 @@ const volunteershipcards = [
 
 const showCards = () => {
   let output = "";
+
   volunteershipcards.forEach(
     ({ title, cardImage, description }) =>
       (output += `        
-      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
-      
-      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
-      <div class="content">
-          <h2 class="volunteerTitle">${title}</h2><br>
-          <p class="copy">${description}</p></div>
-      
-      </div>
+    <div class="volunteer__card" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400" style={{display: 'flex', flexDirection: 'row'} >
+    <div class="volunteer__cardimg">
+    <img src=${cardImage} alt="" class="volunteer__img" />
+    </div>
+    <div class="voluneteer__body">
+    <h2 class="volunteer__title">${title}</h2>
+    <p class="volunteer__description">${description}</p>
+    </div>
+    </div>
+
+
       `)
   );
   volunteership.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards);
 
-
 // Hackathon Section
-
 
 const hackathonsection = document.querySelector(".hackathon-section");
 const mentor = [
@@ -203,16 +203,14 @@ const mentor = [
     subtitle: "Judge",
     image: "assets/images/experience-page/nhacks.png",
     desp: "NHacks VI was a hackathon that aimed to encourage students everywhere to develop skills in computer science by creating tangible products that they're proud of. It initially started as Michigan's largest high school hackathon.",
-  }
-  
-
+  },
 ];
 
 const showCards3 = () => {
   let output = "";
   mentor.forEach(
-    ({ title, image, subtitle, desp}) =>
-      (output += `  
+    ({ title, image, subtitle, desp }) =>
+      (output += `
       <div class="blog-slider__item swiper-slide">
         <div class="blog-slider__img">
             <img src="${image}" alt="">
@@ -221,7 +219,7 @@ const showCards3 = () => {
           <div class="blog-slider__title">${title}</div>
           <span class="blog-slider__code">${subtitle}</span>
           <div class="blog-slider__text">${desp}</div>
-          <a href="#" class="blog-slider__button">Read More</a>   
+          <a href="#" class="blog-slider__button">Read More</a>
         </div>
       </div>
       `)

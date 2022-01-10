@@ -311,32 +311,16 @@ ul ol {
 }
 
 .volunteerCard {
-  display: block;
+  display: inline;
   position: relative;
-  max-width: 262px;
+  max-width: 1000px;
   border-radius: 4px;
   padding: 32px 24px;
-  margin: 12px;
+  margin: 20px;
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
-}
-.volunteerCard:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: -16px;
-  right: -16px;
-  background: #4c8bf5;
-  height: 32px;
-  width: 32px;
-  border-radius: 32px;
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  transition: transform 0.25s ease-out;
-}
-.volunteerCard:hover:before {
-  transform: scale(45);
+  height: 600px;
 }
 
 .volunteerCard:hover p {
@@ -348,28 +332,87 @@ ul ol {
   color: #ffffff;
 }
 
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.volunteer__card {
+  display: block;
+  position: relative;
+
+  height: 350px;
+
+  width: 300px;
+  border-radius: 5%;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 19px 13px rgba(186, 189, 194, 0.75);
+  -webkit-box-shadow: 0px 4px 19px 13px rgba(186, 189, 194, 0.75);
+  -moz-box-shadow: 0px 4px 19px 13px rgba(186, 189, 194, 0.75);
+}
+.volunteer__card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-out;
+  box-shadow: 5px 5px 24px 4px #babdc2;
+  -webkit-box-shadow: 5px 5px 24px 4px #babdc2;
+  -moz-box-shadow: 5px 5px 24px 4px #babdc2;
 }
 
-.volunteerCard {
-  border-radius: 10px;
-  box-shadow: 0px 8px #093b8f, 0 6px 20px 0 rgba(0, 0, 0, 0.19),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.volunteer__cardimg {
+  background-color: #fff;
+  display: flex;
 
-  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+  justify-content: center;
+}
+.volunteer__img {
+  height: 100px;
+  width: 100px;
+  object-fit: fill;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  border-radius: 5%;
+}
+.volunteer__body {
+  background-color: #babdc2;
+}
 
-  background: #333;
+.volunteer__title {
+  color: black;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 5px;
+  text-align: center;
+  margin-left: auto;
+  margin-top: 10px;
+}
+.volunteer__description {
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.35;
+  font-weight: 400;
   padding: 10px;
+  padding-left: 30px;
+  color: black;
+  margin: auto;
+}
+@media only screen and (max-width: 1267px) {
+  .volunteer__card {
+    height: 350px;
+    width: 325px;
+  }
+  .volunteer__img {
+    height: 125px;
+    width: 125px;
+  }
 }
 
-.volunteerCard:hover {
-  transform: scale(1.1);
+@media only screen and (max-width: 887px) {
+  .volunteer__card {
+    height: 400px;
+    width: 350px;
+  }
+  .volunteer__img {
+    height: 150px;
+    width: 150px;
+  }
 }
 
 .page-content {
@@ -379,92 +422,8 @@ ul ol {
   align-items: center;
   grid-gap: 5rem;
   padding: 2rem;
-  max-width: 1124px;
+  max-width: 1400px;
   margin: 0 auto;
-}
-
-.page-content .card:hover {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  padding: 1rem;
-  width: 100%;
-  text-align: center;
-  color: whitesmoke;
-  cursor: pointer;
-  border: none;
-}
-
-@media (min-width: 600px) {
-  .page-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 800px) {
-  .page-content {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.page-content .card {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  padding: 1rem;
-  width: 100%;
-  text-align: center;
-  color: black;
-  background-color: var(--bg1-color);
-  border: none;
-}
-
-@media (max-width: 600px) {
-  .page-content .card {
-    height: 580px;
-  }
-}
-
-@media (max-width: 390px) {
-  .main1 ul {
-    padding: 15px;
-  }
-}
-
-.card-body p {
-  margin: 0px;
-  font-size: 14px;
-}
-
-.content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 0.1rem;
-  transition: transform var(--d) var(--e);
-  z-index: -1;
-}
-
-.volunteerTitle {
-  font-size: 1.5rem;
-  line-height: 1.2;
-  padding-bottom: 40px;
-  transform: translateY(40px);
-  transition: all 0.7s;
-  font-weight: 900;
-  color: #303f9f;
-}
-
-.copy {
-  font-size: 1rem;
-  font-style: italic;
-  line-height: 1.35;
-  padding-bottom: 40px;
-  color: var(--head-col);
 }
 
 /*Hackathon Section Starts*/
