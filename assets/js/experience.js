@@ -92,8 +92,9 @@ const showCards = () => {
 
   volunteershipcards.forEach(
     ({ title, cardImage, description }) =>
-      (output += `        
-    <div class="volunteer__card" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400" style={{display: 'flex', flexDirection: 'row'} >
+      (output += `     
+         
+    <div class="volunteer__card" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400"  style={{display: 'flex', flexDirection: 'row'} >
     <div class="volunteer__cardimg">
     <img src=${cardImage} alt="" class="volunteer__img" />
     </div>

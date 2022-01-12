@@ -310,28 +310,6 @@ ul ol {
   --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.volunteerCard {
-  display: inline;
-  position: relative;
-  max-width: 1000px;
-  border-radius: 4px;
-  padding: 32px 24px;
-  margin: 20px;
-  text-decoration: none;
-  z-index: 0;
-  overflow: hidden;
-  height: 600px;
-}
-
-.volunteerCard:hover p {
-  transition: all 0.3s ease-out;
-  color: rgba(255, 255, 255, 0.8);
-}
-.volunteerCard:hover h2 {
-  transition: all 0.3s ease-out;
-  color: #ffffff;
-}
-
 .volunteer__card {
   display: block;
   position: relative;
@@ -344,16 +322,18 @@ ul ol {
   z-index: 0;
   overflow: hidden;
   background-color: #f6f6f6;
-  box-shadow: 0px 4px 19px 13px rgba(186, 189, 194, 0.75);
-  -webkit-box-shadow: 0px 4px 19px 13px rgba(186, 189, 194, 0.75);
-  -moz-box-shadow: 0px 4px 19px 13px rgba(186, 189, 194, 0.75);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 15%), 2px 2px 7px rgba(0, 0, 0, 14%),
+    3px 3px 8px rgba(0, 0, 0, 13%), 4px 4px 9px rgba(0, 0, 0, 12%);
 }
 .volunteer__card:hover {
-  transform: scale(1.05);
+  transform: scale(1.06) !important;
+  -webkit-transform: scale(1.06);
+  -moz-transform: scale(1.06);
   transition: all 0.3s ease-out;
-  box-shadow: 5px 5px 24px 4px #babdc2;
-  -webkit-box-shadow: 5px 5px 24px 4px #babdc2;
-  -moz-box-shadow: 5px 5px 24px 4px #babdc2;
+
+  -webkit-transition: transform 0.4s, 0.4s box-shadow;
+  -moz-transition: transform 0.4s, 0.4s box-shadow;
+  cursor: pointer;
 }
 
 .volunteer__cardimg {
