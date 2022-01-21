@@ -3,7 +3,7 @@
 // Header
 
 let header = $(`
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+<nav class="navbar navbar-expand-lg fixed-top dark-theme" id="navbar">
 <a class="navbar-brand" href="index.html">John Doe </a>
 <div class="hamburger_wrapper navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -24,7 +24,7 @@ let header = $(`
    <li class="nav-item nav-item-hover"><a class="nav-link" href="education.html">Education</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="https://hashnode.com/" target="_blank">Blogs</a></li>
    <li class="nav-item">
-   <input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+   <input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()" checked>
    </li>
    <div class="bike">
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 0 650 400" preserveAspectRatio="xMinYMin meet">
@@ -353,24 +353,24 @@ $(document).ready(function () {
   );
 });
 
-//consistent dark mode for page change
-if (localStorage.getItem("lightMode") == "dark") {
+//consistent light mode for page change
+if (localStorage.getItem("lightMode") == "light") {
   var app = document.getElementsByTagName("HTML")[0];
-  app.setAttribute("light-mode", "dark");
+  app.setAttribute("light-mode", "light");
 
   //to add dark theme to nav bar after its been loaded
   window.addEventListener("load", function () {
     var nav = document.getElementById("navbar");
-    nav.classList.add("dark-theme");
-    document.getElementById("dark_toggler").checked = true;
+    nav.classList.remove("dark-theme");
+    document.getElementById("dark_toggler").checked = false;
   });
 
   var sc = document.getElementsByClassName("socialicon");
   for (var i = 0; i < sc.length; i++) {
-    sc[i].classList.add("dsc");
+    sc[i].classList.remove("dsc");
   }
 } else {
-  localStorage.setItem("lightMode", "light");
+  localStorage.setItem("lightMode", "dark");
 }
 
 function toggle_light_mode() {
