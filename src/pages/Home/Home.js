@@ -3,11 +3,11 @@ import Particles from "react-particles-js";
 import styles from "./Home.module.css";
 import Hand from "../../assets/images/Hand.gif";
 import dp_male from "../../assets/images/dp_male.svg";
-import ReactTypingEffect from "react-typing-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMediumM } from "@fortawesome/free-brands-svg-icons";
 import { faKaggle } from "@fortawesome/free-brands-svg-icons";
 import { Helmet } from "react-helmet";
+import Output from "./AnimateOnChange"
 
 const Home = () => {
   return (
@@ -166,22 +166,8 @@ const Home = () => {
             </div>
           </div>
           <div className={styles['typing']}>
-            <ReactTypingEffect
-              className={styles['typingEffect']}
-              staticText="I'm into"
-              text={[
-                " Designing",
-                " UI/UX",
-                " Cloud Computing",
-                " Web Development",
-                " Open Source",
-                " Mentoring",
-              ]}
-              speed={50}
-              eraseSpeed={50}
-              typingDelay={50}
-              eraseDelay={150}
-            />
+           <span className={styles['AnimateEffect']}>I'm into</span> 
+             <Output/>
           </div>
           <div className={styles['social-icons']}>
             <a
