@@ -390,7 +390,7 @@ html, body {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 17px;
   font-weight: 400;
   background-color: #eee;
@@ -404,16 +404,18 @@ h1 {
 }
 
 header {
-  background: #3F51B5;
-  color: #FFFFFF;
-  padding: 150px 0;
-}
-header p {
-  font-family: "Allura";
-  color: rgba(255, 255, 255, 0.2);
-  margin-bottom: 0;
-  font-size: 60px;
-  margin-top: -30px;
+	background: $primary;
+	color: $text;
+	padding: 150px 0;
+
+	p {
+		font-family: 'Allura';
+		color: rgba(255, 255, 255, .2);
+		margin-bottom: 0;
+		font-size: 60px;
+		margin-top: -30px;
+
+	}
 }
 
 .timeline {
@@ -432,72 +434,62 @@ header p {
   transform: translateX(-50%);
 }
 
+
 .timeline-item {
-  width: 100%;
-  margin-bottom: 70px;
-}
+	width: 100%;
+	margin-bottom: 70px;
 
-.timeline-item:nth-child(even) .timeline-content {
-  float: right;
-  padding: 40px 30px 10px 30px;
-}
- .timeline-item:nth-child(even) .timeline-content .alignment {
-  position:absolute;
-  text-align: left;
-  padding-right: 5px;
-} 
-.timeline-item:nth-child(even) .timeline-content .date {
-  left: auto;
-  right: 0;
-}
-.timeline-item:nth-child(even) .timeline-content .bnt-more {
-  position: absolute;
-  right:0;
-  bottom: 65px;
-}
+	&:nth-child(even) {
 
-.timeline-item:nth-child(even) .timeline-content::after {
-  content: "";
-  position: absolute;
-  border-style: solid;
-  width: 0;
-  height: 0;
-  top: 30px;
-  left: -15px;
-  border-width: 10px 15px 10px 0;
-  border-color: transparent #f5f5f5 transparent transparent;
-}
+		.timeline-content {
+			float: right;
+			padding: 40px 30px 10px 30px;
 
-.timeline-item::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+			.date {
+				right: auto;
+				left: 0;
+			}
 
+			&::after {
+				content: '';
+				position: absolute;
+				border-style: solid;
+				width: 0;
+				height: 0;
+				top: 30px;
+				left: -15px;
+				border-width: 10px 15px 10px 0;
+				border-color: transparent #f5f5f5 transparent transparent;
+			}
+		}
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
 /* This will give the cards to their respective sides */
 .timeline-content {
-  position: relative;
-  width: 45%;
-  padding: 10px 30px;
-  border-radius: 4px;
-  background: #f5f5f5;
-  color: black;
-  box-shadow: 0 20px 25px 15px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+	position: relative;
+	width: 45%;
+	padding: 10px 30px;
+	border-radius: 4px;
+	background: #f5f5f5;
+	box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
 
-.timeline-content::after {
-  content: "";
-  position: absolute;
-  border-style: solid;
-  width: 0;
-  height: 0;
-  top: 30px;
-  right: -15px;
-  border-width: 10px 0 10px 15px;
-  border-color: transparent transparent transparent #f5f5f5;
+	&::after {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		width: 0;
+		height: 0;
+		top: 30px;
+		right: -15px;
+		border-width: 10px 0 10px 15px;
+		border-color: transparent transparent transparent #f5f5f5;
+	}
 }
 
 .timeline-img {
