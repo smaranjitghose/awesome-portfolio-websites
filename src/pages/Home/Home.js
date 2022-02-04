@@ -5,7 +5,6 @@ import Hand from "../../assets/images/Hand.gif";
 import dp_male from "../../assets/images/dp_male.svg";
 import ReactTypingEffect from "react-typing-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMediumM } from "@fortawesome/free-brands-svg-icons";
 import { faKaggle } from "@fortawesome/free-brands-svg-icons";
 import { Helmet } from "react-helmet";
 
@@ -307,14 +306,6 @@ const Home = () => {
                 <rect x="2" y="9" width="4" height="12"></rect>
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
-            </a>
-            <a
-              className={`${styles['socialicon']} ${styles['medium']}`}
-              href="https://medium.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faMediumM} className={styles['icons']} />
             </a>
             <a
               className={`${styles['socialicon']} ${styles['codeforces']}`}
