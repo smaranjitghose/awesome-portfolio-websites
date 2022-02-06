@@ -1,38 +1,45 @@
-# Awesome Portfolio Websites🌐
+![Awesome Portfolio Website](./readme_assets/banner_apw.png)
 
-Are you a researcher, a developer or perhaps an explorer of technology who is looking forward to create an awesome personal brand?
-<p align="center"><img src="https://media.giphy.com/media/dkGhBWE3SyzXW/giphy.gif" width = 40%></p>
+<div align="center">
 
-Well writing blog posts, working on some cool projects/papers/designs are a great way to do so. But there is something that you might be missing out on!
-<p align="center"><img src="https://media.giphy.com/media/3o7TKTDn976rzVgky4/giphy.gif"></p>
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites"><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
+<a href="https://github.com/smaranjitghose/"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?v=103"></a>
 
-So, what else do you need?🤔.
-<p align="center"><img src="https://media.giphy.com/media/3o7527pa7qs9kCG78A/giphy.gif" width = 40%></p>
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/graphs/contributors"><img src="https://img.shields.io/github/contributors/smaranjitghose/awesome-portfolio-websites?color=brightgreen"></a>
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/stargazers"><img src="https://img.shields.io/github/stars/smaranjitghose/awesome-portfolio-websites?color=0059b3"></a>
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/network/members"><img src="https://img.shields.io/github/forks/smaranjitghose/awesome-portfolio-websites?color=yellow"></a>
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/issues"><img src="https://img.shields.io/github/issues/smaranjitghose/awesome-portfolio-websites?color=0059b3"></a>
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/smaranjitghose/awesome-portfolio-websites?color=yellow"></a>
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/pulls"><img src="https://img.shields.io/github/issues-pr/smaranjitghose/awesome-portfolio-websites?color=brightgreen"></a>
+<a href="https://github.com/smaranjitghose/awesome-portfolio-websites/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/smaranjitghose/awesome-portfolio-websites?color=0059b3"></a>
 
-Here is the answer: An awesome personal website of yours that serves a portfolio of your work! 
-<p align="center"><img src="https://media.giphy.com/media/9JrkkDoJuU0FbdbUZU/giphy.gif" width = 40%></p>
+</div>
 
-If you do not have a platform that shows your entire work then you might not be doing justice in potraying your hard work or dope skills. But you must be wondering that making a portfolio website might take time, require some web development knowledge and still you might get something really cool. 
-<p align="center"><img src="https://media.giphy.com/media/521JLj0YGzz6AEWsZ5/giphy.gif" width = 40%></p>
+A community maintained open source project aimed at making personal portfolio for researchers, developers and analysts simple, fast and less cumbersome. We make sure you have a full-fledged website to showcase your work while you can spend time on your learning and innovative endeavours.
 
-Well! Take a chill pill. Don't be intimidated by those thoughts. __Awesome Portfolio Wesbite__ is here for the rescue!
-<p align="center"><img src="https://media.giphy.com/media/T08JhumnpKAI8/giphy.gif" width = 40%></p>
-
-## A sneek peek into what we have here🙈 :
+## A sneak peek into what we have here🙈 :
 
 ### Home Page:
+
 <p align="center"><img src="./readme_assets/Home_Page.gif"></p>
 
 ### Experience Page:
+
 <p align="center"><img src="./readme_assets/Experience_Page.gif"></p>
 
 ### Project Page:
+
 <p align="center"><img src="./readme_assets/Project_Page.gif"></p>
 
 ### Research Page:
+
 <p align="center"><img src="./readme_assets/Research_Page.gif"></p>
 
 ### Education Page:
+
 <p align="center"><img src="./readme_assets/Education_Page.gif"></p>
 
 ## How to use this?🛠
@@ -41,119 +48,36 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Awesome Portf
 
 ## Contribution Guidelines🏗
 
-Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and improve it further
+Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and improve it further.
 
-To start contributing, follow the below guidelines: 
+Click on the image below to set up and contribute to the project or [Click here](https://github.com/smaranjitghose/awesome-portfolio-websites/blob/master/CONTRIBUTING.md)
 
-**1.**  Fork [this](https://github.com/smaranjitghose/awesome-portfolio-websites) repository.
+<a href = "https://github.com/smaranjitghose/awesome-portfolio-websites/blob/master/CONTRIBUTING.md">
+<img src = "./readme_assets/Contribution.png"></a>
 
-**2.**  Clone your forked copy of the project.
+## Project Maintainers👨🏫:
 
-```
-git clone --depth 1 https://github.com/<your_user_name>/awesome-portfolio-websites.git
-```
-<img src="./readme_assets/CloneRepo.png" width="500">
-
-**3.** Navigate to the project directory :file_folder: .
-
-```
-cd awesome-portfolio-websites
-```
-
-**4.** Add a reference(remote) to the original repository.
-
-```
-git remote add upstream https://github.com/smaranjitghose/awesome-portfolio-websites.git 
-```
-
-**5.** Check the remotes for this repository.
-
-```
-git remote -v
-```
-
-**6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
-
-```
-git pull upstream master
-```
-
-**7.** Create a new branch.
-
-```
-git checkout -b <your_branch_name>
-```
-
-**8.** Perform your desired changes to the code base.
-
-<p align="center"><img width=35% src="https://media2.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif?cid=ecf05e47pzi2rpig0vc8pjusra8hiai1b91zgiywvbubu9vu&rid=giphy.gif"></p>
-
-**9.** Track your changes:heavy_check_mark: .
-
-```
-git add . 
-```
-
-**10.** Commit your changes .
-
-```
-git commit -m "Relevant message"
-```
-
-**11.** Push the committed changes in your feature branch to your remote repo.
-
-```
-git push -u origin <your_branch_name>
-```
-
-**12.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
-
-<img src="./readme_assets/ComparePR.png" width=600>
-
-**13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
+| <img src = "https://avatars2.githubusercontent.com/u/46641503?v=4"> | <img src = "https://avatars2.githubusercontent.com/u/40017559?v=4"> | 
+| :----------------------------------------------------------: | :----------------------------------------------------------: | 
+|     [Smaranjit Ghose](https://github.com/smaranjitghose) |    [Anush Bhatia](https://github.com/anushbhatia)                       
 
 
-**14.** Click on `Create Pull Request`.
+## Our valuable Contributors👩‍💻👨‍💻 :
 
-<img src="./readme_assets/CreatePR.png" width=600>
-
-
-**15** Voila :exclamation: You have made a PR to the awesome-developer-portfolio project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days
-
-<p align="center"><img src="https://media.giphy.com/media/5mCQOcUfywmyI/giphy.gif" width=35%></p>
-
-
-## The geeks🤓 behind this initiative:
-
-#### Our hard-working Project Maintainers👨‍🏫:
-
-<p align="center">
-<img width=20% src="https://avatars2.githubusercontent.com/u/46641503?v=4">&ensp;&ensp;&ensp;
-<img width=20% src="https://avatars2.githubusercontent.com/u/40017559?v=4">
-</p>
-
-<a href="https://github.com/smaranjitghose">
-<h5 align="center"><b>Smaranjit Ghose</b></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-<a href="https://github.com/anushbhatia"><b>Anush Bhatia</b></h5></a>
-
-#### Our valuable Contributors👩‍💻👨‍💻 :
 <a href="https://github.com/smaranjitghose/awesome-portfolio-websites/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=smaranjitghose/awesome-portfolio-websites" />
 </a>
 
-## Open Source Programs we have been associated with: 
+## Open Source Programs we have been a part of:
 
 <p align="center">
-<a href="https://scodein.tech/"><img src="./readme_assets/sci.png" width= "25%"/></a>
-<a href="https://hakincodes.tech/"><img src="./readme_assets/ch.png" width= "25%"/></a>
-<a href="https://njackwinterofcode.github.io/"><img src="./readme_assets/nwoc.png" width= "25%" /></a>
-<a href="https://devscript.tech/woc/"><img src="./readme_assets/dwoc.png" width="25%"></a>
-<a href="https://mexili.github.io/winter_of_code/#/"><img src="./readme_assets/mwoc.png" width="25%"></a>
-<a href="https://crosswoc.ieeedtu.in/"><img src="./readme_assets/crosswoc.png" width="25%"></a>
+<a href="https://scodein.tech/"><img src="./readme_assets/open_source_programs/sci.png" width= "25%"/></a>
+<a href="https://hakincodes.tech/"><img src="./readme_assets/open_source_programs/ch.png" width= "25%"/></a>
+<a href="https://njackwinterofcode.github.io/"><img src="./readme_assets/open_source_programs/nwoc.png" width= "25%" /></a>
+<a href="https://devscript.tech/woc/"><img src="./readme_assets/open_source_programs/dwoc.png" width="25%"></a>
+<a href="https://mexili.github.io/winter_of_code/#/"><img src="./readme_assets/open_source_programs/mwoc.png" width="25%"></a>
+<a href="https://crosswoc.ieeedtu.in/"><img src="./readme_assets/open_source_programs/crosswoc.png" width="25%"></a>
+<a href="https://letsgrowmore.in/soc/"><img src="./readme_assets/open_source_programs/lgmsoc.png" width="25%"></a>
+<a href="https://devincept.codes/"><img src="./readme_assets/open_source_programs/devincept.gif" width="25%"></a>
+<a href="https://ghc.anitab.org/programs-and-awards/open-source-day/"><img src="./readme_assets/open_source_programs/OSD.jpg" width="25%"></a>
 </p>
-
-## Code of Conduct
-<p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
-
-## License 
-<p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>

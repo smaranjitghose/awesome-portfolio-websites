@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+body {
+  background: linear-gradient(to right, #02aab0, #00cdac);
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+svg{
+  width: 50rem;
+  height: auto;
+}
+#handboy {
+   animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 98% 98%;
+    transform-box: fill-box;   
+}
+#girllight {
+   animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 0% 97%;
+    transform-box: fill-box;
+}
+#hairgirl {
+    animation: swinghair ease-in-out 1.3s infinite alternate;
+    transform-origin: 60% 0%;
+    transform-box: fill-box;
+}
+#zero {
+  transform-origin:bottom;
+  transform-box:fill-box;
+}
+@keyframes swing {
+    0% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+}
+@keyframes swinghair {
+    0% { transform: rotate(6deg); }
+    100% { transform: rotate(-6deg); }
+}
+
+
+/* go back btn */
+.backbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  font-family: 'Nunito', sans-serif;
+  line-height: 0;
+  padding: .8rem 1rem;
+  border-radius: 8em;
+  transition: 0.5s;
+  margin-top: 2rem;
+  color: #fff;
+  background: #272727;
+  box-shadow: 0px 5px 10px rgba(109, 39, 238, 0.6);
+}
+.btn span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+.btn i {
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.btn:hover{
+  color: rgb(255, 230, 0);
+}
+.btn:hover i {
+  transform: translateX(-4px);
+}
+
+
+/* responsiveness */
+@media (max-width:550px){
+  svg{
+    width: 24rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
+  .btn {
+    padding: .8rem .8rem;
+    border-radius: 6em;
+    margin-top: 1.5rem;
+  }
+  .btn i {
+    margin-left: 0.2rem;
+    font-size: 1rem;
+  }
+  .btn span {
+    font-size: 1rem;
+  }
+}

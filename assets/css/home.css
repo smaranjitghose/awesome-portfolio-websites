@@ -1,0 +1,609 @@
+/*Declaration of CSS variables for light/dark theme*/
+
+html[data-theme="light"] {
+  --col-icon: black;
+  --col-bd-radius:rgb(2, 2, 2);
+  --col-box-shadow:#000000 2px 2px 4px, 
+  #4D4D4D -2px -2px 4px;
+ --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
+ inset #4D4D4D -2px -2px 4px;
+  --col-bd-icon:transparent;
+  --bg-icon: #fff;
+   --bg1-color: #fff;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-kaggle: #41aff3;  
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail:rgb(209, 82, 82);
+  --col-icon-google-scholar:#3cba54;
+  --col-icon-codeforces:rgb(19, 145, 184);
+  --col-icon-leetcode:rgb(255, 181, 62);
+  --shadow-col: rgba(0, 0, 0, 0.3);
+
+}
+
+html[data-theme="dark"] {
+  --col-icon:white;
+  --col-bd-radius:black;
+  --col-bd-icon:transparent;
+  --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7) , -5px -5px 10px rgba(255,255,255,0.1);
+  --col-box-shadow-hover:inset rgba(255, 255, 255, 1) 2px 2px 4px, 
+ inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail:rgb(209, 82, 82);
+  --col-icon-google-scholar:#3cba54;
+  --col-icon-codeforces:rgb(19, 145, 184);
+  --col-icon-leetcode:rgb(255, 181, 62);
+  --col-white: #fff;
+}
+/* Particle effect*/
+body{
+  font-family: "Poppins";
+}
+#home,
+#particles-js {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.section {
+  background-color: rgb(63, 25, 170);
+  justify-content: center;
+  align-items: center;
+}
+
+.text .header {
+  font-weight: bold;
+}
+
+.text {
+  font-size: 25px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.animated-text span {
+  display: none;
+  line-height: 1;
+}
+
+.animated-text span.active {
+  display: inline;
+}
+
+.animated-text:after {
+  content: ".";
+  display: inline;
+  width: 6px;
+  text-indent: 0;
+  /* overflow: hidden; */
+  background: var(--col-icon);
+  animation: blink 0.3s infinite alternate;
+}
+.datawords{
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*Social icons*/
+
+:root {
+  --link-size: 64px;
+  --trans-props: all 0.2s ease;
+  --link-size-footer-b: 40px;
+  --link-size-footer-s: 30px;
+}
+
+a.socialicon {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.socialicon{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  background-color: #fff;
+  margin: 8px;
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px var(--shadow-col);
+  text-decoration: none;
+  transition: var(--trans-props);
+}
+.socialicon i {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+
+.kaggle i {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+
+.socialicon.kaggle{
+  color:var(--col-icon-kaggle);
+}
+
+.socialicon:after {
+  content: "";
+  width: var(--link-size);
+  height: var(--link-size);
+  position: absolute;
+  transform: translate(0, var(--link-size));
+  border-radius: 50%;
+  transition: var(--trans-props);
+  
+}
+
+.socialicon.kaggle:after {
+  background-color: #41aff3;
+  box-shadow: var(--kaggle);
+}
+
+
+ /*
+---------------------------
+   LINKEDIN MICROANIMATION
+---------------------------
+*/
+
+ .linkedin-icon{
+  margin-left: 15px;
+}
+.linkedin:hover .linkedin-icon>rect{
+  animation: rect-up 0.3s linear infinite;
+}
+
+
+@keyframes rect-up {
+  50% {
+      y:10px;
+      height:11px;
+   }
+  0%{
+      y:13px;
+      height:8px;  
+      }
+  
+}
+
+.linkedin:hover .linkedin-icon> circle{
+  animation: bounce 0.4s linear infinite;
+}
+
+@keyframes bounce {
+  75% {
+      cy: 8px;
+   }
+   50%{
+      cy: 4px
+   }
+  0%{
+      cy:4px
+      }
+  
+}
+
+/*
+---------------------------
+   INSTAGRAM MICROANIMATION
+---------------------------
+*/
+
+.instagram-icon {
+  width: 90px !important;
+ 
+}
+.st0 {
+  fill:none;
+  stroke:#EF4649;
+  stroke-width:7;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+}
+
+.instagram:hover #littleCircle {
+  stroke-dasharray:150;
+}
+
+.instagram #shutter{
+  display:none;
+}
+.instagram:hover #shutter{
+  display: block;
+  animation: shutter 1s linear infinite;
+}
+.instagram:hover #lens{
+  fill:#EF4649;
+  animation: lens 1.5s linear infinite;
+
+}
+
+@keyframes shutter {
+  0%, 50% {
+          stroke-dashoffset: 150;
+          
+      }
+  75% {
+          fill:#EF4649;
+          stroke-dashoffset: 0;
+          stroke-width:11;
+      }
+}
+
+@keyframes lens {
+  0%, 75% {
+          opacity: 0;
+      }
+  100% {
+          opacity: 1;
+      }
+}
+
+
+/*
+---------------------------
+   TWITTER MICROANIMATION
+---------------------------
+*/
+.twitter-icon{
+  width: 40px;
+  margin-left: 12px;
+}
+
+.twitter:hover #wing1{
+      transform-origin:center;
+      animation: flap 0.4s ease-out infinite alternate;
+   }	
+   
+.twitter:hover #wing2{
+    transform-origin:center;
+    animation: flap 0.4s ease-in infinite alternate;
+ }		
+
+@keyframes flap{
+     50%{
+      transform:scaleX(-1) rotate(-45deg) translate(-40px,-40px);
+     }
+   }
+
+/*
+--------------------------
+   GITHUB MICROANIMATION
+--------------------------
+*/
+.github-icon {
+  width: 40px;
+  margin-left: 12px;
+  margin-top: 5px;
+  fill: #000000;
+}
+
+.github:hover #arm {
+  transform-origin: bottom right;
+  animation: moveArm 1s infinite alternate;
+}
+
+@keyframes moveArm {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+ }
+
+ /*
+  --------------------------
+     DRIBBBLE MICROANIMATION
+  --------------------------
+  */
+  
+  .dribbble-icon{
+    width: 30px;
+    height: 30px;
+    margin-left:16px;
+    margin-top: 20px;
+  }
+  
+  .dribbble:hover .dribbble-icon{ 
+      animation: dribbble-bounce .4s ease infinite;
+      transform: rotate(360deg);
+      transition: all 9s ease-in-out 0s;
+  }
+  
+  @keyframes dribbble-bounce {
+    from, to {
+      margin-top: 20px;
+    }
+    50% { 
+      margin-top: 15px; 
+    }
+    
+    75%{
+      margin-top: 15px;
+    }
+  }
+  
+  /*
+  --------------------------
+     CODEFORCES MICROANIMATION
+  --------------------------
+  */
+  
+  .codeforces-icon{
+    margin-right: 6px;
+    margin-top: 6px;
+  }
+  
+  .codeforces-icon .red {
+    height:4px;
+    y:2.5px;
+    
+  }
+  .codeforces:hover .red{
+    animation: red-animation 2.5s infinite alternate;
+  }
+  
+  
+  .codeforces-icon .yellow{
+    height:5px;
+    y:1.5px;
+    
+  }
+  
+  .codeforces:hover .yellow{
+    animation: yellow-animation 2s infinite alternate-reverse;
+  }
+  
+  .codeforces:hover .blue{
+    animation: blue-animation 2s  infinite alternate;
+  }
+  
+  @keyframes red-animation{
+    0%{
+       y:0px
+    }
+    0%{
+        height:6px;
+        y:0.5px;
+    }
+  }
+  
+  @keyframes yellow-animation{
+    0%{
+        y:0px;
+    }
+    0%{
+        height:6px;
+        y:0.5px;
+    }
+  }
+  
+  @keyframes blue-animation{
+    0%{
+        y:0px;
+    }
+    0%{
+        height:3px;
+        y:3.5;
+    }
+  }
+  
+  
+
+/*
+----------------------------
+   SOCIAL MEDIA ANIMATIONS
+----------------------------
+*/
+
+.socialicon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+}
+.socialicon:hover:after {
+  transform: translate(0) scale(1.2);
+}
+.socialicon:hover i {
+  color: #fff;
+}
+a:hover {
+  color: transparent;
+}
+
+
+@media only screen and (max-width: 450px) {
+  .text {
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width:2381px){
+  .text{
+    margin-top:2rem;
+  }
+}
+
+@media only screen and (max-width:1340px){
+  .text{
+    margin-top:4rem;
+  }
+}
+
+@media only screen and (max-width:780px){
+  .text{
+    margin-top:3rem;
+  }
+}
+
+@media only screen and (max-width:700px){
+  .text{
+    margin-top:6rem;
+  }
+}
+
+/* @media only screen and (max-width:580px){
+  .text{
+    margin-top:4rem;
+  }
+} */
+
+@media only screen and (max-width:350px){
+  .text{
+    margin-top:6rem;
+  }
+}
+
+@media only screen and (max-width:270px){
+  .text{
+    margin-top:12rem;
+  }
+}
+
+/* responsiveness */
+
+
+
+
+@media (min-width:410px) and (max-width:411px){
+  .text{
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-height:731px){
+  .text{
+    margin-top: 2rem;
+  }
+}
+
+@media (min-height:822px) and (max-height:823px){
+  .text{
+    margin-top: 10rem;
+  }
+}
+
+@media only screen and (min-height:768px){
+  .text{
+    margin-top: 0rem;
+  }
+}
+@media (max-width:280px)and (max-height:655px){
+  .text{
+    margin-top: 6rem;
+  }
+ 
+
+}
+
+@media (min-width:1020px)and (max-width:1024px){
+  .text{
+    margin-top: 4rem;
+    font-size: xx-large;
+  }
+}
+
+@media (max-width:320px)and (max-height:440px){
+  .text{
+    margin-top: 4rem;
+  }
+  
+  img{
+    height:100px;
+    width:150px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .text{
+    font-size:20px;
+  }
+  .socialicon{
+    width:56px;
+    height:56px;
+  }
+  
+}
+
+@media (max-width:380px)and (max-height:440px){
+  .text{
+    margin-top: 4rem;
+  }
+  img{
+    height:100px;
+    width:150px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .text{
+    font-size:20px;
+  }
+  .socialicon{
+    width:56px;
+    height:56px;
+  }
+  .tag{
+    width:78px;
+  }
+
+}
+@media (max-width:430px)and (max-height:440px){
+  .text{
+    font-size:20px;
+    margin-top: 4rem;
+  }
+  img{
+    height:100px;
+    width:150px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .socialicon{
+    width:56px;
+    height:56px;
+  }
+
+}
+@media (min-width:520px)and (max-width:521px){
+  .text{
+    margin-top: 2rem;
+  }
+}
+
+@media (min-height:810px)and (max-height:812px){
+  .text{
+    margin-top: 1rem;
+  }
+}
+
+@media (min-height:822px)and (max-height:823px){
+  .text{
+    margin-top: 1rem;
+  }
+}
