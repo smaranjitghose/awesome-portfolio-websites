@@ -1,5 +1,5 @@
 import React from 'react';
-import AnimateOnChange from 'react-animate-on-change'
+import AnimateOnChange from 'react-animate-on-change';
 const { useState, useEffect } = React
 
 
@@ -29,9 +29,9 @@ const Output = () => {
     })
 
     return (
-        <div>
-            <h1><AnimateOnChange>{words[current]}</AnimateOnChange></h1>
-        </div>
+        <span> 
+            <h4 style={{marginTop:"35px"}}>I'm into<AnimateOnChange>{words[current]}</AnimateOnChange></h4>
+        </span>
     )
 }
 

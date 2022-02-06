@@ -166,8 +166,7 @@ const Home = () => {
             </div>
           </div>
           <div className={styles['typing']}>
-           <span className={styles['AnimateEffect']}>I'm into</span> 
-             <Output/>
+           <span className={styles['AnimateEffect']}><Output/></span> 
           </div>
           <div className={styles['social-icons']}>
             <a
