@@ -43,7 +43,7 @@ html[light-mode="dark"] {
   --shadow-col2: rgba(34, 34, 34, 0.459);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -329,7 +329,6 @@ body {
     height: 260px;
     border-radius: 10px;
   }
-
 }
 
 @media only screen and (max-width: 365px) and (max-height: 645px) {
@@ -764,28 +763,28 @@ a:hover {
   transform-origin: 1009.149px 711.625px;
 }
 
-*{
+* {
   max-width: 100% !important;
 }
 
-.instagram-icon-footer{
+.instagram-icon-footer {
   padding-right: 3px !important;
 }
 
 @media screen and (max-width: 350px) {
-  .row{
+  .row {
     margin-left: 0;
   }
-  .researchMainWrapper{
+  .researchMainWrapper {
     margin-left: -20px;
   }
 }
 
 @media screen and (max-width: 300px) {
-  .row{
+  .row {
     margin-left: 0;
   }
-  .researchMainWrapper{
+  .researchMainWrapper {
     margin-left: -60px;
     padding: 0;
   }

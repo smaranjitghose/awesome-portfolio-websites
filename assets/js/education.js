@@ -47,7 +47,8 @@ const moocscards = [
   {
     title: "Intro to React Native",
     cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.coursera.org/lecture/react-native/introduction-to-react-native-Eax0D",
+    moocLink:
+      "https://www.coursera.org/lecture/react-native/introduction-to-react-native-Eax0D",
   },
   {
     title: "NodeJS, Express and MongoDB",
@@ -62,57 +63,56 @@ const moocscards = [
   {
     title: "Data Structures & Algorithms",
     cardImage: "assets/images/education-page/udacity.svg",
-    moocLink: "https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256",
+    moocLink:
+      "https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256",
   },
 ];
 
 const experience = [
   {
-    img: "assets/images/education-page/c1.png"
+    img: "assets/images/education-page/c1.png",
   },
   {
-    img: "assets/images/education-page/c2.jpg"
+    img: "assets/images/education-page/c2.jpg",
   },
   {
-    img: "assets/images/education-page/c3.png"
+    img: "assets/images/education-page/c3.png",
   },
   {
-    img: "assets/images/education-page/c4.png"
+    img: "assets/images/education-page/c4.png",
   },
   {
-    img: "assets/images/education-page/c5.jpg"
+    img: "assets/images/education-page/c5.jpg",
   },
 ];
 
 let currentItem = 0;
 
-const img = document.getElementById('image');
+const img = document.getElementById("image");
 
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
+const prevBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector("#nextBtn");
 
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener("DOMContentLoaded", function () {
   showExperience();
-})
+});
 
 function showExperience() {
   setInterval(function () {
     if (currentItem === experience.length) {
       currentItem = 0;
     }
-      const item = experience[currentItem];
-      img.src = item.img;
-      currentItem++;
-
-    },
-    3000);
+    const item = experience[currentItem];
+    img.src = item.img;
+    currentItem++;
+  }, 3000);
 }
 
 const showCards = () => {
   let output = "";
   moocscards.forEach(
     ({ title, cardImage, moocLink }) =>
-    (output += `        
+      (output += `        
         <div class="col-6 col-md-3 col-sm-4 column" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600" >  
             <div class="card mb-3 mx-auto">
                <div class="content">
@@ -132,7 +132,6 @@ const showCards = () => {
   moocs.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards);
-
 
 /* Badges*/
 
@@ -159,7 +158,7 @@ const showCards1 = () => {
   let output = "";
   badgesection.forEach(
     ({ title, image, description }) =>
-    (output += `       
+      (output += `       
       <div class="col-lg-4 col-md-6 p-2" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600"> 
         <img class="img-fluid d-block mb-3 mx-auto hvr-grow" src="${image}" alt="Card image cap" width="200">
           <div class="text-center font-weight-bolder" style="font-size: 1.3em;">${title}</div>
@@ -170,57 +169,51 @@ const showCards1 = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards1);
 
-
 /* Timeline Section*/
 
-$(function(){
-
+$(function () {
   window.sr = ScrollReveal();
 
   if ($(window).width() < 768) {
-
-    if ($('.timeline-content').hasClass('js--fadeInLeft')) {
-      $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+    if ($(".timeline-content").hasClass("js--fadeInLeft")) {
+      $(".timeline-content")
+        .removeClass("js--fadeInLeft")
+        .addClass("js--fadeInRight");
     }
 
-    sr.reveal('.js--fadeInRight', {
-      origin: 'right',
-      distance: '300px',
-      easing: 'ease-in-out',
+    sr.reveal(".js--fadeInRight", {
+      origin: "right",
+      distance: "300px",
+      easing: "ease-in-out",
       duration: 800,
     });
-
   } else {
-    
-    sr.reveal('.js--fadeInLeft', {
-      origin: 'left',
-      distance: '300px',
-      easing: 'ease-in-out',
+    sr.reveal(".js--fadeInLeft", {
+      origin: "left",
+      distance: "300px",
+      easing: "ease-in-out",
       duration: 800,
     });
 
-    sr.reveal('.js--fadeInRight', {
-      origin: 'right',
-      distance: '300px',
-      easing: 'ease-in-out',
+    sr.reveal(".js--fadeInRight", {
+      origin: "right",
+      distance: "300px",
+      easing: "ease-in-out",
       duration: 800,
     });
-
   }
-  
-  sr.reveal('.js--fadeInLeft', {
-      origin: 'left',
-      distance: '300px',
-      easing: 'ease-in-out',
-      duration: 800,
-    });
 
-    sr.reveal('.js--fadeInRight', {
-      origin: 'right',
-      distance: '300px',
-      easing: 'ease-in-out',
-      duration: 800,
-    });
+  sr.reveal(".js--fadeInLeft", {
+    origin: "left",
+    distance: "300px",
+    easing: "ease-in-out",
+    duration: 800,
+  });
 
-
+  sr.reveal(".js--fadeInRight", {
+    origin: "right",
+    distance: "300px",
+    easing: "ease-in-out",
+    duration: 800,
+  });
 });
