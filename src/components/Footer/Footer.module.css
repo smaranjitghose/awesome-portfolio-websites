@@ -4,6 +4,8 @@
   --black: #000;
   --white: #fff;
   --grey: rgb(58, 58, 58);
+  --footer-icon-bg: #2b2a2a;
+  --footer-icon-shadow: rgb(30 20 30/ 20%);
 }
 
 /*Footer Base*/
@@ -190,8 +192,8 @@ form {
 .rounded-social-buttons .social-button.linkedin,
 .rounded-social-buttons .social-button.instagram,
 .rounded-social-buttons .social-button.github {
-  background: #2b2a2A;
-  box-shadow: 10px 10px 5px rgb(30 20 30/ 20%);
+  background: var(--footer-icon-bg);
+  box-shadow: 10px 10px 5px var(--footer-icon-shadow);
   margin-right: 8px;
 }
 
