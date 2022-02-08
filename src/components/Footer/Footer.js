@@ -801,7 +801,7 @@ const Footer = () => {
             </a>
 
             <a
-              className={`${styles['social-button']} ${styles.linkedin}`}
+              className={`${styles['social-button']} ${styles.linkedin} linkedin`}
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noreferrer"
