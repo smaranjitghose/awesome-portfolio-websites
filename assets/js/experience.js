@@ -2,7 +2,6 @@ AOS.init();
 
 //  Work experience cards
 
-
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
@@ -24,7 +23,7 @@ const exp = [
     cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
     place: "IIT, Bombay",
     time: "(Dec, 19 - Jan, 20)",
-    desp:"<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
+    desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
   },
 ];
 
@@ -57,7 +56,6 @@ const showCards2 = () => {
   experiencecards.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards2);
-
 
 // Volunteership Cards
 
@@ -108,9 +106,7 @@ const showCards = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards);
 
-
 // Hackathon Section
-
 
 const hackathonsection = document.querySelector(".hackathon-section");
 const mentor = [
@@ -203,15 +199,13 @@ const mentor = [
     subtitle: "Judge",
     image: "assets/images/experience-page/nhacks.png",
     desp: "NHacks VI was a hackathon that aimed to encourage students everywhere to develop skills in computer science by creating tangible products that they're proud of. It initially started as Michigan's largest high school hackathon.",
-  }
-  
-
+  },
 ];
 
 const showCards3 = () => {
   let output = "";
   mentor.forEach(
-    ({ title, image, subtitle, desp}) =>
+    ({ title, image, subtitle, desp }) =>
       (output += `  
       <div class="blog-slider__item swiper-slide">
         <div class="blog-slider__img">

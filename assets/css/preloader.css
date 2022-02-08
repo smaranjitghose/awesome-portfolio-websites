@@ -5,7 +5,6 @@
 
 :root {
     --atom-size: 400px;
-    /* --atom-color-hex: #0d00ff; */
     --atom-color-hex: #0d00ff;
     --atom-color-rgb: 217,217,217;
     --nucleus-size: calc(var(--atom-size) / 5);
@@ -155,7 +154,6 @@
     display: block;
     width: var(--electron-size);
     height: var(--electron-size);
-    /* background: #E01E5A; */
     border-radius: 50%;
     margin-top: calc(var(--electron-size) / -2);
     position: absolute;

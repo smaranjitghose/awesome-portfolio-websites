@@ -168,43 +168,21 @@ body {
 .sem_temp_slide:nth-child(1) {
   animation-delay: 0s;
 }
-
-/* .sem_temp_slide:nth-child(1) .sem_temp_slideBg {
-  background-image: url("../images/sem/sem1/chemistrymentee.jpg");
-} */
-
 .sem_temp_slide:nth-child(2) {
   animation-delay: 5s;
 }
-/* 
-.sem_temp_slide:nth-child(2) .sem_temp_slideBg {
-  background-image: url("../images/sem/sem1/uxresearch.jpg");
-} */
-
 .sem_temp_slide:nth-child(3) {
   animation-delay: 10s;
 
 }
-/* .sem_temp_slide:nth-child(3) .sem_temp_slideBg {
-  background-image: url("../images/sem/sem1/teamcamping.jpg");
-} */
 
 .sem_temp_slide:nth-child(4) {
   animation-delay: 15s;
 }
 
-/* .sem_temp_slide:nth-child(4) .sem_temp_slideBg {
-  background-image: url("../images/sem/sem1/groomingspeech.jpg");
-} */
-
 .sem_temp_slide:nth-child(5) {
   animation-delay: 20s;
 }
-
-/* .sem_temp_slide:nth-child(5) .sem_temp_slideBg {
-  background-image: url("../images/sem/sem1/graduation.jpg");
-} */
-
 .sem_temp_slide:nth-child(5) {
   animation-delay: 25s;
 }
