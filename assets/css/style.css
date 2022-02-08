@@ -964,3 +964,66 @@ form {
   -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
+/*light theme for footer*/
+html[light-mode="light"] .footer{
+  background-color: #fff !important;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+html[light-mode="light"] .form-header .display{
+  color: #007bff;
+}
+html[light-mode="light"] .tag{
+  color: #007bff;
+}
+html[light-mode="light"] .quotes svg path{
+  fill:#007bff;
+}
+html[light-mode="light"] #freepik_stories-smiley-face.animated g rect{
+  fill: #838181 !important;
+  transition: fill .25s linear;
+}
+html[light-mode="light"]  path#el92bi8cxpvav ,
+html[light-mode="light"]  path#elpbqyu6v2yks ,
+html[light-mode="light"]  #ellpbg5sgx4tl circle ,
+html[light-mode="light"]  #elf9faotbb9hs circle ,
+html[light-mode="light"]  #els31dqseik8 circle ,
+html[light-mode="light"]  #eltc10qpfw589 circle ,
+html[light-mode="light"]  #freepik--path--inject-31.animable {
+  fill: #c7c7c7 !important;
+  transition: fill .25s linear;
+}
+html[light-mode="light"] .social-button{
+  background-color: #ecedee !important;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.2) !important;
+}
+/* html[light-mode="light"] .form-style-6 input[type="text"]:hover,
+html[light-mode="light"] .form-style-6 input[type="date"]:hover,
+html[light-mode="light"] .form-style-6 input[type="datetime"]:hover,
+html[light-mode="light"] .form-style-6 input[type="email"]:hover,
+html[light-mode="light"] .form-style-6 input[type="number"]:hover,
+html[light-mode="light"] .form-style-6 input[type="search"]:hover,
+html[light-mode="light"] .form-style-6 input[type="time"]:hover,
+html[light-mode="light"] .form-style-6 input[type="url"]:hover,
+html[light-mode="light"] .form-style-6 textarea:hover,
+html[light-mode="light"] .form-style-6 select:hover{
+  transform: scale(1.1);
+} */
+
+/* html[light-mode="light"] .form-style-6 input[type="text"]:focus,
+html[light-mode="light"] .form-style-6 input[type="date"]:focus,
+html[light-mode="light"] .form-style-6 input[type="datetime"]:focus,
+html[light-mode="light"] .form-style-6 input[type="email"]:focus,
+html[light-mode="light"] .form-style-6 input[type="number"]:focus,
+html[light-mode="light"] .form-style-6 input[type="search"]:focus,
+html[light-mode="light"] .form-style-6 input[type="time"]:focus,
+html[light-mode="light"] .form-style-6 input[type="url"]:focus,
+html[light-mode="light"] .form-style-6 textarea:focus,
+html[light-mode="light"] .form-style-6 select:focus {
+  border-radius: 5px !important;
+  box-shadow: 3px 3px 6px #bb86fc;
+} */
+/* html[light-mode="light"] .form-style-6 input[type="button"]:hover ,
+html[light-mode="light"] .form-style-6 input[type="submit"]:hover{    
+  box-shadow: 2px 2px 6px rgba(31, 30, 30, 0.534);
+  transition: all .2s;
+} */
