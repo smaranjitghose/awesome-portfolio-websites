@@ -105,8 +105,6 @@ body {
   display: flex;
   transition: all 1s ease;
   border-radius: 5px;
-  /*box-shadow: 1px 1px 6px rgb(0 0 0 / 15%), 2px 2px 7px rgb(0 0 0 / 14%),
-    3px 3px 8px rgb(0 0 0 / 13%), 4px 4px 9px rgb(0 0 0 / 12%);*/
 }
 
 #referenceDetailsTable tr:hover {
@@ -598,21 +596,21 @@ a:hover {
 }
 
 @media screen and (min-width: 540px) and (max-width: 1000px) {
-  *{
+  * {
     max-width: 100% !important;
   }
 
-  .referenceTitleName{
+  .referenceTitleName {
     padding: 5%;
   }
-  .imgResponsive  .imgRes {
+  .imgResponsive .imgRes {
     width: 260px !important;
     border-radius: 10px;
   }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1000px){
-  *{
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  * {
     max-width: 100% !important;
   }
 
@@ -625,20 +623,17 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  *{
+  * {
     max-width: 100% !important;
   }
 
-  .referenceTitleName{
+  .referenceTitleName {
     padding: 0%;
-  
   }
 }
 
-@media screen and (max-width: 340px)
-{
-  .imgResponsive  .imgRes {
+@media screen and (max-width: 340px) {
+  .imgResponsive .imgRes {
     height: 160px !important;
   }
 }
-

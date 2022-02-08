@@ -324,7 +324,6 @@ $(function () {
 // Navbar current page highlight
 
 let loader = document.querySelector(".loader-container");
-
 window.addEventListener("load", vanish);
 
 function vanish() {
@@ -337,9 +336,7 @@ $(function () {
     }
   });
 });
-
 //function to remove underline on hover
-
 $(document).ready(function () {
   $("a.nav-link").hover(
     function () {
@@ -394,11 +391,9 @@ function toggle_light_mode() {
       sc[i].classList.add("dsc");
     }
   }
-
   // updating the swiper bullets
   updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
 }
-
 // function to update swiper bullets
 function updateColorOfSwiperBullets(lightMode) {
   document.querySelectorAll(".swiper-pagination-bullet").forEach((bullet) => {
@@ -409,7 +404,6 @@ function updateColorOfSwiperBullets(lightMode) {
     }
   });
 }
-
 window.addEventListener("storage", function () {
   if (localStorage.lightMode == "dark") {
     app.setAttribute("light-mode", "dark");
@@ -417,7 +411,6 @@ window.addEventListener("storage", function () {
     app.setAttribute("light-mode", "light");
   }
 });
-
 // Function to remove scroll bar during preload
 $(window).on("load", function () {
   setTimeout(function () {

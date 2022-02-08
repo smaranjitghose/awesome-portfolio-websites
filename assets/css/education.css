@@ -7,8 +7,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-/*   max-width:120%; */
-/*   height:auto; */
 }
 
 html[light-mode="light"] {
@@ -33,7 +31,6 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
 
 .education_head {
   font-weight: bold;
@@ -116,7 +113,6 @@ h4 {
   height: 90%;
   width: 90%;
 }
-
 .s2 .card,
 .s2 img {
   border-radius: 3rem;
@@ -125,30 +121,24 @@ h4 {
 .card .row {
   color: black;
 }
-
 .s2 h4,
 p {
   color: var(--head-col);
 }
-
 @media only screen and (max-width: 767px) {
   .edSection {
     margin-top: 400px;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .edSection {
     margin-top: 50px; /*changed the margin-to from 250px to 50px to eliminate space */
   }
 }
-
 /* Card Hover Effect */
-
 .mooc-title {
   color: var(--head-col);
 }
-
 .content {
   position: relative;
   width: 100%;
@@ -157,7 +147,6 @@ p {
   overflow: hidden;
   height: 75%;
 }
-
 .content .content-overlay {
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -172,11 +161,9 @@ p {
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-
 .content:hover .content-overlay {
   opacity: 0.8;
 }
-
 .content-details {
   position: absolute;
   text-align: center;
@@ -191,18 +178,15 @@ p {
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-
 .content:hover .content-details {
   left: 50%;
   top: 50%;
   opacity: 1;
   transition: 0.3s ease-in;
 }
-
 .fadeIn-bottom {
   top: 80%;
 }
-
 #mooc .card {
   border-radius: 5px;
   background: var(--tint-col);
@@ -214,19 +198,15 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
-
 #mooc .card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
-
 #mooc .card-body {
   background-color: var(--bg1-color);
   padding: 1px;
 }
-
 /* SVG animation */
-
 #Girl {
   animation: swing ease-in-out 1s infinite alternate;
   transform-origin: center -20px;
@@ -234,7 +214,6 @@ p {
   float: left;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
-
 @keyframes swing {
   0% {
     transform: rotate(9deg);
@@ -243,28 +222,24 @@ p {
     transform: rotate(-9deg);
   }
 }
-
 #Vector_38 {
   animation: swing ease-in-out 1s infinite alternate;
   transform-origin: center 0px;
   transform-box: fill-box;
   float: left;
 }
-
 #Vector_39 {
   animation: swing ease-in-out 1s infinite alternate;
   transform-origin: center 0px;
   transform-box: fill-box;
   float: left;
 }
-
 #Vector_40 {
   animation: swing ease-in-out 1s infinite alternate;
   transform-origin: center -20px;
   transform-box: fill-box;
   float: left;
 }
-
 #leaf12 {
   -webkit-animation: shake-bottom 9s cubic-bezier(0.455, 0.03, 0.515, 0.955)
     infinite both;
@@ -272,7 +247,6 @@ p {
     both;
   transform-box: fill-box;
 }
-
 #leaf13 {
   -webkit-animation: shake-bottom 8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
     infinite both;
@@ -280,7 +254,6 @@ p {
     both;
   transform-box: fill-box;
 }
-
 #lef14 {
   -webkit-animation: shake-bottom 7.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
     infinite both;
@@ -288,7 +261,6 @@ p {
     both;
   transform-box: fill-box;
 }
-
 #leaf15 {
   -webkit-animation: shake-bottom 7s cubic-bezier(0.455, 0.03, 0.515, 0.955)
     infinite both;
@@ -296,7 +268,6 @@ p {
     both;
   transform-box: fill-box;
 }
-
 #leaf16 {
   -webkit-animation: shake-bottom 6.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
     infinite both;
@@ -304,13 +275,11 @@ p {
     both;
   transform-box: fill-box;
 }
-
 #leaf17 {
   animation: shake-bottom 6s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
     both;
   transform-box: fill-box;
 }
-
 @-webkit-keyframes shake-bottom {
   0%,
   100% {
@@ -344,7 +313,6 @@ p {
     transform: rotate(2deg);
   }
 }
-
 @keyframes shake-bottom {
   0%,
   100% {
@@ -378,24 +346,19 @@ p {
     transform: rotate(2deg);
   }
 }
-
 /* -----Education Timeline CSS----- */
-
 section {
   padding: 100px 0;
 }
-
 html, body {
   overflow-x: hidden;
 }
-
 body {
   font-family: "Roboto";
   font-size: 17px;
   font-weight: 400;
   background-color: #eee;
 }
-
 h1 {
   font-size: 200%;
   text-transform: uppercase;

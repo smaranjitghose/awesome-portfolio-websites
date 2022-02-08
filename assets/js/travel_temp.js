@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       day: "Day 1",
       description: "description",
-      // background_image: "assets/images/travel/trip1/national_zoological_park.jpg"
       background_image: "assets/images/travel/trip1/street.jpg"
     },
     {

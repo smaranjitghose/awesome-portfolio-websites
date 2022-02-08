@@ -82,7 +82,6 @@ body{
   display: inline;
   width: 6px;
   text-indent: 0;
-  /* overflow: hidden; */
   background: var(--col-icon);
   animation: blink 0.3s infinite alternate;
 }
@@ -468,13 +467,6 @@ a:hover {
     margin-top:6rem;
   }
 }
-
-/* @media only screen and (max-width:580px){
-  .text{
-    margin-top:4rem;
-  }
-} */
-
 @media only screen and (max-width:350px){
   .text{
     margin-top:6rem;
@@ -486,30 +478,22 @@ a:hover {
     margin-top:12rem;
   }
 }
-
 /* responsiveness */
-
-
-
-
 @media (min-width:410px) and (max-width:411px){
   .text{
     margin-top: 1rem;
   }
 }
-
 @media only screen and (min-height:731px){
   .text{
     margin-top: 2rem;
   }
 }
-
 @media (min-height:822px) and (max-height:823px){
   .text{
     margin-top: 10rem;
   }
 }
-
 @media only screen and (min-height:768px){
   .text{
     margin-top: 0rem;

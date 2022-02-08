@@ -22,11 +22,11 @@ window.onload = function () {
 
   function toggle() {
     if (document.title === attentionMessage) {
-        document.title = pageTitle;
-        favicon.href = "./assets/images/dp_male.svg";
+      document.title = pageTitle;
+      favicon.href = "./assets/images/dp_male.svg";
     } else {
-        document.title = attentionMessage;
-        favicon.href = "./assets/images/folded.png";
+      document.title = attentionMessage;
+      favicon.href = "./assets/images/folded.png";
     }
-  }   
+  }
 };

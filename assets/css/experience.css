@@ -682,15 +682,12 @@ a:link {
     margin-bottom: 12rem !important;
   }
 }
-
 /*Hackathon Section Ends*/
-
 /*
 ----------------------------
        SVG ANIMATIONS 
 ----------------------------
 */
-
 #tie {
   animation: tie 2s infinite ease-in-out;
   transform-origin: 50% 62%;
