@@ -235,6 +235,16 @@ html {
   z-index: 2;
   box-shadow: 0 2px 2px rgb(230, 230, 230);
 }
+/* Navbar on hover*/
+.navbar .nav-link:hover{
+  color: #17354C !important;
+}
+.navbar-brand:hover{
+  color: #17354C;
+}
+/**/
+
+
 
 /* Dark Mode toggle switch button */
 .dark_toggler {
@@ -996,34 +1006,4 @@ html[light-mode="light"] .social-button{
   background-color: #ecedee !important;
   box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.2) !important;
 }
-/* html[light-mode="light"] .form-style-6 input[type="text"]:hover,
-html[light-mode="light"] .form-style-6 input[type="date"]:hover,
-html[light-mode="light"] .form-style-6 input[type="datetime"]:hover,
-html[light-mode="light"] .form-style-6 input[type="email"]:hover,
-html[light-mode="light"] .form-style-6 input[type="number"]:hover,
-html[light-mode="light"] .form-style-6 input[type="search"]:hover,
-html[light-mode="light"] .form-style-6 input[type="time"]:hover,
-html[light-mode="light"] .form-style-6 input[type="url"]:hover,
-html[light-mode="light"] .form-style-6 textarea:hover,
-html[light-mode="light"] .form-style-6 select:hover{
-  transform: scale(1.1);
-} */
 
-/* html[light-mode="light"] .form-style-6 input[type="text"]:focus,
-html[light-mode="light"] .form-style-6 input[type="date"]:focus,
-html[light-mode="light"] .form-style-6 input[type="datetime"]:focus,
-html[light-mode="light"] .form-style-6 input[type="email"]:focus,
-html[light-mode="light"] .form-style-6 input[type="number"]:focus,
-html[light-mode="light"] .form-style-6 input[type="search"]:focus,
-html[light-mode="light"] .form-style-6 input[type="time"]:focus,
-html[light-mode="light"] .form-style-6 input[type="url"]:focus,
-html[light-mode="light"] .form-style-6 textarea:focus,
-html[light-mode="light"] .form-style-6 select:focus {
-  border-radius: 5px !important;
-  box-shadow: 3px 3px 6px #bb86fc;
-} */
-/* html[light-mode="light"] .form-style-6 input[type="button"]:hover ,
-html[light-mode="light"] .form-style-6 input[type="submit"]:hover{    
-  box-shadow: 2px 2px 6px rgba(31, 30, 30, 0.534);
-  transition: all .2s;
-} */
