@@ -235,6 +235,16 @@ html {
   z-index: 2;
   box-shadow: 0 2px 2px rgb(230, 230, 230);
 }
+/* Navbar on hover*/
+.navbar .nav-link:hover{
+  color: #17354C !important;
+}
+.navbar-brand:hover{
+  color: #17354C;
+}
+/**/
+
+
 
 /* Dark Mode toggle switch button */
 .dark_toggler {
@@ -964,3 +974,36 @@ form {
   -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
+/*light theme for footer*/
+html[light-mode="light"] .footer{
+  background-color: #fff !important;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+html[light-mode="light"] .form-header .display{
+  color: #007bff;
+}
+html[light-mode="light"] .tag{
+  color: #007bff;
+}
+html[light-mode="light"] .quotes svg path{
+  fill:#007bff;
+}
+html[light-mode="light"] #freepik_stories-smiley-face.animated g rect{
+  fill: #838181 !important;
+  transition: fill .25s linear;
+}
+html[light-mode="light"]  path#el92bi8cxpvav ,
+html[light-mode="light"]  path#elpbqyu6v2yks ,
+html[light-mode="light"]  #ellpbg5sgx4tl circle ,
+html[light-mode="light"]  #elf9faotbb9hs circle ,
+html[light-mode="light"]  #els31dqseik8 circle ,
+html[light-mode="light"]  #eltc10qpfw589 circle ,
+html[light-mode="light"]  #freepik--path--inject-31.animable {
+  fill: #c7c7c7 !important;
+  transition: fill .25s linear;
+}
+html[light-mode="light"] .social-button{
+  background-color: #ecedee !important;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
