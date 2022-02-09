@@ -1007,3 +1007,10 @@ html[light-mode="light"] .social-button{
   box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.2) !important;
 }
 
+/* Navbar on hover for light mode*/
+html[light-mode="light"] .navbar .nav-link:hover{
+  color: #2b2a2a !important;
+}
+html[light-mode="light"] .navbar-brand:hover{
+  color: #2b2a2a !important;
+}
