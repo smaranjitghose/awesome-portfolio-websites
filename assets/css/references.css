@@ -103,12 +103,12 @@ body {
   background-color: var(--bg1-color);
   margin: 4em auto 36px;
   display: flex;
-  transition: all 1s ease;
   border-radius: 5px;
 }
 
 #referenceDetailsTable tr:hover {
   transform: scale(1.1);
+  transition: all 1s ease;
 }
 
 #rDetailsHead {

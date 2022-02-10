@@ -1,6 +1,7 @@
 /* preloader */
 .no-scroll-preload {
     overflow: hidden;
+    height: auto;
 }
 
 :root {

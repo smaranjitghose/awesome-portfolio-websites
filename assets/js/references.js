@@ -7,37 +7,37 @@ const referenceTable = document.querySelector(".pain");
 const references = [
   {
     sl1: 1,
-    name1: "Juliana Rodgers",
-    designation1: "Intern Manager at Flipkart",
-    image1: "assets/images/references-page/reviewphoto1.png",
-    message1:
-      "It was a pleasure to work with John, who has a lot of knowledge, experience, and creativity. During his time here as an intern, he made many suggestions and improvements to many of Flipkart’s products, like our product pages and web apps. We really enjoyed his passion for creating AMP pages and the positive attitude he brought to our team.",
+    name1 : "Smaranjit Ghose",
+        designation1 : "Designation",
+        image1 : "https://avatars.githubusercontent.com/u/46641503?v=4",
+        message1 : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit vestibulum porta. Phasellus at pulvinar sapien. Nam sit amet tellus vitae libero malesuada ultrices. Etiam accumsan diam sed diam hendrerit pretium.",
+        
 
-    sl2: 2,
-    name2: "Andy Grant",
-    designation2: "Mentor for Mozilla at Google Summer of Code",
-    image2: "assets/images/references-page/reviewphoto2.png",
-    message2:
-      "John was part of my team (Team Mozilla) during Google’s Summer of Code program. As his mentor, I worked with him on the Extension Activity Monitor for Firefox. I was constantly impressed with his expertise in programming and his dedication he displayed for completing the project.",
+        sl2:2,
+        name2 : "Anush Bhatia",
+        designation2 : "Designation", 
+        image2: "https://avatars.githubusercontent.com/u/40017559?v=4",
+        message2 : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit vestibulum porta. Phasellus at pulvinar sapien. Nam sit amet tellus vitae libero malesuada ultrices. Etiam accumsan diam sed diam hendrerit pretium.",
+        
+        
+    },
+
+    {
+        sl1:3,
+        name1 : "Santosh Kumar",
+        designation1 : "Designation",
+        image1 : " ",
+        message1 : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit vestibulum porta. Phasellus at pulvinar sapien. Nam sit amet tellus vitae libero malesuada ultrices. Etiam accumsan diam sed diam hendrerit pretium.",
+        
+
+        sl2:4,
+        name2 : "Arnab Dutta Purkayastha",
+        designation2 : "Designation",
+        image2 : "https://avatars.githubusercontent.com/u/59832779?v=4",
+        message2 : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit vestibulum porta. Phasellus at pulvinar sapien. Nam sit amet tellus vitae libero malesuada ultrices. Etiam accumsan diam sed diam hendrerit pretium.",
   },
 
-  {
-    sl1: 3,
-    name1: "Zhao Lan",
-    designation1: "Professor of Computer Science at MIT",
-    image1: "assets/images/references-page/reviewphoto3.png",
-    message1:
-      " I first met John in 2018, when he was placed under my supervision as a teaching assistant. From the start, he showed initiative and developed a quiz app for my classes to use. In his senior year, John became a research assistant for my PhD students. He helped my team with their theories on image decomposition, by creating scripts to compile and sort data. His desire to create quality work has served him well during his time at MIT, and will continue to do so in the future.",
-
-    sl2: 4,
-    name2: "Joshua Morales",
-    designation2: "PhD Candidate at Columbia University",
-    image2: "assets/images/references-page/reviewphoto4.png",
-    message2:
-      "As John’s research colleague, I’ve benefited from his creative problem solving skills, and his enthusiasm for the work that we do. He is genuinely interested in our computer vision project and has the amazing ability to motivate others. I’m really fortunate to have someone like him as my colleague.",
-  },
-
-  {
+  /*{
     sl1: 5,
     name1: " Lucy Richardson",
     designation1: "Mentor, PClub Summer of Code",
@@ -128,7 +128,7 @@ const references = [
     image2: "assets/images/references-page/reviewphoto4.png",
     message2:
       "I had worked with John in research intern team, Flipkart. John would be an asset to have on any team. To say he's a team leader would be an understatement. during his tenure at our company, he's gone out of his way to welcome newcomers and resolve any problems they might have. He pitches innovative ideas at company meetings but also listens to what others have to say, including constructive criticism. When budgetary constraints limited the work our company could complete, John put his highly creative mind to use to come up with alternatives.",
-  },
+  },*/
 ];
 
 AOS.init();
