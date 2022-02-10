@@ -3,20 +3,21 @@
   src: url(../fonts/Agustina.woff);
 }
 
+
 /*CSS variable declaration for light/dark mode*/
 
 html[data-theme="light"] {
   --bg-mybtn: red;
   --bg-nav: black;
   --bg-nav-img: black;
-  --bg-footer: #dde1ec;
+  --bg-footer: #DDE1EC;
   --bg: #ffffff;
   --text: #191919;
   --text-color: #6c757d;
   --col-icon: black;
   --col-bd-radius: rgb(2, 2, 2);
-  --col-box-shadow: #000000 2px 2px 4px, #4d4d4d -2px -2px 4px;
-  --col-box-shadow-hover: inset #8a7373 2px 2px 4px, inset #4d4d4d -2px -2px 4px;
+  --col-box-shadow: #000000 2px 2px 4px, #4D4D4D -2px -2px 4px;
+  --col-box-shadow-hover: inset #8a7373 2px 2px 4px, inset #4D4D4D -2px -2px 4px;
   --col-bd-icon: transparent;
   --bg-icon: #fff;
   --col-icon-twitter: #1da1f2;
@@ -45,10 +46,8 @@ html[data-theme="dark"] {
   --col-icon: white;
   --col-bd-radius: black;
   --col-bd-icon: transparent;
-  --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7),
-    -5px -5px 10px rgba(255, 255, 255, 0.1);
-  --col-box-shadow-hover: inset rgba(255, 255, 255, 1) 2px 2px 4px,
-    inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
+  --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7), -5px -5px 10px rgba(255, 255, 255, 0.1);
+  --col-box-shadow-hover: inset rgba(255, 255, 255, 1) 2px 2px 4px, inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
   --col-icon-twitter: #1da1f2;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
@@ -62,9 +61,10 @@ html[data-theme="dark"] {
   --col-white: #fff;
 }
 
+
 /*
 ---------------------------
-        SCROLLBAR
+      SCROLLBAR
 ---------------------------
 */
 
@@ -88,10 +88,11 @@ html[data-theme="dark"] {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #ca9eff;
+  
 }
 
 /* Custom Scrollbar for Mozilla Firefox*/
-html {
+html{
   overflow-y: visible;
   scrollbar-color: #ca9eff #f1f1f1;
   scrollbar-width: auto;
@@ -108,6 +109,7 @@ body {
 .text-center heading1 exp-head {
   color: white;
 }
+
 
 /* Scroll to Top button */
 
@@ -129,35 +131,37 @@ body {
   -webkit-animation: up 1.5s infinite;
 }
 
+
 /*
 ---------------------------------------
-   SCROLL TO TOP BUTTON MICROANIMATION
+ SCROLL TO TOP BUTTON MICROANIMATION
 ---------------------------------------
 */
 
 @keyframes up {
   0% {
-    transform: translate(0);
+      transform: translate(0);
   }
   20% {
-    transform: translateY(-15px);
+      transform: translateY(-15px);
   }
   40% {
-    transform: translate(0);
+      transform: translate(0);
   }
 }
 
 @-webkit-keyframes up {
   0% {
-    transform: translate(0);
+      transform: translate(0);
   }
   20% {
-    transform: translateY(-15px);
+      transform: translateY(-15px);
   }
   40% {
-    transform: translate(0);
+      transform: translate(0);
   }
 }
+
 
 /* smooth scrolling to top */
 
@@ -165,9 +169,10 @@ html {
   scroll-behavior: smooth;
 }
 
+
 /*
 ------------------------------------
-     HAMBURGER ANIMATION
+   HAMBURGER ANIMATION
 ------------------------------------
 */
 
@@ -188,11 +193,11 @@ html {
 .third {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.85);
-  height: 0.45em;
+  height: .45em;
   width: 100%;
   float: left;
   border-radius: 2px;
-  transition: all 0.35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 
 .first {
@@ -200,23 +205,23 @@ html {
 }
 
 .is-active .first {
-  transform-origin: 0.167em 0.33em;
+  transform-origin: .167em .33em;
   transform: rotate(45deg) translate(0.167em, -0.25em);
 }
 
 .second {
   top: 50%;
-  margin-top: -0.25em;
+  margin-top: -.25em;
 }
 
 .is-active .second {
   opacity: 0;
-  transform: translateX(8em);
+  transform: translateX(8em)
 }
 
 .third {
   bottom: 0px;
-  transform-origin: 0.25em -0.33em;
+  transform-origin: .25em -0.33em;
 }
 
 .is-active .third {
@@ -235,16 +240,6 @@ html {
   z-index: 2;
   box-shadow: 0 2px 2px rgb(230, 230, 230);
 }
-/* Navbar on hover*/
-.navbar .nav-link:hover{
-  color: #17354C !important;
-}
-.navbar-brand:hover{
-  color: #17354C;
-}
-/**/
-
-
 
 /* Dark Mode toggle switch button */
 .dark_toggler {
@@ -289,7 +284,7 @@ html {
 
 html {
   background-color: #f6f6f6;
-  transition: background-color 0.3s;
+  transition: background-color .3s;
 }
 
 html[light-mode="dark"] {
@@ -298,8 +293,8 @@ html[light-mode="dark"] {
 }
 
 .dark-theme {
-  background-color: #2b2a2a;
-  transition: background-color 0.3s;
+  background-color: #2b2a2A;
+  transition: background-color .3s;
   box-shadow: 0 0 0;
 }
 
@@ -308,8 +303,8 @@ html[light-mode="dark"] {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.dark-theme .nav-link:hover {
-  color: #ffffff !important;
+.dark-theme .nav-link:hover{
+color: #ffffff !important;
 }
 
 .dark-theme .first,
@@ -317,14 +312,14 @@ html[light-mode="dark"] {
 .dark-theme .third {
   background-color: rgba(255, 255, 255, 0.5);
 }
-.dsc {
-  box-shadow: 2px 5px 5px 0px rgb(130 216 251),
-    inset -2px -5px 5px 0px rgb(130 216 251);
-  background: #1f1d1d;
+.dsc{
+   box-shadow:   2px 5px 5px 0px rgb(130 216 251), 
+   inset -2px -5px 5px 0px rgb(130 216 251);
+   background: #1f1d1d;
 }
 /*
 -------------------------------------
-    SIDEBAR SVG ANIMATION
+  SIDEBAR SVG ANIMATION
 --------------------------------------
 */
 
@@ -353,89 +348,92 @@ html[light-mode="dark"] {
 
 @keyframes wheel {
   from {
-    transform: rotateZ(0deg);
+      transform: rotateZ(0deg);
   }
   to {
-    transform: rotateZ(360deg);
+      transform: rotateZ(360deg);
   }
 }
 
 @keyframes bikes {
   from {
-    transform: rotateX(0deg);
+      transform: rotateX(0deg);
   }
   to {
-    transform: rotateX(12deg);
+      transform: rotateX(12deg);
   }
 }
 
 @keyframes hat {
   from {
-    transform: translateY(0%) rotateZ(0deg);
+      transform: translateY(0%) rotateZ(0deg);
   }
   to {
-    transform: translateY(10%) rotateZ(20deg);
+      transform: translateY(10%) rotateZ(20deg);
   }
 }
 
+
 /*
 -------------------------------------
-    NAV BAR HIGHTLIGHTING
+  NAV BAR HIGHTLIGHTING
 --------------------------------------
 */
 
 @media only screen and (min-width: 1024px) {
   .current-link {
-    font-weight: bolder;
-    position: relative;
-    z-index: 1;
-    text-align: center;
+      font-weight: bolder;
+      position: relative;
+      z-index: 1;
+      text-align: center;
   }
   .current-link:after {
-    content: "";
-    position: absolute;
-    left: 34%;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 0;
-    width: 32%;
-    border-bottom: 3px solid #6a00bb;
+      content: "";
+      position: absolute;
+      left: 34%;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: 0;
+      width: 32%;
+      border-bottom: 3px solid #6a00bb;
   }
-
+  
   .nav-item-hover::after {
-    content: "";
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 0.15em;
-    bottom: 0;
-    width: 0%;
-    background-color: #6a00bb;
-    transition: all ease-in-out 280ms;
+      content: "";
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 0.15em;
+      bottom: 0;
+      width: 0%;
+      background-color: #6a00bb;
+      transition: all ease-in-out 280ms;
   }
-
+  
   .nav-item:hover::after {
-    width: 50%;
+      width: 50%;
+      
   }
 
   li.nav-item {
-    text-align: center;
+      text-align: center;
   }
   a.nav-link {
-    padding: 6px 21px !important;
+      padding: 6px 21px !important;
   }
 
   /* Hide svg on laptop screens to prevent overlap between sidebar and navbar */
   .bike {
-    display: none;
+      display: none;
   }
 }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
-    align-items: center;
+      align-items: center;
   }
 }
+
 
 /**Navbar burger animations**/
 
@@ -445,7 +443,7 @@ html[light-mode="dark"] {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all .2s ease-in-out;
   border-color: white;
   border: none;
   outline: none;
@@ -457,8 +455,7 @@ html[light-mode="dark"] {
   fill: none;
   stroke: black;
   stroke-width: 6;
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 50px;
 }
 
@@ -495,11 +492,13 @@ html[light-mode="dark"] {
   stroke-width: 6;
 }
 
+
 /*
 ------------------------
-    FOOTER SECTION
+  FOOTER SECTION
 ------------------------
 */
+
 
 /* Also have a look at the scroll to top button if changing footer's height (below upArrow in app.js) */
 
@@ -522,7 +521,7 @@ html[light-mode="dark"] {
 }
 
 .svg-inline--fa {
-  vertical-align: -0.2em;
+  vertical-align: -0.200em;
 }
 
 .rounded-social-buttons .social-button {
@@ -544,6 +543,7 @@ html[light-mode="dark"] {
   margin-bottom: 0.25rem;
 }
 
+
 /********
 Rotate Transition in foote Soical Icon
 *********/
@@ -553,9 +553,10 @@ Rotate Transition in foote Soical Icon
   transition: background-color 0.3s, var(--trans-props);
 }
 
+
 /*
 ------------------------------
-   TWITTER MICROANIMATION
+ TWITTER MICROANIMATION
 -------------------------------
 */
 
@@ -571,56 +572,58 @@ Rotate Transition in foote Soical Icon
 
 @keyframes flap {
   50% {
-    transform: scaleX(-1) rotate(-45deg) translate(-40px, -40px);
+      transform: scaleX(-1) rotate(-45deg) translate(-40px, -40px);
   }
 }
 
+
 /*
 -----------------------------
-   LINKEDIN MICROANIMATION
+ LINKEDIN MICROANIMATION
 -----------------------------
 */
 
-.linkedin:hover .linkedin-icon-footer > rect {
+.linkedin:hover .linkedin-icon-footer>rect {
   animation: rect-up 0.3s linear infinite;
 }
 
 @keyframes rect-up {
   50% {
-    y: 10px;
-    height: 11px;
+      y: 10px;
+      height: 11px;
   }
   0% {
-    y: 13px;
-    height: 8px;
+      y: 13px;
+      height: 8px;
   }
 }
 
-.linkedin:hover .linkedin-icon-footer > circle {
+.linkedin:hover .linkedin-icon-footer>circle {
   animation: bounce 0.4s linear infinite;
 }
 
 @keyframes bounce {
   75% {
-    cy: 8px;
+      cy: 8px;
   }
   50% {
-    cy: 4px;
+      cy: 4px
   }
   0% {
-    cy: 4px;
+      cy: 4px
   }
 }
 
+
 /*
 -----------------------------
-   INSTAGRAM MICROANIMATION
+ INSTAGRAM MICROANIMATION
 -----------------------------
 */
 
 .st0 {
   fill: none;
-  stroke: #ef4649;
+  stroke: #EF4649;
   stroke-width: 7;
   stroke-linecap: round;
   stroke-miterlimit: 10;
@@ -640,35 +643,36 @@ Rotate Transition in foote Soical Icon
 }
 
 .instagram-icon-footer:hover #lens {
-  fill: #ef4649;
+  fill: #EF4649;
   animation: lens 1.5s linear infinite;
 }
 
 @keyframes shutter {
   0%,
   50% {
-    stroke-dashoffset: 150;
+      stroke-dashoffset: 150;
   }
   75% {
-    fill: #ef4649;
-    stroke-dashoffset: 0;
-    stroke-width: 11;
+      fill: #EF4649;
+      stroke-dashoffset: 0;
+      stroke-width: 11;
   }
 }
 
 @keyframes lens {
   0%,
   75% {
-    opacity: 0;
+      opacity: 0;
   }
   100% {
-    opacity: 1;
+      opacity: 1;
   }
 }
 
+
 /*
 -----------------------------
-   GITHUB MICROANIMATION
+ GITHUB MICROANIMATION
 -----------------------------
 */
 
@@ -679,12 +683,13 @@ Rotate Transition in foote Soical Icon
 
 @keyframes moveArm {
   0% {
-    transform: rotate(10deg);
+      transform: rotate(10deg);
   }
   100% {
-    transform: rotate(-10deg);
+      transform: rotate(-10deg);
   }
 }
+
 
 /* twitter SVG micro animation */
 
@@ -693,12 +698,14 @@ Rotate Transition in foote Soical Icon
   width: 35px;
 }
 
+
 /* linkedin SVG micro animation */
 
 .linkedin-icon-footer {
   margin-bottom: 8px;
   width: 30px;
 }
+
 
 /* instagram SVG micro animation */
 
@@ -708,6 +715,7 @@ Rotate Transition in foote Soical Icon
   padding-bottom: 8px;
 }
 
+
 /* github SVG Micro animation */
 
 .github-icon-footer {
@@ -715,58 +723,60 @@ Rotate Transition in foote Soical Icon
   width: 35px;
 }
 
+
 /*
 ----------------------------------------
-   HOVER EFFECT ON SOCIAL MEDIA ICONS
+ HOVER EFFECT ON SOCIAL MEDIA ICONS
 ----------------------------------------
 */
 
 .rounded-social-buttons .social-button.twitter {
-  background: #2b2a2a;
+  background: #2b2a2A;
   box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.twitter:hover,
 .rounded-social-buttons .social-button.twitter:focus {
   color: #000;
-  background: #2b2a2a;
+  background: #2b2a2A;
 }
 
 .rounded-social-buttons .social-button.linkedin {
-  background: #2b2a2a;
+  background: #2b2a2A;
   box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.linkedin:hover,
 .rounded-social-buttons .social-button.linkedin:focus {
   color: #000;
-  background: #2b2a2a;
+  background: #2b2a2A;
 }
 
 .rounded-social-buttons .social-button.instagram {
-  background: #2b2a2a;
+  background: #2b2a2A;
   box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.instagram:hover,
 .rounded-social-buttons .social-button.instagram:focus {
   color: #000;
-  background: #2b2a2a;
+  background: #2b2a2A;
 }
 
 .rounded-social-buttons .social-button.github {
-  background: #2b2a2a;
+  background: #2b2a2A;
   box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .rounded-social-buttons .social-button.github:hover,
 .rounded-social-buttons .social-button.github:focus {
   color: #000000;
-  background: #2b2a2a;
+  background: #2b2a2A;
 }
 
+
 /************
-  Contact Form In Footer
+Contact Form In Footer
 *************/
 
 .display {
@@ -791,9 +801,10 @@ form {
   color: #000;
 }
 
+
 /*
 -------------------
-   Footer Form
+ Footer Form
 --------------------
 */
 
@@ -824,10 +835,10 @@ form {
 .form-style-6 input[type="url"],
 .form-style-6 textarea,
 .form-style-6 select {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
   outline: none;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -879,7 +890,8 @@ form {
 
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover {
-  background: #6a00bbd2;
+  background:#6a00bbd2;;
+
 }
 
 .form-comtainer {
@@ -894,77 +906,79 @@ form {
   height: 1.5px;
 }
 
+
 /* to make the navbar open full screen on mobile */
 
 @media (max-width: 768px) {
   .collapse navbar-collapse {
-    display: flex;
-    justify-content: center;
+      display: flex;
+      justify-content: center;
   }
   .footer {
-    padding-top: 10px;
+      padding-top: 10px;
   }
   #navbar-content {
-    margin-top: -200px;
-    height: 120vh;
-    text-align: center;
-    transform: translateY(25%);
+      margin-top: -200px;
+      height: 120vh;
+      text-align: center;
+      transform: translateY(25%);
   }
   #btnScrollToTop {
-    display: none;
+      display: none;
   }
 }
 
 @media (max-width: 414px) {
   .collapse navbar-collapse {
-    display: flex;
-    justify-content: center;
+      display: flex;
+      justify-content: center;
   }
   #navbar-content {
-    margin-top: -180px;
-    height: 120vh;
-    text-align: center;
-    transform: translateY(25%);
+      margin-top: -180px;
+      height: 120vh;
+      text-align: center;
+      transform: translateY(25%);
   }
   #btnScrollToTop {
-    display: none;
+      display: none;
   }
 }
 
 @media (max-width: 375px) {
   .collapse navbar-collapse {
-    display: flex;
-    justify-content: center;
+      display: flex;
+      justify-content: center;
   }
   #navbar-content {
-    margin-top: -180px;
-    height: 120vh;
-    text-align: center;
-    transform: translateY(25%);
+      margin-top: -180px;
+      height: 120vh;
+      text-align: center;
+      transform: translateY(25%);
   }
   #btnScrollToTop {
-    display: none;
+      display: none;
   }
 }
 
 @media (max-width: 320px) {
   .collapse navbar-collapse {
-    display: flex;
-    justify-content: center;
+      display: flex;
+      justify-content: center;
   }
   #navbar-content {
-    margin-top: -140px;
-    height: 130vh;
-    text-align: center;
-    transform: translateY(25%);
+      margin-top: -140px;
+      height: 130vh;
+      text-align: center;
+      transform: translateY(25%);
   }
   .footer {
-    margin-top: 6rem;
+      margin-top: 6rem;
   }
   #btnScrollToTop {
-    display: none;
+      display: none;
   }
 }
+
 
 /* box shadow for profile picture */
 
@@ -974,43 +988,95 @@ form {
   -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
-/*light theme for footer*/
-html[light-mode="light"] .footer{
-  background-color: #fff !important;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+/*
+----------------------------
+Send button micro animation
+----------------------------
+*/
+
+#main {
+  position: relative;
+  margin-left: 4rem;
+  width: 270px;
+  
 }
-html[light-mode="light"] .form-header .display{
-  color: #007bff;
+ button{
+width: 15rem;
+height: 2.5rem;
+outline: none;
 }
-html[light-mode="light"] .tag{
-  color: #007bff;
+#lnch :hover{
+    cursor: pointer;
+    outline: none;
+    
 }
-html[light-mode="light"] .quotes svg path{
-  fill:#007bff;
+#lnch {
+  font-size: 25px;
+  color: #fff;
+  line-height: 1;
+  /* padding: 20px 25px; */
+  text-align: center;
+  border-radius: 50px;
+  transition: 0.5s ease background-color, 0.5s ease box-shadow;
+  background: #6a00bbd2;
+  box-shadow: 0 10px 15px -6px lavender;
 }
-html[light-mode="light"] #freepik_stories-smiley-face.animated g rect{
-  fill: #838181 !important;
-  transition: fill .25s linear;
+#lnch_btn {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  font-size: 22px;
+  line-height: 1;
+  color: #fff;
+ padding: 10px 50px;
+  cursor: pointer;
+  transition: 0.3s ease transform;
 }
-html[light-mode="light"]  path#el92bi8cxpvav ,
-html[light-mode="light"]  path#elpbqyu6v2yks ,
-html[light-mode="light"]  #ellpbg5sgx4tl circle ,
-html[light-mode="light"]  #elf9faotbb9hs circle ,
-html[light-mode="light"]  #els31dqseik8 circle ,
-html[light-mode="light"]  #eltc10qpfw589 circle ,
-html[light-mode="light"]  #freepik--path--inject-31.animable {
-  fill: #c7c7c7 !important;
-  transition: fill .25s linear;
+#lnch.launching {
+  background-color: #f39c12;
+  box-shadow: 0 10px 20px -6px #f39c12;
 }
-html[light-mode="light"] .social-button{
-  background-color: #ecedee !important;
-  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.2) !important;
+#lnch_btn.launching {
+  transform: rotateZ(-90deg);
+  animation: shake 0.3s ease 0.5s infinite;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0) rotateZ(-90deg);
+  }
+  20%,
+  80% {
+    transform: translate3d(1px, 0, 0) rotateZ(-90deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-1px, 0, 0) rotateZ(-90deg);
+  }
+  40%,
+  60% {
+    transform: translate3d(1px, 0, 0) rotateZ(-90deg);
+  }
 }
 
-/* Navbar on hover for light mode*/
-html[light-mode="light"] .navbar .nav-link:hover{
-  color: #2b2a2a !important;
+#lnch.launched {
+  background-color: #27ae60;
+  box-shadow: 0 10px 20px -6px #27ae60;
 }
-html[light-mode="light"] .navbar-brand:hover{
-  color: #2b2a2a !important;
+
+#lnch_btn.launched {
+  transform: rotateZ(-90deg);
+  animation: moveUp 1s ease 0s forwards;
+}
+@keyframes moveUp {
+  0% {
+    margin-top: 0;
+    transform: scale(1) rotateZ(-90deg);
+  }
+  100% {
+    color: #ff1f5a;
+    margin-top: -100px;
+    transform: scale(0) rotateZ(-90deg);
+  }
 }
