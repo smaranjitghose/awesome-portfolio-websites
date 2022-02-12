@@ -569,6 +569,7 @@ ul ol {
   border-radius: 20px;
   transform: translateX(-80px);
   overflow: hidden;
+  background-image: linear-gradient(147deg, #545b62a8, black);
 }
 .blog-slider__img:after {
   content: "";
