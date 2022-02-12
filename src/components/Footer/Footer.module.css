@@ -159,7 +159,7 @@ form {
 
 .tag {
   font-family: "Poppins", sans-serif;
-  font: size 20px;
+  font-size: 20px;
   line-height: 26px;
   text-align: center;
   color: var(--white);
