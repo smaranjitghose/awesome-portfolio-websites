@@ -128,16 +128,13 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
 @media (max-width:766px) {
     .dropdown {
         position: absolute;
-        padding-right: 3.5rem;
-        /* border: 1px solid blue; */
+        padding: 0 3.5rem;
         top: 100px;
-        left:40px;
         width: 100%;
     }
     .godown {
         z-index: 1;
         padding-top: 15rem;
-        padding-left: 3.3rem;
     }
     .row {
         flex-direction: column;
@@ -151,7 +148,7 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
     .row {
         flex-direction: row;
     }
-    svg {
+    .godown > svg {
         width: 300px !important;
     }
 }
