@@ -350,15 +350,18 @@ p {
 section {
   padding: 100px 0;
 }
+
 html, body {
   overflow-x: hidden;
 }
+
 body {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 17px;
   font-weight: 400;
   background-color: #eee;
 }
+
 h1 {
   font-size: 200%;
   text-transform: uppercase;
@@ -372,7 +375,7 @@ header {
   padding: 150px 0;
 }
 header p {
-  font-family: "Allura";
+  font-family: 'Allura';
   color: rgba(255, 255, 255, 0.2);
   margin-bottom: 0;
   font-size: 60px;
@@ -381,12 +384,9 @@ header p {
 
 .timeline {
   position: relative;
-  font-weight: bold;
 }
-
-/* Draws line */
 .timeline::before {
-  content: "";
+  content: '';
   background: #C5CAE9;
   width: 5px;
   height: 95%;
@@ -399,28 +399,16 @@ header p {
   width: 100%;
   margin-bottom: 70px;
 }
-
 .timeline-item:nth-child(even) .timeline-content {
   float: right;
   padding: 40px 30px 10px 30px;
 }
- .timeline-item:nth-child(even) .timeline-content .alignment {
-  position:absolute;
-  text-align: left;
-  padding-right: 5px;
-} 
 .timeline-item:nth-child(even) .timeline-content .date {
-  left: auto;
-  right: 0;
+  right: auto;
+  left: 0;
 }
-.timeline-item:nth-child(even) .timeline-content .bnt-more {
-  position: absolute;
-  right:0;
-  bottom: 65px;
-}
-
 .timeline-item:nth-child(even) .timeline-content::after {
-  content: "";
+  content: '';
   position: absolute;
   border-style: solid;
   width: 0;
@@ -430,31 +418,22 @@ header p {
   border-width: 10px 15px 10px 0;
   border-color: transparent #f5f5f5 transparent transparent;
 }
-
 .timeline-item::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
 
-/* This will give the cards to their respective sides */
 .timeline-content {
   position: relative;
   width: 45%;
   padding: 10px 30px;
   border-radius: 4px;
-/*   background: #f5f5f5;
-  color: black; */
-  box-shadow: 0 20px 25px 15px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-   background-image: linear-gradient(147deg, #545b62a8, black);
-  color: white;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
 }
-
 .timeline-content::after {
-  content: "";
+  content: '';
   position: absolute;
   border-style: solid;
   width: 0;
@@ -476,21 +455,19 @@ header p {
   margin-left: -15px;
 }
 
-.bnt-more {
+a {
   background: #3F51B5;
   color: #FFFFFF;
   padding: 8px 20px;
   text-transform: uppercase;
   font-size: 14px;
+  margin-bottom: 20px;
   margin-top: 10px;
   display: inline-block;
   border-radius: 2px;
   box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
-  position: absolute; 
-  right:0;
 }
-
-.bnt-mor:hover, .bnt-mor:active, .bnt-mor:focus {
+a:hover, a:active, a:focus {
   background: #32408f;
   color: #FFFFFF;
   text-decoration: none;
@@ -499,33 +476,45 @@ header p {
 .timeline-card {
   padding: 0 !important;
 }
-
 .timeline-card p {
   padding: 0 20px;
 }
-
 .timeline-card a {
   margin-left: 20px;
 }
 
-.timeline-item .timeline-img-header {
-  /*background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;*/
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+.timeline-item:nth-child(2) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1458530970867-aaa3700e966d") center center no-repeat;
   background-size: cover;
-
+}
+.timeline-item:nth-child(5) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1444093826349-9ce8c622f4f3") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(6) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1471479917193-f00955256257") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(8) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1466840787022-48e0ec048c8a") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(10) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1447639703758-f525f36456bf") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(11) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1469429978400-082eec725ad5") center center no-repeat;
+  background-size: cover;
 }
 
 .timeline-img-header {
   height: 200px;
   position: relative;
   margin-bottom: 20px;
-  /*background-image: url('assets/images/education-page/edTimeline1.png');*/
-
 }
-
 .timeline-img-header h2 {
-  /*color: #FFFFFF;*/
-  color: black;
+  color: #FFFFFF;
   position: absolute;
   bottom: 5px;
   left: 20px;
@@ -548,39 +537,23 @@ blockquote {
   right: 0;
 }
 
-.alignment{
-  padding-left: 20px;
-  
-}
-
-
 @media screen and (max-width: 768px) {
   .timeline::before {
     left: 50px;
   }
-
   .timeline .timeline-img {
     left: 50px;
   }
-
   .timeline .timeline-content {
     max-width: 100%;
     width: auto;
     margin-left: 70px;
   }
-
   .timeline .timeline-item:nth-child(even) .timeline-content {
     float: none;
   }
-  h2{
-    font-size: 1.75rem;
-  }
-  h3{
-    font-size: 1.5rem;
-  }
-
   .timeline .timeline-item:nth-child(odd) .timeline-content::after {
-    content: "";
+    content: '';
     position: absolute;
     border-style: solid;
     width: 0;
@@ -591,6 +564,7 @@ blockquote {
     border-color: transparent #f5f5f5 transparent transparent;
   }
 }
+
   @media screen and (max-width: 760px) {
     h2{
       font-size: 1.5rem;
