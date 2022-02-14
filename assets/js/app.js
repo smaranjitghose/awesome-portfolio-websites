@@ -455,7 +455,7 @@ const text=  document.querySelector("#textArea")
     else{   
      
     setTimeout(function () {
-      $("#lnch").addClass("launching").text("sending");
+      $("#lnch").addClass("launching").text("Sending");
       $("#lnch_btn").addClass("launching");
     },0);
     setTimeout(function () {
