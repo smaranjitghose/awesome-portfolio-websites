@@ -1,3 +1,4 @@
+
 "use strict";
 
 // Header
@@ -133,11 +134,15 @@ let footer = $(`
                 <h6 class="display">Get in Touch</h6>
               </div>
                 <form>
-                  <form action="https://formcarry.com/s/S2thQbCqEvW" method="POST" accept-charset="UTF-8" >
-                  <input type="text" name="field1" placeholder="Your Name" required/>
-                  <input type="email" name="field2" placeholder="Email Address"  required/>
-                  <textarea name="field3" placeholder="Type your Message" required></textarea>
-                  <input type="submit" value="Send" />
+                  <form name="form1" action="https://formcarry.com/s/S2thQbCqEvW"  method="POST" accept-charset="UTF-8" >
+                  <input id="name" type="text" name="field1" placeholder="Your Name" required/>
+                  <input id="email" type="email" name="field2" placeholder="Email Address"    required/>
+                  
+                  <textarea id="textArea" name="field3" placeholder="Type your Message" required></textarea>
+               
+                  <div id="main">
+                  <button  id="lnch" type="button"   value="Send" >Send</button><div id="lnch_btn"><i class="fas fa-space-shuttle"></i></div>
+                  </div>
                 </form>
              </div>
           </div>
@@ -324,6 +329,7 @@ $(function () {
 // Navbar current page highlight
 
 let loader = document.querySelector(".loader-container");
+
 window.addEventListener("load", vanish);
 
 function vanish() {
@@ -336,7 +342,9 @@ $(function () {
     }
   });
 });
+
 //function to remove underline on hover
+
 $(document).ready(function () {
   $("a.nav-link").hover(
     function () {
@@ -391,9 +399,11 @@ function toggle_light_mode() {
       sc[i].classList.add("dsc");
     }
   }
+
   // updating the swiper bullets
   updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
 }
+
 // function to update swiper bullets
 function updateColorOfSwiperBullets(lightMode) {
   document.querySelectorAll(".swiper-pagination-bullet").forEach((bullet) => {
@@ -404,6 +414,7 @@ function updateColorOfSwiperBullets(lightMode) {
     }
   });
 }
+
 window.addEventListener("storage", function () {
   if (localStorage.lightMode == "dark") {
     app.setAttribute("light-mode", "dark");
@@ -411,10 +422,46 @@ window.addEventListener("storage", function () {
     app.setAttribute("light-mode", "light");
   }
 });
+
 // Function to remove scroll bar during preload
 $(window).on("load", function () {
   setTimeout(function () {
     $(".no-scroll-preload").css("overflow", "visible");
   }, 1000);
   $(".loader-container").fadeOut(2500);
+});
+
+//send button animation
+
+
+$(function submitAnimation () {
+const name=  document.querySelector("#name")
+const emailAdress=  document.querySelector("#email")
+const text=  document.querySelector("#textArea")
+
+  $("#lnch").on("click", function () {
+     
+     if(name.value==""  ){
+      return
+     }
+   else if(emailAdress.value=="" ){
+  
+       return
+    }
+  
+  else  if(text.value==""){
+      return
+    }
+    else{   
+     
+    setTimeout(function () {
+      $("#lnch").addClass("launching").text("Sending");
+      $("#lnch_btn").addClass("launching");
+    },0);
+    setTimeout(function () {
+      $("#lnch").addClass("launched").text("SENT");
+      $("#lnch_btn").addClass("launched");
+    }, 1500);
+    }
+  } );
 });
