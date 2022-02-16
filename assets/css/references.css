@@ -369,7 +369,7 @@ body {
 @media only screen and (max-width: 415px) and (max-height: 830px) {
   .imgResponsive .imgRes {
     margin: -1.3em -1.3em 1.3em -1.3em;
-    width: 406.7px;
+    width: 260px;
     height: 260px;
     border-radius: 10px;
   }
@@ -378,7 +378,7 @@ body {
 @media only screen and (max-width: 375px) and (max-height: 670px) {
   .imgResponsive .imgRes {
     margin: -1.3em -1.3em 1.3em -1.3em;
-    width: 406.7px;
+    width: 260px;
     height: 260px;
     border-radius: 10px;
   }
@@ -387,7 +387,7 @@ body {
 @media only screen and (max-width: 545px) and (min-width: 500px) and (max-height: 725px) {
   .imgResponsive .imgRes {
     margin: -1em -1em 1.3em -1em;
-    width: 406.7px;
+    width: 260px;
     height: 260px;
     border-radius: 10px;
   }
@@ -396,12 +396,12 @@ body {
 @media only screen and (max-width: 775px) and (max-height: 1030px) {
   .imgCol .rImg {
     margin: -1.4em -1em -1.3em 0;
-    width: 406.7px;
+    width: 200px;
     border-radius: 10px;
   }
   .imgCol .rImg1 {
     margin: -1.4em -1em -1.3em 0;
-    width: 406.7px;
+    width: 200px;
     border-radius: 10px;
   }
 }
@@ -604,7 +604,8 @@ a:hover {
     padding: 5%;
   }
   .imgResponsive .imgRes {
-    width: 260px !important;
+    width: 200px !important;
+    height: 200px;
     border-radius: 10px;
   }
 }
@@ -630,10 +631,23 @@ a:hover {
   .referenceTitleName {
     padding: 0%;
   }
+
+  .imgResponsive  .imgRes {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .imgResponsive  .imgRes {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 340px) {
   .imgResponsive .imgRes {
     height: 160px !important;
+    width: 160px;
   }
 }
