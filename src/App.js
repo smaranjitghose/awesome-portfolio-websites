@@ -9,6 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 import Education from './pages/Education/Education'
 import Resume from './pages/Resume/Resume';
 import References from './pages/References/References';
+import Reference from './pages/References/Reference';
 import NotFound from './pages/404/404';
 import Footer from './components/Footer/Footer';
 import Design from './pages/Design/Design'
@@ -51,6 +52,7 @@ function App() {
           <Route path='/research' component={Research} />
           <Route path='/resume' component={Resume} />
           <Route path='/references' component={References} />
+          <Route path='/reference' component={Reference} />
           <Route path='' component={NotFound} />
         </Switch>
         <Footer />
