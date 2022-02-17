@@ -87,11 +87,6 @@ const Reference = () => {
                                             <td className="imgCol">
                                             <img src={item ? item.image1 : "loading"} className="profile-pic" /></td>
                                             <td class = "referenceTitleName">
-                                        <div>
-                                            <span className="imgResponsive">
-                                            <img src={item ? item.image1 : "loading"} className="imgRes" />
-                                            </span>
-                                        </div>
                                         <img src="https://img.icons8.com/fluency/48/000000/quote-left.png"/>
                                         <a href="#0" className="paperTitle"> {item ? item.name1 : "loading"} </a> 
                                         <div> {item ? item.designation1 : "loading"} </div> <div className="rConferences">  
@@ -103,11 +98,6 @@ const Reference = () => {
                                         <tr className="table-div" data-aos="zoom-in-left"> 
                                             
                                             <td class = "referenceTitleName">
-                                        <div>
-                                            <span className="imgResponsive">
-                                            <img src={item ? item.image2 : "loading"} className="imgRes" />
-                                            </span>
-                                        </div>
                                         <img src="https://img.icons8.com/fluency/48/000000/quote-left.png"/>
                                         <a href="#0" className="paperTitle"> {item ? item.name2 : "loading"} </a> 
                                         <div> {item ? item.designation2 : "loading"} </div> <div className="rConferences">  
