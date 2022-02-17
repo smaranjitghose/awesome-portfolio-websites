@@ -315,7 +315,7 @@ body {
   height: 335px;
 }
 
-@media only screen and (max-width: 711px) {
+@media only screen and (max-width: 775px) {
   .imgResponsive {
     display: block;
   }
@@ -393,16 +393,33 @@ body {
   }
 }
 
-@media only screen and (max-width: 775px) and (max-height: 1030px) {
+@media only screen and (min-width: 775px) and (max-height: 850px) {
   .imgCol .rImg {
     margin: -1.4em -1em -1.3em 0;
-    width: 200px;
+    width: 270px;
+    height: 270px;
     border-radius: 10px;
   }
   .imgCol .rImg1 {
     margin: -1.4em -1em -1.3em 0;
-    width: 200px;
+    width: 270px;
+    height: 270px;
     border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-height: 1030px) {
+  .imgCol .rImg {
+    width: 335px;
+    height: 335px;
+    margin: -1.4em -1em -1.3em 0;
+    border-radius: 10% 50%;
+  }
+  .imgCol .rImg1 {
+    width: 335px;
+    height: 335px;
+    margin: -1.4em -1em -1.3em 0;
+    border-radius: 50% 10%;
   }
 }
 
@@ -617,9 +634,11 @@ a:hover {
 
   .imgCol .rImg {
     width: 1500px;
+    margin: -1.4em -1em -1.3em 0;
   }
   .imgCol .rImg1 {
     width: 1500px;
+    margin: -1.4em -1em -1.3em 0;
   }
 }
 
