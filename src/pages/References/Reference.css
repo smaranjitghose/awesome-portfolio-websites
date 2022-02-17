@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.reference-row{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  padding:0 15%;
+  background-color:#F6F6F6;
+}
+
+.left-row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right-row{  
+  height: 80vh;
+}
+
+
+.svg-animation-container svg{
+    width:100%;
+    height: 100%;
+    right:0;
+}
+
+.referenceMainWrapper{
+  font-family: 'Poppins', sans-serif;
+  background-color:#F6F6F6;
+  width: 100% !important;
+  padding: 10% 25%!important;
+}
+
+.profile-pic {
+  height:100%;
+  width: 70%;
+  margin-top: 8%;
+  margin-right: 8%;
+  margin-bottom: 8%;
+  margin-left: 3%;
+  border-radius: 50% 10%;
+  border: solid;
+  border-width: 20px;
+  border-color: rgb(181, 6, 250);
+}
+
+.right-img{
+  margin-left: 20%!important;
+}
+
+.table-div{
+  transition: 0.5s ease-in-out;
+}
+
+.table-div:hover{
+  transform: scale(1.1);  
+}
+.paperTitle:hover{
+  color:black;
+  font-weight: 600;
+}
+
+/*
+---------------------------
+      SVG ANIMATION
+---------------------------
+*/
+
+@keyframes manscreenpopup {
+    0%,
+    45%,
+    55%,
+    65%,
+    75%,
+    85% {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  @keyframes manscreenfloat {
+    0%,
+    to {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  @keyframes manscreenfloata {
+    0%,
+    to {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .svg-animation-container {
+    margin: auto;
+    width: 70%;
+    height: 100%;
+  }
+  
+  .rectanglework {
+    animation-name: manscreenpopup;
+    animation-iteration-count: 1;
+    animation-duration: 3.6s;
+    animation-timing-function: ease-in-out;
+    transform-origin: 526.882px 383px;
+  }
+  .rectanglework {
+    animation-duration: 3s;
+  }
+  
+  .rectanglemove {
+    animation-name: manscreenfloat;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+    animation-timing-function: ease-in-out;
+  }
+  .rectanglemove {
+    animation-duration: 6s;
+  }
+  
+  .rectwork {
+    animation-name: manscreenpopup;
+    animation-iteration-count: 1;
+    animation-duration: 3.6s;
+    animation-timing-function: ease-in-out;
+    transform-origin: 526.882px 383px;
+  }
+  .rectwork {
+    animation-duration: 3s;
+  }
+  
+  .rectfloat {
+    animation-name: manscreenfloat;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+    animation-timing-function: ease-in-out;
+  }
+  .rectfloat {
+    animation-duration: 6s;
+  }
+  
+  .circlemove {
+    animation-name: manscreenfloata;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+    animation-timing-function: ease-in-out;
+  }
+  .circlemove {
+    animation-duration: 6s;
+  }
+  
