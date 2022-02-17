@@ -85,9 +85,9 @@ const Reference = () => {
                         <>
                                         <tr className="table-div" data-aos="zoom-in-left"> 
                                             <td className="imgCol">
-                                            <img src={item ? item.image1 : "loading"} className="profile-pic" /></td>
+                                            <img alt="profile" src={item ? item.image1 : "loading"} className="profile-pic" /></td>
                                             <td class = "referenceTitleName">
-                                        <img src="https://img.icons8.com/fluency/48/000000/quote-left.png"/>
+                                        <img alt="quotes" src="https://img.icons8.com/fluency/48/000000/quote-left.png"/>
                                         <a href="#0" className="paperTitle"> {item ? item.name1 : "loading"} </a> 
                                         <div> {item ? item.designation1 : "loading"} </div> <div className="rConferences">  
                                         <div className="referenceY">{item ? item.message1 : "loading"}</div>
@@ -98,14 +98,14 @@ const Reference = () => {
                                         <tr className="table-div" data-aos="zoom-in-left"> 
                                             
                                             <td class = "referenceTitleName">
-                                        <img src="https://img.icons8.com/fluency/48/000000/quote-left.png"/>
+                                        <img alt="quotes" src="https://img.icons8.com/fluency/48/000000/quote-left.png"/>
                                         <a href="#0" className="paperTitle"> {item ? item.name2 : "loading"} </a> 
                                         <div> {item ? item.designation2 : "loading"} </div> <div className="rConferences">  
                                         <div className="referenceY">{item ? item.message2 : "loading"}</div>
                                         </div>  
                                         </td>
                                         <td className="imgCol">
-                                            <img src={item ? item.image2 : "loading"} className="profile-pic right-img" /></td>
+                                            <img alt="left-profile" src={item ? item.image2 : "loading"} className="profile-pic right-img" /></td>
                                         </tr> 
                         </>
                     )))
