@@ -29,12 +29,13 @@ html {
 @media (max-width: 766px) {
   .dropdown {
     position: absolute;
-    padding-right: 3.5rem;
+    top: 120px;
   }
   .godown {
     z-index: 1;
     padding-top: 8rem;
     padding-left: 3.3rem;
+    transform: scale(1.4);
   }
 }
 .head-upper {
@@ -52,10 +53,6 @@ html {
 
 section > div {
   padding-top: 7rem !important;
-}
-.container-fluid {
-  width: 100%;
-  margin: 0 auto;
 }
 
 @media only screen and (max-width: 991px) {
@@ -91,7 +88,6 @@ section > div {
   padding-right: 4rem;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
-
 }
 
 section {
@@ -179,8 +175,6 @@ section {
 
 .card1 {
   /* background-color: var(--bg1-color); */
-  /* background-color: #babdc2; */
-  /* background-color: #272727; */
   background-color: rgb(230, 230, 230);
   display: flex;
   flex-direction: column;
@@ -214,10 +208,10 @@ section {
 }
 
 .card1 .card-body {
+  /* color: var(--head-col); */
   display: flex;
   flex-flow: row wrap;
   padding: 18px;
-  /* color: var(--head-col); */
   color: white;
   color: black;
   border-radius: 0 13px 13px 0;
@@ -307,7 +301,6 @@ ol {
   line-height: 1.2;
   font-weight: bold;
   color: #222;
-  /* color: red; */
   margin: 0.5em 0;
   margin-top: 5rem;
   color: var(--text);
@@ -327,7 +320,6 @@ ol {
 
 .card-body .pre-heading {
   /* color: var(--meta-col); */
-  /* color: rgb(155, 149, 149); */
   color: black;
   font-size: 1.5rem;
   font-weight: 400;
@@ -335,8 +327,8 @@ ol {
 }
 
 .card-body .meta {
-  color: rgb(155, 149, 149);
   /* color: var(--meta-col); */
+  color: rgb(155, 149, 149);
   font-size: 16px;
 }
 
@@ -345,10 +337,10 @@ ol {
 }
 
 .card-body h3 {
+  /* color: var(--head-col); */
   font-size: 2rem;
   margin-top: 5px;
   margin-bottom: 5px;
-  /* color: var(--head-col); */
   color: white;
   color: black;
   text-align: center;
@@ -418,7 +410,6 @@ ol {
 
   animation: 0.5s ease-out 0s 1 slideInFromLeft;
 
-  /* background: #333; */
   background: rgb(230, 230, 230);
   padding: 10px;
   max-width: 262px;
@@ -435,7 +426,6 @@ ol {
   padding: 2rem;
   max-width: 1124px;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 .page-content .card {
   position: relative;
@@ -478,11 +468,6 @@ ol {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/* img {
-  vertical-align: middle;
-  border-style: none;
-} */
 
 @media (max-width: 600px) {
   .page-content .card {
@@ -534,55 +519,31 @@ ol {
 
 /*Hackathon Section Starts*/
 .slide {
-  width: 90%;
+  width: 85%;
   height: 400px;
-  max-width: 900px;
   display: flex;
-  justify-content: center;
   align-items: center;
   border-radius: 13px;
   box-shadow: 1px 5px 6px rgba(0, 0, 0, 15%), 2px 2px 7px rgba(0, 0, 0, 14%),3px 10px 8px rgba(0, 0, 0, 13%), 4px 14px 9px rgba(0, 0, 0, 12%);
   background-color: rgb(230, 230, 230);
-  margin-bottom: 1.2rem;
-  padding: 25px;
-  overflow-y: visible;
-  
+  margin-bottom: 1.2rem;  
 }
 .info {
   display: flex;
-  height: 320px;
   justify-content: space-around;
   align-items: center;
-  overflow-y: visible;
-}
-.info img 
-{
-  height: 300px;
-  width: 35%;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 13px;
-  box-shadow: 4px 13px 30px 1px rgba(187, 132, 204, 0.1);
-  border-radius: 20px;
-  transform: translateX(-80px);
-  background-color: black;
 }
 .card-content {
   height: 320px;
-  /* width: 60%; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  /* flex-wrap: wrap; */
+  padding: 25px;
 }
 
 .blog-slider {
-  /* width: 95%; */
   position: relative;
-  /* background: var(--bg1-color); */
   background: #272727;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 25px;
@@ -613,12 +574,6 @@ ol {
     height: 100%;
     flex-direction: column;
   }
-  .info img {
-    height: 250px;
-    width:90%;
-    transform: translateX(0);
-    padding: 0;
-  }
   .slide {
     height: 600px;
   }
@@ -640,12 +595,6 @@ ol {
   align-items: center;
 }
 @media screen and (max-width: 532px) {
-  .sliders div:first-child > button {
-    display: none;
-  }
-  .sliders {
-    padding: 0;
-  }
   .slide {
     width: 100%;
   }
@@ -660,8 +609,11 @@ ol {
   .blog-slider__button {
     width:70%;
   }
-  .info img {
-    width: 98%;
+  .card-content {
+    padding: 5px;
+  }
+  .slide {
+    height: 800px;
   }
 }
 .swiper-wrapper {
@@ -751,7 +703,7 @@ ol {
   height: 100%;
   object-fit: cover;
   display: block;
-  opacity: 0;
+  opacity: 1;
   border-radius: 20px;
   transition: all 0.3s;
 }
@@ -760,13 +712,31 @@ ol {
 }
 @media screen and (max-width: 768px) {
   .blog-slider__img {
-    transform: translateY(-50%);
     width: 90%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width:992px) {
+  .blog-slider__img {
+    width: 75%;
+    transform: translateX(0);
+    
+  }
+  .sliders div:first-child > button {
+    display: none;
   }
 }
 @media screen and (max-width: 576px) {
   .blog-slider__img {
-    width: 95%;
+    width: 80%;
+    transform: translateX(0);
+  }
+  .sliders div:first-child > button {
+    display: none;
+  }
+}
+@media screen and (max-width: 356px) {
+  .blog-slider__img {
+    width: 90%;
   }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
@@ -849,7 +819,7 @@ a:link {
 
 @media (max-width: 768px) {
   .mcard {
-    margin-bottom: 12rem !important;
+    margin-bottom: 5rem !important;
   }
 }
 
