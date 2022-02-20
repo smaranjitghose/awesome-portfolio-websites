@@ -17,6 +17,71 @@ import recess from '../../assets/images/opensource/recess.png'
 import ulhack from '../../assets/images/opensource/ul-hack.png'
 import uniglobe from '../../assets/images/opensource/uniglobe.png'
 import waffle from '../../assets/images/opensource/waffle-hack.png'
+import flipkart from '../../assets/images/opensource/flipkart.jpg';
+import IIT_Bombay from '../../assets/images/opensource/IIT_Bombay.jpg';
+import gsoc from '../../assets/images/opensource/gsoc.png';
+
+export const work = [
+    {
+        id:1,
+        title:"Software Development Intern",
+        heading:"FLIPKART",
+        author:"(May, 2020 - present)",
+        img:flipkart,
+        content:[
+            {
+                id:11,
+                point:"Worked to migrate Flipkart lite's product page to AMP pages so that they load up instantly."
+            },
+            {
+                id:12,
+                point:"Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page."
+            },
+            {
+                id:13,
+                point:"Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server."
+            },
+        ]
+    },
+    {
+        id:2,
+        title:"Student Developer",
+        heading:"Google Summer Of Code",
+        author:"(Mar - Aug, 2019)",
+        img:gsoc,
+        content:[
+            {
+                id:21,
+                point:"Worked with MOZILLA as a part of Google Summer Of Code."
+            },
+            {
+                id:22,
+                point:"Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions."
+            },
+            {
+                id:23,
+                point:"The activityLog API listens for logs from other installed extensions."
+            },
+        ]
+    },
+    {
+        id:3,
+        title:"Research Intern",
+        heading:"IIT, Bombay",
+        author:"(Dec, 19 - Jan, 20)",
+        img:IIT_Bombay,
+        content:[
+            {
+                id:31,
+                point:"Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha."
+            },
+            {
+                id:32,
+                point:"Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice."
+            },
+        ]
+    },
+]
 
 
 export const open = [
