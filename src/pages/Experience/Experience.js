@@ -1,10 +1,7 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
 import styles from './Experience.module.css';
-import flipkart from '../../assets/images/opensource/flipkart.jpg';
-import gsoc from '../../assets/images/opensource/gsoc.png';
-import iit from '../../assets/images/opensource/IIT_Bombay.jpg';
-import { open,hack } from './openSource';
+import { open,hack,work } from './openSource';
 import Carousel from 'react-elastic-carousel';
 import SlideContent from './SlideContent';
 
@@ -139,63 +136,29 @@ const Experience = () => {
                 {/* <!-- work experience Card --> */}
                 <main className={`${styles['container']} ${styles['experience-cards']}`}>
                     {/* <!-- Dynamic experience Card --> */}
-                    <div className={`${styles['col']} ${styles['gaap']} ${styles['aos-init']} ${styles['aos-animate']}`} data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400">
+                    {work.map((item)=>(<div key={item.id} className={`${styles['col']} ${styles['gaap']} ${styles['aos-init']} ${styles['aos-animate']}`} data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400">
                         <div className={`${styles['card']} ${styles['card1']}`}>
-                            <img src={flipkart} class="featured-image" alt="work" />
+                            <img src={item.img} class={styles["featured-image"]} alt="work" />
                             <article className={styles["card-body"]}>
                                 <header>
                                     <div className={styles["title"]}>
-                                        <h3>Software Development Intern</h3>
+                                        <h3>{item.title}</h3>
                                     </div>
                                     <p className={styles["meta"]}>
-                                        <span className={styles["pre-heading"]}>Flipkart</span><br />
-                                        <span className={styles["author"]}>(May, 2020 - present)</span>
+                                        <span className={styles["pre-heading"]}>{item.heading}</span><br />
+                                        <span className={styles["author"]}>{item.author}</span>
                                     </p>
                                     <ol>
-                                        <li>Worked to migrate Flipkart lite's product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>
+                                        {
+                                            item.content.map((info)=>(  
+                                                <li key={info.id}>{info.point}</li>
+                                            ))
+                                        }
                                     </ol>
                                 </header>
                             </article>
                         </div>
-                    </div>
-                    <div className={`${styles['col']} ${styles['gaap']} ${styles['aos-init']} ${styles['aos-animate']}`} data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400">
-                        <div className={`${styles['card']} ${styles['card1']}`}>
-                            <img src={gsoc} className={styles["featured-image"]} alt="work"/>
-                            <article className={styles["card-body"]}>
-                                <header>
-                                    <div className={styles["title"]}>
-                                        <h3>Student Developer</h3>
-                                    </div>
-                                    <p className={styles["meta"]}>
-                                        <span className={styles["pre-heading"]}>Google Summer Of Code</span><br />
-                                        <span className={styles["author"]}>(Mar - Aug, 2019)</span>
-                                    </p>
-                                    <ol>
-                                        <li>Worked with MOZILLA as a part of Google Summer Of Code.</li> <li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li> <li>The activityLog API listens for logs from other installed extensions.</li>
-                                    </ol>
-                                </header>
-                            </article>
-                        </div>
-                    </div>
-                    <div className={`${styles['col']} ${styles['gaap']} ${styles['aos-init']} ${styles['aos-animate']}`} data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400">
-                        <div className={`${styles['card']} ${styles['card1']}`}>
-                            <img src={iit} className={styles["featured-image"]}alt="work" />
-                            <article className={styles["card-body"]}>
-                                <header>
-                                    <div className={styles["title"]}>
-                                        <h3>Research Intern</h3>
-                                    </div>
-                                    <p className={styles["meta"]}>
-                                        <span className={styles["pre-heading"]}>IIT, Bombay</span><br />
-                                        <span className={styles["author"]}>(Dec, 19 - Jan, 20)</span>
-                                    </p>
-                                    <ol>
-                                        <li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li> <li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>
-                                    </ol>
-                                </header>
-                            </article>
-                        </div>
-                    </div>
+                    </div>))}
                 </main>
             </div>
             <div className={`${styles['main1']} ${styles['pt-1']}`}>
@@ -210,9 +173,6 @@ const Experience = () => {
                                 <p className={styles["copy"]}>{item.content}</p></div>
                         </div>
                     ))}
-
-
-
                 </main>
             </div>
             <div className={`${styles['main1']} ${styles['pt-1']}`}>
