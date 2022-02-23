@@ -97,9 +97,6 @@ html[light-mode="light"] .main-heading .my_techstacks{
 html[light-mode="light"] .skill-head .my_skill{
     text-shadow: none !important;
 }
-.tech_card:hover{
-    transform: scale(1.03);
-}
 .tech_card .card_img img{
     animation: scale_anime 2s infinite ease-in-out;
 }
@@ -179,7 +176,7 @@ html[light-mode="light"] .tech_card img{
 }
 html[light-mode="light"] .techstacks_icons .techstack_icon i {
     font-size: 2.5rem;
-    opacity: .7;
+    opacity: 1;
 }
 div.techstack_icon>i:hover {
     opacity: 1;
