@@ -49,6 +49,11 @@ const techStack = [
     langName: "React",
     langDesc: "<li>React is a free and open-source front-end JavaScript library for building user interfaces based on UI components</li>",
   },
+  {
+    langImage:"assets/images/techstack-page/c.png",
+    langName:"C",
+    langDesc:"<li>C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system</li>"
+  },
 ];
 
 const displayTechStacksCards = () => {
@@ -67,8 +72,8 @@ const displayTechStacksCards = () => {
                     </div>
                 </header>
                 <ul class="description">
-                    ${stack.langDesc}
-                </ul>
+                ${stack.langDesc}
+            </ul>
             </div>
         </div>
     </div>
