@@ -113,8 +113,6 @@ html[light-mode="light"] .tech_card img{
     }
     50%{
         transform: scale(1.15);
-        /* filter: brightness(0.7) invert(50%);/ */
-        filter: invert(10%);
     }100%{
         transform: scale(1);
     }
@@ -125,8 +123,6 @@ html[light-mode="light"] .tech_card img{
     }
     50%{
         transform: scale(1.15);
-        /* filter: brightness(0.7) invert(50%);/ */
-        filter: invert(60%);
     }100%{
         transform: scale(1);
     }
@@ -179,31 +175,46 @@ html[light-mode="light"] .tech_card img{
 
 .techstacks_icons .techstack_icon i {
     font-size: 2.5rem;
-    opacity: .4;
+    opacity: .7;
 }
-
+html[light-mode="light"] .techstacks_icons .techstack_icon i {
+    font-size: 2.5rem;
+    opacity: .7;
+}
 div.techstack_icon>i:hover {
     opacity: 1;
     transition: opacity .2s linear;
 }
 
-div.html_icon.techstack_icon>i.fa-html5:hover {
-    color: #FF5733 !important;
+div.html_icon.techstack_icon>i.fa-html5 {
+    /* color: #FF5733 !important; */
+    display: inline-block;
+    background: linear-gradient(-90deg, #F06529 50%, #E34C26 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
-div.techstack_icon>i.fa-css3:hover {
-    color: #2965f1 !important;
+div.techstack_icon>i.fa-css3-alt {
+    /* color: #2965f1 !important; */
+    display: inline-block;
+    background: linear-gradient(-90deg, #264de4 50%, #2965f1 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
-div.techstack_icon>i.fa-bootstrap:hover {
+div.techstack_icon>i.fa-bootstrap {
     color: #ad428d !important;
 }
 
-div.techstack_icon>i.fa-js-square:hover {
+div.techstack_icon>i.fa-js-square {
     color: #F0DB4F;
 }
 
-div.techstack_icon>i.fa-python:hover {
+div.techstack_icon>i.fa-python {
     display: inline-block;
     background: linear-gradient(-120deg, #ffde57, #4584b6, #646464);
     -webkit-background-clip: text;
@@ -212,19 +223,19 @@ div.techstack_icon>i.fa-python:hover {
     -moz-text-fill-color: transparent;
 }
 
-div.techstack_icon>i.fa-react:hover {
+div.techstack_icon>i.fa-react {
     color: #61DBFB;
 }
 
-div.techstack_icon>i.fa-git:hover {
+div.techstack_icon>i.fa-git-alt {
     color: #F1502F;
 }
 
-div.techstack_icon>i.fa-node:hover {
+div.techstack_icon>i.fa-node {
     color: #3C873A;
 }
 
-div.techstack_icon>i.fa-cuttlefish:hover {
+div.techstack_icon>i.fa-cuttlefish {
     color: #044F88;
 }
 #box1{
@@ -258,18 +269,6 @@ div.techstack_icon>i.fa-cuttlefish:hover {
     
 }
 
-
-
-.progress {
-    border-radius: 10px;
-    margin-top: 3px;
-  }
-  
-  .progress .progress-bar {
-    border-radius: 10px;
-    transition: 2s;
-    background-color: #bb86c9 !important;
-  }
 .project_item{
     margin-top: 4px;
 }
