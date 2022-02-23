@@ -184,6 +184,7 @@ html[light-mode="light"] .techstacks_icons .techstack_icon i {
 div.techstack_icon>i:hover {
     opacity: 1;
     transition: opacity .2s linear;
+    transform: scale(1.3);
 }
 
 div.html_icon.techstack_icon>i.fa-html5 {
