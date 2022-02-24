@@ -36,6 +36,7 @@ html {
     padding-top: 8rem;
     padding-left: 3.3rem;
     transform: scale(1.4);
+    margin-right: 1.7rem;
   }
 }
 .head-upper {
@@ -721,6 +722,9 @@ ol {
     transform: translateX(0);
     
   }
+  .blog-slider__img img {
+    object-fit: fill;
+  }
   .sliders div:first-child > button {
     display: none;
   }
@@ -732,6 +736,9 @@ ol {
   }
   .sliders div:first-child > button {
     display: none;
+  }
+  .blog-slider__img img {
+    object-fit: fill;
   }
 }
 @media screen and (max-width: 356px) {
