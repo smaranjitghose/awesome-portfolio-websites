@@ -376,7 +376,7 @@ color: #ffffff !important;
 
 /*
 -------------------------------------
-  NAV BAR HIGHTLIGHTING
+  NAV BAR HIGHLIGHTING
 --------------------------------------
 */
 
@@ -426,6 +426,14 @@ color: #ffffff !important;
   .bike {
       display: none;
   }
+}
+
+/* navbar hover for light mode */
+html[light-mode="light"] .nav-link:hover{
+  color: #000000 !important;
+}
+html[light-mode="light"] .navbar-brand:hover{
+  color: #000000 !important;
 }
 
 @media (min-width: 992px) {
