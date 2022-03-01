@@ -301,6 +301,10 @@ a.socialicon {
    GITHUB MICROANIMATION
 --------------------------
 */
+html[light-mode="dark"] .github-icon{
+  fill: #ffff;
+}
+
 .github-icon {
   width: 40px;
   margin-left: 12px;
