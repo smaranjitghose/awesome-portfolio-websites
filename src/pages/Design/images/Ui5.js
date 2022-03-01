@@ -3,7 +3,7 @@ import React from "react";
 const Ui5 = () => {
   return (
     <div>
-      <img src={u5} />
+      <img src={u5} alt="" />
     </div>
   );
 };

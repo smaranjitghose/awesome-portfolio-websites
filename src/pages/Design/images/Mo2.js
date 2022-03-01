@@ -4,7 +4,7 @@ import React from "react";
 const Mo2 = () => {
   return (
     <div>
-      <img src={m2} />
+      <img src={m2} alt="" />
     </div>
   );
 };

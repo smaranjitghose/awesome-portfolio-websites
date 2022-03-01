@@ -3,7 +3,7 @@ import React from "react";
 const Ui3 = () => {
   return (
     <div>
-      <img src={u3} />
+      <img src={u3} alt="" />
     </div>
   );
 };

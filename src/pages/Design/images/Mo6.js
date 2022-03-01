@@ -4,7 +4,7 @@ import React from "react";
 const Mo6 = () => {
   return (
     <div>
-      <img src={m6} />
+      <img src={m6} alt="" />
     </div>
   );
 };

@@ -1,7 +1,4 @@
-import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-
-import { ReactComponent as u1 } from "../../assets/images/design-page/ui_ux/1.svg";
 
 import styles from "./design.module.css";
 
