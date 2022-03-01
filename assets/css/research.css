@@ -24,7 +24,7 @@ html[light-mode="light"] {
 
 html[light-mode="dark"] {
   --bg1-color: #272727;
-  --bg-col: black;
+  --bg-col: rgba(0, 0, 0, 0);
   --text-gra: ;
   --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
   --txt-fill: transparent;
