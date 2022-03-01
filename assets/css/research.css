@@ -24,7 +24,7 @@ html[light-mode="light"] {
 
 html[light-mode="dark"] {
   --bg1-color: #272727;
-  --bg-col: rgba(0, 0, 0, 0);
+  --bg-col: black;
   --text-gra: ;
   --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
   --txt-fill: transparent;
@@ -43,11 +43,6 @@ html[light-mode="dark"] {
   --shadow-col2: rgba(34, 34, 34, 0.459);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
   overflow-x: hidden;
 }
@@ -62,15 +57,8 @@ html {
 }
 
 /*For Changing background color of body according to theme*/
-
 body {
   background: var(--bg-col) !important;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
 }
 
 .p-upper {
@@ -78,9 +66,6 @@ body {
 }
 
 /*Research page*/
-.container {
-  background-color: var(--bg-col);
-}
 .txt-bottom {
   height: auto;
 }
@@ -763,12 +748,8 @@ a:hover {
   transform-origin: 1009.149px 711.625px;
 }
 
-* {
-  max-width: 100% !important;
-}
-
-.instagram-icon-footer {
-  padding-right: 3px !important;
+.container.research-upper.pt-5{
+  max-width: 100%;
 }
 
 @media screen and (min-width: 711px) and (max-width: 1000px){
