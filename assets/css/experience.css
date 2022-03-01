@@ -665,6 +665,9 @@ ul ol {
   text-align: center;
   letter-spacing: 1px;
 }
+.blog-slider__button:hover{
+  color: white !important;
+}
 a:link {
   text-decoration: none !important;
 }
