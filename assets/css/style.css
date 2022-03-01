@@ -429,8 +429,11 @@ color: #ffffff !important;
 }
 
 /* navbar hover for light mode */
-html[light-mode="light"] .nav-link:hover{
+html[light-mode="light"] .nav-link{
   color: #000000 !important;
+}
+html[light-mode="light"] .nav-link:hover{
+  color: 	rgb(106, 0, 187) !important;
 }
 html[light-mode="light"] .navbar-brand:hover{
   color: #000000 !important;
