@@ -772,6 +772,7 @@ Rotate Transition in foote Soical Icon
 }
 
 .rounded-social-buttons .social-button.github {
+  fill: #ffff;
   background: #2b2a2A;
   box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
 }
@@ -1025,9 +1026,9 @@ outline: none;
   /* padding: 20px 25px; */
   text-align: center;
   border-radius: 50px;
+  border-style: none;
   transition: 0.5s ease background-color, 0.5s ease box-shadow;
-  background: #6a00bbd2;
-  box-shadow: 0 10px 15px -6px lavender;
+  background: #bb86fc;
 }
 #lnch_btn {
   position: absolute;
