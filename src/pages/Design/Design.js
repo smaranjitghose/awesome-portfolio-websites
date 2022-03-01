@@ -77,7 +77,7 @@ const Designs = () => {
               <div className={styles.staggered_grid}>
                 <div className={styles.picture_container}>
                   <a
-                    href="/uiux"
+                    href="uiux"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
