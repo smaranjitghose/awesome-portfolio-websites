@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import { Route, Switch } from "react-router-dom";
+
 import { ReactComponent as u1 } from "../../assets/images/design-page/ui_ux/1.svg";
 
 import styles from "./design.module.css";
@@ -80,7 +80,7 @@ const Designs = () => {
               <div className={styles.staggered_grid}>
                 <div className={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/1.svg"
+                    href="/uiux"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -89,7 +89,7 @@ const Designs = () => {
                 </div>
                 <div className={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/2.svg"
+                    href="/uiux2"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -98,7 +98,7 @@ const Designs = () => {
                 </div>
                 <div className={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/3.svg"
+                    href="/uiux3"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -107,7 +107,7 @@ const Designs = () => {
                 </div>
                 <div className={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/4.svg"
+                    href="/uiux4"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -116,7 +116,7 @@ const Designs = () => {
                 </div>
                 <div className={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/5.svg"
+                    href="/uiux5"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -125,7 +125,7 @@ const Designs = () => {
                 </div>
                 <div className={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/6.svg"
+                    href="/uiux6"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -134,7 +134,7 @@ const Designs = () => {
                 </div>
                 <div class={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/7.svg"
+                    href="/uiux7"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -143,7 +143,7 @@ const Designs = () => {
                 </div>
                 <div className={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/8.svg"
+                    href="/uiux8"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -159,7 +159,7 @@ const Designs = () => {
               <div className={styles.staggered_grid}>
                 <div className={styles.picture_container}>
                   <a
-                    onClick={window.open(u1)}
+                    href="/mock"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -168,7 +168,7 @@ const Designs = () => {
                 </div>
                 <div className={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/2.svg"
+                    href="/mock2"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -177,7 +177,7 @@ const Designs = () => {
                 </div>
                 <div className={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/3.svg"
+                    href="/mock3"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -186,7 +186,7 @@ const Designs = () => {
                 </div>
                 <div className={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/4.svg"
+                    href="/mock4"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -195,7 +195,7 @@ const Designs = () => {
                 </div>
                 <div className={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/5.svg"
+                    href="/mock5"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -204,7 +204,7 @@ const Designs = () => {
                 </div>
                 <div className={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/6.svg"
+                    href="/mock6"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -213,7 +213,7 @@ const Designs = () => {
                 </div>
                 <div class={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/7.svg"
+                    href="/mock7"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
@@ -222,7 +222,7 @@ const Designs = () => {
                 </div>
                 <div className={styles.picture_container}>
                   <a
-                    href="assets/images/designs/ui_ux/8.svg"
+                    href="/mock8"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                   >
