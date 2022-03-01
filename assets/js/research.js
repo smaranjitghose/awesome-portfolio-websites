@@ -165,13 +165,15 @@ const fillData = () => {
             <tr data-aos="zoom-in-left"> 
                 <td class="imgCol"><img src="${image}" class="rImg"></td>
                 <td class = "researchTitleName">
-                    <div>
+                    <div class="img-div">
                         <span class="imgResponsive">
                             <img src="${image}" class="imgRes">
                         </span>
                     </div>
                     <a href="#0" class="paperTitle"> ${title} </a> 
-                    <div> ${authors} </div> <div class="rConferences"> ${conferences} 
+                    <div class = "authors> ${authors} </div> 
+                    
+                    <div class="rConferences"> ${conferences} 
                         <div class="researchY">${researchYr}</div>
                     </div>
         
@@ -179,11 +181,11 @@ const fillData = () => {
                     <div class="d-flex" style="margin-right:5%;">
                         <button class="button button-accent button-small text-right button-abstract " type="button" data-toggle="collapse" data-target="#${absbox}" aria-expanded="false" aria-controls="${absbox}">
                             ABSTRACT
-                        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
                 
                         <button class="button button-accent button-small text-right button-abstract " type="button" data-toggle="collapse" data-target="#${citebox}" aria-expanded="false" aria-controls="${citebox}">
                             CITE
-                        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
                     </div>
                     <div id="${absbox}" class="collapse" aria-labelledby="headingTwo" data-parent=".collapse">
                         <div class="card-body">
