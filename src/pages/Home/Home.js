@@ -6,7 +6,6 @@ import dp_male from "../../assets/images/dp_male.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faKaggle } from "@fortawesome/free-brands-svg-icons";
 import { Helmet } from "react-helmet";
-import Output from "./AnimateOnChange";
 import TypeAnimation from "react-type-animation";
 
 const Home = () => {
