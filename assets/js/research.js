@@ -176,9 +176,9 @@ const fillData = () => {
                     <div class="rConferences"> ${conferences} 
                         <div class="researchY">${researchYr}</div>
                     </div>
-        
+                      <br><br><br>
                     <!--CITE BUTTON-->
-                    <div class="d-flex" style="margin-right:5%;">
+                    <div class="d-flex">
                         <button class="button button-accent button-small text-right button-abstract " type="button" data-toggle="collapse" data-target="#${absbox}" aria-expanded="false" aria-controls="${absbox}">
                             ABSTRACT
                         </button>
