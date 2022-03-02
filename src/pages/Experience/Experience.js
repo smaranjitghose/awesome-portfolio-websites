@@ -4,9 +4,11 @@ import styles from './Experience.module.css';
 import { open,hack,work } from './openSource';
 import Carousel from 'react-elastic-carousel';
 import SlideContent from './SlideContent';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Experience = () => {
-
+    AOS.init()
     return (
         <div>
             <Helmet>
