@@ -231,7 +231,21 @@ body {
 
 @media only screen and (max-width: 771px) and (max-height: 1030px) {
   .researchTitleName {
-    width: 100%;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 400px) and (max-height: 700px) {
+  .researchTitleName {
+    width: 300px;
+  }
+}
+
+/* For Samsung Galaxy Fold*/
+
+@media only screen and (max-width: 300px) and (max-height: 660px) {
+  .researchTitleName {
+    width: 230px;
   }
 }
 
@@ -339,26 +353,36 @@ body {
 
 @media only screen and (max-width: 415px) and (max-height: 830px) {
   .imgResponsive .imgRes {
-    margin: -1.3em -1.3em 1.3em -1.3em;
-    width: 406.7px;
+    margin: 1em -1.3em 1.3em -1.3em;
+    width: 200px;
     height: 260px;
     border-radius: 10px;
   }
 }
 
-@media only screen and (max-width: 375px) and (max-height: 670px) {
+@media only screen and (max-width: 380px) and (max-height: 680px) {
   .imgResponsive .imgRes {
-    margin: -1.3em -1.3em 1.3em -1.3em;
-    width: 406.7px;
+    margin: 1em -1.3em 1.3em -1.3em;
+    width: 200px;
     height: 260px;
     border-radius: 10px;
   }
 }
+
 
 @media only screen and (max-width: 545px) and (min-width: 500px) and (max-height: 725px) {
   .imgResponsive .imgRes {
-    margin: -1em -1em 1.3em -1em;
-    width: 406.7px;
+    margin: 1em -1em 1.3em -1em;
+    width: 200px;
+    height: 260px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 280px) and (max-height: 653px) {
+  .imgResponsive .imgRes {
+    margin: 1em -1.3em 1.3em -1.3em;
+    width: 150px;
     height: 260px;
     border-radius: 10px;
   }
