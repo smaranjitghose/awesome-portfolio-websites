@@ -6,11 +6,12 @@ import dp_male from "../../assets/images/dp_male.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faKaggle } from "@fortawesome/free-brands-svg-icons";
 import { Helmet } from "react-helmet";
-import Output from "./AnimateOnChange"
+import Output from "./AnimateOnChange";
+import TypeAnimation from "react-type-animation";
 
 const Home = () => {
   return (
-    <div className={styles['home']}>
+    <div className={styles["home"]}>
       <Helmet>
         <title>John Doe | Home</title>
         <meta charset="UTF-8" />
@@ -58,7 +59,7 @@ const Home = () => {
         />
       </Helmet>
       <Particles
-        id={styles['particlejs']}
+        id={styles["particlejs"]}
         params={{
           particles: {
             number: {
@@ -150,34 +151,57 @@ const Home = () => {
           retina_detect: true,
         }}
       />
-      <div className={styles['desc-container']}>
-        <div className={styles['desc']}>
-          <div className={styles['desc-1']}>
-            <span className={styles['text']}>
-              Hi <img className={styles['wave']} src={Hand} alt="" />, I'm{" "}
+      <div className={styles["desc-container"]}>
+        <div className={styles["desc"]}>
+          <div className={styles["desc-1"]}>
+            <span className={styles["text"]}>
+              Hi <img className={styles["wave"]} src={Hand} alt="" />, I'm{" "}
               <span>
                 {" "}
                 <b> John Doe</b>
               </span>
             </span>
-            <div className={styles['center']}>
+            <div className={styles["center"]}>
               <img src={dp_male} alt="" />
             </div>
           </div>
-          <div className={styles['typing']}>
-           <span className={styles['AnimateEffect']}><Output/></span> 
+          <div className={styles["typing"]}>
+            I'm into{" "}
+            <span className={styles["AnimateEffect"]}>
+              <TypeAnimation
+                cursor={true}
+                sequence={[
+                  "Designing",
+                  1000,
+                  "UI/UX",
+                  1000,
+                  "Cloud Computing",
+                  1000,
+                  "Web Development",
+                  1000,
+                  "Open Source",
+                  1000,
+                  "Mentoring",
+                  1000,
+                  "",
+                ]}
+                wrapper="span"
+                repeat={Infinity}
+              />
+            </span>
+            .
           </div>
-          <div className={styles['social-icons']}>
+          <div className={styles["social-icons"]}>
             <a
-              className={`${styles['socialicon']} twitter`}
+              className={`${styles["socialicon"]} twitter`}
               href="https://twitter.com"
               target="_blank"
               rel="noreferrer"
             >
               <svg
-                className={'twitter-icon'}
+                className={"twitter-icon"}
                 version="1.1"
-                id={styles['Layer_1']}
+                id={styles["Layer_1"]}
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
                 x="0px"
@@ -187,7 +211,7 @@ const Home = () => {
                 xmlSpace="preserve"
               >
                 <path
-                  id={styles['body']}
+                  id={styles["body"]}
                   fill="#5DA8DC"
                   d="M142.9,364.1c-1.6,1-3,1.7-4,2.3c-3,1.5-7.9,3.8-14.9,6.9c-7,3.1-14.7,5.7-23.1,7.9
                                                 c-8.4,2.2-15.6,3.8-21.8,4.7c-6.2,0.9-12.2,1.5-18.1,1.8s-11.4,0.3-16.7,0c-5.2-0.3-8.5-0.5-9.6-0.6l-1.8-0.2l-0.4-0.1l-0.4-0.1v0.8
@@ -210,7 +234,7 @@ const Home = () => {
                 ></path>
 
                 <path
-                  id={'wing1'}
+                  id={"wing1"}
                   fill="#5DA8DC"
                   d="M233.2,181.5c-5-0.5-12.4-1.7-22.2-3.6c-9.8-1.8-16.8-3.3-20.8-4.5s-11.1-3.7-21.2-7.4
                                                 c-10.1-3.8-19.5-8-28.3-12.8c-8.8-4.7-16.8-9.5-24-14.4s-13.1-9.1-17.5-12.8c-4.5-3.7-7.1-6-7.9-7s-1.5-1.6-1.9-1.8
@@ -229,7 +253,7 @@ const Home = () => {
                 ></path>
 
                 <path
-                  id={'wing2'}
+                  id={"wing2"}
                   fill="#5DA8DC"
                   d="M233.2,181.5c-5-0.5-12.4-1.7-22.2-3.6c-9.8-1.8-16.8-3.3-20.8-4.5s-11.1-3.7-21.2-7.4
                                                 c-10.1-3.8-19.5-8-28.3-12.8c-8.8-4.7-16.8-9.5-24-14.4s-13.1-9.1-17.5-12.8c-4.5-3.7-7.1-6-7.9-7s-1.5-1.6-1.9-1.8
@@ -249,13 +273,13 @@ const Home = () => {
               </svg>
             </a>
             <a
-              className={`${styles['socialicon']} ${styles['dribbble']}`}
+              className={`${styles["socialicon"]} ${styles["dribbble"]}`}
               href="https://dribbble.com/"
               target="_blank"
               rel="noreferrer"
             >
               <svg
-                className={styles['dribbble-icon']}
+                className={styles["dribbble-icon"]}
                 viewBox="0 0 256 256"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -272,13 +296,13 @@ const Home = () => {
               </svg>
             </a>
             <a
-              className={`${styles['socialicon']} ${styles['linkedin']}`}
+              className={`${styles["socialicon"]} ${styles["linkedin"]}`}
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noreferrer"
             >
               <svg
-                className={styles['linkedin-icon']}
+                className={styles["linkedin-icon"]}
                 xmlns="http://www.w3.org/2000/svg"
                 width="35"
                 viewBox="0 0 24 24"
@@ -293,13 +317,13 @@ const Home = () => {
               </svg>
             </a>
             <a
-              className={`${styles['socialicon']} ${styles['codeforces']}`}
+              className={`${styles["socialicon"]} ${styles["codeforces"]}`}
               href="https://codeforces.com/"
               target="_blank"
               rel="noreferrer"
             >
               <svg
-                className={styles['codeforces-icon']}
+                className={styles["codeforces-icon"]}
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="5 0 14 19"
                 width="100"
@@ -307,7 +331,7 @@ const Home = () => {
               >
                 <g>
                   <rect
-                    className={styles['red']}
+                    className={styles["red"]}
                     x="15"
                     width="2"
                     height="6.5"
@@ -316,7 +340,7 @@ const Home = () => {
                     fill="#AE0F0A"
                   ></rect>
                   <rect
-                    className={styles['blue']}
+                    className={styles["blue"]}
                     x="12"
                     width="2"
                     height="6.5"
@@ -325,7 +349,7 @@ const Home = () => {
                     fill="#4F81C1"
                   ></rect>
                   <rect
-                    className={styles['yellow']}
+                    className={styles["yellow"]}
                     x="9"
                     width="2"
                     height="6.5"
@@ -337,50 +361,50 @@ const Home = () => {
               </svg>
             </a>
             <a
-              className={`${styles['socialicon']} ${styles['kaggle']}`}
+              className={`${styles["socialicon"]} ${styles["kaggle"]}`}
               href="https://www.kaggle.com/"
               target="_blank"
               rel="noreferrer"
             >
-              <FontAwesomeIcon icon={faKaggle} className={styles['icons']} />
+              <FontAwesomeIcon icon={faKaggle} className={styles["icons"]} />
             </a>
             <a
-              className={`${styles['socialicon']} instagram`}
+              className={`${styles["socialicon"]} instagram`}
               href="https://www.instagram.com/"
               target="_blank"
               rel="noreferrer"
             >
               <svg
-                className={'instagram-icon'}
+                className={"instagram-icon"}
                 x="0px"
                 y="0px"
                 viewBox="0 0 202.5 202.5"
                 enableBackground="new 0 0 202.5 202.5"
               >
                 <circle
-                  id={'littleCircle'}
-                  className={'st0'}
+                  id={"littleCircle"}
+                  className={"st0"}
                   cx="101"
                   cy="101.5"
                   r="18.9"
                 ></circle>
                 <circle
-                  id={'shutter'}
-                  className={'st0'}
+                  id={"shutter"}
+                  className={"st0"}
                   cx="101"
                   cy="101.5"
                   r="8"
                 ></circle>
                 <circle
-                  id={'lens'}
-                  className={'st0'}
+                  id={"lens"}
+                  className={"st0"}
                   cx="125.5"
                   cy="78.6"
                   r="2.9"
                 ></circle>
                 <path
-                  id={'camera'}
-                  className={'st0'}
+                  id={"camera"}
+                  className={"st0"}
                   d="M79,60.5h44c10.5,0,19,8.5,19,19v44c0,10.5-8.5,19-19,19H79c-10.5,0-19-8.5-19-19v-44
                                                                                                         C60,69,68.5,60.5,79,60.5z"
                 ></path>
@@ -388,19 +412,19 @@ const Home = () => {
             </a>
 
             <a
-              className={`${styles['socialicon']} github`}
+              className={`${styles["socialicon"]} github`}
               href="https://github.com/"
               target="_blank"
               rel="noreferrer"
             >
               <svg
-                className={'github-icon'}
+                className={"github-icon"}
                 width="45px"
                 height="45px"
                 viewBox="0 0 300 300"
               >
                 <path
-                  id={styles['body']}
+                  id={styles["body"]}
                   d="M112.5,234.4v43.1c24.5,7.5,50.5,7.5,75,0V225c-0.4-11.1-4.9-21.6-12.7-29.6c30-3.4,59.5-23.5,59.5-64.1
                                                             c0.9-13.9-3.3-27.7-11.8-38.7c4.1-11.6,3.7-24.4-1.3-35.7c0,0-11.2-3.7-37.5,13.8c-22.1-6.1-45.3-6.1-67.4,0
                                                             C90.6,53.3,78.9,56.8,78.9,56.8c-5,11.3-5.4,24.1-1.3,35.7c-8.5,11.1-12.7,24.8-11.9,38.7c0.2,33.8,26.4,61.8,60.2,64.1
@@ -408,7 +432,7 @@ const Home = () => {
                 ></path>
 
                 <path
-                  id={'arm'}
+                  id={"arm"}
                   d="M125.2,213.4c-13.9,7.8-31.5,2.8-39.3-11.2c-4.3-7.7-12-12.8-20.7-13.8c-11.2,0-4.6,6.4,0,9.4
                                                             c6,5.1,10.8,11.5,13.8,18.8c2.9,7.4,7.7,24.1,41.5,17.8"
                 ></path>
