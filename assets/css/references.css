@@ -299,6 +299,8 @@ body {
 .imgRes {
   width: 14em;
   height: 14em;
+  border: 10px solid rgb(181,6,250);
+  border-radius: 10% 50%;
 }
 
 .imgResponsive {
@@ -335,7 +337,6 @@ body {
     margin: -1.32em -1.26em 1.3em -1.3em;
     width: 406.7px;
     height: 260px;
-    border-radius: 10px;
   }
 }
 
@@ -344,7 +345,6 @@ body {
     margin: -1.4em -1em 1.3em -1.3em;
     width: 406.7px;
     height: 260px;
-    border-radius: 10px;
   }
 }
 
@@ -353,7 +353,6 @@ body {
     margin: -1.5em -1.3em 1.3em -1.4em;
     width: 406.7px;
     height: 260px;
-    border-radius: 10px;
   }
 }
 
@@ -362,7 +361,6 @@ body {
     margin: -1.6em 1em 1.3em -1.4em;
     width: 406.7px;
     height: 260px;
-    border-radius: 10px;
   }
 }
 
@@ -371,7 +369,6 @@ body {
     margin: -1.3em -1.3em 1.3em -1.3em;
     width: 260px;
     height: 260px;
-    border-radius: 10px;
   }
 }
 
@@ -380,7 +377,6 @@ body {
     margin: -1.3em -1.3em 1.3em -1.3em;
     width: 260px;
     height: 260px;
-    border-radius: 10px;
   }
 }
 
@@ -389,7 +385,6 @@ body {
     margin: -1em -1em 1.3em -1em;
     width: 260px;
     height: 260px;
-    border-radius: 10px;
   }
 }
 
@@ -398,13 +393,13 @@ body {
     margin: -1.4em -1em -1.3em 0;
     width: 270px;
     height: 270px;
-    border-radius: 10px;
+    border-radius: 10% 50%;
   }
   .imgCol .rImg1 {
     margin: -1.4em -1em -1.3em 0;
     width: 270px;
     height: 270px;
-    border-radius: 10px;
+    border-radius: 50% 10%;
   }
 }
 
@@ -623,7 +618,6 @@ a:hover {
   .imgResponsive .imgRes {
     width: 200px !important;
     height: 200px;
-    border-radius: 10px;
   }
 }
 
