@@ -46,7 +46,7 @@ A community maintained open source project aimed at making personal portfolio fo
 
 [Check out our awesome Documentation](https://smaranjitghose.github.io/awesome-portfolio-websites/)
 
-## Contribution Guidelines🏗
+## Contribution Guideline
 
 Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and improve it further.
 
