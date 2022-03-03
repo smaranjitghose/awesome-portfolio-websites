@@ -569,6 +569,7 @@ ul ol {
   border-radius: 20px;
   transform: translateX(-80px);
   overflow: hidden;
+  background-image: linear-gradient(147deg, #545b62a8, black);
 }
 .blog-slider__img:after {
   content: "";
@@ -664,9 +665,11 @@ ul ol {
   text-align: center;
   letter-spacing: 1px;
 }
+.blog-slider__button:hover{
+  color: white !important;
+}
 a:link {
   text-decoration: none !important;
-  color: white;
 }
 @media screen and (max-width: 576px) {
   .blog-slider__button {
@@ -683,15 +686,12 @@ a:link {
     margin-bottom: 12rem !important;
   }
 }
-
 /*Hackathon Section Ends*/
-
 /*
 ----------------------------
        SVG ANIMATIONS 
 ----------------------------
 */
-
 #tie {
   animation: tie 2s infinite ease-in-out;
   transform-origin: 50% 62%;

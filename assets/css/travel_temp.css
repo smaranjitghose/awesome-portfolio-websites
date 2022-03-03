@@ -26,7 +26,7 @@ body {
     left: 0;
     top: 0;
     width: 19.2%;
-    height: 90%; /* 100% */
+    height: 90%; 
     background: #252525;
     transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s;
     will-change: transform, width, opacity;
@@ -283,7 +283,6 @@ body {
 }
 .el:nth-child(2) .el__bg:before {
     transition-delay: 0.1s;
-    /* background-image: url("https://images.unsplash.com/photo-1585943955305-c6cdc6cad18f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=401&q=80"); */
 }
 .el:nth-child(3) {
     transform: translate3d(210.4166666667%, 0, 0);
@@ -302,7 +301,6 @@ body {
 }
 .el:nth-child(3) .el__bg:before {
     transition-delay: 0.2s;
-    /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-5.jpg"); */
 }
 .el:nth-child(4) {
     transform: translate3d(315.625%, 0, 0);
@@ -321,7 +319,6 @@ body {
 }
 .el:nth-child(4) .el__bg:before {
     transition-delay: 0.3s;
-    /* background-image: url("https://images.unsplash.com/photo-1606646677098-46b8141f4da5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"); */
 }
 .el:nth-child(5) {
     transform: translate3d(420.8333333333%, 0, 0);
@@ -340,7 +337,6 @@ body {
 }
 .el:nth-child(5) .el__bg:before {
     transition-delay: 0.4s;
-    /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-7.jpg"); */
 }
 
 .el:hover .el__bg:after {
@@ -349,7 +345,6 @@ body {
 .el.s--active {
     z-index: 1;
     width: 100%;
-    /* height: 130%; */
     transform: translate3d(0, 0, 0);
     transition: transform 0.6s, width 0.7s 0.7s, z-index 0s;
 }
@@ -380,16 +375,11 @@ body {
 }
 .div_quote {
     text-align: center;
-    /* margin-top: 100px; */
     margin-bottom: 200px;
     color: rgb(121, 59, 221);
     font-weight: bold;
     letter-spacing: 5px;
 }
-/* .icon-link--twitter {
-    left: auto;
-    right: 5px;
-} */
 /* Travel Vlog Summary section ends */
 
 /*hero section starts*/
@@ -406,7 +396,7 @@ body {
     background-size: 350px;
 }
 .hero .item2 {
-    background-color: white; /* rgb(245, 225, 245) */
+    background-color: white; 
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -437,19 +427,6 @@ body {
         letter-spacing: 1px;
     }
 }
-/* @media only screen and (max-width: 890px) {
-    .hero .item1 {
-        background-size: 300px;
-        background-position: 10% 35%;
-        width: 40%;
-    }
-    .hero .item2 {
-        width: 60%;
-    }
-    .hero .item2 p {
-        letter-spacing: 0px;
-    }
-} */
 @media only screen and (max-width: 700px) {
 
     .container_summary {
