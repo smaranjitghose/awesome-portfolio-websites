@@ -442,13 +442,17 @@ $(function submitAnimation() {
 
   $("#lnch").on("click", function () {
 
+    // Check if the name field is empty or contains a number
     if (name.value == "" || (/\d/.test(name.value))) {
       alert('Please enter a valid name');
+      return;
     }
+    // Check if the email field is empty or email is not valid ex: test@@email.com
     else if (emailAdress.value == "" || !(emailPattern.test(emailAdress.value))) {
       alert('Please enter a valid email');
       return;
     }
+    // Check if the message field is empty
     else if (text.value == "") {
       alert('Please enter your message');
       return;
@@ -463,6 +467,7 @@ $(function submitAnimation() {
         $("#lnch").addClass("launched").text("SENT");
         $("#lnch_btn").addClass("launched");
       }, 1500);
+      // Wait for 2.2 seconds so that the send button animation can be fully played before submitting the form
       setTimeout(() => {
         document.querySelector('form').submit();
       }, 2200);
