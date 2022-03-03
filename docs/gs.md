@@ -69,6 +69,34 @@
 
 ---
 
+### Contact Form
+
+- We will use [FormCarry](https://formcarry.com/) to collect the feedback of the visitors on the page. 
+
+- First, create a FormCarry account if you do not have one
+    1. Go to [https://formcarry.com/register](https://formcarry.com/register)
+    2. Enter your Email and password
+    3. Click on Sign Up
+
+- Create a FormCarry Form
+    1. Click on the **Add New** button
+    <br>
+    Give it a name such as _Portfolio_
+    <video width="100%" autoplay loop controls >
+    <source src="https://formcarry.com/assets/documentation/create-form.mp4" type="video/mp4">
+    </video>
+    3. Copy the form endpoint given to you. example: `https://formcarry.com/s/KljL8nJiRf`
+    ![FormCarry Endpoint](images/FormCarry/Endpoint.PNG)
+
+- To replace the demo form link with your endpoint
+    1. Open _app.js_
+    2. Go to `let footer`, inside `<form name="form1" action="https://formcarry.com/s/BywEPAJNb" method="POST" accept-charset="UTF-8">`, change the action attribute from "`BywEPAJNb`" to your FormCarry endpoint e.g. `KljL8nJiRf`
+
+- To Test if the form works, send a submission and if you see this, it works!
+    ![FormCarry Send Form](images/FormCarry/SendMessage.gif)
+    And, inside your submissions, you should see the email
+    ![FormCarry Submissions](images/FormCarry/Submissions.PNG)
+
 ### Experience Page
 
 ![Experience](images/work-exp.png)
