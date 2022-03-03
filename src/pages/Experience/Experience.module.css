@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
-html[light-mode="light"] {
+ /* html[light-mode="light"]  */
+:root{ 
+  /* { */
   --bg1-color: rgba(0, 0, 0, 0);
   --text-color: #6c757d;
   --shadow-col1: #babdc2;
@@ -173,13 +175,12 @@ section {
   padding-right: 0;
   margin: 0 auto;
 }
-
 .card1 {
-  /* background-color: var(--bg1-color); */
-  background-color: rgb(230, 230, 230);
+  background-color: var(--bg1-color);
   display: flex;
   flex-direction: column;
   max-height: 80%;
+  width: 90%;
   border: none;
   border-radius: 13px;
   contain: content;
@@ -209,12 +210,10 @@ section {
 }
 
 .card1 .card-body {
-  /* color: var(--head-col); */
+  color: var(--head-col);
   display: flex;
   flex-flow: row wrap;
   padding: 18px;
-  color: white;
-  color: black;
   border-radius: 0 13px 13px 0;
 }
 
@@ -235,6 +234,7 @@ ul ol {
 ol {
   padding-left:5%;
   margin-bottom: .2rem;
+  font-weight: 300;
 }
 
 .card1 .featured-image {
@@ -320,31 +320,30 @@ ol {
 }
 
 .card-body .pre-heading {
-  /* color: var(--meta-col); */
-  color: black;
+  color: var(--meta-col);
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
 .card-body .meta {
-  /* color: var(--meta-col); */
-  color: rgb(155, 149, 149);
+  color: var(--meta-col);
   font-size: 16px;
 }
 
 .card-body .author {
   font-size: 12px;
+  font-weight: 300;
 }
 
 .card-body h3 {
-  /* color: var(--head-col); */
-  font-size: 2rem;
+  color: var(--head-col);
+  font-size: 1.8rem;
   margin-top: 5px;
   margin-bottom: 5px;
-  color: white;
-  color: black;
   text-align: center;
+  font-weight:300;
+  line-height: 1.2;
 }
 
 .main ul,
@@ -360,6 +359,7 @@ ol {
 .main a {
   text-decoration: none;
 }
+
 
 /*Volunteership card*/
 
