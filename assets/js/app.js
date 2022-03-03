@@ -133,18 +133,18 @@ let footer = $(`
              <div class="form-header">
                 <h6 class="display">Get in Touch</h6>
               </div>
-                <form>
-                  <form name="form1" action="https://formcarry.com/s/S2thQbCqEvW"  method="POST" accept-charset="UTF-8" >
-                  <input id="name" type="text" name="field1" placeholder="Your Name" required/>
-                  <input id="email" type="email" name="field2" placeholder="Email Address"    required/>
-                  
-                  <textarea id="textArea" name="field3" placeholder="Type your Message" required></textarea>
-               
+                <form name="form1" action="https://formcarry.com/s/BywEPAJNb" method="POST" accept-charset="UTF-8" >
+                  <input id="name" type="text" name="name" placeholder="Your Name" required/>
+                  <input id="email" type="email" name="email" placeholder="Email Address" required/>                  
+                  <textarea id="textArea" name="message" placeholder="Type your Message" required></textarea>
+              
                   <div id="main">
-                  <button  id="lnch" type="button"   value="Send" >Send</button><div id="lnch_btn"><i class="fas fa-space-shuttle"></i></div>
+                    <button id="lnch" type="button" value="Send" >Send</button>
+                    <div id="lnch_btn"><i class="fas fa-space-shuttle"></i></div>
                   </div>
                 </form>
-             </div>
+              </div>
+            </div>
           </div>
         </div>
     </div>
@@ -434,34 +434,43 @@ $(window).on("load", function () {
 //send button animation
 
 
-$(function submitAnimation () {
-const name=  document.querySelector("#name")
-const emailAdress=  document.querySelector("#email")
-const text=  document.querySelector("#textArea")
+$(function submitAnimation() {
+  const name = document.querySelector("#name")
+  const emailAdress = document.querySelector("#email")
+  const text = document.querySelector("#textArea")
+  const emailPattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
   $("#lnch").on("click", function () {
-     
-     if(name.value==""  ){
-      return
-     }
-   else if(emailAdress.value=="" ){
-  
-       return
+
+    // Check if the name field is empty or contains a number
+    if (name.value == "" || (/\d/.test(name.value))) {
+      alert('Please enter a valid name');
+      return;
     }
-  
-  else  if(text.value==""){
-      return
+    // Check if the email field is empty or email is not valid ex: test@@email.com
+    else if (emailAdress.value == "" || !(emailPattern.test(emailAdress.value))) {
+      alert('Please enter a valid email');
+      return;
     }
-    else{   
-     
-    setTimeout(function () {
-      $("#lnch").addClass("launching").text("Sending");
-      $("#lnch_btn").addClass("launching");
-    },0);
-    setTimeout(function () {
-      $("#lnch").addClass("launched").text("SENT");
-      $("#lnch_btn").addClass("launched");
-    }, 1500);
+    // Check if the message field is empty
+    else if (text.value == "") {
+      alert('Please enter your message');
+      return;
     }
-  } );
+    else {
+
+      setTimeout(function () {
+        $("#lnch").addClass("launching").text("Sending");
+        $("#lnch_btn").addClass("launching");
+      }, 0);
+      setTimeout(function () {
+        $("#lnch").addClass("launched").text("SENT");
+        $("#lnch_btn").addClass("launched");
+      }, 1500);
+      // Wait for 2.2 seconds so that the send button animation can be fully played before submitting the form
+      setTimeout(() => {
+        document.querySelector('form').submit();
+      }, 2200);
+    }
+  });
 });
