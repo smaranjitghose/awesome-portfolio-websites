@@ -54,6 +54,12 @@
   border-radius: 50%;
   display: block;
   margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 .typing {
