@@ -180,7 +180,7 @@ section {
   display: flex;
   flex-direction: column;
   max-height: 80%;
-  width: 90%;
+  width: 87%;
   border: none;
   border-radius: 13px;
   contain: content;
@@ -235,6 +235,7 @@ ol {
   padding-left:5%;
   margin-bottom: .2rem;
   font-weight: 300;
+  font-size: 15px !important;
 }
 
 .card1 .featured-image {
@@ -249,14 +250,14 @@ ol {
 
 @media only screen and (min-width: 1280px) {
   .card1 h3 {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .card1 {
     flex-direction: row;
-    max-height: 70vh;
+    width: 74vw !important; 
   }
   .col-md-6 {
     -ms-flex: 0 0 50%;
@@ -265,7 +266,7 @@ ol {
 }
 
   .card1 h3 {
-    font-size: calc(100% + 1vw);
+    font-size: calc(100% + 0.7vw);
   }
 
   .card1 .featured-image {
@@ -281,6 +282,7 @@ ol {
 @media only screen and (max-width: 992px) {
   .card1 .featured-image {
     width: 400px;
+    height: inherit;
   }
 }
 
@@ -328,7 +330,7 @@ ol {
 
 .card-body .meta {
   color: var(--meta-col);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .card-body .author {
