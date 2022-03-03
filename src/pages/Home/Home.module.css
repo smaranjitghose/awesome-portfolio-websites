@@ -64,7 +64,7 @@
 
 .typing {
   width: 100%;
-  display: inline-block;
+  display: flex;
   margin: auto;
   text-align: center;
 }

@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faKaggle } from "@fortawesome/free-brands-svg-icons";
 import { Helmet } from "react-helmet";
 import TypeAnimation from "react-type-animation";
+import HomeAnimation from "./HomeAnimation";
 
 const Home = () => {
   return (
@@ -165,30 +166,9 @@ const Home = () => {
             </div>
           </div>
           <div className={styles["typing"]}>
-            I'm into{" "}
             <span className={styles["AnimateEffect"]}>
-              <TypeAnimation
-                cursor={true}
-                sequence={[
-                  "Designing",
-                  1000,
-                  "UI/UX",
-                  1000,
-                  "Cloud Computing",
-                  1000,
-                  "Web Development",
-                  1000,
-                  "Open Source",
-                  1000,
-                  "Mentoring",
-                  1000,
-                  "",
-                ]}
-                wrapper="span"
-                repeat={Infinity}
-              />
+              <HomeAnimation />
             </span>
-            .
           </div>
           <div className={styles["social-icons"]}>
             <a
