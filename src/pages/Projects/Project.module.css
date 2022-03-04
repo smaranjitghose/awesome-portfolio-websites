@@ -16,22 +16,6 @@ html {
 .my_projects {
     color: #4e00bb;
 }
-.card {
-    animation-name: load;
-    animation-iteration-count: 1;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-out;
-}
-@keyframes load {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 .pt-5,
 .py-5 {
     padding-top: 3rem;

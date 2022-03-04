@@ -4,7 +4,9 @@ import styles from './Project.module.css';
 import image from '../../assets/images/project-page/quiz.jpg'
 import data from './data';
 import {Link} from 'react-router-dom';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Preloader from '../../components/Preloader/Preloader';
 
 const Projects = () => {
     if (data === undefined) {
@@ -14,6 +16,7 @@ const Projects = () => {
         console.log(data);
     }
 
+    AOS.init()
     return (
         <div>
             <Helmet>
@@ -39,6 +42,9 @@ const Projects = () => {
                 <meta name="apple-mobile-web-app-title" content="John Doe | Projects" />
                 <meta name="summary" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
             </Helmet>
+
+            <Preloader />
+
             <div className={`${styles['container']} ${styles['pt-5']}`} style={{ width: "100%", minHeight: "80%;" }}>
                 <section style={{ height: "85vh" }}>
                     <div className={`${styles['px-3']} ${styles['pt-5']}`}>
@@ -278,7 +284,7 @@ const Projects = () => {
                 <div className={`${styles['row']} ${styles['page-content']} ${styles['projectcards']}`}>
                     {
                         data.map((item => (
-                            <div className={`${styles['column']} ${styles['skill-card']} ${styles['card']} ${styles['aos-init aos-animate']}`} style={{ margin: "15px" }} data-aos="zoom-in-up" data-aos-easing="linear" data-aos-delay="300" data-aos-duration="600">
+                            <div className={`${styles['column']} ${styles['skill-card']} ${styles['card']}`} style={{ margin: "15px" }} data-aos="zoom-in-up" data-aos-easing="linear" data-aos-delay="300" data-aos-duration="600">
                                 <div className={styles["wrapper"]} style={{ backgroundImage: `url(${item ? item.img : image})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: 'center' }}>
                                     <div className={styles["header"]}>
                                     </div>
