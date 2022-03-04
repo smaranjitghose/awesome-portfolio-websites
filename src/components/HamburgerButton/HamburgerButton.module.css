@@ -1,9 +1,9 @@
 html {
     --hamburger-btn: #202020;
 }
-
+/* increase the margin right of hamburger button */
 .hamburger {
-    margin-right: 4%;
+    margin-right: 7%;
     align-self: center;
 }
 
