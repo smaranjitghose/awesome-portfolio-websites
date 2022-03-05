@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
-
+import Preloader from '../../components/Preloader/Preloader';
 const Education = () => {
     return (
         <div>
@@ -26,6 +26,9 @@ const Education = () => {
                 <meta name="apple-mobile-web-app-title" content="John Doe | Education" />
                 <meta name="summary" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
             </Helmet>
+
+            <Preloader />
+
             <h1>Hello, Education</h1>
         </div>
     );

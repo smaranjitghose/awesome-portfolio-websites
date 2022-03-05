@@ -9,6 +9,7 @@ import deepNetwork from "../../assets/images/research-page/deepNetwork.png";
 import imageDecomposition from "../../assets/images/research-page/imageDecomposition.png";
 import neuralNetworks from "../../assets/images/research-page/neuralNetworks.jpg";
 import { Helmet } from "react-helmet";
+import Preloader from "../../components/Preloader/Preloader";
 
 const Research = () => {
   const [isActive, setActive] = useState("false");
@@ -70,6 +71,9 @@ const Research = () => {
           content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world."
         />
       </Helmet>
+
+      <Preloader />
+
       <div
         className={`${styles['research-container']} ${styles['research-upper']} ${styles['pt-5']}`}
         style={{ width: "100%", minHeight: "80%;" }}

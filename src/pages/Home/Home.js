@@ -6,7 +6,8 @@ import dp_male from "../../assets/images/dp_male.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faKaggle } from "@fortawesome/free-brands-svg-icons";
 import { Helmet } from "react-helmet";
-import Output from "./AnimateOnChange"
+import Output from "./AnimateOnChange";
+import Preloader from "../../components/Preloader/Preloader";
 
 const Home = () => {
   return (
@@ -57,6 +58,9 @@ const Home = () => {
           content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world."
         />
       </Helmet>
+
+      <Preloader />
+
       <Particles
         id={styles['particlejs']}
         params={{
