@@ -22,19 +22,19 @@ function App() {
     return document.getElementById("favicon");
   }
 
-  const handleTabChange = () => {
-    if (document.hidden) {
-      document.title = "Come back";
-      const favicon = getFaviconEl();
-      favicon.href = "folded.ico";
-    } else {
-      document.title = originalTitle;
-      const favicon = getFaviconEl();
-      favicon.href = originalFavicon;
-    }
-  };
-
   useEffect(() => {
+    const handleTabChange = () => {
+      if (document.hidden) {
+        document.title = "Come back";
+        const favicon = getFaviconEl();
+        favicon.href = "folded.ico";
+      } else {
+        document.title = originalTitle;
+        const favicon = getFaviconEl();
+        favicon.href = originalFavicon;
+      }
+    };
+
     if (!originalTitle) {
       setOriginalTitle(document.title);
     }
@@ -45,7 +45,7 @@ function App() {
     window.addEventListener("visibilitychange", handleTabChange);
     return () =>
       window.removeEventListener("visibilitychange", handleTabChange);
-  });
+  }, [originalTitle, originalFavicon]);
   return (
     <>
       <div className="App">
