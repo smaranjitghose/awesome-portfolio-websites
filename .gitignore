@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -23,3 +24,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+=======
+.vscode/*
+.idea/*
+>>>>>>> a40a9627660882e97a685338140f42ad7cc1ad0e
