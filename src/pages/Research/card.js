@@ -9,9 +9,7 @@ import deepNetwork from "../../assets/images/research-page/deepNetwork.png";
 import imageDecomposition from "../../assets/images/research-page/imageDecomposition.png";
 import neuralNetworks from "../../assets/images/research-page/neuralNetworks.jpg";
 import { Helmet } from "react-helmet";
-//import Carddetails from "./cardetails";
 import { propTypes } from "react-bootstrap/esm/Image";
-//import Research from "./Research";
 import Carddetails from "./cardetails";
 
 function Card(props) {
