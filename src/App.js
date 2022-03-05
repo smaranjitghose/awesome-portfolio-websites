@@ -14,7 +14,7 @@ import Footer from "./components/Footer/Footer";
 import Design from "./pages/Design/Design";
 import { Helmet } from "react-helmet";
 import ImageTemplate from "./pages/Design/imageTemplate";
-import u1 from "./assets/images/design-page/ui_ux/1.svg";
+import u from "./assets/images/design-page/ui_ux/1.svg";
 import u2 from "./assets/images/design-page/ui_ux/2.svg";
 import u3 from "./assets/images/design-page/ui_ux/3.svg";
 import u4 from "./assets/images/design-page/ui_ux/4.svg";
@@ -94,7 +94,7 @@ function App() {
           <Route path="/research" component={Research} />
           <Route path="/resume" component={Resume} />
           <Route path="/reference" render={Reference} />
-          <Route path="/uiux" component={() => <ImageTemplate image={u1} />} />
+          <Route path="/uiux" component={() => <ImageTemplate image={u} />} />
           <Route path="/uiux2" component={() => <ImageTemplate image={u2} />} />
           <Route path="/uiux3" component={() => <ImageTemplate image={u3} />} />
           <Route path="/uiux4" component={() => <ImageTemplate image={u4} />} />
