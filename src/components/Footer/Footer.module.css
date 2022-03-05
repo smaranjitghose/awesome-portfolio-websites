@@ -276,6 +276,31 @@ form {
   animation: up 1.5s infinite;
   -webkit-animation: up 1.5s infinite;
 }
+
+@keyframes up {
+  0% {
+      transform: translate(0);
+  }
+  20% {
+      transform: translateY(-15px);
+  }
+  40% {
+      transform: translate(0);
+  }
+}
+
+@-webkit-keyframes up {
+  0% {
+      transform: translate(0);
+  }
+  20% {
+      transform: translateY(-15px);
+  }
+  40% {
+      transform: translate(0);
+  }
+}
+
 /*for hiding to-top button in small-screen devices  */
 @media (max-width: 580px) {
   #btnScrollToTop {
