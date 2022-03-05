@@ -6,7 +6,6 @@ function Carddetails(props) {
   const [open2, setopen2] = useState(false);
   const [stateabstract, setStateabstract] = useState(" ");
   const [statecite, setStateCite] = useState(" ");
-
   function handleToggle() {
     setStateabstract(props.abstract);
     setopen1(!open1);
