@@ -8,9 +8,9 @@ const SlideContent = ({title, img, badge,content})=>{
                     <img src={img} alt="hackathon" />
                 </div>
                 <div className={styles["card-content"]}>
-                    <h3 style={{fontSize:"25px"}}>{title}</h3>
-                    <h4 style={{color:"grey", fontSize:"20px"}}>{badge}</h4>
-                    <p>{content}.</p>
+                    <h3 className={styles["blog-slider__title"]} >{title}</h3>
+                    <h4  className={styles["blog-slider__code"]} >{badge}</h4>
+                    <p className={styles["blog-slider__text"]}>{content}.</p>
                     <Link to="/experience" className={styles["blog-slider__button"]}>Read More</Link>
                 </div>
             </div>
