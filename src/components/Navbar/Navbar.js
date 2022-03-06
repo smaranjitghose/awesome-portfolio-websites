@@ -48,9 +48,6 @@ const Navbar = () => {
             </Link>
           </li>
         ))}
-
-        {/* //         added dark mode toggle button */}
-
         <li className={styles["nav-items"]}>
           <input
             type="checkbox"
