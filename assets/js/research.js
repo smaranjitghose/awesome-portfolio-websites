@@ -171,7 +171,7 @@ const fillData = () => {
                         </span>
                     </div>
                     <a href="#0" class="paperTitle"> ${title} </a> 
-                    <div class = "authors> ${authors} </div> 
+                    <div class = "authors"> ${authors} </div> 
                     
                     <div class="rConferences"> ${conferences} 
                         <div class="researchY">${researchYr}</div>
