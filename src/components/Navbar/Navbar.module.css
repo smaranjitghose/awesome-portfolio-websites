@@ -4,7 +4,60 @@
     font-family: "Agustina";
     src: url(../../assets/fonts/Agustina.woff);
 }
-
+html[data-theme="light"] {
+    --bg-mybtn: red;
+    --bg-nav: black;
+    --bg-nav-img: black;
+    --bg-footer: #DDE1EC;
+    --bg: #ffffff;
+    --text: #191919;
+    --text-color: #6c757d;
+    --col-icon: black;
+    --col-bd-radius: rgb(2, 2, 2);
+    --col-box-shadow: #000000 2px 2px 4px, #4D4D4D -2px -2px 4px;
+    --col-box-shadow-hover: inset #8a7373 2px 2px 4px, inset #4D4D4D -2px -2px 4px;
+    --col-bd-icon: transparent;
+    --bg-icon: #fff;
+    --col-icon-twitter: #1da1f2;
+    --col-icon-dribbble: #ea4c89;
+    --col-icon-linkedin: #0e76a8;
+    --col-icon-kaggle: #41aff3;
+    --col-icon-github: #24292e;
+    --col-icon-instagram: rgb(201, 94, 174);
+    --col-icon-mail: rgb(209, 82, 82);
+    --col-icon-google-scholar: #3cba54;
+    --col-icon-codeforces: rgb(19, 145, 184);
+    --col-icon-leetcode: rgb(255, 181, 62);
+    --shadow-col: rgba(0, 0, 0, 0.3);
+  }
+  
+  html[data-theme="dark"] {
+    --bg-mybtn: rgb(230, 109, 129);
+    --bg-nav: #6617cb;
+    --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
+    --bg-footer: linear-gradient(315deg, #6617cb 0%, #882463 74%);
+    --bg: #191919;
+    --text: #ffffff;
+    --text-color: #fff;
+    --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+    --txt-fill: transparent;
+    --col-icon: white;
+    --col-bd-radius: black;
+    --col-bd-icon: transparent;
+    --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7), -5px -5px 10px rgba(255, 255, 255, 0.1);
+    --col-box-shadow-hover: inset rgba(255, 255, 255, 1) 2px 2px 4px, inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
+    --col-icon-twitter: #1da1f2;
+    --col-icon-dribbble: #ea4c89;
+    --col-icon-linkedin: #0e76a8;
+    --col-icon-kaggle: #41aff3;
+    --col-icon-github: #24292e;
+    --col-icon-instagram: rgb(201, 94, 174);
+    --col-icon-mail: rgb(209, 82, 82);
+    --col-icon-google-scholar: #3cba54;
+    --col-icon-codeforces: rgb(19, 145, 184);
+    --col-icon-leetcode: rgb(255, 181, 62);
+    --col-white: #fff;
+  }
 html {
     --bg-nav: #fff;
     --nav-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -64,6 +117,7 @@ ul {
 
 .nav-items {
     text-align: center;
+   
 }
 
 .nav-link {
@@ -165,3 +219,76 @@ ul {
         font-family: 'Poppins', sans-serif;
     }
 }
+.dark_toggler {
+    -webkit-appearance: none;
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+    background-size: cover;
+    border-radius: 50px;
+    outline: none;
+    transition: background-image 0.9s;
+    box-shadow: 0px 2px 5px 1px gray;
+  }
+  
+  .dark_toggler:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background-color: navy;
+    border-radius: 50px;
+    transition: all 0.9s;
+    background-color: #f7ca33;
+  }
+  
+  .dark_toggler:checked {
+    background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+    transition: background-image 0.9s;
+    box-shadow: 0px 2px 5px 1px rgb(187, 134, 201);
+  }
+  
+  .dark_toggler:checked:before {
+    transform: translate(150%);
+    transition: all 0.9s;
+    background-color: #bb86fc;
+  }
+  html {
+    background-color: #f6f6f6;
+    transition: background-color .3s;
+  }
+  
+  html[light-mode="dark"] {
+    background-color: #141516;
+    color: #ced4e2;
+  }
+  
+  .dark-theme {
+    background-color: #2b2a2A;
+    transition: background-color .3s;
+    box-shadow: 0 0 0;
+  }
+  
+  .dark-theme .navbar-nav .nav-link,
+  .dark-theme .navbar-brand {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .dark-theme .nav-link:hover{
+  color: #ffffff !important;
+  }
+  
+  .dark-theme .first,
+  .dark-theme .second,
+  .dark-theme .third {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .dsc{
+     box-shadow:   2px 5px 5px 0px rgb(130 216 251), 
+     inset -2px -5px 5px 0px rgb(130 216 251);
+     background: #1f1d1d;
+  }

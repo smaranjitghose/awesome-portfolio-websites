@@ -13,6 +13,23 @@ import NotFound from "./pages/404/404";
 import Footer from "./components/Footer/Footer";
 import Design from "./pages/Design/Design";
 import { Helmet } from "react-helmet";
+import ImageTemplate from "./pages/Design/imageTemplate";
+import u from "./assets/images/design-page/ui_ux/1.svg";
+import u2 from "./assets/images/design-page/ui_ux/2.svg";
+import u3 from "./assets/images/design-page/ui_ux/3.svg";
+import u4 from "./assets/images/design-page/ui_ux/4.svg";
+import u5 from "./assets/images/design-page/ui_ux/5.svg";
+import u6 from "./assets/images/design-page/ui_ux/6.svg";
+import u7 from "./assets/images/design-page/ui_ux/7.svg";
+import u8 from "./assets/images/design-page/ui_ux/8.svg";
+import m1 from "./assets/images/design-page/mockups/1.svg";
+import m2 from "./assets/images/design-page/mockups/2.svg";
+import m3 from "./assets/images/design-page/mockups/3.svg";
+import m4 from "./assets/images/design-page/mockups/4.svg";
+import m5 from "./assets/images/design-page/mockups/5.svg";
+import m6 from "./assets/images/design-page/mockups/6.svg";
+import m7 from "./assets/images/design-page/mockups/7.svg";
+import m8 from "./assets/images/design-page/mockups/8.svg";
 
 function App() {
   const [originalTitle, setOriginalTitle] = useState();
@@ -107,7 +124,23 @@ function App() {
           <Route path="/education" component={Education} />
           <Route path="/research" component={Research} />
           <Route path="/resume" component={Resume} />
-          <Route path="/reference" component={Reference} />
+          <Route path="/reference" render={Reference} />
+          <Route path="/uiux" component={() => <ImageTemplate image={u} />} />
+          <Route path="/uiux2" component={() => <ImageTemplate image={u2} />} />
+          <Route path="/uiux3" component={() => <ImageTemplate image={u3} />} />
+          <Route path="/uiux4" component={() => <ImageTemplate image={u4} />} />
+          <Route path="/uiux5" component={() => <ImageTemplate image={u5} />} />
+          <Route path="/uiux6" component={() => <ImageTemplate image={u6} />} />
+          <Route path="/uiux7" component={() => <ImageTemplate image={u7} />} />
+          <Route path="/uiux8" component={() => <ImageTemplate image={u8} />} />
+          <Route path="/mock" component={() => <ImageTemplate image={m1} />} />
+          <Route path="/mock2" component={() => <ImageTemplate image={m2} />} />
+          <Route path="/mock3" component={() => <ImageTemplate image={m3} />} />
+          <Route path="/mock4" component={() => <ImageTemplate image={m4} />} />
+          <Route path="/mock5" component={() => <ImageTemplate image={m5} />} />
+          <Route path="/mock6" component={() => <ImageTemplate image={m6} />} />
+          <Route path="/mock7" component={() => <ImageTemplate image={m7} />} />
+          <Route path="/mock8" component={() => <ImageTemplate image={m8} />} />
           <Route path="" component={NotFound} />
         </Switch>
         <Footer />
