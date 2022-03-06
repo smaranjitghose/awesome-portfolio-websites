@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import "./App.css";
@@ -32,6 +32,37 @@ import m7 from "./assets/images/design-page/mockups/7.svg";
 import m8 from "./assets/images/design-page/mockups/8.svg";
 
 function App() {
+  const [originalTitle, setOriginalTitle] = useState();
+  const [originalFavicon, setOriginalFavicon] = useState();
+
+  function getFaviconEl() {
+    return document.getElementById("favicon");
+  }
+
+  useEffect(() => {
+    const handleTabChange = () => {
+      if (document.hidden) {
+        document.title = "Come back";
+        const favicon = getFaviconEl();
+        favicon.href = "folded.ico";
+      } else {
+        document.title = originalTitle;
+        const favicon = getFaviconEl();
+        favicon.href = originalFavicon;
+      }
+    };
+
+    if (!originalTitle) {
+      setOriginalTitle(document.title);
+    }
+    if (!originalFavicon) {
+      const favicon = getFaviconEl();
+      setOriginalFavicon(favicon.href);
+    }
+    window.addEventListener("visibilitychange", handleTabChange);
+    return () =>
+      window.removeEventListener("visibilitychange", handleTabChange);
+  }, [originalTitle, originalFavicon]);
   return (
     <>
       <div className="App">
