@@ -522,15 +522,20 @@ ol {
 
 /*Hackathon Section Starts*/
 .slide {
-  width: 85%;
+  width:63%;
   height: 400px;
   display: flex;
+  max-width: 800px;
   align-items: center;
-  border-radius: 13px;
-  box-shadow: 1px 5px 6px rgba(0, 0, 0, 15%), 2px 2px 7px rgba(0, 0, 0, 14%),3px 10px 8px rgba(0, 0, 0, 13%), 4px 14px 9px rgba(0, 0, 0, 12%);
-  background-color: rgb(230, 230, 230);
-  margin-bottom: 1.2rem;  
-}
+  border-radius: 25px;
+  /* box-shadow: 1px 5px 6px rgba(0, 0, 0, 15%), 2px 2px 7px rgba(0, 0, 0, 14%),3px 10px 8px rgba(0, 0, 0, 13%), 4px 14px 9px rgba(0, 0, 0, 12%); 
+  background-color: rgb(230, 230, 230); */
+  background: var(--bg1-color);
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;  
+  transition: all 0.3s;
+ }
 .info {
   display: flex;
   justify-content: space-around;
@@ -582,15 +587,16 @@ ol {
   }
 }
 @media screen and (max-width: 768px) {
-  .blog-slider {
+  .slide {
     min-height: 500px;
     height: auto;
     margin: 180px auto;
   }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
-  .blog-slider {
-    height: 350px;
+  .slide {
+    height: 80vh;
+    width: 60vw;
   }
 }
 .blog-slider__item {
@@ -618,6 +624,12 @@ ol {
   .slide {
     height: 800px;
   }
+}
+@media screen and (min-width:992px) and (max-height: 720px){
+    .slide{
+      height: 60vh;
+      width: 60vw;
+    }
 }
 .swiper-wrapper {
   position: relative;
@@ -779,15 +791,14 @@ ol {
 .blog-slider__title {
   font-size: 24px;
   font-weight: 900;
-  color: white;
+  color: var(--head-col);
   margin-bottom: 20px;
 }
 
 /* Role in Hackathon   */
 
 .blog-slider__code {
-  /* color: var(--meta-col); */
-  color: rgb(155, 149, 149);
+  color: var(--meta-col);
   margin-bottom: 20px;
   display: block;
   font-size: 17px;
@@ -797,10 +808,10 @@ ol {
 /* Hackathon Description   */
 
 .blog-slider__text {
-  /* color: (var(--head-col)); */
-  color: white;
-  margin-bottom: 30px;
+  color: (var(--head-col));
+  margin-bottom:30px;
   line-height: 1.5em;
+  font-weight: 300;
 }
 .blog-slider__button {
   display: inline-flex;
