@@ -10,7 +10,6 @@ function Carddetails(props) {
     setStateabstract(props.abstract);
     setopen1(!open1);
   }
-
   function handleCiteToggle() {
     setopen2(!open2);
     setStateCite(props.cite);
