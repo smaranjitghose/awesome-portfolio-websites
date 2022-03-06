@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 import './Reference.css';
 import ReferenceData from './ReferenceData';
+import Preloader from '../../components/Preloader/Preloader';
 
 const Reference = () => {
     return (
@@ -9,6 +10,9 @@ const Reference = () => {
             <Helmet>
                 <title>John Doe | Reference</title>    
             </Helmet>
+
+            <Preloader />
+
             <div className="reference-row">
                 <div className="left-row">
                     <h2 className="">
