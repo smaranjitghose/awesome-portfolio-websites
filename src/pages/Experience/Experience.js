@@ -6,6 +6,7 @@ import Carousel from 'react-elastic-carousel';
 import SlideContent from './SlideContent';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Preloader from '../../components/Preloader/Preloader';
 
 const Experience = () => {
     AOS.init()
@@ -33,6 +34,9 @@ const Experience = () => {
                 <meta name="apple-mobile-web-app-title" content="John Doe | Experience" />
                 <meta name="summary" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
             </Helmet>
+
+            <Preloader />
+
             <div className={`${styles['main']} ${styles['pt-5']}`}>
                 <section>
                     <div className={`${styles['container-fluid']} ${styles['px-3']}`}>

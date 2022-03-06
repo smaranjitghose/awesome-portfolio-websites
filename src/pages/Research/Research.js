@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet";
 //import Carddetails from "./cardetails";
 // import { propTypes } from "react-bootstrap/esm/Image";
 import Card from "./card";
+import Preloader from "../../components/Preloader/Preloader";
 
 const Research = () => {
   const data = [
@@ -121,6 +122,9 @@ const Research = () => {
           content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world."
         />
       </Helmet>
+
+      <Preloader />
+
       <div
         className={`${styles["research-container"]} ${styles["research-upper"]} ${styles["pt-5"]}`}
         style={{ width: "100%", minHeight: "80%;" }}
