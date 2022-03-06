@@ -17,7 +17,7 @@ function Card(props) {
     <>
       {props.items.map((item) => (
         <Carddetails
-          key={item.id}
+         
           abstract={item.abstract_data}
           cite={item.cite_data}
         />
