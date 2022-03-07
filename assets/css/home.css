@@ -128,6 +128,7 @@ a.socialicon {
   overflow: hidden;
   width: var(--link-size);
   height: var(--link-size);
+  background-color: #fff;
   margin: 8px;
   border-radius: 50%;
   box-shadow: 2px 5px 5px var(--shadow-col);
@@ -140,6 +141,12 @@ a.socialicon {
   z-index: 1;
   transition: var(--trans-props);
 }
+
+/* Social icon in dark mode */
+html[light-mode="dark"] .socialicon{
+  background-color: #141516;
+}
+
 
 .kaggle i {
   margin: auto;
