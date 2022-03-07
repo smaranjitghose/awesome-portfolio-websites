@@ -117,13 +117,15 @@ ul {
 
 .nav-items {
     text-align: center;
-   
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
 }
 
 .nav-link {
-    padding: 6px 21px;
     font-family: 'Poppins', sans-serif;
     color: var(--txt-nav-link);
+    padding: 6px 21px;
 }
 
 .nav-link:hover {
@@ -291,4 +293,22 @@ ul {
      box-shadow:   2px 5px 5px 0px rgb(130 216 251), 
      inset -2px -5px 5px 0px rgb(130 216 251);
      background: #1f1d1d;
+  }
+
+  @media screen and (max-width: 950px){
+    .nav-items {
+        margin-right: 5px;
+    }
+    .nav-link {
+        padding: 6px 10px;
+    }
+  }
+
+  @media screen and (max-width: 880px){
+    .nav-items {
+        margin-right: 3px;
+    }
+    .nav-link {
+        padding: 6px 9px;
+    }
   }
