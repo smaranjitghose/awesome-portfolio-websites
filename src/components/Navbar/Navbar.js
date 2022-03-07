@@ -27,14 +27,12 @@ const Navbar = () => {
     ];
     const orientationClass =
       orientation === ROW_ORIENTATION ? styles["flex-row"] : "";
-    const listItemMarginTop = orientation === ROW_ORIENTATION ? "0%" : "15%";
     return (
       <ul className={`${styles["nav-items"]} ${orientationClass}`}>
         {sections.map((sectionObj, index) => (
           <li
             className={styles["nav-item"]}
             key={index}
-            style={{ marginTop: listItemMarginTop }}
           >
             <Link
               onClick={() => {
@@ -48,7 +46,7 @@ const Navbar = () => {
             </Link>
           </li>
         ))}
-        <li className={styles["nav-items"]}>
+        <li className={styles["nav-item"]}>
           <input
             type="checkbox"
             id={styles["dark_toggler"]}

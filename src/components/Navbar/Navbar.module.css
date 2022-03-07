@@ -304,11 +304,38 @@ ul {
     }
   }
 
-  @media screen and (max-width: 880px){
+  @media screen and (min-width: 840px) and (max-width: 880px){
     .nav-items {
         margin-right: 3px;
     }
     .nav-link {
         padding: 6px 9px;
     }
+  }
+
+  @media screen and (max-width: 840px){
+      .nav-items{
+          flex-direction: column;
+          margin-top: -70px;
+          justify-content: center;
+          row-gap: 20px;
+      }
+  }
+
+  @media screen and (max-width: 750px){
+      .nav-items{
+          margin-top: -50px;
+      }
+  }
+
+  @media screen and (max-width: 500px){
+      .nav-items{
+          margin-top: -30px;
+      }
+  }
+
+  @media screen and (max-width: 420px){
+      .nav-items{
+          margin-top: -10px;
+      }
   }
