@@ -142,6 +142,11 @@ a.socialicon {
   transition: var(--trans-props);
 }
 
+/* Social icon in dark mode */
+html[light-mode="dark"] .socialicon{
+  background-color: #141516;
+}
+
 .kaggle i {
   margin: auto;
   font-size: 24px;
