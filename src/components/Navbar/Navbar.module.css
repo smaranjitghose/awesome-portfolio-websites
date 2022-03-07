@@ -117,7 +117,9 @@ ul {
 
 .nav-items {
     text-align: center;
-   
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
 }
 
 .nav-link {
