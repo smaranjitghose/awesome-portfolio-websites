@@ -302,7 +302,7 @@ ol {
 .heading1 {
   font-size: 32px;
   line-height: 1.2;
-  font-weight: bold;
+  font-weight: 600;
   color: #222;
   margin: 0.5em 0;
   margin-top: 5rem;
@@ -441,6 +441,7 @@ ol {
   text-align: center;
   color: black;
   border: none;
+  background: whitesmoke !important;
 }
 .card-img, .card-img-bottom, .card-img-top {
   -ms-flex-negative: 0;
@@ -506,18 +507,20 @@ ol {
   padding-bottom: 40px;
   transform: translateY(40px);
   transition: all 0.7s;
-  font-weight: 900;
+  font-weight: 600;
   color: #303f9f;
+  margin-bottom: 10px;
 }
 
 .copy {
   font-size: 1rem;
+  font-weight: 300;
   font-style: italic;
   line-height: 1.35;
   padding-bottom: 40px;
-  /* color: var(--head-col); */
-  color: white;
-  color: black;
+  color: var(--head-col);
+  /* color: white; */
+  /* color: black; */
 }
 
 /*Hackathon Section Starts*/
