@@ -1,5 +1,10 @@
 
 "use strict";
+// Sweet Alert CDN through JS
+let script = document.createElement("script");
+script.type = 'text/javascript';
+script.src="https://unpkg.com/sweetalert/dist/sweetalert.min.js";
+document.body.appendChild(script);
 
 // Header
 
@@ -444,17 +449,17 @@ $(function submitAnimation() {
 
     // Check if the name field is empty or contains a number
     if (name.value == "" || (/\d/.test(name.value))) {
-      alert('Please enter a valid name');
+      swal("Error !","Please enter a valid name !","error");
       return;
     }
     // Check if the email field is empty or email is not valid ex: test@@email.com
     else if (emailAdress.value == "" || !(emailPattern.test(emailAdress.value))) {
-      alert('Please enter a valid email');
+      swal("Error !","Please enter a valid email !","error");
       return;
     }
     // Check if the message field is empty
     else if (text.value == "") {
-      alert('Please enter your message');
+      swal("Error !","Please enter a valid message !","error");
       return;
     }
     else {
