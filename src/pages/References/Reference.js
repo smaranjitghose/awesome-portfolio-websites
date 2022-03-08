@@ -3,8 +3,12 @@ import { Helmet } from "react-helmet";
 import './Reference.css';
 import ReferenceData from './ReferenceData';
 import Preloader from '../../components/Preloader/Preloader';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Reference = () => {
+    AOS.init()
+
     return (
         <div>            
             <Helmet>
