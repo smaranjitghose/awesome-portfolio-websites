@@ -13,6 +13,8 @@ import { Helmet } from "react-helmet";
 // import { propTypes } from "react-bootstrap/esm/Image";
 import Card from "./card";
 import Preloader from "../../components/Preloader/Preloader";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Research = () => {
   const data = [
@@ -73,6 +75,8 @@ const Research = () => {
         "Qin, Haotong and Gong, Ruihao and Liu, Xianglong and Shen, Mingzhu and Wei, Ziran and Yu, Fengwei and Song,Jingkuan. Forward and Backward Information Retention for Accurate Binary Neural Networks. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.",
     },
   ];
+
+  AOS.init()
 
   return (
     <div>
