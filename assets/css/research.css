@@ -181,7 +181,7 @@ body {
   font-style: italic;
   font-size: 0.88em;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .researchY {
@@ -203,11 +203,6 @@ body {
 }
 
 /*Profile pic responsiveness*/
-@media only screen and (min-width: 1200px){
-  .rConferences {
-  width: 78%;
-}
-}
 @media only screen and (max-width: 711px) {
   #researchDetailsTable tr {
     background-color: var(--bg1-color);
