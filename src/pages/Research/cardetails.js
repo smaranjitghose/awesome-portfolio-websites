@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import styles from "./Research.module.css";
-import inteferenceNetwork from "../../assets/images/research-page/inteferenceNetwork.png";
 function Carddetails(props) {
   const [open1, setopen1] = useState(false);
   const [open2, setopen2] = useState(false);
   const [stateabstract, setStateabstract] = useState(" ");
   const [statecite, setStateCite] = useState(" ");
+
   function handleToggle() {
     setStateabstract(props.abstract);
     setopen1(!open1);
   }
+
   function handleCiteToggle() {
     setopen2(!open2);
     setStateCite(props.cite);
@@ -23,7 +24,7 @@ function Carddetails(props) {
             <tr data-aos="zoom-in-left" className={"aos-init"}>
               <td className={`${styles["imgCol"]}`}>
                 <img
-                  src={inteferenceNetwork}
+                  src={props.image}
                   className={`${styles["rImg"]}`}
                   alt="research"
                 />
