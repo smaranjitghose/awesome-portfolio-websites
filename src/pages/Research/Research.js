@@ -14,67 +14,73 @@ import { propTypes } from "react-bootstrap/esm/Image";
 import Card from "./card";
 
 const Research = () => {
-  
-//   reserach button issue solved //
   const data = [
     {
-     
+      id: 0,
+      src: inteferenceNetwork,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 1",
       cite_data:
         "Qile Zhu, Wei Bi, Xiaojiang Liu, Xiyao Ma, Xiaolin Li and Dapeng Wu. A Batch Normalized Inference Network Keeps the KL Vanishing Away. The 58th Annual Meeting of the Association for Computational Linguistics 2020",
     },
     {
-     
+      id: 1,
+      src: crossLingual,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 2",
       cite_data:
         "Mikel Artetxe, Sebastian Ruder, Dani Yogatama, Gorka Labaka and Eneko Agirre. A Call for More Rigor in Unsupervised Cross-lingual Learning. The 58th Annual Meeting of the Association for Computational Linguistics 2020.",
     },
     {
-     
+      id: 2,
+      src: imageDecomposition,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 3",
       cite_data:
         " Nastaran Babanejad, Ameeta Agrawal, Aijun An and Manos Papagelis. A Comprehensive Analysis of Preprocessing for Word Representation Learning in Affective Tasks. The 58th Annual Meeting of the Association for  Computational Linguistics 2020.",
     },
     {
-     
+      id: 3,
+      src: wordRepresentation,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 4",
       cite_data:
         "Yong Shan, Zekang Li, Jinchao Zhang, Fandong Meng,Yang Feng, Cheng Niu and Jie Zhou. A Contextual Hierarchical Attention Network with Adaptive Objective for Dialogue State Tracking. The 58th Annual Meeting of the Association for Computational Linguistics 2020.",
     },
     {
-   
+      id: 4,
+      src: dialogueState,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 5",
       cite_data:
         " Wang, Li and Li, Dong and Zhu, Yousong and Tian, Lu and Shan, Yi. Dual Super-Resolution Learning for Semantic Segmentation. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.",
     },
     {
-     
+      id: 5,
+      src: semanticSegmentation,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 6",
       cite_data:
         " Zhang, Kai and Van Gool, Luc and Timofte, Radu. Deep Unfolding Network for Image Super-Resolution. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.",
     },
     {
-      
+      id: 6,
+      src: deepNetwork,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 7",
       cite_data:
         "Liu, Yunfei and Li, Yu and You, Shaodi and Lu, Feng.Unsupervised Learning for Intrinsic Image Decomposition From a Single Image. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
     },
     {
-      
+      id: 7,
+      src: neuralNetworks,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 8",
       cite_data:
         "Qin, Haotong and Gong, Ruihao and Liu, Xianglong and Shen, Mingzhu and Wei, Ziran and Yu, Fengwei and Song,Jingkuan. Forward and Backward Information Retention for Accurate Binary Neural Networks. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.",
     },
   ];
-//  reserach button //
+
   return (
     <div>
       <Helmet>
@@ -708,14 +714,6 @@ const Research = () => {
           </div>
         </section>
         <Card items={data} />
-        {/* <Carddetails/>
-        <Carddetails/>
-        <Carddetails/>
-        <Carddetails/>
-        <Carddetails/>
-        <Carddetails/>
-        <Carddetails/>
-        <Carddetails/> */}
       </div>
     </div>
   );
