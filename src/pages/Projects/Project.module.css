@@ -6,11 +6,19 @@ html {
 .projects_head {
     font-weight: bold;
 }
-.container {
+.main-container {
     font-family: 'Poppins', sans-serif;
-
 }
 
+.main-section {
+    display: flex;
+    justify-content: center;
+}
+
+.godown{
+    width: 40%;
+    margin-top: -70px;
+}
 /*color of projects page heading*/
 
 .my_projects {
@@ -41,11 +49,14 @@ p {
     text-align: right;
 }
 .svgmate {
-    width: 525px;
-    height: 470px;
+    width: 100%;
 }
 .dropdown {
-    width: 40%;
+    width: 44%;
+    align-self: center;
+    margin-top: -70px;
+    animation: zoomIn;
+    animation-duration: 10s;
 }
 
 /*For Changing background color of body according to theme*/
@@ -116,10 +127,6 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
         top: 100px;
         width: 100%;
     }
-    .godown {
-        z-index: 1;
-        padding-top: 15rem;
-    }
     .row {
         flex-direction: column;
     }
@@ -131,9 +138,6 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
     }
     .row {
         flex-direction: row;
-    }
-    .godown > svg {
-        width: 300px !important;
     }
 }
 
@@ -153,10 +157,9 @@ a:hover {
 .row {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-around;
+    width: 80%;
 }
 .card {
     width: 100%;
@@ -880,3 +883,4 @@ SVG ANIMATIONS PROJECT PAGE
     animation-duration: 3.3s;
     transform-origin: 785.132px 295.833px
 }
+

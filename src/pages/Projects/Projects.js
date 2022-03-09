@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Preloader from '../../components/Preloader/Preloader';
+import 'animate.css';
 
 const Projects = () => {
     if (data === undefined) {
@@ -45,12 +46,11 @@ const Projects = () => {
 
             <Preloader />
 
-            <div className={`${styles['container']} ${styles['pt-5']}`} style={{ width: "100%", minHeight: "80%;" }}>
-                <section style={{ height: "85vh" }}>
-                    <div className={`${styles['px-3']} ${styles['pt-5']}`}>
+            <div className={`${styles['main-container']} ${styles['pt-5']}`} style={{ width: "100%", minHeight: "80%;" }}>
+                <section className={`${styles['main-section']}`} style={{ height: "85vh" }}>
                         <div className={styles['row']}>
 
-                            <div className={`${styles['col-md-6']} ${styles['godown']}`}>
+                            <div className={`${styles['godown']}`}>
                                 <svg xmlns="http://www.w3.org/2000/svg" id={styles['ku']} width="90%" baseProfile="tiny" className={styles['svgmate']} version="1" viewBox="300 150 550 570">
 
                                     <g id={`${styles['wall']}`}>
@@ -269,15 +269,15 @@ const Projects = () => {
                                     </g>
                                 </svg>
                             </div>
-                            <div className={`${styles['dropdown']} ${styles['col-md-6']} ${styles['d-flex']} ${styles['mt-5']} ${styles['flex-column']} ${styles['text-center']} ${styles['justify-content-center']} ${styles['animate__animated']} ${styles['animate__zoomIn']} ${styles['animate__delay-1s']}`}>
-
+                            <div  className={`${styles['dropdown']}`}>
+                                <div className='animate__animated animate__zoomIn animate__delay-1s' style={{textAlign: "center"}}>
                                 <h2 className={`${styles['main-heading']} ${styles['mb-0']} ${styles['projects_head']}`}>My <span className={styles['my_projects']}>Projects</span></h2>
                                 <p className={`${styles['pre-heading']} ${styles['font-weight-bolder']} ${styles['mb-0']} ${styles['mt-3']} ${styles['text-center']} ${styles['animate__animated']} ${styles['animate__zoomIn']} ${styles['animate__delay-2s']}`}>
                                     My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.
                                 </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </section >
             </div>
             <div className={styles["project-box"]} style={{ padding: "20px;" }}>

@@ -12,6 +12,7 @@
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^11.2.7",
         "@testing-library/user-event": "^12.8.3",
+        "animate.css": "^4.1.1",
         "aos": "^2.3.4",
         "chokidar": "^3.5.3",
         "classnames": "^2.3.1",
