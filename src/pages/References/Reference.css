@@ -3,8 +3,12 @@
 .reference-row{
   font-family: 'Poppins', sans-serif;
   display: flex;
-  padding:0 15%;
   background-color:#F6F6F6;
+  flex-direction: row;
+  top: 10%;
+  margin-bottom: 200px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .left-row{
@@ -12,11 +16,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 .right-row{  
+  width: 50%;
   height: 80vh;
 }
 
+.main-body{
+  margin-bottom: 200px;
+}
 
 .svg-animation-container svg{
     width:100%;
@@ -28,10 +37,63 @@
   font-family: 'Poppins', sans-serif;
   background-color:#F6F6F6;
   width: 100% !important;
-  padding: 10% 25%!important;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.table-div{
+  transition: 0.5s ease-in-out;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.table-div-2{
+  transition: 0.5s ease-in-out;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.img-container {
+  width: 32.5%;
 }
 
 .profile-pic {
+  width: 100%;
+  border-radius: 10% 50%;
+  border: 20px solid rgb(181, 6, 250);
+}
+
+.profile-pic-2{
+  width: 100%;
+  border-radius: 50% 10%;
+  border: 20px solid rgb(181, 6, 250);
+}
+
+.referenceTitleName{
+  width: 60%;
+  align-self: center;
+}
+
+.reference-name {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.reference-name a {
+  align-self: center;
+}
+
+.referenceY {
+  margin-top: 25px;
+}
+
+/*.profile-pic {
   height:100%;
   width: 70%;
   margin-top: 8%;
@@ -42,14 +104,10 @@
   border: solid;
   border-width: 20px;
   border-color: rgb(181, 6, 250);
-}
+}*/
 
 .right-img{
   margin-left: 20%!important;
-}
-
-.table-div{
-  transition: 0.5s ease-in-out;
 }
 
 .table-div:hover{
@@ -155,4 +213,79 @@
   .circlemove {
     animation-duration: 6s;
   }
-  
+
+/*Media queries to make cards responsive*/
+
+@media screen and (max-width: 1500px){
+  .table-div{
+    width: 80%;
+  }
+  .table-div-2{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1150px){
+  .img-container{
+    width: 40%;
+  }
+  .referenceTitleName{
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .reference-row{
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 40px;
+  }
+  .left-row{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .right-row{  
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+  }
+  .table-div{
+    flex-direction: column;
+  }
+  .table-div-2{
+    flex-direction: column-reverse;
+  }
+  .referenceTitleName{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .img-container{
+    min-height: 200px;
+    min-width: 200px;
+  }
+  .profile-pic-2{
+    height: 100%;
+    border-radius: 10% 50%;
+    border: 20px solid rgb(181, 6, 250);
+  }
+}
+
+@media screen and (max-width: 750px){
+  .profile-pic{
+    border: 15px solid rgb(181, 6, 250);
+  }
+  .profile-pic-2{
+    border: 15px solid rgb(181, 6, 250);
+  }
+  .reference-name {
+    column-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .img-container{
+    min-height: 165px;
+    min-width: 165px;
+  }
+}

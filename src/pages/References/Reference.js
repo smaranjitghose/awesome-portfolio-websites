@@ -10,7 +10,7 @@ const Reference = () => {
     AOS.init()
 
     return (
-        <div>            
+        <div className='main-body'>            
             <Helmet>
                 <title>John Doe | Reference</title>    
             </Helmet>
@@ -86,41 +86,44 @@ const Reference = () => {
             </div>            
                 
             <div className="referenceMainWrapper">
-                <table id="referenceDetailsTable">
-                    <tbody className="pain">
                     {
                     ReferenceData.map((item => (
                         <>
-                                        <tr className="table-div" data-aos="zoom-in-left"> 
-                                            <td className="imgCol">
-                                            <img alt="profile" src={item ? item.image1 : "loading"} className="profile-pic" /></td>
-                                            <td class = "referenceTitleName">
-                                        <img alt="quotes" src="https://img.icons8.com/fluency/48/000000/quote-left.png"/>
-                                        <a href="#0" className="paperTitle"> {item ? item.name1 : "loading"} </a> 
-                                        <div> {item ? item.designation1 : "loading"} </div> <div className="rConferences">  
-                                        <div className="referenceY">{item ? item.message1 : "loading"}</div>
-                                        </div>  
-                                        </td>
-                                        </tr>
-                                        
-                                        <tr className="table-div" data-aos="zoom-in-left"> 
+
+
+                                        <div className="table-div" data-aos="zoom-in-left"> 
+                                            <div className="img-container">
+                                                <img alt="profile" src={item ? item.image1 : "loading"} className="profile-pic" />
+                                            </div>
+                                            <div class = "referenceTitleName">
+                                                <div className='reference-name'>
+                                                    <img alt="quotes" src="https://img.icons8.com/fluency/48/000000/quote-left.png"/>
+                                                    <a href="#0" className="paperTitle"> {item ? item.name1 : "loading"} </a>
+                                                </div> 
+                                                <div> {item ? item.designation1 : "loading"} </div>
+                                                <div className="referenceY">{item ? item.message1 : "loading"}</div>
+                                            </div>
+                                        </div>
+
+                                        <div className="table-div-2" data-aos="zoom-in-left"> 
                                             
-                                            <td class = "referenceTitleName">
-                                        <img alt="quotes" src="https://img.icons8.com/fluency/48/000000/quote-left.png"/>
-                                        <a href="#0" className="paperTitle"> {item ? item.name2 : "loading"} </a> 
-                                        <div> {item ? item.designation2 : "loading"} </div> <div className="rConferences">  
-                                        <div className="referenceY">{item ? item.message2 : "loading"}</div>
-                                        </div>  
-                                        </td>
-                                        <td className="imgCol">
-                                            <img alt="left-profile" src={item ? item.image2 : "loading"} className="profile-pic right-img" /></td>
-                                        </tr> 
+                                            <div class = "referenceTitleName">
+                                                <div className='reference-name'>
+                                                    <img alt="quotes" src="https://img.icons8.com/fluency/48/000000/quote-left.png"/>
+                                                    <a href="#0" className="paperTitle"> {item ? item.name2 : "loading"} </a> 
+                                                </div>
+                                                <div> {item ? item.designation2 : "loading"} </div> 
+                                                <div className="referenceY">{item ? item.message2 : "loading"}</div>
+                                            </div>
+
+                                            <div className="img-container">
+                                                <img alt="left-profile" src={item ? item.image2 : "loading"} className="profile-pic-2" />
+                                            </div>
+                                        </div> 
                         </>
                     )))
 
                     }
-                    </tbody>
-                </table>
             </div>
 
         </div>
