@@ -21,7 +21,7 @@ const Research = () => {
     {
       id: 0,
       abstract_data:
-        "This is currently left empty and this can be considered as a dummy data 1",
+        "This is currently left empty and this can be considered as a dummy data 1", 
       cite_data:
         "Qile Zhu, Wei Bi, Xiaojiang Liu, Xiyao Ma, Xiaolin Li and Dapeng Wu. A Batch Normalized Inference Network Keeps the KL Vanishing Away. The 58th Annual Meeting of the Association for Computational Linguistics 2020",
     },
