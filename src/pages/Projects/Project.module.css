@@ -129,26 +129,6 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
     }
 }
 
-
-@media (max-width:766px) {
-    .dropdown {
-        position: absolute;
-        padding: 0 3.5rem;
-        top: 100px;
-        width: 100%;
-    }
-    .row {
-        flex-direction: column;
-    }
-    .godown{
-        width: 80%;
-        margin-top: 80px;
-    }
-    .dropdown {
-        margin-top: 20px;
-    }
-}
-
 @media (min-width: 766px) and (max-width:959px) {
     .projectcards {
         margin: 10px;
@@ -164,9 +144,29 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
     }
 }
 
+
+@media (max-width:766px) {
+    .dropdown {
+        position: absolute;
+        padding: 0 3.5rem;
+        top: 100px;
+        width: 100%;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .godown{
+        width: 80%;
+        margin-top: 140px;
+    }
+    .dropdown {
+        margin-top: 20px;
+    }
+}
+
 @media screen and (max-width: 600px){
     .godown{
-        margin-top: 130px;
+        margin-top: 170px;
         width: 100%;
     }
 
@@ -174,7 +174,13 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
 
 @media screen and (max-width: 400px){
     .godown{
-        margin-top: 180px;
+        margin-top: 220px;
+    }
+}
+
+@media screen and (max-height: 650px) and (max-width: 766px){
+    .godown{
+        margin-top: 350px;
     }
 }
 
