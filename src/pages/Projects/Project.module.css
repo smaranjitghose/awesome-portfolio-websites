@@ -6,11 +6,19 @@ html {
 .projects_head {
     font-weight: bold;
 }
-.container {
+.main-container {
     font-family: 'Poppins', sans-serif;
-
 }
 
+.main-section {
+    display: flex;
+    justify-content: center;
+}
+
+.godown{
+    width: 40%;
+    margin-top: -70px;
+}
 /*color of projects page heading*/
 
 .my_projects {
@@ -41,11 +49,14 @@ p {
     text-align: right;
 }
 .svgmate {
-    width: 525px;
-    height: 470px;
+    width: 100%;
 }
 .dropdown {
-    width: 40%;
+    width: 44%;
+    align-self: center;
+    margin-top: -70px;
+    animation: zoomIn;
+    animation-duration: 10s;
 }
 
 /*For Changing background color of body according to theme*/
@@ -109,6 +120,31 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
     left: 65px;
     background-color: #141516;
 }
+@media screen and (min-width: 766px) and (max-width: 1200px){
+    .godown{
+        width: 55%;
+    }
+    .dropdown {
+        align-self: top;
+    }
+}
+
+@media (min-width: 766px) and (max-width:959px) {
+    .projectcards {
+        margin: 10px;
+    }
+    .row {
+        flex-direction: row;
+    }
+    .godown{
+        width: 56%;
+    }
+    .dropdown {
+        margin-top: -140px;
+    }
+}
+
+
 @media (max-width:766px) {
     .dropdown {
         position: absolute;
@@ -116,24 +152,35 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
         top: 100px;
         width: 100%;
     }
-    .godown {
-        z-index: 1;
-        padding-top: 15rem;
-    }
     .row {
         flex-direction: column;
     }
+    .godown{
+        width: 80%;
+        margin-top: 140px;
+    }
+    .dropdown {
+        margin-top: 20px;
+    }
 }
 
-@media (max-width:959px) {
-    .projectcards {
-        margin: 10px;
+@media screen and (max-width: 600px){
+    .godown{
+        margin-top: 170px;
+        width: 100%;
     }
-    .row {
-        flex-direction: row;
+
+}
+
+@media screen and (max-width: 400px){
+    .godown{
+        margin-top: 220px;
     }
-    .godown > svg {
-        width: 300px !important;
+}
+
+@media screen and (max-height: 650px) and (max-width: 766px){
+    .godown{
+        margin-top: 350px;
     }
 }
 
@@ -153,10 +200,9 @@ a:hover {
 .row {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-around;
+    width: 80%;
 }
 .card {
     width: 100%;
