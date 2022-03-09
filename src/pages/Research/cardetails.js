@@ -89,13 +89,8 @@ function Carddetails(props) {
                   id={"popup1"}
                   className={"collapse"}
                   aria-labelledby="headingTwo"
-                  data-parent=".collapse"
-                >
+                  data-parent=".collapse">
                   <div className={`${styles["card-body"]}`}>
-                    {/* Qile Zhu, Wei Bi, Xiaojiang Liu, Xiyao Ma, Xiaolin Li
-                          and Dapeng Wu. A Batch Normalized Inference Network
-                          Keeps the KL Vanishing Away. The 58th Annual Meeting
-                          of the Association for Computational Linguistics 2020. */}
                     {open2 && <div>{statecite}</div>}
                   </div>
                 </div>
