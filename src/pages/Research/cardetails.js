@@ -47,15 +47,11 @@ function Carddetails(props) {
                   Linguistics
                   <div className={`${styles["researchY"]}`}>2020</div>
                 </div>
-                {/* <!--CITE BUTTON--> */}
+               
                 <div className={"d-flex"} style={{ marginRight: "5%" }}>
                   <button
                     className={`${styles["button"]} ${styles["button-accent"]} ${styles["button-small"]} ${styles["text-right"]} ${styles["button-abstract"]} ${styles[""]}`}
                     type="button"
-                    data-toggle={"collapse"}
-                    data-target="#absPopup1"
-                    aria-expanded="false"
-                    aria-controls="absPopup1"
                     onClick={handleToggle}
                   >
                     ABSTRACT
@@ -64,10 +60,6 @@ function Carddetails(props) {
                   <button
                     className={`${styles["button"]} ${styles["button-accent"]} ${styles["button-small"]} ${styles["text-right"]} ${styles["button-abstract"]} ${styles[""]}`}
                     type="button"
-                    data-toggle={"collapse"}
-                    data-target="#popup1"
-                    aria-expanded="false"
-                    aria-controls="popup1"
                     onClick={handleCiteToggle}
                   >
                     CITE
@@ -75,8 +67,7 @@ function Carddetails(props) {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
                 <div
-                  aria-labelledby="headingTwo"
-                  data-parent=".collapse"
+                 
                   className={"collapse"}
                 >
                   <div className={`${styles["card-body"]}`}>
@@ -87,9 +78,7 @@ function Carddetails(props) {
                 </div>
                 <div
                   id={"popup1"}
-                  className={"collapse"}
-                  aria-labelledby="headingTwo"
-                  data-parent=".collapse">
+                  className={"collapse"}>
                   <div className={`${styles["card-body"]}`}>
                     {open2 && <div>{statecite}</div>}
                   </div>
