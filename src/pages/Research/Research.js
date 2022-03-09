@@ -1,25 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Research.module.css";
-// import inteferenceNetwork from "../../assets/images/research-page/inteferenceNetwork.png";
-// import crossLingual from "../../assets/images/research-page/crossLingual.png";
-// import wordRepresentation from "../../assets/images/research-page/wordRepresentation.png";
-// import dialogueState from "../../assets/images/research-page/dialogueState.png";
-// import semanticSegmentation from "../../assets/images/research-page/semanticSegmentation.png";
-// import deepNetwork from "../../assets/images/research-page/deepNetwork.png";
-// import imageDecomposition from "../../assets/images/research-page/imageDecomposition.png";
-// import neuralNetworks from "../../assets/images/research-page/neuralNetworks.jpg";
+import inteferenceNetwork from "../../assets/images/research-page/inteferenceNetwork.png";
+import crossLingual from "../../assets/images/research-page/crossLingual.png";
+import wordRepresentation from "../../assets/images/research-page/wordRepresentation.png";
+import dialogueState from "../../assets/images/research-page/dialogueState.png";
+import semanticSegmentation from "../../assets/images/research-page/semanticSegmentation.png";
+import deepNetwork from "../../assets/images/research-page/deepNetwork.png";
+import imageDecomposition from "../../assets/images/research-page/imageDecomposition.png";
+import neuralNetworks from "../../assets/images/research-page/neuralNetworks.jpg";
 import { Helmet } from "react-helmet";
 //import Carddetails from "./cardetails";
-// import { propTypes } from "react-bootstrap/esm/Image";
+import { propTypes } from "react-bootstrap/esm/Image";
 import Card from "./card";
-import Preloader from "../../components/Preloader/Preloader";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Research = () => {
   const data = [
     {
       id: 0,
+      src: inteferenceNetwork,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 1",
       cite_data:
@@ -27,6 +25,7 @@ const Research = () => {
     },
     {
       id: 1,
+      src: crossLingual,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 2",
       cite_data:
@@ -34,6 +33,7 @@ const Research = () => {
     },
     {
       id: 2,
+      src: imageDecomposition,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 3",
       cite_data:
@@ -41,6 +41,7 @@ const Research = () => {
     },
     {
       id: 3,
+      src: wordRepresentation,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 4",
       cite_data:
@@ -48,6 +49,7 @@ const Research = () => {
     },
     {
       id: 4,
+      src: dialogueState,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 5",
       cite_data:
@@ -55,6 +57,7 @@ const Research = () => {
     },
     {
       id: 5,
+      src: semanticSegmentation,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 6",
       cite_data:
@@ -62,6 +65,7 @@ const Research = () => {
     },
     {
       id: 6,
+      src: deepNetwork,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 7",
       cite_data:
@@ -69,14 +73,13 @@ const Research = () => {
     },
     {
       id: 7,
+      src: neuralNetworks,
       abstract_data:
         "This is currently left empty and this can be considered as a dummy data 8",
       cite_data:
         "Qin, Haotong and Gong, Ruihao and Liu, Xianglong and Shen, Mingzhu and Wei, Ziran and Yu, Fengwei and Song,Jingkuan. Forward and Backward Information Retention for Accurate Binary Neural Networks. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.",
     },
   ];
-
-  AOS.init()
 
   return (
     <div>
@@ -126,9 +129,6 @@ const Research = () => {
           content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world."
         />
       </Helmet>
-
-      <Preloader />
-
       <div
         className={`${styles["research-container"]} ${styles["research-upper"]} ${styles["pt-5"]}`}
         style={{ width: "100%", minHeight: "80%;" }}
@@ -714,14 +714,6 @@ const Research = () => {
           </div>
         </section>
         <Card items={data} />
-        {/* <Carddetails/>
-        <Carddetails/>
-        <Carddetails/>
-        <Carddetails/>
-        <Carddetails/>
-        <Carddetails/>
-        <Carddetails/>
-        <Carddetails/> */}
       </div>
     </div>
   );
