@@ -83,7 +83,7 @@ const Research = () => {
       <Helmet>
         <title>John Doe | Research</title>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 , minimum-scale=1.0" />
         <meta
           name="keywords"
           content="free portfolio template,portfolio template, portfolio website template, open source, open sourcing, contributing to open source"
@@ -134,10 +134,9 @@ const Research = () => {
         style={{ width: "100%", minHeight: "80%;" }}
       >
         <section className={`${styles["txt-bottom"]}`}>
-          <div className={`${styles["px-3"]} ${styles["pt-5"]}`}>
             <div className={`${styles["row"]}`}>
               <div
-                className={`${styles["col-md-6"]} ${styles["d-flex"]} ${styles["mt-5"]} ${styles["flex-column"]} ${styles["text-center"]} ${styles["justify-content-center"]} ${styles["animate__animated"]} ${styles["animate__zoomIn"]} ${styles["animate__delay-1s"]}`}
+                className={`${styles["research-heading"]} ${styles["animate__animated"]} ${styles["animate__zoomIn"]} ${styles["animate__delay-1s"]}`}
               >
                 <h2
                   className={`${styles["main-heading"]} ${styles["mb-0"]} ${styles["head-upper"]} ${styles["research_head"]}`}
@@ -154,8 +153,7 @@ const Research = () => {
               </div>
 
               <div
-                className={`${styles["col-md-6"]}`}
-                style={{ marginTop: "45px" }}
+                className={`${styles["research-img"]}`}
               >
                 {/* <!-- <img className={`${styles['img-fluid']} ${styles['d-block']} ${styles['img-fluid']} ${styles['d-block']} ${styles['animate__animated']} ${styles['animate__zoomIn']} ${styles['animate__delay-1s"']} ${styles['src="./assets/images/research-page/research1.svg']}`}> --> */}
                 <svg
@@ -711,9 +709,9 @@ const Research = () => {
                 </svg>
               </div>
             </div>
-          </div>
         </section>
-        <Card items={data} />
+        <div className = {`${styles["researchMainWrapper"]}`}>
+          <Card items={data} />
         {/* <Carddetails/>
         <Carddetails/>
         <Carddetails/>
@@ -722,6 +720,7 @@ const Research = () => {
         <Carddetails/>
         <Carddetails/>
         <Carddetails/> */}
+        </div>
       </div>
     </div>
   );
