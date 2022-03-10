@@ -23,7 +23,7 @@ const Projects = () => {
             <Helmet>
                 <title>John Doe | Projects</title>
                 <meta charset="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
                 <meta name="keywords" content="free portfolio template,portfolio template, portfolio website template, open source and contribution to open source" />
                 <meta name="description" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
                 <meta name="robots" content="index,follow" />
@@ -46,11 +46,11 @@ const Projects = () => {
 
             <Preloader />
 
-            <div className={`${styles['main-container']} ${styles['pt-5']}`} style={{ width: "100%", minHeight: "80%;" }}>
-                <section className={`${styles['main-section']}`} style={{ height: "85vh" }}>
+            <div className={`${styles['main-container']} ${styles['pt-5']}`} style={{ width: "100%", minHeight: "80%;"}}>
+                <section className={`${styles['main-section']}`}>
                         <div className={styles['row']}>
 
-                            <div className={`${styles['godown']}`}>
+                            <div className={`${styles['project-img']}`}>
                                 <svg xmlns="http://www.w3.org/2000/svg" id={styles['ku']} width="90%" baseProfile="tiny" className={styles['svgmate']} version="1" viewBox="300 150 550 570">
 
                                     <g id={`${styles['wall']}`}>
@@ -269,7 +269,7 @@ const Projects = () => {
                                     </g>
                                 </svg>
                             </div>
-                            <div  className={`${styles['dropdown']}`}>
+                            <div  className={`${styles['project-heading']}`}>
                                 <div className='animate__animated animate__zoomIn animate__delay-1s' style={{textAlign: "center"}}>
                                 <h2 className={`${styles['main-heading']} ${styles['mb-0']} ${styles['projects_head']}`}>My <span className={styles['my_projects']}>Projects</span></h2>
                                 <p className={`${styles['pre-heading']} ${styles['font-weight-bolder']} ${styles['mb-0']} ${styles['mt-3']} ${styles['text-center']} ${styles['animate__animated']} ${styles['animate__zoomIn']} ${styles['animate__delay-2s']}`}>
@@ -281,7 +281,7 @@ const Projects = () => {
                 </section >
             </div>
             <div className={styles["project-box"]} style={{ padding: "20px;" }}>
-                <div className={`${styles['row']} ${styles['page-content']} ${styles['projectcards']}`}>
+                <div className={`${styles['page-content']} ${styles['projectcards']}`}>
                     {
                         data.map((item => (
                             <div className={`${styles['column']} ${styles['skill-card']} ${styles['card']}`} style={{ margin: "15px" }} data-aos="zoom-in-up" data-aos-easing="linear" data-aos-delay="300" data-aos-duration="600">
