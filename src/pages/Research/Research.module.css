@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .research-container {
     background-color: #f4f4f4;
-}
-
-.pt-5,
-.py-5 {
-    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.5rem;
 }
 
 .mt-5,
@@ -41,17 +39,27 @@ p {
 }
 
 .txt-bottom {
-    height: 80vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .row {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
     align-items: center;
     justify-content: space-around;
+}
+
+.research-heading {
+    width: 50%;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.research-img {
+    width: 50%;
 }
 
 .research_head {
@@ -75,8 +83,8 @@ p .font-weight-bolder {
 /*svg*/
 
 .svgmate {
-    width: 525px;
-    height: 463px;
+    width: 100%;
+    height: auto;
 }
 
 .peopletableslide {
@@ -97,9 +105,12 @@ a {
 }
 
 .researchMainWrapper {
-    margin: 50px 0 200px;
+    margin-top: 10%;
+    margin-bottom: 200px;
     position: relative;
     color: var(--p-up);
+    width: 100%;
+    padding-top: 30px;
 }
 
 table {
@@ -119,11 +130,8 @@ tbody {
 
 #researchDetailsTable {
     border-collapse: separate;
-    border-width: 0;
-    empty-cells: show;
-    border-spacing: 3em;
     position: relative;
-    width: 85%;
+    width: 75%;
     margin: auto;
 }
 
@@ -131,6 +139,8 @@ tbody {
     transition: all 1s ease;
     border-radius: 5px;
     box-shadow: 2px 2px 7px #ddd, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    display: flex;
+    margin-bottom: 80px;
 }
 
 #researchDetailsTable tr:hover {
@@ -153,67 +163,20 @@ tbody {
     color: #fff;
 }
 
-#rDetailsHead {
-    z-index: 700;
-    background-color: #f5f5f5;
-    height: 42px;
-    box-sizing: border-box;
+.imgCol {
+    width: 30%;
+    height: 255px;
+    align-self: center;
 }
 
-.researchTitle {
-    font-weight: bold;
-    padding: 16px 16px 0 16px;
-    text-align: left;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    vertical-align: middle;
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: var(--bg-head);
-    background-image: var(--bg-head-img);
-}
-
-.researchTitle span {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 16px;
-}
-
-.researchTitle span a {
-    padding: 8px 0;
-}
-
-.researchCited {
-    font-weight: bold;
-    text-align: right;
-    padding: 16px 8px 0 8px;
-    width: 64px;
-    white-space: nowrap;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    vertical-align: middle;
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: var(--bg-cite-y);
-}
-
-.researchYear {
-    font-weight: bold;
-    padding: 16px 16px 0 16px;
-    text-align: right;
-    width: 88px;
-    white-space: nowrap;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    vertical-align: middle;
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: var(--bg-cite-y);
+.imgCol img{
+    width: 100%;
+    height: 100%;
 }
 
 .researchTitleName {
+    width: 70%;
     padding: 16px;
-    vertical-align: top;
     text-align: left;
 }
 
@@ -265,10 +228,6 @@ tbody {
     width: 100%;
     height: 17em;
     border-radius: 10px;
-}
-
-.imgCol {
-    width: 30%;
 }
 
 
@@ -479,9 +438,62 @@ a:hover {
     .row {
         flex-direction: column;
     }
-
+    .research-heading{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .research-img {
+        width: 90%;
+    }
     .col-lg-6 {
         width: 100%;
     }
     
 }
+
+@media screen and (max-width: 711px){
+    #researchDetailsTable {
+        width: 85%;
+    }
+    #researchDetailsTable tr {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .imgCol{
+        width: 50%;
+        height: 200px;
+    }
+
+    .researchTitleName{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 711px) and (max-width: 1000px){
+    .imgCol{
+      width: 35%;
+    }
+    .researchTitleName {
+      width: 65%;
+    }
+  }
+  
+  @media screen and (min-width: 711px) and (max-width: 850px){
+    .imgCol{
+      width: 40%;
+    }
+    .researchTitleName {
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    #researchDetailsTable {
+        width: 85%;
+    }
+    .imgCol{
+        width: 70%;
+        height: 200px;
+    }
+  }
