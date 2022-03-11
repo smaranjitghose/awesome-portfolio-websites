@@ -6,19 +6,40 @@ html {
 .projects_head {
     font-weight: bold;
 }
+
 .main-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.0rem;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 .main-section {
+    height: auto;
     display: flex;
     justify-content: center;
 }
 
-.godown{
-    width: 40%;
-    margin-top: -70px;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
 }
+
+.project-heading {
+    width: 55%;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.project-img {
+    width: 45%;
+}
+
 /*color of projects page heading*/
 
 .my_projects {
@@ -50,15 +71,8 @@ p {
 }
 .svgmate {
     width: 100%;
+    height: auto;
 }
-.dropdown {
-    width: 44%;
-    align-self: center;
-    margin-top: -70px;
-    animation: zoomIn;
-    animation-duration: 10s;
-}
-
 /*For Changing background color of body according to theme*/
 
 .light-mode-button {
@@ -120,69 +134,13 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
     left: 65px;
     background-color: #141516;
 }
-@media screen and (min-width: 766px) and (max-width: 1200px){
-    .godown{
-        width: 55%;
-    }
-    .dropdown {
-        align-self: top;
-    }
-}
 
 @media (min-width: 766px) and (max-width:959px) {
     .projectcards {
         margin: 10px;
     }
-    .row {
-        flex-direction: row;
-    }
-    .godown{
-        width: 56%;
-    }
-    .dropdown {
-        margin-top: -140px;
-    }
 }
 
-
-@media (max-width:766px) {
-    .dropdown {
-        position: absolute;
-        padding: 0 3.5rem;
-        top: 100px;
-        width: 100%;
-    }
-    .row {
-        flex-direction: column;
-    }
-    .godown{
-        width: 80%;
-        margin-top: 140px;
-    }
-    .dropdown {
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .godown{
-        margin-top: 170px;
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 400px){
-    .godown{
-        margin-top: 220px;
-    }
-}
-
-@media screen and (max-height: 650px) and (max-width: 766px){
-    .godown{
-        margin-top: 350px;
-    }
-}
 
 .img-header {
     width: 90%;
@@ -197,13 +155,6 @@ a:hover {
     border: none;
 }
 
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 80%;
-}
 .card {
     width: 100%;
 }
@@ -218,9 +169,6 @@ a:hover {
 }
 
 @media(min-width: 60rem) {
-    .row {
-        margin-top: 0em;
-    }
     .card {
         width: 43%;
         column-gap: 3rem;
@@ -583,13 +531,7 @@ ul {
 
 @media only screen and (max-width: 767px) {
     .project-box {
-        margin-top: 18rem;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .project-box {
-        margin-top: 18rem;
+        margin-top: 3rem;
     }
 }
 
@@ -925,4 +867,35 @@ SVG ANIMATIONS PROJECT PAGE
     animation-iteration-count: infinite;
     animation-duration: 3.3s;
     transform-origin: 785.132px 295.833px
+}
+
+@media screen and (max-width: 1100px){
+    .row{
+        width: 80%;
+    }
+    .project-heading{
+        width: 50%;
+    }
+    .project-img{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+    .project-heading{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .project-img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .row{
+        width: 90%;
+    }
 }
