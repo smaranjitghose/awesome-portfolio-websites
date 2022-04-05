@@ -24,6 +24,8 @@ A community maintained open source project aimed at making personal portfolio fo
 
 ### Home Page:
 
+Welcome to Home Page! If you want to navigate to this page, open the Awesome-Portfolio-Webites folder in a text editor. Once this folder is open, multiple files will appear. Click on the index.html file to access the home page.
+
 <p align="center"><img src="./readme_assets/Home_Page.gif"></p>
 
 ### Experience Page:
