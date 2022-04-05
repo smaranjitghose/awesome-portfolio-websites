@@ -27,6 +27,9 @@ A community maintained open source project aimed at making personal portfolio fo
 <p align="center"><img src="./readme_assets/Home_Page.gif"></p>
 
 ### Experience Page:
+Welcome to the Experience Page! Open this page `experience.html`
+
+Here you can add your experience which should include a logo or picture of the institution you worked for, along with a description of what you did! 
 
 <p align="center"><img src="./readme_assets/Experience_Page.gif"></p>
 
