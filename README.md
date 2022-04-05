@@ -24,7 +24,14 @@ A community maintained open source project aimed at making personal portfolio fo
 
 ### Home Page:
 
-Welcome to Home Page! If you want to navigate to this page, open the Awesome-Portfolio-Webites folder in a text editor. Once this folder is open, multiple files will appear. Click on the index.html file to access the home page.
+Welcome to Home Page! If you want to navigate to this page, open the Awesome-Portfolio-Websites folder, located on the Github repository, in a text editor. Examples of text editors include Visual Studio Code, Atom, Notepad++ or others. Once the Awesome-Portfolio-Websites is open, multiple files will appear. Click on the `index.html` file to access the home page. 
+
+What to do on the Home Page?
+* Add your title/name
+* Add a profile picture
+* Link social media accounts
+* Create a unique background
+* ENDLESS POSSIBILITIES
 
 <p align="center"><img src="./readme_assets/Home_Page.gif"></p>
 
