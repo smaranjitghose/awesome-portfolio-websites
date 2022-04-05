@@ -39,10 +39,19 @@ A community maintained open source project aimed at making personal portfolio fo
 <p align="center"><img src="./readme_assets/Research_Page.gif"></p>
 
 ### Education Page:
+Welcome to the Education Page.  This page contains your educational history as well as online platforms for personal growth  and development. Click on this file  `education.html` to customize the education page. On this page you will find:
+* Education history
+* Online educational platforms
+* Badges receieved for participation
+* Awards and Honors received
+
+You can edit all of the items in the `education.html` to customize it.
+
 
 <p align="center"><img src="./readme_assets/Education_Page.gif"></p>
 
 ## How to use this?🛠
+
 
 [Check out our awesome Documentation](https://smaranjitghose.github.io/awesome-portfolio-websites/)
 
