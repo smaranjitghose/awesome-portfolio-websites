@@ -8,6 +8,8 @@ var cursor = {
   cursorEnlarged: false,
   $dot: document.querySelector(".cursor-dot"),
   $outline: document.querySelector(".cursor-dot-outline"),
+  lastScrolledLeft : 0, // For changing position of cursor with scrolling
+  lastScrolledTop : 0,  // For changing position of cursor with scrolling
 
   init: function () {
     // Set up element sizes
@@ -68,6 +70,24 @@ var cursor = {
       self.toggleCursorVisibility();
       self.$dot.style.opacity = 0;
       self.$outline.style.opacity = 0;
+    });
+
+    // Change position of cursor with scrolling
+    document.addEventListener('scroll', function (e) {
+
+      if (self.lastScrolledLeft != $(document).scrollLeft()) {
+        self.endX -= self.lastScrolledLeft;
+        self.lastScrolledLeft = $(document).scrollLeft();
+        self.endX += self.lastScrolledLeft;
+      }
+      if (self.lastScrolledTop != $(document).scrollTop()) {
+        self.endY -= self.lastScrolledTop;
+        self.lastScrolledTop = $(document).scrollTop();
+        self.endY += self.lastScrolledTop;
+      }
+      self.$dot.style.top = self.endY + "px";
+      self.$dot.style.left = self.endX + "px";
+
     });
   },
 
