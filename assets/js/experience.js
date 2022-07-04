@@ -122,7 +122,7 @@ const mentor = [
     subtitle: "Judge",
     image: "assets/images/experience-page/ulhacks.png",
     desp: "ULHacks is a 36 hour long hackathon organized with an aim to enable students to create a project which empowers learning.",
-    href: "https://wafflehacks.org/",
+    href: "https://ulhacks.com/",
   },
   {
     title: "WaffleHacks",
