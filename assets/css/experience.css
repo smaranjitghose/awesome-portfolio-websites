@@ -664,7 +664,14 @@ ul ol {
   justify-content: center;
   text-align: center;
   letter-spacing: 1px;
+  transition: background-image 3.4s ease;
 }
+.blog-slider__button:active
+{
+  transition: background-image 7.4s ease;
+  background-image: linear-gradient(147deg, #940eb5 0%, #bb86fc 74%);
+}
+
 .blog-slider__button:hover{
   color: white !important;
 }

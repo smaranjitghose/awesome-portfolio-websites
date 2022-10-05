@@ -105,6 +105,7 @@ body {
   color: var(--text);
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
+  user-select: none;
 }
 .text-center heading1 exp-head {
   color: white;
@@ -1032,7 +1033,15 @@ outline: none;
   border-style: none;
   transition: 0.5s ease background-color, 0.5s ease box-shadow;
   background: #bb86fc;
+  transition: all 1.3s ease;
 }
+
+#lnch:active
+{
+  background: #bb86fc64;
+  outline: none;
+}
+
 #lnch_btn {
   position: absolute;
   top: 0px;
