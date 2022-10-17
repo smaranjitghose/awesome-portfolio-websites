@@ -9,10 +9,10 @@ html[data-theme="light"] {
  inset #4D4D4D -2px -2px 4px;
   --col-bd-icon:transparent;
   --bg-icon: #fff;
-   --bg1-color: #fff;
+  --bg1-color: #fff;
   --col-icon-dribbble: #ea4c89;
   --col-icon-linkedin: #0e76a8;
-  --col-icon-kaggle: #41aff3;  
+  --col-icon-kaggle: #41aff3;
   --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail:rgb(209, 82, 82);
   --col-icon-google-scholar:#3cba54;
@@ -147,13 +147,6 @@ html[light-mode="dark"] .socialicon{
   background-color: #141516;
 }
 
-.kaggle i {
-  margin: auto;
-  font-size: 24px;
-  z-index: 1;
-  transition: var(--trans-props);
-}
-
 .socialicon.kaggle{
   color:var(--col-icon-kaggle);
 }
@@ -174,8 +167,7 @@ html[light-mode="dark"] .socialicon{
   box-shadow: var(--kaggle);
 }
 
-
- /*
+/*
 ---------------------------
    LINKEDIN MICROANIMATION
 ---------------------------
@@ -424,7 +416,27 @@ html[light-mode="dark"] .github-icon{
     }
   }
   
-  
+/*
+--------------------------------
+   STACKOVERFLOW MICROANIMATION
+--------------------------------
+*/
+
+.stackoverflow-icon {
+  height: 60%;
+  align-self: center;
+  margin: 5px 0px 0px 3px;
+}
+
+.stackoverflow:hover .wings{
+  transform-origin: bottom right;
+  animation: stack 1s infinite alternate;
+}		
+
+@keyframes stack{
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-2deg); }
+ }
 
 /*
 ----------------------------
