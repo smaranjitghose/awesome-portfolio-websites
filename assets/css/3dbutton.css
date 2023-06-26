@@ -1,0 +1,77 @@
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Adjust the height to fit your needs */
+    gap: 10px; /* Adjust the gap between buttons */
+  }
+  
+  /* Button */
+  .button {
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 10px 20px; /* Adjust the padding to increase button length */
+  }
+  
+  /* Hire Me Button */
+  .hire-me-button {
+    background-color: green;
+    color: white;
+  }
+  
+  /* View My Resume Button */
+  .view-resume-button {
+    background-color: orange;
+    color: white;
+  }
+  
+  /* Button text */
+  .button-text {
+    position: relative;
+    z-index: 2;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.5s;
+    font-family: Lora, serif; /* Set the font family to Lora */
+  }
+  
+  /* Button hover state */
+  .button:hover .button-text {
+    transform: translateY(-50%);
+  }
+  
+  /* Button click state */
+  .button:active .button-text {
+    transform: translateY(0);
+  }
+  
+  /* Button link */
+  .button-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  /* Button hover state for link */
+  .button:hover .button-link {
+    opacity: 1;
+  }
+  
+  /* Button logo (Hire Me) */
+  .button-logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px; /* Adjust the spacing between the logo and text */
+  }
+  
