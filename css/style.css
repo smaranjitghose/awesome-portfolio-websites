@@ -1,0 +1,1094 @@
+@font-face {
+  font-family: "Agustina";
+  src: url(../fonts/Agustina.woff);
+}
+
+
+/*CSS variable declaration for light/dark mode*/
+
+html[data-theme="light"] {
+  --bg-mybtn: red;
+  --bg-nav: black;
+  --bg-nav-img: black;
+  --bg-footer: #DDE1EC;
+  --bg: #ffffff;
+  --text: #191919;
+  --text-color: #6c757d;
+  --col-icon: black;
+  --col-bd-radius: rgb(2, 2, 2);
+  --col-box-shadow: #000000 2px 2px 4px, #4D4D4D -2px -2px 4px;
+  --col-box-shadow-hover: inset #8a7373 2px 2px 4px, inset #4D4D4D -2px -2px 4px;
+  --col-bd-icon: transparent;
+  --bg-icon: #fff;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github: #24292e;
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail: rgb(209, 82, 82);
+  --col-icon-google-scholar: #3cba54;
+  --col-icon-codeforces: rgb(19, 145, 184);
+  --col-icon-leetcode: rgb(255, 181, 62);
+  --shadow-col: rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] {
+  --bg-mybtn: rgb(230, 109, 129);
+  --bg-nav: #6617cb;
+  --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
+  --bg-footer: linear-gradient(315deg, #6617cb 0%, #882463 74%);
+  --bg: #191919;
+  --text: #ffffff;
+  --text-color: #fff;
+  --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+  --txt-fill: transparent;
+  --col-icon: white;
+  --col-bd-radius: black;
+  --col-bd-icon: transparent;
+  --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7), -5px -5px 10px rgba(255, 255, 255, 0.1);
+  --col-box-shadow-hover: inset rgba(255, 255, 255, 1) 2px 2px 4px, inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github: #24292e;
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail: rgb(209, 82, 82);
+  --col-icon-google-scholar: #3cba54;
+  --col-icon-codeforces: rgb(19, 145, 184);
+  --col-icon-leetcode: rgb(255, 181, 62);
+  --col-white: #fff;
+}
+
+
+/*
+---------------------------
+      SCROLLBAR
+---------------------------
+*/
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #bb86fc;
+  border-radius: 2px;
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  max-height: 10px;
+  -webkit-box-shadow: inset 0 0 6px #bb86fc;
+  background: #bb86fc;
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ca9eff;
+  
+}
+
+/* Custom Scrollbar for Mozilla Firefox*/
+html{
+  overflow-y: visible;
+  scrollbar-color: #ca9eff #f1f1f1;
+  scrollbar-width: auto;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+}
+.text-center heading1 exp-head {
+  color: white;
+}
+
+
+/* Scroll to Top button */
+
+#btnScrollToTop {
+  width: 50px;
+  height: 50px;
+  background-color: #bb86fc;
+  color: #fff;
+  margin: 8px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  position: fixed;
+  outline: none;
+  bottom: 10px;
+  right: 10px;
+  animation: up 1.5s infinite;
+  -webkit-animation: up 1.5s infinite;
+}
+
+
+/*
+---------------------------------------
+ SCROLL TO TOP BUTTON MICROANIMATION
+---------------------------------------
+*/
+
+@keyframes up {
+  0% {
+      transform: translate(0);
+  }
+  20% {
+      transform: translateY(-15px);
+  }
+  40% {
+      transform: translate(0);
+  }
+}
+
+@-webkit-keyframes up {
+  0% {
+      transform: translate(0);
+  }
+  20% {
+      transform: translateY(-15px);
+  }
+  40% {
+      transform: translate(0);
+  }
+}
+
+
+/* smooth scrolling to top */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*
+------------------------------------
+   HAMBURGER ANIMATION
+------------------------------------
+*/
+
+.hamburger_wrapper {
+  float: right;
+}
+
+.hamburger {
+  width: 2.5em;
+  height: 2em;
+  font-size: 11px;
+  cursor: pointer;
+  position: relative;
+}
+
+.first,
+.second,
+.third {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: .45em;
+  width: 100%;
+  float: left;
+  border-radius: 2px;
+  transition: all .35s ease-in-out;
+}
+
+.first {
+  top: 0px;
+}
+
+.is-active .first {
+  transform-origin: .167em .33em;
+  transform: rotate(45deg) translate(0.167em, -0.25em);
+}
+
+.second {
+  top: 50%;
+  margin-top: -.25em;
+}
+
+.is-active .second {
+  opacity: 0;
+  transform: translateX(8em)
+}
+
+.third {
+  bottom: 0px;
+  transform-origin: .25em -0.33em;
+}
+
+.is-active .third {
+  transform: rotate(-45deg) translate(-0.167em, 0.083em);
+}
+
+.navbar-brand {
+  font-family: Agustina;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar {
+  color: #000000;
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0 2px 2px rgb(230, 230, 230);
+}
+
+/* Dark Mode toggle switch button */
+.dark_toggler {
+  -webkit-appearance: none;
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+  background-size: cover;
+  border-radius: 50px;
+  outline: none;
+  transition: background-image 0.9s;
+  box-shadow: 0px 2px 5px 1px gray;
+}
+
+.dark_toggler:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background-color: navy;
+  border-radius: 50px;
+  transition: all 0.9s;
+  background-color: #f7ca33;
+}
+
+.dark_toggler:checked {
+  background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+  transition: background-image 0.9s;
+  box-shadow: 0px 2px 5px 1px rgb(187, 134, 201);
+}
+
+.dark_toggler:checked:before {
+  transform: translate(150%);
+  transition: all 0.9s;
+  background-color: #bb86fc;
+}
+/* end of dark mode toggle switch button */
+
+html {
+  background-color: #f6f6f6;
+  transition: background-color .3s;
+}
+
+html[light-mode="dark"] {
+  background-color: #141516;
+  color: #ced4e2;
+}
+
+.dark-theme {
+  background-color: #2b2a2A;
+  transition: background-color .3s;
+  box-shadow: 0 0 0;
+}
+
+.dark-theme .navbar-nav .nav-link,
+.dark-theme .navbar-brand {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-theme .nav-link:hover{
+color: #ffffff !important;
+}
+
+.dark-theme .first,
+.dark-theme .second,
+.dark-theme .third {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.dsc{
+   box-shadow:   2px 5px 5px 0px rgb(130 216 251), 
+   inset -2px -5px 5px 0px rgb(130 216 251);
+   background: #1f1d1d;
+}
+/*
+-------------------------------------
+  SIDEBAR SVG ANIMATION
+--------------------------------------
+*/
+
+.bike {
+  margin-top: 30px;
+  display: block;
+}
+
+#right-wheel,
+#left-wheel {
+  animation: wheel 3s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#man-bike {
+  animation: bikes 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#hat {
+  animation: hat 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes wheel {
+  from {
+      transform: rotateZ(0deg);
+  }
+  to {
+      transform: rotateZ(360deg);
+  }
+}
+
+@keyframes bikes {
+  from {
+      transform: rotateX(0deg);
+  }
+  to {
+      transform: rotateX(12deg);
+  }
+}
+
+@keyframes hat {
+  from {
+      transform: translateY(0%) rotateZ(0deg);
+  }
+  to {
+      transform: translateY(10%) rotateZ(20deg);
+  }
+}
+
+
+/*
+-------------------------------------
+  NAV BAR HIGHLIGHTING
+--------------------------------------
+*/
+
+@media only screen and (min-width: 1024px) {
+  .current-link {
+      font-weight: bolder;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+  }
+  .current-link:after {
+      content: "";
+      position: absolute;
+      left: 34%;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: 0;
+      width: 32%;
+      border-bottom: 3px solid #6a00bb;
+  }
+  
+  .nav-item-hover::after {
+      content: "";
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 0.15em;
+      bottom: 0;
+      width: 0%;
+      background-color: #6a00bb;
+      transition: all ease-in-out 280ms;
+  }
+  
+  .nav-item:hover::after {
+      width: 50%;
+      
+  }
+
+  li.nav-item {
+      text-align: center;
+  }
+  a.nav-link {
+      padding: 6px 21px !important;
+  }
+
+  /* Hide svg on laptop screens to prevent overlap between sidebar and navbar */
+  .bike {
+      display: none;
+  }
+}
+
+/* navbar hover for light mode */
+html[light-mode="light"] .nav-link{
+  color: #000000 !important;
+}
+html[light-mode="light"] .nav-link:hover{
+  color: 	rgb(106, 0, 187) !important;
+}
+html[light-mode="light"] .navbar-brand:hover{
+  color: #000000 !important;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+      align-items: center;
+  }
+}
+
+
+/**Navbar burger animations**/
+
+.navbar-toggler {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  border-color: white;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 1.25rem 1rem;
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 50px;
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.open .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.open .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.open .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+
+/*
+------------------------
+  FOOTER SECTION
+------------------------
+*/
+
+
+/* Also have a look at the scroll to top button if changing footer's height (below upArrow in app.js) */
+
+.footer {
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+}
+
+.tag {
+  font-family: "Poppins", sans-serif;
+  font: size 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  height: 78px;
+  margin: 5px auto 0px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+
+/********
+Rotate Transition in foote Soical Icon
+*********/
+
+.rounded-social-buttons .social-button:hover,
+.rounded-social-buttons .social-button:focus {
+  transition: background-color 0.3s, var(--trans-props);
+}
+
+
+/*
+------------------------------
+ TWITTER MICROANIMATION
+-------------------------------
+*/
+
+.twitter:hover #wing1 {
+  transform-origin: center;
+  animation: flap 0.4s ease-out infinite alternate;
+}
+
+.twitter:hover #wing2 {
+  transform-origin: center;
+  animation: flap 0.4s ease-in infinite alternate;
+}
+
+@keyframes flap {
+  50% {
+      transform: scaleX(-1) rotate(-45deg) translate(-40px, -40px);
+  }
+}
+
+
+/*
+-----------------------------
+ LINKEDIN MICROANIMATION
+-----------------------------
+*/
+
+.linkedin:hover .linkedin-icon-footer>rect {
+  animation: rect-up 0.3s linear infinite;
+}
+
+@keyframes rect-up {
+  50% {
+      y: 10px;
+      height: 11px;
+  }
+  0% {
+      y: 13px;
+      height: 8px;
+  }
+}
+
+.linkedin:hover .linkedin-icon-footer>circle {
+  animation: bounce 0.4s linear infinite;
+}
+
+@keyframes bounce {
+  75% {
+      cy: 8px;
+  }
+  50% {
+      cy: 4px
+  }
+  0% {
+      cy: 4px
+  }
+}
+
+
+/*
+-----------------------------
+ INSTAGRAM MICROANIMATION
+-----------------------------
+*/
+
+.st0 {
+  fill: none;
+  stroke: #EF4649;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.instagram-icon-footer:hover #littleCircle {
+  stroke-dasharray: 150;
+}
+
+.instagram #shutter {
+  display: none;
+}
+
+.instagram-icon-footer:hover #shutter {
+  display: block;
+  animation: shutter 1s linear infinite;
+}
+
+.instagram-icon-footer:hover #lens {
+  fill: #EF4649;
+  animation: lens 1.5s linear infinite;
+}
+
+@keyframes shutter {
+  0%,
+  50% {
+      stroke-dashoffset: 150;
+  }
+  75% {
+      fill: #EF4649;
+      stroke-dashoffset: 0;
+      stroke-width: 11;
+  }
+}
+
+@keyframes lens {
+  0%,
+  75% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+/*
+-----------------------------
+ GITHUB MICROANIMATION
+-----------------------------
+*/
+
+.github:hover #arm {
+  transform-origin: bottom right;
+  animation: moveArm 1s infinite alternate;
+}
+
+@keyframes moveArm {
+  0% {
+      transform: rotate(10deg);
+  }
+  100% {
+      transform: rotate(-10deg);
+  }
+}
+
+
+/* twitter SVG micro animation */
+
+.twitter-icon-footer {
+  margin-bottom: 6px;
+  width: 35px;
+}
+
+
+/* linkedin SVG micro animation */
+
+.linkedin-icon-footer {
+  margin-bottom: 8px;
+  width: 30px;
+}
+
+
+/* instagram SVG micro animation */
+
+.instagram-icon-footer {
+  width: 70px;
+  padding-right: 24px;
+  padding-bottom: 8px;
+}
+
+
+/* github SVG Micro animation */
+
+.github-icon-footer {
+  margin-bottom: 8px;
+  width: 35px;
+}
+
+
+/*
+----------------------------------------
+ HOVER EFFECT ON SOCIAL MEDIA ICONS
+----------------------------------------
+*/
+
+.rounded-social-buttons .social-button.twitter {
+  background: #2b2a2A;
+  box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
+}
+
+.rounded-social-buttons .social-button.twitter:hover,
+.rounded-social-buttons .social-button.twitter:focus {
+  color: #000;
+  background: #2b2a2A;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #2b2a2A;
+  box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
+}
+
+.rounded-social-buttons .social-button.linkedin:hover,
+.rounded-social-buttons .social-button.linkedin:focus {
+  color: #000;
+  background: #2b2a2A;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #2b2a2A;
+  box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
+}
+
+.rounded-social-buttons .social-button.instagram:hover,
+.rounded-social-buttons .social-button.instagram:focus {
+  color: #000;
+  background: #2b2a2A;
+}
+
+.rounded-social-buttons .social-button.github {
+  fill: #ffff;
+  background: #2b2a2A;
+  box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
+}
+
+.rounded-social-buttons .social-button.github:hover,
+.rounded-social-buttons .social-button.github:focus {
+  color: #000000;
+  background: #2b2a2A;
+}
+
+
+/************
+Contact Form In Footer
+*************/
+
+.display {
+  height: auto;
+  width: auto;
+  text-align: left;
+  color: #fff;
+  display: inline;
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 22px;
+  border-bottom: 3px solid #bb86fc;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+form {
+  margin: 15px auto;
+  color: #000;
+}
+
+
+/*
+-------------------
+ Footer Form
+--------------------
+*/
+
+.form-style-6 {
+  font: 95% Arial, Helvetica, sans-serif;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 16px;
+  border-radius: 2px;
+}
+
+.form-style-6 h1 {
+  background: #bb86fc;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  margin: -16px -16px 16px -16px;
+}
+
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  background: transparent;
+  margin-bottom: 4%;
+  border: #000;
+  border-bottom: 2px solid #bb86fc;
+  padding: 3%;
+  color: rgb(107, 105, 105);
+  font: 95% Arial, Helvetica, sans-serif;
+  border-radius: 2px;
+}
+
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus {
+  box-shadow: 0 0 5px #bb86fc;
+  padding: 3%;
+  border: 1px solid #bb86fc;
+  border-radius: 2px;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"] {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 3%;
+  background: #bb86fc;
+  border-bottom: 2px solid #bb86fc;
+  border-radius: 23px;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover {
+  background:#6a00bbd2;;
+
+}
+
+.form-comtainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer hr {
+  background-color: rgb(37, 51, 46);
+  height: 1.5px;
+}
+
+
+/* to make the navbar open full screen on mobile */
+
+@media (max-width: 768px) {
+  .collapse navbar-collapse {
+      display: flex;
+      justify-content: center;
+  }
+  .footer {
+      padding-top: 10px;
+  }
+  #navbar-content {
+      margin-top: -200px;
+      height: 120vh;
+      text-align: center;
+      transform: translateY(25%);
+  }
+  #btnScrollToTop {
+      display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  .collapse navbar-collapse {
+      display: flex;
+      justify-content: center;
+  }
+  #navbar-content {
+      margin-top: -180px;
+      height: 120vh;
+      text-align: center;
+      transform: translateY(25%);
+  }
+  #btnScrollToTop {
+      display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .collapse navbar-collapse {
+      display: flex;
+      justify-content: center;
+  }
+  #navbar-content {
+      margin-top: -180px;
+      height: 120vh;
+      text-align: center;
+      transform: translateY(25%);
+  }
+  #btnScrollToTop {
+      display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .collapse navbar-collapse {
+      display: flex;
+      justify-content: center;
+  }
+  #navbar-content {
+      margin-top: -140px;
+      height: 130vh;
+      text-align: center;
+      transform: translateY(25%);
+  }
+  .footer {
+      margin-top: 6rem;
+  }
+  #btnScrollToTop {
+      display: none;
+  }
+}
+
+
+/* box shadow for profile picture */
+
+.rounded-circle {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+/*
+----------------------------
+Send button micro animation
+----------------------------
+*/
+
+#main {
+  position: relative;
+  margin-left: 4rem;
+  width: 270px;
+  
+}
+ button{
+width: 15rem;
+height: 2.5rem;
+outline: none;
+}
+#lnch :hover{
+    cursor: pointer;
+    outline: none;
+    
+}
+#lnch {
+  font-size: 25px;
+  color: #fff;
+  line-height: 1;
+  /* padding: 20px 25px; */
+  text-align: center;
+  border-radius: 50px;
+  border-style: none;
+  transition: 0.5s ease background-color, 0.5s ease box-shadow;
+  background: #bb86fc;
+}
+#lnch_btn {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  font-size: 22px;
+  line-height: 1;
+  color: #fff;
+ padding: 10px 50px;
+  cursor: pointer;
+  transition: 0.3s ease transform;
+}
+#lnch.launching {
+  background-color: #f39c12;
+  box-shadow: 0 10px 20px -6px #f39c12;
+}
+#lnch_btn.launching {
+  transform: rotateZ(-90deg);
+  animation: shake 0.3s ease 0.5s infinite;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0) rotateZ(-90deg);
+  }
+  20%,
+  80% {
+    transform: translate3d(1px, 0, 0) rotateZ(-90deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-1px, 0, 0) rotateZ(-90deg);
+  }
+  40%,
+  60% {
+    transform: translate3d(1px, 0, 0) rotateZ(-90deg);
+  }
+}
+
+#lnch.launched {
+  background-color: #27ae60;
+  box-shadow: 0 10px 20px -6px #27ae60;
+}
+
+#lnch_btn.launched {
+  transform: rotateZ(-90deg);
+  animation: moveUp 1s ease 0s forwards;
+}
+@keyframes moveUp {
+  0% {
+    margin-top: 0;
+    transform: scale(1) rotateZ(-90deg);
+  }
+  100% {
+    color: #ff1f5a;
+    margin-top: -100px;
+    transform: scale(0) rotateZ(-90deg);
+  }
+}

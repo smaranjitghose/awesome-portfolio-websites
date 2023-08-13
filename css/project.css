@@ -1,0 +1,858 @@
+html[data-theme="light"] {
+  --bg-col: #fafafa;
+  --shadow1: rgba(0, 0, 0, 0.3);
+  --shadow2: rgba(0, 0, 0, 0.2);
+  --text: #191919;
+  --neu-light: white;
+  --neu-dark: #c3c3c3;
+  --neu-color: #c3c3c3;
+  --neu-icon: #c3c3c3;
+}
+
+html[data-theme="dark"] {
+  --bg-col: #272727;
+  --shadow1: rgba(128, 122, 122, 0.233);
+  --shadow2: rgba(231, 216, 216, 0.007);
+  --neu-light: #282828;
+  --neu-dark: #080808;
+  --neu-color: white;
+  --text: rgba(255, 255, 255, 0.5);
+  --neu-icon: whitesmoke;
+}
+html {
+  overflow-x: hidden;
+  max-width: 120%;
+  height: auto;
+}
+body {
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+.projects_head {
+  font-weight: bold;
+}
+
+/*color of projects page heading*/
+
+.my_projects {
+  color: #4e00bb;
+}
+
+/*For Changing background color of body according to theme*/
+
+.light-mode-button {
+  background: 0;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.light-mode-button:focus {
+  outline: none;
+  /* Not ideal for accessibility */
+}
+
+.light-mode-button span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #d6d7db;
+  box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+
+.light-mode-button span:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+
+body {
+  background-color: #f6f6f6;
+  transition: background-color 0.3s;
+}
+
+body[light-mode="dark"] {
+  background-color: #141516;
+  color: #ced4e2;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+
+@media (max-width: 766px) {
+  .dropdown {
+    position: absolute;
+    padding-right: 3.5rem;
+  }
+  .godown {
+    z-index: 1;
+    padding-top: 15rem;
+    padding-left: 3.3rem;
+  }
+}
+
+@media (max-width: 959) {
+  .projectcards {
+    margin: 10px;
+  }
+}
+
+.img-header {
+  width: 90%;
+  height: 90%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.skill-card {
+  border: none;
+}
+
+.row {
+  display: flex;
+  row-gap: 3em;
+}
+
+.card {
+  width: 100%;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.column {
+  float: left;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 60rem) {
+  .row {
+    margin-top: 0em;
+  }
+  .card {
+    width: 43%;
+    column-gap: 3rem;
+    margin: 0 2rem;
+    transition: width 0.8s;
+  }
+  .column {
+    margin-left: 1.5rem;
+  }
+}
+
+.card .menu-content {
+  list-style-type: none;
+  position: absolute;
+  right: 0;
+}
+
+.card .menu-content::before,
+.card .menu-content::after {
+  content: "";
+  display: table;
+}
+
+.card .menu-content::after {
+  clear: both;
+}
+
+.card .menu-content li {
+  display: inline-block;
+}
+
+.card .wrapper {
+  background-color: #fff;
+  border: 0;
+  border-radius: 10px;
+  min-height: 21.5rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px var(--shadow1), 0 15px 12px var(--shadow2);
+}
+
+.card .wrapper:hover .data {
+  transform: translateY(0);
+}
+
+.card .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: transform 0.3s;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+@media (min-width: 60rem) {
+  .card .data {
+    height: 76%;
+  }
+}
+
+.card .data .content {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.card .title-div {
+  width: 100%;
+  height: 35%;
+  margin: 0;
+}
+
+.card .title {
+  padding-bottom: 2rem;
+  margin-top: 0em;
+  font-size: 0.65em;
+}
+
+@media (min-width: 411px) {
+  .card .title {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 365px) {
+  .card .title {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 425px) {
+  .card .title {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 554px) {
+  .card .title {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 60rem) {
+  .card .title {
+    padding-bottom: 4rem;
+    font-size: 1.2em;
+  }
+}
+
+.card .text {
+  height: 60px;
+  font-size: 0.5em;
+  margin: 0;
+}
+
+@media (min-width: 311px) {
+  .card .text {
+    font-size: 0.7;
+  }
+}
+
+@media (min-width: 365px) {
+  .card .text {
+    font-size: 0.85em;
+  }
+}
+
+@media (min-width: 425px) {
+  .card .text {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 554px) {
+  .card .text {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 60rem) {
+  .card .text {
+    font-size: 18px;
+  }
+}
+
+.card input[type="checkbox"] {
+  display: none;
+}
+
+.card input[type="checkbox"]:checked + .menu-content {
+  transform: translateY(-60px);
+}
+
+input[type="text"] {
+  color: rgb(235, 148, 35);
+}
+
+.skill-card .wrapper:hover .menu-content span {
+  transform: translate(-50%, -10px);
+  opacity: 1;
+}
+
+.skill-card {
+  width: 300px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.skill-card .header {
+  color: #fff;
+  padding: 1em;
+}
+
+.skill-card .header::before,
+.skill-card .header::after {
+  content: "";
+  display: table;
+}
+
+.skill-card .header::after {
+  clear: both;
+}
+
+.skill-card .header .date {
+  float: left;
+  font-size: 12px;
+}
+
+.skill-card .menu-content {
+  float: right;
+}
+
+.skill-card .menu-content li {
+  margin: 0 2px;
+  position: relative;
+}
+
+.skill-card .menu-content span {
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.skill-card .data {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.55);
+  transform: translateY(calc(60px + 4em));
+  padding: 5px;
+}
+
+.skill-card .title a {
+  color: #fff;
+}
+
+/*social icons*/
+
+ul {
+  padding-inline-start: 0px;
+}
+
+.social-icon svg {
+  margin-top: 30px;
+}
+
+.menu-content {
+  margin-right: 10px;
+  margin-top: 1rem;
+}
+
+.social-icon svg:hover {
+  fill: #fff;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.page-content {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin: 1rem auto; */
+}
+
+/* Responsive*/
+
+@media (min-width: 320px) and (max-width: 321px) {
+  .menu-content {
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+  .card .title-div {
+    padding-bottom: 7rem;
+    margin-bottom: 0px;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 361px) {
+  .card .menu-content {
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+  .card .title-div {
+    padding-bottom: 7rem;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 375px) {
+  .menu-content {
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+  .card .title-div {
+    padding-bottom: 8rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 411px) {
+  .menu-content {
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+  .card .title-div {
+    padding-bottom: 6rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 413px) and (max-width: 414px) {
+  .menu-content {
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+  .card .title-div {
+    padding-bottom: 6rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 535px) and (max-width: 540px) {
+  .menu-content {
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+  .card .title-div {
+    padding-bottom: 6rem;
+    font-size: 2rem;
+  }
+}
+
+@media (min-height: 822px) and (max-height: 823px) {
+  .menu-content {
+    margin-right: 20px;
+  }
+  .card .title-div {
+    padding-bottom: 6rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-height: 768px) {
+  .menu-content {
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+  .card .title-div {
+    padding-bottom: 6rem;
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+  .skill-card {
+    width: 450px;
+    border: 0;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .menu-content {
+    margin-top: -4.5rem;
+    margin-right: 20px;
+  }
+  .card .title-div {
+    padding-bottom: 7rem;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .project-box {
+    margin-top: 18rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .project-box {
+    margin-top: 18rem;
+  }
+}
+
+@media (max-width: 377px) {
+  .skill-card .data {
+    transform: translateY(calc(90px + 4em));
+  }
+  .social-icon svg {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 960px) {
+  .skill-card .data {
+    color: #fff;
+    transform: translateY(calc(80px + 4em));
+    padding: 5px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.left {
+  position: relative;
+}
+
+.right {
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/*
+----------------------------
+SVG ANIMATIONS PROJECT PAGE
+----------------------------
+*/
+
+@keyframes ekumanslidein {
+  0% {
+    transform: translateX(-600px);
+  }
+  50% {
+    transform: translateX(-600px) scaleX(1);
+  }
+  75% {
+    transform: translateX(30px) scaleX(0.9);
+  }
+  87.5% {
+    transform: translateX(-5px);
+  }
+  97% {
+    transform: translateX(3px);
+  }
+  to {
+    transform: translateX(0) scaleX(1);
+  }
+}
+
+@keyframes ekumanarmrotate {
+  0%,
+  45%,
+  65%,
+  85%,
+  to {
+    transform: rotate(0deg);
+  }
+  55%,
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes ekumanhairwobble {
+  50%,
+  to {
+    transform: scaleX(1);
+  }
+  75% {
+    transform: scaleX(1.2);
+  }
+  87.5% {
+    transform: scaleX(0.8);
+  }
+  97% {
+    transform: scaleX(1.09);
+  }
+}
+
+@keyframes ekuwomanlidein {
+  0% {
+    transform: translateX(600px);
+  }
+  50% {
+    transform: translateX(600px) scaleX(1);
+  }
+  75% {
+    transform: translateX(-30px) scaleX(0.9);
+  }
+  87.5% {
+    transform: translateX(5px);
+  }
+  97% {
+    transform: translateX(-3px);
+  }
+  to {
+    transform: translateX(0) scaleX(1);
+  }
+}
+
+@keyframes kulapdropin {
+  0% {
+    transform: translateY(-230px) scale(0) rotate(0deg);
+  }
+  35% {
+    transform: translateY(-230px) scale(1.03) rotate(20deg);
+  }
+  45% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: translateY(-5px) scale(0.98) rotate(0deg);
+  }
+  55% {
+    transform: translateY(-10px) scale(1.01) rotate(0deg);
+  }
+  60% {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes ekuwomanarmrotate {
+  0%,
+  45%,
+  65%,
+  85%,
+  to {
+    transform: rotate(0deg);
+  }
+  55%,
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes ekuwomanarmbackrotate {
+  0%,
+  45%,
+  65%,
+  85%,
+  to {
+    transform: rotate(0deg);
+  }
+  55%,
+  75% {
+    transform: rotate(-13deg);
+  }
+}
+
+@keyframes manscreenpopup {
+  0%,
+  45%,
+  55%,
+  65%,
+  75%,
+  85% {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes manscreenfloat {
+  0%,
+  to {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes backhairwave {
+  0%,
+  to {
+    transform: scaleX(1) skewX(0) skewY(0);
+  }
+  50% {
+    transform: scaleX(1.07) skewX(3deg) skewY(5deg);
+  }
+}
+
+#ku.svgmate #Bluearmbot,
+#ku.svgmate #Chair,
+#ku.svgmate #chairbackbar,
+#ku.svgmate #man,
+#ku.svgmate .mankauf {
+  animation-name: ekumanslidein;
+  animation-iteration-count: 1;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+  transform-origin: 502px 454px;
+}
+
+#ku.svgmate #Bluearmbot,
+#ku.svgmate #Chair,
+#ku.svgmate #chairbackbar,
+#ku.svgmate .mankauf {
+  animation-duration: 1.5s;
+}
+
+#ku.svgmate #Bluearmbot {
+  animation-name: ekumanarmrotate;
+  animation-iteration-count: infinite;
+  animation-duration: 1.8s;
+  animation-delay: 1.2s;
+  transform-origin: 448.122px 403.482px;
+}
+
+#ku.svgmate .mankauf {
+  animation-name: ekumanhairwobble;
+  animation-duration: 1.38s;
+  transform-origin: 396.257px 260.5px;
+}
+
+#ku.svgmate #Chair_1_,
+#ku.svgmate #Woman,
+#ku.svgmate #back-arm,
+#ku.svgmate #backleg_1_ {
+  animation-name: ekuwomanlidein;
+  animation-iteration-count: 1;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-out;
+  transform-origin: 502px 454px;
+}
+
+#ku.svgmate #Chair_1_ {
+  animation-duration: 1.95s;
+}
+
+#ku.svgmate #Laptop,
+#ku.svgmate #keyboard {
+  animation-name: kulapdropin;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  transform-origin: 648.689px 361.659px;
+}
+
+#ku.svgmate #keyboard {
+  animation-duration: 2.5s;
+  transform-origin: 479.857px 383px;
+}
+
+#ku.svgmate #lowerarm,
+#ku.svgmate #lowervackarm {
+  animation-name: ekuwomanarmrotate;
+  animation-iteration-count: infinite;
+  animation-duration: 1.8s;
+  animation-delay: 2.1s;
+  animation-timing-function: ease-out;
+  transform-origin: 751.134px 385.578px;
+}
+
+#ku.svgmate #lowervackarm {
+  animation-name: ekuwomanarmbackrotate;
+  transform-origin: 736.882px 386px;
+}
+
+#ku.svgmate #Man_screen .greenscreen,
+#ku.svgmate #Man_screen .redscreen,
+#ku.svgmate #Man_screen .screenbutton {
+  animation-name: manscreenpopup;
+  animation-iteration-count: 1;
+  animation-duration: 5.6s;
+  animation-timing-function: ease-in-out;
+  transform-origin: 526.882px 383px;
+}
+
+#ku.svgmate #Man_screen .greenscreen,
+#ku.svgmate #Man_screen .redscreen {
+  animation-duration: 3s;
+}
+
+#ku.svgmate #Man_screen .greenscreen {
+  animation-duration: 3.3s;
+}
+
+#ku.svgmate #Man_screen,
+#ku.svgmate #Man_screen .greenscrmove,
+#ku.svgmate #Man_screen .redskmove,
+#ku.svgmate .womscreenmove {
+  animation-name: manscreenfloat;
+  animation-iteration-count: infinite;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+}
+
+#ku.svgmate #Man_screen .greenscrmove,
+#ku.svgmate #Man_screen .redskmove {
+  animation-duration: 6s;
+}
+
+#ku.svgmate #Man_screen .greenscrmove {
+  animation-duration: 7.2s;
+}
+
+#ku.svgmate #hairback,
+#ku.svgmate #womanscreen {
+  animation-name: manscreenpopup;
+  animation-iteration-count: 1;
+  animation-duration: 3.9s;
+  animation-timing-function: ease-in-out;
+  transform-origin: 648.689px 361.659px;
+}
+
+#ku.svgmate #hairback {
+  animation-name: backhairwave;
+  animation-iteration-count: infinite;
+  animation-duration: 3.3s;
+  transform-origin: 785.132px 295.833px;
+}
