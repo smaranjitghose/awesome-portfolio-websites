@@ -5,25 +5,25 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Software Development Intern",
-    cardImage: "assets/images/experience-page/flipkart.jpg",
-    place: "Flipkart",
-    time: "(May, 2020 - present)",
-    desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
+    title: "Data Administrator Intern",
+    cardImage: "assets/images/experience-page/devmissionLogo.jpg",
+    place: "Dev/Mission",
+    time: "(Jun 2023 - Aug 2023)",
+    desp: "<li>Managed and maintained the data of over 1700+ residents, ensuring accuracy, confidentiality, and accessibility.</li><li>Developed a data analytics tool, providing senior management with interactive data visualizations and real-time dynamic reports.</li><li>Ensure accuracy and consistency of data in reports, verifying data sources and conducting thorough quality checks.</li><li>Managed a robust ETL data pipeline with Pandas and PostgreSQL, enabling efficient data processing and analysis from multiple sources, enhancing decision-making processes.</li>",
   },
   {
-    title: "Student Developer",
-    cardImage: "assets/images/experience-page/gsoc.png",
-    place: "Google Summer Of Code",
-    time: "(Mar - Aug, 2019)",
-    desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
+    title: "Afterschool Program Leader Assistant",
+    cardImage: "assets/images/experience-page/sfusdlogo.jpg",
+    place: "SFUSD",
+    time: "(Oct 2022 - May 2023)",
+    desp: "<li>Assisted in the management and supervision of a diverse group of 30 students in an afterschool program </li><li>Demonstrated strong leadership skills by effectively managing student behavior and resolving conficts.</li>",
   },
   {
-    title: "Research Intern",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
-    place: "IIT, Bombay",
-    time: "(Dec, 19 - Jan, 20)",
-    desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
+    title: "Community Youth Center Intern",
+    cardImage: "assets/images/experience-page/cyc.jpg",
+    place: "CYC",
+    time: "(Oct 2023 - Dec 2023)",
+    desp: "<li>Attended workshops to enhance skills in managing and supervising diverse groups</li><li>Collaborated effectively with peers, demonstrating exceptional leadership in maintaining student discipline</li>",
   },
 ];
 

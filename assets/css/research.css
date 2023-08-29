@@ -804,3 +804,9 @@ a:hover {
     width: 60%;
   }
 }
+
+.tableau-center {
+  /* width: 500px; */
+  margin-left: 180px;
+  margin-right: 180px;
+}
