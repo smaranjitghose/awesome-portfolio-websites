@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="assets/css/preloader.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/particles.css">
     <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="assets/images/favicon.png" type="image/x-png">
     <!-- Font awesome icons -->
@@ -62,9 +63,143 @@
     <!--Particles effect-->
     <div id="home">
         <section class="center">
-            <div id="particles-js"></div>
-        </section>
-    </div>
+            <!-- <div id="particles-js"></div> -->
+            <div id="home">
+                <section class="center">
+                    <div class="particles"></div>
+                    </div>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const numParticles = 100;
+                            const particlesContainer = document.querySelector('.particles');
+                            const allElements = document.querySelectorAll(".animated-text");
+            
+                            createParticles(numParticles, particlesContainer);
+            
+                            particlesContainer.addEventListener('click', (event) => {
+                                const { clientX, clientY } = event;
+                                createParticlesAroundCursor(clientX, clientY, 10, particlesContainer);
+                            });
+            
+                            allElements.forEach((element) => {
+                                animateText(element);
+                            });
+            
+                            function createParticles(count, container) {
+                                for (let i = 0; i < count; i++) {
+                                    const particle = document.createElement('div');
+                                    particle.classList.add('particle');
+                                    container.appendChild(particle);
+                                    particleFloat(particle);
+                                }
+                            }
+            
+                            function createParticlesAroundCursor(x, y, numParticles, container) {
+                                for (let i = 0; i < numParticles; i++) {
+                                    createParticleCursor(x, y - 10, container);
+                                }
+                            }
+            
+                            function particleFloat(particle) {
+                                const size = Math.random() * 20 + 5 + 'px';
+                                particle.style.width = size;
+                                particle.style.height = size;
+                                particle.style.left = Math.random() * 100 + 'vw';
+                                particle.style.bottom = '0';
+                                particle.style.animationDuration = Math.random() * 3 + 1 + 's';
+                            }
+            
+                            function createParticleCursor(x, y, container) {
+                                const particle = document.createElement('div');
+                                particle.classList.add('particle-cursor');
+                                const randomColor = getRandomColor();
+            
+                                particle.style.backgroundColor = randomColor;
+                                container.appendChild(particle);
+            
+                                const offset = getRandomOffset();
+                                particle.style.width = '10px';
+                                particle.style.height = '10px';
+                                particle.style.left = x - 5 + offset + 'px';
+                                particle.style.top = y - 5 + offset + 'px';
+                                particle.style.animationDuration = Math.random() * 2 + 1 + 's';
+            
+                                setTimeout(() => {
+                                    particle.remove();
+                                }, parseFloat(particle.style.animationDuration) * 1000);
+                            }
+            
+                            function getRandomOffset() {
+                                return (Math.random() - 0.5) * 20;
+                            }
+            
+                            function getRandomColor() {
+                                return '#' + Math.floor(Math.random() * 16777215).toString(16);
+                            }
+            
+                            function animateText(txtElement) {
+                                const wordsList = txtElement.getAttribute("data-words");
+                                const words = wordsList.split(", ");
+                                let wordsCount = 0;
+            
+                                entry();
+            
+                                function entry() {
+                                    if (wordsCount < words.length) {
+                                        const word = words[wordsCount];
+                                        const txtArr = word.split("");
+                                        let count = 0;
+            
+                                        txtElement.textContent = "";
+            
+                                        txtArr.forEach((letter) => {
+                                            const _letter = letter === " " ? "&nbsp;" : letter;
+                                            txtElement.innerHTML += `<span>${_letter}</span>`;
+                                        });
+            
+                                        const spans = txtElement.childNodes;
+                                        const letterInterval = setInterval(activeLetter, 70);
+            
+                                        function activeLetter() {
+                                            spans[count].classList.add("active");
+                                            count++;
+            
+                                            if (count === spans.length) {
+                                                clearInterval(letterInterval);
+                                                setTimeout(() => {
+                                                    eraseText();
+                                                }, 600);
+                                            }
+                                        }
+            
+                                        function eraseText() {
+                                            let removeInterval = setInterval(removeLetter, 40);
+                                            count--;
+            
+                                            function removeLetter() {
+                                                spans[count].classList.remove("active");
+                                                count--;
+            
+                                                if (count === -1) {
+                                                    clearInterval(removeInterval);
+                                                    wordsCount++;
+                                                    entry();
+                                                }
+                                            }
+                                        }
+                                    } else {
+                                        wordsCount = 0;
+                                        entry();
+                                    }
+                                }
+                            }
+                        });
+                    </script>
+                </section>
+            </div>
+            
+
+
     <center>
         <!-- Home Section -->
         <div class="text col-sm-6" style="margin-top: 140px;">Hey <span class="wave"><img src="assets/images/Hand.gif" width="35px"></span>&nbsp;, I'm <span class="header">William Zhao</span>
