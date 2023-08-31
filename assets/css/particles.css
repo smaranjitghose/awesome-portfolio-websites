@@ -1,0 +1,35 @@
+
+.particles {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust as needed */
+    border-radius: 50%;
+    transform-origin: center;
+    animation: float 2s infinite;
+}
+
+.particle-cursor{
+    position: absolute;
+    background-color: rgba(209, 91, 86, 0.5); /* Adjust as needed */
+    border-radius: 50%;
+    transform-origin: center;
+    animation: float 2s infinite;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) scale(0);
+        opacity: 0;
+    }
+}
