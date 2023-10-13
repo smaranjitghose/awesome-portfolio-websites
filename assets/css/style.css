@@ -552,6 +552,7 @@ html[light-mode="light"] .navbar-brand:hover{
   transition: all 0.5s ease;
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
+  border: 1px solid white;
 }
 
 
