@@ -113,6 +113,7 @@ body{
 
 a.socialicon {
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  border: 3px solid black;
 }
 
 .social-icons {
@@ -145,6 +146,7 @@ a.socialicon {
 /* Social icon in dark mode */
 html[light-mode="dark"] .socialicon{
   background-color: #141516;
+  border: 3px solid white;
 }
 
 .kaggle i {
