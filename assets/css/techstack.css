@@ -51,14 +51,15 @@ html {
     border: none;
     border-radius: 13px;
     background-color: rgb(65, 62, 65);
-    width: 45.7vw;
-    margin:3.5em 30px;
+    width: 20vw;
+    height: 20vw;
+    margin:2em 30px;
     padding: 20px;
     box-shadow: 0px 0px 15px 2px black;
 }
 html[light-mode="light"] .tech_card{
     background-color: white;
-    color: #303030;
+    color: #313131;
     box-shadow: 0px 0px 10px #303030;
 }
 .tech_card img{
