@@ -5,25 +5,32 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Software Development Intern",
-    cardImage: "assets/images/experience-page/flipkart.jpg",
-    place: "Flipkart",
-    time: "(May, 2020 - present)",
-    desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
+    title: "GPSI Healthcare Data Analyst Intern",
+    cardImage: "assets/images/experience-page/il_department_of_public_health_logo (1).jpeg",
+    place: "Illinois Department of Public Health",
+    time: "(Aug, 2023 - present)",
+    desp: "<li>Project : The Illinois Lead Program aims to eliminate childhood lead poisoning by analyzing children 6 years and below having BLL more than 5 µg/dL by Delegate agencies of Illinois.</li> <li> Utilized SQL, SAS, Power BI, and ArcGIS to streamline data access and analysis, reducing report generation time by 40% and Analyzed pre-built housing data to identify instances of children with BLL exceeding 5 µg/dL.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
   },
   {
-    title: "Student Developer",
-    cardImage: "assets/images/experience-page/gsoc.png",
-    place: "Google Summer Of Code",
+    title: "GPSI Compliance IS Intern",
+    cardImage: "assets/images/experience-page/state_of_illinois___office_of_the_auditor_general_logo.jpeg",
+    place: "Illinois Office of the Auditor General",
     time: "(Mar - Aug, 2019)",
     desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
   },
   {
-    title: "Research Intern",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
-    place: "IIT, Bombay",
-    time: "(Dec, 19 - Jan, 20)",
+    title: "Data Science Intern",
+    cardImage: "assets/images/experience-page/technocolabs_logo.jpeg",
+    place: "Technocolabs Softwares",
+    time: "(Mar, 2022 - Jal, 2022)",
     desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
+  },
+  {
+    title: "Data Analyst",
+    cardImage: "assets/images/experience-page/confidosoft_logo.jpeg",
+    place: "ConfidoSoft Solutions Pvt Ltd",
+    time: "(Jan , 2019 - Mar, 2022)",
+    desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
   },
 ];
 
@@ -62,29 +69,12 @@ document.addEventListener("DOMContentLoaded", showCards2);
 const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
   {
-    title: "GirlScript Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/1.jpg",
+    title: "Robin Hood Army",
+    cardImage: "assets/images/experience-page/robin_hood_army_logo.jpeg",
     description:
-      "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
+      "Our efforts involved collecting surplus food to aid homeless individuals and supporting marginalized children with weekend classes to facilitate their access to education and bridge the gap between the streets and schools.",
   },
-  {
-    title: "StudentCode-in 2020",
-    cardImage: "assets/images/experience-page/2.jpg",
-    description:
-      "Responsible for handling open source contributions for the project Awesome Developer Portfolio.",
-  },
-  {
-    title: "PClub Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/3.jpg",
-    description:
-      "Mentoring for the projects Deep Pixel, AutoVaidya, Just Resume and Doc2pen.",
-  },
-  {
-    title: "Hakin-Codes",
-    cardImage: "assets/images/experience-page/4.jpg",
-    description:
-      "Mentoring for the open source projects Deeppixel, Awesome Developer Portfolios and Doc2Pen.",
-  },
+
 ];
 
 const showCards = () => {

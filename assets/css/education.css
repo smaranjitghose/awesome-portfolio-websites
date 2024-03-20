@@ -188,7 +188,7 @@ p {
   top: 80%;
 }
 #mooc .card {
-  border-radius: 5px;
+  border-radius: 10px;
   background: var(--tint-col);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
@@ -206,6 +206,13 @@ p {
   background-color: var(--bg1-color);
   padding: 1px;
 }
+
+#mooc .card-img-top {
+  width: 100%; /* Makes the image fully occupy the container width */
+  height: 150px; /* Sets a fixed height */
+  object-fit: container; /* Ensures the image covers the area without losing its aspect ratio */
+}
+
 /* SVG animation */
 #Girl {
   animation: swing ease-in-out 1s infinite alternate;
