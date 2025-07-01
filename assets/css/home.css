@@ -433,9 +433,10 @@ html[light-mode="dark"] .github-icon{
 */
 
 .socialicon:hover {
-  transform: translateY(-4px);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 12px var(--col-icon), 0 0 18px var(--col-icon);
 }
+
 .socialicon:hover:after {
   transform: translate(0) scale(1.2);
 }
@@ -445,6 +446,15 @@ html[light-mode="dark"] .github-icon{
 a:hover {
   color: transparent;
 }
+
+.socialicon:focus {
+  outline: 2px solid var(--col-icon);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+
 
 
 @media only screen and (max-width: 450px) {
