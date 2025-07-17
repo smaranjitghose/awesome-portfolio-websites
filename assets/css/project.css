@@ -159,6 +159,16 @@ a:hover {
     column-gap: 3rem;
     margin: 0 2rem;
     transition: width 0.8s;
+    
+  .card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card {
+  border: 2px solid red;
+}
+
+
   }
   .column {
     margin-left: 1.5rem;
