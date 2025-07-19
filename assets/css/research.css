@@ -400,21 +400,26 @@ body {
   justify-content: center;
 }
 
+
 .button {
-  border: 1px solid rgb(231, 85, 109);
-  color: rgb(231, 85, 109);
-  outline: none;
-  background-color: transparent;
-  transition: 0.3s;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 0.3em;
+  background-color: #4CAF50; /* green */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  margin: 1em 10px 0 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: background-color 0.3s ease;
 }
+
+.button:hover {
+  background-color: #45a049; /* darker green */
+}
+
+.section {
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
 
 .button:hover,
 .button:focus {
@@ -802,5 +807,19 @@ a:hover {
   }
   .researchTitleName {
     width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
   }
 }
