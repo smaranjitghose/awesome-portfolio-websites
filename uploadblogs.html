@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" light-mode="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/awesome-portfolio-websites/assets/css/uploadblog.css">
+    <link id='favicon' rel="shortcut icon" href="assets/images/favicon.png" type="image/x-png">
+    <title>John Doe | My Blogs</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="loader-container">
+        <div class="atom">
+            <div class="electron"></div>
+            <div class="electron-alpha"></div>
+            <div class="electron-omega"></div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/awesome-portfolio-websites/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/awesome-portfolio-websites/experience.html">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/awesome-portfolio-websites/projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/awesome-portfolio-websites/research.html">Research</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/awesome-portfolio-websites/education.html">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/awesome-portfolio-websites/uploadblogs.html">Blogs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" data-aos="fade-down">
+        <h1>Upload Your Blog</h1>
+        <p>Share your knowledge and showcase your work to the world.</p>
+    </section>
+
+    <!-- Blog Upload Form -->
+    <section class="upload-form" data-aos="fade-up">
+        <form id="blogUploadForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="title">Blog Title</label>
+                <input type="text" id="title" name="title" placeholder="Enter blog title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="content">Content</label>
+                <textarea id="content" name="content" rows="8" placeholder="Write your blog content here..."
+                    required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="tags">Tags (comma separated)</label>
+                <input type="text" id="tags" name="tags" placeholder="AI, Blockchain, ML">
+            </div>
+
+            <div class="form-group">
+                <label for="image">Feature Image</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+
+            <button type="submit"><i class="fas fa-upload"></i> Upload Blog</button>
+        </form>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/awesome-portfolio-websites/assets/js/dynamicTitle.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(() => {
+                const loader = document.querySelector('.loader-container');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 600); 
+            }, 1000);
+        });
+    </script>
+    <script>
+        AOS.init();
+
+        // Example form submission
+        $('#blogUploadForm').on('submit', function (e) {
+            e.preventDefault();
+            const toast = $('#toast');
+            toast.addClass('show');
+
+            setTimeout(() => {
+                toast.removeClass('show');
+            }, 5000)
+        });
+    </script>
+
+    <div id="toast" class="toast">Blog uploaded successfully</div>
+</body>
+
+</html>
