@@ -42,7 +42,8 @@ A community maintained open source project aimed at making personal portfolio fo
 
 <p align="center"><img src="./readme_assets/Education_Page.gif"></p>
 
-## How to use this?🛠
+>## You can easily customize this project by editing the `src/portfolio.js` file with your own information.##
+
 
 [Check out our awesome Documentation](https://smaranjitghose.github.io/awesome-portfolio-websites/)
 
