@@ -1,4 +1,4 @@
-# Reference: https://github.com/imjohnbo/gh-polls-bot-action
+# Reference: https://github.com/imAdolfobo/gh-polls-bot-action
 name: Poll Bot 
 # The events that triggers the workflow
 on:
@@ -14,6 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     # The tasks each job should run
     steps:
-    - uses: imjohnbo/gh-polls-bot-action@master
+    - uses: imAdolfobo/gh-polls-bot-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

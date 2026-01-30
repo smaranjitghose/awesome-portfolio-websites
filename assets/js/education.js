@@ -1,9 +1,9 @@
 AOS.init();
 
-// MOOCs Cards
+//   Cards
 
-const moocs = document.querySelector(".moocs");
-const moocscards = [
+const   = document.querySelector(". ");
+const  cards = [
   {
     title: "Data Science",
     cardImage: "assets/images/education-page/coursera2.svg",
@@ -110,7 +110,7 @@ function showExperience() {
 
 const showCards = () => {
   let output = "";
-  moocscards.forEach(
+   cards.forEach(
     ({ title, cardImage, moocLink }) =>
       (output += `        
         <div class="col-6 col-md-3 col-sm-4 column" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600" >  
@@ -129,7 +129,7 @@ const showCards = () => {
         </div>        
       `)
   );
-  moocs.innerHTML = output;
+   .innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards);
 
