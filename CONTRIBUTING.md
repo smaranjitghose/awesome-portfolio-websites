@@ -189,4 +189,4 @@ git push -u origin <your_branch_name>
 **9.** Voila :exclamation: You have made a PR to the awesome-developer-portfolio project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days.
 
 <p align="center"><img src="https://media.giphy.com/media/5mCQOcUfywmyI/giphy.gif" width=35%></p>
-
+* [Dhruv Dhokiya](https://github.com/dhruvdhokiya4642-boop)
